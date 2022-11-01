@@ -32,7 +32,11 @@ White Wave is a room. the player is in White Wave.
 
 book bass bath
 
-Bass Bath is a room.
+Bass Bath is a room. "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
+
+book Slum Slid
+
+Slum Slid is a room. printed name is "Slum (Slid)".
 
 volume verb-checker rule
 
