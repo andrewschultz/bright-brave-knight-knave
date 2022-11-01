@@ -1,0 +1,21 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-bbkk-thru-min.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## minimum walkthrough
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>kite cave
+by one point
+
+>pass path
+
+>mass math
+by one point
