@@ -12,55 +12,54 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if player is not in white wave, unavailable;
 	if sco-write-right-rave is true:
-		vcal "You already did this!";
+		vcal "You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you. No offense.!";
 		already-done;
 	ready;
 
+to decide whether extra-rave-points:
+	if number of visited rooms > 2, yes;
+	no;
+
 this is the vr-write-right-rave rule:
 	now sco-write-right-rave is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game[else]Without seeing much of the game, either[end if]!";
+	if extra-rave-points, now got-rave-bonus is true;
 
 a goodrhyme rule (this is the vc-kite-cave rule):
 	if player is not in white wave, unavailable;
-	if sco-kite-cave is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-kite-cave is true:
-		vcal "You already did this!";
+		vcal "You already discovered the kite cave to find a path beyond!";
 		already-done;
 	ready;
 
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
-	say "You look around, and what do you know? You remember you were given a magical kite to start things off. is a kite in a cave. What's more, it has instructions, and itYou let the kite fly. It goes out. Then, from somewhere in the forest, a flame goes up.Hooray! You figured what to do! You get a point!";
+	say "You look around, and what do you know? You remember you were given a magical kite to start things off. is a kite in a cave. What's more, it has instructions, and itYou let the kite fly. It goes out. Then, from somewhere in the forest, a flame goes up.";
 
 a goodrhyme rule (this is the vc-pass-path rule):
 	if player is not in bass bath, unavailable;
-	if sco-pass-path is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-pass-path is true:
-		vcal "You already did this!";
+		vcal "You already found a pass-path through the bass bath!";
 		already-done;
 	ready;
 
 this is the vr-pass-path rule:
 	now sco-pass-path is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You scuff the area you're in, and surprisingly, a path cuts through to the north. It appears tangled and looping. You might get confused going down it right away.";
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
-	if sco-mass-math is false:
-		vcp "You still need to do something!";
+	if sco-pass-path is false:
+		vcp "You have nothing to do mass math on. Yet.";
 		not-yet;
 	if sco-mass-math is true:
-		vcal "You already did this!";
+		vcal "You already calculated! Overcalculate, and you might miss or reject the obvious.";
 		already-done;
 	ready;
 
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.";
 
 volume table of noways
 

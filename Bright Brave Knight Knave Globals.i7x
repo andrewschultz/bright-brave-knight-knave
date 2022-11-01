@@ -10,6 +10,8 @@ sco-kite-cave is a truth state that varies.
 sco-pass-path is a truth state that varies.
 sco-mass-math is a truth state that varies.
 
+got-rave-bonus is a truth state that varies.
+
 Bright Brave Knight Knave Globals ends here.
 
 ---- DOCUMENTATION ----
