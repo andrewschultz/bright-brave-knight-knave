@@ -7,10 +7,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "write|right"	"rave"	--	--	false	false	true	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
-"mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	--
+"mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
-	if player is not in white wave, unavailable;
 	if sco-write-right-rave is true:
 		vcal "You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you. No offense.!";
 		already-done;
@@ -34,7 +33,8 @@ a goodrhyme rule (this is the vc-kite-cave rule):
 
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
-	say "You look around, and what do you know? You remember you were given a magical kite to start things off. is a kite in a cave. What's more, it has instructions, and itYou let the kite fly. It goes out. Then, from somewhere in the forest, a flame goes up.";
+	say "You look around, and what do you know? You remember you were given a magical kite to start things off. It's a kite in a cave. But as you unravel it to fly it outside, it slips under a rock. You follow it some more, and it leads to an underground passage which eventually goes back up to...";
+	move player to Bass Bath;
 
 a goodrhyme rule (this is the vc-pass-path rule):
 	if player is not in bass bath, unavailable;
@@ -46,6 +46,7 @@ a goodrhyme rule (this is the vc-pass-path rule):
 this is the vr-pass-path rule:
 	now sco-pass-path is true;
 	say "You scuff the area you're in, and surprisingly, a path cuts through to the north. It appears tangled and looping. You might get confused going down it right away.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
