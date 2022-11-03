@@ -1,0 +1,53 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-bbkk-thru-goto.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing goto
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+#ttc-table-of-noways-white-wave
+>gt
+You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
+
+>kite cave
+by one point
+
+>write rave
+by one point
+
+#ttc-table-of-noways-bass-bath
+>n
+The bass bath surrounds you. How can you find a way out?
+
+>pass path
+
+#+ttc-table-of-noways-bass-bath
+>w
+Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
+
+#+ttc-table-of-noways-bass-bath
+>gt
+You can go pretty much any way from here but not south.
+
+>mass math
+by one point
+
+>w
+
+>w
+WRONG
+
+#ttc-table-of-noways-slum-slid
+>w
+Maybe you can go west, but for your safety, it is inadvisable.
+

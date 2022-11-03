@@ -71,3 +71,11 @@ by one point
 
 >w
 
+#testcase-ha-half-table-of-verb-checks-5-what
+>what zwhoah
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-5-whoa-whoah
+>zwhat whoah
+The HA HALF button on your Leet Learner lights up green.
+
