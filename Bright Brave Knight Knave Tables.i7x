@@ -8,6 +8,20 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
+"what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
+
+a goodrhyme rule (this is the vc-what-whoah rule):
+	if player is not in rut row, unavailable;
+	if sco-what-whoah is true:
+		vcal "You already had a revelation that will push you out of your rut and see a new passage through.";
+		already-done;
+	ready;
+
+this is the vr-what-whoah rule:
+	now sco-what-whoah is true;
+	say "It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.";
+	now slum slid is mapped west of rut row;
+	now rut row is mapped east of slum slid;
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if sco-write-right-rave is true:
@@ -22,7 +36,9 @@ to decide whether extra-rave-points:
 this is the vr-write-right-rave rule:
 	now sco-write-right-rave is true;
 	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game[else]Without seeing much of the game, either[end if]!";
-	if extra-rave-points, now got-rave-bonus is true;
+	if extra-rave-points:
+		increment cur-bonus;
+		now got-rave-bonus is true;
 
 a goodrhyme rule (this is the vc-kite-cave rule):
 	if player is not in white wave, unavailable;
@@ -45,8 +61,10 @@ a goodrhyme rule (this is the vc-pass-path rule):
 
 this is the vr-pass-path rule:
 	now sco-pass-path is true;
-	say "You scuff the area you're in, and surprisingly, a path cuts through to the north. It appears tangled and looping. You might get confused going down it right away.";
+	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
 	print-the-loc;
+	now rut row is mapped west of bass bath;
+	now bass bath is mapped east of rut row;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -74,7 +92,7 @@ volume homonyms
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-a thing	a rule	a topic	a text
+white wave	--	"wight"	"You don't need an undead chasing you so soon. Or ever, really."
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)

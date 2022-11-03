@@ -40,6 +40,12 @@ Bass Bath is a room. printed name is "[if sco-pass-path is false]Bass Bath[else]
 
 guess-table of bass bath is the table of bass bath guesses.
 
+from-number of bass bath is 5404. to-number of bass bath is 5404.
+
+book Rut Row
+
+Rut Row is a room.
+
 book Slum Slid
 
 Slum Slid is a room. printed name is "Slum (Slid)".
