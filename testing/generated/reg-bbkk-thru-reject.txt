@@ -15,6 +15,14 @@ Taken.
 
 >au 2
 
+#testcase-reject-start-table-of-verb-checks-vr-mass-math-rule
+>mass math
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vr-pass-path-rule
+>pass path
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 >kite cave
 by one point
 
@@ -25,11 +33,33 @@ by one point
 You have nothing to do mass math on. Yet.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
 
+#testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
 
 >pass path
 
+#+testcase-think-table-of-verb-checks-vc-mass-math-rule
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+You can use MASS MATH once you have something to calculate.
+
 >mass math
 by one point
+
+>w
+
+>gt hidey house
+
+#testcase-reject-end-table-of-verb-checks-vr-kite-cave-rule
+>kite cave
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vr-mass-math-rule
+>mass math
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vr-pass-path-rule
+>pass path
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.

@@ -38,6 +38,8 @@ book bass bath
 
 Bass Bath is a room. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
 
+guess-table of bass bath is the table of bass bath guesses.
+
 book Slum Slid
 
 Slum Slid is a room. printed name is "Slum (Slid)".

@@ -29,8 +29,11 @@ by one point
 
 >pass path
 
-#testcase-room-names-bass-bath
+#+testcase-room-names-bass-bath
 `Pass Path
 
 >mass math
 by one point
+
+>w
+
