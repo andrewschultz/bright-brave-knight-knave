@@ -1,0 +1,70 @@
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+
+## reg-bbkk-thru-ha-half.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing half-right cases
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+#testcase-ha-half-table-of-verb-checks-2-cave
+>zkite cave
+The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
+
+#testcase-ha-half-table-of-verb-checks-2-kite
+>kite zcave
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-1-rave
+>zwrite rave
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+
+#testcase-ha-half-table-of-verb-checks-1-write-right
+>right zrave
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+
+>write zrave
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+
+>kite cave
+by one point
+
+>write rave
+by one point
+
+#testcase-ha-half-table-of-verb-checks-3-pass
+>pass zpath
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-3-path
+>zpass path
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-4-mass
+>mass zmath
+The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
+
+#testcase-ha-half-table-of-verb-checks-4-math
+>zmass math
+The HA HALF button on your Leet Learner lights up yellow.
+
+>pass path
+
+#+testcase-ha-half-table-of-verb-checks-4-mass
+>mass zmath
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-4-math
+>zmass math
+The HA HALF button on your Leet Learner lights up green.
+
+>mass math
+by one point

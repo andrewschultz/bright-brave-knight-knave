@@ -32,6 +32,7 @@ files=reg-bbkk-thru-min.txt,reg-bbkk-thru-all.txt,reg-bbkk-thru-reject.txt,reg-b
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
 }$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
@@ -70,6 +71,26 @@ Taken.
 
 >au 2
 
+@ha
+#testcase-ha-half-table-of-verb-checks-2-cave
+>zkite cave
+{$GREENCOREFIRST}
+\\
+#testcase-ha-half-table-of-verb-checks-2-kite
+>kite zcave
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-1-rave
+>zwrite rave
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-1-write-right
+>right zrave
+{$GREENBONUS}
+\\
+>write zrave
+{$GREENBONUS}
+
 >kite cave
 by one point
 
@@ -81,11 +102,29 @@ by one point
 >write rave
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-3-pass
+>pass zpath
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-3-path
+>zpass path
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-4-mass
+>mass zmath
+{$YELLOWCOREFIRST}
+\\
+#testcase-ha-half-table-of-verb-checks-4-math
+>zmass math
+{$YELLOWCORE}
+
 @rej
 >mass math
 You have nothing to do mass math on. Yet.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
 \\
+#testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
@@ -93,8 +132,23 @@ You can use MASS MATH once you have something to calculate.
 >pass path
 
 @all
-#testcase-room-names-bass-bath
+#+testcase-room-names-bass-bath
 `Pass Path
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-mass-math-rule
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+You can use MASS MATH once you have something to calculate.
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-4-mass
+>mass zmath
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-4-math
+>zmass math
+{$GREENCORE}
 
 >mass math
 by one point
