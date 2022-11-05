@@ -1,6 +1,6 @@
 Version 1/221007 of Bright Brave Knight Knave Definitions by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of Bright Brave Knight Knave Definitions."
+"This gives basic definitions used by core modules or used repeatedly by the game, such as the number of puzzles solved in a certain room."
 
 book definitions
 

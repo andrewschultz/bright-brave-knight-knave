@@ -1,6 +1,6 @@
 Version 1/221007 of Bright Brave Knight Knave Tables by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of Bright Brave Knight Knave Tables."
+"This file contains the main verb-checking/point-scoring table as well as homonym detection."
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)

@@ -1,6 +1,6 @@
 Version 1/221007 of Bright Brave Knight Knave Mistakes by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of Bright Brave Knight Knave Mistakes."
+"This tracks all the possible good guesses that are counted in Bright Brave Knight Knave."
 
 to current-table-note-x (tn - a table name):
 	current-table-note tn;

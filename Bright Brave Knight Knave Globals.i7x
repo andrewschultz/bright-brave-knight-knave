@@ -1,6 +1,6 @@
 Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of Bright Brave Knight Knave Globals."
+"This defines basic global variables to help keep the main file that much cleaner."
 
 volume point scoring booleans
 
