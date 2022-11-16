@@ -2,6 +2,11 @@ Version 1/221007 of Bright Brave Knight Knave Tables by Andrew Schultz begins he
 
 "This file contains the main verb-checking/point-scoring table as well as homonym detection."
 
+to open-psg (di - a direction) and (rm - a room):
+	let lp be location of player;
+	change di exit of lp to rm;
+	change (opposite of di) exit of rm to lp;
+
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "write|right"	"rave"	--	--	false	false	false	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
@@ -9,19 +14,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
-
-a goodrhyme rule (this is the vc-what-whoah rule):
-	if player is not in rut row, unavailable;
-	if sco-what-whoah is true:
-		vcal "You already had a revelation that will push you out of your rut and see a new passage through.";
-		already-done;
-	ready;
-
-this is the vr-what-whoah rule:
-	now sco-what-whoah is true;
-	say "It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.";
-	now slum slid is mapped west of rut row;
-	now rut row is mapped east of slum slid;
+"hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
+"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	--
+"rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	--
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if sco-write-right-rave is true:
@@ -63,8 +58,7 @@ this is the vr-pass-path rule:
 	now sco-pass-path is true;
 	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
 	print-the-loc;
-	now rut row is mapped west of bass bath;
-	now bass bath is mapped east of rut row;
+	open-psg west and rut row;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -79,6 +73,60 @@ a goodrhyme rule (this is the vc-mass-math rule):
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
 	say "You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.";
+
+a goodrhyme rule (this is the vc-what-whoah rule):
+	if player is not in rut row, unavailable;
+	if sco-what-whoah is true:
+		vcal "You already had a revelation that will push you out of your rut and see a new passage through.";
+		already-done;
+	ready;
+
+this is the vr-what-whoah rule:
+	now sco-what-whoah is true;
+	say "It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.";
+	open-psg west and slum slid;
+
+a goodrhyme rule (this is the vc-hid-hum rule):
+	if player is not in slid slum, unavailable;
+	if sco-hid-hum is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-hid-hum is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-hid-hum rule:
+	now sco-hid-hum is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-kid-come rule):
+	if player is not in slid slum, unavailable;
+	if sco-kid-come is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-kid-come is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-kid-come rule:
+	now sco-kid-come is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-rid-rum rule):
+	if player is not in slid slum, unavailable;
+	if sco-rid-rum is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-rid-rum is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-rid-rum rule:
+	now sco-rid-rum is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 volume table of noways
 
@@ -96,7 +144,7 @@ white wave	--	"wight"	"You don't need an undead chasing you so soon. Or ever, re
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-a thing	a rule	a topic	a text
+leet learner	--	"night/nave"	"You don't have to change yourself, here."
 
 Bright Brave Knight Knave Tables ends here.
 

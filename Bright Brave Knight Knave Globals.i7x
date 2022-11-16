@@ -12,6 +12,12 @@ sco-mass-math is a truth state that varies.
 
 sco-what-whoah is a truth state that varies.
 
+sco-hid-hum is a truth state that varies.
+sco-kid-come is a truth state that varies.
+sco-rid-rum is a truth state that varies.
+
+volume game state variables
+
 got-rave-bonus is a truth state that varies.
 
 Bright Brave Knight Knave Globals ends here.

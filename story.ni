@@ -4,6 +4,8 @@ include Trivial Niceties by Andrew Schultz.
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
 
+include Prime Pro Rhyme Row Leet Learner by Andrew Schultz.
+
 include Prime Pro Rhyme Row Common by Andrew Schultz.
 
 include Prime Pro Rhyme Row E34 by Andrew Schultz.
