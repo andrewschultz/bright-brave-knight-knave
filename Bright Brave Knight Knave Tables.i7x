@@ -88,45 +88,45 @@ this is the vr-what-whoah rule:
 
 a goodrhyme rule (this is the vc-hid-hum rule):
 	if player is not in slid slum, unavailable;
-	if sco-hid-hum is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-hid-hum is true:
-		vcal "You already did this!";
+		vcal "You already did initial searching!";
 		already-done;
 	ready;
 
 this is the vr-hid-hum rule:
 	now sco-hid-hum is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You figure there must be something here, and you are right ... there's a kid. They seem to be holding something behind their back. They don't trust you yet.";
 
 a goodrhyme rule (this is the vc-kid-come rule):
 	if player is not in slid slum, unavailable;
-	if sco-kid-come is false:
-		vcp "You still need to do something!";
+	if sco-hid-hum is false:
+		vcp "There's no kid around yet!";
 		not-yet;
 	if sco-kid-come is true:
-		vcal "You already did this!";
+		vcal "You already called the kid over!";
 		already-done;
 	ready;
 
 this is the vr-kid-come rule:
 	now sco-kid-come is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The kid looks awkwardly at you. They shuffle forward.";
 
 a goodrhyme rule (this is the vc-rid-rum rule):
 	if player is not in slid slum, unavailable;
-	if sco-rid-rum is false:
-		vcp "You still need to do something!";
+	if sco-hid-hum is false:
+		say "There is no rum to rid that you can sense. Yet.";
+		not-yet;
+	if sco-kid-come is false:
+		vcp "The kid doesn't trust you enough yet! They feel no closeness.";
 		not-yet;
 	if sco-rid-rum is true:
-		vcal "You already did this!";
+		vcal "You already got rid of the rum!";
 		already-done;
 	ready;
 
 this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The kid shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable.";
 
 volume table of noways
 
