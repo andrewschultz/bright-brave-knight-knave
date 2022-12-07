@@ -11,12 +11,15 @@ table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "write|right"	"rave"	--	--	false	false	false	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
+"fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	--
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	--
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	--
+"fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
+"bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if sco-write-right-rave is true:
@@ -30,7 +33,7 @@ to decide whether extra-rave-points:
 
 this is the vr-write-right-rave rule:
 	now sco-write-right-rave is true;
-	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game[else]Without seeing much of the game, either[end if]!";
+	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game![else]Without seeing much of the game, either! I'm a bit suspicious you're prying for hints, but no, no, I'll let it pass.[end if]";
 	if extra-rave-points:
 		increment cur-bonus;
 		now got-rave-bonus is true;
@@ -45,7 +48,21 @@ a goodrhyme rule (this is the vc-kite-cave rule):
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
 	say "You look around, and what do you know? You remember you were given a magical kite to start things off. It's a kite in a cave. But as you unravel it to fly it outside, it slips under a rock. You follow it some more, and it leads to an underground passage which eventually goes back up to...";
+	now Bass Bath is mapped below White Wave;
+	now White Wave is mapped below Bass Bath;
 	move player to Bass Bath;
+
+a goodrhyme rule (this is the vc-fight-fave rule):
+	if player is not in white wave and debug-allow-final is false, unavailable;
+	if sco-fight-fave is true:
+		vcal "You already started the final fight!";
+		already-done;
+	ready;
+
+this is the vr-fight-fave rule:
+	now sco-fight-fave is true;
+	say "You are ready to fight!";
+	move trite tully to White Wave;
 
 a goodrhyme rule (this is the vc-pass-path rule):
 	if player is not in bass bath, unavailable;
@@ -127,6 +144,53 @@ a goodrhyme rule (this is the vc-rid-rum rule):
 this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
 	say "The kid shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable.";
+
+a goodrhyme rule (this is the vc-fright-fully rule):
+	if Trite Tully is not fungible, unavailable;
+	if sco-fright-fully is true:
+		vcal "There must be another way to see Trite Tully!";
+		already-done;
+	ready;
+
+this is the vr-fright-fully rule:
+	now sco-fright-fully is true;
+	say "Well, that got rid of some of the irony of 'trite.'";
+	abide by the frightfully-bright-bully rule;
+
+a goodrhyme rule (this is the vc-bright-bully rule):
+	if Trite Tully is not fungible, unavailable;
+	if sco-bright-bully is true:
+		vcal "There must be another way to see Trite Tully!";
+		already-done;
+	ready;
+
+this is the vr-bright-bully rule:
+	now sco-bright-bully is true;
+	say "Yes, indeed, it isn't just about being trite or having irony.";
+	abide by the frightfully-bright-bully rule;
+
+section auxiliary rules
+
+this is the frightfully-bright-bully rule:
+	if tully-score is 2:
+		say "And you win.";
+		win-the-game;
+	else:
+		say "You see into Tully a bit. But not enough. There's more.";
+
+to win-the-game:
+[	if debug-state is true:
+		repeat through table of verb checks:
+			if idid entry is false:
+				say "[w1 entry] [w2 entry] undone.";]
+	increment core-score;
+	if cur-bonus is max-bonus:
+		choose row with final response rule of show-misses rule in the Table of Final Question Options;
+		blank out the whole row; [don't let the player see MISSED if they got everything]
+	follow the score and thinking changes rule;
+	force-status;
+	follow the shutdown rules;
+
 
 volume table of noways
 

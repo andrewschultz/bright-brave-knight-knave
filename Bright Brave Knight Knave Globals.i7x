@@ -16,9 +16,18 @@ sco-hid-hum is a truth state that varies.
 sco-kid-come is a truth state that varies.
 sco-rid-rum is a truth state that varies.
 
+section endgame--well, start
+
+sco-fight-fave is a truth state that varies.
+
+sco-fright-fully is a truth state that varies.
+sco-bright-bully is a truth state that varies.
+
 volume game state variables
 
 got-rave-bonus is a truth state that varies.
+
+debug-allow-final is a truth state that varies.
 
 Bright Brave Knight Knave Globals ends here.
 

@@ -12,6 +12,11 @@ book to say
 
 to say optional-hint-think-item: say "";
 
+volume helper definitions
+
+to decide which number is tully-score:
+	decide on boolval of sco-fright-fully + boolval of sco-bright-bully;
+
 volume gotoing
 
 to decide whether (di - a direction) is blocked: no;
