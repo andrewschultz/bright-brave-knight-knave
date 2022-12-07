@@ -25,8 +25,8 @@ to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 volume thing stuff
 
 table of first check rhymes
-mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
-a topic	a rule	a truth state	a rule	text
+mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
+text	text	a topic	a rule	a truth state	a rule	text
 
 Bright Brave Knight Knave Mistakes ends here.
 
