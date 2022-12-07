@@ -50,7 +50,7 @@ Rut Row is a room.
 
 book Slum Slid
 
-Slum Slid is a room. printed name is "Slum (Slid)".
+Slid Slum is a room.
 
 volume verb-checker rule
 
@@ -159,30 +159,10 @@ this is the verb-checker rule:
 		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--one of the words must work for a future solution[or][stopping][else]green[one of]--one of the words you thought must be right[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
 
-volume parsing
+volume endgame
 
-Rule for printing a parser error (this is the clue half right words rule):
-	now compare-item is the player;
-	abide by the rhyme-guess-checker rule for the table of first check rhymes;
-	abide by the game-specific-backdrop-check rule;
-	unless guess-table of location of player is table of no good guesses:
-		[if debug-state is true, say "DEBUG location guesses: [location of player], [guess-table of location of player].";]
-		abide by the rhyme-guess-checker rule for guess-table of location of player;
-	let table-list be a list of table names;
-	repeat with fun running through fungible rhymables:
-		let gtt be guess-table of fun;
-		if gtt is table of no good guesses or gtt is listed in table-list, next;
-		add gtt to table-list;
-		now compare-item is fun;
-		abide by the rhyme-guess-checker rule for gtt;
-	repeat with fun running through fungible people:
-		let gtt be guess-table of fun;
-		if gtt is table of no good guesses or gtt is listed in table-list, next;
-		add gtt to table-list;
-		now compare-item is fun;
-		abide by the rhyme-guess-checker rule for gtt;
-	abide by the verb-checker rule;
-	abide by the rhyme-guess-checker rule for table of general good guesses;
-	continue the action;
-
-the clue half right words rule is listed first in the for printing a parser error rulebook. [note: this caused a speedup when I first tried it. I'm not sure if this would last, so I'll need to do testing with this line vs with it commented out. ?? ]
+this is the show-misses rule:
+	if sco-write-right-rave is false:
+		say "You could have tried to [b]WRITE/RIGHT RAVE[r] to flatter me.";
+	else if got-rave-bonus is false:
+		say "You decided to [b]WRITE/RIGHT RAVE[r] too soon.";
