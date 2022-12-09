@@ -25,6 +25,10 @@ sco-bright-bully is a truth state that varies.
 
 volume game state variables
 
+guessed-bold-bowl is a truth state that varies.
+guessed-cold-coal is a truth state that varies.
+guessed-sold-soul is a truth state that varies.
+
 got-rave-bonus is a truth state that varies.
 
 debug-allow-final is a truth state that varies.

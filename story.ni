@@ -36,6 +36,24 @@ chapter leet learner
 
 the leet learner is in White Wave. "Something called a leet learner rests here.".
 
+chapter Hold Hole
+
+the hold hole is a rhymable. it is scenery.
+
+guess-table of hold hole is table of hold hole guesses.
+
+section cold coal
+
+the cold coal is a holeitem.
+
+section bold bowl
+
+the bold bowl is a holeitem.
+
+section sold soul
+
+the sold soul is a holeitem.
+
 chapter Trite Tully
 
 Trite Tully is a person.

@@ -31,6 +31,39 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 volume thing stuff
 
+table of hold hole guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bold"	"bowl"	--	false	--	"[item-guess of bold bowl]"
+"cold"	"coal"	--	false	--	"[item-guess of cold coal]"
+"fold"	"foal"	--	false	--	"<CLEVER REJECT TEXT>"
+"gold"	"goal"	--	false	--	"'Sacrilege!' a voice booms. 'YOU HAVE DESERTED YOUR TRUE NATURE!'[gold-death]"
+"mold"	"mole"	--	false	--	"<CLEVER REJECT TEXT>"
+"polled"	"pole"	--	false	--	"<CLEVER REJECT TEXT>"
+"rolled"	"role|roll"	--	false	--	"<CLEVER REJECT TEXT>"
+"scold"	"skoal"	--	false	--	"<CLEVER REJECT TEXT>"
+"sold"	"soul"	--	false	--	"[item-guess of sold soul]"
+"told"	"toll"	--	false	--	"<CLEVER REJECT TEXT>"
+
+to say gold-death:
+	end the story saying "Po['], Pal! Mo['] Mal!";
+	follow the shutdown rules;
+
+to say item-guess of (hi - a holeitem):
+	if hi is not off-stage:
+		say "You already have [the hi].";
+	else if hi is unguessed:
+		say "Yes. The [hi] must be one of the three items that fit in the hold hole. This is good to know.";
+		let pgh be number of unguessed holeitems;
+		if pgh is 1:
+			say "[line break]You feel slightly energized now that you know what your (w)hole quest is.";
+			increment cur-bonus;
+			follow the score and thinking changes rule;
+		else if pgh is 3:
+			say "[line break][i][bracket][b]NOTE:[r][i] you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.[close bracket]";
+		else:
+			say "[line break]There is one more item to guess, if you want.";
+		now hi is preguessed;
+
 table of first check rhymes
 mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 text	text	a topic	a rule	a truth state	a rule	text

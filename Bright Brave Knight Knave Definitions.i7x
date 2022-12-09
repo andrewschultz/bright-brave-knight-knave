@@ -2,6 +2,14 @@ Version 1/221007 of Bright Brave Knight Knave Definitions by Andrew Schultz begi
 
 "This gives basic definitions used by core modules or used repeatedly by the game, such as the number of puzzles solved in a certain room."
 
+book types
+
+to say bkn: say "bright brave knight/knave"
+
+a holeitem is a kind of rhymable. a holeitem is usually scenery.
+
+a holeitem can be unguessed or preguessed. a holeitem is usually unguessed.
+
 book definitions
 
 definition: a room (called rm) is available-from-here:

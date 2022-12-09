@@ -34,9 +34,12 @@ to decide whether extra-rave-points:
 this is the vr-write-right-rave rule:
 	now sco-write-right-rave is true;
 	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game![else]Without seeing much of the game, either! I'm a bit suspicious you're prying for hints, but no, no, I'll let it pass.[end if]";
+	increment cur-bonus;
 	if extra-rave-points:
 		increment cur-bonus;
 		now got-rave-bonus is true;
+	else:
+		max-down;
 
 a goodrhyme rule (this is the vc-kite-cave rule):
 	if player is not in white wave, unavailable;
@@ -47,10 +50,10 @@ a goodrhyme rule (this is the vc-kite-cave rule):
 
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
-	say "You look around, and what do you know? You remember you were given a magical kite to start things off. It's a kite in a cave. But as you unravel it to fly it outside, it slips under a rock. You follow it some more, and it leads to an underground passage which eventually goes back up to...";
+	say "You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. The floor under disappears. You run back out, unable to hold the kite.[paragraph break]The cave collapses. All that's left is a hold-hole, along with a passage down. Perhaps looking at the hold hole will give you some clues what to do with your journey.";
+	move hold hole to white wave;
 	now Bass Bath is mapped below White Wave;
 	now White Wave is mapped below Bass Bath;
-	move player to Bass Bath;
 
 a goodrhyme rule (this is the vc-fight-fave rule):
 	if player is not in white wave and debug-allow-final is false, unavailable;
@@ -189,8 +192,8 @@ to win-the-game:
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;
 	force-status;
+	end the story finally saying "Woo woo woo";
 	follow the shutdown rules;
-
 
 volume table of noways
 
