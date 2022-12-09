@@ -56,6 +56,8 @@ book Slum Slid
 
 Slid Slum is a room.
 
+guess-table of slid slum is the table of slid slum guesses.
+
 volume verb-checker rule
 
 this is the verb-checker rule:
