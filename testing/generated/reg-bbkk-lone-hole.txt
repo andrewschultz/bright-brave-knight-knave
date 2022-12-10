@@ -1,0 +1,87 @@
+## reg-bbjj-lone-hole.txt
+
+## checking hole-based item mechanics
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* north-block
+
+>z
+
+>kite cave
+
+>sold soul
+
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+
+>bold bowl
+There is one more item to guess, if you want.
+
+>cold coal
+by one point
+
+>undo
+>undo
+
+>cold coal
+There is one more item to guess, if you want.
+
+>bold bowl
+by one point
+
+>undo
+>undo
+>undo
+
+>cold coal
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+
+>bold bowl
+There is one more item to guess, if you want.
+
+>sold soul
+by one point
+
+>undo
+>undo
+
+>sold soul
+There is one more item to guess, if you want.
+
+>bold bowl
+by one point
+
+>undo
+>undo
+>undo
+
+>sold soul
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+
+>bold bowl
+There is one more item to guess, if you want.
+
+>cold coal
+by one point
+
+>undo
+>undo
+
+>cold coal
+There is one more item to guess, if you want.
+
+>bold bowl
+by one point
+
+>sold soul
+But you have already divined a need for the sold soul.
+
+>bold bowl
+But you have already divined a need for the bold bowl.
+
+>cold coal
+But you have already divined a need for the cold coal.
