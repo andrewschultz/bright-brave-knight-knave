@@ -56,7 +56,15 @@ this is the vr-kite-cave rule:
 	now White Wave is mapped below Bass Bath;
 
 a goodrhyme rule (this is the vc-fight-fave rule):
-	if player is not in white wave and debug-allow-final is false, unavailable;
+	if player is not in white wave and debug-allow-final is false:
+		vcp "Not here. There is a proper place for that, though.";
+		not-yet;
+	if hold hole is off-stage:
+		vcp "Perhaps in the far future. But right now, you've only gotten here. You need to build your strength and worth.";
+		not-yet;
+	if hole-progress < 3:
+		vcp "You aren't ready yet. The hold hole is not complete.";
+		not-yet;
 	if sco-fight-fave is true:
 		vcal "You already started the final fight!";
 		already-done;
@@ -64,7 +72,7 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 
 this is the vr-fight-fave rule:
 	now sco-fight-fave is true;
-	say "You are ready to fight!";
+	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.";
 	move trite tully to White Wave;
 
 a goodrhyme rule (this is the vc-pass-path rule):

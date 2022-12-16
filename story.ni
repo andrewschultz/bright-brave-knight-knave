@@ -34,7 +34,13 @@ volume rooms
 
 book white wave
 
-White Wave is a room. the player is in White Wave.
+White Wave is a room. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you created an involuntarily destroyed gave passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
+
+the player is in White Wave.
+
+check going down in White Wave:
+	if sco-fight-fave is true, say "You can't shirk the final fight!" instead;
+	if hold hole is unexamined and number of preguessed holeitems < 3, say "You may wish to examine the hold hole you created first." instead;
 
 chapter leet learner
 
@@ -42,7 +48,7 @@ the leet learner is in White Wave. "Something called a leet learner rests here."
 
 chapter Hold Hole
 
-the hold hole is a rhymable. "The hold hole created when the kite cave collapse sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole]."
+the hold hole is a rhymable. "The hold hole created when the kite cave collapse sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
 
 bold-hole is a truth state that varies.
 

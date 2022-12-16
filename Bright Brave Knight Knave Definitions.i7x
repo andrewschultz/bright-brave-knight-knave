@@ -2,6 +2,14 @@ Version 1/221007 of Bright Brave Knight Knave Definitions by Andrew Schultz begi
 
 "This gives basic definitions used by core modules or used repeatedly by the game, such as the number of puzzles solved in a certain room."
 
+book examineable
+
+a thing can be unexamined or examined. a thing is usually unexamined.
+
+report examining a thing (called th):
+	now th is examined;
+	continue the action;
+
 book types
 
 to say bkn: say "bright brave knight/knave"
@@ -11,6 +19,11 @@ a holeitem is a kind of rhymable. a holeitem is usually scenery.
 a holeitem can be unguessed, preguessed or in-hold. a holeitem is usually unguessed.
 
 guess-table of a holeitem is usually table of hold hole guesses.
+
+to decide whether hold-poke:
+	if hold hole is examined, no;
+	if number of unguessed holeitems < 3, no;
+	yes;
 
 section tracking hole progress
 
