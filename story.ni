@@ -238,6 +238,10 @@ this is the verb-checker rule:
 		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--one of the words must work for a future solution[or][stopping][else]green[one of]--one of the words you thought must be right[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
 
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
+
 volume endgame
 
 this is the show-misses rule:
@@ -247,3 +251,5 @@ this is the show-misses rule:
 		say "You decided to [b]WRITE/RIGHT RAVE[r] too soon.";
 	if got-hole-bonus is false:
 		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
+	if sco-ill-un is false:
+		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
