@@ -11,13 +11,16 @@ table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "write|right"	"rave"	--	--	false	false	false	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
-"fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	--
+"fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you have enough worth and confidence in you."
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
-"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	--
-"rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	--
+"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
+"rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
+"fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
+"will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
+"ill"	"un"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun"	--
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 
@@ -156,6 +159,42 @@ this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
 	say "The kid shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable.";
 
+a goodrhyme rule (this is the vc-fill-fun rule):
+	if player is not in nil none, unavailable;
+	if sco-fill-fun is true:
+		vcal "You already filled yourself up with fun!";
+		already-done;
+	ready;
+
+this is the vr-fill-fun rule:
+	now sco-fill-fun is true;
+	say "You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course.";
+
+a goodrhyme rule (this is the vc-will-won rule):
+	if player is not in nil none, unavailable;
+	if sco-fill-fun is false:
+		vcp "Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.";
+		not-yet;
+	if sco-will-won is true:
+		vcal "You already have a will to win!";
+		already-done;
+	ready;
+
+this is the vr-will-won rule:
+	now sco-will-won is true;
+	say "Yes. You sit and think. You regain your will to win.";
+
+a goodrhyme rule (this is the vc-ill-un rule):
+	if player is not in nil none, unavailable;
+	if sco-ill-un is true:
+		vcal "You already identified illun[']!";
+		already-done;
+	ready;
+
+this is the vr-ill-un rule:
+	now sco-ill-un is true;
+	say "You come to grips with how you [if sco-will-won is true]were[else]are[end if] slightly illun[']. This may not be terribly practical, but it's an important part of the Knave code now, you remember.";
+
 a goodrhyme rule (this is the vc-fright-fully rule):
 	if Trite Tully is not fungible, unavailable;
 	if sco-fright-fully is true:
@@ -202,6 +241,13 @@ to win-the-game:
 	force-status;
 	end the story finally saying "Woo woo woo";
 	follow the shutdown rules;
+
+to give-player (hi - a holeitem):
+	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
+	now player has hi;
+	if hole-progress is 1:
+		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much.";
+		move player to Nil None;
 
 volume table of noways
 

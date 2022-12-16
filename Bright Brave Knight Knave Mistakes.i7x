@@ -22,6 +22,19 @@ to say wrong-pron-lace: if the player's command matches "lace", say "[wrong-pron
 
 to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
+table of nil none guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bill"	"bun"	--	false	--	"<CLEVER REJECT TEXT>"
+"dill"	"done"	--	false	--	"<CLEVER REJECT TEXT>"
+"gill"	"gun"	--	false	--	"<CLEVER REJECT TEXT>"
+"hill"	"hun|hon"	--	false	--	"<CLEVER REJECT TEXT>"
+"nil"	"none"	--	false	--	"<CLEVER REJECT TEXT>"
+"pill"	"pun"	--	false	--	"<CLEVER REJECT TEXT>"
+"shill"	"shun"	--	false	--	"<CLEVER REJECT TEXT>"
+"sill"	"sun"	--	false	--	"<CLEVER REJECT TEXT>"
+"spill"	"spun"	--	false	--	"<CLEVER REJECT TEXT>"
+"till|til"	"ton"	--	false	--	"<CLEVER REJECT TEXT>"
+
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chid"	"chum"	--	false	--	"[if boffin boy is fungible]You have no friend to chide[else]forgiveness is more the thing here[end if]."

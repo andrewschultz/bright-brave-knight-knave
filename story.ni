@@ -121,6 +121,16 @@ Slid Slum is a room.
 
 guess-table of slid slum is the table of slid slum guesses.
 
+book Nil None
+
+Nil None is a room.
+
+check going down in Nil None:
+	if sco-will-won is false, say "You feel a fog of purpose, or lack thereof, around. You need to regain your values." instead;
+	if sco-ill-un is false, max-down;
+
+guess-table of Nil None is  the table of nil none guesses.
+
 volume verb-checker rule
 
 this is the verb-checker rule:

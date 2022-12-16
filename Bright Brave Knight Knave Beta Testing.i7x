@@ -29,8 +29,7 @@ carry out hiing:
 	repeat with HI running through holeitems:
 		if sumnum of HI is number understood:
 			if HI is not off-stage, say "You already found [the HI]." instead;
-			now player has HI;
-			say "You now have [the HI].";
+			give-player HI;
 			the rule succeeds;
 	say "WEIRD BUG: should've had a summonable help item corresponding to [the number understood].";
 	the rule succeeds;
