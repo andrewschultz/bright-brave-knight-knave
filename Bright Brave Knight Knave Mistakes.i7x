@@ -24,12 +24,17 @@ to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"chid"	"chum"	--	false	--	"<CLEVER REJECT TEXT>"
-"did"	"dumb"	--	false	--	"<CLEVER REJECT TEXT>"
-"mid"	"mum"	--	false	--	"<CLEVER REJECT TEXT>"
-"skid"	"scum"	--	false	--	"<CLEVER REJECT TEXT>"
+"chid"	"chum"	--	false	--	"[if boffin boy is fungible]You have no friend to chide[else]forgiveness is more the thing here[end if]."
+"did"	"dumb"	--	false	--	"[if boffin boy is fungible]You don't want to reflect on the past[else]A [bkn] doesn't put people through the ringer for past mistakes[end if]."
+"mid"	"mum"	--	false	--	"You don't need parental support or quiet."
+"skid"	"scum"	--	false	--	"No. A good [bkn] don't look down on people like that."
 
 volume thing stuff
+
+table of coughin coy boffin boy guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"offin"	"oi"	--	false	--	"That is not the life [the boy] deserves, and it's not the end he deserves, either."
+"soften"	"soy"	--	false	--	"Perhaps [the boy] will be able to get the education for such a bioengineering job, if you turn things around."
 
 table of hold hole guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

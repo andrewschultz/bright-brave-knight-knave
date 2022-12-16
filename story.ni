@@ -103,6 +103,12 @@ book Rut Row
 
 Rut Row is a room.
 
+chapter the kid
+
+the coughin coy boffin boy is a rhymable.
+
+guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
+
 book Slum Slid
 
 Slid Slum is a room.
