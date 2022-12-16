@@ -22,6 +22,10 @@ section testing - not for release
 
 include Bright Brave Knight Knave Tests by Andrew Schultz.
 
+section Beta Testing - not for release
+
+include Bright Brave Knight Knave Beta Testing by Andrew Schultz.
+
 volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;

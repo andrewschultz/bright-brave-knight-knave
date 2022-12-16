@@ -4,31 +4,21 @@ Version 1/221007 of Bright Brave Knight Knave Tests by Andrew Schultz begins her
 
 volume tests
 
-test w1 with "kite cave/pass path/mass math".
+test w1 with "kite cave"
 
-test w2 with "w/what whoah/w/hid hum/kid come/rid rum".
+test w1b with "bold bowl/cold coal/sold soul".
 
-test w2b with "write rave".
+test w2 with "d/pass path/mass math".
 
-test w3 with "final/e/e/s/d/fight fave/frightfully/bright bully".
+test w3 with "w/what whoah/w/hid hum/kid come/rid rum".
 
-test wa with "test w1/test w2/test w3".
+test w3b with "write rave".
 
-test wf with "test w1/test w2/test w2b/test w3".
+test w4 with "final/e/e/s/d/fight fave/frightfully/bright bully".
 
-volume cheats
+test wa with "test w1/test w2/test w3/test w4".
 
-chapter finaling
-
-finaling is an action out of world.
-
-understand the command "final" as something new.
-
-understand "final" as finaling.
-
-carry out finaling:
-	now debug-allow-final is true;
-	the rule succeeds;
+test wf with "test w1/test w1b/test w2/test w3b/test w3/test w4".
 
 Bright Brave Knight Knave Tests ends here.
 
