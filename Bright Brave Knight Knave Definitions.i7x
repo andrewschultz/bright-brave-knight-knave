@@ -8,7 +8,18 @@ to say bkn: say "bright brave knight/knave"
 
 a holeitem is a kind of rhymable. a holeitem is usually scenery.
 
-a holeitem can be unguessed or preguessed. a holeitem is usually unguessed.
+a holeitem can be unguessed, preguessed or in-hold. a holeitem is usually unguessed.
+
+guess-table of a holeitem is usually table of hold hole guesses.
+
+section tracking hole progress
+
+to decide which number is hole-progress:
+	decide on availval of bold bowl + availval of cold coal + availval of sold soul;
+
+to decide which number is availval of (th - a thing): [ usually boolvals can cover it but in this case I figured the bowl/coal/soul early on so hole-progress couldn't be expressed as sco- ]
+	if th is in nothing, decide on 1;
+	decide on 0;
 
 book definitions
 

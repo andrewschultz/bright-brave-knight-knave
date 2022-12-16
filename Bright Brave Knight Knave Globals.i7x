@@ -2,6 +2,17 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 "This defines basic global variables to help keep the main file that much cleaner."
 
+volume score values
+
+core-max is 10.
+
+max-bonus is 3.
+
+[ note in this case there are 2 bonus-bonus points outside the table:
+--figuring what the hold hole needs to hold
+--waiting to say WRITE RAVE
+]
+
 volume point scoring booleans
 
 sco-write-right-rave is a truth state that varies.
@@ -30,6 +41,7 @@ guessed-cold-coal is a truth state that varies.
 guessed-sold-soul is a truth state that varies.
 
 got-rave-bonus is a truth state that varies.
+got-hole-bonus is a truth state that varies.
 
 debug-allow-final is a truth state that varies.
 

@@ -38,21 +38,50 @@ the leet learner is in White Wave. "Something called a leet learner rests here."
 
 chapter Hold Hole
 
-the hold hole is a rhymable. it is scenery.
+the hold hole is a rhymable. "The hold hole created when the kite cave collapse sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole]."
+
+bold-hole is a truth state that varies.
+
+to say whats-in-hole:
+	if hole-progress is 0, continue the action;
+	say ". So far, you've placed [the list of holeitems in white wave] in the hold hole";
+	let pgh be number of preguessed holeitems;
+	if pgh > 0:
+		now bold-hole is true;
+		say ". You know [the list of preguessed holeitems] must go in the hold hole., but you haven't found [if pgh is 1]it[else]them[end if] yet";
+		now bold-hole is false;
+
+rule for printing the name of a holeitem (called hi) when bold-hole is true: say "[b][printed name of hi in upper case][r]";
 
 guess-table of hold hole is table of hold hole guesses.
 
 section cold coal
 
-the cold coal is a holeitem.
+a cold coal is a holeitem.
 
 section bold bowl
 
-the bold bowl is a holeitem.
+a bold bowl is a holeitem.
 
 section sold soul
 
-the sold soul is a holeitem.
+a sold soul is a holeitem.
+
+chapter hole finding items
+
+after printing the locale description for white wave:
+	let nch be number of carried holeitems;
+	if nch is 0, continue the action;
+	if number of carried holeitems > 0:
+		say "The hold hole shakes. Suddenly [the list of carried holeitems] [if nch is 1]flies[else]fly[end if] out of your hands and take [if nch is 1]its[else]their[end if] place in the hold hole.";
+	if number of holeitems in white wave is 3:
+		say "[line break]The hole is completed. It cracks. You sense you must settle a score here and now.";
+		moot hold hole;
+		moot cold coal;
+		moot sold soul;
+		moot bold bowl;
+	now all carried holeitems are in white wave;
+	continue the action;
 
 chapter Trite Tully
 
@@ -190,3 +219,5 @@ this is the show-misses rule:
 		say "You could have tried to [b]WRITE/RIGHT RAVE[r] to flatter me.";
 	else if got-rave-bonus is false:
 		say "You decided to [b]WRITE/RIGHT RAVE[r] too soon.";
+	if got-hole-bonus is false:
+		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
