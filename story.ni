@@ -121,6 +121,24 @@ Slid Slum is a room.
 
 guess-table of slid slum is the table of slid slum guesses.
 
+volume unsorted
+
+book spied speak cried creek
+
+Spied Speak Cried Creek is a room.
+
+chapter fried freak
+
+the Fried Freak is a person.
+
+chapter snide sneak
+
+the Snide Sneak is a person.
+
+chapter guide geek
+
+the Guide Geek is a person.
+
 book Nil None
 
 Nil None is a room.

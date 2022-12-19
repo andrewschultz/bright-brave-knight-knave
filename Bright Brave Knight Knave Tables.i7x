@@ -2,6 +2,8 @@ Version 1/221007 of Bright Brave Knight Knave Tables by Andrew Schultz begins he
 
 "This file contains the main verb-checking/point-scoring table as well as homonym detection."
 
+volume the main stuff
+
 to open-psg (di - a direction) and (rm - a room):
 	let lp be location of player;
 	change di exit of lp to rm;
@@ -18,11 +20,16 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
+"fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
+"snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
+"guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun"	--
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
+
+section white wave/universal point scoring
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if sco-write-right-rave is true:
@@ -78,6 +85,8 @@ this is the vr-fight-fave rule:
 	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.";
 	move trite tully to White Wave;
 
+section bass bath point scoring
+
 a goodrhyme rule (this is the vc-pass-path rule):
 	if player is not in bass bath, unavailable;
 	if sco-pass-path is true:
@@ -105,6 +114,8 @@ this is the vr-mass-math rule:
 	now sco-mass-math is true;
 	say "You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.";
 
+section rut row point scoring
+
 a goodrhyme rule (this is the vc-what-whoah rule):
 	if player is not in rut row, unavailable;
 	if sco-what-whoah is true:
@@ -116,6 +127,8 @@ this is the vr-what-whoah rule:
 	now sco-what-whoah is true;
 	say "It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.";
 	open-psg west and slum slid;
+
+section slid slum point scoring
 
 a goodrhyme rule (this is the vc-hid-hum rule):
 	if player is not in slid slum, unavailable;
@@ -158,6 +171,47 @@ a goodrhyme rule (this is the vc-rid-rum rule):
 this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
 	say "The kid shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable.";
+
+section spied speak cried creek point scoring
+
+a goodrhyme rule (this is the vc-fried-freak rule):
+	abide by the freak-sneak-geek rule;
+	if sco-fried-freak is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-fried-freak rule:
+	now sco-fried-freak is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-snide-sneak rule):
+	if sco-snide-sneak is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-snide-sneak is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-snide-sneak rule:
+	now sco-snide-sneak is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-guide-geek rule):
+	if sco-guide-geek is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-guide-geek is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-guide-geek rule:
+	now sco-guide-geek is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+section nil none point scoring
 
 a goodrhyme rule (this is the vc-fill-fun rule):
 	if player is not in nil none, unavailable;
@@ -220,6 +274,13 @@ this is the vr-bright-bully rule:
 	abide by the frightfully-bright-bully rule;
 
 section auxiliary rules
+
+this is the freak-sneak-geek rule:
+	if number of fungible eekers is 1 and player is not in cried creek:
+		vcp "You need to be back at [creek] to change whom to summon.";
+		not-yet;
+	if player is not in cried creek, unavailable;
+
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:

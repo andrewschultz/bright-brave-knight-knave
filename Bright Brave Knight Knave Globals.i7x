@@ -27,7 +27,11 @@ sco-hid-hum is a truth state that varies.
 sco-kid-come is a truth state that varies.
 sco-rid-rum is a truth state that varies.
 
-section variable (waypost after first hold hole piece)
+sco-fried-freak is a truth state that varies.
+sco-snide-sneak is a truth state that varies.
+sco-guide-geek is a truth state that varies.
+
+section variable (detour after first hold hole piece)
 
 sco-fill-fun is a truth state that varies.
 sco-will-won is a truth state that varies.
