@@ -4,9 +4,9 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 12.
+core-max is 13.
 
-max-bonus is 4.
+max-bonus is 5.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
@@ -26,6 +26,9 @@ sco-what-whoah is a truth state that varies.
 sco-hid-hum is a truth state that varies.
 sco-kid-come is a truth state that varies.
 sco-rid-rum is a truth state that varies.
+
+sco-mood-mapper is a truth state that varies.
+sco-nude-napper is a truth state that varies.
 
 sco-fried-freak is a truth state that varies.
 sco-snide-sneak is a truth state that varies.

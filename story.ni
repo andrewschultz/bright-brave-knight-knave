@@ -121,6 +121,16 @@ Slid Slum is a room.
 
 guess-table of slid slum is the table of slid slum guesses.
 
+book Crude Crapper
+
+Crude Crapper is a room.
+
+guess-table of crude crapper is the table of crude crapper guesses.
+
+chapter mood mapper
+
+the mood mapper is a thing. description is "It can't offer hints like the leet learner, but maybe you can [b]MM[r] people."
+
 volume unsorted
 
 book spied speak cried creek

@@ -20,6 +20,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
+"mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	--	--
+"nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
@@ -30,6 +32,29 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "candor"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
+
+a goodrhyme rule (this is the vc-mood-mapper rule):
+	if player is not in crude crapper and player does not have mood mapper, unavailable;
+	if sco-mood-mapper is true:
+		vcal "You already got the mood mapper/[']tude tapper!";
+		already-done;
+	ready;
+
+this is the vr-mood-mapper rule:
+	now sco-mood-mapper is true;
+	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
+	now player has mood mapper;
+
+a goodrhyme rule (this is the vc-nude-napper rule):
+	if player is not in crude crapper, unavailable;
+	if sco-nude-napper is true:
+		vcal "You don't want to be too much of a moral scold!";
+		already-done;
+	ready;
+
+this is the vr-nude-napper rule:
+	now sco-nude-napper is true;
+	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
 
 section white wave/universal point scoring
 
@@ -172,7 +197,8 @@ a goodrhyme rule (this is the vc-rid-rum rule):
 
 this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
-	say "The kid shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable.";
+	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You and [the boffin] part ways, and you see things a bit more clearly now. Oh, wow! There's somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
+	open-psg inside and crude crapper;
 
 section spied speak cried creek point scoring
 

@@ -23,6 +23,18 @@ to say wrong-pron-lace: if the player's command matches "lace", say "[wrong-pron
 
 to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
+table of crude crapper guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
+"cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
+"food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
+"lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
+"rude"	"rapper"	--	false	--	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
+"sued"	"sapper"	--	false	--	"That would be a villain worth fighting, but no."
+"strewed"	"strapper"	--	false	--	"No such contraption exists, fortunately. I think."
+"wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work."
+"youd"	"yap er"	--	false	--	"You feel as though you want to say something about the state of these environs, but what good would it do?"
+
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bill"	"bun"	--	false	--	"<CLEVER REJECT TEXT>"
