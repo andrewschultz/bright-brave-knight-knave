@@ -240,7 +240,8 @@ a goodrhyme rule (this is the vc-will-won rule):
 
 this is the vr-will-won rule:
 	now sco-will-won is true;
-	say "Yes. You sit and think. You regain your will to win.";
+	say "Yes. You sit and think. You regain your will to win. You are ready to move on. You move back to familiar territory...";
+	move player to pre-hole-item-room;
 
 a goodrhyme rule (this is the vc-ill-un rule):
 	if player is not in nil none, unavailable;

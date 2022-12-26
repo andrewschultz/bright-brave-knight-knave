@@ -35,8 +35,9 @@ to decide which number is hole-progress:
 	decide on availval of bold bowl + availval of cold coal + availval of sold soul;
 
 to decide which number is availval of (th - a thing): [ usually boolvals can cover it but in this case I figured the bowl/coal/soul early on so hole-progress couldn't be expressed as sco- ]
-	if th is in nothing, decide on 1;
-	decide on 0;
+	if player has th, decide on 1;
+	if th is in nothing, decide on 0;
+	decide on 1;
 
 book definitions
 

@@ -4,6 +4,8 @@ Version 1/221007 of Bright Brave Knight Knave Tests by Andrew Schultz begins her
 
 volume tests
 
+book main walkthrough
+
 test w1 with "kite cave"
 
 test w1b with "bold bowl/cold coal/sold soul".
@@ -19,6 +21,16 @@ test w4 with "final/e/e/s/d/fight fave/frightfully/bright bully".
 test wa with "test w1/test w2/test w3/test w4".
 
 test wf with "test w1/test w1b/test w2/test w3b/test w3/test w4".
+
+book quick walkthrough
+
+test j1 with "test w1/hi 1"
+
+test j2 with "illun/fill fun/will won/hi 2"
+
+test j3 with "candor cove/hi 3"
+
+test j4 with "grander grove"
 
 Bright Brave Knight Knave Tests ends here.
 

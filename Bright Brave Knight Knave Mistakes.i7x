@@ -8,6 +8,7 @@ to current-table-note-x (tn - a table name):
 table of general good guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "slight"	"slave"	--	false	--	"You grumble about how you are a slight slave to your quest. It's therapeutic."
+"shite"	"shave"	--	false	--	"This isn't the time or place to kvetch about personal grooming."
 
 volume room stuff
 
@@ -33,7 +34,12 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "shill"	"shun"	--	false	--	"<CLEVER REJECT TEXT>"
 "sill"	"sun"	--	false	--	"<CLEVER REJECT TEXT>"
 "spill"	"spun"	--	false	--	"<CLEVER REJECT TEXT>"
+"still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even after you half make your way out of this fog."
 "till|til"	"ton"	--	false	--	"<CLEVER REJECT TEXT>"
+
+this is the nil-none-name rule:
+	if sco-fill-fun is false, the rule succeeds;
+	the rule fails;
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
