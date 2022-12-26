@@ -151,6 +151,12 @@ check going down in Nil None:
 
 guess-table of Nil None is  the table of nil none guesses.
 
+book Stander Stove
+
+Stander Stove is a room. "You're trapped in what appears to be a metal stove[if stove-prog > 0], again[end if]. There seems to be no way out[if stove-prog > 0], and the way you left last time seems blocked[end if]. You need to envision a much nicer place than here."
+
+guess-table of Stander Stove is the table of stander stove guesses.
+
 volume verb-checker rule
 
 this is the verb-checker rule:

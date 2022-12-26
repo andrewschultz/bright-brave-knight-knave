@@ -26,6 +26,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun"	--
+"grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
+"candor"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 
@@ -258,6 +260,34 @@ a goodrhyme rule (this is the vc-fright-fully rule):
 		already-done;
 	ready;
 
+section stander stove rules
+
+a goodrhyme rule (this is the vc-grander-grove rule):
+	if player is not in stander stove, unavailable;
+	if sco-grander-grove is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-grander-grove rule:
+	now sco-grander-grove is true;
+	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
+	move player to pre-hole-item-room;
+
+a goodrhyme rule (this is the vc-candor-cove rule):
+	if player is not in stander stove, unavailable;
+	if sco-candor-cove is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-candor-cove rule:
+	now sco-candor-cove is true;
+	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
+	move player to pre-hole-item-room;
+
+section very endgame stuff
+
 this is the vr-fright-fully rule:
 	now sco-fright-fully is true;
 	say "Well, that got rid of some of the irony of 'trite.'";
@@ -338,9 +368,13 @@ to win-the-game:
 to give-player (hi - a holeitem):
 	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
 	now player has hi;
+	now pre-hole-item-room is location of player;
 	if hole-progress is 1:
-		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much.";
+		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much. You close you eyes, wondering if you really deserve to have made any progress just through all those silly rhymes. Nothing seems to matter. Then ... you wind up in, or near, nothing.";
 		move player to Nil None;
+	else:
+		say "[line break]That same weightlessness as before. Darkness envelops you, and when it releases you, you're somewhere [one of]new[or]unpleasantly familiar[stopping].";
+		move player to Stander Stove;
 
 volume table of noways
 

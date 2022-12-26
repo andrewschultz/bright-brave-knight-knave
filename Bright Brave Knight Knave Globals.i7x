@@ -31,11 +31,14 @@ sco-fried-freak is a truth state that varies.
 sco-snide-sneak is a truth state that varies.
 sco-guide-geek is a truth state that varies.
 
-section variable (detour after first hold hole piece)
+section variable (detours after each hold hole piece is recovered)
 
 sco-fill-fun is a truth state that varies.
 sco-will-won is a truth state that varies.
 sco-ill-un is a truth state that varies.
+
+sco-grander-grove is a truth state that varies.
+sco-candor-cove is a truth state that varies.
 
 section endgame--well, start
 
@@ -54,6 +57,8 @@ got-rave-bonus is a truth state that varies.
 got-hole-bonus is a truth state that varies.
 
 debug-allow-final is a truth state that varies.
+
+pre-hole-item-room is a room that varies.
 
 Bright Brave Knight Knave Globals ends here.
 
