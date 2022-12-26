@@ -129,15 +129,17 @@ Spied Speak Cried Creek is a room.
 
 chapter fried freak
 
-the Fried Freak is a person.
+the Fried Freak is an eeker.
 
 chapter snide sneak
 
-the Snide Sneak is a person.
+the Snide Sneak is an eeker.
 
 chapter guide geek
 
-the Guide Geek is a person.
+the Guide Geek is an eeker.
+
+volume distraction rooms
 
 book Nil None
 

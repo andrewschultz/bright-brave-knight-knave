@@ -25,6 +25,10 @@ to decide whether hold-poke:
 	if number of unguessed holeitems < 3, no;
 	yes;
 
+an eeker is a kind of person. an eeker can be dormant, active, postponed or finished. an eeker is usually dormant.
+
+the eeker manipulation rules are an eeker based rulebook. the eeker manipulation rules have outcomes unavailable, not-yet, already-done, jump-reject, semi-pass and ready.
+
 section tracking hole progress
 
 to decide which number is hole-progress:

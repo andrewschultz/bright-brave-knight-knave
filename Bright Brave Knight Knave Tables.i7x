@@ -175,7 +175,7 @@ this is the vr-rid-rum rule:
 section spied speak cried creek point scoring
 
 a goodrhyme rule (this is the vc-fried-freak rule):
-	abide by the freak-sneak-geek rule;
+	abide by the freak-sneak-geek check rule for fried freak;
 	if sco-fried-freak is true:
 		vcal "You already did this!";
 		already-done;
@@ -186,6 +186,7 @@ this is the vr-fried-freak rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
+	abide by the freak-sneak-geek check rule for snide sneak;
 	if sco-snide-sneak is false:
 		vcp "You still need to do something!";
 		not-yet;
@@ -199,6 +200,7 @@ this is the vr-snide-sneak rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-guide-geek rule):
+	abide by the freak-sneak-geek check rule for guide geek;
 	if sco-guide-geek is false:
 		vcp "You still need to do something!";
 		not-yet;
@@ -275,12 +277,42 @@ this is the vr-bright-bully rule:
 
 section auxiliary rules
 
-this is the freak-sneak-geek rule:
+an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek check rule):
+	if ee is moot:
+		now already-rhymed-this is true;
+		if vc-dont-print is false, say "But you already got through to [the ee]!";
+		already-done;
+	if ee is fungible:
+		if vc-dont-print is false, say "But [the ee] is already here!";
+		already-done;
 	if number of fungible eekers is 1 and player is not in cried creek:
 		vcp "You need to be back at [creek] to change whom to summon.";
 		not-yet;
 	if player is not in cried creek, unavailable;
 
+an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek swap rule):
+	if number of fungible eekers is 0:
+		say "The [ee] looks around, slightly uncomfortable. They see no one they dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
+		continue the action;
+	let rfe be random fungible eeker;
+	let got-one be false;
+	repeat through table of eeker conflicts:
+		unless rfe is eekold entry and ee is eeknew entry, next;
+		say "[eektxt entry][line break]";
+		break;
+	if got-one is false, say "BUG: need non-generic response for sidelining [rfe] for [ee].";
+	move rfe to gazy gap;
+	now rfe is postponed;
+	move ee to location of player;
+
+table of eeker conflicts
+eekold	eeknew	eektxt
+fried freak	guide geek	"<stuff>"
+fried freak	snide sneak	"<stuff>"
+guide geek	fried freak	"<stuff>"
+guide geek	snide sneak	"<stuff>"
+snide sneak	fried freak	"<stuff>"
+snide sneak	guide geek	"<stuff>"
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:
