@@ -25,9 +25,27 @@ to decide whether hold-poke:
 	if number of unguessed holeitems < 3, no;
 	yes;
 
-an eeker is a kind of person. an eeker can be dormant, active, postponed or finished. an eeker is usually dormant.
+chapter eekers
+
+an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
+
+an eeker can be creeky or crooty. an eeker is usually creeky.
+
+an eeker can be pairedyet. an eeker is usually not pairedyet.
+
+an eeker has a number called matchnum.
 
 the eeker manipulation rules are an eeker based rulebook. the eeker manipulation rules have outcomes unavailable, not-yet, already-done, jump-reject, semi-pass and ready.
+
+to sideline (th - a thing):
+	move th to Hidey House;
+	if th is an eeker:
+		now th is postponed;
+
+definition: an eeker (called ee) is nonconflicting:
+	if ee is crooty and number of fungible crooty eekers is 0, yes;
+	if ee is creeky and number of fungible creeky eekers is 0, yes;
+	no;
 
 section tracking hole progress
 
