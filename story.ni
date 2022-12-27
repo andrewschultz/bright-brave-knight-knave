@@ -133,6 +133,14 @@ the mood mapper is a thing. description is "It can't offer hints like the leet l
 
 volume unsorted
 
+book Recruiter
+
+recroom is a privately-named room. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
+
+guess-table of recroom is the table of recroom guesses.
+
+the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
+
 book spied speak cried creek
 
 Spied Speak Cried Creek is a room.

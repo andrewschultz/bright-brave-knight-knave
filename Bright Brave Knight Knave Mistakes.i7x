@@ -37,21 +37,24 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bill"	"bun"	--	false	--	"<CLEVER REJECT TEXT>"
-"dill"	"done"	--	false	--	"<CLEVER REJECT TEXT>"
-"gill"	"gun"	--	false	--	"<CLEVER REJECT TEXT>"
-"hill"	"hun|hon"	--	false	--	"<CLEVER REJECT TEXT>"
-"nil"	"none"	--	false	--	"<CLEVER REJECT TEXT>"
-"pill"	"pun"	--	false	--	"<CLEVER REJECT TEXT>"
-"shill"	"shun"	--	false	--	"<CLEVER REJECT TEXT>"
-"sill"	"sun"	--	false	--	"<CLEVER REJECT TEXT>"
-"spill"	"spun"	--	false	--	"<CLEVER REJECT TEXT>"
+"bill"	"bun"	--	false	--	"You can pay for food once you're here."
+"dill"	"done"	--	false	--	"This isn't a cooking sim."
+"gill"	"gun"	--	false	--	"You don't need a fancy weapon."
+"hill"	"hun|hon"	--	false	--	"You don't need to be attacked, or take saccharine praise, from above."
+"pill"	"pun"	--	false	--	"Drug humor won't help here."
+"shill"	"shun"	--	false	--	"Alas, there is nobody to reject and feel better about yourself."
+"sill"	"sun"	--	false	--	"No light-giving window appears."
+"spill"	"spun"	--	false	--	"Alas, no solution to your woes is created, nor does it tumble out."
 "still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even after you half make your way out of this fog."
-"till|til"	"ton"	--	false	--	"<CLEVER REJECT TEXT>"
+"till|til"	"ton"	--	false	--	"Things are weighty enough here."
 
 this is the nil-none-name rule:
 	if sco-fill-fun is false, the rule succeeds;
 	the rule fails;
+
+table of recroom guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"seek"	"suitor"	--	false	--	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

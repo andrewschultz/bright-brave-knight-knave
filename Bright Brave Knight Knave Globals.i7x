@@ -33,6 +33,7 @@ sco-nude-napper is a truth state that varies.
 sco-fried-freak is a truth state that varies.
 sco-snide-sneak is a truth state that varies.
 sco-guide-geek is a truth state that varies.
+sco-stride-streak is a truth state that varies.
 
 section variable (detours after each hold hole piece is recovered)
 

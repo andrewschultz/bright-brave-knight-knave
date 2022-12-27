@@ -22,6 +22,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
 "mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	--	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
+"meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
+"chic"	"shooter"	--	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
+"weak"	"wooter"	--	--	false	true	true	false	recroom	vc-weak-wooter rule	vr-weak-wooter rule	--	--
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
@@ -200,41 +203,70 @@ this is the vr-rid-rum rule:
 	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You and [the boffin] part ways, and you see things a bit more clearly now. Oh, wow! There's somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
 	open-psg inside and crude crapper;
 
+section recruiter
+
+a goodrhyme rule (this is the vc-chic-shooter rule):
+	if player is not in recroom, unavailable;
+	if sco-chic-shooter is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-chic-shooter is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-chic-shooter rule:
+	now sco-chic-shooter is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-meek-mooter rule):
+	if player is not in recroom, unavailable;
+	if sco-meek-mooter is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-meek-mooter is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-meek-mooter rule:
+	now sco-meek-mooter is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-weak-wooter rule):
+	if player is not in recroom, unavailable;
+	if sco-weak-wooter is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-weak-wooter is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-weak-wooter rule:
+	now sco-weak-wooter is true;
+	say "Hooray! You figured what to do! You get a point!";
+
 section spied speak cried creek point scoring
 
 a goodrhyme rule (this is the vc-fried-freak rule):
 	abide by the freak-sneak-geek check rule for fried freak;
-	if sco-fried-freak is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-fried-freak rule:
 	now sco-fried-freak is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the freak-sneak-geek swap rule for fried freak;
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
 	abide by the freak-sneak-geek check rule for snide sneak;
-	if sco-snide-sneak is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-snide-sneak is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-snide-sneak rule:
 	now sco-snide-sneak is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the freak-sneak-geek swap rule for snide sneak;
 
 a goodrhyme rule (this is the vc-guide-geek rule):
 	abide by the freak-sneak-geek check rule for guide geek;
-	if sco-guide-geek is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-guide-geek is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-guide-geek rule:
