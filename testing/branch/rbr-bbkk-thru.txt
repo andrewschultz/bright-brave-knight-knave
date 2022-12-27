@@ -95,18 +95,50 @@ You don't need an undead chasing you so soon. Or ever, really.
 \\
 >write zrave
 {$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-3-fave
+>zfight fave
+{$YELLOWCOREFIRST}
+\\
+#testcase-ha-half-table-of-verb-checks-3-fight
+>fight zfave
+{$YELLOWCORE}
 
 @rej
 ====alphabetize on
-#testcase-reject-start-table-of-verb-checks-vr-mass-math-rule
+#testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
+>bright bully
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
+>fright fully
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
+>hid hum
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
+>kid come
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-kite-cave-rule
+>kite cave
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
 >mass math
 {$REJECT2}
 \\
-#testcase-reject-start-table-of-verb-checks-vr-pass-path-rule
+#testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
 >pass path
 {$REJECT2}
 \\
-#testcase-reject-start-table-of-verb-checks-vr-what-whoah-rule
+#testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
+>rid rum
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
 {$REJECT2}
 ====alphabetize off
@@ -118,6 +150,72 @@ You're kind of confused about directions, here. You maybe need to find some way 
 
 >kite cave
 by one point
+
+@mis
+#testcase-mistakes-table-of-hold-hole-guesses-gold-goal
+>gold goal
+"Sacrilege!" a voice booms. "YOU HAVE DESERTED YOUR TRUE NATURE!"
+WRONG
+\\
+>undo
+
+@mis+
+#testcase-mistakes-table-of-hold-hole-guesses-scold-skoal
+>scold skoal
+Discouraging a Viking feast might be brave, but it also might not be bright.
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-told-toll
+>told toll
+You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one.
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-fold-foal
+>fold foal
+The hold hole does not seek animal sacrifice, and neither should you.
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-mold-mole
+>mold mole
+The hold hole does not seek animal sacrifice, and neither should you.
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled pole
+That's a bit too repetitive, but the general idea feels right.
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-rolled-role-roll
+>rolled roll
+That's a bit too repetitive, but the general idea feels right.
+\\
+>rolled role
+That's a bit too repetitive, but the general idea feels right.
+
+@!min
+>bold bowl
+WRONG
+\\
+>cold coal
+WRONG
+\\
+>sold soul
+WRONG
+by one point
+
+@mis
+#testcase-mistakes-table-of-hold-hole-guesses-bold-bowl
+>bold bowl
+WRONG
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-cold-coal
+>cold coal
+WRONG
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-sold-soul
+>sold soul
+WRONG
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled pole
+That's a bit too repetitive, and there's nothing more to figure out, anyway
+
+>d
 
 @all
 #testcase-room-names-bass-bath
@@ -133,44 +231,44 @@ by one point
 The bass bath surrounds you. How can you find a way out?
 
 @mis
-#ttc-table-of-bass-bath-guesses-has-hath
+#testcase-mistakes-table-of-bass-bath-guesses-has-hath
 >has hath
 You conjugate old English verbs, in case this may be important in the future. It isn't right now.
 \\
-#ttc-table-of-bass-bath-guesses-lace-lass-lath
+#testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
 >lace lath
 You need no washing machine, especially not early in the game before you worked up a sweat. You also wonder if you are pronouncing things right.
 \\
-#+ttc-table-of-bass-bath-guesses-lace-lass-lath
+#+testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
 >lass lath
 `You need no washing machine, especially not early in the game before you worked up a sweat.
 \\
-#ttc-table-of-bass-bath-guesses-place-plath
+#testcase-mistakes-table-of-bass-bath-guesses-place-plath
 >place plath
 You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, The Bell Jar. You also wonder if you are pronouncing things right.
 \\
-#ttc-table-of-bass-bath-guesses-race-wrath
+#testcase-mistakes-table-of-bass-bath-guesses-race-wrath
 >race wrath
 You get as mad as you can, as fast as you can. You also wonder if you are pronouncing things right.
 \\
-#ttc-table-of-general-good-guesses-slight-slave
+#testcase-mistakes-table-of-general-good-guesses-slight-slave
 >slight slave
 You grumble about how you are a slight slave to your quest. It's therapeutic.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-3-pass
+#testcase-ha-half-table-of-verb-checks-4-pass
 >pass zpath
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-3-path
+#testcase-ha-half-table-of-verb-checks-4-path
 >zpass path
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-4-mass
+#testcase-ha-half-table-of-verb-checks-5-mass
 >mass zmath
 {$YELLOWCOREFIRST}
 \\
-#testcase-ha-half-table-of-verb-checks-4-math
+#testcase-ha-half-table-of-verb-checks-5-math
 >zmass math
 {$YELLOWCORE}
 
@@ -200,19 +298,10 @@ You can use MASS MATH once you have something to calculate.
 #+ttc-table-of-noways-bass-bath
 >w
 Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
-
-@ha
-#+testcase-ha-half-table-of-verb-checks-4-mass
->mass zmath
-{$GREENCORE}
 \\
-#+testcase-ha-half-table-of-verb-checks-4-math
->zmass math
-{$GREENCORE}
-
-@gt
 #+ttc-table-of-noways-bass-bath
->gt
+>s
+WRONG
 You can go pretty much any way from here but not south.
 
 >mass math
@@ -229,29 +318,148 @@ by one point
 WRONG
 
 @alt
-#testcase-alt-words-table-of-verb-checks-5-whoa-whoah
+#testcase-alt-words-table-of-verb-checks-6-whoa-whoah
 >what whoa
 by one point
 \\
 >undo
 
 @ha
-#testcase-ha-half-table-of-verb-checks-5-what
+#testcase-ha-half-table-of-verb-checks-6-what
 >what zwhoah
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-5-whoa-whoah
+#testcase-ha-half-table-of-verb-checks-6-whoa-whoah
 >zwhat whoah
 {$GREENCORE}
 
 @all
 #testcase-room-names-slum-slid
-`Slum (Slid)
+`Slid Slum
 
 @gt
 #ttc-table-of-noways-slum-slid
 >w
 Maybe you can go west, but for your safety, it is inadvisable.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-7-hid
+>hid hum
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-7-hum
+>hid hum
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-come
+>kid come
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-kid
+>kid come
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-rid
+>rid rum
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-rum
+>rid rum
+{$YELLOWCORE}
+
+@mis
+#testcase-mistakes-table-of-slid-slum-guesses-chid-chum
+>chid chum
+You have no friend to chide.
+\\
+#testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+A brave bright knight knave doesn't put people through the ringer for past mistakes.
+\\
+#testcase-mistakes-table-of-slid-slum-guesses-mid-mum
+>mid mum
+You don't need parental support or quiet.
+\\
+#testcase-mistakes-table-of-slid-slum-guesses-skid-scum
+>skid scum
+No. A good brave bright knight knave don't look down on people like that.
+
+>hid hum
+by one point
+
+@mis
+#+testcase-mistakes-table-of-slid-slum-guesses-chid-chum
+>chid chum
+Forgiveness is more the thing here.
+\\
+#+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+You don't want to reflect on the past.
+
+>kid come
+by one point
+
+@mis
+#testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-offin-oi
+>offin oi
+That is not the life the coughin' coy boffin boy deserves, and it's not the end he deserves, either.
+\\
+#testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-soften-soy
+>soften soy
+Perhaps the coughin' coy boffin boy will be able to get the education for such a bioengineering job, if you turn things around.
+
+>rid rum
+by one point
+
+>e
+
+>e
+
+>s
+
+>hitm 1
+>hitm 2
+>hitm 3
+
+>d
+
+>fight fave
+by one point
+
+@all
+>bright bully
+by one point
+\\
+>frightfully
+by one point
+UNDO
+\\
+>undo
+>undo
+
+@ha
+#testcase-ha-half-table-of-verb-checks-10-fright
+>fright zfully
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-10-fully
+>zfright fully
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-bright
+>bright zbully
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-bully
+>zbright bully
+{$GREENCORE}
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+UNDO
 
 #####################################################################ending stuff put in here for later
 
@@ -259,19 +467,19 @@ Maybe you can go west, but for your safety, it is inadvisable.
 >gt hidey house
 \\
 ====alphabetize on
-#testcase-reject-end-table-of-verb-checks-vr-kite-cave-rule
+#testcase-reject-end-table-of-verb-checks-vc-kite-cave-rule
 >kite cave
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-mass-math-rule
+#testcase-reject-end-table-of-verb-checks-vc-mass-math-rule
 >mass math
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-pass-path-rule
+#testcase-reject-end-table-of-verb-checks-vc-pass-path-rule
 >pass path
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vr-what-whoah-rule
+#testcase-reject-end-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
 {$REJECT2}
 ====alphabetize off

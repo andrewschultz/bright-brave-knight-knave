@@ -1,5 +1,3 @@
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-
 ## reg-bbkk-thru-min.txt
 ## GENERATOR FILE: rbr-bbkk-thru.txt
 
@@ -15,10 +13,43 @@
 >kite cave
 by one point
 
+>d
+
 >pass path
 
 >mass math
 by one point
 
 >w
+
+>hid hum
+by one point
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>e
+
+>e
+
+>s
+
+>hitm 1
+>hitm 2
+>hitm 3
+
+>d
+
+>fight fave
+by one point
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+UNDO
 

@@ -1,5 +1,3 @@
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-
 ## reg-bbkk-thru-ha-half.txt
 ## GENERATOR FILE: rbr-bbkk-thru.txt
 
@@ -34,48 +32,131 @@ The HA HALF button on your Leet Learner lights up green. Very dim, though. Perha
 >write zrave
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
+#testcase-ha-half-table-of-verb-checks-3-fave
+>zfight fave
+The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
+
+#testcase-ha-half-table-of-verb-checks-3-fight
+>fight zfave
+The HA HALF button on your Leet Learner lights up yellow.
+
 >kite cave
 by one point
+
+>bold bowl
+WRONG
+
+>cold coal
+WRONG
+
+>sold soul
+WRONG
+by one point
+
+>d
 
 >write rave
 by one point
 
-#testcase-ha-half-table-of-verb-checks-3-pass
+#testcase-ha-half-table-of-verb-checks-4-pass
 >pass zpath
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-3-path
+#testcase-ha-half-table-of-verb-checks-4-path
 >zpass path
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-4-mass
+#testcase-ha-half-table-of-verb-checks-5-mass
 >mass zmath
 The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
 
-#testcase-ha-half-table-of-verb-checks-4-math
+#testcase-ha-half-table-of-verb-checks-5-math
 >zmass math
 The HA HALF button on your Leet Learner lights up yellow.
 
 >pass path
-
-#+testcase-ha-half-table-of-verb-checks-4-mass
->mass zmath
-The HA HALF button on your Leet Learner lights up green.
-
-#+testcase-ha-half-table-of-verb-checks-4-math
->zmass math
-The HA HALF button on your Leet Learner lights up green.
 
 >mass math
 by one point
 
 >w
 
-#testcase-ha-half-table-of-verb-checks-5-what
+#testcase-ha-half-table-of-verb-checks-6-what
 >what zwhoah
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-5-whoa-whoah
+#testcase-ha-half-table-of-verb-checks-6-whoa-whoah
 >zwhat whoah
 The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-7-hid
+>hid hum
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-7-hum
+>hid hum
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-8-come
+>kid come
+The HA HALF button on your Leet Learner lights up yellow.
+
+#testcase-ha-half-table-of-verb-checks-8-kid
+>kid come
+The HA HALF button on your Leet Learner lights up yellow.
+
+#testcase-ha-half-table-of-verb-checks-9-rid
+>rid rum
+The HA HALF button on your Leet Learner lights up yellow.
+
+#testcase-ha-half-table-of-verb-checks-9-rum
+>rid rum
+The HA HALF button on your Leet Learner lights up yellow.
+
+>hid hum
+by one point
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>e
+
+>e
+
+>s
+
+>hitm 1
+>hitm 2
+>hitm 3
+
+>d
+
+>fight fave
+by one point
+
+#testcase-ha-half-table-of-verb-checks-10-fright
+>fright zfully
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-10-fully
+>zfright fully
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-11-bright
+>bright zbully
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-11-bully
+>zbright bully
+The HA HALF button on your Leet Learner lights up green.
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+UNDO
 
