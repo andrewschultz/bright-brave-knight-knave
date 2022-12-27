@@ -183,51 +183,33 @@ this is the vr-rid-rum rule:
 section recruiter
 
 a goodrhyme rule (this is the vc-chic-shooter rule):
-	if player is not in recroom, unavailable;
-	if sco-chic-shooter is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-chic-shooter is true:
-		vcal "You already did this!";
-		already-done;
+	abide by the eeker check rule for chic shooter;
 	ready;
 
 this is the vr-chic-shooter rule:
 	now sco-chic-shooter is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the mooter-shooter-wooter swap rule for chic shooter;
 
 a goodrhyme rule (this is the vc-meek-mooter rule):
-	if player is not in recroom, unavailable;
-	if sco-meek-mooter is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-meek-mooter is true:
-		vcal "You already did this!";
-		already-done;
+	abide by the eeker check rule for meek mooter;
 	ready;
 
 this is the vr-meek-mooter rule:
 	now sco-meek-mooter is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the mooter-shooter-wooter swap rule for meek mooter;
 
 a goodrhyme rule (this is the vc-weak-wooter rule):
-	if player is not in recroom, unavailable;
-	if sco-weak-wooter is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-weak-wooter is true:
-		vcal "You already did this!";
-		already-done;
+	abide by the eeker check rule for weak wooter;
 	ready;
 
 this is the vr-weak-wooter rule:
 	now sco-weak-wooter is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the mooter-shooter-wooter swap rule for weak wooter;
 
 section spied speak cried creek point scoring
 
 a goodrhyme rule (this is the vc-fried-freak rule):
-	abide by the freak-sneak-geek check rule for fried freak;
+	abide by the eeker check rule for fried freak;
 	ready;
 
 this is the vr-fried-freak rule:
@@ -235,7 +217,7 @@ this is the vr-fried-freak rule:
 	abide by the freak-sneak-geek swap rule for fried freak;
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
-	abide by the freak-sneak-geek check rule for snide sneak;
+	abide by the eeker check rule for snide sneak;
 	ready;
 
 this is the vr-snide-sneak rule:
@@ -243,7 +225,7 @@ this is the vr-snide-sneak rule:
 	abide by the freak-sneak-geek swap rule for snide sneak;
 
 a goodrhyme rule (this is the vc-guide-geek rule):
-	abide by the freak-sneak-geek check rule for guide geek;
+	abide by the eeker check rule for guide geek;
 	ready;
 
 this is the vr-guide-geek rule:
@@ -382,7 +364,7 @@ this is the vr-bright-bully rule:
 
 section auxiliary rules
 
-an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek check rule):
+an eeker manipulation rule for an eeker (called ee) (this is the eeker check rule):
 	if ee is moot:
 		now already-rhymed-this is true;
 		if vc-dont-print is false, say "But you already got through to [the ee]!";
@@ -418,6 +400,12 @@ guide geek	fried freak	"<stuff>"
 guide geek	snide sneak	"<stuff>"
 snide sneak	fried freak	"<stuff>"
 snide sneak	guide geek	"<stuff>"
+chic shooter	meek mooter	"<stuff>"
+chic shooter	weak wooter	"<stuff>"
+meek mooter	chic shooter	"<stuff>"
+meek mooter	weak wooter	"<stuff>"
+weak wooter	meek mooter	"<stuff>"
+weak wooter	chic shooter	"<stuff>"
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:

@@ -145,21 +145,33 @@ guess-table of recroom is the table of recroom guesses.
 
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
 
+chapter chic shooter
+
+the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is 1.
+
+chapter meek mooter
+
+the Meek Mooter is a crooty eeker. matchnum of Meek Mooter is 2.
+
+chapter weak wooter
+
+the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is 3.
+
 book spied speak cried creek
 
 Spied Speak Cried Creek is west of recroom. "You can only go back east here. You might get lost in the other directions."
 
 chapter fried freak
 
-the Fried Freak is an eeker.
+the Fried Freak is an creeky eeker. matchnum of Fried Freak is 1.
 
 chapter snide sneak
 
-the Snide Sneak is an eeker.
+the Snide Sneak is an eeker. matchnum of Snide Sneak is 2.
 
 chapter guide geek
 
-the Guide Geek is an eeker.
+the Guide Geek is an eeker. matchnum of Guide Geek is 3.
 
 volume distraction rooms
 
@@ -300,7 +312,7 @@ this is the show-misses rule:
 	if got-hole-bonus is false:
 		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
 	if sco-nude-napper is false:
-		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper."
+		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper.";
 	if sco-ill-un is false:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
 
