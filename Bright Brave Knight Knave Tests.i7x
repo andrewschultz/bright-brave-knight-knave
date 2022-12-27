@@ -12,15 +12,21 @@ test w1b with "bold bowl/cold coal/sold soul".
 
 test w2 with "d/pass path/mass math".
 
-test w3 with "w/what whoah/w/hid hum/kid come/rid rum".
+test w3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 
-test w3b with "write rave".
+test w3b with "nude napper/write rave".
 
-test w4 with "final/e/e/s/d/fight fave/frightfully/bright bully".
+test wc1 with "hi 1/fill fun/will won".
+
+test wc2 with "hi 2/grander grove".
+
+test wc3 with "hi 3/candor cove".
+
+test w4 with "out/e/e/s/d/fight fave/frightfully/bright bully".
 
 test wa with "test w1/test w2/test w3/test w4".
 
-test wf with "test w1/test w1b/test w2/test w3b/test w3/test w4".
+test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/test w4".
 
 book quick walkthrough
 
