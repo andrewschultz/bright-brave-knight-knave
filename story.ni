@@ -299,6 +299,8 @@ this is the show-misses rule:
 		say "You decided to [b]WRITE/RIGHT RAVE[r] too soon.";
 	if got-hole-bonus is false:
 		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
+	if sco-nude-napper is false:
+		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper."
 	if sco-ill-un is false:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
 

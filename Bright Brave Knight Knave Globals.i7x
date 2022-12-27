@@ -51,6 +51,11 @@ sco-fight-fave is a truth state that varies.
 sco-fright-fully is a truth state that varies.
 sco-bright-bully is a truth state that varies.
 
+sco-meek-mooter is a truth state that varies.
+sco-chic-shooter is a truth state that varies.
+sco-weak-wooter is a truth state that varies.
+
+
 volume game state variables
 
 guessed-bold-bowl is a truth state that varies.

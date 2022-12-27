@@ -28,42 +28,20 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
+"stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
-"ill"	"un"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun"	--
+"ill"	"un/in"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
 "grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
-"candor"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
+"candor|candour"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
-
-a goodrhyme rule (this is the vc-mood-mapper rule):
-	if player is not in crude crapper and player does not have mood mapper, unavailable;
-	if sco-mood-mapper is true:
-		vcal "You already got the mood mapper/[']tude tapper!";
-		already-done;
-	ready;
-
-this is the vr-mood-mapper rule:
-	now sco-mood-mapper is true;
-	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
-	now player has mood mapper;
-
-a goodrhyme rule (this is the vc-nude-napper rule):
-	if player is not in crude crapper, unavailable;
-	if sco-nude-napper is true:
-		vcal "You don't want to be too much of a moral scold!";
-		already-done;
-	ready;
-
-this is the vr-nude-napper rule:
-	now sco-nude-napper is true;
-	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
 
 section white wave/universal point scoring
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
 	if sco-write-right-rave is true:
-		vcal "You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you. No offense.!";
+		vcal "You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you, at least. No offense.!";
 		already-done;
 	ready;
 
@@ -73,8 +51,7 @@ to decide whether extra-rave-points:
 
 this is the vr-write-right-rave rule:
 	now sco-write-right-rave is true;
-	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game![else]Without seeing much of the game, either! I'm a bit suspicious you're prying for hints, but no, no, I'll let it pass.[end if]";
-	increment cur-bonus;
+	say "For me? Really? Why, that's quite kind of you! [if extra-rave-points]And you've seen so much of the game! That means it's not just knee-jerk praise![else]Without seeing much of the game, either! I'm a bit suspicious you're prying for hints, but no, no, I'll let it pass.[end if]";
 	if extra-rave-points:
 		increment cur-bonus;
 		now got-rave-bonus is true;
@@ -271,7 +248,46 @@ a goodrhyme rule (this is the vc-guide-geek rule):
 
 this is the vr-guide-geek rule:
 	now sco-guide-geek is true;
-	say "Hooray! You figured what to do! You get a point!";
+	abide by the freak-sneak-geek swap rule for guide geek;
+
+a goodrhyme rule (this is the vc-stride-streak rule):
+	if player is not in cried creek, unavailable;
+	if sco-stride-streak is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-stride-streak is true:
+		vcal "You already encouraged more action and less moping here!";
+		already-done;
+	ready;
+
+this is the vr-stride-streak rule:
+	now sco-stride-streak is true;
+	say "Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.";
+
+section crude crapper scoring
+
+a goodrhyme rule (this is the vc-mood-mapper rule):
+	if player is not in crude crapper and player does not have mood mapper, unavailable;
+	if sco-mood-mapper is true:
+		vcal "You already got the mood mapper/[']tude tapper!";
+		already-done;
+	ready;
+
+this is the vr-mood-mapper rule:
+	now sco-mood-mapper is true;
+	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
+	now player has mood mapper;
+
+a goodrhyme rule (this is the vc-nude-napper rule):
+	if player is not in crude crapper, unavailable;
+	if sco-nude-napper is true:
+		vcal "You don't want to be too much of a moral scold!";
+		already-done;
+	ready;
+
+this is the vr-nude-napper rule:
+	now sco-nude-napper is true;
+	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
 
 section nil none point scoring
 
@@ -324,7 +340,7 @@ section stander stove rules
 a goodrhyme rule (this is the vc-grander-grove rule):
 	if player is not in stander stove, unavailable;
 	if sco-grander-grove is true:
-		vcal "You already did this!";
+		vcal "You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.";
 		already-done;
 	ready;
 
@@ -336,7 +352,7 @@ this is the vr-grander-grove rule:
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in stander stove, unavailable;
 	if sco-candor-cove is true:
-		vcal "You already did this!";
+		vcal "You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.";
 		already-done;
 	ready;
 

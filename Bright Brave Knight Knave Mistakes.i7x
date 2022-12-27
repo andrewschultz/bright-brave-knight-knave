@@ -26,10 +26,13 @@ to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 table of crude crapper guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
+"clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [bkn]."
 "cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
 "food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
 "lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
 "rude"	"rapper"	--	false	--	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
+"screwed"	"scrapper"	--	false	--	"You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential."
+"snood"	"snapper"	--	false	--	"You don't always remember what a snood is, but you're pretty sure none need to be snapped."
 "sued"	"sapper"	--	false	--	"That would be a villain worth fighting, but no."
 "strewed"	"strapper"	--	false	--	"No such contraption exists, fortunately. I think."
 "wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work."
