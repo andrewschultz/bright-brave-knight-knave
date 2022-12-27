@@ -234,9 +234,6 @@ this is the vr-guide-geek rule:
 
 a goodrhyme rule (this is the vc-stride-streak rule):
 	if player is not in cried creek, unavailable;
-	if sco-stride-streak is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-stride-streak is true:
 		vcal "You already encouraged more action and less moping here!";
 		already-done;
@@ -372,23 +369,44 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker check rul
 	if ee is fungible:
 		if vc-dont-print is false, say "But [the ee] is already here!";
 		already-done;
-	if number of fungible eekers is 1 and player is not in cried creek:
-		vcp "You need to be back at [creek] to change whom to summon.";
+	if ee is creeky and number of fungible creeky eekers is 1 and player is not in cried creek:
+		vcp "You need to be back at [creek] to touch base with a new creek denizen.";
 		not-yet;
-	if player is not in cried creek, unavailable;
+	if ee is crooty and number of fungible crooty eekers is 1 and player is not in recroom:
+		vcp "You need to be back at [recroom] to touch base with a new recruit.";
+		not-yet;
+	if ee is creeky and player is not in cried creek, unavailable;
+	if ee is crooty and player is not in recroom, unavailable;
 
 an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek swap rule):
-	if number of fungible eekers is 0:
+	if ee is nonconflicting:
 		say "The [ee] looks around, slightly uncomfortable. They see no one they dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
+		move ee to location of player;
 		continue the action;
-	let rfe be random fungible eeker;
+	let rfe be random fungible creeky eeker;
 	let got-one be false;
 	repeat through table of eeker conflicts:
 		unless rfe is eekold entry and ee is eeknew entry, next;
 		say "[eektxt entry][line break]";
 		break;
 	if got-one is false, say "BUG: need non-generic response for sidelining [rfe] for [ee].";
-	move rfe to gazy gap;
+	sideline rfe;
+	now rfe is postponed;
+	move ee to location of player;
+
+an eeker manipulation rule for an eeker (called ee) (this is the mooter-shooter-wooter swap rule):
+	if ee is nonconflicting:
+		say "The [ee] looks around, slightly uncomfortable. They see no one they dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
+		move ee to location of player;
+		continue the action;
+	let rfe be random fungible crooty eeker;
+	let got-one be false;
+	repeat through table of eeker conflicts:
+		unless rfe is eekold entry and ee is eeknew entry, next;
+		say "[eektxt entry][line break]";
+		break;
+	if got-one is false, say "BUG: need non-generic response for sidelining [rfe] for [ee].";
+	sideline rfe;
 	now rfe is postponed;
 	move ee to location of player;
 
