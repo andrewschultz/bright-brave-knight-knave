@@ -48,7 +48,9 @@ the leet learner is in White Wave. "Something called a leet learner rests here."
 
 chapter Hold Hole
 
-the hold hole is a rhymable. "The hold hole created when the kite cave collapse sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
+the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
+
+check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
 bold-hole is a truth state that varies.
 
@@ -58,7 +60,7 @@ to say whats-in-hole:
 	let pgh be number of preguessed holeitems;
 	if pgh > 0:
 		now bold-hole is true;
-		say ". You know [the list of preguessed holeitems] must go in the hold hole., but you haven't found [if pgh is 1]it[else]them[end if] yet";
+		say ". You know [the list of preguessed holeitems] must go in the hold hole, but you haven't found [if pgh is 1]it[else]them[end if] yet";
 		now bold-hole is false;
 
 rule for printing the name of a holeitem (called hi) when bold-hole is true: say "[b][printed name of hi in upper case][r]";
@@ -84,6 +86,8 @@ after printing the locale description for white wave:
 	if nch is 0, continue the action;
 	if number of carried holeitems > 0:
 		say "The hold hole shakes. Suddenly [the list of carried holeitems] [if nch is 1]flies[else]fly[end if] out of your hands and take [if nch is 1]its[else]their[end if] place in the hold hole.";
+		now all carried holeitems are in-hold;
+		now all carried holeitems are in white wave;
 	if number of holeitems in white wave is 3:
 		say "[line break]The hole is completed. It cracks. You sense you must settle a score here and now.";
 		moot hold hole;
@@ -143,7 +147,7 @@ the Recruiter is scenery in recroom. "You can feel the recruiter all around, but
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is a room.
+Spied Speak Cried Creek is west of recroom. "You can only go back east here. You might get lost in the other directions."
 
 chapter fried freak
 
@@ -297,3 +301,10 @@ this is the show-misses rule:
 		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
 	if sco-ill-un is false:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
+
+volume mapping stuff
+
+index map with Rut Row mapped west of Bass Bath.
+index map with Slid Slum mapped west of Rut Row.
+index map with Crude Crapper mapped south of Slid Slum.
+index map with recroom mapped north of Rut Row.
