@@ -47,6 +47,11 @@ definition: an eeker (called ee) is nonconflicting:
 	if ee is creeky and number of fungible creeky eekers is 0, yes;
 	no;
 
+definition: an eeker (called ee) is leftbehind:
+	unless ee is followish, no;
+	if ee is in location of player, no;
+	yes;
+
 section tracking hole progress
 
 to decide which number is hole-progress:
