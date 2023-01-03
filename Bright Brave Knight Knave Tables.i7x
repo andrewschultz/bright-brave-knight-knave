@@ -410,6 +410,27 @@ an eeker manipulation rule for an eeker (called ee) (this is the mooter-shooter-
 	now rfe is postponed;
 	move ee to location of player;
 
+this is the eeker-match rule:
+	unless number of fungible creeky eekers is 1, continue the action;
+	unless number of fungible crooty eekers is 1, continue the action;
+	let croo be a random crooty fungible eeker;
+	let cree be a random creeky fungible eeker;
+	if matchnum of croo is not matchnum of cree:
+		say "Oh no! The [croo] and [cree] seem to have nothing in common at all.";
+		sideline croo;
+		sideline cree;
+		the rule succeeds;
+	if croo is pairedyet:
+		say "The [croo] and [cree] seem pleased to be reunited.";
+	else:
+		say "What do you know? The [croo] and [cree] seem to be opposites, yet they fill in each other's holes, personality-wise.";
+		now croo is followish;
+		if r-warn-yet is false:
+			say "[i][bracket][b]NOTE:[r][i] you can say [b]BYE[r][i] at any time to get rid of your new friends. You can also bring them back with [b]R [matchnum of croo][r][i].[close bracket][r]";
+			now r-warn-yet is true;
+		now croo is pairedyet;
+		now cree is pairedyet;
+
 table of eeker conflicts
 eekold	eeknew	eektxt
 fried freak	guide geek	"<stuff>"

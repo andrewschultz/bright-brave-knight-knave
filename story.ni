@@ -149,24 +149,6 @@ after printing the locale description for recroom:
 	unless player was in Cried Creek, continue the action;
 	follow the eeker-match rule;
 
-this is the eeker-match rule:
-	unless number of crooty active eekers is 1, continue the action;
-	unless number of creeky active eekers is 1, continue the action;
-	let croo be a random crooty active eeker;
-	let cree be a random creeky active eeker;
-	if matchnum of croo is not matchnum of cree:
-		say "Oh no! The [croo] and [cree] seem to have nothing in common at all.";
-		sideline croo;
-		sideline cree;
-		the rule succeeds;
-	if croo is pairedyet:
-		say "The [croo] and [cree] seem pleased to be reunited.";
-	else:
-		say "What do you know? The [croo] and [cree] seem to be opposites, yet they fill in each other's holes, personality-wise.";
-		now croo is followish;
-		now croo is pairedyet;
-		now cree is pairedyet;
-
 chapter chic shooter
 
 the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is 1.
@@ -191,13 +173,8 @@ check going east in Cried Creek:
 	else:
 		say "The [myeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
 
-definition: an eeker (called ee) is leftbehind:
-	unless ee is followish, no;
-	if ee is in location of player, no;
-	yes;
-
 after printing the locale description when number of leftbehind eekers > 0:
-	say "[list of leftbehind eekers] follows you to [location of player].";
+	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
 		let randcree be a random creeky eeker in creek;
 		let randcroo be a random crooty eeker in recroom;
