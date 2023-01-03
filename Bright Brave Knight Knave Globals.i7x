@@ -55,7 +55,6 @@ sco-meek-mooter is a truth state that varies.
 sco-chic-shooter is a truth state that varies.
 sco-weak-wooter is a truth state that varies.
 
-
 volume game state variables
 
 guessed-bold-bowl is a truth state that varies.
@@ -68,6 +67,9 @@ got-hole-bonus is a truth state that varies.
 debug-allow-final is a truth state that varies.
 
 pre-hole-item-room is a room that varies.
+
+r-warn-yet is a truth state that varies. [allows us to use the R command]
+r-shortcut-got is a truth state that varies.
 
 Bright Brave Knight Knave Globals ends here.
 

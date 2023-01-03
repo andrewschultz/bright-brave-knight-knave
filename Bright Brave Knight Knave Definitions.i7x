@@ -52,6 +52,16 @@ definition: an eeker (called ee) is leftbehind:
 	if ee is in location of player, no;
 	yes;
 
+to decide which eeker is other-guy of (ee - an eeker):
+	repeat with EKR running through eekers:
+		if EKR is ee, next;
+		if matchnum of EKR is matchnum of ee, decide on EKR;
+	say "(BIG BUG on choosing other-guy of [ee])";
+	decide on ee;
+
+to decide which number is pairs-used:
+	decide on number of finished eekers / 2;
+
 section tracking hole progress
 
 to decide which number is hole-progress:

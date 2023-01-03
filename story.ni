@@ -195,6 +195,45 @@ chapter guide geek
 
 the Guide Geek is an eeker. matchnum of Guide Geek is 3.
 
+book eeker logic and manipulation
+
+volume meta
+
+chapter recruiting
+
+recruiting is an action applying to one number.
+
+understand "r [number]" as recruiting when r-warn-yet is true.
+
+carry out recruiting:
+	if number understood > 3 or number understood < 1, say "You need to pick 1, 2 or 3." instead;
+	if number of fungible eekers > 0, say "I can technically do better, but right now, you'll want to run this command without anyone else around." instead;
+	repeat with XX running through creeky eekers:
+		if matchnum of XX is number understood:
+			let og be other-guy of XX;
+			if XX is finished, say "You've already had your fun with the [XX] and [og]." instead;
+			if XX is dormant or og is dormant, say "You can't join that pair up yet, since you haven't identified them both." instead;
+			if XX is not pairedyet:
+				if number of pairedyet eekers is 4:
+					increment cur-bonus;
+					now r-shortcut-got is true;
+					say "Because you are bright and brave, you realize by process of elimination who is left. Briefly, you wonder if you deserve both a bonus point AND a shortcut, but you've earned it. Go, you![paragraph break]";
+			now xx is pairedyet;
+			now og is pairedyet;
+			move player to recroom;
+			say "You recall [the xx] and [the og].";
+
+chapter verbsing
+
+carry out verbsing:
+	if r-warn-yet is true and pairs-used < 3:
+		say "You can say [b]BYE[r] to get rid of a friend pair.";
+		repeat with XX running through creeky eekers:
+			if XX is finished or XX is dormant, next;
+			let og be other-guy of XX;
+			if og is dormant, next;
+			say "You can also say [b]R [matchnum of XX][r] to resummon the [XX] and [og].";
+
 volume distraction rooms
 
 book Nil None
