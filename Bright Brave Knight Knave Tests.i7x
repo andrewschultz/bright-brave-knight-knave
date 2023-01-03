@@ -38,6 +38,12 @@ test j3 with "candor cove/hi 3"
 
 test j4 with "grander grove"
 
+book weird cases
+
+test cr with "gonear creek/stride streak".
+
+test cr1 with "test cr/fried freak/e/chic shooter".
+
 Bright Brave Knight Knave Tests ends here.
 
 ---- DOCUMENTATION ----

@@ -379,27 +379,23 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker check rul
 	if ee is crooty and player is not in recroom, unavailable;
 
 an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek swap rule):
-	if ee is nonconflicting:
-		say "The [ee] looks around, slightly uncomfortable. They see no one they dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
-		move ee to location of player;
-		continue the action;
-	let rfe be random fungible creeky eeker;
-	let got-one be false;
-	repeat through table of eeker conflicts:
-		unless rfe is eekold entry and ee is eeknew entry, next;
-		say "[eektxt entry][line break]";
-		break;
-	if got-one is false, say "BUG: need non-generic response for sidelining [rfe] for [ee].";
-	sideline rfe;
-	now rfe is postponed;
-	move ee to location of player;
+	abide by the eeker conflict rule for ee;
 
 an eeker manipulation rule for an eeker (called ee) (this is the mooter-shooter-wooter swap rule):
+	abide by the eeker conflict rule for ee;
+	abide by the eeker-match rule;
+
+an eeker manipulation rule for an eeker (called ee) (this is the eeker conflict rule):
 	if ee is nonconflicting:
-		say "The [ee] looks around, slightly uncomfortable. They see no one they dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
+		say "The [ee] looks around, slightly uncomfortable. They see no one they immediately dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
 		move ee to location of player;
+		now ee is active;
 		continue the action;
-	let rfe be random fungible crooty eeker;
+	let rfe be the player;
+	if ee is crooty:
+		now rfe is random fungible crooty eeker;
+	else:
+		now rfe is random fungible creeky eeker;
 	let got-one be false;
 	repeat through table of eeker conflicts:
 		unless rfe is eekold entry and ee is eeknew entry, next;
