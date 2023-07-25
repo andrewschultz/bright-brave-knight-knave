@@ -10,20 +10,20 @@
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
-files=reg-bbkk-thru-min.txt,reg-bbkk-thru-all.txt,reg-bbkk-thru-reject.txt,reg-bbkk-thru-alt-verbs.txt,reg-bbkk-thru-guide-gong.txt,reg-bbkk-thru-pride-prong.txt,reg-bbkk-thru-mistakes.txt,reg-bbkk-thru-ha-half.txt,reg-bbkk-thru-homonyms.txt,reg-bbkk-thru-verbs.txt,reg-bbkk-thru-goto.txt,reg-bbkk-thru-hints.txt,reg-bbkk-thru-hintfull.txt
-~	min	t0
-~	all	t1
-~	rej	t2
-~	alt	t3
-~	gong	t4
-~	prong	t5
-~	mis	t6
-~	ha	t7
-~	hom	t8
-~	ver,verbs	t9
-~	goto,gt,go	t10
-~	hin,hint,hints	t11
-~	hf,hfull	t12
+file=reg-bbkk-thru-min.txt,min,minimum walkthrough
+file=reg-bbkk-thru-all.txt,all,walkthrough with all points
+file=reg-bbkk-thru-reject.txt,rej,walkthrough with all rejections and THINK
+file=reg-bbkk-thru-alt-verbs.txt,alt,walkthrough with altverb tests
+file=reg-bbkk-thru-guide-gong.txt,gong,walkthrough testing guide gong
+file=reg-bbkk-thru-pride-prong.txt,prong,walkthrough testing pride prong
+file=reg-bbkk-thru-mistakes.txt,mis,walkthrough testing all mistakes
+file=reg-bbkk-thru-ha-half.txt,ha,walkthrough testing half-right cases
+file=reg-bbkk-thru-homonyms.txt,hom,walkthrough testing homonyms
+file=reg-bbkk-thru-verbs.txt,ver,walkthrough testing special verbs
+file=reg-bbkk-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
+file=reg-bbkk-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
+file=reg-bbkk-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
+
 ##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
@@ -54,7 +54,7 @@ files=reg-bbkk-thru-min.txt,reg-bbkk-thru-all.txt,reg-bbkk-thru-reject.txt,reg-b
 ## *FILE
 ## *FORK
 
-TSV:## minimum walkthrough	## walkthrough with all points	## walkthrough with all rejections and THINK	## walkthrough with altverb tests	## walkthrough testing guide gong	## walkthrough testing pride prong	## walkthrough testing all mistakes	## walkthrough testing half-right cases	## walkthrough testing homonyms	## walkthrough testing special verbs	## walkthrough testing GOTO	## walkthrough testing HINTS basic	## walkthrough testing HINTS full
+## *DESCRIPTION
 
 ** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
