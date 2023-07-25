@@ -22,11 +22,15 @@ test wc2 with "hi 2/grander grove".
 
 test wc3 with "hi 3/candor cove".
 
-test w4 with "out/e/e/s/d/fight fave/frightfully/bright bully".
+test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
 
-test wa with "test w1/test w2/test w3/test w4".
+section cheaty bits
 
-test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/test w4".
+test wj with "out/e/e/s/d/fight fave/frightfully/bright bully". [walkthrough jump]
+
+test wa with "test w1/test w2/test w3/test wj".
+
+test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/test wq".
 
 book quick walkthrough
 
