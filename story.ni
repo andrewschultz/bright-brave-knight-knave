@@ -34,7 +34,7 @@ volume rooms
 
 book white wave
 
-White Wave is a room. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you created an involuntarily destroyed gave passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
+White Wave is a room. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
 
 the player is in White Wave.
 
@@ -48,15 +48,19 @@ the leet learner is in White Wave. "Something called a leet learner rests here."
 
 chapter Hold Hole
 
-the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][whats-in-hole][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
+the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
+
+description of hold hole is "It appeared when you located the kite cave. [whats-in-hole]."
 
 check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
 bold-hole is a truth state that varies.
 
 to say whats-in-hole:
-	if hole-progress is 0, continue the action;
-	say ". So far, you've placed [the list of holeitems in white wave] in the hold hole";
+	if hole-progress is 0:
+		say "Nothing has fit in yet";
+	else:
+		say "So far, you've placed [the list of holeitems in white wave] in the hold hole";
 	let pgh be number of preguessed holeitems;
 	if pgh > 0:
 		now bold-hole is true;
@@ -111,7 +115,12 @@ from-number of bass bath is 5404. to-number of bass bath is 5404.
 
 book Rut Row
 
-Rut Row is a room.
+Rut Row is a room. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
+
+check going north in Rut Row:
+	if sco-mood-mapper is false, say "You make your way north, but you are shooed by a loud voice saying 'Really! We can do better than your kind, here.' You have a feeling it's just trying to act snooty and hifalutin, but you have no proof, so you trudge back south.[paragraph break]If only you had a gauge for this sort of thing!" instead;
+	if recruiter is unvisited:
+		say "A voice proclaims you as perhaps not classy enough, but you're not fooled. The mood mapper helps you detect what, on reflection, is pretty lame hubris. You could've seen it easy back when you had more confidence. But you see it more fully, being more worldly-wise.";
 
 chapter the kid
 
@@ -127,7 +136,13 @@ guess-table of slid slum is the table of slid slum guesses.
 
 book Crude Crapper
 
-Crude Crapper is a room.
+Crude Crapper is a room. "You can only really go outside here. [crapper-status].";
+
+to say crapper-status:
+	if sco-mood-mapper is true:
+		say "[if sco-nude-napper is true]There's nothing left to do here[else]You got the mood mapper, but you can mooch around for brownie points[end if]";
+	else:
+		say "[if sco-nude-napper is true]You've had a bit of fun, but perhaps there's something practical, here[else]Something must be at work here. You suspect you'll feel a bit silly once you figure what you're looking for[end if]"
 
 guess-table of crude crapper is the table of crude crapper guesses.
 
@@ -139,7 +154,7 @@ volume unsorted
 
 book Recruiter
 
-recroom is a privately-named room. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
+recroom is a privately-named room. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -212,7 +227,8 @@ carry out recruiting:
 		if matchnum of XX is number understood:
 			let og be other-guy of XX;
 			if XX is finished, say "You've already had your fun with the [XX] and [og]." instead;
-			if XX is dormant or og is dormant, say "You can't join that pair up yet, since you haven't identified them both." instead;
+			if XX is dormant and og is dormant, say "You can't join that pair up yet, since you haven't identified either of them." instead;
+			if XX is dormant or og is dormant, say "You don't know who'd join the [if XX is dormant][og][else][xx][end if]." instead;
 			if XX is not pairedyet:
 				if number of pairedyet eekers is 4:
 					increment cur-bonus;

@@ -479,7 +479,7 @@ volume table of noways
 table of noways
 noway-rm	noway-txt
 White Wave	"You're kind of confused about directions, here. You maybe need to find some way to see where life might be."
-Bass Bath	"[if sco-pass-path is false]Every way but south, and you'll fall into the bass bath[else if sco-mass-math is false]The path through the bath bass cuts north and south[else]You can go the main directions but not [noun][end if]."
+Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to figure out which way to go. It's a bit confusing here[else]You can go the main directions but not [noun][end if]."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
 
 volume homonyms

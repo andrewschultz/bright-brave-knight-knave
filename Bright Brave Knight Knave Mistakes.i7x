@@ -86,7 +86,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "mold"	"mole"	--	false	--	"[no-animal-sac]."
 "polled"	"pole|poll"	--	false	--	"[too-rep]."
 "rolled"	"role|roll"	--	false	--	"[too-rep]."
-"scold"	"skoal"	--	false	--	"Discouraging a Viking feast might be brave, but it also might not be bright."
+"scold"	"skoal"	--	false	--	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
 "sold"	"soul"	--	false	--	"[item-guess of sold soul]"
 "told"	"toll"	--	false	--	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
 
