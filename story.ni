@@ -113,6 +113,22 @@ guess-table of bass bath is the table of bass bath guesses.
 
 from-number of bass bath is 5404. to-number of bass bath is 5404.
 
+after printing the locale description for Bass Bath:
+	if bool-hill-available is false and player has mood mapper:
+		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up!";
+		now bool-hill-available is true;
+		now hailing hill is mapped above bass bath;
+		now bass bath is mapped below hailing hill ;
+	continue the action;
+
+book Hailing Hill
+
+Hailing Hill is a room. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+
+the mailing mill is scenery in Hailing Hill. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
+
+volume recruiting area
+
 book Rut Row
 
 Rut Row is a room. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."

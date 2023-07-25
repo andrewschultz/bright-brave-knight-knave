@@ -20,7 +20,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
-"mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	--	--
+"mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	"mood mapper" or "tude tapper"	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
 "meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
 "chic"	"shooter"	--	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
@@ -34,6 +34,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "ill"	"un/in"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
 "grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
 "candor|candour"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
+"ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
+"scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
+"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [once-now of vc-mailing-mill rule] you find a way to the top of Hailing Hill."
+"bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him."
+"failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him."
+"wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him."
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 
@@ -268,6 +274,91 @@ this is the vr-nude-napper rule:
 	now sco-nude-napper is true;
 	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
 
+section hailing hill point scoring
+
+a goodrhyme rule (this is the vc-ailing-ill rule):
+	if player is not in hailing hill, unavailable;
+	if sco-ailing-ill is true:
+		vcal "You already expressed that everyone hurts!";
+		already-done;
+	ready;
+
+this is the vr-ailing-ill rule:
+	now sco-ailing-ill is true;
+	say "Man! Without getting too overwrought, you relate your disappointments and shortcomings while on your journey. Hailing Hill seems more welcoming now.";
+	see-if-top;
+
+a goodrhyme rule (this is the vc-scaling-skill rule):
+	if player is not in hailing hill, unavailable;
+	if sco-scaling-skill is true:
+		vcal "You already improved your climbing ability!";
+		already-done;
+	ready;
+
+this is the vr-scaling-skill rule:
+	now sco-scaling-skill is true;
+	say "You work on your climbing ability. What do you know, it pays off!";
+	see-if-top;
+
+a goodrhyme rule (this is the vc-mailing-mill rule):
+	if player is not in hailing hill, unavailable;
+	if sco-scaling-skill is false or sco-ailing-ill is false:
+		vcp "A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!";
+		not-yet;
+	if sco-mailing-mill is true:
+		vcal "The mailing mill is already on Hailing Hill!";
+		already-done;
+	ready;
+
+this is the vr-mailing-mill rule:
+	now sco-mailing-mill is true;
+	say "Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.";
+
+a goodrhyme rule (this is the vc-bailing-bill rule):
+	if player is not in hailing hill, unavailable;
+	abide by the can-mail rule;
+	if player does not have bold bowl:
+		vcp "You sense you cannot offer Bailing Bill what he needs. Yet.";
+		not-yet;
+	if sco-bailing-bill is true:
+		vcal "You have already helped Bailing Bill!";
+		already-done;
+	ready;
+
+this is the vr-bailing-bill rule:
+	now sco-bailing-bill is true;
+	say "Shortly, someone who must be Bailing Bill drops by.";
+
+a goodrhyme rule (this is the vc-failing-phil rule):
+	if player is not in hailing hill, unavailable;
+	abide by the can-mail rule;
+	if player does not have cold coal:
+		vcp "You sense you cannot offer Failing Phil what he needs. Yet.";
+		not-yet;
+	if sco-failing-phil is true:
+		vcal "You have already helped Failing Phil!";
+		already-done;
+	ready;
+
+this is the vr-failing-phil rule:
+	now sco-failing-phil is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-wailing-will rule):
+	if player is not in hailing hill, unavailable;
+	abide by the can-mail rule;
+	if player does not have sold soul:
+		vcp "You sense you cannot offer Wailing Will what he needs. Yet.";
+		not-yet;
+	if sco-wailing-will is true:
+		vcal "You have already helped Wailing Will!";
+		already-done;
+	ready;
+
+this is the vr-wailing-will rule:
+	now sco-wailing-will is true;
+	say "Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.";
+
 section nil none point scoring
 
 a goodrhyme rule (this is the vc-fill-fun rule):
@@ -340,6 +431,24 @@ this is the vr-candor-cove rule:
 	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
 	move player to pre-hole-item-room;
 
+section hailing hill stuff
+
+a goodrhyme rule (this is the the can-mail rule):
+	if sco-scaling-skill is false:
+		vcal "The mailing mill would probably belong on the top of the hill. You can't get anywhere near the top!";
+		not-yet;
+	if sco-ailing-ill is false:
+		vcal "You feel like the mailing mill should pop up, but alas, a voice tells you you have not shown enough solidarity with woeful people. Perhaps an exclamation will help prove your bona fides.";
+		not-yet;
+
+to see-if-top:
+	if sco-ailing-ill is false:
+		say "Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.";
+	else if sco-scaling-skill is false:
+		say "Complaining about various things wrong makes you more motivated to get to the top, but the flesh is weak.";
+	else:
+		say "You stand at the top of the hill and feel more connected with others despite, or perhaps because of, their faults.";
+
 section very endgame stuff
 
 this is the vr-fright-fully rule:
@@ -407,8 +516,14 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker conflict 
 	move ee to location of player;
 
 this is the eeker-match rule:
-	unless number of fungible creeky eekers is 1, continue the action;
-	unless number of fungible crooty eekers is 1, continue the action;
+	if number of fungible eekers is 1:
+		let rfe be random fungible eeker;
+		if rfe is pairedyet:
+			say "You figure [the rfe] and [the other-guy of rfe] would be good to call both at once.";
+			now other-guy of rfe is followish;
+			now rfe is followish;
+			the rule succeeds;
+	unless number of fungible eekers is 2, continue the action;
 	let croo be a random crooty fungible eeker;
 	let cree be a random creeky fungible eeker;
 	if matchnum of croo is not matchnum of cree:

@@ -4,13 +4,14 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 13.
+core-max is 28.
 
 max-bonus is 5.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
 --waiting to say WRITE RAVE gets 2 points instead of 1
+--so core_max + max_bonus = rows in big table
 ]
 
 volume point scoring booleans
@@ -55,6 +56,13 @@ sco-meek-mooter is a truth state that varies.
 sco-chic-shooter is a truth state that varies.
 sco-weak-wooter is a truth state that varies.
 
+sco-ailing-ill is a truth state that varies.
+sco-scaling-skill is a truth state that varies.
+sco-mailing-mill is a truth state that varies.
+sco-failing-phil is a truth state that varies.
+sco-bailing-bill is a truth state that varies.
+sco-wailing-will is a truth state that varies.
+
 volume game state variables
 
 guessed-bold-bowl is a truth state that varies.
@@ -63,6 +71,8 @@ guessed-sold-soul is a truth state that varies.
 
 got-rave-bonus is a truth state that varies.
 got-hole-bonus is a truth state that varies.
+
+bool-hill-available is a truth state that varies.
 
 debug-allow-final is a truth state that varies.
 

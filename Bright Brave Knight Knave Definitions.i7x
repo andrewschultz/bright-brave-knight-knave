@@ -72,6 +72,11 @@ to decide which number is availval of (th - a thing): [ usually boolvals can cov
 	if th is in nothing, decide on 0;
 	decide on 1;
 
+section hill score
+
+to decide which number is hill-score:
+	decide on (boolval of sco-ailing-ill) + (boolval of sco-failing-phil) + (boolval of sco-mailing-mill) + (boolval of sco-wailing-will) + (boolval of sco-bailing-bill) 
+
 book definitions
 
 definition: a room (called rm) is available-from-here:
