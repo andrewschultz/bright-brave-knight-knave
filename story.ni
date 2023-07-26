@@ -122,7 +122,7 @@ after printing the locale description for Bass Bath:
 		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up!";
 		now bool-hill-available is true;
 		now hailing hill is mapped above bass bath;
-		now bass bath is mapped below hailing hill ;
+		now bass bath is mapped below hailing hill;
 	continue the action;
 
 book Hailing Hill
@@ -131,7 +131,7 @@ Hailing Hill is a room in intro. "You are at the [if hill-score is 2]top[else]bo
 
 the mailing mill is scenery in Hailing Hill. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
 
-volume recruiting area
+volume recruiting area (west)
 
 book Rut Row
 
@@ -169,8 +169,6 @@ guess-table of crude crapper is the table of crude crapper guesses.
 chapter mood mapper
 
 the mood mapper is a thing. description is "It can't offer hints like the leet learner, but maybe you can [b]MM[r] people."
-
-volume unsorted
 
 book Recruiter
 
@@ -231,6 +229,24 @@ chapter guide geek
 the Guide Geek is an eeker. matchnum of Guide Geek is 3.
 
 book eeker logic and manipulation
+
+volume north area
+
+book Bosh Blanks
+
+Bosh Blanks is a room in northstuff. printed name is "[if sco-posh-planks is true]Posh Planks[else]Bosh, Blanks![end if]". "[if sco-posh-planks is false]It's disappointingly empty here. As-is, you can only go back south[else][planks-desc][end if]."
+
+to say planks-desc: say "There's water on pretty much all sides here. A yucky yacht might allow access once fixed"
+
+chapter yucky yacht
+
+the yucky yacht is scenery in Bosh Blanks.
+
+volume south area
+
+volume east area
+
+volume unsorted
 
 volume meta
 
@@ -425,9 +441,15 @@ this is the show-misses rule:
 
 volume mapping stuff
 
+section recruiting and intro
+
 index map with Rut Row mapped west of Bass Bath.
 index map with Slid Slum mapped west of Rut Row.
 index map with recroom mapped north of Rut Row.
 index map with Rut Row mapped north of White Wave.
 index map with White Wave mapped east of Hailing Hill.
 index map with Crude Crapper mapped west of Hailing Hill.
+
+section north bit
+
+index map with Bosh Blanks mapped north of Bass Bath.

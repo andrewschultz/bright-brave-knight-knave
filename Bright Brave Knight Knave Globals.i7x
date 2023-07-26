@@ -73,6 +73,8 @@ sco-failing-phil is a truth state that varies.
 sco-bailing-bill is a truth state that varies.
 sco-wailing-will is a truth state that varies.
 
+sco-posh-planks is a truth state that varies.
+
 volume game state variables
 
 guessed-bold-bowl is a truth state that varies.

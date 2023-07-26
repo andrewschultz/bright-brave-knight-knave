@@ -29,6 +29,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
+"posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -112,6 +113,7 @@ this is the vr-pass-path rule:
 	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
 	print-the-loc;
 	open-psg west and rut row;
+	open-psg north and bosh blanks;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -248,6 +250,20 @@ a goodrhyme rule (this is the vc-stride-streak rule):
 this is the vr-stride-streak rule:
 	now sco-stride-streak is true;
 	say "Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.";
+
+section bosh blanks scoring
+
+a goodrhyme rule (this is the vc-posh-planks rule):
+	if player is not in bosh blanks, unavailable;
+	if sco-posh-planks is true:
+		vcal "Oh, no, let's not make things TOO posh, here!";
+		already-done;
+	ready;
+
+this is the vr-posh-planks rule:
+	now sco-posh-planks is true;
+	say "Everything becomes a lot more sophisticated here. But not too sophisticated! Things are a bit run-down, right now, as evidenced by that yucky yacht nearby. You sense you should clean it, but you're not sure how. You're not posh enough to get near, you suspect!";
+	move yucky yacht to Bosh Blanks;
 
 section crude crapper scoring
 
@@ -595,9 +611,11 @@ volume table of noways
 
 table of noways
 noway-rm	noway-txt
-White Wave	"You're kind of confused about directions, here. You maybe need to find some way to see where life might be."
+White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]You can really only go [b]DOWN[r] through the kite cave hole."
 Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to figure out which way to go. It's a bit confusing here[else]You can go the main directions but not [noun][end if]."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
+recroom	"You only have access west and back south to the slum, slid."
+Cried Creek	"While the creek and greenery meander off, you might get lost. You can really only go back east."
 
 volume homonyms
 
