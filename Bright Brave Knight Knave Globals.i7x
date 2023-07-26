@@ -14,6 +14,16 @@ max-bonus is 5.
 --so core_max + max_bonus = rows in big table
 ]
 
+intro is a region.
+
+recruiting is a region.
+
+northstuff is a region.
+
+southstuff is a region.
+
+eaststuff is a region.
+
 volume point scoring booleans
 
 sco-write-right-rave is a truth state that varies.

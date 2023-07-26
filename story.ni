@@ -34,7 +34,7 @@ volume rooms
 
 book white wave
 
-White Wave is a room. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
+White Wave is a room in intro. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
 
 the player is in White Wave.
 
@@ -111,7 +111,7 @@ Trite Tully is a person.
 
 book bass bath
 
-Bass Bath is a room. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
+Bass Bath is a room in intro. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -127,7 +127,7 @@ after printing the locale description for Bass Bath:
 
 book Hailing Hill
 
-Hailing Hill is a room. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+Hailing Hill is a room in intro. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
 
 the mailing mill is scenery in Hailing Hill. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
 
@@ -135,7 +135,7 @@ volume recruiting area
 
 book Rut Row
 
-Rut Row is a room. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
+Rut Row is a room in recruiting. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
 
 check going north in Rut Row:
 	if sco-mood-mapper is false, say "You make your way north, but you are shooed by a loud voice saying 'Really! We can do better than your kind, here.' You have a feeling it's just trying to act snooty and hifalutin, but you have no proof, so you trudge back south.[paragraph break]If only you had a gauge for this sort of thing!" instead;
@@ -150,13 +150,13 @@ guess-table of coughin coy boffin boy is the table of coughin coy boffin boy gue
 
 book Slum Slid
 
-Slid Slum is a room.
+Slid Slum is a room in recruiting.
 
 guess-table of slid slum is the table of slid slum guesses.
 
 book Crude Crapper
 
-Crude Crapper is a room. "You can only really go outside here. [crapper-status].";
+Crude Crapper is a room in recruiting. "You can only really go outside here. [crapper-status].";
 
 to say crapper-status:
 	if sco-mood-mapper is true:
@@ -174,7 +174,7 @@ volume unsorted
 
 book Recruiter
 
-recroom is a privately-named room. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
+recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -198,7 +198,7 @@ the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is 3.
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is west of recroom. "You can only go back east here. You might get lost in the other directions."
+Spied Speak Cried Creek is west of recroom. it is in recruiting. "You can only go back east here. You might get lost in the other directions."
 
 check going east in Cried Creek:
 	if number of eekers in Cried Creek is 0, continue the action;
