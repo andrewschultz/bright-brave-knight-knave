@@ -40,6 +40,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	--
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
+"grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
+"stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
+"new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -125,6 +128,7 @@ this is the vr-pass-path rule:
 	print-the-loc;
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
+	open-psg south and Too Tough Blue Bluff;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -349,6 +353,47 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
+
+section too tough blue bluff scoring
+
+a goodrhyme rule (this is the vc-grew-gruff rule):
+	if player is not in too tough blue bluff, unavailable;
+	if sco-grew-gruff is true:
+		vcal "Don't want to overdo it!";
+		already-done;
+	ready;
+
+this is the vr-grew-gruff rule:
+	now sco-grew-gruff is true;
+	say "You get rid of a bit of sentiment. It's certainly sad a tragedy may have happened here, but why make things more tragic?";
+
+a goodrhyme rule (this is the vc-stew-stuff rule):
+	if player is not in too tough blue bluff, unavailable;
+	if sco-stew-stuff is false:
+		vcp "You haven't steeled yourself to look for what you need, yet. You feel bad for the people who might've lost what they need to eat.";
+		not-yet;
+	if sco-stew-stuff is true:
+		vcal "You can't make any more stew stuff.";
+		already-done;
+	ready;
+
+this is the vr-stew-stuff rule:
+	now sco-stew-stuff is true;
+	say "Now that you know what to look for, it's not too bad to find. You find enough to make a stew.";
+
+a goodrhyme rule (this is the vc-new-nuff rule):
+	if player is not in too tough blue bluff, unavailable;
+	if sco-stew-stuff is false:
+		vcp "You have nothing to make new [']nuff, yet.";
+		not-yet;
+	if sco-new-nuff is true:
+		vcal "You already revitalized the stew stuff.";
+		already-done;
+	ready;
+
+this is the vr-new-nuff rule:
+	now sco-new-nuff is true;
+	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
 
 section hailing hill point scoring
 

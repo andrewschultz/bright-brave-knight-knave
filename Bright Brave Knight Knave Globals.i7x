@@ -4,7 +4,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 34.
+core-max is 37.
 
 max-bonus is 5.
 
@@ -59,6 +59,18 @@ chapter north area
 sco-posh-planks is a truth state that varies.
 sco-plucky-plot is a truth state that varies.
 
+sco-train-tracks is a truth state that varies.
+sco-main-max is a truth state that varies.
+sco-pain-packs is a truth state that varies.
+
+chapter south area
+
+sco-grew-gruff is a truth state that varies.
+sco-stew-stuff is a truth state that varies.
+sco-new-nuff is a truth state that varies.
+
+chapter east area
+
 chapter variable (detours after each hold hole piece is recovered)
 
 sco-fill-fun is a truth state that varies.
@@ -81,10 +93,6 @@ sco-fight-fave is a truth state that varies.
 
 sco-fright-fully is a truth state that varies.
 sco-bright-bully is a truth state that varies.
-
-sco-train-tracks is a truth state that varies.
-sco-main-max is a truth state that varies.
-sco-pain-packs is a truth state that varies.
 
 sco-bam-bye is a truth state that varies.
 

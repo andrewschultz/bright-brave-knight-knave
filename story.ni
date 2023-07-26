@@ -79,6 +79,8 @@ to decide which number is help-index:
 	if number of eekers in location of player is 0, decide on 0;
 	decide on (matchnum of random eeker in location of player);
 
+section saying good bye
+
 check going to Bass Bath: [this will need to be more widespread if we implement warp commands]
 	repeat with HI running through holeitems:
 		if player does not have HI, next;
@@ -100,8 +102,6 @@ a bold bowl is a holeitem. palindex of bold bowl is 2.
 section sold soul
 
 a sold soul is a holeitem. palindex of sold soul is 3.
-
-chapter saying good bye
 
 chapter hole finding items
 
@@ -291,6 +291,8 @@ check going in Lane Lax:
 [the train tracks are not all they could be, and they do not lead all the places they could]
 
 volume south area
+
+Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. "
 
 volume east area
 
