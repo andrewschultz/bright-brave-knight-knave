@@ -29,6 +29,14 @@ to decide whether hold-poke:
 
 chapter eekers
 
+to decide whether assisted:
+	if number of eekers in location of player is 2, yes;
+	no;
+
+to decide whether half-assisted:
+	if number of eekers in location of player is 1, yes;
+	no;
+
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 
 an eeker can be creeky or crooty. an eeker is usually creeky.

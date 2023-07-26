@@ -2,6 +2,12 @@ Version 1/221007 of Bright Brave Knight Knave Tables by Andrew Schultz begins he
 
 "This file contains the main verb-checking/point-scoring table as well as homonym detection."
 
+[notes:
+1 = chic shooter / fried freak
+2 = meek mooter / snide sneak
+3 = weak wooter / guide geek
+]
+
 volume the main stuff
 
 to open-psg (di - a direction) and (rm - a room):
@@ -31,6 +37,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
+"train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
+"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	--
+"pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -189,6 +198,31 @@ this is the vr-rid-rum rule:
 	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You and [the boffin] part ways, and you see things a bit more clearly now. Oh, wow! There's somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
 	open-psg inside and crude crapper;
 
+section crude crapper scoring
+
+a goodrhyme rule (this is the vc-mood-mapper rule):
+	if player is not in crude crapper and player does not have mood mapper, unavailable;
+	if sco-mood-mapper is true:
+		vcal "You already got the mood mapper/[']tude tapper!";
+		already-done;
+	ready;
+
+this is the vr-mood-mapper rule:
+	now sco-mood-mapper is true;
+	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
+	now player has mood mapper;
+
+a goodrhyme rule (this is the vc-nude-napper rule):
+	if player is not in crude crapper, unavailable;
+	if sco-nude-napper is true:
+		vcal "You don't want to be too much of a moral scold!";
+		already-done;
+	ready;
+
+this is the vr-nude-napper rule:
+	now sco-nude-napper is true;
+	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
+
 section recruiter
 
 a goodrhyme rule (this is the vc-chic-shooter rule):
@@ -277,30 +311,43 @@ this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
 	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]The yacht is yours! It's still yucky due to excessive bad taste, but it's transport, too, and comfortable, if you [b]ENTER[r] it.";
 
-section crude crapper scoring
+section lane lax scoring
 
-a goodrhyme rule (this is the vc-mood-mapper rule):
-	if player is not in crude crapper and player does not have mood mapper, unavailable;
-	if sco-mood-mapper is true:
-		vcal "You already got the mood mapper/[']tude tapper!";
+a goodrhyme rule (this is the vc-train-tracks rule):
+	if player is not in lane lax, unavailable;
+	if sco-train-tracks is true:
+		vcal "You already created train tracks[if sco-main-max is false], though they could become sturdier and farther-reaching[end if].";
 		already-done;
 	ready;
 
-this is the vr-mood-mapper rule:
-	now sco-mood-mapper is true;
-	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
-	now player has mood mapper;
+this is the vr-train-tracks rule:
+	now sco-train-tracks is true;
+	say "The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.";
 
-a goodrhyme rule (this is the vc-nude-napper rule):
-	if player is not in crude crapper, unavailable;
-	if sco-nude-napper is true:
-		vcal "You don't want to be too much of a moral scold!";
+a goodrhyme rule (this is the vc-main-max rule):
+	if player is not in lane lax, unavailable;
+	if sco-train-tracks is false:
+		vcp "Yes, perhaps this place could and should become bigger and more important. As a transportation hub. But not as-is.";
+		not-yet;
+	if sco-main-max is true:
+		vcal "You already upgraded the train tracks!";
 		already-done;
 	ready;
 
-this is the vr-nude-napper rule:
-	now sco-nude-napper is true;
-	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
+this is the vr-main-max rule:
+	now sco-main-max is true;
+	say "The train tracks become shinier and stronger and branch a bit more.";
+
+a goodrhyme rule (this is the vc-pain-packs rule):
+	if player is not in lane lax, unavailable;
+	if sco-pain-packs is true:
+		vcal "You already got some pain packs!";
+		already-done;
+	ready;
+
+this is the vr-pain-packs rule:
+	now sco-pain-packs is true;
+	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
 
 section hailing hill point scoring
 
