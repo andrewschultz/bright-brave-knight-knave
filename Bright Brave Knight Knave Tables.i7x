@@ -43,6 +43,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
+"boozing"	"boo"	--	--	false	true	true	false	cruising crew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
+"using"	"you"	--	--	false	true	true	false	cruising crew	vc-using-you rule	vr-using-you rule	--	--
+"fusing"	"phew"	--	--	false	true	true	false	cruising crew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -129,6 +132,7 @@ this is the vr-pass-path rule:
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
 	open-psg south and Too Tough Blue Bluff;
+	open-psg east and Cruising Crew;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -395,6 +399,47 @@ this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
 
+section cruising crew scoring
+
+a goodrhyme rule (this is the vc-boozing-boo rule):
+	if player is not in cruising crew, unavailable;
+	if sco-boozing-boo is true:
+		vcal "Don't overdo the moralizing!";
+		already-done;
+	ready;
+
+this is the vr-boozing-boo rule:
+	now sco-boozing-boo is true;
+	say "You explain that boozing is just not the way to go.";
+	lou-check;
+
+a goodrhyme rule (this is the vc-using-you rule):
+	if player is not in cruising crew, unavailable;
+	if sco-using-you is true:
+		vcal "You already let Lou know the truth!";
+		already-done;
+	ready;
+
+this is the vr-using-you rule:
+	now sco-using-you is true;
+	say "Hooray! You figured what to do! You get a point!";
+	lou-check;
+
+a goodrhyme rule (this is the vc-fusing-phew rule):
+	if player is not in cruising crew, unavailable;
+	if lou-score < 2:
+		vcp "Once you have more than one perspective to fuse together, that'll work.";
+		not-yet;
+	if sco-fusing-phew is true:
+		vcal "Fusing ideas once was exhausting enough.";
+		already-done;
+	ready;
+
+this is the vr-fusing-phew rule:
+	now sco-fusing-phew is true;
+	say "You put things together--the boozing, the using. Lou nods. He thanks you and leaves.";
+	moot losing lou;
+
 section hailing hill point scoring
 
 a goodrhyme rule (this is the vc-ailing-ill rule):
@@ -601,6 +646,12 @@ this is the vr-bam-bye rule:
 	win-the-game;
 
 section auxiliary rules
+
+to lou-check:
+	if lou-score is 1:
+		say "Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.";
+	else:
+		say "Lou nods at the different perspectives but is unable to integrate them. Maybe you can help!"
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker check rule):
 	if ee is moot:

@@ -296,6 +296,10 @@ Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if 
 
 volume east area
 
+Cruising Crew is a room in eaststuff.
+
+Losing Lou is a person in Cruising Crew.
+
 volume unsorted
 
 volume meta
@@ -503,3 +507,11 @@ index map with Crude Crapper mapped west of Hailing Hill.
 section north bit
 
 index map with Bosh Blanks mapped north of Bass Bath.
+
+section south bit
+
+index map with Too Tough Blue Bluff mapped south of Bass Bath.
+
+section east bit
+
+index map with Cruising Crew mapped east of Bass Bath.

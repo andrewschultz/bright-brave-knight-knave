@@ -89,6 +89,11 @@ section hill score
 to decide which number is hill-score:
 	decide on (boolval of sco-ailing-ill) + (boolval of sco-failing-phil) + (boolval of sco-mailing-mill) + (boolval of sco-wailing-will) + (boolval of sco-bailing-bill) 
 
+section crew score
+
+to decide which number is lou-score:
+	decide on (boolval of sco-using-you) + (boolval of sco-boozing-boo);
+
 book definitions
 
 definition: a room (called rm) is available-from-here:
