@@ -53,6 +53,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him."
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
+"bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
 
 section white wave/universal point scoring
 
@@ -545,6 +546,15 @@ this is the vr-bright-bully rule:
 	say "Yes, indeed, it isn't just about being trite or having irony.";
 	abide by the frightfully-bright-bully rule;
 
+a goodrhyme rule (this is the vc-bam-bye rule):
+	if tully-score < 2, unavailable;
+	ready;
+
+this is the vr-bam-bye rule:
+	now sco-bam-bye is true;
+	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.";
+	win-the-game;
+
 section auxiliary rules
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker check rule):
@@ -637,10 +647,10 @@ weak wooter	chic shooter	"<stuff>"
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:
-		say "And you win.";
-		win-the-game;
+		say "[tully] looks shocked! 'No! No! It can't be!' Suddenly, they look much more humble.[paragraph break]'Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!'[paragraph break]You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.";
+		now Trite Tully is not proper-named;
 	else:
-		say "You see into Tully a bit. But not enough. There's more.";
+		say "Tully shakes their head a bit. You've seen into them, but you feel like you can do more.";
 
 to check-points:
 	let any-missed be false;

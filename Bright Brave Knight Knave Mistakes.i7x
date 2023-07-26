@@ -123,6 +123,30 @@ to say item-guess of (hi - a holeitem):
 			say "[line break]There is one more item to guess, if you want.";
 		now hi is preguessed;
 
+table of trite tully guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"damn"	"die"	sham-yet rule	false	--	"You were too harsh![end-tough]"
+"fam"	"fie"	sham-yet rule	false	--	"Tully isn't really looking to be a close friend."
+"ham"	"hi"	sham-yet rule	false	--	"Yes, Tully is overacting, but knowing this fact won't do enough."
+"lamb"	"lie"	sham-yet rule	false	--	"You were not harsh enough![end-lenient]"
+"maam"	"my"	sham-yet rule	false	--	"Your appeal to female authority falls on deaf ears."
+"spam"	"spy"	sham-yet rule	false	--	"It's no secret that Tully spams their opinions."
+"tram"	"try"	sham-yet rule	false	--	"If there were a train to catch, you could send Tully on it. Alas, no."
+
+to say end-tough:
+	end the story saying "Flout Fluff?! ... Stout stuff!";
+	follow the shutdown rules;
+
+to say end-lenient:
+	end the story saying "Route: Rough?!";
+	follow the shutdown rules;
+
+this is the sham-yet rule:
+	if tully-score < 2, the rule fails;
+	the rule succeeds;
+
+volume other
+
 table of first check rhymes
 mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 text	text	a topic	a rule	a truth state	a rule	text

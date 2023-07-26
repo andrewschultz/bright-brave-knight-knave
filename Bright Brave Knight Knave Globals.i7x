@@ -4,7 +4,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 33.
+core-max is 34.
 
 max-bonus is 5.
 
@@ -85,6 +85,8 @@ sco-bright-bully is a truth state that varies.
 sco-train-tracks is a truth state that varies.
 sco-main-max is a truth state that varies.
 sco-pain-packs is a truth state that varies.
+
+sco-bam-bye is a truth state that varies.
 
 volume unsorted from MRC python script
 

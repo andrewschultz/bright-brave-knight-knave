@@ -107,7 +107,15 @@ after printing the locale description for white wave:
 
 chapter Trite Tully
 
-Trite Tully is a person.
+Trite Tully is a person. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]"
+
+guess-table of trite tully is the table of trite tully guesses.
+
+to say tulstill: if tully-score is 1, say "still ";
+
+understand "sham shy" and "sham/shy" as Trite Tully when tully-score is 2.
+
+printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[end if]".
 
 book bass bath
 
