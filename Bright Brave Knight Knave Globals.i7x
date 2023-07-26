@@ -26,11 +26,15 @@ eaststuff is a region.
 
 volume point scoring booleans
 
+chapter intro area
+
 sco-write-right-rave is a truth state that varies.
 sco-kite-cave is a truth state that varies.
 
 sco-pass-path is a truth state that varies.
 sco-mass-math is a truth state that varies.
+
+chapter west area
 
 sco-what-whoah is a truth state that varies.
 
@@ -41,12 +45,21 @@ sco-rid-rum is a truth state that varies.
 sco-mood-mapper is a truth state that varies.
 sco-nude-napper is a truth state that varies.
 
+sco-meek-mooter is a truth state that varies.
+sco-chic-shooter is a truth state that varies.
+sco-weak-wooter is a truth state that varies.
+
 sco-fried-freak is a truth state that varies.
 sco-snide-sneak is a truth state that varies.
 sco-guide-geek is a truth state that varies.
 sco-stride-streak is a truth state that varies.
 
-section variable (detours after each hold hole piece is recovered)
+chapter north area
+
+sco-posh-planks is a truth state that varies.
+sco-plucky-plot is a truth state that varies.
+
+chapter variable (detours after each hold hole piece is recovered)
 
 sco-fill-fun is a truth state that varies.
 sco-will-won is a truth state that varies.
@@ -55,16 +68,7 @@ sco-ill-un is a truth state that varies.
 sco-grander-grove is a truth state that varies.
 sco-candor-cove is a truth state that varies.
 
-section endgame--well, start
-
-sco-fight-fave is a truth state that varies.
-
-sco-fright-fully is a truth state that varies.
-sco-bright-bully is a truth state that varies.
-
-sco-meek-mooter is a truth state that varies.
-sco-chic-shooter is a truth state that varies.
-sco-weak-wooter is a truth state that varies.
+chapter endgame--well, start
 
 sco-ailing-ill is a truth state that varies.
 sco-scaling-skill is a truth state that varies.
@@ -73,7 +77,12 @@ sco-failing-phil is a truth state that varies.
 sco-bailing-bill is a truth state that varies.
 sco-wailing-will is a truth state that varies.
 
-sco-posh-planks is a truth state that varies.
+sco-fight-fave is a truth state that varies.
+
+sco-fright-fully is a truth state that varies.
+sco-bright-bully is a truth state that varies.
+
+volume unsorted from MRC python script
 
 volume game state variables
 

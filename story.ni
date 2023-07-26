@@ -242,6 +242,10 @@ chapter yucky yacht
 
 the yucky yacht is scenery in Bosh Blanks.
 
+check entering yucky yacht:
+	if sco-plucky-plot is false, say "Eww. Not until it's clean. Plus it's rich people property. Probably videocameras and stuff." instead;
+
+
 volume south area
 
 volume east area
