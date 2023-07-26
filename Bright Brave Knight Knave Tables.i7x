@@ -566,6 +566,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker check rul
 
 an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek swap rule):
 	abide by the eeker conflict rule for ee;
+	abide by the eeker-match rule;
 
 an eeker manipulation rule for an eeker (called ee) (this is the mooter-shooter-wooter swap rule):
 	abide by the eeker conflict rule for ee;
@@ -599,15 +600,15 @@ this is the eeker-match rule:
 			say "You figure [the rfe] and [the other-guy of rfe] would be good to call both at once.";
 			now other-guy of rfe is followish;
 			now rfe is followish;
-			the rule succeeds;
+			continue the action;
 	unless number of fungible eekers is 2, continue the action;
 	let croo be a random crooty fungible eeker;
 	let cree be a random creeky fungible eeker;
 	if matchnum of croo is not matchnum of cree:
-		say "Oh no! The [croo] and [cree] seem to have nothing in common at all.";
+		say "Oh no! The [croo] and [cree] seem to have nothing in common at all. They go their separate ways.";
 		sideline croo;
 		sideline cree;
-		the rule succeeds;
+		continue the action;
 	if croo is pairedyet:
 		say "The [croo] and [cree] seem pleased to be reunited.";
 	else:
@@ -641,11 +642,17 @@ this is the frightfully-bright-bully rule:
 	else:
 		say "You see into Tully a bit. But not enough. There's more.";
 
-to win-the-game:
-[	if debug-state is true:
+to check-points:
+	let any-missed be false;
+	if debug-state is true:
 		repeat through table of verb checks:
 			if idid entry is false:
-				say "[w1 entry] [w2 entry] undone.";]
+				say "[w1 entry] [w2 entry] undone.";
+				now any-missed is true;
+	if any-missed is true, say "Got everything!"
+
+to win-the-game:
+	check-points;
 	increment core-score;
 	if cur-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;

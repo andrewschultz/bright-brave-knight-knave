@@ -244,7 +244,25 @@ the yucky yacht is scenery in Bosh Blanks.
 
 check entering yucky yacht:
 	if sco-plucky-plot is false, say "Eww. Not until it's clean. Plus it's rich people property. Probably videocameras and stuff." instead;
+	if player is in Bosh Blanks:
+		move yacht to Lane Lax;
+		move player to Lane Lax;
+	else:
+		move yacht to Bosh Blanks;
+		move player to Bosh Blanks;
+	the rule succeeds;
 
+book Lane Lax
+
+Lane Lax is a room in northstuff. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "It's pretty barren here. The yucky yacht will lead back to Posh Planks if you [b]ENTER[r] it."
+
+to say mama: if sco-main-max is true, say "Main Max "
+
+check going in Lane Lax:
+	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
+	if sco-pain-packs is false, say "You aren't equipped with emergency provisions." instead;
+
+[the train tracks are not all they could be, and they do not lead all the places they could]
 
 volume south area
 
