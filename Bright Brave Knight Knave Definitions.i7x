@@ -18,6 +18,8 @@ a holeitem is a kind of rhymable. a holeitem is usually scenery.
 
 a holeitem can be unguessed, preguessed or in-hold. a holeitem is usually unguessed.
 
+a holeitem can be blessed or unblessed. a holeitem is usually unblessed.
+
 guess-table of a holeitem is usually table of hold hole guesses.
 
 to decide whether hold-poke:

@@ -31,7 +31,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
-"ill"	"un/in"	--	--	false	true	true	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
+"ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
 "grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
 "candor|candour"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
@@ -327,7 +327,8 @@ a goodrhyme rule (this is the vc-bailing-bill rule):
 
 this is the vr-bailing-bill rule:
 	now sco-bailing-bill is true;
-	say "Shortly, someone who must be Bailing Bill drops by.";
+	say "Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.";
+	now bold bowl is blessed;
 
 a goodrhyme rule (this is the vc-failing-phil rule):
 	if player is not in hailing hill, unavailable;
@@ -342,7 +343,8 @@ a goodrhyme rule (this is the vc-failing-phil rule):
 
 this is the vr-failing-phil rule:
 	now sco-failing-phil is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.";
+	now cold coal is blessed;
 
 a goodrhyme rule (this is the vc-wailing-will rule):
 	if player is not in hailing hill, unavailable;

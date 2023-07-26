@@ -66,6 +66,8 @@ to say whats-in-hole:
 		now bold-hole is true;
 		say ". You know [the list of preguessed holeitems] must go in the hold hole, but you haven't found [if pgh is 1]it[else]them[end if] yet";
 		now bold-hole is false;
+	else if hole-progress is 0:
+		say ". Perhaps you could guess what might fit in there, as a warm-up exercise"
 
 rule for printing the name of a holeitem (called hi) when bold-hole is true: say "[b][printed name of hi in upper case][r]";
 
@@ -88,10 +90,12 @@ chapter hole finding items
 after printing the locale description for white wave:
 	let nch be number of carried holeitems;
 	if nch is 0, continue the action;
-	if number of carried holeitems > 0:
-		say "The hold hole shakes. Suddenly [the list of carried holeitems] [if nch is 1]flies[else]fly[end if] out of your hands and take [if nch is 1]its[else]their[end if] place in the hold hole.";
+	if number of carried blessed holeitems > 0:
+		say "The hold hole shakes. Suddenly [the list of carried blessed holeitems] [if nch is 1]flies[else]fly[end if] out of your hands and take [if nch is 1]its[else]their[end if] place in the hold hole.";
 		now all carried holeitems are in-hold;
 		now all carried holeitems are in white wave;
+	else if number of carried not blessed holeitems > 0:
+		say "You sort of expected something to happen with [the list of carried holeitems], but nothing did. Perhaps what you have is not properly prepared.";
 	if number of holeitems in white wave is 3:
 		say "[line break]The hole is completed. It cracks. You sense you must settle a score here and now.";
 		moot hold hole;
@@ -286,6 +290,16 @@ guess-table of Stander Stove is the table of stander stove guesses.
 
 volume verb-checker rule
 
+[below is how we would break things into tables. However, this is a lot slower!]
+
+[a room has a table name called rhymetab.]
+
+[this is the verb-checker rule:
+	abide by the vc-by-table rule for table of verb checks;
+	abide by the vc-by-table rule for rhymetab of location of player;
+
+a rhymeguess rule for a table name (called tn) (this is the vc-by-table rule):]
+
 this is the verb-checker rule:
 	let local-ha-half-level be 0;
 	let local-post-hom be false;
@@ -413,5 +427,7 @@ volume mapping stuff
 
 index map with Rut Row mapped west of Bass Bath.
 index map with Slid Slum mapped west of Rut Row.
-index map with Crude Crapper mapped south of Slid Slum.
 index map with recroom mapped north of Rut Row.
+index map with Rut Row mapped north of White Wave.
+index map with White Wave mapped east of Hailing Hill.
+index map with Crude Crapper mapped west of Hailing Hill.

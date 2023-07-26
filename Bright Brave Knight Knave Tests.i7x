@@ -16,7 +16,7 @@ test w3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 
 test w3b with "nude napper/write rave".
 
-test wc1 with "hi 1/fill fun/will won".
+test wc1 with "hi 1/illun/fill fun/will won".
 
 test wc2 with "hi 2/grander grove".
 
@@ -24,13 +24,15 @@ test wc3 with "hi 3/candor cove".
 
 test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
 
-section cheaty bits
+test wend1 with "u/scaling skill/ailing ill/mailing mill/bailing bill/failing phil/wailing will".
 
-test wj with "out/e/e/s/d/fight fave/frightfully/bright bully". [walkthrough jump]
+test wend2 with "d/d/fight fave/frightfully/bright bully".
+
+section cheaty bits
 
 test wa with "test w1/test w2/test w3/test wj".
 
-test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/test wq".
+test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/out/e/e/s/u/test wend1/test wend2".
 
 book quick walkthrough
 
