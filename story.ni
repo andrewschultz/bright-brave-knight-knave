@@ -73,17 +73,35 @@ rule for printing the name of a holeitem (called hi) when bold-hole is true: say
 
 guess-table of hold hole is table of hold hole guesses.
 
+chapter specific holeitems
+
+to decide which number is help-index:
+	if number of eekers in location of player is 0, decide on 0;
+	decide on (matchnum of random eeker in location of player);
+
+check going to Bass Bath: [this will need to be more widespread if we implement warp commands]
+	repeat with HI running through holeitems:
+		if player does not have HI, next;
+		if help-index is not palindex of HI, next;
+		say "[list of eekers in location of player] pause a bit. They agree they're done here. They thank you for giving them purpose and taking them on a nice adventure and, well, making an unexpected friend. But it is time for them to go.";
+		if number of eekers in location of player is not 2, say "Oops, bug ... there should be 2 eekers following.";
+		repeat with E running through eekers in location of player:
+			moot E;
+			now E is finished;
+
 section cold coal
 
-a cold coal is a holeitem.
+a cold coal is a holeitem. palindex of cold coal is 1.
 
 section bold bowl
 
-a bold bowl is a holeitem.
+a bold bowl is a holeitem. palindex of bold bowl is 2.
 
 section sold soul
 
-a sold soul is a holeitem.
+a sold soul is a holeitem. palindex of sold soul is 3.
+
+chapter saying good bye
 
 chapter hole finding items
 

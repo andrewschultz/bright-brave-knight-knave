@@ -20,6 +20,8 @@ a holeitem can be unguessed, preguessed or in-hold. a holeitem is usually ungues
 
 a holeitem can be blessed or unblessed. a holeitem is usually unblessed.
 
+a holeitem has a number called palindex. [ change this to a rule later? ]
+
 guess-table of a holeitem is usually table of hold hole guesses.
 
 to decide whether hold-poke:
