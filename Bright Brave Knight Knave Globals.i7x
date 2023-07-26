@@ -4,9 +4,9 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 40.
+core-max is 42.
 
-max-bonus is 5.
+max-bonus is 6.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
@@ -77,12 +77,22 @@ sco-fusing-phew is a truth state that varies.
 
 chapter variable (detours after each hold hole piece is recovered)
 
+section nil none
+
 sco-fill-fun is a truth state that varies.
 sco-will-won is a truth state that varies.
 sco-ill-un is a truth state that varies.
 
+section stander stove
+
 sco-grander-grove is a truth state that varies.
 sco-candor-cove is a truth state that varies.
+
+section route rough
+
+sco-flout-fluff is a truth state that varies.
+sco-nowt-nuff is a truth state that varies.
+sco-stout-stuff is a truth state that varies.
 
 chapter endgame--well, start
 

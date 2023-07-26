@@ -358,6 +358,16 @@ Stander Stove is a room. "You're trapped in what appears to be a metal stove[if 
 
 guess-table of Stander Stove is the table of stander stove guesses.
 
+book Rough Route
+
+Route Rough is a room. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+
+check going in route rough:
+	if route-rough-score >= 2:
+		say "You walk a long way ... then suddenly you wind up back where you were.";
+		move player to pre-hole-item-room instead;
+	say "That would just be wandering. You need to get your head clear and put angst to the side." instead;
+
 volume verb-checker rule
 
 [below is how we would break things into tables. However, this is a lot slower!]
@@ -422,10 +432,6 @@ this is the verb-checker rule:
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide-nlb the situational-cuing-reject rule;
-			process the run-rule entry;
-			if the rule failed:
-				now think-cue entry is true;
-				the rule succeeds;
 			if there is a core entry and idid entry is false:
 				if core entry is true and nwpc > 2:
 					say "You may have used too many words. Any necessary command just needs two words, no more, no less. I put this in to make sure you can't just spam guesses. It's a bit strict, but ... I wanted some cursory protection, as well as simple guidance to narrow down what you should guess.";
@@ -434,6 +440,10 @@ this is the verb-checker rule:
 				if core entry is false:
 					increase lump-count by 1;
 			now idid entry is true;
+			process the run-rule entry;
+			if the rule failed:
+				now think-cue entry is true;
+				the rule succeeds;
 			now think-cue entry is false;
 			if zap-core-entry is true: [must be after "process the run-rule entry" or next LLP may not register]
 				blank out the core entry;
@@ -492,6 +502,15 @@ this is the show-misses rule:
 		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper.";
 	if sco-ill-un is false:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
+	if route-rough-score < 3:
+		say "You could've said [b][rough-undone][r] in Route, Rough.";
+
+to say rough-undone:
+	repeat through table of verb checks:
+		if idid entry is false and there is a best-room entry and best-room entry is route rough:
+			say "[w1 entry in upper case] [w2 entry in upper case]";
+			continue the action;
+	say "BUG";
 
 volume mapping stuff
 

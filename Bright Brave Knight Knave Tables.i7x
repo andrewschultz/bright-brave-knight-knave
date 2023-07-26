@@ -24,7 +24,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
-"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
+"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-hid-hum rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
 "mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	"mood mapper" or "tude tapper"	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
@@ -38,7 +38,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
-"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	--
+"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] the Lane, Lax is a bit more potentially busy."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
@@ -51,6 +51,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
 "grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
 "candor|candour"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
+"flout"	"fluff"	--	--	false	true	true	false	route rough	vc-flout-fluff rule	vr-flout-fluff rule	--	--
+"nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
+"stout"	"stuff"	--	--	false	true	true	false	route rough	vc-stout-stuff rule	vr-stout-stuff rule	--	--
 "ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
 "scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
 "mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [once-now of vc-mailing-mill rule] you find a way to the top of Hailing Hill."
@@ -422,7 +425,7 @@ a goodrhyme rule (this is the vc-using-you rule):
 
 this is the vr-using-you rule:
 	now sco-using-you is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You break down some harsh truths to Lou without hopefully being too stark. He nods in appreciation.";
 	lou-check;
 
 a goodrhyme rule (this is the vc-fusing-phew rule):
@@ -599,7 +602,52 @@ this is the vr-candor-cove rule:
 	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
 	move player to pre-hole-item-room;
 
-section hailing hill stuff
+section route rough rules
+
+a goodrhyme rule (this is the vc-flout-fluff rule):
+	if player is not in route rough, unavailable;
+	if sco-flout-fluff is true:
+		vcal "You already flouted fluff!";
+		already-done;
+	ready;
+
+this is the vr-flout-fluff rule:
+	now sco-flout-fluff is true;
+	say "You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.";
+	rough-check;
+
+a goodrhyme rule (this is the vc-nowt-nuff rule):
+	if player is not in route rough, unavailable;
+	if sco-nowt-nuff is true:
+		vcal "You already nullified certain worries and complaints!";
+		already-done;
+	ready;
+
+this is the vr-nowt-nuff rule:
+	now sco-nowt-nuff is true;
+	say "You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.";
+	rough-check;
+
+a goodrhyme rule (this is the vc-stout-stuff rule):
+	if player is not in route rough, unavailable;
+	if sco-stout-stuff is true:
+		vcal "You already found ways to be stout!";
+		already-done;
+	ready;
+
+this is the vr-stout-stuff rule:
+	now sco-stout-stuff is true;
+	say "Yup. You feel stouter now.";
+	rough-check;
+
+to rough-check:
+	say "You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
+	if route-rough-score is 2:
+		repeat through table of verb checks:
+			unless there is a best-room entry and best-room entry is route rough, next;
+			if idid entry is false, now core entry is false;
+
+section hailing hill auxiliary
 
 a goodrhyme rule (this is the the can-mail rule):
 	if sco-scaling-skill is false:
@@ -775,9 +823,12 @@ to give-player (hi - a holeitem):
 	if hole-progress is 1:
 		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much. You close you eyes, wondering if you really deserve to have made any progress just through all those silly rhymes. Nothing seems to matter. Then ... you wind up in, or near, nothing.";
 		move player to Nil None;
-	else:
+	else if hole-progress is 2:
 		say "[line break]That same weightlessness as before. Darkness envelops you, and when it releases you, you're somewhere [one of]new[or]unpleasantly familiar[stopping].";
 		move player to Stander Stove;
+	else:
+		say "[line break]You start wandering. And you keep wandering. Pretty soon you are in the middle of nowhere.";
+		move player to Route Rough;
 
 volume table of noways
 
