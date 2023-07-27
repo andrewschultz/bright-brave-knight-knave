@@ -44,6 +44,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
+"done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
 "boozing"	"boo"	--	--	false	true	true	false	cruising crew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	cruising crew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	cruising crew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
@@ -64,6 +65,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
+
+table of verb checks (continued) [ this is for stuff where the room is definitely not finalized ]
+w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"salad"	"scent"	--	--	false	true	true	false	lane lax	vc-salad-scent rule	vr-salad-scent rule	--	--
 
 section white wave/universal point scoring
 
@@ -318,6 +323,11 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 	if sco-plucky-plot is true:
 		vcal "But you already hatched a plucky plot to clean the yucky yacht!";
 		already-done;
+	if not assisted:
+		vcal "You need a couple assistants to hatch a plot.";
+		not-yet;
+	if help-pair-number is not 6:
+		vcal "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
 	ready;
 
 this is the vr-plucky-plot rule:
@@ -377,7 +387,7 @@ this is the vr-grew-gruff rule:
 
 a goodrhyme rule (this is the vc-stew-stuff rule):
 	if player is not in too tough blue bluff, unavailable;
-	if sco-stew-stuff is false:
+	if sco-grew-gruff is false:
 		vcp "You haven't steeled yourself to look for what you need, yet. You feel bad for the people who might've lost what they need to eat.";
 		not-yet;
 	if sco-stew-stuff is true:
@@ -388,6 +398,7 @@ a goodrhyme rule (this is the vc-stew-stuff rule):
 this is the vr-stew-stuff rule:
 	now sco-stew-stuff is true;
 	say "Now that you know what to look for, it's not too bad to find. You find enough to make a stew.";
+	now player has stew stuff;
 
 a goodrhyme rule (this is the vc-new-nuff rule):
 	if player is not in too tough blue bluff, unavailable;
@@ -403,9 +414,7 @@ this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
 
-section yall yank scoring
-
-section yall yank scoring
+section tall tank(s) scoring
 
 a goodrhyme rule (this is the vc-yall-yank rule):
 	if player is not in tata, unavailable;
@@ -422,8 +431,26 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
-	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out the tall tank(s) with a lot of grunting.";
+	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and in one of the tanks, a one-wish fun fish swims around.";
 	open-psg east and Cruising Crew;
+	move fun fish to tata;
+
+a goodrhyme rule (this is the vc-done-dish rule):
+	if wish fun fish is not touchable, unavailable;
+	if fish-score < 2:
+		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
+		not-yet;
+	if sco-done-dish is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-done-dish rule:
+	now sco-done-dish is true;
+	say "That does it! The [fish] telekinetically does ... something with the stew and salad.";
+	moot stew stuff;
+	moot salad sent;
+	give-player bold bowl;
 
 section cruising crew scoring
 
@@ -852,6 +879,21 @@ to give-player (hi - a holeitem):
 	else:
 		say "[line break]You start wandering. And you keep wandering. Pretty soon you are in the middle of nowhere.";
 		move player to Route Rough;
+
+section undefined-yet rules
+
+a goodrhyme rule (this is the vc-salad-scent rule):
+	if pallid pent valid vent is untouchable, unavailable;
+	if sco-salad-scent is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-salad-scent rule:
+	now sco-salad-scent is true;
+	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
+	moot pallid pent valid vent;
+	now player has salad sent;
 
 volume table of noways
 

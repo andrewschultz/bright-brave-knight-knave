@@ -39,9 +39,9 @@ to decide whether half-assisted:
 	if number of eekers in location of player is 1, yes;
 	no;
 
-to decide which number is help-pair:
+to decide which number is help-pair-number: [ 1/4 = chic shooter / fried freak 2/5 = meek mooter / snide sneak 3/6 = weak wooter / guide geek ]
 	let e be a random eeker in location of player;
-	decide on matchnum of e;
+	decide on (number of eekers in location of player - 1) * 3 + matchnum of e;
 
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 
@@ -87,6 +87,11 @@ to decide which number is availval of (th - a thing): [ usually boolvals can cov
 	if player has th, decide on 1;
 	if th is in nothing, decide on 0;
 	decide on 1;
+
+chapter score macros
+
+to decide which number is fish-score:
+	decide on (boolval of sco-salad-scent) + (boolval of sco-stew-stuff)
 
 section hill score
 

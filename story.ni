@@ -290,9 +290,21 @@ check going in Lane Lax:
 
 [the train tracks are not all they could be, and they do not lead all the places they could]
 
+chapter move this
+
+the pallid pent valid vent is scenery in Lane Lax. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
+
+the salad sent is a thing.
+
 volume south area
 
+book Too Tough Blue Bluff
+
 Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. "
+
+chapter stew stuff
+
+The stew stuff is a thing.
 
 volume east area
 
@@ -301,6 +313,10 @@ book Tall Tank(s)
 tata is a privately-named room in eaststuff. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
+
+chapter one wish fun fish
+
+there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.".
 
 book Cruising Crew
 

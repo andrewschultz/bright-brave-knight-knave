@@ -112,6 +112,10 @@ sco-bam-bye is a truth state that varies.
 
 sco-yall-yank is a truth state that varies.
 
+sco-done-dish is a truth state that varies.
+
+sco-salad-scent is a truth state that varies.
+
 volume unsorted from MRC python script
 
 volume game state variables
