@@ -204,10 +204,6 @@ guess-table of recroom is the table of recroom guesses.
 
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
 
-after printing the locale description for recroom:
-	unless player was in Cried Creek, continue the action;
-	follow the eeker-match rule;
-
 chapter chic shooter
 
 the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is 1.
@@ -235,9 +231,9 @@ check going east in Cried Creek:
 after printing the locale description when number of leftbehind eekers > 0:
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
-		let randcree be a random creeky eeker in creek;
-		let randcroo be a random crooty eeker in recroom;
-		if matchnum of randcree is not matchnum of randcroo, say "Oh no! The [randcree] and [randcroo] don't like each other.";
+		move random leftbehind eeker to location of player;
+		follow the eeker matchups rule;
+		continue the action;
 	repeat with x running through eekers:
 		if x is leftbehind, move x to location of player;
 	continue the action;

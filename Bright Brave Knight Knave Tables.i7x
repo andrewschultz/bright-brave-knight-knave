@@ -244,54 +244,54 @@ this is the vr-nude-napper rule:
 section recruiter
 
 a goodrhyme rule (this is the vc-chic-shooter rule):
-	abide by the eeker check rule for chic shooter;
+	abide by the eeker precheck rule for chic shooter;
 	ready;
 
 this is the vr-chic-shooter rule:
 	now sco-chic-shooter is true;
-	abide by the mooter-shooter-wooter swap rule for chic shooter;
+	abide by the eeker vr rule for chic shooter;
 
 a goodrhyme rule (this is the vc-meek-mooter rule):
-	abide by the eeker check rule for meek mooter;
+	abide by the eeker precheck rule for meek mooter;
 	ready;
 
 this is the vr-meek-mooter rule:
 	now sco-meek-mooter is true;
-	abide by the mooter-shooter-wooter swap rule for meek mooter;
+	abide by the eeker vr rule for meek mooter;
 
 a goodrhyme rule (this is the vc-weak-wooter rule):
-	abide by the eeker check rule for weak wooter;
+	abide by the eeker precheck rule for weak wooter;
 	ready;
 
 this is the vr-weak-wooter rule:
 	now sco-weak-wooter is true;
-	abide by the mooter-shooter-wooter swap rule for weak wooter;
+	abide by the eeker vr rule for weak wooter;
 
 section spied speak cried creek point scoring
 
 a goodrhyme rule (this is the vc-fried-freak rule):
-	abide by the eeker check rule for fried freak;
+	abide by the eeker precheck rule for fried freak;
 	ready;
 
 this is the vr-fried-freak rule:
 	now sco-fried-freak is true;
-	abide by the freak-sneak-geek swap rule for fried freak;
+	abide by the eeker vr rule for fried freak;
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
-	abide by the eeker check rule for snide sneak;
+	abide by the eeker precheck rule for snide sneak;
 	ready;
 
 this is the vr-snide-sneak rule:
 	now sco-snide-sneak is true;
-	abide by the freak-sneak-geek swap rule for snide sneak;
+	abide by the eeker vr rule for snide sneak;
 
 a goodrhyme rule (this is the vc-guide-geek rule):
-	abide by the eeker check rule for guide geek;
+	abide by the eeker precheck rule for guide geek;
 	ready;
 
 this is the vr-guide-geek rule:
 	now sco-guide-geek is true;
-	abide by the freak-sneak-geek swap rule for guide geek;
+	abide by the eeker vr rule for guide geek;
 
 a goodrhyme rule (this is the vc-stride-streak rule):
 	if player is not in cried creek, unavailable;
@@ -751,9 +751,8 @@ to lou-check:
 	else:
 		say "Lou nods at the different perspectives but is unable to integrate them. Maybe you can help!"
 
-an eeker manipulation rule for an eeker (called ee) (this is the eeker check rule):
+an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck rule):
 	if ee is moot:
-		now already-rhymed-this is true;
 		if vc-dont-print is false, say "But you already got through to [the ee]!";
 		already-done;
 	if ee is fungible:
@@ -768,63 +767,64 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker check rul
 	if ee is creeky and player is not in cried creek, unavailable;
 	if ee is crooty and player is not in recroom, unavailable;
 
-an eeker manipulation rule for an eeker (called ee) (this is the freak-sneak-geek swap rule):
-	abide by the eeker conflict rule for ee;
-	abide by the eeker-match rule;
+to bring-over (ee - an eeker):
+	now ee is followish;
+	move ee to location of player;
 
-an eeker manipulation rule for an eeker (called ee) (this is the mooter-shooter-wooter swap rule):
-	abide by the eeker conflict rule for ee;
-	abide by the eeker-match rule;
+an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
+	abide by the eeker postcheck rule for ee;
+	abide by the eeker matchups rule for ee;
 
-an eeker manipulation rule for an eeker (called ee) (this is the eeker conflict rule):
-	if ee is nonconflicting:
+an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck rule):
+	if number of fungible eekers is 2:
+		say "The [list of fungible eekers] understand you wish to call someone new. They depart to make way for [the ee].";
+		sideline a random fungible eeker;
+		sideline a random fungible eeker;
+		bring-over ee;
+		the rule succeeds;
+	if number of fungible eekers is 0:
+		if ee is pairedyet:
+			say "You figure [the ee] and [the other-guy of ee] would be good to call together.";
+			bring-over ee;
+			bring-over other-guy of ee;
+			the rule succeeds;
 		say "The [ee] looks around, slightly uncomfortable. They see no one they immediately dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
 		move ee to location of player;
 		now ee is active;
-		continue the action;
-	let rfe be the player;
-	if ee is crooty:
-		now rfe is random fungible crooty eeker;
-	else:
-		now rfe is random fungible creeky eeker;
-	let got-one be false;
-	repeat through table of eeker conflicts:
-		unless rfe is eekold entry and ee is eeknew entry, next;
-		say "[eektxt entry][line break]";
-		break;
-	if got-one is false, say "BUG: need non-generic response for sidelining [rfe] for [ee].";
-	sideline rfe;
-	now rfe is postponed;
-	move ee to location of player;
+		the rule succeeds;
+	let rfe be a random fungible eeker;
+	if (rfe is crooty and ee is crooty) or (rfe is creeky and ee is creeky):
+		repeat through table of similar eeker conflicts:
+			unless rfe is eekold entry and ee is eeknew entry, next;
+			say "The [ee] and the [rfe] brush past each other with little or no acknowledgement.";
+			say "[eektxt entry][line break]";
+			sideline rfe;
+			now rfe is postponed;
+			bring-over ee;
+			the rule succeeds;
+		say "BUG [rfe] and [ee] should have mismatch text but don't.";
+		the rule succeeds;
 
-this is the eeker-match rule:
-	if number of fungible eekers is 1:
-		let rfe be random fungible eeker;
-		if rfe is pairedyet:
-			say "You figure [the rfe] and [the other-guy of rfe] would be good to call both at once.";
-			now other-guy of rfe is followish;
-			now rfe is followish;
-			continue the action;
-	unless number of fungible eekers is 2, continue the action;
-	let croo be a random crooty fungible eeker;
-	let cree be a random creeky fungible eeker;
-	if matchnum of croo is not matchnum of cree:
-		say "Oh no! The [croo] and [cree] seem to have nothing in common at all. They go their separate ways.";
-		sideline croo;
-		sideline cree;
-		continue the action;
-	if croo is pairedyet:
-		say "The [croo] and [cree] seem pleased to be reunited.";
+an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups rule):
+	let rfe be a random fungible eeker;
+	if matchnum of ee is not matchnum of rfe: [ make a table for this? ]
+		say "Oh no! The [ee] and [rfe] seem to have nothing in common at all. They go their separate ways.";
+		sideline ee;
+		sideline rfe;
+		the rule succeeds;
+	if ee is pairedyet:
+		say "The [ee] and [rfe] seem pleased to be reunited, and they're ready to go!";
 	else:
-		say "What do you know? The [croo] and [cree] seem to be opposites, yet they fill in each other's holes, personality-wise.";
-		now croo is followish;
-		if r-warn-yet is false:
-			say "[i][bracket][b]NOTE:[r][i] you can say [b]BYE[r][i] at any time to get rid of your new friends. You can also bring them back with [b]R [matchnum of croo][r][i].[close bracket][r]";
-			now r-warn-yet is true;
-		now croo is pairedyet;
-		now cree is pairedyet;
+		say "What do you know? The [ee] and [rfe] seem to be opposites, yet they fill in each other's holes, personality-wise.";
+		now ee is pairedyet;
+		now rfe is pairedyet;
+	bring-over ee;
+	now rfe is followish;
+	if r-warn-yet is false:
+		say "[i][bracket][b]NOTE:[r][i] you can say [b]BYE[r][i] at any time to get rid of your new friends. You can also bring them back with [b]R [matchnum of ee][r][i].[close bracket][r]";
+		now r-warn-yet is true;
 
-table of eeker conflicts
+table of similar eeker conflicts
 eekold	eeknew	eektxt
 fried freak	guide geek	"<stuff>"
 fried freak	snide sneak	"<stuff>"
