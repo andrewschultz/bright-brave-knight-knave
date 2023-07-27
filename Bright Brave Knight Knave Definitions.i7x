@@ -39,6 +39,10 @@ to decide whether half-assisted:
 	if number of eekers in location of player is 1, yes;
 	no;
 
+to decide which number is help-pair:
+	let e be a random eeker in location of player;
+	decide on matchnum of e;
+
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 
 an eeker can be creeky or crooty. an eeker is usually creeky.

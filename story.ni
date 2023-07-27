@@ -296,6 +296,14 @@ Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if 
 
 volume east area
 
+book Tall Tank(s)
+
+tata is a privately-named room in eaststuff. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
+
+the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
+
+book Cruising Crew
+
 Cruising Crew is a room in eaststuff.
 
 Losing Lou is a person in Cruising Crew.
@@ -519,9 +527,9 @@ section recruiting and intro
 index map with Rut Row mapped west of Bass Bath.
 index map with Slid Slum mapped west of Rut Row.
 index map with recroom mapped north of Rut Row.
-index map with Rut Row mapped north of White Wave.
+index map with Slid Slum mapped north of White Wave.
 index map with White Wave mapped east of Hailing Hill.
-index map with Crude Crapper mapped west of Hailing Hill.
+index map with Crude Crapper mapped west of Slid Slum.
 
 section north bit
 
@@ -533,4 +541,11 @@ index map with Too Tough Blue Bluff mapped south of Bass Bath.
 
 section east bit
 
-index map with Cruising Crew mapped east of Bass Bath.
+index map with tata mapped east of Bass Bath.
+index map with Cruising Crew mapped east of tata.
+
+section breakups
+
+index map with Route Rough mapped west of Cried Creek.
+index map with Stander Stove mapped north of Route Rough.
+index map with Nil None mapped north of Stander Stove.

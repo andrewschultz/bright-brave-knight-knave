@@ -43,6 +43,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
+"yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "boozing"	"boo"	--	--	false	true	true	false	cruising crew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	cruising crew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	cruising crew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
@@ -135,7 +136,7 @@ this is the vr-pass-path rule:
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
 	open-psg south and Too Tough Blue Bluff;
-	open-psg east and Cruising Crew;
+	open-psg east and tata;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -401,6 +402,28 @@ a goodrhyme rule (this is the vc-new-nuff rule):
 this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
+
+section yall yank scoring
+
+section yall yank scoring
+
+a goodrhyme rule (this is the vc-yall-yank rule):
+	if player is not in tata, unavailable;
+	if not assisted:
+		vcp "You need help from more than one person to move this!";
+		not-yet;
+	if Chic Shooter is not touchable:
+		vcp "You sense resistance to physical work from [list of visible eekers]. You need pals more action-based.";
+		not-yet;
+	if sco-yall-yank is true:
+		vcal "You've already pulled out the tall tank(s).";
+		already-done;
+	ready;
+
+this is the vr-yall-yank rule:
+	now sco-yall-yank is true;
+	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out the tall tank(s) with a lot of grunting.";
+	open-psg east and Cruising Crew;
 
 section cruising crew scoring
 

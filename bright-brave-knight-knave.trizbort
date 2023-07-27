@@ -29,11 +29,7 @@
 			<dock index="0" id="2" port="n" />
 			<dock index="1" id="10" port="s" />
 		</line>
-		<room id="12" name="Cruising Crew" subtitle="" x="96" y="32" w="96" h="64" region="East" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
-		<line id="13" name="" description="" style="dashed">
-			<dock index="0" id="2" port="e" />
-			<dock index="1" id="12" port="w" />
-		</line>
+		<room id="12" name="Cruising Crew" subtitle="" x="256" y="32" w="96" h="64" region="East" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<room id="14" name="Crude Crapper" subtitle="" x="-544" y="32" w="96" h="64" region="Recruiting" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="15" name="" description="" style="dashed" startText="in" endText="out">
 			<dock index="0" id="6" port="w" />
@@ -65,6 +61,15 @@
 			<dock index="1" id="24" port="s" />
 		</line>
 		<room id="26" name="Route, Rough" subtitle="" x="-544" y="-96" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="27" name="Tall Tank(s)" subtitle="" x="96" y="32" w="96" h="64" region="East" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="28" name="" description="" style="dashed">
+			<dock index="0" id="2" port="e" />
+			<dock index="1" id="27" port="w" />
+		</line>
+		<line id="29" name="" description="" style="dashed">
+			<dock index="0" id="27" port="e" />
+			<dock index="1" id="12" port="w" />
+		</line>
 	</map>
 	<settings>
 		<colors>
