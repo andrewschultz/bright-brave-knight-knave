@@ -6,7 +6,7 @@
 		<description>IFComp 2023 candidate, 6th in Prime Pro-Rhyme Row series</description>
 	</info>
 	<map>
-		<room id="1" name="White Wave" subtitle="" x="-224" y="160" w="96" h="64" region="Intro" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isStartRoom="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="1" name="White Wave" subtitle="" x="-384" y="160" w="96" h="64" region="Intro" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isStartRoom="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<room id="2" name="Bass Bath" subtitle="Pass Path" x="-64" y="32" w="96" h="64" region="Intro" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="3" name="" description="" style="dashed" startText="down" endText="down">
 			<dock index="0" id="1" port="ene" />
@@ -22,14 +22,14 @@
 			<dock index="0" id="4" port="w" />
 			<dock index="1" id="6" port="e" />
 		</line>
-		<room id="8" name="Nil None" subtitle="" x="-384" y="-224" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
-		<room id="9" name="Stander Stove" subtitle="" x="-224" y="-224" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="8" name="Nil None" subtitle="" x="-544" y="-352" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="9" name="Stander Stove" subtitle="" x="-544" y="-224" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<room id="10" name="Bosh Blanks" subtitle="" x="-64" y="-96" w="96" h="64" region="North" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="11" name="" description="" style="dashed">
 			<dock index="0" id="2" port="n" />
 			<dock index="1" id="10" port="s" />
 		</line>
-		<room id="12" name="Unnamed 2" subtitle="" x="96" y="32" w="96" h="64" region="East" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="12" name="Cruising Crew" subtitle="" x="96" y="32" w="96" h="64" region="East" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="13" name="" description="" style="dashed">
 			<dock index="0" id="2" port="e" />
 			<dock index="1" id="12" port="w" />
@@ -49,16 +49,22 @@
 			<dock index="0" id="16" port="w" />
 			<dock index="1" id="18" port="e" />
 		</line>
-		<room id="20" name="Unnamed 3" subtitle="" x="-64" y="160" w="96" h="64" region="South" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="20" name="Too-Tough Blue Bluff" subtitle="" x="-64" y="160" w="96" h="64" region="South" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="21" name="" description="" style="dashed">
 			<dock index="0" id="2" port="s" />
 			<dock index="1" id="20" port="n" />
 		</line>
-		<room id="22" name="Hailing Hill" subtitle="" x="-384" y="160" w="96" h="64" region="Intro" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="22" name="Hailing Hill" subtitle="" x="-544" y="160" w="96" h="64" region="Intro" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<line id="23" name="" description="" startText="up" endText="down">
 			<dock index="0" id="2" port="sw" />
 			<dock index="1" id="22" port="ne" />
 		</line>
+		<room id="24" name="Lane, Lax" subtitle="Train Tracks" x="-64" y="-224" w="96" h="64" region="North" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="25" name="" description="" style="dashed" midText="ENTER YACHT">
+			<dock index="0" id="10" port="n" />
+			<dock index="1" id="24" port="s" />
+		</line>
+		<room id="26" name="Route, Rough" subtitle="" x="-544" y="-96" w="96" h="64" region="Warp" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 	</map>
 	<settings>
 		<colors>

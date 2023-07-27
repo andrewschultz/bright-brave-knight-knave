@@ -10,11 +10,23 @@ test w1 with "kite cave"
 
 test w1b with "bold bowl/cold coal/sold soul".
 
-test w2 with "d/pass path/mass math".
+test w2 with "x hole/d/pass path/mass math".
 
 test w3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 
 test w3b with "nude napper/write rave".
+
+test w4 with "out/e/n/w/stride streak"
+
+test w4n with "guide geek/e/weak wooter/s/e/n/posh planks/plucky plot/enter yacht/train tracks/main max/pain packs/enter yacht/s"
+
+test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
+
+test wend1 with "u/scaling skill/ailing ill/mailing mill/bailing bill/failing phil/wailing will".
+
+test wend2 with "d/d/fight fave/bam bye/frightfully/bright bully/bam bye".
+
+section cheaty bits
 
 test wc1 with "hi 1/illun/fill fun/will won".
 
@@ -22,17 +34,9 @@ test wc2 with "hi 2/grander grove".
 
 test wc3 with "hi 3/candor cove".
 
-test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
-
-test wend1 with "u/scaling skill/ailing ill/mailing mill/bailing bill/failing phil/wailing will".
-
-test wend2 with "d/d/fight fave/frightfully/bright bully".
-
-section cheaty bits
-
 test wa with "test w1/test w2/test w3/test wj".
 
-test wf with "test w1/test w1b/test w2/test w3/test w3b/test wc1/test wc2/test wc3/out/e/e/s/u/test wend1/test wend2".
+test wf with "test w1/test w1b/test w2/test w3/test w3b/test w4/test w4n/test wc1/test wc2/test wc3/test wend1/test wend2".
 
 book quick walkthrough
 
@@ -49,6 +53,8 @@ book weird cases
 test cr with "gonear creek/stride streak".
 
 test cr1 with "test cr/fried freak/e/chic shooter".
+test cr2 with "test cr/guide geek/e/weak wooter".
+test cr3 with "test cr/snide sneak/e/meek mooter".
 
 Bright Brave Knight Knave Tests ends here.
 
