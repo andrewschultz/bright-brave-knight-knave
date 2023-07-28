@@ -204,6 +204,10 @@ guess-table of recroom is the table of recroom guesses.
 
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
 
+check going in recroom:
+	unless noun is west or noun is south, continue the action;
+	abide by the eeker-start-follow rule;
+
 chapter chic shooter
 
 the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is 1.
@@ -221,12 +225,7 @@ book spied speak cried creek
 Spied Speak Cried Creek is west of recroom. it is in recruiting. "You can only go back east here. You might get lost in the other directions."
 
 check going east in Cried Creek:
-	if number of eekers in Cried Creek is 0, continue the action;
-	let myeek be a random eeker in Cried Creek;
-	if sco-stride-streak is true:
-		now myeek is followish;
-	else:
-		say "The [myeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
+	abide by the eeker-start-follow rule;
 
 after printing the locale description when number of leftbehind eekers > 0:
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";

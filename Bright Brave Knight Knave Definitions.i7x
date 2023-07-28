@@ -41,6 +41,16 @@ to decide whether half-assisted:
 	if nelp is 1, yes;
 	no;
 
+to decide which eeker is onlyeek: [note: this is potentially dangerous since if there is more than 1 eeker we will get non-uniform results]
+	decide on random eeker in location of player;
+
+this is the eeker-start-follow rule:
+	if nelp is not 1, continue the action;
+	if sco-stride-streak is true:
+		now onlyeek is followish;
+	else:
+		say "The [onlyeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
+
 to decide which number is help-pair-number: [ 1/4 = chic shooter / fried freak 2/5 = meek mooter / snide sneak 3/6 = weak wooter / guide geek ]
 	let e be a random eeker in location of player;
 	decide on (nelp - 1) * 3 + matchnum of e;
