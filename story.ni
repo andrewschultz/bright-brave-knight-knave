@@ -353,8 +353,14 @@ carry out recruiting:
 		if matchnum of XX is number understood:
 			let og be other-guy of XX;
 			if XX is finished, say "You've already had your fun with the [XX] and [og]." instead;
-			if XX is dormant and og is dormant, say "You can't join that pair up yet, since you haven't identified either of them." instead;
-			if XX is dormant or og is dormant, say "You don't know who'd join the [if XX is dormant][og][else][xx][end if]." instead;
+			if XX is dormant and og is dormant:
+				say "You can't join that pair up yet, since you haven't identified either of them.";
+				follow the cheat-bonus rule;
+				the rule succeeds;
+			if XX is dormant or og is dormant:
+				say "You don't know who'd join the [if XX is dormant][og][else][xx][end if].";
+				process the cheat-bonus rule;
+				the rule succeeds;
 			if XX is not pairedyet:
 				if number of pairedyet eekers is 4:
 					increment cur-bonus;
@@ -364,6 +370,12 @@ carry out recruiting:
 			now og is pairedyet;
 			move player to recroom;
 			say "You recall [the xx] and [the og].";
+
+this is the cheat-bonus rule:
+	if number of pairedyet eekers is 4:
+		increment cur-bonus;
+		now r-shortcut-got is true;
+		say "You try to be a bit sneaky. You recognize, by process of elimination, that there can only be one person left to recruit both in the creek and in the office proper. So you wonder if you can, just, you know, call them up without knowing who they are. It's a nice idea, nice enough to deserve a bonus point as a possible loophole, but you'll have to figure who you want.";
 
 chapter verbsing
 
