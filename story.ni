@@ -337,7 +337,8 @@ understand "bye" as byeing.
 carry out byeing:
 	if number of not dormant eekers is 0, say "You haven't met anyone yet to say bye to!" instead;
 	if nelp is 0, say "But there is nobody here to say bye to!" instead;
-	say "You say good-bye to [list of eekers in location of player]." instead;
+	say "You say good-bye to [list of eekers in location of player].";
+	sideline-eekers;
 	the rule succeeds;
 
 chapter recruiting

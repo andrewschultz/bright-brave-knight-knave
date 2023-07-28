@@ -778,8 +778,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
 an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck rule):
 	if nelp is 2:
 		say "The [list of fungible eekers] understand you wish to call someone new. They depart to make way for [the ee].";
-		sideline a random fungible eeker;
-		sideline a random fungible eeker;
+		sideline-eekers;
 		bring-over ee;
 		the rule succeeds;
 	if nelp is 0:

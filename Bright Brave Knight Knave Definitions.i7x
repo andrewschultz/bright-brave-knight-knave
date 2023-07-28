@@ -55,6 +55,10 @@ an eeker has a number called matchnum.
 
 the eeker manipulation rules are an eeker based rulebook. the eeker manipulation rules have outcomes unavailable, not-yet, already-done, jump-reject, semi-pass and ready.
 
+to sideline-eekers:
+	repeat with X running through eekers in location of player:
+		sideline X;
+
 to sideline (th - a thing):
 	move th to Hidey House;
 	if th is an eeker:
