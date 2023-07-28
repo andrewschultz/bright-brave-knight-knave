@@ -293,9 +293,15 @@ the salad sent is a thing.
 
 volume south area
 
+book Treed Track
+
+Treed Track is a room in southstuff. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]."
+
+the seed sack is a thing.
+
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. "
+Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
 
 chapter stew stuff
 
@@ -577,7 +583,8 @@ index map with Bosh Blanks mapped north of Bass Bath.
 
 section south bit
 
-index map with Too Tough Blue Bluff mapped south of Bass Bath.
+index map with Treed Track mapped south of Bass Bath.
+index map with Too Tough Blue Bluff mapped south of Slum Slid.
 
 section east bit
 

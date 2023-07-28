@@ -4,14 +4,15 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 43.
+core-max is 47.
 
-max-bonus is 6.
+max-bonus is 7.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
 --waiting to say WRITE RAVE gets 2 points instead of 1
 --so core_max + max_bonus = rows in big table
+We can double-check what core-max + max-bonus should be by search/replacing sco-
 ]
 
 intro is a region.
@@ -65,11 +66,28 @@ sco-pain-packs is a truth state that varies.
 
 chapter south area
 
+section treed track
+
+sco-seed-sack is a truth state that varies.
+sco-need-knack is a truth state that varies.
+sco-heed-hack is a truth state that varies.
+sco-plead-plaque is a truth state that varies.
+
+section too tough blue bluff
+
 sco-grew-gruff is a truth state that varies.
 sco-stew-stuff is a truth state that varies.
 sco-new-nuff is a truth state that varies.
 
 chapter east area
+
+section tata tall tank(s)
+
+sco-yall-yank is a truth state that varies.
+
+sco-done-dish is a truth state that varies.
+
+section Bruising Brew
 
 sco-boozing-boo is a truth state that varies.
 sco-using-you is a truth state that varies.
@@ -110,13 +128,9 @@ sco-bright-bully is a truth state that varies.
 
 sco-bam-bye is a truth state that varies.
 
-sco-yall-yank is a truth state that varies.
-
-sco-done-dish is a truth state that varies.
+chapter unsorted globals
 
 sco-salad-scent is a truth state that varies.
-
-volume unsorted from MRC python script
 
 volume game state variables
 

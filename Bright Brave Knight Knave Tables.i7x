@@ -38,8 +38,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
-"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] the Lane, Lax is a bit more potentially busy."
+"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
+"need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
+"heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
+"seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
+"plead"	"plaque"	--	--	false	true	false	false	treed track	vc-plead-plaque rule	vr-plead-plaque rule	--	--
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
@@ -58,7 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stout"	"stuff"	--	--	false	true	true	false	route rough	vc-stout-stuff rule	vr-stout-stuff rule	--	--
 "ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
 "scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
-"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [once-now of vc-mailing-mill rule] you find a way to the top of Hailing Hill."
+"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [if hill-score < 2]once[else]now[end if] you are at the top of Hailing Hill[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
 "bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him."
 "failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him."
 "wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him."
@@ -140,7 +144,7 @@ this is the vr-pass-path rule:
 	print-the-loc;
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
-	open-psg south and Too Tough Blue Bluff;
+	open-psg south and Treed Track;
 	open-psg east and tata;
 
 a goodrhyme rule (this is the vc-mass-math rule):
@@ -372,6 +376,68 @@ this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
 
+section treed track scoring
+
+a goodrhyme rule (this is the vc-need-knack rule):
+	if player is not in treed track, unavailable;
+	if help-pair-number is 2:
+		vcp "The Snide Sneak has advice of how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
+		not-yet;
+	if help-pair-number is not 5:
+		vcp "You'd like to, but you need assistance from others as to how.";
+		not-yet;
+	if sco-need-knack is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-need-knack rule:
+	now sco-need-knack is true;
+	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
+	open-psg up and Too Tough Blue Bluff;
+
+a goodrhyme rule (this is the vc-heed-hack rule):
+	if player is not in treed track, unavailable;
+	if sco-need-knack is false:
+		vcp "But you have not figured out any basic hacks to progress further! Well, not yet. First things first.";
+		not-yet;
+	if sco-heed-hack is true:
+		vcal "You look for other ways to hack through the Treed Track, but three all told is pretty good.";
+		already-done;
+	ready;
+
+this is the vr-heed-hack rule:
+	now sco-heed-hack is true;
+	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. That's easy, now you know what to do. You find two more passages.";
+	open-psg east and Hidey House;
+	open-psg west and Hidey House;
+
+a goodrhyme rule (this is the vc-seed-sack rule):
+	if player is not in treed track, unavailable;
+	if sco-seed-sack is true:
+		vcal "You already got a seed sack!";
+		already-done;
+	ready;
+
+this is the vr-seed-sack rule:
+	now sco-seed-sack is true;
+	say "You manage to discover a seed sack nearby. You're not sure what it's good for--it seems to discuss more reliable methods of communication than, you know, actually growing plants. But it's bound to come in handy, you think! You hope.";
+	now player has seed sack;
+
+a goodrhyme rule (this is the vc-plead-plaque rule):
+	if player is not in treed track, unavailable;
+	if sco-plead-plaque is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-plead-plaque is true:
+		vcal "No, you don't need to weigh yourself down with another plaque. Instead of doing so, why not check the predecessors to [this-game]? Once you're done here, of course.";
+		already-done;
+	ready;
+
+this is the vr-plead-plaque rule:
+	now sco-plead-plaque is true;
+	say "Oh my goodness! You've discovered a treasure that is as priceless as your quest, but more so! It expresses congratulations for getting this far and being so observant and also humbly suggests you also enjoy [other-ones], once you've solved this terribly important quest, of course.[paragraph break]There is a perfectly sensible small-print disclaimer that those adventures are not quite as unbelievably dope as this one, since the author has only gotten better at writing text adventures with time, but the author still had fun making them.";
+
 section too tough blue bluff scoring
 
 a goodrhyme rule (this is the vc-grew-gruff rule):
@@ -419,7 +485,7 @@ section tall tank(s) scoring
 a goodrhyme rule (this is the vc-yall-yank rule):
 	if player is not in tata, unavailable;
 	if not assisted:
-		vcp "You need help from more than one person to move this!";
+		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it!";
 		not-yet;
 	if Chic Shooter is not touchable:
 		vcp "You sense resistance to physical work from [list of visible eekers]. You need pals more action-based.";
@@ -523,6 +589,9 @@ a goodrhyme rule (this is the vc-mailing-mill rule):
 	if player is not in hailing hill, unavailable;
 	if sco-scaling-skill is false or sco-ailing-ill is false:
 		vcp "A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!";
+		not-yet;
+	if sco-seed-sack is false:
+		vcp "A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.";
 		not-yet;
 	if sco-mailing-mill is true:
 		vcal "The mailing mill is already on Hailing Hill!";
