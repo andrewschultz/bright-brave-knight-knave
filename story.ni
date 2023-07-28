@@ -324,6 +324,22 @@ volume unsorted
 
 volume meta
 
+book eeker stuff
+
+chapter byeing
+
+byeing is an action out of world.
+
+understand the command "bye" as something new.
+
+understand "bye" as byeing.
+
+carry out byeing:
+	if number of not dormant eekers is 0, say "You haven't met anyone yet to say bye to!" instead;
+	if nelp is 0, say "But there is nobody here to say bye to!" instead;
+	say "You say good-bye to [list of eekers in location of player]." instead;
+	the rule succeeds;
+
 chapter recruiting
 
 recruiting is an action applying to one number.

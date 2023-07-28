@@ -31,17 +31,19 @@ to decide whether hold-poke:
 
 chapter eekers
 
+to decide which number is nelp: decide on number of eekers in location of player;
+
 to decide whether assisted:
-	if number of eekers in location of player is 2, yes;
+	if nelp is 2, yes;
 	no;
 
 to decide whether half-assisted:
-	if number of eekers in location of player is 1, yes;
+	if nelp is 1, yes;
 	no;
 
 to decide which number is help-pair-number: [ 1/4 = chic shooter / fried freak 2/5 = meek mooter / snide sneak 3/6 = weak wooter / guide geek ]
 	let e be a random eeker in location of player;
-	decide on (number of eekers in location of player - 1) * 3 + matchnum of e;
+	decide on (nelp - 1) * 3 + matchnum of e;
 
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 

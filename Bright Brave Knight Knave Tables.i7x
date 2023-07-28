@@ -776,13 +776,13 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
 	abide by the eeker matchups rule for ee;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck rule):
-	if number of fungible eekers is 2:
+	if nelp is 2:
 		say "The [list of fungible eekers] understand you wish to call someone new. They depart to make way for [the ee].";
 		sideline a random fungible eeker;
 		sideline a random fungible eeker;
 		bring-over ee;
 		the rule succeeds;
-	if number of fungible eekers is 0:
+	if nelp is 0:
 		if ee is pairedyet:
 			say "You figure [the ee] and [the other-guy of ee] would be good to call together.";
 			bring-over ee;
