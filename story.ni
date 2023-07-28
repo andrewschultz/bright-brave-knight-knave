@@ -230,8 +230,8 @@ check going east in Cried Creek:
 after printing the locale description when number of leftbehind eekers > 0:
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
-		move random leftbehind eeker to location of player;
-		follow the eeker matchups rule;
+		let rle be random leftbehind eeker;
+		follow the eeker matchups rule for rle;
 		continue the action;
 	repeat with x running through eekers:
 		if x is leftbehind, move x to location of player;
@@ -336,7 +336,7 @@ understand "bye" as byeing.
 carry out byeing:
 	if number of not dormant eekers is 0, say "You haven't met anyone yet to say bye to!" instead;
 	if nelp is 0, say "But there is nobody here to say bye to!" instead;
-	say "You say good-bye to [list of eekers in location of player].";
+	say "You say good-bye to [the list of eekers in location of player].";
 	sideline-eekers;
 	the rule succeeds;
 

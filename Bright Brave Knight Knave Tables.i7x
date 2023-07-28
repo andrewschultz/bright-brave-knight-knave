@@ -805,7 +805,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck
 		the rule succeeds;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups rule):
-	let rfe be a random fungible eeker;
+	let rfe be a random fungible eeker that is not ee;
 	if matchnum of ee is not matchnum of rfe: [ make a table for this? ]
 		say "Oh no! The [ee] and [rfe] seem to have nothing in common at all. They go their separate ways.";
 		sideline ee;
