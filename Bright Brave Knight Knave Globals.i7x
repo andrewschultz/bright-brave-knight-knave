@@ -176,6 +176,9 @@ sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
 
+sco-time-toad is a truth state that varies.
+sco-crime-crowed is a truth state that varies.
+
 volume game state variables
 
 took-yacht is a truth state that varies.
@@ -188,6 +191,7 @@ got-rave-bonus is a truth state that varies.
 got-hole-bonus is a truth state that varies.
 
 bool-hill-available is a truth state that varies.
+bool-brew-available is a truth state that varies.
 
 debug-allow-final is a truth state that varies.
 

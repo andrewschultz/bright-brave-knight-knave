@@ -293,6 +293,12 @@ book Passed Port
 
 Passed Port is a room in northstuff. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if]."
 
+the slime slowed rime road is scenery in Passed Port.
+
+chapter time toad
+
+the time toad is a thing. "A time toad sits here pensively. It alreay helped you get the cold coal, but it seems to be holding just one more secret."
+
 chapter pallid pent valid vent
 
 the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
@@ -301,7 +307,7 @@ the salad sent is a thing.
 
 chapter posh pick
 
-the posh pick is a thing in passed port. "A posh pick is buried in the slime, slowed.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
+the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
 
 volume south area
 
@@ -322,6 +328,10 @@ The stew stuff is a thing.
 book Lack Light Black Blight
 
 Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+
+chapter rack right
+
+the rack right is a thing. printed name is "rack, right".
 
 book Knell Nook
 

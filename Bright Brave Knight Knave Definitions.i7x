@@ -211,6 +211,13 @@ this is the flag bad goto from rule: do nothing;
 
 this is the flag bad goto to rule: do nothing;
 
+volume other stuff
+
+to alt-last (rm - a room): [this makes the final flip an optional point]
+	repeat through table of verb checks:
+		unless there is a best-room entry and best-room entry is rm, next;
+		if idid entry is false, now core entry is false;
+
 book to decide whether (largely game dependent stuff)
 
 to decide whether (ru - a rule) is spaceable: yes; [annoying space breaks in inform]

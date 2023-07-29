@@ -646,6 +646,7 @@ a goodrhyme rule (this is the vc-hack-height rule):
 this is the vr-hack-height rule:
 	now sco-hack-height is true;
 	say "Hooray! You figured what to do! You get a point!";
+	blight-alt;
 
 a goodrhyme rule (this is the vc-quack-quite rule):
 	if player is not in lack light black blight, unavailable;
@@ -660,6 +661,7 @@ a goodrhyme rule (this is the vc-quack-quite rule):
 this is the vr-quack-quite rule:
 	now sco-quack-quite is true;
 	say "Hooray! You figured what to do! You get a point!";
+	blight-alt;
 
 a goodrhyme rule (this is the vc-flak-flight rule):
 	if player is not in lack light black blight, unavailable;
@@ -674,6 +676,8 @@ a goodrhyme rule (this is the vc-flak-flight rule):
 this is the vr-flak-flight rule:
 	now sco-flak-flight is true;
 	say "Hooray! You figured what to do! You get a point!";
+	blight-alt;
+
 
 a goodrhyme rule (this is the vc-slack-slight rule):
 	if player is not in lack light black blight, unavailable;
@@ -688,6 +692,13 @@ a goodrhyme rule (this is the vc-slack-slight rule):
 this is the vr-slack-slight rule:
 	now sco-slack-slight is true;
 	say "Hooray! You figured what to do! You get a point!";
+	blight-alt;
+
+to blight-alt:
+	if blight-score is 3:
+		alt-last black blight;
+		say "You get a rack, right, from all this. It just feels right, both the shape and texture, and that you should have it. You suspect it'll be important in some ritual somewhere.";
+		now player has rack right;
 
 section too tough blue bluff scoring
 
@@ -1053,9 +1064,7 @@ this is the vr-stout-stuff rule:
 to rough-check:
 	say "You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
 	if route-rough-score is 2:
-		repeat through table of verb checks:
-			unless there is a best-room entry and best-room entry is route rough, next;
-			if idid entry is false, now core entry is false;
+		alt-last route rough;
 
 section knell nook auxiliary
 
