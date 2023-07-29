@@ -112,8 +112,6 @@ section tata tall tank(s)
 
 sco-yall-yank is a truth state that varies.
 
-sco-done-dish is a truth state that varies.
-
 section Lane Lax
 
 sco-train-tracks is a truth state that varies.
@@ -124,6 +122,14 @@ section Wowed Wise Crowd Cries
 
 sco-trowed-tries is a truth state that varies.
 sco-loud-lies is a truth state that varies.
+
+section Thought Thief Fought Fief
+
+sco-brought-brief is a truth state that varies.
+sco-bought-beef is a truth state that varies.
+sco-wrought-reef is a truth state that varies.
+
+sco-done-dish is a truth state that varies.
 
 section Bruising Brew
 

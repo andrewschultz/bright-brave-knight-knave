@@ -59,12 +59,15 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
-"done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
 "loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	--
+"bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
+"brought"	"brief"	--	--	false	true	true	false	thought thief fought fief	vc-brought-brief rule	vr-brought-brief rule	--	--
+"wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	--
+"done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
@@ -484,7 +487,10 @@ a goodrhyme rule (this is the vc-main-max rule):
 
 this is the vr-main-max rule:
 	now sco-main-max is true;
-	say "The train tracks become shinier and stronger and branch a bit more.";
+	say "The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. Clod clashes break out!";
+	move clod clashes to lane lax;
+	open-psg north and Wowed Wise Crowd Cries;
+	open-psg south and Thought Thief Fought Fief;
 
 a goodrhyme rule (this is the vc-pain-packs rule):
 	if player is not in lane lax, unavailable;
@@ -496,6 +502,59 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
+
+section thought thief fought fief scoring
+
+a goodrhyme rule (this is the vc-bought-beef rule):
+	if player is not in thought thief fought fief, unavailable;
+	if sco-bought-beef is true:
+		vcal "You already pretended to have bought beef, or a beef, or something!";
+		already-done;
+	ready;
+
+this is the vr-bought-beef rule:
+	now sco-bought-beef is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-brought-brief rule):
+	if player is not in thought thief fought fief, unavailable;
+	if sco-brought-brief is true:
+		vcal "You already pretended you brought huge plans!";
+		already-done;
+	ready;
+
+this is the vr-brought-brief rule:
+	now sco-brought-brief is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-wrought-reef rule):
+	if player is not in thought thief fought fief, unavailable;
+	if thief-score < 2:
+		vcp "It's still too chaotic to do much!";
+		not-yet;
+	if sco-wrought-reef is true:
+		vcal "You already wrought the reef!";
+		already-done;
+	ready;
+
+this is the vr-wrought-reef rule:
+	now sco-wrought-reef is true;
+	say "You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.";
+
+a goodrhyme rule (this is the vc-done-dish rule):
+	if wish fun fish is not touchable, unavailable;
+	if fish-score < 2:
+		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
+		not-yet;
+	ready;
+
+this is the vr-done-dish rule:
+	now sco-done-dish is true;
+	say "You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.";
+	moot stew stuff;
+	moot salad sent;
+	moot fun fish;
+	give-player bold bowl;
 
 section treed track scoring
 
@@ -705,23 +764,6 @@ this is the vr-yall-yank rule:
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and in one of the tanks, a one-wish fun fish swims around.";
 	open-psg east and Bruising Brew;
 	move fun fish to tata;
-
-a goodrhyme rule (this is the vc-done-dish rule):
-	if wish fun fish is not touchable, unavailable;
-	if fish-score < 2:
-		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
-		not-yet;
-	if sco-done-dish is true:
-		vcal "You already did this!";
-		already-done;
-	ready;
-
-this is the vr-done-dish rule:
-	now sco-done-dish is true;
-	say "That does it! The [fish] telekinetically does ... something with the stew and salad.";
-	moot stew stuff;
-	moot salad sent;
-	give-player bold bowl;
 
 section wowed wise crowd cries scoring
 

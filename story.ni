@@ -339,10 +339,6 @@ tata is a privately-named room in eaststuff. printed name is "Tall Tank(s)". und
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
 
-chapter one wish fun fish
-
-there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.".
-
 book Lane Lax
 
 Lane Lax is a room in eaststuff. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if]."
@@ -355,11 +351,23 @@ check going in Lane Lax:
 
 [??the train tracks are not all they could be, and they do not lead all the places they could]
 
+chapter clod clashes
+
+The clod clashes are scenery in Lane Lax.
+
 book Wowed Wise Crowd Cries
 
 Wowed Wise Crowd Cries is a room in eaststuff.
 
 the proud prize is a thing.
+
+book Thought Thief Fought Fief
+
+Thought Thief Fought Fief is a room in eaststuff. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]".
+
+chapter one wish fun fish
+
+there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.".
 
 book Bruising Brew
 

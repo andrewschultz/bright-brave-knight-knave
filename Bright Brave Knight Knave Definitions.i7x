@@ -136,6 +136,11 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section thief score
+
+to decide what number is thief-score:
+	decide on (boolval of sco-brought-brief) + (boolval of sco-bought-beef)
+
 section blight score
 
 to decide what number is blight-score:
