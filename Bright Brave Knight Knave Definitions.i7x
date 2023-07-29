@@ -63,7 +63,7 @@ to decide whether pair-here of (ee - an eeker):
 	no;
 
 to decide whether only-here of (ee - an eeker):
-	if pfft-friends is true, yes;
+	if pfft-friends is true, no;
 	if ee is in location of player and other-guy of ee is not in location of player, yes;
 	no;
 

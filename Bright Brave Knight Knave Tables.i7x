@@ -369,7 +369,7 @@ this is the vr-posh-planks rule:
 	move yucky yacht to Bosh Blanks;
 
 a goodrhyme rule (this is the vc-plucky-plot rule):
-	if player is not in bosh blanks, unavailable;
+	if yucky yacht is not touchable, unavailable;
 	if sco-plucky-plot is true:
 		vcal "But you already hatched a plucky plot to clean the yucky yacht!";
 		already-done;
@@ -604,7 +604,7 @@ section treed track scoring
 a goodrhyme rule (this is the vc-need-knack rule):
 	if player is not in treed track, unavailable;
 	if only-here of Snide Sneak:
-		vcp "The Snide Sneak has advice of how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
+		vcp "The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
 		not-yet;
 	if not pair-here of Snide Sneak:
 		vcp "You'd like to, but you need assistance from others as to how.";
