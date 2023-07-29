@@ -4,7 +4,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 47.
+core-max is 50.
 
 max-bonus is 7.
 
@@ -131,6 +131,11 @@ sco-bam-bye is a truth state that varies.
 chapter unsorted globals
 
 sco-salad-scent is a truth state that varies.
+
+sco-cast-court is a truth state that varies.
+sco-fast-fort is a truth state that varies.
+sco-passed-port is a truth state that varies.
+
 
 volume game state variables
 

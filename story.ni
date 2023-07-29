@@ -264,30 +264,30 @@ chapter yucky yacht
 the yucky yacht is scenery in Bosh Blanks.
 
 check entering yucky yacht:
-	if sco-plucky-plot is false, say "Eww. Not until it's clean. Plus it's rich people property. Probably videocameras and stuff." instead;
-	if player is in Bosh Blanks:
-		move yacht to Lane Lax;
-		move player to Lane Lax;
-	else:
-		move yacht to Bosh Blanks;
-		move player to Bosh Blanks;
-	the rule succeeds;
+	if player is not in bosh blanks:
+		yacht-go bosh blanks;
+		the rule succeeds;
+	say "[if sco-plucky-plot is false]Eww. Not until it's clean. Plus it's rich people property. Probably videocameras and stuff[else]You need to ask the Sassed Sort where, specifically, to go[end if]." instead;
 
-book Lane Lax
+chapter sassed sort
 
-Lane Lax is a room in northstuff. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "It's pretty barren here. The yucky yacht will lead back to Posh Planks if you [b]ENTER[r] it."
+the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to go next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks]."
 
-to say mama: if sco-main-max is true, say "Main Max "
+book Cast Court
 
-check going in Lane Lax:
-	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
-	if sco-pain-packs is false, say "You aren't equipped with emergency provisions." instead;
+Cast Court is a room in northstuff.
 
-[the train tracks are not all they could be, and they do not lead all the places they could]
+book Fast Fort
+
+Fast Fort is a room in northstuff.
+
+book Passed Port
+
+Passed Port is a room in northstuff.
 
 chapter move this
 
-the pallid pent valid vent is scenery in Lane Lax. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
+the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
 
 the salad sent is a thing.
 
@@ -318,6 +318,18 @@ the tall tanks are plural-named scenery in tata. "They're tall! They look like t
 chapter one wish fun fish
 
 there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.".
+
+book Lane Lax
+
+Lane Lax is a room in eaststuff. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if]."
+
+to say mama: if sco-main-max is true, say "Main Max "
+
+check going in Lane Lax:
+	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
+	if sco-pain-packs is false, say "You aren't equipped with emergency provisions." instead;
+
+[the train tracks are not all they could be, and they do not lead all the places they could]
 
 book Cruising Crew
 

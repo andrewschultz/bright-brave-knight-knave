@@ -37,6 +37,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
+"cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
+"fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
+"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the Passed Port [once-now of vc-passed-port rule] you have decent directions to get there."
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -336,7 +339,43 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 
 this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
-	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]The yacht is yours! It's still yucky due to excessive bad taste, but it's transport, too, and comfortable, if you [b]ENTER[r] it.";
+	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer places.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
+	move Sassed Sort to Bosh Blanks;
+
+section bosh blanks scoring
+
+[ this costs about 200 bytes as opposed to writing this out individually ]
+the sort navigation rules are a room based rulebook. the sort navigation rules have outcomes unavailable and already-done.
+
+a sort navigation rule for a room (called rm) (this is the don't loop yacht around rule):
+	if sassed sort is not in location of player, unavailable;
+	if rm is location of player:
+		vcal "But you're already here!";
+		already-done;
+
+a goodrhyme rule (this is the vc-cast-court rule):
+	abide by the don't loop yacht around rule for Cast Court;
+	ready;
+
+this is the vr-cast-court rule:
+	now sco-cast-court is true;
+	yacht-go cast court;
+
+a goodrhyme rule (this is the vc-fast-fort rule):
+	abide by the don't loop yacht around rule for Fast Fort;
+	ready;
+
+this is the vr-fast-fort rule:
+	now sco-fast-fort is true;
+	yacht-go fast fort;
+
+a goodrhyme rule (this is the vc-passed-port rule):
+	abide by the don't loop yacht around rule for Passed Port;
+	ready;
+
+this is the vr-passed-port rule:
+	now sco-passed-port is true;
+	yacht-go passed port;
 
 section lane lax scoring
 

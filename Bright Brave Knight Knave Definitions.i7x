@@ -104,6 +104,17 @@ to decide which number is availval of (th - a thing): [ usually boolvals can cov
 	if th is in nothing, decide on 0;
 	decide on 1;
 
+chapter yacht stuff
+
+to yacht-go (rm - a room):
+	if rm is unvisited:
+		say "'[rm]? Yes, yes, I know that place well. It won't be long,' says the Sassed Sort.";
+	else:
+		say "The Sassed Sort nods and guides the yacht back to [rm].";
+	move yacht to rm;
+	move sassed sort to rm;
+	move player to rm;
+
 chapter score macros
 
 to decide which number is fish-score:
