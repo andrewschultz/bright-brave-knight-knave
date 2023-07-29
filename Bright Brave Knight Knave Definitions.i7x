@@ -34,11 +34,11 @@ chapter eekers
 to decide which number is nelp: decide on number of eekers in location of player;
 
 to decide whether assisted:
-	if nelp is 2, yes;
+	if nelp is 2 or pfft-friends is true, yes;
 	no;
 
 to decide whether half-assisted:
-	if nelp is 1, yes;
+	if nelp is 1 or pfft-friends is true, yes;
 	no;
 
 to decide which eeker is onlyeek: [note: this is potentially dangerous since if there is more than 1 eeker we will get non-uniform results]
@@ -52,15 +52,18 @@ this is the eeker-start-follow rule:
 		say "The [onlyeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
 
 to decide whether either-here of (ee - an eeker):
+	if pfft-friends is true, yes;
 	if pair-here of ee, no;
 	if ee is in location of player or other-guy of ee is in location of player, yes;
 	no;
 
 to decide whether pair-here of (ee - an eeker):
+	if pfft-friends is true, yes;
 	if ee is in location of player and other-guy of ee is in location of player, yes;
 	no;
 
 to decide whether only-here of (ee - an eeker):
+	if pfft-friends is true, yes;
 	if ee is in location of player and other-guy of ee is not in location of player, yes;
 	no;
 

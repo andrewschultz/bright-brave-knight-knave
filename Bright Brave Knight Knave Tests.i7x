@@ -56,6 +56,21 @@ test cr1 with "test cr/fried freak/e/chic shooter".
 test cr2 with "test cr/guide geek/e/weak wooter".
 test cr3 with "test cr/snide sneak/e/meek mooter".
 
+book testing commands
+
+chapter loneing
+
+loneing is an action out of world applying to one number.
+
+understand the command "lone" as something new.
+
+understand "lone [number]" as loneing.
+
+carry out loneing:
+	now pfft-friends is whether or not number understood is not 0;
+	say "Friends now [if pfft-friends is true]not [end if]needed to complete puzzles.";
+	the rule succeeds;
+
 Bright Brave Knight Knave Tests ends here.
 
 ---- DOCUMENTATION ----

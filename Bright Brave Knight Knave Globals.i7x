@@ -60,9 +60,9 @@ chapter north area
 sco-posh-planks is a truth state that varies.
 sco-plucky-plot is a truth state that varies.
 
-sco-train-tracks is a truth state that varies.
-sco-main-max is a truth state that varies.
-sco-pain-packs is a truth state that varies.
+sco-cast-court is a truth state that varies.
+sco-fast-fort is a truth state that varies.
+sco-passed-port is a truth state that varies.
 
 chapter south area
 
@@ -86,6 +86,12 @@ section tata tall tank(s)
 sco-yall-yank is a truth state that varies.
 
 sco-done-dish is a truth state that varies.
+
+section Lane Lax
+
+sco-train-tracks is a truth state that varies.
+sco-main-max is a truth state that varies.
+sco-pain-packs is a truth state that varies.
 
 section Bruising Brew
 
@@ -132,11 +138,6 @@ chapter unsorted globals
 
 sco-salad-scent is a truth state that varies.
 
-sco-cast-court is a truth state that varies.
-sco-fast-fort is a truth state that varies.
-sco-passed-port is a truth state that varies.
-
-
 volume game state variables
 
 guessed-bold-bowl is a truth state that varies.
@@ -154,6 +155,10 @@ pre-hole-item-room is a room that varies.
 
 r-warn-yet is a truth state that varies. [allows us to use the R command]
 r-shortcut-got is a truth state that varies.
+
+chapter debug variables
+
+pfft-friends is a truth state that varies.
 
 Bright Brave Knight Knave Globals ends here.
 
