@@ -62,6 +62,15 @@ sco-plucky-plot is a truth state that varies.
 
 sco-cast-court is a truth state that varies.
 sco-fast-fort is a truth state that varies.
+
+section cast court
+
+sco-murky-map is a truth state that varies.
+
+section fast fort
+
+sco-glued-glass is a truth state that varies.
+
 sco-passed-port is a truth state that varies.
 
 chapter south area
@@ -137,10 +146,6 @@ sco-bam-bye is a truth state that varies.
 chapter unsorted globals
 
 sco-salad-scent is a truth state that varies.
-
-sco-murky-map is a truth state that varies.
-
-sco-glued-glass is a truth state that varies.
 
 volume game state variables
 

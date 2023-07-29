@@ -151,7 +151,7 @@ section hill score
 to decide which number is hill-score:
 	decide on (boolval of sco-ailing-ill) + (boolval of sco-failing-phil) + (boolval of sco-mailing-mill) + (boolval of sco-wailing-will) + (boolval of sco-bailing-bill) 
 
-section cruising crew / losing lou score
+section bruising brew / losing lou score
 
 to decide which number is lou-score:
 	decide on (boolval of sco-using-you) + (boolval of sco-boozing-boo);

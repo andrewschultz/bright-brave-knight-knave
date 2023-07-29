@@ -42,6 +42,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have decent directions to get there."
 "murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
 "glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
+"salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -74,10 +75,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
-
-table of verb checks (continued) [ this is for stuff where the room is definitely not finalized ]
-w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"salad"	"scent"	--	--	false	true	true	false	lane lax	vc-salad-scent rule	vr-salad-scent rule	--	--
 
 section white wave/universal point scoring
 
@@ -406,6 +403,21 @@ this is the vr-glued-glass rule:
 	now sco-glued-glass is true;
 	say "You don't particularly like [lass], but it does clue you as to what you need.";
 	now player has glued glass;
+
+section passed port scoring
+
+a goodrhyme rule (this is the vc-salad-scent rule):
+	if pallid pent valid vent is untouchable, unavailable;
+	if sco-salad-scent is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-salad-scent rule:
+	now sco-salad-scent is true;
+	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
+	moot pallid pent valid vent;
+	now player has salad sent;
 
 section lane lax scoring
 
@@ -1018,19 +1030,6 @@ to give-player (hi - a holeitem):
 		move player to Route Rough;
 
 section undefined-yet rules
-
-a goodrhyme rule (this is the vc-salad-scent rule):
-	if pallid pent valid vent is untouchable, unavailable;
-	if sco-salad-scent is true:
-		vcal "You already did this!";
-		already-done;
-	ready;
-
-this is the vr-salad-scent rule:
-	now sco-salad-scent is true;
-	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
-	moot pallid pent valid vent;
-	now player has salad sent;
 
 volume table of noways
 
