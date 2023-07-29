@@ -138,6 +138,10 @@ chapter unsorted globals
 
 sco-salad-scent is a truth state that varies.
 
+sco-murky-map is a truth state that varies.
+
+sco-glued-glass is a truth state that varies.
+
 volume game state variables
 
 took-yacht is a truth state that varies.

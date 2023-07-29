@@ -39,7 +39,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
 "cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
 "fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
-"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the Passed Port [once-now of vc-passed-port rule] you have decent directions to get there."
+"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have decent directions to get there."
+"murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
+"glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -372,11 +374,40 @@ this is the vr-fast-fort rule:
 
 a goodrhyme rule (this is the vc-passed-port rule):
 	abide by the don't loop yacht around rule for Passed Port;
+	if port-score is 0:
+		vcp "'Sorry,' the Sassed Sort shrugs. 'I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there.";
+		not-yet;
+	if port-score is 1:
+		vcp "The Sassed Sort looks at the [if player has murky map]murky map. 'Sorry, I can't quite read that yet[else]glued glass. 'It might help me if I had instructions that were hard to read. But we don't, yet[end if].'";
 	ready;
 
 this is the vr-passed-port rule:
 	now sco-passed-port is true;
+	if passed port is unvisited:
+		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, I remember now how to get there. That's a safe route I hadn't considered. Fast, too.' It doesn't take long.[paragraph break]";
 	yacht-go passed port;
+
+section cast court scoring
+
+a goodrhyme rule (this is the vc-murky-map rule):
+	if perky pap is not touchable, unavailable;
+	ready;
+
+this is the vr-murky-map rule:
+	now sco-murky-map is true;
+	say "Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.";
+	now player has murky map;
+
+section fast fort scoring
+
+a goodrhyme rule (this is the vc-glued-glass rule):
+	if lewd lass is not touchable, unavailable;
+	ready;
+
+this is the vr-glued-glass rule:
+	now sco-glued-glass is true;
+	say "You don't particularly like [lass], but it does clue you as to what you need.";
+	now player has glued glass;
 
 section lane lax scoring
 

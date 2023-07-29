@@ -136,6 +136,13 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section yacht score
+
+to decide which number is port-score:
+	decide on (boolval of sco-murky-map) + (boolval of sco-glued-glass)
+
+section fish/bowl score
+
 to decide which number is fish-score:
 	decide on (boolval of sco-salad-scent) + (boolval of sco-stew-stuff)
 

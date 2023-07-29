@@ -275,11 +275,19 @@ the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting 
 
 book Cast Court
 
-Cast Court is a room in northstuff.
+Cast Court is a room in northstuff. "Stuff is strewn about here."
+
+the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better."
+
+the murky map is a thing.
 
 book Fast Fort
 
 Fast Fort is a room in northstuff.
+
+Crude Crass Lewd Lass is a thing in Fast Fort.
+
+the glued glass is a thing.
 
 book Passed Port
 
