@@ -136,6 +136,11 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section pick score
+
+to decide which number is pick-score:
+	decide on (boolval of sco-slosh-slick) + (boolval of sco-quash-quick)
+
 section yacht score
 
 to decide which number is port-score:

@@ -43,6 +43,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
 "glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
 "salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
+"slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	--
+"quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -420,6 +422,36 @@ this is the vr-salad-scent rule:
 	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
 	moot pallid pent valid vent;
 	now player has salad sent;
+
+a goodrhyme rule (this is the vc-slosh-slick rule):
+	if posh pick is not touchable, unavailable;
+	if sco-slosh-slick is true:
+		vcal "You already figured that part of getting the pick!";
+		already-done;
+	ready;
+
+this is the vr-slosh-slick rule:
+	now sco-slosh-slick is true;
+	say "The Fried Freak has no problem sloshing through.";
+
+a goodrhyme rule (this is the vc-quash-quick rule):
+	if posh pick is not touchable, unavailable;
+	if sco-quash-quick is true:
+		vcal "You already quashed things quickly!";
+		already-done;
+	ready;
+
+this is the vr-quash-quick rule:
+	now sco-quash-quick is true;
+	say "The Chic Shooter managed to, well, quash things quickly.";
+	check-pick-score;
+
+to check-pick-score:
+	if pick-score is 2:
+		say "Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.";
+		now player has posh pick;
+	else:
+		say "That must be half of the puzzle. You wonder what the other half is."
 
 section lane lax scoring
 

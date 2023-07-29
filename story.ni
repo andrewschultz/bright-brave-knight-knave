@@ -291,13 +291,17 @@ the glued glass is a thing.
 
 book Passed Port
 
-Passed Port is a room in northstuff.
+Passed Port is a room in northstuff. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if]."
 
-chapter move this
+chapter pallid pent valid vent
 
 the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
 
 the salad sent is a thing.
+
+chapter posh pick
+
+the posh pick is a thing in passed port. "A posh pick is buried in the slime, slowed.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
 
 volume south area
 

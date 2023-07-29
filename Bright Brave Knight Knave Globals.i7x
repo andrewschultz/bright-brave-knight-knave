@@ -73,6 +73,13 @@ sco-glued-glass is a truth state that varies.
 
 sco-passed-port is a truth state that varies.
 
+section posh pick
+
+sco-salad-scent is a truth state that varies.
+
+sco-slosh-slick is a truth state that varies.
+sco-quash-quick is a truth state that varies.
+
 chapter south area
 
 section treed track
@@ -149,8 +156,6 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
-
-sco-salad-scent is a truth state that varies.
 
 volume game state variables
 
