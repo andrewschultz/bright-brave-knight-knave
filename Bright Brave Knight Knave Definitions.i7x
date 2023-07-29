@@ -136,6 +136,11 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section blight score
+
+to decide what number is blight-score:
+	decide on (boolval of sco-hack-height) + (boolval of sco-quack-quite) + (boolval of sco-flak-flight) + (boolval of sco-slack-slight)
+
 section nook score
 
 to decide which number is nook-score:

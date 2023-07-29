@@ -94,6 +94,18 @@ sco-grew-gruff is a truth state that varies.
 sco-stew-stuff is a truth state that varies.
 sco-new-nuff is a truth state that varies.
 
+section lack light black blight
+
+sco-hack-height is a truth state that varies.
+sco-quack-quite is a truth state that varies.
+sco-flak-flight is a truth state that varies.
+sco-slack-slight is a truth state that varies.
+
+section knell nook
+
+sco-bell-book is a truth state that varies.
+sco-covering-candle is a truth state that varies.
+
 chapter east area
 
 section tata tall tank(s)
@@ -155,9 +167,6 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
-
-sco-bell-book is a truth state that varies.
-sco-covering-candle is a truth state that varies.
 
 volume game state variables
 

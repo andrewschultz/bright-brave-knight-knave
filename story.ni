@@ -311,14 +311,6 @@ Treed Track is a room in southstuff. "[if sco-need-knack is false]You just can't
 
 the seed sack is a thing.
 
-book Knell Nook
-
-Knell Nook is a room in southstuff.
-
-chapter sold soul
-
-the sold soul is a thing.
-
 book Too Tough Blue Bluff
 
 Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
@@ -326,6 +318,18 @@ Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if 
 chapter stew stuff
 
 The stew stuff is a thing.
+
+book Lack Light Black Blight
+
+Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+
+book Knell Nook
+
+Knell Nook is a room in southstuff.
+
+chapter sold soul
+
+the sold soul is a thing.
 
 volume east area
 

@@ -52,6 +52,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
+"hack"	"height"	--	--	false	true	true	false	lack light black blight	vc-hack-height rule	vr-hack-height rule	--	--
+"quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
+"flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
+"slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
@@ -511,7 +515,7 @@ a goodrhyme rule (this is the vc-need-knack rule):
 this is the vr-need-knack rule:
 	now sco-need-knack is true;
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
-	open-psg up and Too Tough Blue Bluff;
+	open-psg west and Too Tough Blue Bluff;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
 	if player is not in treed track, unavailable;
@@ -526,8 +530,8 @@ a goodrhyme rule (this is the vc-heed-hack rule):
 this is the vr-heed-hack rule:
 	now sco-heed-hack is true;
 	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. That's easy, now you know what to do. You find two more passages.";
-	open-psg east and Hidey House;
-	open-psg west and Hidey House;
+	open-psg up and Lack Light Black Blight;
+	open-psg east and Knell Nook;
 
 a goodrhyme rule (this is the vc-seed-sack rule):
 	if player is not in treed track, unavailable;
@@ -554,6 +558,64 @@ a goodrhyme rule (this is the vc-plead-plaque rule):
 this is the vr-plead-plaque rule:
 	now sco-plead-plaque is true;
 	say "Oh my goodness! You've discovered a treasure that is as priceless as your quest, but more so! It expresses congratulations for getting this far and being so observant and also humbly suggests you also enjoy [other-ones], once you've solved this terribly important quest, of course.[paragraph break]There is a perfectly sensible small-print disclaimer that those adventures are not quite as unbelievably dope as this one, since the author has only gotten better at writing text adventures with time, but the author still had fun making them.";
+
+section lack light black blight scoring
+
+a goodrhyme rule (this is the vc-hack-height rule):
+	if player is not in lack light black blight, unavailable;
+	if sco-hack-height is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-hack-height is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-hack-height rule:
+	now sco-hack-height is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-quack-quite rule):
+	if player is not in lack light black blight, unavailable;
+	if sco-quack-quite is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-quack-quite is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-quack-quite rule:
+	now sco-quack-quite is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-flak-flight rule):
+	if player is not in lack light black blight, unavailable;
+	if sco-flak-flight is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-flak-flight is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-flak-flight rule:
+	now sco-flak-flight is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-slack-slight rule):
+	if player is not in lack light black blight, unavailable;
+	if sco-slack-slight is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-slack-slight is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-slack-slight rule:
+	now sco-slack-slight is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 section too tough blue bluff scoring
 
