@@ -311,6 +311,14 @@ Treed Track is a room in southstuff. "[if sco-need-knack is false]You just can't
 
 the seed sack is a thing.
 
+book Knell Nook
+
+Knell Nook is a room in southstuff.
+
+chapter sold soul
+
+the sold soul is a thing.
+
 book Too Tough Blue Bluff
 
 Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
@@ -623,6 +631,7 @@ section south bit
 
 index map with Treed Track mapped south of Bass Bath.
 index map with Too Tough Blue Bluff mapped south of Slum Slid.
+index map with Knell Nook mapped east of Treed Track.
 
 section east bit
 

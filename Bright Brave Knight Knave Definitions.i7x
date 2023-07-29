@@ -136,6 +136,11 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section nook score
+
+to decide which number is nook-score:
+	decide on (boolval of sco-bell-book) + (boolval of sco-covering-candle)
+
 section pick score
 
 to decide which number is pick-score:

@@ -52,6 +52,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
+"bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
+"covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
@@ -595,6 +597,32 @@ this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
 
+section knell nook scoring
+
+a goodrhyme rule (this is the vc-bell-book rule):
+	abide by the any-nook rule;
+	if sco-bell-book is true:
+		vcal "You already got the bell and book! Now for the next part.";
+		already-done;
+	ready;
+
+this is the vr-bell-book rule:
+	now sco-bell-book is true;
+	say "The bell and book are in place. There is one more item. Perhaps you can guess it.";
+
+a goodrhyme rule (this is the vc-covering-candle rule):
+	abide by the any-nook rule;
+	if player is not in knell nook, unavailable;
+	if sco-bell-book is false:
+		vcp "The first part of the ceremony comes first. I think you know what it is?";
+		not-yet;
+	ready;
+
+this is the vr-covering-candle rule:
+	now sco-covering-candle is true;
+	say "The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. 'DESTROY THEM.' You do. The knell nook begins shaking and soon collapses.[paragraph break]The sold soul thanks you. It will follow wordlessly until you need it.";
+	now player has sold soul;
+
 section tall tank(s) scoring
 
 a goodrhyme rule (this is the vc-yall-yank rule):
@@ -911,6 +939,17 @@ to rough-check:
 		repeat through table of verb checks:
 			unless there is a best-room entry and best-room entry is route rough, next;
 			if idid entry is false, now core entry is false;
+
+section knell nook auxiliary
+
+a goodrhyme rule (this is the any-nook rule):
+	if player is not in knell nook, unavailable;
+	if sco-covering-candle is true:
+		vcal "You finished your work here.";
+		already-done;
+	if nook-score < 2:
+		vcp "You feel you do not have [if nook-score is 0]any[else]enough[end if] artifacts to perform whatever ceremony you need to.";
+		not-yet;
 
 section hailing hill auxiliary
 
