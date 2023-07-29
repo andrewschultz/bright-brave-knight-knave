@@ -337,7 +337,13 @@ check going in Lane Lax:
 	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
 	if sco-pain-packs is false, say "You aren't equipped with emergency provisions." instead;
 
-[the train tracks are not all they could be, and they do not lead all the places they could]
+[??the train tracks are not all they could be, and they do not lead all the places they could]
+
+book Wowed Wise Crowd Cries
+
+Wowed Wise Crowd Cries is a room in eaststuff.
+
+the proud prize is a thing.
 
 book Bruising Brew
 

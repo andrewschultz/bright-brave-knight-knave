@@ -43,9 +43,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
 "glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
 "salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
-"train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
-"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
-"pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -55,6 +52,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
+"train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
+"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
+"pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
+"trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
+"loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	--
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
@@ -598,6 +600,37 @@ this is the vr-done-dish rule:
 	moot stew stuff;
 	moot salad sent;
 	give-player bold bowl;
+
+section wowed wise crowd cries scoring
+
+a goodrhyme rule (this is the vc-trowed-tries rule):
+	if player is not in wowed wise crowd cries, unavailable;
+	if sco-trowed-tries is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-trowed-tries is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-trowed-tries rule:
+	now sco-trowed-tries is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-loud-lies rule):
+	if player is not in wowed wise crowd cries, unavailable;
+	if not pair-here of guide geek:
+		say "You're pretty sure these are loud lies, but you don't have the necessary edge to refute them and prove it. You need assistance!";
+		not-yet;
+	if sco-loud-lies is true:
+		vcal "You already declaimed the loud lies.";
+		already-done;
+	ready;
+
+this is the vr-loud-lies rule:
+	now sco-loud-lies is true;
+	say "With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.";
+	now player has proud prize;
 
 section Bruising Brew scoring
 
