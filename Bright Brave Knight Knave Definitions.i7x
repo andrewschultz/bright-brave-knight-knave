@@ -136,6 +136,11 @@ to yacht-go (rm - a room):
 
 chapter score macros
 
+section hub score
+
+to decide what number is hub-intro-score:
+	decide on (boolval of sco-plucky-plot) + (boolval of sco-need-knack) + (boolval of sco-yall-yank);
+
 section thief score
 
 to decide what number is thief-score:

@@ -149,6 +149,10 @@ after printing the locale description for Bass Bath:
 		now bool-hill-available is true;
 		now hailing hill is mapped above bass bath;
 		now bass bath is mapped below hailing hill;
+	if bool-brew-available is false and hub-intro-score is 3:
+		say "Wait! What's this? A passage you hadn't noticed before! You can go inside to what looks like a bar!";
+		now bool-brew-available is true;
+		open-psg inside and Bruising Brew;
 	continue the action;
 
 book Hailing Hill
