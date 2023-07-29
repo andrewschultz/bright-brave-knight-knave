@@ -106,6 +106,10 @@ to decide which eeker is other-guy of (ee - an eeker):
 to decide which number is pairs-used:
 	decide on number of finished eekers / 2;
 
+to move-eekers:
+	repeat with x running through eekers:
+		if x is leftbehind, move x to location of player;
+
 section tracking hole progress
 
 to decide which number is hole-progress:
@@ -119,13 +123,16 @@ to decide which number is availval of (th - a thing): [ usually boolvals can cov
 chapter yacht stuff
 
 to yacht-go (rm - a room):
+	now took-yacht is true;
 	if rm is unvisited:
 		say "'[rm]? Yes, yes, I know that place well. It won't be long,' says the Sassed Sort.";
 	else:
 		say "The Sassed Sort nods and guides the yacht back to [rm].";
 	move yacht to rm;
 	move sassed sort to rm;
+	move-eekers;
 	move player to rm;
+	now took-yacht is false;
 
 chapter score macros
 

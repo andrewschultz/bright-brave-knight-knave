@@ -140,6 +140,8 @@ sco-salad-scent is a truth state that varies.
 
 volume game state variables
 
+took-yacht is a truth state that varies.
+
 guessed-bold-bowl is a truth state that varies.
 guessed-cold-coal is a truth state that varies.
 guessed-sold-soul is a truth state that varies.

@@ -228,13 +228,13 @@ check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
 
 after printing the locale description when number of leftbehind eekers > 0:
+	if took-yacht is false, continue the action;
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
 		let rle be random leftbehind eeker;
 		follow the eeker matchups rule for rle;
 		continue the action;
-	repeat with x running through eekers:
-		if x is leftbehind, move x to location of player;
+	move-eekers;
 	continue the action;
 
 chapter fried freak
