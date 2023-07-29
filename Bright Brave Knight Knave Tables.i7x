@@ -54,9 +54,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
-"boozing"	"boo"	--	--	false	true	true	false	cruising crew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
-"using"	"you"	--	--	false	true	true	false	cruising crew	vc-using-you rule	vr-using-you rule	--	--
-"fusing"	"phew"	--	--	false	true	true	false	cruising crew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
+"boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
+"using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
+"fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -345,8 +345,6 @@ this is the vr-plucky-plot rule:
 	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer places.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
 
-section bosh blanks scoring
-
 [ this costs about 200 bytes as opposed to writing this out individually ]
 the sort navigation rules are a room based rulebook. the sort navigation rules have outcomes unavailable and already-done.
 
@@ -569,7 +567,7 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and in one of the tanks, a one-wish fun fish swims around.";
-	open-psg east and Cruising Crew;
+	open-psg east and Bruising Brew;
 	move fun fish to tata;
 
 a goodrhyme rule (this is the vc-done-dish rule):
@@ -589,10 +587,10 @@ this is the vr-done-dish rule:
 	moot salad sent;
 	give-player bold bowl;
 
-section cruising crew scoring
+section Bruising Brew scoring
 
 a goodrhyme rule (this is the vc-boozing-boo rule):
-	if player is not in cruising crew, unavailable;
+	if player is not in Bruising Brew, unavailable;
 	if sco-boozing-boo is true:
 		vcal "Don't overdo the moralizing!";
 		already-done;
@@ -604,7 +602,7 @@ this is the vr-boozing-boo rule:
 	lou-check;
 
 a goodrhyme rule (this is the vc-using-you rule):
-	if player is not in cruising crew, unavailable;
+	if player is not in Bruising Brew, unavailable;
 	if sco-using-you is true:
 		vcal "You already let Lou know the truth!";
 		already-done;
@@ -616,7 +614,7 @@ this is the vr-using-you rule:
 	lou-check;
 
 a goodrhyme rule (this is the vc-fusing-phew rule):
-	if player is not in cruising crew, unavailable;
+	if player is not in Bruising Brew, unavailable;
 	if lou-score < 2:
 		vcp "Once you have more than one perspective to fuse together, that'll work.";
 		not-yet;

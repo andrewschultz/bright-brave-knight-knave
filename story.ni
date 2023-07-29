@@ -339,11 +339,11 @@ check going in Lane Lax:
 
 [the train tracks are not all they could be, and they do not lead all the places they could]
 
-book Cruising Crew
+book Bruising Brew
 
-Cruising Crew is a room in eaststuff.
+Bruising Brew is a room in intro.
 
-Losing Lou is a person in Cruising Crew.
+Losing Lou is a person in Bruising Brew.
 
 volume unsorted
 
@@ -578,6 +578,8 @@ this is the show-misses rule:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
 	if route-rough-score < 3:
 		say "You could've said [b][rough-undone][r] in Route, Rough.";
+	if sco-plead-plaque is false:
+		say "You didn't find the [b]PLEAD PLAQUE[r] in Treed Track.";
 
 to say rough-undone:
 	repeat through table of verb checks:
@@ -594,12 +596,18 @@ index map with Rut Row mapped west of Bass Bath.
 index map with Slid Slum mapped west of Rut Row.
 index map with recroom mapped north of Rut Row.
 index map with Slid Slum mapped north of White Wave.
-index map with White Wave mapped east of Hailing Hill.
 index map with Crude Crapper mapped west of Slid Slum.
+index map with White Wave mapped south of Crude Crapper.
+index map with Hailing Hill mapped north of recroom.
+index map with Bruising Brew mapped northeast of Bass Bath.
 
 section north bit
 
 index map with Bosh Blanks mapped north of Bass Bath.
+
+index map with Cast Court mapped north of Bosh Blanks.
+index map with Fast Fort mapped east of Cast Court.
+index map with Passed Port mapped east of Fast Fort.
 
 section south bit
 
@@ -609,10 +617,10 @@ index map with Too Tough Blue Bluff mapped south of Slum Slid.
 section east bit
 
 index map with tata mapped east of Bass Bath.
-index map with Cruising Crew mapped east of tata.
+index map with Lane Lax mapped east of tata.
 
 section breakups
 
 index map with Route Rough mapped west of Cried Creek.
 index map with Stander Stove mapped north of Route Rough.
-index map with Nil None mapped north of Stander Stove.
+index map with Nil None mapped east of Stander Stove.
