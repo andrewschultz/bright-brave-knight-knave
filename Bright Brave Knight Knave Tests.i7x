@@ -18,7 +18,15 @@ test w3b with "nude napper/write rave".
 
 test w4 with "out/e/n/w/stride streak"
 
-test w4n with "guide geek/e/weak wooter/s/e/n/posh planks/plucky plot/enter yacht/train tracks/main max/pain packs/enter yacht/s"
+test x4 with "test w1/test w2/test w3/test w4"
+
+test w5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic shooter/w/fried freak/e/r 3"
+
+test w6 with "s/e/n/plucky plot/enter yacht/salad scent"
+
+test w4e with "fried freak/e/chic shooter/s/e/e/yall yank".
+
+test w4n with "guide geek/e/weak wooter/s/e/n/posh planks/plucky plot/cast court/fast fort/passed port".
 
 test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
 
@@ -37,6 +45,10 @@ test wc3 with "hi 3/candor cove".
 test wa with "test w1/test w2/test w3/test wj".
 
 test wf with "test w1/test w1b/test w2/test w3/test w3b/test w4/test w4n/test wc1/test wc2/test wc3/test wend1/test wend2".
+
+book bonus point testing
+
+test bp with "gonear creek/stride streak/guide geek/e/weak wooter/bye".
 
 book quick walkthrough
 

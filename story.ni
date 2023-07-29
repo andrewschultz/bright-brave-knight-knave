@@ -351,9 +351,13 @@ check going in Lane Lax:
 
 [??the train tracks are not all they could be, and they do not lead all the places they could]
 
-chapter clod clashes
+chapter broad brash clod clash
 
-The clod clashes are scenery in Lane Lax.
+The broad brash clod clash is scenery in Lane Lax. "Sheesh. A bnch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+
+chapter odd ash
+
+the odd ash is a thing. "Looking at the odd ash, you wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
 
 book Wowed Wise Crowd Cries
 

@@ -62,6 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
+"trod|flawed"	"trash|flash"	--	--	false	true	true	false	lane lax	vc-trod-trash rule	vr-trod-trash rule	"trod trash" or "flawed flash"	--
 "trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
 "loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	--
 "bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
@@ -487,8 +488,8 @@ a goodrhyme rule (this is the vc-main-max rule):
 
 this is the vr-main-max rule:
 	now sco-main-max is true;
-	say "The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. Clod clashes break out!";
-	move clod clashes to lane lax;
+	say "The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. A broad brash clod clash breaks out!";
+	move broad brash clod clash to lane lax;
 	open-psg north and Wowed Wise Crowd Cries;
 	open-psg south and Thought Thief Fought Fief;
 
@@ -502,6 +503,18 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
+
+a goodrhyme rule (this is the vc-trod-trash rule):
+	if broad brash clod clash is untouchable, unavailable;
+	if sco-trod-trash is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-trod-trash rule:
+	now sco-trod-trash is true;
+	say "You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!";
+	now player has odd ash;
 
 section thought thief fought fief scoring
 
