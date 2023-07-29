@@ -333,8 +333,9 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 	if not assisted:
 		vcal "You need a couple assistants to hatch a plot.";
 		not-yet;
-	if help-pair-number is not 6:
+	if not pair-here of guide geek:
 		vcal "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
+		not-yet;
 	ready;
 
 this is the vr-plucky-plot rule:
@@ -419,10 +420,10 @@ section treed track scoring
 
 a goodrhyme rule (this is the vc-need-knack rule):
 	if player is not in treed track, unavailable;
-	if help-pair-number is 2:
+	if only-here of Snide Sneak:
 		vcp "The Snide Sneak has advice of how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
 		not-yet;
-	if help-pair-number is not 5:
+	if not pair-here of Snide Sneak:
 		vcp "You'd like to, but you need assistance from others as to how.";
 		not-yet;
 	if sco-need-knack is true:
@@ -526,7 +527,7 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 	if not assisted:
 		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it!";
 		not-yet;
-	if Chic Shooter is not touchable:
+	unless pair-here of Chic Shooter:
 		vcp "You sense resistance to physical work from [list of visible eekers]. You need pals more action-based.";
 		not-yet;
 	if sco-yall-yank is true:

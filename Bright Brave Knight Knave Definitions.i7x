@@ -51,9 +51,18 @@ this is the eeker-start-follow rule:
 	else:
 		say "The [onlyeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
 
-to decide which number is help-pair-number: [ 1/4 = chic shooter / fried freak 2/5 = meek mooter / snide sneak 3/6 = weak wooter / guide geek ]
-	let e be a random eeker in location of player;
-	decide on (nelp - 1) * 3 + matchnum of e;
+to decide whether either-here of (ee - an eeker):
+	if pair-here of ee, no;
+	if ee is in location of player or other-guy of ee is in location of player, yes;
+	no;
+
+to decide whether pair-here of (ee - an eeker):
+	if ee is in location of player and other-guy of ee is in location of player, yes;
+	no;
+
+to decide whether only-here of (ee - an eeker):
+	if ee is in location of player and other-guy of ee is not in location of player, yes;
+	no;
 
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 
