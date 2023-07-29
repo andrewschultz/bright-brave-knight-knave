@@ -45,6 +45,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	--
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	--
+"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	--
+"crime"	"crowed"	--	--	false	true	true	false	passed port	vc-crime-crowed rule	vr-crime-crowed rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -89,6 +91,34 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
+
+
+section passed port scoring
+
+a goodrhyme rule (this is the vc-time-toad rule):
+	if player is not in passed port, unavailable;
+	if sco-time-toad is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-time-toad is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-time-toad rule:
+	now sco-time-toad is true;
+	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]And yet the time toad remains, after all that. Perhaps there is more it can do for you.";
+
+a goodrhyme rule (this is the vc-crime-crowed rule):
+	if player is not in passed port, unavailable;
+	if sco-time-toad is false:
+		vcp "Perhaps when the proper entity is here, they will share what crimes are crowed.";
+		not-yet;
+	ready;
+
+this is the vr-crime-crowed rule:
+	now sco-crime-crowed is true;
+	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you. You will be more confident in your final fight. The time toad ribbits away, having given you physical and spiritual support"
 
 section white wave/universal point scoring
 
