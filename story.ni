@@ -357,7 +357,15 @@ Lack Light Black Blight is a room in southstuff. printed name is "[if blight-sco
 
 chapter rack right
 
-the rack right is a thing. printed name is "rack, right".
+the rack right is a thing. printed name is "rack, right". description of rack right is "It just looks and feels right, both the shape and texture, and that you should have it. You suspect it'll be important in some ritual somewhere.".
+
+chapter sour slate
+
+the sour slate is a thing. "A sour slate lies here, pushing you away in its current form.". description is "Whew! You feel the negativity bouncing off it. It's good at repelling stuff, but maybe it's a bit too good in its current form. You know the difference between good defense and defensiveness? The sour slate doesn't."
+
+chapter power plate
+
+the power plate is a trystitem. description is "Surprisingly lightweight but sturdy armor.". vaguedesc is "replacement armor".
 
 book Knell Nook
 

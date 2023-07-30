@@ -4,7 +4,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 68.
+core-max is 72.
 
 max-bonus is 8.
 
@@ -68,6 +68,7 @@ sco-plucky-plot is a truth state that varies.
 
 sco-cast-court is a truth state that varies.
 sco-fast-fort is a truth state that varies.
+sco-passed-port is a truth state that varies.
 
 section cast court
 
@@ -76,8 +77,6 @@ sco-murky-map is a truth state that varies.
 section fast fort
 
 sco-glued-glass is a truth state that varies.
-
-sco-passed-port is a truth state that varies.
 
 section passed port
 
@@ -109,6 +108,8 @@ sco-hack-height is a truth state that varies.
 sco-quack-quite is a truth state that varies.
 sco-flak-flight is a truth state that varies.
 sco-slack-slight is a truth state that varies.
+
+sco-sour-slate is a truth state that varies.
 
 section knell nook
 
