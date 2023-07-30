@@ -4,7 +4,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 67.
+core-max is 68.
 
 max-bonus is 8.
 
@@ -29,8 +29,14 @@ volume point scoring booleans
 
 chapter intro area
 
+section white wave
+
 sco-write-right-rave is a truth state that varies.
 sco-kite-cave is a truth state that varies.
+
+sco-jack-gist is a truth state that varies.
+
+section bass bath
 
 sco-pass-path is a truth state that varies.
 sco-mass-math is a truth state that varies.
@@ -115,6 +121,8 @@ section tata tall tank(s)
 
 sco-yall-yank is a truth state that varies.
 
+sco-harder-helm is a truth state that varies.
+
 section Lane Lax
 
 sco-train-tracks is a truth state that varies.
@@ -180,8 +188,6 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
-
-sco-jack-gist is a truth state that varies.
 
 volume game state variables
 

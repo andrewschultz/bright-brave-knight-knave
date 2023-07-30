@@ -62,6 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
+"harder"	"helm"	--	--	false	true	true	false	tata	vc-harder-helm rule	vr-harder-helm rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -71,7 +72,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
 "brought"	"brief"	--	--	false	true	true	false	thought thief fought fief	vc-brought-brief rule	vr-brought-brief rule	--	--
 "wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	--
-"done"	"dish"	--	--	false	true	true	false	tata	vc-done-dish rule	vr-done-dish rule	--	--
+"done"	"dish"	--	--	false	true	true	false	thought thief fought fief	vc-done-dish rule	vr-done-dish rule	--	--
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
@@ -119,7 +120,8 @@ a goodrhyme rule (this is the vc-crime-crowed rule):
 
 this is the vr-crime-crowed rule:
 	now sco-crime-crowed is true;
-	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you. You will be more confident in your final fight. The time toad ribbits away, having given you physical and spiritual support"
+	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support";
+	now player has crime crowed;
 
 section white wave/universal point scoring
 
@@ -831,6 +833,17 @@ this is the vr-yall-yank rule:
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and in one of the tanks, a one-wish fun fish swims around.";
 	open-psg east and Bruising Brew;
 	move fun fish to tata;
+
+a goodrhyme rule (this is the vc-harder-helm rule):
+	if player is not in tata, unavailable;
+	if sco-harder-helm is true:
+		vcal "That sort of repeated ardor won't get you anywhere!";
+		already-done;
+	ready;
+
+this is the vr-harder-helm rule:
+	now sco-harder-helm is true;
+	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
 
 section wowed wise crowd cries scoring
 

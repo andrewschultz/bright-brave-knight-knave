@@ -323,6 +323,8 @@ chapter time toad
 
 the time toad is a thing. "A time toad sits here pensively. It alreay helped you get the cold coal, but it seems to be holding just one more secret."
 
+the crime crowed is a trystitem. vaguedesc is "evidence of being hard done by".
+
 chapter pallid pent valid vent
 
 the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
@@ -372,6 +374,14 @@ book Tall Tank(s)
 tata is a privately-named room in eaststuff. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
+
+chapter ardor elm
+
+the ardor elm is a thing.
+
+chapter harder helm
+
+the harder helm is a trystitem. vaguedesc is "replacement head protection".
 
 book Lane Lax
 
