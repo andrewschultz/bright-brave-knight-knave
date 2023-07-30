@@ -83,10 +83,14 @@ chapter track tryst lack list
 
 the track tryst lack list is a thing. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
 
+after examining lack list when sco-jack-gist is false:
+	say "You have a sneaking suspicion you could summarize the list with the right command, so you'd need just one letter to access it later and get a bonus point to boot. A suspicion snuck in there by me!";
+	continue the action;
+
 understand "x" and "examine" as examining.
 
 rule for supplying a missing noun when examining:
-	if player has lack list:
+	if player has lack list and sco-jack-gist is true:
 		now noun is lack list;
 	else:
 		now noun is the player;
@@ -654,6 +658,8 @@ this is the show-misses rule:
 	flag-missed black blight;
 	if sco-plead-plaque is false:
 		say "You didn't find the [b]PLEAD PLAQUE[r] in Treed Track.";
+	if sco-jack-gist is false:
+		say "You could have tried to [b]JACK GIST[r] for a shorter command to read [the list].";
 
 volume mapping stuff
 

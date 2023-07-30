@@ -19,6 +19,7 @@ table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "write|right"	"rave"	--	--	false	false	false	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
+"jack"	"gist"	--	--	false	true	false	false	--	vc-jack-gist rule	vr-jack-gist rule	--	--
 "fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you have enough worth and confidence in you."
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
@@ -150,10 +151,22 @@ a goodrhyme rule (this is the vc-kite-cave rule):
 
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
-	say "You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. The floor under disappears. You run back out, unable to hold the kite.[paragraph break]The cave collapses. All that's left is a hold-hole, along with a passage down. Perhaps looking at the hold hole will give you some clues what to do with your journey.";
+	say "You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.[paragraph break]The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.[paragraph break]Oh, and wait! Something else to look at, too. It sprung free from the kite that went in the hole. A track-tryst lack list. You take it. Then you look at the hole again. Perhaps it is worth going [b]DOWN[r].";
 	move hold hole to white wave;
 	now Bass Bath is mapped below White Wave;
 	now White Wave is mapped below Bass Bath;
+	now player has track tryst lack list;
+
+a goodrhyme rule (this is the vc-jack-gist rule): [doesn't have to be done here but it's the best place]
+	if player does not have lack list, unavailable;
+	if sco-jack-gist is true:
+		vcal "You already streamlined things with the list!";
+		already-done;
+	ready;
+
+this is the vr-jack-gist rule:
+	now sco-jack-gist is true;
+	say "Wow! You figured what to do. Now instead of typing [b]X LIST[r], you can just type [b]X[r] or even [b]I[r].";
 
 a goodrhyme rule (this is the vc-fight-fave rule):
 	if player is not in white wave and debug-allow-final is false:

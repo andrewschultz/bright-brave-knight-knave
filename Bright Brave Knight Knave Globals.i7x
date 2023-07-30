@@ -6,7 +6,7 @@ volume score values
 
 core-max is 67.
 
-max-bonus is 7.
+max-bonus is 8.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
