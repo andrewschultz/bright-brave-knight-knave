@@ -223,6 +223,12 @@ to alt-last (rm - a room): [this makes the final flip an optional point]
 		unless there is a best-room entry and best-room entry is rm, next;
 		if idid entry is false, now core entry is false;
 
+to flag-missed (rm - a room): [ this is for the MISSED list at the end. Note it cuts corners: if you missed 2 things, it would only track the first. But BK6 doesn't allow that. ]
+	repeat through table of verb checks:
+		if idid entry is false and there is a best-room entry and best-room entry is rm:
+			say "You could've said [b][w1 entry in upper case] [w2 entry in upper case][r] in [rm].";
+			continue the action;
+
 book to decide whether (largely game dependent stuff)
 
 to decide whether (ru - a rule) is spaceable: yes; [annoying space breaks in inform]

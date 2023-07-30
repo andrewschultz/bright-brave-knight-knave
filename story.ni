@@ -613,28 +613,23 @@ final question wording	only if victorious	topic	final response rule	final respon
 
 volume endgame
 
+to say wr: say "[b]WRITE/RIGHT RAVE[r]"
+
 this is the show-misses rule:
 	if sco-write-right-rave is false:
-		say "You could have tried to [b]WRITE/RIGHT RAVE[r] to flatter me.";
+		say "You could have tried to [wr] to flatter me.";
 	else if got-rave-bonus is false:
-		say "You decided to [b]WRITE/RIGHT RAVE[r] too soon.";
+		say "You decided to [wr] too soon.";
 	if got-hole-bonus is false:
-		say "You could have figured the items to put in the hold hole before finding them. You missed out on [the list of unguessed holeitems].";
+		say "You didn't guess the [the list of unguessed holeitems] before finding [if number of unguessed holeitems is 1]it[else]them[end if].";
 	if sco-nude-napper is false:
 		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper.";
 	if sco-ill-un is false:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
-	if route-rough-score < 3:
-		say "You could've said [b][rough-undone][r] in Route, Rough.";
+	flag-missed route rough;
+	flag-missed black blight;
 	if sco-plead-plaque is false:
 		say "You didn't find the [b]PLEAD PLAQUE[r] in Treed Track.";
-
-to say rough-undone:
-	repeat through table of verb checks:
-		if idid entry is false and there is a best-room entry and best-room entry is route rough:
-			say "[w1 entry in upper case] [w2 entry in upper case]";
-			continue the action;
-	say "BUG";
 
 volume mapping stuff
 
