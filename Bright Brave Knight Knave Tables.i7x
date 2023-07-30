@@ -96,34 +96,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
 
-section passed port scoring
-
-a goodrhyme rule (this is the vc-time-toad rule):
-	if player is not in passed port, unavailable;
-	if sco-time-toad is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-time-toad is true:
-		vcal "You already did this!";
-		already-done;
-	ready;
-
-this is the vr-time-toad rule:
-	now sco-time-toad is true;
-	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]And yet the time toad remains, after all that. Perhaps there is more it can do for you.";
-
-a goodrhyme rule (this is the vc-crime-crowed rule):
-	if player is not in passed port, unavailable;
-	if sco-time-toad is false:
-		vcp "Perhaps when the proper entity is here, they will share what crimes are crowed.";
-		not-yet;
-	ready;
-
-this is the vr-crime-crowed rule:
-	now sco-crime-crowed is true;
-	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support";
-	now player has crime crowed;
-
 section white wave/universal point scoring
 
 a goodrhyme rule (this is the vc-write-right-rave rule):
@@ -181,8 +153,11 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 	if hole-progress < 3:
 		vcp "You aren't ready yet. The hold hole is not complete.";
 		not-yet;
+	if trystcount < 4:
+		vcp "You look at [the list]. You only have [trystcount in words] of the [number of trystitems in words] things you need to succeed.";
+		not-yet;
 	if sco-fight-fave is true:
-		vcal "You already started the final fight!";
+		vcal "You already started the final fight! You aren't going to, like, REALLY start fighting now.";
 		already-done;
 	ready;
 
@@ -508,6 +483,32 @@ to check-pick-score:
 		now player has posh pick;
 	else:
 		say "That must be half of the puzzle. You wonder what the other half is."
+
+a goodrhyme rule (this is the vc-time-toad rule):
+	if player is not in passed port, unavailable;
+	if sco-time-toad is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-time-toad is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-time-toad rule:
+	now sco-time-toad is true;
+	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]And yet the time toad remains, after all that. Perhaps there is more it can do for you.";
+
+a goodrhyme rule (this is the vc-crime-crowed rule):
+	if player is not in passed port, unavailable;
+	if sco-time-toad is false:
+		vcp "Perhaps when the proper entity is here, they will share what crimes are crowed.";
+		not-yet;
+	ready;
+
+this is the vr-crime-crowed rule:
+	now sco-crime-crowed is true;
+	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support";
+	now player has crime crowed;
 
 section lane lax scoring
 
