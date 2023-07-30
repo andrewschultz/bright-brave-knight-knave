@@ -24,12 +24,18 @@ a holeitem has a number called palindex. [ change this to a rule later? ]
 
 guess-table of a holeitem is usually table of hold hole guesses.
 
+to decide which number is nbh: decide on number of blessed holeitems;
+
+to decide which number is nch: decide on number of carried holeitems;
+
 to decide whether hold-poke:
 	if hold hole is examined, no;
 	if number of unguessed holeitems < 3, no;
 	yes;
 
 a trystitem is a kind of thing. a trystitem has text called vaguedesc.
+
+to decide which number is trystcount: decide on number of carried trystitems;
 
 chapter eekers
 

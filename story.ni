@@ -97,7 +97,7 @@ rule for supplying a missing noun when examining:
 
 to say tryst-list:
 	repeat with ti running through trystitems:
-		say " ([if player has ti]+) [ti][else]-) [vaguedesc of ti][line break]"
+		say " [fixed letter spacing]([if player has ti]+[else]-[end if])[variable letter spacing] [if player has ti][ti][else][vaguedesc of ti][end if][line break]"
 
 section saying good bye
 
@@ -126,7 +126,6 @@ a sold soul is a holeitem. palindex of sold soul is 3.
 chapter hole finding items
 
 after printing the locale description for white wave:
-	let nch be number of carried holeitems;
 	if nch is 0, continue the action;
 	if number of carried blessed holeitems > 0:
 		say "The hold hole shakes. Suddenly [the list of carried blessed holeitems] [if nch is 1]flies[else]fly[end if] out of your hands and take [if nch is 1]its[else]their[end if] place in the hold hole.";
@@ -405,7 +404,7 @@ check going in Lane Lax:
 
 chapter broad brash clod clash
 
-The broad brash clod clash is scenery in Lane Lax. "Sheesh. A bnch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+The broad brash clod clash is scenery in Lane Lax. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
 
 chapter odd ash
 
@@ -437,11 +436,37 @@ Turning to Learning Lou is a person in Bruising Brew. "Turning-to-Learning Lou s
 
 chapter spurning spew
 
-Spurning Spew is a trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
+Spurning Spew is a proper-named trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
 
 volume unsorted
 
-volume meta
+volume meta verbs
+
+book taking inventory
+
+to say note-bless:
+	if nbh < nch, say ". However, [the list of carried not blessed holeitems] seem[if nch - nbh is 1]s[end if], well, not perfect, yet"
+
+check taking inventory when player has lack list:
+	let nci be number of things carried by the player;
+	if nci > 1: [technically we must check if trystitems are available, but since we can't get them until we have a lot of items ... forget it]
+		say "You are carrying:[line break]";
+	now all carried things are marked for listing;
+	now lack list is unmarked for listing;
+	now power plate is unmarked for listing;
+	now all holeitems are unmarked for listing;
+	list the contents of the player, with newlines, indented, with extra indentation, listing marked items only;
+	if nch is 0:
+		say "You don't have any items that fit in the hold hole.";
+	else:
+		say "So far, you've found [the list of carried holeitems] to fit in the hold hole[note-bless].";
+	if nci > 1, say "[line break]";
+	if player has lack list:
+		if trystcount is 0:
+			say "You haven't found anything on [the list] yet.";
+		else:
+			say "So far, from [the list], you've found [the list of carried trystitems].";
+	the rule succeeds;
 
 book eeker stuff
 
