@@ -29,6 +29,8 @@ to decide whether hold-poke:
 	if number of unguessed holeitems < 3, no;
 	yes;
 
+a trystitem is a kind of thing. a trystitem has text called vaguedesc.
+
 chapter eekers
 
 to decide which number is nelp: decide on number of eekers in location of player;

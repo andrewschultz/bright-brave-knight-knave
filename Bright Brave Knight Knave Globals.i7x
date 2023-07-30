@@ -181,6 +181,8 @@ sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
 
+sco-jack-gist is a truth state that varies.
+
 volume game state variables
 
 took-yacht is a truth state that varies.

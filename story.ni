@@ -79,6 +79,22 @@ to decide which number is help-index:
 	if number of eekers in location of player is 0, decide on 0;
 	decide on (matchnum of random eeker in location of player);
 
+chapter track tryst lack list
+
+the track tryst lack list is a thing. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
+
+understand "x" and "examine" as examining.
+
+rule for supplying a missing noun when examining:
+	if player has lack list:
+		now noun is lack list;
+	else:
+		now noun is the player;
+
+to say tryst-list:
+	repeat with ti running through trystitems:
+		say " ([if player has ti]+) [ti][else]-) [vaguedesc of ti][line break]"
+
 section saying good bye
 
 check going to Bass Bath: [this will need to be more widespread if we implement warp commands]
@@ -399,7 +415,7 @@ Turning to Learning Lou is a person in Bruising Brew. "Turning-to-Learning Lou s
 
 chapter spurning spew
 
-Spurning Spew is a thing. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one."
+Spurning Spew is a trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
 
 volume unsorted
 
