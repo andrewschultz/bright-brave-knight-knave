@@ -73,11 +73,14 @@ sco-glued-glass is a truth state that varies.
 
 sco-passed-port is a truth state that varies.
 
-section posh pick
+section passed port
 
 sco-salad-scent is a truth state that varies.
 sco-slosh-slick is a truth state that varies.
 sco-quash-quick is a truth state that varies.
+
+sco-time-toad is a truth state that varies.
+sco-crime-crowed is a truth state that varies.
 
 chapter south area
 
@@ -139,6 +142,8 @@ sco-boozing-boo is a truth state that varies.
 sco-using-you is a truth state that varies.
 sco-fusing-phew is a truth state that varies.
 
+sco-spurning-spew is a truth state that varies.
+
 chapter variable (detours after each hold hole piece is recovered)
 
 section nil none
@@ -175,9 +180,6 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
-
-sco-time-toad is a truth state that varies.
-sco-crime-crowed is a truth state that varies.
 
 volume game state variables
 

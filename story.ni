@@ -391,7 +391,15 @@ book Bruising Brew
 
 Bruising Brew is a room in intro.
 
+chapter the two faces of Lou (not-Christie)
+
 Losing Lou is a person in Bruising Brew.
+
+Turning to Learning Lou is a person in Bruising Brew. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?" [more bytes saved this way]
+
+chapter spurning spew
+
+Spurning Spew is a thing. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one."
 
 volume unsorted
 
@@ -662,6 +670,8 @@ section east bit
 
 index map with tata mapped east of Bass Bath.
 index map with Lane Lax mapped east of tata.
+index map with Wowed Wise Crowd Cries mapped north of Lax Lane.
+index map with Thought Thief Fought Fief mapped south of Lax Lane.
 
 section breakups
 

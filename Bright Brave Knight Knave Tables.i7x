@@ -74,6 +74,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
 "fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
+"spurning"	"spew"	--	--	false	true	true	false	Bruising Brew	vc-spurning-spew rule	vr-spurning-spew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
@@ -91,7 +92,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
-
 
 section passed port scoring
 
@@ -888,8 +888,19 @@ a goodrhyme rule (this is the vc-fusing-phew rule):
 
 this is the vr-fusing-phew rule:
 	now sco-fusing-phew is true;
-	say "You put things together--the boozing, the using. Lou nods. He thanks you and leaves.";
+	say "You put things together--the boozing, the using. Lou nods. He has a revelation. 'No more will I be Losing Lou. I will be Turning-to-Learning Lou!' He runs off and scribbles out some notes on various cocktail napkins. It's impressively fast, and you're entranced. There are so many napkins, they make a pretty thick book.[paragraph break]'Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?'";
 	moot losing lou;
+	now learning lou is in Bruising Brew;
+
+a goodrhyme rule (this is the vc-spurning-spew rule):
+	if Learning Lou is not touchable, continue the action;
+	ready;
+
+this is the vr-spurning-spew rule:
+	now sco-spurning-spew is true;
+	say "'Yes! That's it! Please accept my thanks!' Lou runs off, ostensibly to meet his agent.[paragraph break]Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.";
+	now player has spurning spew;
+	moot Learning Lou;
 
 section hailing hill point scoring
 
