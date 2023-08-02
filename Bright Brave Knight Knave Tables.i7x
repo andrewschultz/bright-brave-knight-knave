@@ -376,6 +376,7 @@ this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
 	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer places.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
+	dismiss-geek-wooter;
 
 [ this costs about 200 bytes as opposed to writing this out individually ]
 the sort navigation rules are a room based rulebook. the sort navigation rules have outcomes unavailable and already-done.
@@ -453,6 +454,7 @@ this is the vr-salad-scent rule:
 	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
 	moot pallid pent valid vent;
 	now player has salad sent;
+	dismiss-sneak-mooter;
 
 a goodrhyme rule (this is the vc-slosh-slick rule):
 	if posh pick is not touchable, unavailable;
@@ -481,6 +483,7 @@ to check-pick-score:
 	if pick-score is 2:
 		say "Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.";
 		now player has posh pick;
+		dismiss-freak-shooter;
 	else:
 		say "That must be half of the puzzle. You wonder what the other half is."
 
@@ -562,6 +565,7 @@ this is the vr-trod-trash rule:
 	now sco-trod-trash is true;
 	say "You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!";
 	now player has odd ash;
+	dismiss-geek-wooter;
 
 section thought thief fought fief scoring
 
@@ -635,6 +639,7 @@ this is the vr-need-knack rule:
 	now sco-need-knack is true;
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
 	open-psg west and Too Tough Blue Bluff;
+	dismiss-sneak-mooter;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
 	if player is not in treed track, unavailable;
@@ -775,6 +780,7 @@ this is the vr-stew-stuff rule:
 	now sco-stew-stuff is true;
 	say "Now that you know what to look for, it's not too bad to find. You find enough to make a stew.";
 	now player has stew stuff;
+	dismiss-geek-wooter;
 
 a goodrhyme rule (this is the vc-new-nuff rule):
 	if player is not in too tough blue bluff, unavailable;
@@ -887,6 +893,7 @@ this is the vr-loud-lies rule:
 	now sco-loud-lies is true;
 	say "With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.";
 	now player has proud prize;
+	dismiss-sneak-mooter;
 
 section Bruising Brew scoring
 
@@ -1152,8 +1159,8 @@ a goodrhyme rule (this is the any-nook rule):
 	if sco-covering-candle is true:
 		vcal "You finished your work here.";
 		already-done;
-	if nook-score < 2:
-		vcp "You feel you do not have [if nook-score is 0]any[else]enough[end if] artifacts to perform whatever ceremony you need to.";
+	if pre-nook-score < 2:
+		vcp "You feel you do not have [if pre-nook-score is 0]any[else]enough[end if] artifacts to perform whatever ceremony you need to.";
 		not-yet;
 
 section hailing hill auxiliary
@@ -1209,6 +1216,17 @@ to lou-check:
 		say "Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.";
 	else:
 		say "Lou nods at the different perspectives but is unable to integrate them. Maybe you can help!"
+
+to fully-dismiss (ee - an eeker):
+	now ee is finished;
+	now other-guy of ee is finished;
+	say "You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
+
+to dismiss-sneak-mooter: if sneak-mooter-points is 3, fully-dismiss snide sneak;
+
+to dismiss-geek-wooter: if geek-wooter-points is 3, fully-dismiss guide geek;
+
+to dismiss-freak-shooter: if freak-shooter-points is 4, fully-dismiss fried freak;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck rule):
 	if ee is moot:

@@ -233,15 +233,15 @@ check going in recroom:
 
 chapter chic shooter
 
-the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is 1.
+the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is -1.
 
 chapter meek mooter
 
-the Meek Mooter is a crooty eeker. matchnum of Meek Mooter is 2.
+the Meek Mooter is a crooty eeker. matchnum of Meek Mooter is -2.
 
 chapter weak wooter
 
-the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is 3.
+the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is -3.
 
 book spied speak cried creek
 
@@ -262,15 +262,15 @@ after printing the locale description when number of leftbehind eekers > 0:
 
 chapter fried freak
 
-the Fried Freak is an creeky eeker. matchnum of Fried Freak is 1.
+the Fried Freak is an creeky eeker. matchnum of Fried Freak is -1.
 
 chapter snide sneak
 
-the Snide Sneak is an eeker. matchnum of Snide Sneak is 2.
+the Snide Sneak is an eeker. matchnum of Snide Sneak is -2.
 
 chapter guide geek
 
-the Guide Geek is an eeker. matchnum of Guide Geek is 3.
+the Guide Geek is an eeker. matchnum of Guide Geek is -3.
 
 book eeker logic and manipulation
 
@@ -513,6 +513,9 @@ carry out recruiting:
 					say "Because you are bright and brave, you realize by process of elimination who is left. Briefly, you wonder if you deserve both a bonus point AND a shortcut, but you've earned it. Go, you![paragraph break]";
 			now xx is pairedyet;
 			now og is pairedyet;
+			let pairindex be (number of pairedyet eekers) / 2;
+			now matchnum of xx is pairindex;
+			now matchnum of og is pairindex;
 			move player to recroom;
 			say "You recall [the xx] and [the og].";
 

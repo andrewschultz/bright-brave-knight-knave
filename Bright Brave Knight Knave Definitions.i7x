@@ -118,6 +118,15 @@ to move-eekers:
 	repeat with x running through eekers:
 		if x is leftbehind, move x to location of player;
 
+to decide which number is geek-wooter-points:
+	decide on (boolval of sco-plucky-plot) + (boolval of sco-trod-trash) + (boolval of sco-stew-stuff)
+
+to decide which number is freak-shooter-points:
+	decide on pick-score + (boolval of sco-yall-yank) + (boolval of whether or not rack right is not off-stage)
+
+to decide which number is sneak-mooter-points:
+	decide on (boolval of sco-loud-lies) + (boolval of sco-salad-scent) + (boolval of sco-need-knack)
+
 section tracking hole progress
 
 to decide which number is hole-progress:
@@ -161,8 +170,8 @@ to decide what number is blight-score:
 
 section nook score
 
-to decide which number is nook-score:
-	decide on (boolval of sco-bell-book) + (boolval of sco-covering-candle)
+to decide which number is pre-nook-score:
+	decide on (boolval of sco-loud-lies) + (boolval of whether or not player has posh pick)
 
 section pick score
 
