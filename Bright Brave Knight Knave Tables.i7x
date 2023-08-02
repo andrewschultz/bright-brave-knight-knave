@@ -688,39 +688,30 @@ section lack light black blight scoring
 
 a goodrhyme rule (this is the vc-hack-height rule):
 	if player is not in lack light black blight, unavailable;
-	if sco-hack-height is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-hack-height is true:
-		vcal "You already did this!";
+		vcal "You already hacked the height. You don't want to, like, become a total hack!";
 		already-done;
 	ready;
 
 this is the vr-hack-height rule:
 	now sco-hack-height is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You feel less dizzy and such this high up. It's a relief.";
 	blight-alt;
 
 a goodrhyme rule (this is the vc-quack-quite rule):
 	if player is not in lack light black blight, unavailable;
-	if sco-quack-quite is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-quack-quite is true:
-		vcal "You already did this!";
+		vcal "You already quacked 'Quite!'";
 		already-done;
 	ready;
 
 this is the vr-quack-quite rule:
 	now sco-quack-quite is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You show you can blow off fear, a little, by quacking 'quite.'";
 	blight-alt;
 
 a goodrhyme rule (this is the vc-flak-flight rule):
 	if player is not in lack light black blight, unavailable;
-	if sco-flak-flight is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-flak-flight is true:
 		vcal "You already did this!";
 		already-done;
@@ -734,9 +725,6 @@ this is the vr-flak-flight rule:
 
 a goodrhyme rule (this is the vc-slack-slight rule):
 	if player is not in lack light black blight, unavailable;
-	if sco-slack-slight is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-slack-slight is true:
 		vcal "You already did this!";
 		already-done;
@@ -750,9 +738,16 @@ this is the vr-slack-slight rule:
 to blight-alt:
 	if blight-score is 3:
 		alt-last black blight;
-		say "The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.[paragraph break]There's a sour slate lying around, which you don't want to touch in its current form, and a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
+		say "The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.[paragraph break]There's a sour slate lying around, which you don't want to touch in its current form.";
 		now sour slate is in black blight;
+		check-rack-right;
+		if player does not have rack right, say "There must be something here in the Sack Site! But you wouldn't know where to start searching, and you wouldn't have the energy to search very long. Maybe if you were a more old-school parser adventurer, you would. But that part of the curriculum was streamlined these days.";
+
+to check-rack-right:
+	if fried freak is in location of player or pfft-friends is true:
+		say "The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
 		now player has rack right;
+		dismiss-freak-shooter;
 
 section too tough blue bluff scoring
 

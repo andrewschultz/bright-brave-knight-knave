@@ -354,6 +354,10 @@ book Lack Light Black Blight
 
 Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
+after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score > 3:
+	if fried freak is followish, check-rack-right;
+	continue the action;
+
 chapter rack right
 
 the rack right is a thing. printed name is "rack, right". description of rack right is "It just looks and feels right, both the shape and texture, and that you should have it. You suspect it'll be important in some ritual somewhere.".
