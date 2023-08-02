@@ -286,6 +286,12 @@ chapter yucky yacht
 
 the yucky yacht is scenery in Bosh Blanks.
 
+rule for supplying a missing noun when entering:
+	if yacht is in location of player, now noun is yacht;
+
+check going inside:
+	if yacht is in location of player, try entering yacht instead;
+
 check entering yucky yacht:
 	if player is not in bosh blanks:
 		yacht-go bosh blanks;
@@ -501,6 +507,7 @@ understand "r [number]" as recruiting when r-warn-yet is true.
 
 carry out recruiting:
 	if number understood > 3 or number understood < 1, say "You need to pick 1, 2 or 3." instead;
+	if number of pairedyet eekers is 2 and number understood > 1, say "I can't deduce the next pair you'd like to enlist. There are two more." instead;
 	if number of fungible eekers > 0, say "I can technically do better, but right now, you'll want to run this command without anyone else around." instead;
 	repeat with XX running through creeky eekers:
 		if matchnum of XX is number understood:
