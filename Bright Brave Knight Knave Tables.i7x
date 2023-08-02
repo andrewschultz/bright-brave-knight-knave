@@ -410,12 +410,15 @@ a goodrhyme rule (this is the vc-passed-port rule):
 		not-yet;
 	if port-score is 1:
 		vcp "The Sassed Sort looks at the [if player has murky map]murky map. 'Sorry, I can't quite read that yet[else]glued glass. 'It might help me if I had instructions that were hard to read. But we don't, yet[end if].'";
+		not-yet;
 	ready;
 
 this is the vr-passed-port rule:
 	now sco-passed-port is true;
 	if passed port is unvisited:
-		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, I remember now how to get there. That's a safe route I hadn't considered. Fast, too.' It doesn't take long.[paragraph break]";
+		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, I remember now how to get there. That's a safe route I hadn't considered. Fast, too. Mind if I keep the map and glass?'[paragraph break]Well, you could use the free inventory space. The trip doesn't take long.";
+		moot glued glass;
+		moot murky map;
 	yacht-go passed port;
 
 section cast court scoring
@@ -605,6 +608,7 @@ a goodrhyme rule (this is the vc-wrought-reef rule):
 this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
 	say "You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.";
+	move wish fun fish to Fought Fief;
 
 a goodrhyme rule (this is the vc-done-dish rule):
 	if wish fun fish is not touchable, unavailable;
@@ -672,11 +676,8 @@ this is the vr-seed-sack rule:
 
 a goodrhyme rule (this is the vc-plead-plaque rule):
 	if player is not in treed track, unavailable;
-	if sco-plead-plaque is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-plead-plaque is true:
-		vcal "No, you don't need to weigh yourself down with another plaque. Instead of doing so, why not check the predecessors to [this-game]? Once you're done here, of course.";
+		vcal "You look over the plead plaque again. Man, even more fun adventures once you're done with [this-game]! You totally can't wait to hit up [other-ones], of you haven't already.";
 		already-done;
 	ready;
 
@@ -825,7 +826,9 @@ a goodrhyme rule (this is the vc-covering-candle rule):
 this is the vr-covering-candle rule:
 	now sco-covering-candle is true;
 	say "The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. 'DESTROY THEM.' You do. The knell nook begins shaking and soon collapses.[paragraph break]The sold soul thanks you. It will follow wordlessly until you need it.";
-	now player has sold soul;
+	give-player sold soul;
+	moot proud prize;
+	moot posh pick;
 
 section tall tank(s) scoring
 
@@ -844,9 +847,10 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
-	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and in one of the tanks, a one-wish fun fish swims around.";
-	open-psg east and Bruising Brew;
-	move fun fish to tata;
+	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and behind one of the tanks, an ardor elm awaits. Perhaps it is a reward for your efforts, or it holds one.";
+	open-psg east and Lane Lax;
+	dismiss-freak-shooter;
+	move ardor elm to tata;
 
 a goodrhyme rule (this is the vc-harder-helm rule):
 	if player is not in tata, unavailable;
@@ -858,16 +862,14 @@ a goodrhyme rule (this is the vc-harder-helm rule):
 this is the vr-harder-helm rule:
 	now sco-harder-helm is true;
 	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
+	now player has harder helm;
 
 section wowed wise crowd cries scoring
 
 a goodrhyme rule (this is the vc-trowed-tries rule):
 	if player is not in wowed wise crowd cries, unavailable;
-	if sco-trowed-tries is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-trowed-tries is true:
-		vcal "You already did this!";
+		vcal "[if sco-loud-lies is true]No need to re-try.[else]Enough trying. You need to take action![end if]";
 		already-done;
 	ready;
 
@@ -1342,6 +1344,7 @@ to give-player (hi - a holeitem):
 	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
 	now player has hi;
 	now pre-hole-item-room is location of player;
+	if got-hole-bonus is false, decrement cur-max-bonus;
 	if hole-progress is 1:
 		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much. You close you eyes, wondering if you really deserve to have made any progress just through all those silly rhymes. Nothing seems to matter. Then ... you wind up in, or near, nothing.";
 		move player to Nil None;
