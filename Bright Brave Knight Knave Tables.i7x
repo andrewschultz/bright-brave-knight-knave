@@ -553,6 +553,7 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
+	now player has pain packs;
 
 a goodrhyme rule (this is the vc-trod-trash rule):
 	if broad brash clod clash is untouchable, unavailable;

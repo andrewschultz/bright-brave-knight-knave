@@ -410,6 +410,10 @@ chapter odd ash
 
 the odd ash is a thing. "Looking at the odd ash, you wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
 
+chapter pain packs
+
+the pain packs are a plural-named trystitem. "They look like they could really heal some hit points, if that's how health is tracked here.". vaguedesc is "something to heal you if you get a scratch".
+
 book Wowed Wise Crowd Cries
 
 Wowed Wise Crowd Cries is a room in eaststuff.
