@@ -59,7 +59,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
 "flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
-"sour"	"slate"	--	--	false	true	true	false	black blight	vc-sour-slate rule	vr-sour-slate rule	--	--
+"power"	"plate"	--	--	false	true	true	false	black blight	vc-power-plate rule	vr-power-plate rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
@@ -790,13 +790,14 @@ this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
 
-a goodrhyme rule (this is the vc-sour-slate rule):
+a goodrhyme rule (this is the vc-power-plate rule):
 	if sour slate is not touchable, unavailable;
 	ready;
 
-this is the vr-sour-slate rule:
-	now sco-sour-slate is true;
-	say "Oh my goodness! The sour slate expands -- and it becomes some Hooray! You figured what to do! You get a point!";
+this is the vr-power-plate rule:
+	now sco-power-plate is true;
+	say "Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.";
+	now player has power plate;
 
 section knell nook scoring
 

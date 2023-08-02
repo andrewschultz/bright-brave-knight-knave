@@ -109,7 +109,7 @@ sco-quack-quite is a truth state that varies.
 sco-flak-flight is a truth state that varies.
 sco-slack-slight is a truth state that varies.
 
-sco-sour-slate is a truth state that varies.
+sco-power-plate is a truth state that varies.
 
 section knell nook
 
