@@ -284,7 +284,7 @@ to say planks-desc: say "There's water on pretty much all sides here. A yucky ya
 
 chapter yucky yacht
 
-the yucky yacht is scenery in Bosh Blanks.
+the yucky yacht is scenery.
 
 rule for supplying a missing noun when entering:
 	if yacht is in location of player, now noun is yacht;
@@ -327,6 +327,8 @@ the slime slowed rime road is scenery in Passed Port.
 chapter time toad
 
 the time toad is a thing. "A time toad sits here pensively. It alreay helped you get the cold coal, but it seems to be holding just one more secret."
+
+chapter crime crowed
 
 the crime crowed is a trystitem. vaguedesc is "evidence of being hard done by".
 

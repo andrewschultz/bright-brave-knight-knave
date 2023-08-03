@@ -153,7 +153,7 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 	if hole-progress < 3:
 		vcp "You aren't ready yet. The hold hole is not complete.";
 		not-yet;
-	if trystcount < 4:
+	if trystcount < number of trystitems:
 		vcp "You look at [the list]. You only have [trystcount in words] of the [number of trystitems in words] things you need to succeed.";
 		not-yet;
 	if sco-fight-fave is true:
@@ -448,7 +448,7 @@ section passed port scoring
 a goodrhyme rule (this is the vc-salad-scent rule):
 	if pallid pent valid vent is untouchable, unavailable;
 	if sco-salad-scent is true:
-		vcal "You already did this!";
+		vcal "Wow! You must really like salad!";
 		already-done;
 	ready;
 
@@ -492,17 +492,16 @@ to check-pick-score:
 
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
-	if sco-time-toad is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-time-toad is true:
-		vcal "You already did this!";
+		vcal "You already called the time toad into existence!";
 		already-done;
 	ready;
 
 this is the vr-time-toad rule:
 	now sco-time-toad is true;
 	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]And yet the time toad remains, after all that. Perhaps there is more it can do for you.";
+	give-player cold coal;
+	move time toad to passed port;
 
 a goodrhyme rule (this is the vc-crime-crowed rule):
 	if player is not in passed port, unavailable;
@@ -513,8 +512,9 @@ a goodrhyme rule (this is the vc-crime-crowed rule):
 
 this is the vr-crime-crowed rule:
 	now sco-crime-crowed is true;
-	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support";
+	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support.";
 	now player has crime crowed;
+	moot time toad;
 
 section lane lax scoring
 
@@ -936,7 +936,7 @@ this is the vr-fusing-phew rule:
 	now learning lou is in Bruising Brew;
 
 a goodrhyme rule (this is the vc-spurning-spew rule):
-	if Learning Lou is not touchable, continue the action;
+	if Learning Lou is not touchable, unavailable;
 	ready;
 
 this is the vr-spurning-spew rule:
@@ -1034,6 +1034,7 @@ a goodrhyme rule (this is the vc-wailing-will rule):
 this is the vr-wailing-will rule:
 	now sco-wailing-will is true;
 	say "Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.";
+	now sold soul is blessed;
 
 section nil none point scoring
 
@@ -1327,11 +1328,10 @@ to check-points:
 			if idid entry is false:
 				say "[w1 entry] [w2 entry] undone.";
 				now any-missed is true;
-	if any-missed is true, say "Got everything!"
+	if any-missed is false, say "Got everything!"
 
 to win-the-game:
 	check-points;
-	increment core-score;
 	if cur-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
