@@ -99,18 +99,6 @@ to say tryst-list:
 	repeat with ti running through trystitems:
 		say " [fixed letter spacing]([if player has ti]+[else]-[end if])[variable letter spacing] [if player has ti][ti][else][vaguedesc of ti][end if][line break]"
 
-section saying good bye
-
-check going to Bass Bath: [this will need to be more widespread if we implement warp commands]
-	repeat with HI running through holeitems:
-		if player does not have HI, next;
-		if help-index is not palindex of HI, next;
-		say "[list of eekers in location of player] pause a bit. They agree they're done here. They thank you for giving them purpose and taking them on a nice adventure and, well, making an unexpected friend. But it is time for them to go.";
-		if number of eekers in location of player is not 2, say "Oops, bug ... there should be 2 eekers following.";
-		repeat with E running through eekers in location of player:
-			moot E;
-			now E is finished;
-
 section cold coal
 
 a cold coal is a holeitem. palindex of cold coal is 1.
