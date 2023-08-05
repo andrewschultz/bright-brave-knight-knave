@@ -36,6 +36,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
+"harder"	"helm"	--	--	false	true	true	false	cried creak	vc-harder-helm rule	vr-harder-helm rule	--	--
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
 "cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
@@ -63,7 +64,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
-"harder"	"helm"	--	--	false	true	true	false	tata	vc-harder-helm rule	vr-harder-helm rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -344,6 +344,18 @@ a goodrhyme rule (this is the vc-stride-streak rule):
 this is the vr-stride-streak rule:
 	now sco-stride-streak is true;
 	say "Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.";
+
+a goodrhyme rule (this is the vc-harder-helm rule):
+	if ardor elm is not touchable, unavailable;
+	if sco-harder-helm is true:
+		vcal "That sort of repeated ardor won't get you anywhere!";
+		already-done;
+	ready;
+
+this is the vr-harder-helm rule:
+	now sco-harder-helm is true;
+	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
+	now player has harder helm;
 
 section bosh blanks scoring
 
@@ -847,22 +859,9 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
-	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passages open up east, north and south, and behind one of the tanks, an ardor elm awaits. Perhaps it is a reward for your efforts, or it holds one.";
+	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
-	move ardor elm to tata;
-
-a goodrhyme rule (this is the vc-harder-helm rule):
-	if player is not in tata, unavailable;
-	if sco-harder-helm is true:
-		vcal "That sort of repeated ardor won't get you anywhere!";
-		already-done;
-	ready;
-
-this is the vr-harder-helm rule:
-	now sco-harder-helm is true;
-	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
-	now player has harder helm;
 
 section wowed wise crowd cries scoring
 
@@ -1220,6 +1219,9 @@ to fully-dismiss (ee - an eeker):
 	now ee is finished;
 	now other-guy of ee is finished;
 	say "You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
+	if number of finished eekers is 6:
+		say "[line break]But they also realize something else--you've helped everyone you could have a bit of fun! Surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. There may be a surprise for you.[end if]";
+		move ardor elm to cried creek;
 
 to dismiss-sneak-mooter: if sneak-mooter-points is 3, fully-dismiss snide sneak;
 
