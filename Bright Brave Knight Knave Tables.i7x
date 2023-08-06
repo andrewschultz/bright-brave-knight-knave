@@ -1312,6 +1312,12 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups 
 		say "What do you know? The [ee] and [rfe] seem to be opposites, yet they fill in each other's holes, personality-wise.";
 		now ee is pairedyet;
 		now rfe is pairedyet;
+		let newmatch be (number of pairedyet eekers) / 2;
+		now matchnum of ee is newmatch;
+		now matchnum of rfe is newmatch;
+		if number of pairedyet eekers is 4:
+			repeat with etemp running through eekers:
+				if matchnum of etemp < 0, now matchnum of etemp is 3;
 	bring-over ee;
 	now rfe is followish;
 	if r-warn-yet is false:
