@@ -10,7 +10,7 @@ G = general
 C = cheat
 H = honest
 W = walkthrough
-WA = warp
+WARP = warp
 WC = walkthrough-cheat-rollup
 ]
 
@@ -28,25 +28,63 @@ test g3b with "nude napper/write rave".
 
 test g4 with "out/e/n/w/stride streak".
 
-test g5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic shooter/w/fried freak/e/bye/r 3".
+test g5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic shooter/w/fried freak/e/bye".
 
-test w5 with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5".
+test g7 with "s/e/n/posh planks/plucky plot/fast fort/glued glass/cast court/murky map/passed port/slashing sword"
+
+test glou with "in/using you/boozing boo/fusing phew/spurning spew/out".
+
+test ghelm with "w/n/w/harder helm/e/s/e".
+
+test ghill with "u/scaling skill/ailing ill/failing phil/wailing will/bailing bill/d".
+
+test gend with "d/fight fave/frightfully/bright bully/bam bye".
+
+book honest stuff
+
+test h6m with "weak wooter/w/guide geek/e"
+
+test h6 with "r 3"
+
+test h7 with "test g7/in/s".
+
+test h8 with "bye/w/n/r 2/s/e/e/yall yank/e/train tracks/main max/pain packs/bye/w/w".
+
+test h9 with "w/n/r 1/s/e/s/need knack/heed hack".
+
+test h9b with "plead plaque".
+
+test h10 with "n/e/e/n/trowed tries/loud lies/s/w/w/n/passed port/salad scent".
+
+test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish/illun/fill fun/will won/n".
+
+test h12 with "n/w/w/n/r 2/s/e/s/w/flak flight/hack height/slack slight/quack quite/power plate/e/n".
+
+test h13 with "n/passed port/quash quick/slosh slick/time toad/candor cove/grander grove/stander stove/n".
+
+test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle/stout stuff/flout fluff/nowt nuff/n/w/n".
+
+[choose a number when only 1 left]
+
+test wa with "test g1/test g1b/test g2/test g3/test g4/test g5/test h6/test h6m/test h7/test h8/test h9/test h9b/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
+
+book full walkthrough
+
+test wi5 with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5".
 
 book cheat through
 
-[test w4]
-
-test c6 with "bye/lone 1/s/e/n/posh planks/plucky plot/fast fort/glued glass/cast court/murky map/passed port/salad scent/slosh slick/quash quick/enter yacht/s".
+test c6 with "r 3/bye/lone 1/test g7/quash quick/slosh slick/salad scent/in/s".
 
 test c7 with "e/yall yank/e/train tracks/pain packs/main max/trod trash/n/trowed tries/loud lies/s/s/brought brief/bought beef/wrought reef/n/w/w".
 
-test c8 with "s/need knack/seed sack/heed hack/plead plaque/w/grew gruff/stew stuff/new nuff/e/e/bell book/covering candle/illun/fill fun/will won/w/u/quack quite/slack slight/hack height/power plate/flak flight/d/n".
+test c8 with "s/need knack/seed sack/heed hack/plead plaque/u/grew gruff/stew stuff/new nuff/d/e/bell book/covering candle/illun/fill fun/will won/w/w/quack quite/slack slight/hack height/power plate/flak flight/e/n".
 
 test c9 with "in/boozing boo/using you/fusing phew/spurning spew/out".
 
 test c10 with "e/e/s/done dish/grander grove/candor cove/stander stove/n/n/w/w"
 
-test c11 with "n/passed port/slashing sword/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
+test c11 with "n/passed port/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
 
 test c12 with "w/n/w/harder helm/e/s/e".
 
@@ -76,7 +114,7 @@ test wc2 with "hi 2/grander grove".
 
 test wc3 with "hi 3/candor cove".
 
-test wa with "test w1/test w2/test w3/test wj".
+test warp with "test w1/test w2/test w3/test wj".
 
 test wf with "test w1/test w1b/test w2/test w3/test w3b/test w4/test w4n/test wc1/test wc2/test wc3/test wend1/test wend2".
 
