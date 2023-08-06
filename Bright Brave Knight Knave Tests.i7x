@@ -36,7 +36,7 @@ test glou with "in/using you/boozing boo/fusing phew/spurning spew/out".
 
 test ghelm with "w/n/w/harder helm/e/s/e".
 
-test ghill with "u/scaling skill/ailing ill/failing phil/wailing will/bailing bill/d".
+test ghill with "u/scaling skill/ailing ill/mailing mill/failing phil/wailing will/bailing bill/d".
 
 test gend with "d/fight fave/frightfully/bright bully/bam bye".
 
@@ -48,25 +48,27 @@ test h6 with "r 3"
 
 test h7 with "test g7/in/s".
 
-test h8 with "bye/w/n/r 2/s/e/e/yall yank/e/train tracks/main max/pain packs/bye/w/w".
+test h8 with "bye/w/n/r 2/s/e/e/yall yank/e/train tracks/main max/pain packs/bye/w/w". [no paul panks]
 
-test h9 with "w/n/r 1/s/e/s/need knack/heed hack".
+test h9 with "w/n/r 1/s/e/s/need knack/heed hack/seed sack". [no plead plaque]
 
 test h9b with "plead plaque".
 
 test h10 with "n/e/e/n/trowed tries/loud lies/s/w/w/n/passed port/salad scent".
 
-test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish/illun/fill fun/will won/n".
+test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish/fill fun/will won/n". [no illun]
 
-test h12 with "n/w/w/n/r 2/s/e/s/w/flak flight/hack height/slack slight/quack quite/power plate/e/n".
+test h12 with "n/w/w/n/r 2/s/e/s/w/hack height/slack slight/quack quite/power plate/e/n". [no flak flight]
 
-test h13 with "n/passed port/quash quick/slosh slick/time toad/candor cove/grander grove/stander stove/n".
+test h13 with "n/passed port/quash quick/slosh slick/time toad/candor cove/grander grove/stander stove/n". [no rhyme road]
 
-test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle/stout stuff/flout fluff/nowt nuff/n/w/n".
+test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle/stout stuff/flout fluff/n/w/n". [no nowt nuff]
 
 [choose a number when only 1 left]
 
-test wa with "test g1/test g1b/test g2/test g3/test g4/test g5/test h6/test h6m/test h7/test h8/test h9/test h9b/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
+test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
+
+test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/test h8/test h9/test h9b/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
 
 book full walkthrough
 
@@ -76,7 +78,7 @@ book cheat through
 
 test c6 with "r 3/bye/lone 1/test g7/quash quick/slosh slick/salad scent/in/s".
 
-test c7 with "e/yall yank/e/train tracks/pain packs/main max/trod trash/n/trowed tries/loud lies/s/s/brought brief/bought beef/wrought reef/n/w/w".
+test c7 with "e/yall yank/paul panks/e/train tracks/pain packs/main max/trod trash/n/trowed tries/loud lies/s/s/brought brief/bought beef/wrought reef/n/w/w".
 
 test c8 with "s/need knack/seed sack/heed hack/plead plaque/u/grew gruff/stew stuff/new nuff/d/e/bell book/covering candle/illun/fill fun/will won/w/w/quack quite/slack slight/hack height/power plate/flak flight/e/n".
 
@@ -84,7 +86,7 @@ test c9 with "in/boozing boo/using you/fusing phew/spurning spew/out".
 
 test c10 with "e/e/s/done dish/grander grove/candor cove/stander stove/n/n/w/w"
 
-test c11 with "n/passed port/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
+test c11 with "n/passed port/rhyme road/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
 
 test c12 with "w/n/w/harder helm/e/s/e".
 
