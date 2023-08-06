@@ -220,6 +220,9 @@ to say optional-hint-think-item: say "";
 
 volume helper definitions
 
+to decide which number is nil-score:
+	decide on (boolval of sco-ill-un) + (boolval of sco-fill-fun) + (boolval of sco-will-won);
+
 to decide which number is dander-score:
 	decide on (boolval of sco-candor-cove) + (boolval of sco-grander-grove) + (boolval of sco-stander-stove);
 

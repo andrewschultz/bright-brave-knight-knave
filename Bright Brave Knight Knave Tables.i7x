@@ -1069,8 +1069,8 @@ a goodrhyme rule (this is the vc-will-won rule):
 
 this is the vr-will-won rule:
 	now sco-will-won is true;
-	say "Yes. You sit and think. You regain your will to win. You are ready to move on. You move back to familiar territory...";
-	move player to pre-hole-item-room;
+	say "Yes. You sit and think. You regain your will to win. You are ready to move on. You can move in any direction back to familiar territory, now.";
+	check-nil-alts;
 
 a goodrhyme rule (this is the vc-ill-un rule):
 	if player is not in nil none, unavailable;
@@ -1082,6 +1082,7 @@ a goodrhyme rule (this is the vc-ill-un rule):
 this is the vr-ill-un rule:
 	now sco-ill-un is true;
 	say "You come to grips with how you [if sco-will-won is true]were[else]are[end if] slightly illun[']. This may not be terribly practical, but it's an important part of the Knave code now, you remember.";
+	check-nil-alts;
 
 a goodrhyme rule (this is the vc-fright-fully rule):
 	if Trite Tully is not fungible, unavailable;
@@ -1089,6 +1090,13 @@ a goodrhyme rule (this is the vc-fright-fully rule):
 		vcal "There must be another way to see Trite Tully!";
 		already-done;
 	ready;
+
+to check-nil-alts:
+	if nil-score is 2:
+		alt-last Nil None;
+		say "You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort."
+	else:
+		say "You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction."
 
 section dander dove scoring
 
