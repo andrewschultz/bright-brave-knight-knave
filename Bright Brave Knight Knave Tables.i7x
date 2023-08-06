@@ -61,7 +61,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
 "flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
-"power"	"plate"	--	--	false	true	true	false	black blight	vc-power-plate rule	vr-power-plate rule	--	--
+"power"	"plate"	--	--	false	true	true	false	--	vc-power-plate rule	vr-power-plate rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
@@ -764,6 +764,9 @@ this is the vr-slack-slight rule:
 to blight-alt:
 	if blight-score is 3:
 		alt-last black blight;
+		choose row with check-rule of vc-power-plate rule in table of verb checks;
+		now best-room entry is black blight;
+		now core entry is true;
 		say "The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.[paragraph break]There's a sour slate lying around, which you don't want to touch in its current form.";
 		now sour slate is in black blight;
 		check-rack-right;
