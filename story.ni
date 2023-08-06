@@ -558,11 +558,17 @@ check going down in Nil None:
 
 guess-table of Nil None is  the table of nil none guesses.
 
-book Stander Stove
+book Dander Dove
 
-Stander Stove is a room. "You're trapped in what appears to be a metal stove[if stove-prog > 0], again[end if]. There seems to be no way out[if stove-prog > 0], and the way you left last time seems blocked[end if]. You need to envision a much nicer place than here."
+Dander Dove is a room. "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
 
-guess-table of Stander Stove is the table of stander stove guesses.
+check going in Dander Dove:
+	if dander-score < 2, say "You're still in enough of a dander you can't let go and move on, yet." instead;
+	if dander-score is 2, max-down;
+	say "Your mind lighter, you wander off back to where you were...";
+	move player to pre-hole-item-room instead;
+
+guess-table of Dander Dove is the table of Dander Dove guesses.
 
 book Rough Route
 
@@ -571,6 +577,7 @@ Route Rough is a room. "Man! You [if route-rough-score is 3]did everything you c
 check going in route rough:
 	if route-rough-score >= 2:
 		say "You walk a long way ... then suddenly you wind up back where you were.";
+		if route-rough-score is 2, max-down;
 		move player to pre-hole-item-room instead;
 	say "That would just be wandering. You need to get your head clear and put angst to the side." instead;
 
@@ -712,6 +719,7 @@ this is the show-misses rule:
 		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
 	flag-missed route rough;
 	flag-missed black blight;
+	flag-missed dander dove;
 	if sco-plead-plaque is false:
 		say "You didn't find the [b]PLEAD PLAQUE[r] in Treed Track.";
 	if sco-jack-gist is false:
@@ -754,5 +762,5 @@ index map with Thought Thief Fought Fief mapped south of Lax Lane.
 section breakups
 
 index map with Route Rough mapped west of Cried Creek.
-index map with Stander Stove mapped north of Route Rough.
-index map with Nil None mapped east of Stander Stove.
+index map with Dander Dove mapped north of Route Rough.
+index map with Nil None mapped east of Dander Dove.

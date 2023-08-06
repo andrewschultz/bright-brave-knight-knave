@@ -219,8 +219,8 @@ to say optional-hint-think-item: say "";
 
 volume helper definitions
 
-to decide which number is stove-prog:
-	decide on boolval of sco-candor-cove + boolval of sco-grander-grove;
+to decide which number is dander-score:
+	decide on (boolval of sco-candor-cove) + (boolval of sco-grander-grove) + (boolval of sco-stander-stove);
 
 to decide which number is tully-score:
 	decide on boolval of sco-fright-fully + boolval of sco-bright-bully;

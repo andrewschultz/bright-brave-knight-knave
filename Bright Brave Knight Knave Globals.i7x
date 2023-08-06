@@ -4,9 +4,9 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 volume score values
 
-core-max is 72.
+core-max is 71.
 
-max-bonus is 8.
+max-bonus is 10.
 
 [ note in this case there are 2 bonus-bonus points outside the table:
 --figuring what the hold hole needs to hold
@@ -189,6 +189,8 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
+
+sco-stander-stove is a truth state that varies.
 
 volume game state variables
 

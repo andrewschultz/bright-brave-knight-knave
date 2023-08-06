@@ -66,7 +66,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "mid"	"mum"	--	false	--	"You don't need parental support or quiet."
 "skid"	"scum"	--	false	--	"No. A good [bkn] don't look down on people like that."
 
-table of stander stove guesses
+table of dander dove guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "strander"	"strove"	--	false	--	"This would seem to be despairing. You can't already admit you tried but failed."
 

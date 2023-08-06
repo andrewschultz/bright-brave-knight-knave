@@ -81,8 +81,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
 "ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
-"grander"	"grove"	--	--	false	true	true	false	stander stove	vc-grander-grove rule	vr-grander-grove rule	--	--
-"candor|candour"	"cove"	--	--	false	true	true	false	stander stove	vc-candor-cove rule	vr-candor-cove rule	--	--
+"grander"	"grove"	--	--	false	true	true	false	dander dove	vc-grander-grove rule	vr-grander-grove rule	--	--
+"candor|candour"	"cove"	--	--	false	true	true	false	dander dove	vc-candor-cove rule	vr-candor-cove rule	--	--
+"stander"	"stove"	--	--	false	true	true	false	dander dove	vc-stander-stove rule	vr-stander-stove rule	--	--
 "flout"	"fluff"	--	--	false	true	true	false	route rough	vc-flout-fluff rule	vr-flout-fluff rule	--	--
 "nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
 "stout"	"stuff"	--	--	false	true	true	false	route rough	vc-stout-stuff rule	vr-stout-stuff rule	--	--
@@ -1077,10 +1078,10 @@ a goodrhyme rule (this is the vc-fright-fully rule):
 		already-done;
 	ready;
 
-section stander stove rules
+section dander dove scoring
 
 a goodrhyme rule (this is the vc-grander-grove rule):
-	if player is not in stander stove, unavailable;
+	if player is not in dander dove, unavailable;
 	if sco-grander-grove is true:
 		vcal "You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.";
 		already-done;
@@ -1088,11 +1089,10 @@ a goodrhyme rule (this is the vc-grander-grove rule):
 
 this is the vr-grander-grove rule:
 	now sco-grander-grove is true;
-	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
-	move player to pre-hole-item-room;
+	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.";
 
 a goodrhyme rule (this is the vc-candor-cove rule):
-	if player is not in stander stove, unavailable;
+	if player is not in dander dove, unavailable;
 	if sco-candor-cove is true:
 		vcal "You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.";
 		already-done;
@@ -1100,8 +1100,29 @@ a goodrhyme rule (this is the vc-candor-cove rule):
 
 this is the vr-candor-cove rule:
 	now sco-candor-cove is true;
-	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities. It comes to pass, as a wall of the stander stove dissolves. But you know it won't last. You retreat back to where you were.";
-	move player to pre-hole-item-room;
+	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities."
+
+a goodrhyme rule (this is the vc-stander-stove rule):
+	if player is not in dander dove, unavailable;
+	if sco-stander-stove is true:
+		vcal "You already found the stander stove!";
+		already-done;
+	ready;
+
+this is the vr-stander-stove rule:
+	now sco-stander-stove is true;
+	say "You picture a stove to step into! It's weird, but it's good for burning excess dander.";
+	dander-upgrade;
+
+to dander-upgrade:
+	say "[line break]";
+	if dander-score is 1:
+		say "The dander you dove into sinks a bit. You still feel stuck.";
+	else if dander-score is 2:
+		say "You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.";
+		alt-last dander dove;
+	else:
+		say "You no longer have dander on your mind.";
 
 section route rough rules
 
@@ -1342,13 +1363,13 @@ to give-player (hi - a holeitem):
 	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
 	now player has hi;
 	now pre-hole-item-room is location of player;
-	if got-hole-bonus is false, decrement cur-max-bonus;
+	if got-hole-bonus is false, max-down;
 	if hole-progress is 1:
 		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much. You close you eyes, wondering if you really deserve to have made any progress just through all those silly rhymes. Nothing seems to matter. Then ... you wind up in, or near, nothing.";
 		move player to Nil None;
 	else if hole-progress is 2:
 		say "[line break]That same weightlessness as before. Darkness envelops you, and when it releases you, you're somewhere [one of]new[or]unpleasantly familiar[stopping].";
-		move player to Stander Stove;
+		move player to dander dove;
 	else:
 		say "[line break]You start wandering. And you keep wandering. Pretty soon you are in the middle of nowhere.";
 		move player to Route Rough;
