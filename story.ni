@@ -174,6 +174,9 @@ book Rut Row
 
 Rut Row is a room in recruiting. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
 
+check going west in Rut Row:
+	if sco-what-whoah is false, say "Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened." instead;
+
 check going north in Rut Row:
 	if sco-mood-mapper is false, say "You make your way north, but you are shooed by a loud voice saying 'Really! We can do better than your kind, here.' You have a feeling it's just trying to act snooty and hifalutin, but you have no proof, so you trudge back south.[paragraph break]If only you had a gauge for this sort of thing!" instead;
 	if recruiter is unvisited:
@@ -560,7 +563,7 @@ guess-table of Nil None is  the table of nil none guesses.
 
 book Dander Dove
 
-Dander Dove is a room. "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
+Dander Dove is a room. printed name is "Dander, Dove". "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
 
 check going in Dander Dove:
 	if dander-score < 2, say "You're still in enough of a dander you can't let go and move on, yet." instead;

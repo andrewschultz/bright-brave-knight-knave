@@ -1388,9 +1388,27 @@ table of noways
 noway-rm	noway-txt
 White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]You can really only go [b]DOWN[r] through the kite cave hole[end if]."
 Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to figure out which way to go. It's a bit confusing here[else]You can go the main directions but not [noun][end if]."
+Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
-recroom	"You only have access west and back south to the slum, slid."
+Bruising Brew	"This pub houses no crazy lattice of secret passages. You can only go back out."
+Hailing Hill	"You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way."
+recroom	"You only have access [swh of cried creek] and [swh of slum slid]."
 Cried Creek	"While the creek and greenery meander off, you might get lost. You can really only go back east."
+Crude Crapper	"There are no hidden passages. Only back out."
+Bosh Blanks	"You can go back south[if sco-plucky-plot is true], or you can say where you want the yacht to take you[end if]."
+Cast Court	"[astort]."
+Fast Fort	"[astort]."
+Passed Port	"[astort]."
+Treed Track	"[if sco-need-knack is false]Without any direction, the only way is back north[else if sco-heed-hack is false]You can only go north or up. But maybe with some thought you can find other passages[else]North, west, east and up are all paths out of here, but [noun] isn't[end if]."
+Too Tough Blue Bluff	"You don't want to get lost in the bluff. Best just go back down once you're done here."
+Black Blight	"Beyond is too dangerous. Best just go back east when you're ready."
+Knell Nook	"This is a secluded place with the only exit back west."
+tata	"You can only go back west or[if sco-yall-yank is true] east[else], once you've moved the tank(s), past them in whatever direction[end if]."
+Lane Lax	"[if sco-train-tracks is false]Back west is the only way. For now[else]The train tracks head north and south, but you can go back west, too[end if]."
+Wowed Wise Crowd Cries	"Only way out is south."
+Thought Thief Fought Fief	"Only way back is north."
+
+to say astort: say "You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go"
 
 volume homonyms
 
