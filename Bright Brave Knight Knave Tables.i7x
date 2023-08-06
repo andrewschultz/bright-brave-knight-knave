@@ -997,7 +997,6 @@ this is the vr-mailing-mill rule:
 	say "Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.";
 
 a goodrhyme rule (this is the vc-bailing-bill rule):
-	if player is not in hailing hill, unavailable;
 	abide by the can-mail rule;
 	if player does not have bold bowl:
 		vcp "You sense you cannot offer Bailing Bill what he needs. Yet.";
@@ -1013,7 +1012,6 @@ this is the vr-bailing-bill rule:
 	now bold bowl is blessed;
 
 a goodrhyme rule (this is the vc-failing-phil rule):
-	if player is not in hailing hill, unavailable;
 	abide by the can-mail rule;
 	if player does not have cold coal:
 		vcp "You sense you cannot offer Failing Phil what he needs. Yet.";
@@ -1029,7 +1027,6 @@ this is the vr-failing-phil rule:
 	now cold coal is blessed;
 
 a goodrhyme rule (this is the vc-wailing-will rule):
-	if player is not in hailing hill, unavailable;
 	abide by the can-mail rule;
 	if player does not have sold soul:
 		vcp "You sense you cannot offer Wailing Will what he needs. Yet.";
@@ -1201,11 +1198,15 @@ a goodrhyme rule (this is the any-nook rule):
 section hailing hill auxiliary
 
 a goodrhyme rule (this is the the can-mail rule):
+	if player is not in hailing hill, unavailable;
+	if sco-mailing-mill is false:
+		vcp "Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.";
+		not-yet;
 	if sco-scaling-skill is false:
-		vcal "The mailing mill would probably belong on the top of the hill. You can't get anywhere near the top!";
+		vcp "The mailing mill would probably belong on the top of the hill. You can't get anywhere near the top!";
 		not-yet;
 	if sco-ailing-ill is false:
-		vcal "You feel like the mailing mill should pop up, but alas, a voice tells you you have not shown enough solidarity with woeful people. Perhaps an exclamation will help prove your bona fides.";
+		vcp "You feel like the mailing mill should pop up, but alas, a voice tells you you have not shown enough solidarity with woeful people. Perhaps an exclamation will help prove your bona fides.";
 		not-yet;
 
 to see-if-top:
