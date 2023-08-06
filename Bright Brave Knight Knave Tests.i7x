@@ -32,6 +32,12 @@ test g5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic 
 
 test g7 with "s/e/n/posh planks/plucky plot/fast fort/glued glass/cast court/murky map/passed port/slashing sword"
 
+test gdander with "candor cove/grander grove/n".
+
+test gnilnone with "fill fun/will won/n".
+
+test gnilnoneb with "fill fun/will won/illun/n".
+
 test glou with "in/using you/boozing boo/fusing phew/spurning spew/out".
 
 test ghelm with "w/n/w/harder helm/e/s/e".
@@ -56,19 +62,23 @@ test h9b with "plead plaque".
 
 test h10 with "n/e/e/n/trowed tries/loud lies/s/w/w/n/passed port/salad scent".
 
-test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish/fill fun/will won/n". [no illun]
+test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish"
 
 test h12 with "n/w/w/n/r 2/s/e/s/w/hack height/slack slight/quack quite/power plate/e/n". [no flak flight]
 
-test h13 with "n/passed port/quash quick/slosh slick/time toad/candor cove/grander grove/stander stove/n". [no rhyme road]
+test h12b with "e/paul panks/w/s/w/flak flight/e/n/n/passed port/rhyme road/in/s".
 
-test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle/stout stuff/flout fluff/n/w/n". [no nowt nuff]
+test h13 with "n/passed port/quash quick/slosh slick/time toad".
+
+test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle".
+
+test groute with "stout stuff/flout fluff/n/". [no nowt nuff]
 
 [choose a number when only 1 left]
 
-test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
+test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test h11/test gnilnone/test h12/test h13/test gdander/test h14/test groute/w/n/test glou/test ghelm/test ghill/test gend".
 
-test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/test h8/test h9/test h9b/test h10/test h11/test h12/test h13/test h14/test glou/test ghelm/test ghill/test gend".
+test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/test h8/test h9/test h9b/test h10/test h11/test gnilnoneb/test h12/test h12b/test h13/stander stove/test gdander/test h14/nowt nuff/test groute/w/n/test glou/test ghelm/test ghill/test gend".
 
 book full walkthrough
 
