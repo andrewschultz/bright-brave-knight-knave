@@ -724,15 +724,18 @@ this is the show-misses rule:
 		say "You could have tried to [wr] to flatter me.";
 	else if got-rave-bonus is false:
 		say "You decided to [wr] too soon.";
+	if r-shortcut-got is false:
+		say "You could have been a bright knave and said [b]R 3[r] once you'd paired two groups of friends, whether you knew their names or not.";
 	if got-hole-bonus is false:
 		say "You didn't guess the [the list of unguessed holeitems] before finding [if number of unguessed holeitems is 1]it[else]them[end if].";
 	if sco-nude-napper is false:
 		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper.";
-	if sco-ill-un is false:
-		say "You could've identified yourself as [b]ILLUN[r] in Nil None.";
+	flag-missed nil none;
 	flag-missed route rough;
 	flag-missed black blight;
 	flag-missed dander dove;
+	if sco-rhyme-road is false:
+		say "You didn't uncover the [b]RHYME ROAD[r] in Passed Port.";
 	if sco-paul-panks is false:
 		say "You didn't take a moment to remember [b]PAUL PANKS[r] in Tall Tank(s).";
 	if sco-plead-plaque is false:

@@ -168,6 +168,9 @@ this is the vr-fight-fave rule:
 	now sco-fight-fave is true;
 	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.";
 	move trite tully to White Wave;
+	now cur-max-bonus is 0;
+	if sco-write-right-rave is false, increase cur-max-bonus by 2;
+	if sco-jack-gist is false, increase cur-max-bonus by 1;
 
 section bass bath point scoring
 
