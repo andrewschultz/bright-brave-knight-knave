@@ -242,7 +242,7 @@ check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
 
 after printing the locale description when number of leftbehind eekers > 0:
-	if took-yacht is true, continue the action;
+	if took-yacht is true or mrlp is interlude, continue the action;
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
 		let rle be random leftbehind eeker;
@@ -353,7 +353,7 @@ The stew stuff is a thing.
 
 book Lack Light Black Blight
 
-Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is east. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
 after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score > 3:
 	if fried freak is followish, check-rack-right;
@@ -507,6 +507,7 @@ carry out recruiting:
 	if number understood > 3 or number understood < 1, say "You need to pick 1, 2 or 3." instead;
 	if number of pairedyet eekers is 2 and number understood > 1, say "I can't deduce the next pair you'd like to enlist. There are two more." instead;
 	if number of fungible eekers > 0, say "I can technically do better, but right now, you'll want to run this command without anyone else around." instead;
+	if mrlp is interlude, say "You can't call on anyone when you're stuck here!" instead;
 	repeat with XX running through creeky eekers:
 		if matchnum of XX is number understood:
 			let og be other-guy of XX;
@@ -526,11 +527,16 @@ carry out recruiting:
 					say "Because you are bright and brave, you realize by process of elimination who is left. Briefly, you wonder if you deserve both a bonus point AND a shortcut, but you've earned it. Go, you![paragraph break]";
 			now xx is pairedyet;
 			now og is pairedyet;
-			let pairindex be (number of pairedyet eekers) / 2;
-			now matchnum of xx is pairindex;
-			now matchnum of og is pairindex;
-			move player to recroom;
+			if matchnum of xx < 0:
+				let pairindex be (number of pairedyet eekers) / 2;
+				now matchnum of xx is pairindex;
+				now matchnum of og is pairindex;
 			say "You recall [the xx] and [the og].";
+			if player is not in recroom, move player to recroom;
+			move xx to recroom;
+			move og to recroom;
+			now xx is followish;
+			now og is followish;
 
 this is the cheat-bonus rule:
 	if number of pairedyet eekers is 4:
@@ -553,17 +559,19 @@ volume distraction rooms
 
 book Nil None
 
-Nil None is a room.
+Nil None is a room in interlude.
 
-check going down in Nil None:
+check going in Nil None:
 	if sco-will-won is false, say "You feel a fog of purpose, or lack thereof, around. You need to regain your values." instead;
 	if sco-ill-un is false, max-down;
+	say "You walk out of nowhere to ... somewhere. Somewhere familiar! The place you last were!";
+	move player to pre-hole-item-room;
 
 guess-table of Nil None is  the table of nil none guesses.
 
 book Dander Dove
 
-Dander Dove is a room. printed name is "Dander, Dove". "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
+Dander Dove is a room in interlude. printed name is "Dander, Dove". "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
 
 check going in Dander Dove:
 	if dander-score < 2, say "You're still in enough of a dander you can't let go and move on, yet." instead;
@@ -575,7 +583,7 @@ guess-table of Dander Dove is the table of Dander Dove guesses.
 
 book Rough Route
 
-Route Rough is a room. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+Route Rough is a room in interlude. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
 
 check going in route rough:
 	if route-rough-score >= 2:
