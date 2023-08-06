@@ -47,8 +47,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	--
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	--
-"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	--
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
+"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	--
+"rhyme"	"road"	--	--	false	true	false	false	passed port	vc-rhyme-road rule	vr-rhyme-road rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -504,6 +505,16 @@ to check-pick-score:
 	else:
 		say "That must be half of the puzzle. You wonder what the other half is."
 
+a goodrhyme rule (this is the vc-slashing-sword rule):
+	if clashing cord is not touchable, unavailable;
+	ready;
+
+this is the vr-slashing-sword rule:
+	now sco-slashing-sword is true;
+	moot clashing cord;
+	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!";
+	now player has slashing sword;
+
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
 	if sco-time-toad is true:
@@ -516,15 +527,16 @@ this is the vr-time-toad rule:
 	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]The time toad nods to you, then hops off, its work here done.";
 	give-player cold coal;
 
-a goodrhyme rule (this is the vc-slashing-sword rule):
-	if clashing cord is not touchable, unavailable;
+a goodrhyme rule (this is the vc-rhyme-road rule):
+	if player is not in passed port, unavailable;
+	if sco-rhyme-road is true:
+		vcal "You already looked down Rhyme Road!";
+		already-done;
 	ready;
 
-this is the vr-slashing-sword rule:
-	now sco-slashing-sword is true;
-	moot clashing cord;
-	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!";
-	now player has slashing sword;
+this is the vr-rhyme-road rule:
+	now sco-rhyme-road is true;
+	say "The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have, from [other-ones]. Impressive, indeed! But then the vision fades. You have much left to do here.";
 
 section lane lax scoring
 

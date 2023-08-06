@@ -6,12 +6,14 @@ volume score values
 
 core-max is 71.
 
-max-bonus is 10.
+max-bonus is 13.
 
-[ note in this case there are 2 bonus-bonus points outside the table:
---figuring what the hold hole needs to hold
---waiting to say WRITE RAVE gets 2 points instead of 1
---so core_max + max_bonus = rows in big table
+[ note in this case there are 3 bonus-bonus points outside the table:
+--(1) figuring what the hold hole needs to hold
+--(1) waiting to say WRITE RAVE gets 2 points instead of 1
+--(1) figuring R 3 once you can say R 2 and R 1
+--so core_max + max_bonus = rows in big table + 3
+--however, core-max is (# of core entries originally) - 4, one for each of the interlude rooms and one for the Black Blight
 We can double-check what core-max + max-bonus should be by search/replacing sco-
 ]
 
@@ -90,6 +92,8 @@ sco-quash-quick is a truth state that varies.
 
 sco-time-toad is a truth state that varies.
 sco-slashing-sword is a truth state that varies.
+
+sco-rhyme-road is a truth state that varies.
 
 chapter south area
 
