@@ -129,13 +129,14 @@ to decide which number is sneak-mooter-points:
 
 section tracking hole progress
 
-to decide which number is hole-progress:
-	decide on availval of bold bowl + availval of cold coal + availval of sold soul;
+to decide which number is hole-done:
+	decide on number of in-hold holeitems;
 
-to decide which number is availval of (th - a thing): [ usually boolvals can cover it but in this case I figured the bowl/coal/soul early on so hole-progress couldn't be expressed as sco- ]
-	if player has th, decide on 1;
-	if th is in nothing, decide on 0;
-	decide on 1;
+to decide which number is hole-progress:
+	decide on number of not unblessed holeitems;
+
+to decide which number is availval:
+	decide on number of unblessed holeitems;
 
 chapter yacht stuff
 

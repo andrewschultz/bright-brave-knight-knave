@@ -199,13 +199,6 @@ volume game state variables
 
 took-yacht is a truth state that varies.
 
-guessed-bold-bowl is a truth state that varies.
-guessed-cold-coal is a truth state that varies.
-guessed-sold-soul is a truth state that varies.
-
-got-rave-bonus is a truth state that varies.
-got-hole-bonus is a truth state that varies.
-
 bool-hill-available is a truth state that varies.
 bool-brew-available is a truth state that varies.
 
@@ -215,10 +208,23 @@ pre-hole-item-room is a room that varies.
 
 game-elm-seen is a truth state that varies.
 
+chapter miscellaneous bonus variables (game state)
+
+guessed-bold-bowl is a truth state that varies.
+guessed-cold-coal is a truth state that varies.
+guessed-sold-soul is a truth state that varies.
+
+got-hole-bonus is a truth state that varies. [guessed all 3 above]
+
+got-rave-bonus is a truth state that varies. [2 points instead of 1]
+
+blocked-hole-bonus is a truth state that varies. [set to true if got one item before guessed all 3]
+
+r-shortcut-got is a truth state that varies. [r 3 before pairing everyone manually]
+
 chapter what verbs are known?
 
 r-warn-yet is a truth state that varies. [allows us to use the R command]
-r-shortcut-got is a truth state that varies.
 
 chapter debug variables
 

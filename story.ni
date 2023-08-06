@@ -48,19 +48,21 @@ the leet learner is in White Wave. "Something called a leet learner rests here."
 
 chapter Hold Hole
 
-the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-progress is 0]empty[else if hole-progress is 1]one-third full[else if hole-progress is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
+the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-done is 0]empty[else if hole-done is 1]one-third full[else if hole-done is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
 
-description of hold hole is "It appeared when you located the kite cave. [whats-in-hole]."
+description of hold hole is "It appeared when you located the kite cave. [whats-in-hold]."
 
 check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
 bold-hole is a truth state that varies.
 
-to say whats-in-hole:
-	if hole-progress is 0:
+to say whats-in-hold:
+	if hole-done is 0:
 		say "Nothing has fit in yet";
 	else:
-		say "So far, you've placed [the list of holeitems in white wave] in the hold hole";
+		say "So far, you've placed [the list of in-hold holeitems] in the hold hole";
+		continue the action;
+	if number of carried holeitems > 0, continue the action;
 	let pgh be number of preguessed holeitems;
 	if pgh > 0:
 		now bold-hole is true;
