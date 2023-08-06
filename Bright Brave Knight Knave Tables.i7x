@@ -64,6 +64,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
+"paul"	"panks"	--	--	false	true	false	false	tata	vc-paul-panks rule	vr-paul-panks rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
@@ -859,6 +860,17 @@ this is the vr-yall-yank rule:
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
+
+a goodrhyme rule (this is the vc-paul-panks rule):
+	if player is not in tata, unavailable;
+	if sco-paul-panks is true:
+		vcal "You already paid your respects.";
+		already-done;
+	ready;
+
+this is the vr-paul-panks rule:
+	now sco-paul-panks is true;
+	say "You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking. But ... I thought about him a lot, though he died before I came on the scene. And I enjoyed Hannes Schueller's tribute, The Ninja's Fate. I was humbled to see I'd passed Paul Panks in number of things written. He paved the way for me, sort of. So when I had a chance to leave this memento, I did.";
 
 section wowed wise crowd cries scoring
 

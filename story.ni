@@ -731,6 +731,8 @@ this is the show-misses rule:
 	flag-missed route rough;
 	flag-missed black blight;
 	flag-missed dander dove;
+	if sco-paul-panks is false:
+		say "You didn't take a moment to remember [b]PAUL PANKS[r] in Tall Tank(s).";
 	if sco-plead-plaque is false:
 		say "You didn't find the [b]PLEAD PLAQUE[r] in Treed Track.";
 	if sco-jack-gist is false:

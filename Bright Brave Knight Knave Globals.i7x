@@ -63,6 +63,8 @@ sco-snide-sneak is a truth state that varies.
 sco-guide-geek is a truth state that varies.
 sco-stride-streak is a truth state that varies.
 
+sco-harder-helm is a truth state that varies.
+
 chapter north area
 
 sco-posh-planks is a truth state that varies.
@@ -124,7 +126,7 @@ section tata tall tank(s)
 
 sco-yall-yank is a truth state that varies.
 
-sco-harder-helm is a truth state that varies.
+sco-paul-panks is a truth state that varies.
 
 section Lane Lax
 
@@ -155,7 +157,7 @@ sco-fusing-phew is a truth state that varies.
 
 sco-spurning-spew is a truth state that varies.
 
-chapter variable (detours after each hold hole piece is recovered)
+chapter interlude (detours after each hold hole piece is recovered)
 
 section nil none
 
@@ -167,6 +169,7 @@ section stander stove
 
 sco-grander-grove is a truth state that varies.
 sco-candor-cove is a truth state that varies.
+sco-stander-stove is a truth state that varies.
 
 section route rough
 
@@ -191,8 +194,6 @@ sco-bright-bully is a truth state that varies.
 sco-bam-bye is a truth state that varies.
 
 chapter unsorted globals
-
-sco-stander-stove is a truth state that varies.
 
 volume game state variables
 
