@@ -36,7 +36,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
-"harder"	"helm"	--	--	false	true	true	false	cried creak	vc-harder-helm rule	vr-harder-helm rule	--	--
+"harder"	"helm"	--	--	false	true	true	false	cried creek	vc-harder-helm rule	vr-harder-helm rule	--	--
 "posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
 "cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
@@ -48,7 +48,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	--
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	--
 "time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	--
-"crime"	"crowed"	--	--	false	true	true	false	passed port	vc-crime-crowed rule	vr-crime-crowed rule	--	--
+"slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -466,7 +466,7 @@ a goodrhyme rule (this is the vc-salad-scent rule):
 
 this is the vr-salad-scent rule:
 	now sco-salad-scent is true;
-	say "Ah, yes, that's what it is. You smell it clearly now. The Snide Sneak reaches in ... and grabs it! The vent itself collapses.";
+	say "Ah, yes, that's what it is. You smell it clearly now. But [the vent] is way up there! You can't get there by yourself! The Snide Sneak offers to climb on you, letting the Meek Mooter do the dirty work. The Meek Mooter doesn't resist. The human ladder works, with the Meek Mooter climbing through [the vent]. They hold out what looks like some salad, or something! The Snide Sneak grabs it, then jumps from your shoulder. The Meek Mooter follows down. After this, the vent itself vanishes[if clashing cord is in passed port]. The clashing cord tumbles from it as well[end if].";
 	moot pallid pent valid vent;
 	now player has salad sent;
 	dismiss-sneak-mooter;
@@ -505,28 +505,24 @@ to check-pick-score:
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
 	if sco-time-toad is true:
-		vcal "You already called the time toad into existence!";
+		vcal "The time toad's gift of cold coal should be enough.";
 		already-done;
 	ready;
 
 this is the vr-time-toad rule:
 	now sco-time-toad is true;
-	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]And yet the time toad remains, after all that. Perhaps there is more it can do for you.";
+	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]The time toad nods to you, then hops off, its work here done.";
 	give-player cold coal;
-	move time toad to passed port;
 
-a goodrhyme rule (this is the vc-crime-crowed rule):
-	if player is not in passed port, unavailable;
-	if sco-time-toad is false:
-		vcp "Perhaps when the proper entity is here, they will share what crimes are crowed.";
-		not-yet;
+a goodrhyme rule (this is the vc-slashing-sword rule):
+	if clashing cord is not touchable, unavailable;
 	ready;
 
-this is the vr-crime-crowed rule:
-	now sco-crime-crowed is true;
-	say "The time toad ribbits, and suddenly you understand the moral crimes visited on you and others. They are a strong weapon for your final fight. The time toad ribbits away, having given you physical and spiritual support.";
-	now player has crime crowed;
-	moot time toad;
+this is the vr-slashing-sword rule:
+	now sco-slashing-sword is true;
+	moot clashing cord;
+	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!";
+	now player has slashing sword;
 
 section lane lax scoring
 

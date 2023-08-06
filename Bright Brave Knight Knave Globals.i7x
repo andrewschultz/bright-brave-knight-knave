@@ -85,7 +85,7 @@ sco-slosh-slick is a truth state that varies.
 sco-quash-quick is a truth state that varies.
 
 sco-time-toad is a truth state that varies.
-sco-crime-crowed is a truth state that varies.
+sco-slashing-sword is a truth state that varies.
 
 chapter south area
 
@@ -207,6 +207,10 @@ bool-brew-available is a truth state that varies.
 debug-allow-final is a truth state that varies.
 
 pre-hole-item-room is a room that varies.
+
+game-elm-seen is a truth state that varies.
+
+chapter what verbs are known?
 
 r-warn-yet is a truth state that varies. [allows us to use the R command]
 r-shortcut-got is a truth state that varies.

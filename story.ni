@@ -308,17 +308,11 @@ the glued glass is a thing.
 
 book Passed Port
 
-Passed Port is a room in northstuff. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if]."
+Passed Port is a room in northstuff. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
+
+to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
 
 the slime slowed rime road is scenery in Passed Port.
-
-chapter time toad
-
-the time toad is a thing. "A time toad sits here pensively. It alreay helped you get the cold coal, but it seems to be holding just one more secret."
-
-chapter crime crowed
-
-the crime crowed is a trystitem. vaguedesc is "evidence of being hard done by".
 
 chapter pallid pent valid vent
 
@@ -329,6 +323,14 @@ the salad sent is a thing.
 chapter posh pick
 
 the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
+
+chapter clashing cord
+
+the clashing cord is scenery in passed port. "It doesn't really fit aesthetically with the vent. Or here at all, really. And it doesn't seem useful to you, either. What could it become?"
+
+chapter slashing sword
+
+the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense".
 
 volume south area
 
@@ -384,7 +386,10 @@ the tall tanks are plural-named scenery in tata. "They're tall! They look like t
 
 chapter ardor elm
 
-the ardor elm is a thing.
+the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want.[else]The ardor elm your friends showed you stands here. [elm-status][end if]."
+
+to say elm-status:
+	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
 
 chapter harder helm
 
