@@ -107,7 +107,7 @@ to say item-guess of (hi - a holeitem):
 	if hi is moot:
 		say "The [hi] has already served its purpose.[no line break]";
 	else if hi is not off-stage:
-		say "You already have [the hi].[no line break]";
+		say "You already got [the hi].[no line break]";
 	else if hi is not unguessed:
 		say "But you have already divined a need for [the hi].[no line break]";
 	else:
@@ -117,6 +117,7 @@ to say item-guess of (hi - a holeitem):
 			say "[line break]You feel slightly energized now that you know what your (w)hole quest is.[no line break]";
 			increment cur-bonus;
 			follow the score and thinking changes rule;
+			now got-hole-bonus is true;
 		else if pgh is 3:
 			say "[line break][i][bracket][b]NOTE:[r][i] you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.[close bracket]";
 		else:

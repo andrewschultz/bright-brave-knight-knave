@@ -16,9 +16,9 @@ to say bkn: say "bright brave knight/knave"
 
 a holeitem is a kind of rhymable. a holeitem is usually scenery.
 
-a holeitem can be unguessed, preguessed or in-hold. a holeitem is usually unguessed.
+a holeitem can be unguessed or preguessed. a holeitem is usually unguessed.
 
-a holeitem can be blessed or unblessed. a holeitem is usually unblessed.
+a holeitem can be unblessed, blessed or in-hold. a holeitem is usually unblessed.
 
 a holeitem has a number called palindex. [ change this to a rule later? ]
 
