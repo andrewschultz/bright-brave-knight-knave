@@ -4,25 +4,59 @@ Version 1/221007 of Bright Brave Knight Knave Tests by Andrew Schultz begins her
 
 volume tests
 
-book main walkthrough
+[
+Key:
+G = general
+C = cheat
+H = honest
+W = walkthrough
+WA = warp
+WC = walkthrough-cheat-rollup
+]
 
-test w1 with "kite cave"
+book general stuff
 
-test w1b with "bold bowl/cold coal/sold soul".
+test g1 with "kite cave"
 
-test w2 with "x hole/d/pass path/mass math".
+test g1b with "jack gist/bold bowl/cold coal/sold soul".
 
-test w3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
+test g2 with "x hole/d/pass path/mass math".
 
-test w3b with "nude napper/write rave".
+test g3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 
-test w4 with "out/e/n/w/stride streak"
+test g3b with "nude napper/write rave".
 
-test x4 with "test w1/test w2/test w3/test w4"
+test g4 with "out/e/n/w/stride streak".
 
-test w5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic shooter/w/fried freak/e/r 3"
+test g5 with "guide geek/fried freak/snide sneak/e/meek mooter/weak wooter/chic shooter/w/fried freak/e/bye/r 3".
 
-test w6 with "s/e/n/plucky plot/enter yacht/salad scent"
+test w5 with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5".
+
+book cheat through
+
+[test w4]
+
+test c6 with "bye/lone 1/s/e/n/posh planks/plucky plot/fast fort/glued glass/cast court/murky map/passed port/salad scent/slosh slick/quash quick/enter yacht/s".
+
+test c7 with "e/yall yank/e/train tracks/pain packs/main max/trod trash/n/trowed tries/loud lies/s/s/brought brief/bought beef/wrought reef/n/w/w".
+
+test c8 with "s/need knack/seed sack/heed hack/plead plaque/w/grew gruff/stew stuff/new nuff/e/e/bell book/covering candle/illun/fill fun/will won/w/u/quack quite/slack slight/hack height/power plate/flak flight/d/n".
+
+test c9 with "in/boozing boo/using you/fusing phew/spurning spew/out".
+
+test c10 with "e/e/s/done dish/grander grove/candor cove/stander stove/n/n/w/w"
+
+test c11 with "n/passed port/slashing sword/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
+
+test c12 with "w/n/w/harder helm/e/s/e".
+
+test c13 with "u/scaling skill/ailing ill/mailing mill/wailing will/failing phil/bailing bill/d"
+
+test c14 with "d/fight fave/frightfully/bright bully/bam bye".
+
+test w14 with "test w5/test c6/test c7/test c8/test c9/test c10/test c11/test c12/test c13/test c14".
+
+book other stuff
 
 test w4e with "fried freak/e/chic shooter/s/e/e/yall yank".
 
@@ -32,7 +66,7 @@ test wsf with "test w1/test w1b/test w2/test w3/test w3b". [walkthrough so far]
 
 test wend1 with "u/scaling skill/ailing ill/mailing mill/bailing bill/failing phil/wailing will".
 
-test wend2 with "d/d/fight fave/bam bye/frightfully/bright bully/bam bye".
+test wend2 with "d/d/fight fave/frightfully/bright bully/bam bye".
 
 section cheaty bits
 
