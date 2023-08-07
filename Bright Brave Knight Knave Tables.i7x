@@ -479,6 +479,9 @@ this is the vr-salad-scent rule:
 
 a goodrhyme rule (this is the vc-slosh-slick rule):
 	if posh pick is not touchable, unavailable;
+	if sco-quash-quick is false:
+		vcp "The area around the posh pick is too deep. Is there any way to lessen it?";
+		not-yet;
 	if sco-slosh-slick is true:
 		vcal "You already figured that part of getting the pick!";
 		already-done;
@@ -487,6 +490,7 @@ a goodrhyme rule (this is the vc-slosh-slick rule):
 this is the vr-slosh-slick rule:
 	now sco-slosh-slick is true;
 	say "The Fried Freak has no problem sloshing through.";
+	check-pick-score;
 
 a goodrhyme rule (this is the vc-quash-quick rule):
 	if posh pick is not touchable, unavailable;
@@ -497,8 +501,7 @@ a goodrhyme rule (this is the vc-quash-quick rule):
 
 this is the vr-quash-quick rule:
 	now sco-quash-quick is true;
-	say "The Chic Shooter managed to, well, quash things quickly.";
-	check-pick-score;
+	say "The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.";
 
 to check-pick-score:
 	if pick-score is 2:
@@ -520,10 +523,21 @@ this is the vr-slashing-sword rule:
 
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
+	if toad-score < 2:
+		vcp "A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.";
 	if sco-time-toad is true:
 		vcal "The time toad's gift of cold coal should be enough.";
 		already-done;
 	ready;
+
+to say toad-okay:
+	if player has odd ash:
+		say ". It nods at the odd ash you are carrying";
+	else if player has rack right:
+		say ". It nods at the rack you are carrying";
+
+to decide which number is toad-score:
+	decide on (boolval of whether or not player has odd ash) + (boolval of whether or not player has rack right)
 
 this is the vr-time-toad rule:
 	now sco-time-toad is true;
