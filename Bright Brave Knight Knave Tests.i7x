@@ -18,13 +18,13 @@ book general stuff
 
 test g1 with "kite cave"
 
-test g1b with "jack gist/bold bowl/cold coal/sold soul".
+test g1b with "jack gist/bold bowl/cold coal/sold soul". [+2]
 
 test g2 with "x hole/d/pass path/mass math".
 
 test g3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 
-test g3b with "nude napper/write rave".
+test g3b with "nude napper/write rave". [+5]
 
 test g4 with "out/e/n/w/stride streak".
 
@@ -37,6 +37,8 @@ test gdander with "candor cove/grander grove/n".
 test gnilnone with "fill fun/will won/n".
 
 test gnilnoneb with "fill fun/will won/illun/n".
+
+test groute with "stout stuff/flout fluff/n". [no nowt nuff]
 
 test glou with "in/using you/boozing boo/fusing phew/spurning spew/out".
 
@@ -52,33 +54,25 @@ test h6m with "weak wooter/w/guide geek/e"
 
 test h6 with "r 3"
 
-test h7 with "test g7/in/s".
+test h7 with "s/e/n/posh planks/plucky plot/s/w/n/bye/r 2/s/e/e/yall yank". [no paul panks, E bonus point]
 
-test h8 with "bye/w/n/r 2/s/e/e/yall yank/e/train tracks/main max/pain packs/bye/w/w". [no paul panks]
+test h8 with "w/w/n/bye/r 1/s/e/s/need knack". [no plead plaque, S bonus point]
 
-test h9 with "w/n/r 1/s/e/s/need knack/heed hack/seed sack". [no plead plaque]
+test h9 with "heed hack/seed sack/n/e/e/n/train tracks/main max/pain packs/n/trowed tries/loud lies/s/w/w/n/fast fort/glued glass/cast court/murky map/passed port/slashing sword/salad scent". [no rhyme road, N bonus point]
 
-test h9b with "plead plaque".
+test h10 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish". [got bold bowl]
 
-test h10 with "n/e/e/n/trowed tries/loud lies/s/w/w/n/passed port/salad scent".
+test h11 with "n/w/w/n/r 2/s/e/s/w/hack height/slack slight/quack quite/power plate". [no flak flight, S one-of bonus point]
 
-test h11 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish"
+test h12 with "e/n/n/passed port/quash quick/slosh slick/time toad". [got cold coal]
 
-test h12 with "n/w/w/n/r 2/s/e/s/w/hack height/slack slight/quack quite/power plate/e/n". [no flak flight]
-
-test h12b with "e/paul panks/w/s/w/flak flight/e/n/n/passed port/rhyme road/in/s".
-
-test h13 with "n/passed port/quash quick/slosh slick/time toad".
-
-test h14 with "in/s/w/n/r 1/s/e/s/e/bell book/covering candle".
-
-test groute with "stout stuff/flout fluff/n/". [no nowt nuff]
+test h13 with "in/s/s/e/bell book/covering candle".
 
 [choose a number when only 1 left]
 
-test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test h11/test gnilnone/test h12/test h13/test gdander/test h14/test groute/w/n/test glou/test ghelm/test ghill/test gend".
+test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test gnilnone/test h11/test h12/test gdander/test h13/test groute/w/n/test ghelm/test glou/test ghill/test gend".
 
-test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/test h8/test h9/test h9b/test h10/test h11/test gnilnoneb/test h12/test h12b/test h13/stander stove/test gdander/test h14/nowt nuff/test groute/w/n/test glou/test ghelm/test ghill/test gend".
+test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/paul panks/test h8/plead plaque/test h9/rhyme road/test h10/test gnilnoneb/test h11/flak flight/test h12/stander stove/test gdander/test h13/nowt nuff/test groute/w/n/test ghelm/test glou/test ghill/test gend".
 
 book full walkthrough
 
