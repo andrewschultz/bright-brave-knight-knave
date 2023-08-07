@@ -356,6 +356,8 @@ You get sly with a little help from your friends. There's an alternate solution 
 
 > TROD TRASH (1)
 
+Okay, only one pair of friends left to adventure with.
+
 > S
 
 > BOUGHT BEEF (1)
@@ -372,7 +374,7 @@ Hooray! A bold bowl! But now you are dumped somewhere odd.
 
 > WILL WON (1)
 
-Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in..
+Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in.
 
 @max
 > ILLUN (1)
@@ -382,3 +384,179 @@ Any direction exits now. Perhaps the bonus point is too much of an Americanism t
 
 And you're back where you were!
 
+> N
+
+> W
+
+> W
+
+> N
+
+> R 2
+
+> S
+
+> E
+
+> S
+
+> W
+
+> HACK HEIGHT (1)
+
+> SLACK SLIGHT (1)
+
+> QUACK QUITE (1)
+
+With the friends you have, you'll find the rack (right).
+
+> POWER PLATE (1)
+
+Oh, and a bonus point, if you want. This is a three-of-four room, with the sour slate appearing after your first three successful rhymes.
+
+@max
+> FLAK FLIGHT (1)
+###skip test checking
+
+> E
+
+> N
+
+> N
+
+> PASSED PORT
+
+> QUASH QUICK (1)
+
+> SLOSH SLICK (1)
+
+And now you get the posh pick.
+
+> TIME TOAD (1)
+
+Let's get the first odd point out of the way, for variety's sake. This is a two out of three, then advance, room.
+
+@max
+> STANDER STOVE (1)
+###skip test checking
+
+> CANDOR COVE (1)
+
+> GRANDER GROVE (1)
+
+And now just go any direction to leave...
+
+> N
+
+Now for the final
+> IN
+
+> S
+
+> S
+
+> E
+
+You have the preparatory items for the ritual.
+
+> BELL BOOK (1)
+
+> COVERING CANDLE (1)
+
+Another 2-of-3 area.
+
+@max
+> NOWT NUFF (1)
+###skip test checking
+
+> STOUT STUFF (1)
+
+> FLOUT FLUFF (1)
+
+> N
+
+Okay, we're doing pretty well ... but we're still missing three items we need for the final fight! Fortunately, they're in passages we haven't visited, for the most part. Wait. There's one we need to revisit!
+
+> W
+
+> N
+
+> W
+
+> N
+
+> W
+
+What's this ardor elm?
+
+> HARDER HELM (1)
+
+Bck to the center.
+
+> E
+
+> S
+
+> E
+
+We haven't gone inside yet.
+
+> IN
+
+Poor Lou.
+
+> USING YOU (1)
+
+> BOOZING BOO (1)
+
+> FUSING PHEW (1)
+
+His book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
+
+> SPURNING SPEW (1)
+
+> OUT
+
+Let's tackle the hill!
+
+> U
+
+First climb up it...
+
+> SCALING SKILL (1)
+
+Then, solidarity with others frustrated...
+
+> AILING ILL (1)
+
+Now, to communicate more formally.
+
+> MAILING MILL (1)
+
+Now, to help specific individuals!
+
+> FAILING PHIL (1)
+
+> WAILING WILL (1)
+
+> BAILING BILL (1)
+
+> D
+
+And now to return to the start!
+
+> D
+
+> FIGHT FAVE (1)
+
+Good thing we had all that paraphernalia!
+
+> FRIGHTFULLY (1)
+
+> BRIGHT BULLY (1)
+
+Okay, a new form. We're not fooled ... or are we?
+
+There's an option to be too harsh, or not harsh enough. Let's take the middle road.
+
+> BAM BYE (1)

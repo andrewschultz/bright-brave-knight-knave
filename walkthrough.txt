@@ -296,6 +296,8 @@ You get sly with a little help from your friends. There's an alternate solution 
 
 > TROD TRASH (37)
 
+Okay, only one pair of friends left to adventure with.
+
 > S
 
 > BOUGHT BEEF (38)
@@ -312,9 +314,173 @@ Hooray! A bold bowl! But now you are dumped somewhere odd.
 
 > WILL WON (43)
 
-Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in..
+Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in.
 
 > N
 
 And you're back where you were!
 
+> N
+
+> W
+
+> W
+
+> N
+
+> R 2
+
+> S
+
+> E
+
+> S
+
+> W
+
+> HACK HEIGHT (44)
+
+> SLACK SLIGHT (45)
+
+> QUACK QUITE (46)
+
+With the friends you have, you'll find the rack (right).
+
+> POWER PLATE (47)
+
+Oh, and a bonus point, if you want. This is a three-of-four room, with the sour slate appearing after your first three successful rhymes.
+
+> E
+
+> N
+
+> N
+
+> PASSED PORT
+
+> QUASH QUICK (48)
+
+> SLOSH SLICK (49)
+
+And now you get the posh pick.
+
+> TIME TOAD (50)
+
+Let's get the first odd point out of the way, for variety's sake. This is a two out of three, then advance, room.
+
+> CANDOR COVE (51)
+
+> GRANDER GROVE (52)
+
+And now just go any direction to leave...
+
+> N
+
+Now for the final
+> IN
+
+> S
+
+> S
+
+> E
+
+You have the preparatory items for the ritual.
+
+> BELL BOOK (53)
+
+> COVERING CANDLE (54)
+
+Another 2-of-3 area.
+
+> STOUT STUFF (55)
+
+> FLOUT FLUFF (56)
+
+> N
+
+Okay, we're doing pretty well ... but we're still missing three items we need for the final fight! Fortunately, they're in passages we haven't visited, for the most part. Wait. There's one we need to revisit!
+
+> W
+
+> N
+
+> W
+
+> N
+
+> W
+
+What's this ardor elm?
+
+> HARDER HELM (57)
+
+Bck to the center.
+
+> E
+
+> S
+
+> E
+
+We haven't gone inside yet.
+
+> IN
+
+Poor Lou.
+
+> USING YOU (58)
+
+> BOOZING BOO (59)
+
+> FUSING PHEW (60)
+
+His book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
+
+> SPURNING SPEW (61)
+
+> OUT
+
+Let's tackle the hill!
+
+> U
+
+First climb up it...
+
+> SCALING SKILL (62)
+
+Then, solidarity with others frustrated...
+
+> AILING ILL (63)
+
+Now, to communicate more formally.
+
+> MAILING MILL (64)
+
+Now, to help specific individuals!
+
+> FAILING PHIL (65)
+
+> WAILING WILL (66)
+
+> BAILING BILL (67)
+
+> D
+
+And now to return to the start!
+
+> D
+
+> FIGHT FAVE (68)
+
+Good thing we had all that paraphernalia!
+
+> FRIGHTFULLY (69)
+
+> BRIGHT BULLY (70)
+
+Okay, a new form. We're not fooled ... or are we?
+
+There's an option to be too harsh, or not harsh enough. Let's take the middle road.
+
+> BAM BYE (71)
