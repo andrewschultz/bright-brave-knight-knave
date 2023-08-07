@@ -50,6 +50,11 @@ by one point
 #testcase-room-names-rut-row
 `Rut Row
 
+>what whoah
+
+#testcase-run-vr-what-whoah-rule-default
+It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
+
 #testcase-room-names-slum-slid
 `Slid Slum
 
@@ -62,15 +67,106 @@ by one point
 >rid rum
 by one point
 
->e
-
->e
-
 >s
 
->hitm 1
->hitm 2
->hitm 3
+#testcase-room-names-crude-crapper
+`Crude Crapper
+
+#testcase-ha-half-table-of-verb-checks-11-mapper-tapper
+>zmood mapper
+${GREENCORE}
+>ztude tapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-11-mood-tude
+>mood zmapper
+${GREENCORE}
+>tude ztapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-12-napper
+>znude napper
+${GREENBONUS}
+
+#testcase-ha-half-table-of-verb-checks-12-nude
+>nude znapper
+${GREENBONUS}
+
+>mood mapper
+by one point
+
+#testcase-check-vc-mood-mapper-rule-fallthrough
+You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!
+by one point
+
+>out
+>e
+>n
+
+#testcase-room-names-recruiter
+`Recruiter
+
+>w
+
+#testcase-room-names-recruiter
+`Recruiter
+Spied-Speak-Cried Creek
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+>e
+>bye
+
+>r 3
+>by one point
+
+>s
+>e
+>n
+
+>bosh blanks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+>paul panks
+by one point
+
+* _endgame
 
 >d
 
@@ -93,4 +189,6 @@ by one point
 >bright bully
 by one point
 UNDO
+
+>bam bye
 

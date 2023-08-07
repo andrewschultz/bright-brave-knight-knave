@@ -32,7 +32,6 @@ file=reg-bbkk-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
-}$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
 }$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
@@ -71,10 +70,25 @@ Taken.
 
 >au 2
 
+@alt
+#testcase-alt-words-table-of-verb-checks-1-write-right-rave
+>right rave
+by one point
+\\
+>undo
+
 @hom
-#ttc-table-of-room-homonyms-white-wave-wight
+#testcase-table-of-room-homonyms-white-wave-wight
 >wight
 You don't need an undead chasing you so soon. Or ever, really.
+\\
+#testcase-table-of-thing-homonyms-leet-learner-night-nave
+>night nave
+You don't have to change yourself, here.
+>night knave
+You don't have to change yourself, here.
+>knight nave
+You don't have to change yourself, here.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-2-cave
@@ -96,13 +110,21 @@ You don't need an undead chasing you so soon. Or ever, really.
 >write zrave
 {$GREENBONUS}
 \\
-#testcase-ha-half-table-of-verb-checks-3-fave
+#testcase-ha-half-table-of-verb-checks-4-fave
 >zfight fave
 {$YELLOWCOREFIRST}
 \\
-#testcase-ha-half-table-of-verb-checks-3-fight
+#testcase-ha-half-table-of-verb-checks-4-fight
 >fight zfave
 {$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-3-gist
+>jack gist
+${GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-3-jack
+>jack gist
+${GREENBONUS}
 
 @rej
 ====alphabetize on
@@ -144,7 +166,7 @@ You don't need an undead chasing you so soon. Or ever, really.
 ====alphabetize off
 
 @gt
-#ttc-table-of-noways-white-wave
+#testcase-table-of-noways-white-wave
 >gt
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
@@ -226,7 +248,7 @@ That's a bit too repetitive, and there's nothing more to figure out, anyway
 by one point
 
 @gt
-#ttc-table-of-noways-bass-bath
+#testcase-table-of-noways-bass-bath
 >n
 The bass bath surrounds you. How can you find a way out?
 
@@ -256,19 +278,19 @@ You get as mad as you can, as fast as you can. You also wonder if you are pronou
 You grumble about how you are a slight slave to your quest. It's therapeutic.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-4-pass
+#testcase-ha-half-table-of-verb-checks-5-pass
 >pass zpath
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-4-path
+#testcase-ha-half-table-of-verb-checks-5-path
 >zpass path
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-5-mass
+#testcase-ha-half-table-of-verb-checks-6-mass
 >mass zmath
 {$YELLOWCOREFIRST}
 \\
-#testcase-ha-half-table-of-verb-checks-5-math
+#testcase-ha-half-table-of-verb-checks-6-math
 >zmass math
 {$YELLOWCORE}
 
@@ -295,11 +317,11 @@ You think about more specific challenges you've encountered and not solved, and 
 You can use MASS MATH once you have something to calculate.
 
 @gt
-#+ttc-table-of-noways-bass-bath
+#+testcase-table-of-noways-bass-bath
 >w
 Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
 \\
-#+ttc-table-of-noways-bass-bath
+#+testcase-table-of-noways-bass-bath
 >s
 WRONG
 You can go pretty much any way from here but not south.
@@ -318,52 +340,58 @@ by one point
 WRONG
 
 @alt
-#testcase-alt-words-table-of-verb-checks-6-whoa-whoah
+#testcase-alt-words-table-of-verb-checks-7-what-whoa-whoah
 >what whoa
 by one point
 \\
 >undo
 
 @ha
-#testcase-ha-half-table-of-verb-checks-6-what
+#testcase-ha-half-table-of-verb-checks-7-what
 >what zwhoah
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-6-whoa-whoah
+#testcase-ha-half-table-of-verb-checks-7-whoa-whoah
 >zwhat whoah
 {$GREENCORE}
+
+>what whoah
+
+@all
+#testcase-run-vr-what-whoah-rule-default
+It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
 
 @all
 #testcase-room-names-slum-slid
 `Slid Slum
 
 @gt
-#ttc-table-of-noways-slum-slid
+#testcase-table-of-noways-slum-slid
 >w
 Maybe you can go west, but for your safety, it is inadvisable.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-7-hid
+#testcase-ha-half-table-of-verb-checks-8-hid
 >hid hum
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-7-hum
+#testcase-ha-half-table-of-verb-checks-8-hum
 >hid hum
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-8-come
+#testcase-ha-half-table-of-verb-checks-9-come
 >kid come
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-8-kid
+#testcase-ha-half-table-of-verb-checks-9-kid
 >kid come
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-9-rid
+#testcase-ha-half-table-of-verb-checks-10-rid
 >rid rum
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-9-rum
+#testcase-ha-half-table-of-verb-checks-10-rum
 >rid rum
 {$YELLOWCORE}
 
@@ -411,15 +439,264 @@ Perhaps the coughin' coy boffin boy will be able to get the education for such a
 >rid rum
 by one point
 
->e
-
->e
-
 >s
 
->hitm 1
->hitm 2
->hitm 3
+@all
+#testcase-room-names-crude-crapper
+`Crude Crapper
+
+#testcase-ha-half-table-of-verb-checks-11-mapper-tapper
+>zmood mapper
+${GREENCORE}
+>ztude tapper
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-mood-tude
+>mood zmapper
+${GREENCORE}
+>tude ztapper
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-12-napper
+>znude napper
+${GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-12-nude
+>nude znapper
+${GREENBONUS}
+\\
+
+>mood mapper
+by one point
+
+@all,rej
+#testcase-check-vc-mood-mapper-rule-fallthrough
+You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!
+by one point
+
+@rej
+#testcase-check-vc-mood-mapper-rule-if-sco-mood-mapper-is-true
+>mood mapper
+You already got the mood mapper/[']tude tapper!
+
+@mis
+#testcase-mistakes-table-of-crude-crapper-guesses-booed-bapper
+>booed bapper
+That'd make a decent final boss, but the main one is elsewhere.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-clued-clapper
+>clued clapper
+You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [bkn].
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-cooed-capper
+>cooed capper
+You don't need someone busting caps here and now, regardless of how pleasant their voice is.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-food-fapper
+>food fapper
+I don't want to know what sort of Rule 34 stuff this would entail.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-lewd-lapper
+>lewd lapper
+Hey, now, not THAT crude, eh?
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-rude-rapper
+>rude rapper
+But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-screwed-scrapper
+>screwed scrapper
+You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-snood-snapper
+>snood snapper
+You don't always remember what a snood is, but you're pretty sure none need to be snapped.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-strewed-strapper
+>strewed strapper
+No such contraption exists, fortunately. I think.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-sued-sapper
+>sued sapper
+That would be a villain worth fighting, but no.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-wooed-whapper
+>wooed whapper
+You will need no henchmen to carry out violent dirty work. Friends? Yes. Henchmen? No.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-youd-yap-er
+>youd yap er
+You feel as though you want to say something about the state of these environs, but what good would it do?
+
+>out
+>e
+>n
+
+@all
+#testcase-room-names-recruiter
+`Recruiter
+
+@ha
+#testcase-ha-half-table-of-verb-checks-13-meek
+>meek mooter
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-13-mooter
+>meek mooter
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-14-chic
+>chic shooter
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-14-shooter
+>chic shooter
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-15-weak
+>weak wooter
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-15-wooter
+>weak wooter
+${GREENCORE}
+
+>w
+
+@all
+#testcase-room-names-recruiter
+`Recruiter
+Spied-Speak-Cried Creek
+
+@ha
+#testcase-ha-half-table-of-verb-checks-16-freak
+>fried freak
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-16-fried
+>fried freak
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-17-sneak
+>snide sneak
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-17-snide
+>snide sneak
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-geek
+>guide geek
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-guide
+>guide geek
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-streak
+>stride streak
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-stride
+>stride streak
+${GREENCORE}
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+>e
+>bye
+
+@min
+>guide geek
+!by one point
+>weak wooter
+!by one point
+@!
+>r 3
+>by one point
+
+>s
+>e
+>n
+
+@ha
+#testcase-ha-half-table-of-verb-checks-21-planks
+>zposh planks
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-21-posh
+>posh zplanks
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-22-plot
+>zplucky plot
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-22-plucky
+>plucky zplot
+${GREENCORE}
+
+>bosh blanks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+@ha
+#testcase-ha-half-table-of-verb-checks-48-yall
+>yall zyank
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-48-yank
+>zyall yank
+${GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-49-panks
+>zpaul panks
+${GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-49-paul
+>paul zpanks
+${GREENBONUS}
+
+>yall yank
+by one point
+
+@!min
+>paul panks
+by one point
+
+* _endgame
 
 >d
 
@@ -438,19 +715,19 @@ UNDO
 >undo
 
 @ha
-#testcase-ha-half-table-of-verb-checks-10-fright
+#testcase-ha-half-table-of-verb-checks-79-fright
 >fright zfully
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-10-fully
+#testcase-ha-half-table-of-verb-checks-79-fully
 >zfright fully
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-11-bright
+#testcase-ha-half-table-of-verb-checks-80-bright
 >bright zbully
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-11-bully
+#testcase-ha-half-table-of-verb-checks-80-bully
 >zbright bully
 {$GREENCORE}
 
@@ -460,6 +737,39 @@ by one point
 >bright bully
 by one point
 UNDO
+
+@mis
+#testcase-mistakes-table-of-trite-tully-guesses-damn-die
+>damn die
+You were too harsh![end-tough]
+\\
+>undo
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-fam-fie
+>fam fie
+Tully isn't really looking to be a close friend.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-ham-hi
+>ham hi
+Yes, Tully is overacting, but knowing this fact won't do enough.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
+>lamb lie
+You were not harsh enough![end-lenient]
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-maam-my
+>maam my
+Your appeal to female authority falls on deaf ears.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-spam-spy
+>spam spy
+It's no secret that Tully spams their opinions.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-tram-try
+>tram try
+If there were a train to catch, you could send Tully on it. Alas, no.
+
+>bam bye
 
 #####################################################################ending stuff put in here for later
 

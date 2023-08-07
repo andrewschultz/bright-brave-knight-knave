@@ -22,6 +22,8 @@ by one point
 
 >w
 
+>what whoah
+
 >hid hum
 by one point
 
@@ -31,15 +33,91 @@ by one point
 >rid rum
 by one point
 
->e
-
->e
-
 >s
 
->hitm 1
->hitm 2
->hitm 3
+#testcase-ha-half-table-of-verb-checks-11-mapper-tapper
+>zmood mapper
+${GREENCORE}
+>ztude tapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-11-mood-tude
+>mood zmapper
+${GREENCORE}
+>tude ztapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-12-napper
+>znude napper
+${GREENBONUS}
+
+#testcase-ha-half-table-of-verb-checks-12-nude
+>nude znapper
+${GREENBONUS}
+
+>mood mapper
+by one point
+
+>out
+>e
+>n
+
+>w
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+>e
+>bye
+
+>guide geek
+!by one point
+>weak wooter
+!by one point
+
+>s
+>e
+>n
+
+>bosh blanks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+* _endgame
 
 >d
 
@@ -52,4 +130,6 @@ by one point
 >bright bully
 by one point
 UNDO
+
+>bam bye
 

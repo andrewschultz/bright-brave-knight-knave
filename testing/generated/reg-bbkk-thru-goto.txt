@@ -13,7 +13,7 @@ Taken.
 
 >au 2
 
-#ttc-table-of-noways-white-wave
+#testcase-table-of-noways-white-wave
 >gt
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
@@ -35,17 +35,17 @@ by one point
 >write rave
 by one point
 
-#ttc-table-of-noways-bass-bath
+#testcase-table-of-noways-bass-bath
 >n
 The bass bath surrounds you. How can you find a way out?
 
 >pass path
 
-#+ttc-table-of-noways-bass-bath
+#+testcase-table-of-noways-bass-bath
 >w
 Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
 
-#+ttc-table-of-noways-bass-bath
+#+testcase-table-of-noways-bass-bath
 >s
 WRONG
 You can go pretty much any way from here but not south.
@@ -58,7 +58,9 @@ by one point
 >w
 WRONG
 
-#ttc-table-of-noways-slum-slid
+>what whoah
+
+#testcase-table-of-noways-slum-slid
 >w
 Maybe you can go west, but for your safety, it is inadvisable.
 
@@ -71,15 +73,92 @@ by one point
 >rid rum
 by one point
 
->e
-
->e
-
 >s
 
->hitm 1
->hitm 2
->hitm 3
+#testcase-ha-half-table-of-verb-checks-11-mapper-tapper
+>zmood mapper
+${GREENCORE}
+>ztude tapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-11-mood-tude
+>mood zmapper
+${GREENCORE}
+>tude ztapper
+${GREENCORE}
+
+#testcase-ha-half-table-of-verb-checks-12-napper
+>znude napper
+${GREENBONUS}
+
+#testcase-ha-half-table-of-verb-checks-12-nude
+>nude znapper
+${GREENBONUS}
+
+>mood mapper
+by one point
+
+>out
+>e
+>n
+
+>w
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+>e
+>bye
+
+>r 3
+>by one point
+
+>s
+>e
+>n
+
+>bosh blanks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+>paul panks
+by one point
+
+* _endgame
 
 >d
 
@@ -92,4 +171,6 @@ by one point
 >bright bully
 by one point
 UNDO
+
+>bam bye
 
