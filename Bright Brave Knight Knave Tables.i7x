@@ -686,14 +686,14 @@ a goodrhyme rule (this is the vc-need-knack rule):
 		vcp "You'd like to, but you need assistance from others as to how.";
 		not-yet;
 	if sco-need-knack is true:
-		vcal "You already did this!";
+		vcal "You already got the knack for looking around! You won't forget it.";
 		already-done;
 	ready;
 
 this is the vr-need-knack rule:
 	now sco-need-knack is true;
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
-	open-psg west and Too Tough Blue Bluff;
+	open-psg up and Too Tough Blue Bluff;
 	dismiss-sneak-mooter;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
@@ -709,7 +709,7 @@ a goodrhyme rule (this is the vc-heed-hack rule):
 this is the vr-heed-hack rule:
 	now sco-heed-hack is true;
 	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. That's easy, now you know what to do. You find two more passages.";
-	open-psg up and Lack Light Black Blight;
+	open-psg west and Lack Light Black Blight;
 	open-psg east and Knell Nook;
 
 a goodrhyme rule (this is the vc-seed-sack rule):
@@ -764,26 +764,26 @@ this is the vr-quack-quite rule:
 a goodrhyme rule (this is the vc-flak-flight rule):
 	if player is not in lack light black blight, unavailable;
 	if sco-flak-flight is true:
-		vcal "You already did this!";
+		vcal "You already set some flak to a flight.";
 		already-done;
 	ready;
 
 this is the vr-flak-flight rule:
 	now sco-flak-flight is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The verbal and mental flak that clung to you? Some of it peels off. It feels good.";
 	blight-alt;
 
 
 a goodrhyme rule (this is the vc-slack-slight rule):
 	if player is not in lack light black blight, unavailable;
 	if sco-slack-slight is true:
-		vcal "You already did this!";
+		vcal "But you already caused a slack, slight!";
 		already-done;
 	ready;
 
 this is the vr-slack-slight rule:
 	now sco-slack-slight is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The oppression has a slack, slight. You feel better.";
 	blight-alt;
 
 to blight-alt:
