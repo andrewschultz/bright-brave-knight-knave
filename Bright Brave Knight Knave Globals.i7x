@@ -8,6 +8,8 @@ core-max is 71.
 
 max-bonus is 13.
 
+entry-in-series is 6.
+
 [ note in this case there are 3 bonus-bonus points outside the table:
 --(1) figuring what the hold hole needs to hold
 --(1) waiting to say WRITE RAVE gets 2 points instead of 1

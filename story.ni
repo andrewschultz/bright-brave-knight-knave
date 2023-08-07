@@ -564,8 +564,9 @@ book Nil None
 Nil None is a room in interlude.
 
 check going in Nil None:
-	if sco-will-won is false, say "You feel a fog of purpose, or lack thereof, around. You need to regain your values." instead;
-	if sco-ill-un is false, max-down;
+	if sco-fill-fun is false, say "You have momentarily lost all sense of joy, or all hope to find it. Why bother to look?" instead;
+	if nil-score is 1, say "You've regained some fun, but you feel a bit frivolous. You need a philosophical revelation, general or colloquial." instead;
+	if nil-score < 3, max-down;
 	say "You walk out of nowhere to ... somewhere. Somewhere familiar! The place you last were!";
 	move player to pre-hole-item-room;
 

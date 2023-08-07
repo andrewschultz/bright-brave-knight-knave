@@ -168,7 +168,7 @@ this is the vr-fight-fave rule:
 	now sco-fight-fave is true;
 	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.";
 	move trite tully to White Wave;
-	now cur-max-bonus is 0;
+	now cur-max-bonus is cur-bonus;
 	if sco-write-right-rave is false, increase cur-max-bonus by 2;
 	if sco-jack-gist is false, increase cur-max-bonus by 1;
 
@@ -1153,6 +1153,7 @@ a goodrhyme rule (this is the vc-grander-grove rule):
 this is the vr-grander-grove rule:
 	now sco-grander-grove is true;
 	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.";
+	dander-upgrade;
 
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in dander dove, unavailable;
@@ -1163,7 +1164,8 @@ a goodrhyme rule (this is the vc-candor-cove rule):
 
 this is the vr-candor-cove rule:
 	now sco-candor-cove is true;
-	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities."
+	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.";
+	dander-upgrade;
 
 a goodrhyme rule (this is the vc-stander-stove rule):
 	if player is not in dander dove, unavailable;
