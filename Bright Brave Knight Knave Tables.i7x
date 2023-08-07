@@ -44,26 +44,26 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have decent directions to get there."
 "murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
 "glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
-"salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	--
-"slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	--
-"quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	--
+"salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
+"quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friend is helping you."
+"slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
-"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	--
+"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
 "rhyme"	"road"	--	--	false	true	false	false	passed port	vc-rhyme-road rule	vr-rhyme-road rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
 "plead"	"plaque"	--	--	false	true	false	false	treed track	vc-plead-plaque rule	vr-plead-plaque rule	--	--
-"grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	--
+"grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	"You can say [b]GREW GRUFF[r] [once-now of vc-grew-gruff rule] you have the support of friends."
 "stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
-"new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	--
+"new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	"You can say [b]NEW NUFF[r] [once-now of vc-new-nuff rule] you have something of questionable age."
 "hack"	"height"	--	--	false	true	true	false	lack light black blight	vc-hack-height rule	vr-hack-height rule	--	--
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
 "flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
 "power"	"plate"	--	--	false	true	true	false	--	vc-power-plate rule	vr-power-plate rule	--	--
-"bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	--
-"covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	--
+"bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	"You can say [b]BELL BOOK[r] [once-now of vc-bell-book rule] you have two other things to prepare the summoning ceremony."
+"covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	"You can say [b]COVERING CANDLE[r] [once-now of vc-covering-candle rule] you have what you need for the summoning ceremony."
 "yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "paul"	"panks"	--	--	false	true	false	false	tata	vc-paul-panks rule	vr-paul-panks rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
@@ -71,18 +71,18 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "trod|flawed"	"trash|flash"	--	--	false	true	true	false	lane lax	vc-trod-trash rule	vr-trod-trash rule	"trod trash" or "flawed flash"	--
 "trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
-"loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	--
+"loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	"You can denounce [b]LOUD LIES[r] [once-now of vc-loud-lies rule] you've tweaked the crowd more subjectively."
 "bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
 "brought"	"brief"	--	--	false	true	true	false	thought thief fought fief	vc-brought-brief rule	vr-brought-brief rule	--	--
-"wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	--
-"done"	"dish"	--	--	false	true	true	false	thought thief fought fief	vc-done-dish rule	vr-done-dish rule	--	--
+"wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	"You can make a [b]WROUGHT REEF[r] [once-now of vc-wrought-reef rule] you've bluffed your way through the fief."
+"done"	"dish"	--	--	false	true	true	false	thought thief fought fief	vc-done-dish rule	vr-done-dish rule	--	"You can make a [b]DONE DISH[r] [once-now of vc-done-dish rule] you've got certifiably acceptable ingredients for a dish."
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
-"fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	--
+"fusing"	"phew"	--	--	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	"You can say [b]FUSING PHEW[r] [once-now of vc-fusing-phew rule] you have commiserated more than one way with Lou."
 "spurning"	"spew"	--	--	false	true	true	false	Bruising Brew	vc-spurning-spew rule	vr-spurning-spew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
-"ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	--
+"ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	"You can say [b]ILLUN[r] [once-now of vc-ill-un rule] you're a little less miserable." [technically the same as above, but combining with a to-say would have us pick a rule, and if we changed stuff...]
 "grander"	"grove"	--	--	false	true	true	false	dander dove	vc-grander-grove rule	vr-grander-grove rule	--	--
 "candor|candour"	"cove"	--	--	false	true	true	false	dander dove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "stander"	"stove"	--	--	false	true	true	false	dander dove	vc-stander-stove rule	vr-stander-stove rule	--	--
