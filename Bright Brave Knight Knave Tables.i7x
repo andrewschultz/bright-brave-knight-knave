@@ -1137,7 +1137,7 @@ a goodrhyme rule (this is the vc-fright-fully rule):
 to check-nil-alts:
 	if nil-score is 2:
 		alt-last Nil None;
-		say "You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort."
+		say "You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort.";
 	else:
 		say "You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction."
 
@@ -1299,9 +1299,13 @@ to lou-check:
 	else:
 		say "Lou nods at the different perspectives but is unable to integrate them. Maybe you can help!"
 
-to fully-dismiss (ee - an eeker):
+to part-dismiss (ee - an eeker):
 	now ee is finished;
-	now other-guy of ee is finished;
+	moot ee;
+
+to fully-dismiss (ee - an eeker):
+	part-dismiss ee;
+	part-dismiss other-guy of ee;
 	say "You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
 	if number of finished eekers is 6:
 		say "[line break]But they also realize something else--you've helped everyone you could have a bit of fun! Surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. There may be a surprise for you.[end if]";
@@ -1314,8 +1318,8 @@ to dismiss-geek-wooter: if geek-wooter-points is 3, fully-dismiss guide geek;
 to dismiss-freak-shooter: if freak-shooter-points is 4, fully-dismiss fried freak;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck rule):
-	if ee is moot:
-		if vc-dont-print is false, say "But you already got through to [the ee]!";
+	if ee is finished:
+		if vc-dont-print is false, say "You and [the ee] and [the other-guy of ee] already worked well enough together.";
 		already-done;
 	if ee is fungible:
 		if vc-dont-print is false, say "But [the ee] is already here!";
