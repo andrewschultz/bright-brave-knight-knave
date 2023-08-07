@@ -42,11 +42,11 @@ The HA HALF button on your Leet Learner lights up yellow.
 
 #testcase-ha-half-table-of-verb-checks-3-gist
 >jack gist
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 #testcase-ha-half-table-of-verb-checks-3-jack
 >jack gist
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 >kite cave
 by one point
@@ -136,23 +136,23 @@ by one point
 
 #testcase-ha-half-table-of-verb-checks-11-mapper-tapper
 >zmood mapper
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 >ztude tapper
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-11-mood-tude
 >mood zmapper
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 >tude ztapper
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-12-napper
 >znude napper
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 #testcase-ha-half-table-of-verb-checks-12-nude
 >nude znapper
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 >mood mapper
 by one point
@@ -163,61 +163,61 @@ by one point
 
 #testcase-ha-half-table-of-verb-checks-13-meek
 >meek mooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-13-mooter
 >meek mooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-14-chic
 >chic shooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-14-shooter
 >chic shooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-15-weak
 >weak wooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-15-wooter
 >weak wooter
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 >w
 
 #testcase-ha-half-table-of-verb-checks-16-freak
 >fried freak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-16-fried
 >fried freak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-17-sneak
 >snide sneak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-17-snide
 >snide sneak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-18-geek
 >guide geek
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-18-guide
 >guide geek
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-19-streak
 >stride streak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-19-stride
 >stride streak
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 >guide geek
 by one point
@@ -245,7 +245,7 @@ by one point
 >bye
 
 >r 3
->by one point
+by one point
 
 >s
 >e
@@ -253,19 +253,19 @@ by one point
 
 #testcase-ha-half-table-of-verb-checks-21-planks
 >zposh planks
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-21-posh
 >posh zplanks
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-22-plot
 >zplucky plot
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-22-plucky
 >plucky zplot
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 >bosh blanks
 by one point
@@ -285,25 +285,321 @@ by one point
 
 #testcase-ha-half-table-of-verb-checks-48-yall
 >yall zyank
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-48-yank
 >zyall yank
-${GREENCORE}
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-49-panks
 >zpaul panks
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 #testcase-ha-half-table-of-verb-checks-49-paul
 >paul zpanks
-${GREENBONUS}
+The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 >yall yank
 by one point
 
 >paul panks
 by one point
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+>plead plaque
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>n
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
+>rhyme road
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>u
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>d
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>w
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+>flak flight
+by one point
+
+>e
+
+>n
+
+>n
+
+>passed port
+by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+and now you get the posh pick.
+
+>time toad
+by one point
+
+let's get the first odd point out of the way, for variety's sake. this is a two out of three, then advance, room.
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>grander grove
+by one point
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>flout fluff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
 
 * _endgame
 

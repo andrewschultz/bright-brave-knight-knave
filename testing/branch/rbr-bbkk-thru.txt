@@ -120,11 +120,11 @@ You don't have to change yourself, here.
 \\
 #testcase-ha-half-table-of-verb-checks-3-gist
 >jack gist
-${GREENBONUS}
+{$GREENBONUS}
 \\
 #testcase-ha-half-table-of-verb-checks-3-jack
 >jack gist
-${GREENBONUS}
+{$GREENBONUS}
 
 @rej
 ====alphabetize on
@@ -447,23 +447,23 @@ by one point
 
 #testcase-ha-half-table-of-verb-checks-11-mapper-tapper
 >zmood mapper
-${GREENCORE}
+{$GREENCORE}
 >ztude tapper
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-11-mood-tude
 >mood zmapper
-${GREENCORE}
+{$GREENCORE}
 >tude ztapper
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-12-napper
 >znude napper
-${GREENBONUS}
+{$GREENBONUS}
 \\
 #testcase-ha-half-table-of-verb-checks-12-nude
 >nude znapper
-${GREENBONUS}
+{$GREENBONUS}
 \\
 
 >mood mapper
@@ -539,27 +539,27 @@ You feel as though you want to say something about the state of these environs, 
 @ha
 #testcase-ha-half-table-of-verb-checks-13-meek
 >meek mooter
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-13-mooter
 >meek mooter
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-14-chic
 >chic shooter
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-14-shooter
 >chic shooter
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-15-weak
 >weak wooter
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-15-wooter
 >weak wooter
-${GREENCORE}
+{$GREENCORE}
 
 >w
 
@@ -571,35 +571,35 @@ Spied-Speak-Cried Creek
 @ha
 #testcase-ha-half-table-of-verb-checks-16-freak
 >fried freak
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-16-fried
 >fried freak
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-17-sneak
 >snide sneak
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-17-snide
 >snide sneak
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-18-geek
 >guide geek
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-18-guide
 >guide geek
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-19-streak
 >stride streak
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-19-stride
 >stride streak
-${GREENCORE}
+{$GREENCORE}
 
 >guide geek
 by one point
@@ -633,7 +633,7 @@ by one point
 !by one point
 @!
 >r 3
->by one point
+by one point
 
 >s
 >e
@@ -642,19 +642,19 @@ by one point
 @ha
 #testcase-ha-half-table-of-verb-checks-21-planks
 >zposh planks
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-21-posh
 >posh zplanks
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-22-plot
 >zplucky plot
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-22-plucky
 >plucky zplot
-${GREENCORE}
+{$GREENCORE}
 
 >bosh blanks
 by one point
@@ -675,19 +675,19 @@ by one point
 @ha
 #testcase-ha-half-table-of-verb-checks-48-yall
 >yall zyank
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-48-yank
 >zyall yank
-${GREENCORE}
+{$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-49-panks
 >zpaul panks
-${GREENBONUS}
+{$GREENBONUS}
 \\
 #testcase-ha-half-table-of-verb-checks-49-paul
 >paul zpanks
-${GREENBONUS}
+{$GREENBONUS}
 
 >yall yank
 by one point
@@ -695,6 +695,307 @@ by one point
 @!min
 >paul panks
 by one point
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+@!min
+>plead plaque
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>n
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
+@!min
+>rhyme road
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>u
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>d
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>w
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+@!min
+>flak flight
+by one point
+
+>e
+
+>n
+
+>n
+
+>passed port
+by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+and now you get the posh pick.
+
+>time toad
+by one point
+
+let's get the first odd point out of the way, for variety's sake. this is a two out of three, then advance, room.
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+@!min
+>grander grove
+by one point
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+@!min
+>flout fluff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
 
 * _endgame
 
@@ -741,7 +1042,8 @@ UNDO
 @mis
 #testcase-mistakes-table-of-trite-tully-guesses-damn-die
 >damn die
-You were too harsh![end-tough]
+You were too harsh!
+WRONG
 \\
 >undo
 \\
@@ -755,7 +1057,8 @@ Yes, Tully is overacting, but knowing this fact won't do enough.
 \\
 #testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
 >lamb lie
-You were not harsh enough![end-lenient]
+You were not harsh enough!
+WRONG
 \\
 #testcase-mistakes-table-of-trite-tully-guesses-maam-my
 >maam my
