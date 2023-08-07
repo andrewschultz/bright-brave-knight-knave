@@ -598,9 +598,9 @@ this is the vr-pain-packs rule:
 	now player has pain packs;
 
 a goodrhyme rule (this is the vc-trod-trash rule):
-	if broad brash clod clash is untouchable, unavailable;
+	if broad brash clod clash is untouchable and odd ash is untouchable, unavailable;
 	if sco-trod-trash is true:
-		vcal "You already did this!";
+		vcal "But you already got people to trod on the trash!";
 		already-done;
 	ready;
 
@@ -621,7 +621,8 @@ a goodrhyme rule (this is the vc-bought-beef rule):
 
 this is the vr-bought-beef rule:
 	now sco-bought-beef is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You convince the people that you bought beef, whether it be physical or more mental.";
+	check-thievery;
 
 a goodrhyme rule (this is the vc-brought-brief rule):
 	if player is not in thought thief fought fief, unavailable;
@@ -632,7 +633,14 @@ a goodrhyme rule (this is the vc-brought-brief rule):
 
 this is the vr-brought-brief rule:
 	now sco-brought-brief is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You manage to pretend you had huge plans. You wince inwardly, sure others will call your bluff. But they do not. Everyone is impressed.";
+	check-thievery;
+
+to check-thievery:
+	if thief-score is 2:
+		say "Everyone disperses around you, as they realize you're nobody to be trifled with.";
+	else:
+		say "You seem to have gained a bit of respect, but you need more.";
 
 a goodrhyme rule (this is the vc-wrought-reef rule):
 	if player is not in thought thief fought fief, unavailable;
@@ -653,6 +661,9 @@ a goodrhyme rule (this is the vc-done-dish rule):
 	if wish fun fish is not touchable, unavailable;
 	if fish-score < 2:
 		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
+		not-yet;
+	if sco-new-nuff is false:
+		vcp "The [fish] blups suspiciously at the stew stuff. What if it is too old? The fish needs reassurance.";
 		not-yet;
 	ready;
 
@@ -880,7 +891,7 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it!";
 		not-yet;
 	unless pair-here of Chic Shooter:
-		vcp "You sense resistance to physical work from [list of visible eekers]. You need pals more action-based.";
+		vcp "You sense resistance to physical work from [list of touchable eekers]. You need pals more action-based.";
 		not-yet;
 	if sco-yall-yank is true:
 		vcal "You've already pulled out the tall tank(s).";
@@ -915,12 +926,15 @@ a goodrhyme rule (this is the vc-trowed-tries rule):
 
 this is the vr-trowed-tries rule:
 	now sco-trowed-tries is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
 
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in wowed wise crowd cries, unavailable;
-	if not pair-here of guide geek:
-		say "You're pretty sure these are loud lies, but you don't have the necessary edge to refute them and prove it. You need assistance!";
+	if sco-trowed-tries is false:
+		vcp "You can't just jump to this. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.";
+		not-yet;
+	if not pair-here of snide sneak:
+		vcp "You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. You need assistance!";
 		not-yet;
 	if sco-loud-lies is true:
 		vcal "You already declaimed the loud lies.";
