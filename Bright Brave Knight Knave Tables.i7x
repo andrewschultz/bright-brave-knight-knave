@@ -248,7 +248,7 @@ this is the vr-kid-come rule:
 a goodrhyme rule (this is the vc-rid-rum rule):
 	if player is not in slid slum, unavailable;
 	if sco-hid-hum is false:
-		say "There is no rum to rid that you can sense. Yet.";
+		vcp "There is no rum to rid that you can sense. Yet.";
 		not-yet;
 	if sco-kid-come is false:
 		vcp "The kid doesn't trust you enough yet! They feel no closeness.";
@@ -383,10 +383,10 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 		vcal "But you already hatched a plucky plot to clean the yucky yacht!";
 		already-done;
 	if not assisted:
-		vcal "You need a couple assistants to hatch a plot.";
+		vcp "You need a couple assistants to hatch a plot.";
 		not-yet;
 	if not pair-here of guide geek:
-		vcal "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
+		vcp "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
 		not-yet;
 	ready;
 
