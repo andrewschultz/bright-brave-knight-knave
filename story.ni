@@ -103,15 +103,15 @@ to say tryst-list:
 
 section cold coal
 
-a cold coal is a holeitem. palindex of cold coal is 1.
+a cold coal is a holeitem.
 
 section bold bowl
 
-a bold bowl is a holeitem. palindex of bold bowl is 2.
+a bold bowl is a holeitem.
 
 section sold soul
 
-a sold soul is a holeitem. palindex of sold soul is 3.
+a sold soul is a holeitem.
 
 chapter hole finding items
 
