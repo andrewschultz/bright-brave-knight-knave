@@ -34,7 +34,7 @@ carry out hiing:
 	repeat with HI running through holeitems:
 		if sumnum of HI is number understood:
 			if HI is not off-stage, say "You already found [the HI]." instead;
-			give-player HI;
+			give-hi HI;
 			the rule succeeds;
 	say "WEIRD BUG: should've had a summonable help item corresponding to [the number understood].";
 	the rule succeeds;
@@ -59,7 +59,7 @@ carry out hring:
 	repeat with hr running through holeitems:
 		if sumnum of hr is number understood:
 			if hr is not off-stage, say "You already found [the hr]." instead;
-			give-player hr;
+			give-hi hr;
 			the rule succeeds;
 	say "WEIRD BUG: should've had a summonable help item corresponding to [the number understood].";
 	the rule succeeds;

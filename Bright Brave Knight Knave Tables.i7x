@@ -361,7 +361,7 @@ a goodrhyme rule (this is the vc-harder-helm rule):
 this is the vr-harder-helm rule:
 	now sco-harder-helm is true;
 	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
-	now player has harder helm;
+	give-ti harder helm;
 
 section bosh blanks scoring
 
@@ -519,7 +519,7 @@ this is the vr-slashing-sword rule:
 	now sco-slashing-sword is true;
 	moot clashing cord;
 	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!";
-	now player has slashing sword;
+	give-ti slashing sword;
 
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
@@ -542,7 +542,7 @@ to decide which number is toad-score:
 this is the vr-time-toad rule:
 	now sco-time-toad is true;
 	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]The time toad nods to you, then hops off, its work here done.";
-	give-player cold coal;
+	give-hi cold coal;
 
 a goodrhyme rule (this is the vc-rhyme-road rule):
 	if player is not in passed port, unavailable;
@@ -595,7 +595,7 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
-	now player has pain packs;
+	give-ti pain packs;
 
 a goodrhyme rule (this is the vc-trod-trash rule):
 	if broad brash clod clash is untouchable and odd ash is untouchable, unavailable;
@@ -673,7 +673,7 @@ this is the vr-done-dish rule:
 	moot stew stuff;
 	moot salad sent;
 	moot fun fish;
-	give-player bold bowl;
+	give-hi bold bowl;
 
 section treed track scoring
 
@@ -853,7 +853,7 @@ a goodrhyme rule (this is the vc-power-plate rule):
 this is the vr-power-plate rule:
 	now sco-power-plate is true;
 	say "Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.";
-	now player has power plate;
+	give-ti power plate;
 
 section knell nook scoring
 
@@ -879,7 +879,7 @@ a goodrhyme rule (this is the vc-covering-candle rule):
 this is the vr-covering-candle rule:
 	now sco-covering-candle is true;
 	say "The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. 'DESTROY THEM.' You do. The knell nook begins shaking and soon collapses.[paragraph break]The sold soul thanks you. It will follow wordlessly until you need it.";
-	give-player sold soul;
+	give-hi sold soul;
 	moot proud prize;
 	moot posh pick;
 
@@ -996,7 +996,7 @@ a goodrhyme rule (this is the vc-spurning-spew rule):
 this is the vr-spurning-spew rule:
 	now sco-spurning-spew is true;
 	say "'Yes! That's it! Please accept my thanks!' Lou runs off, ostensibly to meet his agent.[paragraph break]Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.";
-	now player has spurning spew;
+	give-ti spurning spew;
 	moot Learning Lou;
 
 section hailing hill point scoring
@@ -1438,7 +1438,7 @@ to win-the-game:
 	end the story finally saying "Woo woo woo";
 	follow the shutdown rules;
 
-to give-player (hi - a holeitem):
+to give-hi (hi - a holeitem):
 	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
 	if hi is unguessed and got-hole-bonus is false and blocked-hole-bonus is false:
 		now blocked-hole-bonus is true;
@@ -1455,6 +1455,18 @@ to give-player (hi - a holeitem):
 	else:
 		say "[line break]You start wandering. And you keep wandering. Pretty soon you are in the middle of nowhere.";
 		move player to Route Rough;
+
+to give-ti (ti - a trystitem):
+	choose row (number of carried trystitems) in table of trystitem stuff;
+	say "[hooray entry][line break]";
+
+table of trystitem stuff
+hooray
+"You pause a minute. Hey, wait, that one item on [the list]. Yes! You just found your first! You're not prepared for the final fight, but this is a start."
+"Try 2"
+"Try 3"
+"Try 4"
+"You have everything on the list! Wow!"
 
 section undefined-yet rules
 
