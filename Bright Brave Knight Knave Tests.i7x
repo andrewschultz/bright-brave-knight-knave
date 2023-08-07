@@ -16,11 +16,11 @@ WC = walkthrough-cheat-rollup
 
 book general stuff
 
-test g1 with "kite cave"
+test g1 with "kite cave/x hole"
 
-test g1b with "jack gist/bold bowl/cold coal/sold soul". [+2]
+test g1b with "bold bowl/cold coal/sold soul/jack gist". [+2]
 
-test g2 with "x hole/d/pass path/mass math".
+test g2 with "d/pass path/mass math".
 
 test g3 with "w/what whoah/w/hid hum/kid come/rid rum/in/mood mapper".
 

@@ -1,0 +1,187 @@
+This is a quick walkthrough for Bright Brave Knight Knave. It neglects bonus points.
+
+Because walkthroughs can be spoilers, I thought I'd offer some general hints up front about what to look for and how to use clues. There is HINT (item) or HINT to see if you can do anything in a room. You also may wish to mess about with the leet learner. This is strictly a walkthrough, so I won't explain it here, but if you use the learner before trying a puzzle, you'll see differences and be able to guess what they mean. A brief overview: the leet learner can scan both areas (LL) or items (LL THING).
+
+You can choose whatever path you want in the introduction, though there's a chance for a bonus point.
+
+Two things about good guesses: sometimes, you will be able to switch the word order. The game will always either allow this or tell you you are very close. Also, getting the lurking lump requires five good guesses. Each additional charge requires more: seven, nine, etc. And homonyms only count once, so DONT DEW and DONT DO don't give extra.
+
+You start by the White Wave. You need to find some sort of landmark.
+
+> KITE CAVE (1)
+
+Okay, we created a hold hole. Let's examine it!
+
+> X HOLE
+
+Figuring out what belongs in the hole will give you a bonus point. There are three items. Whether or not you do this, you'll find what you need. Bonus points are strictly for your own amusement.
+
+Incidentally, there's also a joke death here. You can undo it quickly, but it's also relatively easy to guess. It is left as an exercise to the reader.
+
+The track-tryst lack list also has a bonus point. It allows you to see it with X. It may be American slang.
+
+There's also another bonus point, sort of, but you may want to wait for it. You'll see why in a bit.
+
+> D
+
+Note that you can go down to and from the Bass Bath to return to the White Wave. In addition, GT is a useful command, but we want to conform to the map, here.
+
+However, right now, there seem to be no new ways through the bass bath!
+
+> PASS PATH (2)
+
+Now you're unsure where things lead! You need to do some reasoning.
+
+> MASS MATH (3)
+
+Yay! Freedom and possibilities, but not too many! You can get around a bit more, now. Though you need to go west to take care of the other directions.
+
+> W
+
+Rut Row has nothing worth seeing, not even an exit to move on, until it does. The Shut Show is pretty useless. But you may find something surprising, if you look right.
+
+> WHAT WHOAH (4)
+
+> W
+
+Okay, in the slid slum, you have stuff to do. You can't re-energize it totally, but you can figure a few things out.
+
+> HID HUM (5)
+
+A young boy looks guilty!
+
+> KID COME (6)
+
+Yes, the coughin coy boffin boy is a kid, and you may wish to address him that way. *fix checker to nail apostrophe
+
+> RID RUM (7)
+
+Hooray! That helps the kid out. Now you can go inside and find something useful.
+
+> IN
+
+> MOOD MAPPER (8)
+
+Again, there's a bonus point here. You can, in fact, get it any time you have the mood mapper. You don't want to be stuffy, but some things need to be curbed.
+
+Since we're at it, now is a good time to get another bonus point. Well, actually, two.
+
+> OUT
+
+> E
+
+> N
+
+Hey, wait! Recruiter is only one word! What's going on here? Oh ... you have to split it into two words.
+
+There are three people to recruit, and they can be done in any order. But the thing is, once you bring someone out, they'll be disappointed if it's for no reason. Or if they dislike the person they meet, they'll both be bumed and leave you. But you can always call them back.
+
+> W
+
+At Cried Creek, you sense there may be people hanging around, too. But first, you need to make it so they wantto go somewhere!
+
+> STRIDE STREAK (9)
+
+What we're going to do here is discover everyone and pair them off.
+
+> GUIDE GEEK (10)
+
+> FRIED FREAK (11)
+
+> SNIDE SNEAK (12)
+
+> E
+
+> MEEK MOOTER (13)
+
+What do you know? These two people make friends! Odd, but true.
+
+> WEAK WOOTER (14)
+
+Oh no! Everybody departs, sort of.
+
+> CHIC SHOOTER (15)
+
+> W
+
+> FRIED FREAK
+
+Now we know two pairs, so we know the third. This gets us a shortcut with bonus points.
+
+> E
+
+> BYE
+
+So ... if you want the bonus points, and you've paid attention to commands, you should know what to do.
+
+> WEAK WOOTER
+
+> W
+
+> GUIDE GEEK
+
+> E
+
+All right! We're ready to tackle what's beyond the pass path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
+
+> S
+
+> E
+
+> N
+
+Bosh, blanks! Can we get more?
+
+> POSH PLANKS (16)
+
+A yucky yacht!
+
+> PLUCKY PLOT (17)
+
+Your friends help you, and you don't need them any more for here. We could go farther, but that'd waste a few turns. You'll need them later, but for now, let's open up the map.
+
+> S
+
+> W
+
+> N
+
+> BYE
+
+> R 2
+
+This should get you the Fried Freak and Chic Shooter.
+
+> S
+
+> E
+
+> E
+
+Okay, tall tank(s).
+
+> YALL YANK (18)
+
+Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did/
+
+> W
+
+> W
+
+> N
+
+> BYE
+
+> R 1
+
+> S
+
+> E
+
+> S
+
+> NEED KNACK (19)
+
+> HEED HACK (20)
+
+> SEED SACK (21)
