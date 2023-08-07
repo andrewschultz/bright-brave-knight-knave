@@ -18,7 +18,7 @@ Figuring out what belongs in the hole will give you a bonus point. There are thr
 
 Incidentally, there's also a joke death here. You can undo it quickly, but it's also relatively easy to guess. It is left as an exercise to the reader.
 
-You don't get the bonus point unless you guess all three. You don't have to, at once, either. You just have to guess them before you find them all. Still, let's get off to a bright start, why not?
+You don't get the bonus point unless you guess all three. You don't have to, at once, either. You just have to guess any one of them before you find it, and you have to be in White Wave. So, let's get off to a bright start, why not?
 
 > BOLD BOWL
 
@@ -132,7 +132,7 @@ Now we know two pairs, so we know the third. This gets us a shortcut with bonus 
 
 So ... if you want the bonus points, and you've paid attention to commands, you should know what to do.
 
-> R 3
+> R 3 (20)
 
 All right! We're ready to tackle what's beyond the pass path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
 
@@ -144,11 +144,11 @@ All right! We're ready to tackle what's beyond the pass path, now. There's a cer
 
 Bosh, blanks! Can we get more?
 
-> POSH PLANKS (20)
+> POSH PLANKS (21)
 
 A yucky yacht!
 
-> PLUCKY PLOT (21)
+> PLUCKY PLOT (22)
 
 Your friends help you, and you don't need them any more for here. We could go farther, but that'd waste a few turns. You'll need them later, but for now, let's open up the map.
 
@@ -172,11 +172,11 @@ This should get you the Fried Freak and Chic Shooter.
 
 Okay, tall tank(s).
 
-> YALL YANK (22)
+> YALL YANK (23)
 
 Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did/
 
-> PAUL PANKS (23)
+> PAUL PANKS (24)
 
 While his games were not the best, his ardor was commendable.
 
@@ -196,10 +196,151 @@ While his games were not the best, his ardor was commendable.
 
 > S
 
-> NEED KNACK (24)
+> NEED KNACK (25)
 
-> PLEAD PLAQUE (25)
+You've used all three pairs of friends to open up passages. Now we look into the game's symmetry. Each pair of friends is needed to solve something beyond the initial puzzle in one direction from Pass Path.
 
-> HEED HACK (26)
+But there's something cutesy and silly we can do first to get a bonus point here, and we have places we can explore, too.
 
-> SEED SACK (27)
+> PLEAD PLAQUE (26)
+
+Fourth wall humor. How about that?
+
+Now you have a feeling you are just feeling your way around by rote.
+
+> HEED HACK (27)
+
+Oh, and what else might you find around vegetation?
+
+> SEED SACK (28)
+
+This will come in handy later.
+
+> N
+
+> E
+
+> E
+
+> N
+
+> TRAIN TRACKS (29)
+
+> MAIN MAX (30)
+
+> PAIN PACKS (31)
+
+> N
+
+> TROWED TRIES (32)
+
+> LOUD LIES (33)
+
+> S
+
+> W
+
+> W
+
+> N
+
+Now you can ask the Sassed Sort to go places. Guess where they might want to go.
+
+> FAST FORT (34)
+
+Oh! A book! Not a very scholarly one. Let's make it into something more useful. It's not exactly pure art, either.
+
+> GLUED GLASS (35)
+
+This place is done. Let's move on.
+
+> CAST COURT (36)
+
+More nonsense to make useful. Well, partially.
+
+> MURKY MAP (37)
+
+Ooh! The glass and map work together to help the Sassed Sort find somewhere new, if you just ask right.
+
+> PASSED PORT (38)
+
+More stuff to do here. That clashing cord is out of place, so let's make it a ...
+
+> SLASHING SWORD (39)
+
+Wait! This is a nonviolent game, right?
+
+Well, look at your inventory. Read the list. You have one of the five items you need. That'd be your weapon.
+
+> SALAD SCENT (40)
+
+One pair of friends leaves at this point. You've used them in each area. You may wonder why you haven't gotten a hold hole item yet, but each one requires items from two other areas that you need two different pairs of friends to get. So let's bring a new pair over and get our first hole item.
+
+Oh, before you leave, you can do something with the slime, slowed, for fun.
+
+> RHYME ROAD (41)
+
+More self-promotion!
+
+> IN
+
+> S
+
+> W
+
+> N
+
+> R 3
+
+> S
+
+> E
+
+> S
+
+> U
+
+Your friends help you a bit here.
+
+> GREW GRUFF (42)
+
+> STEW STUFF (43)
+
+> NEW NUFF (44)
+
+> D
+
+> N
+
+> E
+
+> E
+
+You get sly with a little help from your friends. There's an alternate solution here, too.
+
+> TROD TRASH (45)
+
+> S
+
+> BOUGHT BEEF (46)
+
+> BROUGHT BRIEF (47)
+
+> WROUGHT REEF (48)
+
+> DONE DISH (49)
+
+Hooray! A bold bowl! But now you are dumped somewhere odd.
+
+> FILL FUN (50)
+
+> WILL WON (51)
+
+Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in..
+
+> ILLUN (52)
+
+> N
+
+And you're back where you were!
+

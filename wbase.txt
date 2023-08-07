@@ -36,7 +36,7 @@ Figuring out what belongs in the hole will give you a bonus point. There are thr
 Incidentally, there's also a joke death here. You can undo it quickly, but it's also relatively easy to guess. It is left as an exercise to the reader.
 
 @max
-You don't get the bonus point unless you guess all three. You don't have to, at once, either. You just have to guess them before you find them all. Still, let's get off to a bright start, why not?
+You don't get the bonus point unless you guess all three. You don't have to, at once, either. You just have to guess any one of them before you find it, and you have to be in White Wave. So, let's get off to a bright start, why not?
 \\
 > BOLD BOWL
 \\
@@ -156,7 +156,7 @@ Now we know two pairs, so we know the third. This gets us a shortcut with bonus 
 So ... if you want the bonus points, and you've paid attention to commands, you should know what to do.
 
 @max
-> R 3
+> R 3 (1)
 ###skip test checking
 @!
 > WEAK WOOTER
@@ -232,9 +232,153 @@ While his games were not the best, his ardor was commendable.
 
 > NEED KNACK (1)
 
+You've used all three pairs of friends to open up passages. Now we look into the game's symmetry. Each pair of friends is needed to solve something beyond the initial puzzle in one direction from Pass Path.
+
+But there's something cutesy and silly we can do first to get a bonus point here, and we have places we can explore, too.
+
 @max
 > PLEAD PLAQUE (1)
+\\
+Fourth wall humor. How about that?
+
+Now you have a feeling you are just feeling your way around by rote.
 
 > HEED HACK (1)
 
+Oh, and what else might you find around vegetation?
+
 > SEED SACK (1)
+
+This will come in handy later.
+
+> N
+
+> E
+
+> E
+
+> N
+
+> TRAIN TRACKS (1)
+
+> MAIN MAX (1)
+
+> PAIN PACKS (1)
+
+> N
+
+> TROWED TRIES (1)
+
+> LOUD LIES (1)
+
+> S
+
+> W
+
+> W
+
+> N
+
+Now you can ask the Sassed Sort to go places. Guess where they might want to go.
+
+> FAST FORT (1)
+
+Oh! A book! Not a very scholarly one. Let's make it into something more useful. It's not exactly pure art, either.
+
+> GLUED GLASS (1)
+
+This place is done. Let's move on.
+
+> CAST COURT (1)
+
+More nonsense to make useful. Well, partially.
+
+> MURKY MAP (1)
+
+Ooh! The glass and map work together to help the Sassed Sort find somewhere new, if you just ask right.
+
+> PASSED PORT (1)
+
+More stuff to do here. That clashing cord is out of place, so let's make it a ...
+
+> SLASHING SWORD (1)
+
+Wait! This is a nonviolent game, right?
+
+Well, look at your inventory. Read the list. You have one of the five items you need. That'd be your weapon.
+
+> SALAD SCENT (1)
+
+One pair of friends leaves at this point. You've used them in each area. You may wonder why you haven't gotten a hold hole item yet, but each one requires items from two other areas that you need two different pairs of friends to get. So let's bring a new pair over and get our first hole item.
+
+Oh, before you leave, you can do something with the slime, slowed, for fun.
+
+@max
+> RHYME ROAD (1)
+\\
+More self-promotion!
+
+> IN
+
+> S
+
+> W
+
+> N
+
+> R 3
+
+> S
+
+> E
+
+> S
+
+> U
+
+Your friends help you a bit here.
+
+> GREW GRUFF (1)
+
+> STEW STUFF (1)
+
+> NEW NUFF (1)
+
+> D
+
+> N
+
+> E
+
+> E
+
+You get sly with a little help from your friends. There's an alternate solution here, too.
+
+> TROD TRASH (1)
+
+> S
+
+> BOUGHT BEEF (1)
+
+> BROUGHT BRIEF (1)
+
+> WROUGHT REEF (1)
+
+> DONE DISH (1)
+
+Hooray! A bold bowl! But now you are dumped somewhere odd.
+
+> FILL FUN (1)
+
+> WILL WON (1)
+
+Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in..
+
+@max
+> ILLUN (1)
+###skip test checking
+
+> N
+
+And you're back where you were!
+
