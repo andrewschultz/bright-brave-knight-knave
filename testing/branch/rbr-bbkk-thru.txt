@@ -1,11 +1,7 @@
 #-- rbr-bbkk-thru.txt
 #-- main branch file for Bright Brave Knight Knave walkthroughs
 #
-#-- use HHV.PY to verify ha-half
-#-- use MCH.PY to verify mistake checking code
-#-- use SCT.PY to verify alternate verb solutions
-#-- use HCH.PY to verify room/thing homonyms
-#--
+#-- TTC.PY generates test cases not found here
 #--
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
@@ -119,11 +115,11 @@ You don't have to change yourself, here.
 {$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-3-gist
->jack gist
+>zjack gist
 {$GREENBONUS}
 \\
 #testcase-ha-half-table-of-verb-checks-3-jack
->jack gist
+>jack zgist
 {$GREENBONUS}
 
 @rej
@@ -372,27 +368,27 @@ Maybe you can go west, but for your safety, it is inadvisable.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-8-hid
->hid hum
+>hid zhum
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-8-hum
->hid hum
+>zhid hum
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-9-come
->kid come
+>zkid come
 {$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-9-kid
->kid come
+>kid zcome
 {$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-10-rid
->rid rum
+>rid zrum
 {$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-10-rum
->rid rum
+>zrid rum
 {$YELLOWCORE}
 
 @mis
@@ -445,6 +441,7 @@ by one point
 #testcase-room-names-crude-crapper
 `Crude Crapper
 
+@ha
 #testcase-ha-half-table-of-verb-checks-11-mapper-tapper
 >zmood mapper
 {$GREENCORE}
@@ -477,7 +474,7 @@ by one point
 @rej
 #testcase-check-vc-mood-mapper-rule-if-sco-mood-mapper-is-true
 >mood mapper
-You already got the mood mapper/[']tude tapper!
+You already got the mood mapper/'tude tapper!
 
 @mis
 #testcase-mistakes-table-of-crude-crapper-guesses-booed-bapper
@@ -486,7 +483,7 @@ That'd make a decent final boss, but the main one is elsewhere.
 \\
 #testcase-mistakes-table-of-crude-crapper-guesses-clued-clapper
 >clued clapper
-You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [bkn].
+You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a Bright Brave Knight Knave.
 \\
 #testcase-mistakes-table-of-crude-crapper-guesses-cooed-capper
 >cooed capper
@@ -538,27 +535,27 @@ You feel as though you want to say something about the state of these environs, 
 
 @ha
 #testcase-ha-half-table-of-verb-checks-13-meek
->meek mooter
+>meek zmooter
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-13-mooter
->meek mooter
+>zmeek mooter
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-14-chic
->chic shooter
+>chic zshooter
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-14-shooter
->chic shooter
+>zchic shooter
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-15-weak
->weak wooter
+>weak zwooter
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-15-wooter
->weak wooter
+>zweak wooter
 {$GREENCORE}
 
 >w
@@ -570,35 +567,35 @@ Spied-Speak-Cried Creek
 
 @ha
 #testcase-ha-half-table-of-verb-checks-16-freak
->fried freak
+>zfried freak
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-16-fried
->fried freak
+>fried zfreak
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-17-sneak
->snide sneak
+>zsnide sneak
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-17-snide
->snide sneak
+>snide zsneak
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-18-geek
->guide geek
+>zguide geek
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-18-guide
->guide geek
+>guide zgeek
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-19-streak
->stride streak
+>zstride streak
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-19-stride
->stride streak
+>stride zstreak
 {$GREENCORE}
 
 >guide geek
@@ -662,6 +659,52 @@ by one point
 >plucky plot
 by one point
 
+@ha
+##balance undos
+>gonear passed port
+\\
+#testcase-ha-half-table-of-verb-checks-28-salad
+>salad zscent
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-28-scent
+>zsalad scent
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-time
+>time ztoad
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-toad
+>ztime toad
+{$YELLOWCORE}
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>gonear fief
+>brought brief
+by one point
+>bought beef
+by one point
+>wrought reef
+by one point
+#testcase-ha-half-table-of-verb-checks-59-dish
+>zdone dish
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-done
+>done zdish
+{$YELLOWCORE}
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >s
 >w
 >n
@@ -712,12 +755,54 @@ by one point
 
 >s
 
+@ha
+#testcase-ha-half-table-of-verb-checks-34-knack
+>zneed knack
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-34-need
+>need zknack
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-35-hack
+>zheed hack
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-35-heed
+>heed zhack
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-36-sack
+>zseed sack
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-36-seed
+>seed zsack
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-37-plaque
+>zplead plaque
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-37-plead
+>plead zplaque
+{$GREENBONUS}
+
 >need knack
 by one point
 
 @!min
 >plead plaque
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-35-hack
+>zheed hack
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-35-heed
+>heed zhack
+{$GREENCORE}
 
 >heed hack
 by one point
@@ -733,8 +818,42 @@ by one point
 
 >n
 
+@ha
+#testcase-ha-half-table-of-verb-checks-50-tracks
+>ztrain tracks
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-50-train
+>train ztracks
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-51-main
+>main zmax
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-51-max
+>zmain max
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-52-packs
+>zpain packs
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-52-pain
+>pain zpacks
+{$GREENCORE}
+
 >train tracks
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-51-main
+>main zmax
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-51-max
+>zmain max
+{$GREENCORE}
 
 >main max
 by one point
@@ -744,8 +863,26 @@ by one point
 
 >n
 
+@ha
+#testcase-ha-half-table-of-verb-checks-55-lies
+>zloud lies
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-loud
+>loud zlies
+{$YELLOWCORE}
+
 >trowed tries
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-55-lies
+>zloud lies
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-loud
+>loud zlies
+{$GREENCORE}
 
 >loud lies
 by one point
@@ -761,11 +898,54 @@ by one point
 >fast fort
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-27-glass
+>zglued glass
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-glued
+>glued zglass
+{$GREENCORE}
+
 >glued glass
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-23-cast
+>cast zcourt
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-23-court
+>zcast court
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-fast
+>fast zfort
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-fort
+>zfast fort
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-passed
+>passed zport
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-port
+>zpassed port
+{$GREENCORE}
+
 >cast court
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-26-map
+>zmurky map
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-murky
+>murky zmap
+{$GREENCORE}
 
 >murky map
 by one point
@@ -773,11 +953,53 @@ by one point
 >passed port
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-28-salad
+>salad zscent
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-28-scent
+>zsalad scent
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-quash
+>quash zquick
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-quick
+>zquash quick
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-30-slick
+>zslosh slick
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-30-slosh
+>slosh zslick
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-31-slashing
+>slashing zsword
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-31-sword
+>zslashing sword
+{$GREENCORE}
+
 >slashing sword
 by one point
 
 >salad scent
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-33-rhyme
+>rhyme zroad
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-33-road
+>zrhyme road
+{$GREENCORE}
 
 @!min
 >rhyme road
@@ -801,11 +1023,54 @@ by one point
 
 >u
 
+@ha
+#testcase-ha-half-table-of-verb-checks-38-grew
+>grew zgruff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-38-gruff
+>zgrew gruff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-39-stew
+>stew zstuff
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-39-stuff
+>zstew stuff
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-40-new
+>new znuff
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-40-nuff
+>znew nuff
+{$GREENBONUS}
+
 >grew gruff
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-39-stew
+>stew zstuff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-39-stuff
+>zstew stuff
+{$GREENCORE}
+
 >stew stuff
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-40-new
+>new znuff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-40-nuff
+>znew nuff
+{$GREENCORE}
 
 >new nuff
 by one point
@@ -818,10 +1083,52 @@ by one point
 
 >e
 
+@ha
+#testcase-ha-half-table-of-verb-checks-53-trash-flash
+>ztrod trash
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-53-trod-flawed
+>trod ztrash
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-53-trash-flash
+>zflawed flash
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-53-trod-flawed
+>flawed zflash
+{$GREENCORE}
+
 >trod trash
 by one point
 
 >s
+
+@ha
+#testcase-ha-half-table-of-verb-checks-56-beef
+>zbought beef
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-56-bought
+>bought zbeef
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-brief
+>zbrought brief
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-brought
+>brought zbrief
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-58-reef
+>zwrought reef
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-58-wrought
+>wrought zreef
+{$YELLOWCORE}
 
 >bought beef
 by one point
@@ -829,17 +1136,94 @@ by one point
 >brought brief
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-58-reef
+>zwrought reef
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-58-wrought
+>wrought zreef
+{$GREENCORE}
+
 >wrought reef
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-59-dish
+>zdone dish
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-done
+>done zdish
+{$GREENCORE}
 
 >done dish
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-64-fill
+>fill zfun
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-64-fun
+>zfill fun
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-65-will
+>will zwon
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-65-won
+>zwill won
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-ill
+>ill zun
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-un-in
+>zill in
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-un-in
+>zill un
+{$YELLOWCORE}
+
 >fill fun
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-65-will
+>will zwon
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-65-won
+>zwill won
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-ill
+>ill zin
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-un-in
+>zill in
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-un-in
+>zill un
+{$GREENCORE}
+
 >will won
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-66-ill
+>ill zun
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-66-un-in
+>zill in
+{$GREENBONUS}
 
 >illun
 by one point
@@ -864,6 +1248,39 @@ by one point
 
 >w
 
+@ha
+#testcase-ha-half-table-of-verb-checks-41-hack
+>hack zheight
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-41-height
+>zhack height
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-42-quack
+>quack zquite
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-42-quite
+>zquack quite
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-43-flak
+>flak zflight
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-43-flight
+>zflak flight
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-44-slack
+>slack zslight
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-44-slight
+>zslack slight
+{$GREENCORE}
+
 >hack height
 by one point
 
@@ -873,8 +1290,34 @@ by one point
 >quack quite
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-45-plate
+>zpower plate
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-45-power
+>power zplate
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-time
+>time ztoad
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-toad
+>ztime toad
+{$GREENCORE}
+
 >power plate
 by one point
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-43-flak
+>flak zflight
+{$GREENBONUS}
+\\
+#+testcase-ha-half-table-of-verb-checks-43-flight
+>zflak flight
+{$GREENBONUS}
 
 @!min
 >flak flight
@@ -889,18 +1332,70 @@ by one point
 >passed port
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-29-quash
+>quash zquick
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-quick
+>zquash quick
+{$GREENCORE}
+
 >quash quick
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-30-slick
+>zslosh slick
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-30-slosh
+>slosh zslick
+{$GREENCORE}
 
 >slosh slick
 by one point
 
-and now you get the posh pick.
+@ha
+#testcase-ha-half-table-of-verb-checks-32-time
+>time ztoad
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-toad
+>ztime toad
+{$GREENCORE}
 
 >time toad
 by one point
 
-let's get the first odd point out of the way, for variety's sake. this is a two out of three, then advance, room.
+@ha
+#testcase-ha-half-table-of-verb-checks-67-grander
+>grander zgrove
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-67-grove
+>zgrander grove
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-candor-candour
+>candour zcove
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-68-candor-candour
+>candor zcove
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-cove
+>zcandor cove
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-69-stander
+>stander zstove
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-69-stove
+>zstander stove
+{$GREENCORE}
 
 >stander stove
 by one point
@@ -922,11 +1417,57 @@ by one point
 
 >e
 
+@ha
+#testcase-ha-half-table-of-verb-checks-46-bell
+>bell zbook
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-46-book
+>zbell book
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-47-candle
+>zcovering candle
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-47-covering
+>covering zcandle
+{$GREENCORE}
+
 >bell book
 by one point
 
 >covering candle
 by one point
+
+@all
+#testcase-route-rough-name
+`Route, Rough
+
+@ha
+#testcase-ha-half-table-of-verb-checks-70-flout
+>flout zfluff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-70-fluff
+>zflout fluff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-71-nowt
+>nowt znuff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-71-nuff
+>znowt nuff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-72-stout
+>stout zstuff
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-72-stuff
+>zstout stuff
+{$GREENCORE}
 
 >nowt nuff
 by one point
@@ -950,6 +1491,15 @@ by one point
 
 >w
 
+@ha
+#testcase-ha-half-table-of-verb-checks-20-harder
+>harder zhelm
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-20-helm
+>zharder helm
+{$GREENCORE}
+
 >harder helm
 by one point
 
@@ -961,14 +1511,57 @@ by one point
 
 >in
 
+@ha
+#testcase-ha-half-table-of-verb-checks-60-boo
+>boozing boo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-60-boozing
+>boozing boo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-61-using
+>using zyou
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-61-you
+>zusing you
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-62-fusing
+>fusing zphew
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-62-phew
+>zfusing phew
+{$YELLOWCORE}
+
 >using you
 by one point
 
 >boozing boo
 by one point
 
+@ha
+#testcase-ha-half-table-of-verb-checks-62-phew
+>zfusing phew
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-62-fusing
+>fusing zphew
+{$GREENCORE}
+
 >fusing phew
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-63-spew
+>zspurning spew
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-63-spurning
+>spurning zspew
+{$GREENCORE}
 
 >spurning spew
 by one point
@@ -976,6 +1569,55 @@ by one point
 >out
 
 >u
+
+@ha
+#testcase-ha-half-table-of-verb-checks-73-ailing
+>ailing zill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-73-ill
+>zailing ill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-74-scaling
+>scaling zskill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-74-skill
+>zscaling skill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-75-mailing
+>mailing zmill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-75-mill
+>zmailing mill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-76-bailing
+>bailing zbill
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-76-bill
+>zbailing bill
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-77-failing
+>failing zphil
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-77-phil
+>zfailing phil
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-78-wailing
+>wailing zwill
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-78-will
+>zwailing will
+{$YELLOWCORE}
 
 >scaling skill
 by one point
@@ -985,6 +1627,31 @@ by one point
 
 >mailing mill
 by one point
+
+@ha
+#testcase-ha-half-table-of-verb-checks-76-bailing
+>bailing zbill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-76-bill
+>zbailing bill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-77-failing
+>failing zphil
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-77-phil
+>zfailing phil
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-78-wailing
+>wailing zwill
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-78-will
+>zwailing will
+{$GREENCORE}
 
 >failing phil
 by one point
@@ -1071,6 +1738,15 @@ It's no secret that Tully spams their opinions.
 #testcase-mistakes-table-of-trite-tully-guesses-tram-try
 >tram try
 If there were a train to catch, you could send Tully on it. Alas, no.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-81-bam
+>bam zbye
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-81-bye
+>zbam bye
+{$GREENCORE}
 
 >bam bye
 

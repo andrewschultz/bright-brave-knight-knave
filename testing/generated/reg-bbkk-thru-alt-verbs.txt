@@ -63,26 +63,6 @@ by one point
 
 >s
 
-#testcase-ha-half-table-of-verb-checks-11-mapper-tapper
->zmood mapper
-The HA HALF button on your Leet Learner lights up green.
->ztude tapper
-The HA HALF button on your Leet Learner lights up green.
-
-#testcase-ha-half-table-of-verb-checks-11-mood-tude
->mood zmapper
-The HA HALF button on your Leet Learner lights up green.
->tude ztapper
-The HA HALF button on your Leet Learner lights up green.
-
-#testcase-ha-half-table-of-verb-checks-12-napper
->znude napper
-The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
-
-#testcase-ha-half-table-of-verb-checks-12-nude
->nude znapper
-The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
-
 >mood mapper
 by one point
 
@@ -342,12 +322,8 @@ by one point
 >slosh slick
 by one point
 
-and now you get the posh pick.
-
 >time toad
 by one point
-
-let's get the first odd point out of the way, for variety's sake. this is a two out of three, then advance, room.
 
 >stander stove
 by one point
