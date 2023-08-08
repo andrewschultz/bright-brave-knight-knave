@@ -214,7 +214,7 @@ the mood mapper is a thing. description is "It can't offer hints like the leet l
 
 book Recruiter
 
-recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row." understand "rec/recroom" as recroom when debug-state is true.
+recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -574,7 +574,17 @@ guess-table of Nil None is  the table of nil none guesses.
 
 book Dander Dove
 
-Dander Dove is a room in interlude. printed name is "Dander, Dove". "You've gone off and gotten yourself into a real dander. It expands in all directions, not actually blocking you. Well, you yourself dove into it. It's soft, but it's hard to move out of. You [if dander-score is 0]may need to visualize places to go[else if dander-score is 1]feel you can almost get out of here. Just one more place to memorize[else if dander-score is 2]can move on now[else]have nothing else to deduce here. You're feeling less mad[end if]."
+Dander Dove is a room in interlude. printed name is "Dander, Dove". "[dander-detail]."
+
+dander-list is a list of text variable. dander-list is { "cold", "small", "fraudulent" }.
+
+to say dander-detail:
+	let ned be number of entries in dander-list;
+	if ned is 0:
+		say "You've got a feel for the randomness by now";
+	else:
+		say "Ugh! Another place walking aimlessly! You feel [dander-list][if ned is 1], though two out of three bad things shook off isn't bad[end if]";
+	if ned <= 1, say ". You're confident you'll find a way out, whichever way you go"
 
 check going in Dander Dove:
 	if dander-score < 2, say "You're still in enough of a dander you can't let go and move on, yet." instead;

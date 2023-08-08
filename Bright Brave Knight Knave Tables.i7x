@@ -1153,7 +1153,7 @@ a goodrhyme rule (this is the vc-grander-grove rule):
 this is the vr-grander-grove rule:
 	now sco-grander-grove is true;
 	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.";
-	dander-upgrade;
+	dander-upgrade "small";
 
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in dander dove, unavailable;
@@ -1165,7 +1165,7 @@ a goodrhyme rule (this is the vc-candor-cove rule):
 this is the vr-candor-cove rule:
 	now sco-candor-cove is true;
 	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.";
-	dander-upgrade;
+	dander-upgrade "fraudulent";
 
 a goodrhyme rule (this is the vc-stander-stove rule):
 	if player is not in dander dove, unavailable;
@@ -1177,9 +1177,10 @@ a goodrhyme rule (this is the vc-stander-stove rule):
 this is the vr-stander-stove rule:
 	now sco-stander-stove is true;
 	say "You picture a stove to step into! It's weird, but it's good for burning excess dander.";
-	dander-upgrade;
+	dander-upgrade "cold";
 
-to dander-upgrade:
+to dander-upgrade (t - text):
+	remove t from dander-list;
 	say "[line break]";
 	if dander-score is 1:
 		say "The dander you dove into sinks a bit. You still feel stuck.";
