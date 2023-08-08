@@ -1457,6 +1457,7 @@ to give-hi (hi - a holeitem):
 		move player to Route Rough;
 
 to give-ti (ti - a trystitem):
+	now player has ti;
 	choose row (number of carried trystitems) in table of trystitem stuff;
 	say "[hooray entry][line break]";
 

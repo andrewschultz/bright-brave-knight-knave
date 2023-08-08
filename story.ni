@@ -214,7 +214,7 @@ the mood mapper is a thing. description is "It can't offer hints like the leet l
 
 book Recruiter
 
-recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row."
+recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row." understand "rec/recroom" as recroom when debug-state is true.
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -347,7 +347,7 @@ the seed sack is a thing.
 
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in southstuff. "It's bleak here, man, bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
+Too Tough Blue Bluff is a room in southstuff. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
 
 chapter stew stuff
 

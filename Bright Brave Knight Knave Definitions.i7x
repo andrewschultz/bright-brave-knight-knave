@@ -266,7 +266,9 @@ to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
 	if r1 is adjacent to r2, yes;
 	no;
 
-this is the stuck-right-now rule: do nothing;
+this is the stuck-right-now rule:
+	if mrlp is interlude, say "But you are in a sort of limbo area." instead;
+	if sco-fight-fave is true, say "But you are at the final fight." instead;
 
 section mostly VVFF dependent stuff with Dean Duggan
 
