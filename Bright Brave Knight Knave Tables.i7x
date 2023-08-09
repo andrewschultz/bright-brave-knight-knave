@@ -376,6 +376,7 @@ this is the vr-posh-planks rule:
 	now sco-posh-planks is true;
 	say "Everything becomes a lot more sophisticated here. But not too sophisticated! Things are a bit run-down, right now, as evidenced by that yucky yacht nearby. You sense you should clean it, but you're not sure how. You're not posh enough to get near, you suspect!";
 	move yucky yacht to Bosh Blanks;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-plucky-plot rule):
 	if yucky yacht is not touchable, unavailable;
@@ -1310,7 +1311,7 @@ to fully-dismiss (ee - an eeker):
 	part-dismiss ee;
 	part-dismiss other-guy of ee;
 	say "You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
-	if number of finished eekers is 6:
+	if eekers-done:
 		say "[line break]But they also realize something else--you've helped everyone you could have a bit of fun! Surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. There may be a surprise for you.[end if]";
 		move ardor elm to cried creek;
 

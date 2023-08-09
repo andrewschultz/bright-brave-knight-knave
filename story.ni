@@ -73,12 +73,6 @@ rule for printing the name of a holeitem (called hi) when bold-hole is true: say
 
 guess-table of hold hole is table of hold hole guesses.
 
-chapter specific holeitems
-
-to decide which number is help-index:
-	if number of eekers in location of player is 0, decide on 0;
-	decide on (matchnum of random eeker in location of player);
-
 chapter track tryst lack list
 
 the track tryst lack list is a thing. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
@@ -236,7 +230,7 @@ the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is -3.
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is west of recroom. it is in recruiting. "You can only go back east here. You might get lost in the other directions."
+Spied Speak Cried Creek is west of recroom. it is in recruiting. "You can only go back east here. You might get lost in the other directions.". printed name is "Spied-Speak-Cried Creek".
 
 check going east in Cried Creek:
 	abide by the eeker-start-follow rule;

@@ -73,6 +73,10 @@ to decide whether only-here of (ee - an eeker):
 	if ee is in location of player and other-guy of ee is not in location of player, yes;
 	no;
 
+to decide which number is help-index:
+	if number of eekers in location of player is 0, decide on 0;
+	decide on (matchnum of random eeker in location of player);
+
 an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
 
 an eeker can be creeky or crooty. an eeker is usually creeky.
@@ -124,6 +128,10 @@ to decide which number is freak-shooter-points:
 
 to decide which number is sneak-mooter-points:
 	decide on (boolval of sco-loud-lies) + (boolval of sco-salad-scent) + (boolval of sco-need-knack)
+
+to decide whether eekers-done:
+	if number of finished eekers is 6, yes;
+	no;
 
 section tracking hole progress
 
@@ -194,7 +202,7 @@ to decide which number is fish-score:
 section hill score
 
 to decide which number is hill-score:
-	decide on (boolval of sco-ailing-ill) + (boolval of sco-failing-phil) + (boolval of sco-mailing-mill) + (boolval of sco-wailing-will) + (boolval of sco-bailing-bill) 
+	decide on (boolval of sco-ailing-ill) + (boolval of sco-scaling-skill) + (boolval of sco-failing-phil) + (boolval of sco-mailing-mill) + (boolval of sco-wailing-will) + (boolval of sco-bailing-bill) 
 
 section bruising brew / losing lou score
 
@@ -205,6 +213,22 @@ section route rough progress
 
 to decide which number is route-rough-score:
 	decide on (boolval of sco-stout-stuff) + (boolval of sco-flout-fluff) + (boolval of sco-nowt-nuff);
+
+section nil none progress
+
+to decide which number is nil-score:
+	decide on (boolval of sco-ill-un) + (boolval of sco-fill-fun) + (boolval of sco-will-won);
+
+section dander progress
+
+to decide which number is dander-score:
+	decide on (boolval of sco-candor-cove) + (boolval of sco-grander-grove) + (boolval of sco-stander-stove);
+
+section tully / final score
+
+to decide which number is tully-score:
+	decide on boolval of sco-fright-fully + boolval of sco-bright-bully;
+
 
 book definitions
 
@@ -217,15 +241,6 @@ book to say
 to say optional-hint-think-item: say "";
 
 volume helper definitions
-
-to decide which number is nil-score:
-	decide on (boolval of sco-ill-un) + (boolval of sco-fill-fun) + (boolval of sco-will-won);
-
-to decide which number is dander-score:
-	decide on (boolval of sco-candor-cove) + (boolval of sco-grander-grove) + (boolval of sco-stander-stove);
-
-to decide which number is tully-score:
-	decide on boolval of sco-fright-fully + boolval of sco-bright-bully;
 
 volume gotoing
 
