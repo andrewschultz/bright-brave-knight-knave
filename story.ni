@@ -30,11 +30,11 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
-volume rooms
+volume Flying Flees (intro)
 
 book white wave
 
-White Wave is a room in intro. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
+White Wave is a room in Flying Flees. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
 
 the player is in White Wave.
 
@@ -138,7 +138,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[end if]".
 
 book bass bath
 
-Bass Bath is a room in intro. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -150,7 +150,7 @@ after printing the locale description for Bass Bath:
 		now bool-hill-available is true;
 		now hailing hill is mapped above bass bath;
 		now bass bath is mapped below hailing hill;
-	if bool-brew-available is false and hub-intro-score is 3:
+	if bool-brew-available is false and hub-expand-score is 3:
 		say "Wait! What's this? A passage you hadn't noticed before! You can go inside to what looks like a bar!";
 		now bool-brew-available is true;
 		open-psg inside and Bruising Brew;
@@ -158,15 +158,15 @@ after printing the locale description for Bass Bath:
 
 book Hailing Hill
 
-Hailing Hill is a room in intro. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
 
 the mailing mill is scenery. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
 
-volume recruiting area (west)
+volume Plying Please (west)
 
 book Rut Row
 
-Rut Row is a room in recruiting. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
+Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
 
 check going west in Rut Row:
 	if sco-what-whoah is false, say "Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened." instead;
@@ -184,13 +184,13 @@ guess-table of coughin coy boffin boy is the table of coughin coy boffin boy gue
 
 book Slum Slid
 
-Slid Slum is a room in recruiting.
+Slid Slum is a room in Plying Please.
 
 guess-table of slid slum is the table of slid slum guesses.
 
 book Crude Crapper
 
-Crude Crapper is a room in recruiting. "You can only really go outside here. [crapper-status].";
+Crude Crapper is a room in Plying Please. "You can only really go outside here. [crapper-status].";
 
 to say crapper-status:
 	if sco-mood-mapper is true:
@@ -206,7 +206,7 @@ the mood mapper is a thing. description is "It can't offer hints like the leet l
 
 book Recruiter
 
-recroom is a privately-named room in recruiting. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
+recroom is a privately-named room in Plying Please. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -230,13 +230,13 @@ the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is -3.
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is west of recroom. it is in recruiting. "You can only go back east here. You might get lost in the other directions.". printed name is "Spied-Speak-Cried Creek".
+Spied Speak Cried Creek is west of recroom. it is in Plying Please. "You can only go back east here. You might get lost in the other directions.". printed name is "Spied-Speak-Cried Creek".
 
 check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
 
 after printing the locale description when number of leftbehind eekers > 0:
-	if took-yacht is true or mrlp is interlude, continue the action;
+	if took-yacht is true or mrlp is Shying Sheez, continue the action;
 	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
 		let rle be random leftbehind eeker;
@@ -259,11 +259,11 @@ the Guide Geek is an eeker. matchnum of Guide Geek is -3.
 
 book eeker logic and manipulation
 
-volume north area
+volume Sighing Seas (north)
 
 book Bosh Blanks
 
-Bosh Blanks is a room in northstuff. printed name is "[if sco-posh-planks is true]Posh Planks[else]Bosh, Blanks![end if]". "[if sco-posh-planks is false]It's disappointingly empty here. As-is, you can only go back south[else][planks-desc][end if]."
+Bosh Blanks is a room in Sighing Seas. printed name is "[if sco-posh-planks is true]Posh Planks[else]Bosh, Blanks![end if]". "[if sco-posh-planks is false]It's disappointingly empty here. As-is, you can only go back south[else][planks-desc][end if]."
 
 to say planks-desc: say "There's water on pretty much all sides here. A yucky yacht might allow access once fixed"
 
@@ -289,7 +289,7 @@ the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting 
 
 book Cast Court
 
-Cast Court is a room in northstuff. "Stuff is strewn about here."
+Cast Court is a room in Sighing Seas. "Stuff is strewn about here."
 
 the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better."
 
@@ -297,7 +297,7 @@ the murky map is a thing.
 
 book Fast Fort
 
-Fast Fort is a room in northstuff.
+Fast Fort is a room in Sighing Seas.
 
 Crude Crass Lewd Lass is a thing in Fast Fort.
 
@@ -305,7 +305,7 @@ the glued glass is a thing.
 
 book Passed Port
 
-Passed Port is a room in northstuff. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
+Passed Port is a room in Sighing Seas. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
 
 to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
 
@@ -329,17 +329,17 @@ chapter slashing sword
 
 the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense".
 
-volume south area
+volume Trying Trees (south)
 
 book Treed Track
 
-Treed Track is a room in southstuff. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]."
+Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]."
 
 the seed sack is a thing.
 
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in southstuff. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
+Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
 
 chapter stew stuff
 
@@ -347,7 +347,7 @@ The stew stuff is a thing.
 
 book Lack Light Black Blight
 
-Lack Light Black Blight is a room in southstuff. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is east. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is east. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
 after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score > 3:
 	if fried freak is followish, check-rack-right;
@@ -367,17 +367,17 @@ the power plate is a trystitem. description is "Surprisingly lightweight but stu
 
 book Knell Nook
 
-Knell Nook is a room in southstuff.
+Knell Nook is a room in Trying Trees.
 
 chapter sold soul
 
 the sold soul is a thing.
 
-volume east area
+volume Lying Leas (east)
 
 book Tall Tank(s)
 
-tata is a privately-named room in eaststuff. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
+tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
 
@@ -394,7 +394,7 @@ the harder helm is a trystitem. vaguedesc is "replacement head protection".
 
 book Lane Lax
 
-Lane Lax is a room in eaststuff. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if]."
+Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if]."
 
 to say mama: if sco-main-max is true, say "Main Max "
 
@@ -418,13 +418,13 @@ the pain packs are a plural-named trystitem. "They look like they could really h
 
 book Wowed Wise Crowd Cries
 
-Wowed Wise Crowd Cries is a room in eaststuff.
+Wowed Wise Crowd Cries is a room in Lying Leas.
 
 the proud prize is a thing.
 
 book Thought Thief Fought Fief
 
-Thought Thief Fought Fief is a room in eaststuff. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]".
+Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]".
 
 chapter one wish fun fish
 
@@ -432,7 +432,7 @@ there is a thing called the one wish fun fish. "A one-wish fun fish blups about 
 
 book Bruising Brew
 
-Bruising Brew is a room in intro.
+Bruising Brew is a room in Flying Flees.
 
 chapter the two faces of Lou (not-Christie)
 
@@ -491,7 +491,7 @@ carry out byeing:
 	sideline-eekers;
 	the rule succeeds;
 
-chapter recruiting
+chapter Plying Please
 
 recruiting is an action applying to one number.
 
@@ -501,7 +501,7 @@ carry out recruiting:
 	if number understood > 3 or number understood < 1, say "You need to pick 1, 2 or 3." instead;
 	if number of pairedyet eekers is 2 and number understood > 1, say "I can't deduce the next pair you'd like to enlist. There are two more." instead;
 	if number of fungible eekers > 0, say "I can technically do better, but right now, you'll want to run this command without anyone else around." instead;
-	if mrlp is interlude, say "You can't call on anyone when you're stuck here!" instead;
+	if mrlp is Shying Sheez, say "You can't call on anyone when you're stuck here!" instead;
 	repeat with XX running through creeky eekers:
 		if matchnum of XX is number understood:
 			let og be other-guy of XX;
@@ -553,7 +553,7 @@ volume distraction rooms
 
 book Nil None
 
-Nil None is a room in interlude.
+Nil None is a room in Shying Sheez.
 
 check going in Nil None:
 	if sco-fill-fun is false, say "You have momentarily lost all sense of joy, or all hope to find it. Why bother to look?" instead;
@@ -566,7 +566,7 @@ guess-table of Nil None is  the table of nil none guesses.
 
 book Dander Dove
 
-Dander Dove is a room in interlude. printed name is "Dander, Dove". "[dander-detail]."
+Dander Dove is a room in Shying Sheez. printed name is "Dander, Dove". "[dander-detail]."
 
 dander-list is a list of text variable. dander-list is { "cold", "small", "fraudulent" }.
 
@@ -588,7 +588,7 @@ guess-table of Dander Dove is the table of Dander Dove guesses.
 
 book Rough Route
 
-Route Rough is a room in interlude. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+Route Rough is a room in Shying Sheez. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
 
 check going in route rough:
 	if route-rough-score >= 2:
@@ -748,7 +748,7 @@ this is the show-misses rule:
 
 volume mapping stuff
 
-section recruiting and intro
+section Plying Please/Flying Flees (intro and west)
 
 index map with Rut Row mapped west of Bass Bath.
 index map with Slid Slum mapped west of Rut Row.
@@ -759,7 +759,7 @@ index map with White Wave mapped south of Crude Crapper.
 index map with Hailing Hill mapped north of recroom.
 index map with Bruising Brew mapped northeast of Bass Bath.
 
-section north bit
+section Sighing Seas (north)
 
 index map with Bosh Blanks mapped north of Bass Bath.
 
@@ -767,20 +767,20 @@ index map with Cast Court mapped north of Bosh Blanks.
 index map with Fast Fort mapped east of Cast Court.
 index map with Passed Port mapped east of Fast Fort.
 
-section south bit
+section Trying Trees (south)
 
 index map with Treed Track mapped south of Bass Bath.
 index map with Too Tough Blue Bluff mapped south of Slum Slid.
 index map with Knell Nook mapped east of Treed Track.
 
-section east bit
+section Lying Leas (east)
 
 index map with tata mapped east of Bass Bath.
 index map with Lane Lax mapped east of tata.
 index map with Wowed Wise Crowd Cries mapped north of Lax Lane.
 index map with Thought Thief Fought Fief mapped south of Lax Lane.
 
-section breakups
+section Shying Sheez (interlude)
 
 index map with Route Rough mapped west of Cried Creek.
 index map with Dander Dove mapped north of Route Rough.

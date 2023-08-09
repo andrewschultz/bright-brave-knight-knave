@@ -29,7 +29,7 @@ Trying Trees is a region.
 
 Lying Leas is a region.
 
-Shying, Sheez is a region.
+Shying Sheez is a region.
 
 volume point scoring booleans
 

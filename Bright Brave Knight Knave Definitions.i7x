@@ -162,7 +162,7 @@ chapter score macros
 
 section hub score
 
-to decide what number is hub-intro-score:
+to decide what number is hub-expand-score:
 	decide on (boolval of sco-plucky-plot) + (boolval of sco-need-knack) + (boolval of sco-yall-yank);
 
 section thief score
@@ -282,7 +282,7 @@ to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
 	no;
 
 this is the stuck-right-now rule:
-	if mrlp is interlude, say "But you are in a sort of limbo area." instead;
+	if mrlp is Shying Sheez, say "But you are in a sort of limbo area." instead;
 	if sco-fight-fave is true, say "But you are at the final fight." instead;
 
 section mostly VVFF dependent stuff with Dean Duggan
