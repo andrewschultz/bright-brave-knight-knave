@@ -54,8 +54,6 @@ description of hold hole is "It appeared when you located the kite cave. [whats-
 
 check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
-bold-hole is a truth state that varies.
-
 to say whats-in-hold:
 	if hole-done is 0:
 		say "Nothing has fit in yet";

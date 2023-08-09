@@ -19,17 +19,17 @@ entry-in-series is 6.
 We can double-check what core-max + max-bonus should be by search/replacing sco-
 ]
 
-intro is a region.
+Flying Flees is a region.
 
-recruiting is a region.
+Plying Please is a region.
 
-northstuff is a region.
+Sighing Seas is a region.
 
-southstuff is a region.
+Trying Trees is a region.
 
-eaststuff is a region.
+Lying Leas is a region.
 
-interlude is a region.
+Shying, Sheez is a region.
 
 volume point scoring booleans
 
@@ -203,20 +203,20 @@ chapter unsorted globals
 
 volume game state variables
 
-took-yacht is a truth state that varies.
+took-yacht is a truth state that varies. [have you ever taken the yucky yacht?]
 
-bool-hill-available is a truth state that varies.
-bool-brew-available is a truth state that varies.
+bool-hill-available is a truth state that varies. [is Hailing Hill open yet?]
+bool-brew-available is a truth state that varies. [did you open Bruising Brew?]
 
-debug-allow-final is a truth state that varies.
+pre-hole-item-room is a room that varies. [for interludes, where do we go back to?]
 
-pre-hole-item-room is a room that varies.
+game-elm-seen is a truth state that varies. [have you seen the Ardor Elm yet?]
 
-game-elm-seen is a truth state that varies.
+bold-hole is a truth state that varies. [we put holeitem names in BOLD if examining the hole]
 
 chapter miscellaneous bonus variables (game state)
 
-guessed-bold-bowl is a truth state that varies.
+guessed-bold-bowl is a truth state that varies. [this and the others track getting the bonus point to start]
 guessed-cold-coal is a truth state that varies.
 guessed-sold-soul is a truth state that varies.
 
@@ -234,7 +234,9 @@ r-warn-yet is a truth state that varies. [allows us to use the R command]
 
 chapter debug variables
 
-pfft-friends is a truth state that varies.
+debug-allow-final is a truth state that varies. [lets you go to the final fight without going through hoops]
+
+pfft-friends is a truth state that varies. [lets you solve puzzles without friends]
 
 Bright Brave Knight Knave Globals ends here.
 
