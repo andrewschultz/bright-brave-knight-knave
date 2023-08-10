@@ -573,7 +573,7 @@ You feel as though you want to say something about the state of these environs, 
 >w
 
 @all
-#testcase-room-names-recruiter
+#testcase-room-names-spied-speak-cried-creek
 `Spied-Speak-Cried Creek
 
 @ha
@@ -653,6 +653,7 @@ by one point
 >n
 
 @all
+#testcase-room-names-bosh-blanks
 `Bosh, Blanks!
 
 @ha
@@ -676,6 +677,7 @@ by one point
 by one point
 
 @all
+#+testcase-room-names-bosh-blanks
 `Posh Planks
 
 >plucky plot
@@ -754,6 +756,10 @@ by one point
 >paul zpanks
 {$GREENBONUS}
 
+@all
+#testcase-room-names-tall-tanks
+`Tall Tank(s)
+
 >yall yank
 by one point
 
@@ -776,6 +782,10 @@ by one point
 >e
 
 >s
+
+@all
+#testcase-room-names-treed-track
+`Treed Track
 
 @ha
 #testcase-ha-half-table-of-verb-checks-34-knack
@@ -838,7 +848,9 @@ by one point
 
 >e
 
->n
+@all
+#testcase-room-names-lane-lax
+`Lane, Lax
 
 @ha
 #testcase-ha-half-table-of-verb-checks-50-tracks
@@ -868,6 +880,10 @@ by one point
 >train tracks
 by one point
 
+@all
+#+testcase-room-names-lane-lax
+`Train Tracks
+
 @ha
 #testcase-ha-half-table-of-verb-checks-51-main
 >main zmax
@@ -884,6 +900,10 @@ by one point
 by one point
 
 >n
+
+@all
+#testcase-room-names-wowed-wise-crowd-cries
+Wowed Wise Crowd Cries
 
 @ha
 #testcase-ha-half-table-of-verb-checks-55-lies
@@ -919,6 +939,10 @@ by one point
 
 >fast fort
 by one point
+
+@all
+#testcase-room-names-fast-fort
+`Fast Fort
 
 @ha
 #testcase-ha-half-table-of-verb-checks-27-glass
@@ -959,6 +983,10 @@ by one point
 
 >cast court
 by one point
+
+@all
+#testcase-room-names-cast-court
+`Cast Court
 
 @ha
 #testcase-ha-half-table-of-verb-checks-26-map
@@ -1045,6 +1073,11 @@ by one point
 
 >u
 
+@all
+#testcase-room-names-too-tough-blue-bluff
+`Too-Tough Blue Bluff
+#testcase-room-names-treed-track
+
 @ha
 #testcase-ha-half-table-of-verb-checks-38-grew
 >grew zgruff
@@ -1127,6 +1160,10 @@ by one point
 
 >s
 
+@all
+#testcase-room-names-thought-theif-fought-fief
+`Thought-Thief-Fought Fief
+
 @ha
 #testcase-ha-half-table-of-verb-checks-56-beef
 >zbought beef
@@ -1170,6 +1207,10 @@ by one point
 >wrought reef
 by one point
 
+@all
+#+testcase-room-names-thought-theif-fought-fief
+`Wrought Reef
+
 @ha
 #testcase-ha-half-table-of-verb-checks-59-dish
 >zdone dish
@@ -1210,6 +1251,10 @@ by one point
 #testcase-ha-half-table-of-verb-checks-66-un-in
 >zill un
 {$YELLOWCORE}
+
+@all
+#testcase-room-names-nil-none
+`Nil, None
 
 >fill fun
 by one point
@@ -1269,6 +1314,10 @@ by one point
 >s
 
 >w
+
+@all
+#testcase-room-names-smack-smite-black-blight
+`Lack-Light Black Blight
 
 @ha
 #testcase-ha-half-table-of-verb-checks-41-hack
@@ -1354,6 +1403,10 @@ by one point
 >passed port
 !by one point
 
+@all
+#testcase-room-names-passed-port
+`Passed Port
+
 @ha
 #testcase-ha-half-table-of-verb-checks-29-quash
 >quash zquick
@@ -1419,6 +1472,10 @@ by one point
 >zstander stove
 {$GREENCORE}
 
+@all
+#testcase-room-names-dander-dove
+`Dander, Dove
+
 >stander stove
 by one point
 
@@ -1438,6 +1495,10 @@ by one point
 >s
 
 >e
+
+@all
+#testcase-room-names-knell-nook
+`Knell Nook
 
 @ha
 #testcase-ha-half-table-of-verb-checks-46-bell
@@ -1491,6 +1552,10 @@ by one point
 >zstout stuff
 {$GREENCORE}
 
+@all
+#testcase-room-names-route-rough
+`Route, Rough
+
 >nowt nuff
 by one point
 
@@ -1532,6 +1597,10 @@ by one point
 >e
 
 >in
+
+@all
+#testcase-room-names-bruising-brew
+`Bruising Brew
 
 @ha
 #testcase-ha-half-table-of-verb-checks-60-boo
@@ -1591,6 +1660,10 @@ by one point
 >out
 
 >u
+
+@all
+#testcase-room-names-hailing-hill
+`Hailing Hill
 
 @ha
 #testcase-ha-half-table-of-verb-checks-73-ailing

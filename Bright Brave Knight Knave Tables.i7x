@@ -568,6 +568,7 @@ a goodrhyme rule (this is the vc-train-tracks rule):
 this is the vr-train-tracks rule:
 	now sco-train-tracks is true;
 	say "The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.";
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-main-max rule):
 	if player is not in lane lax, unavailable;
@@ -657,6 +658,7 @@ this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
 	say "You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.";
 	move wish fun fish to Fought Fief;
+	print-the-loc;
 
 a goodrhyme rule (this is the vc-done-dish rule):
 	if wish fun fish is not touchable, unavailable;

@@ -439,8 +439,6 @@ by one point
 
 >e
 
->n
-
 #testcase-ha-half-table-of-verb-checks-50-tracks
 >ztrain tracks
 The HA HALF button on your Leet Learner lights up green.

@@ -339,7 +339,7 @@ the seed sack is a thing.
 
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track."
+Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track.". printed name is "Too-Tough Blue Bluff".
 
 chapter stew stuff
 
@@ -553,7 +553,7 @@ volume distraction rooms
 
 book Nil None
 
-Nil None is a room in Shying Sheez.
+Nil None is a room in Shying Sheez. printed name is "Nil, None".
 
 check going in Nil None:
 	if sco-fill-fun is false, say "You have momentarily lost all sense of joy, or all hope to find it. Why bother to look?" instead;

@@ -101,7 +101,7 @@ by one point
 
 >w
 
-#testcase-room-names-recruiter
+#testcase-room-names-spied-speak-cried-creek
 `Spied-Speak-Cried Creek
 
 >stride streak
@@ -139,11 +139,13 @@ by one point
 >e
 >n
 
+#testcase-room-names-bosh-blanks
 `Bosh, Blanks!
 
 >posh planks
 by one point
 
+#+testcase-room-names-bosh-blanks
 `Posh Planks
 
 >plucky plot
@@ -158,6 +160,9 @@ by one point
 >s
 >e
 >e
+
+#testcase-room-names-tall-tanks
+`Tall Tank(s)
 
 >yall yank
 by one point
@@ -181,6 +186,9 @@ by one point
 
 >s
 
+#testcase-room-names-treed-track
+`Treed Track
+
 >need knack
 by one point
 
@@ -199,10 +207,14 @@ by one point
 
 >e
 
->n
+#testcase-room-names-lane-lax
+`Lane, Lax
 
 >train tracks
 by one point
+
+#+testcase-room-names-lane-lax
+`Train Tracks
 
 >main max
 by one point
@@ -211,6 +223,9 @@ by one point
 by one point
 
 >n
+
+#testcase-room-names-wowed-wise-crowd-cries
+Wowed Wise Crowd Cries
 
 >trowed tries
 by one point
@@ -229,11 +244,17 @@ by one point
 >fast fort
 by one point
 
+#testcase-room-names-fast-fort
+`Fast Fort
+
 >glued glass
 by one point
 
 >cast court
 by one point
+
+#testcase-room-names-cast-court
+`Cast Court
 
 >murky map
 by one point
@@ -268,6 +289,10 @@ by one point
 
 >u
 
+#testcase-room-names-too-tough-blue-bluff
+`Too-Tough Blue Bluff
+#testcase-room-names-treed-track
+
 >grew gruff
 by one point
 
@@ -290,6 +315,9 @@ by one point
 
 >s
 
+#testcase-room-names-thought-theif-fought-fief
+`Thought-Thief-Fought Fief
+
 >bought beef
 by one point
 
@@ -299,8 +327,14 @@ by one point
 >wrought reef
 by one point
 
+#+testcase-room-names-thought-theif-fought-fief
+`Wrought Reef
+
 >done dish
 by one point
+
+#testcase-room-names-nil-none
+`Nil, None
 
 >fill fun
 by one point
@@ -331,6 +365,9 @@ by one point
 
 >w
 
+#testcase-room-names-smack-smite-black-blight
+`Lack-Light Black Blight
+
 >hack height
 by one point
 
@@ -355,6 +392,9 @@ by one point
 >passed port
 !by one point
 
+#testcase-room-names-passed-port
+`Passed Port
+
 >quash quick
 by one point
 
@@ -363,6 +403,9 @@ by one point
 
 >time toad
 by one point
+
+#testcase-room-names-dander-dove
+`Dander, Dove
 
 >stander stove
 by one point
@@ -383,6 +426,9 @@ by one point
 
 >e
 
+#testcase-room-names-knell-nook
+`Knell Nook
+
 >bell book
 by one point
 
@@ -390,6 +436,9 @@ by one point
 by one point
 
 #testcase-route-rough-name
+`Route, Rough
+
+#testcase-room-names-route-rough
 `Route, Rough
 
 >nowt nuff
@@ -424,6 +473,9 @@ by one point
 
 >in
 
+#testcase-room-names-bruising-brew
+`Bruising Brew
+
 >using you
 by one point
 
@@ -439,6 +491,9 @@ by one point
 >out
 
 >u
+
+#testcase-room-names-hailing-hill
+`Hailing Hill
 
 >scaling skill
 by one point
