@@ -14,7 +14,7 @@ Taken.
 >au 2
 
 #testcase-table-of-noways-white-wave
->gt
+>e
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
 >kite cave
@@ -43,27 +43,38 @@ Yes. The sold soul must be one of the three entities that fit in the hold hole. 
 You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 
+#testcase-goto-table-of-noways-white-wave
+>e
+You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
+
+#+testcase-goto-table-of-noways-white-wave
+>w
+You can really only go DOWN through the kite cave hole.
+
 >d
 
-#testcase-table-of-noways-bass-bath
+#testcase-goto-table-of-noways-bass-bath
 >n
-The bass bath surrounds you. How can you find a way out?
+Every way but back down, and you'll fall into the bass bath.
 
 >pass path
 
-#+testcase-table-of-noways-bass-bath
+#+testcase-goto-table-of-noways-bass-bath
 >w
-Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
+You need to reason out which way to go. It's a bit confusing here.
 
-#+testcase-table-of-noways-bass-bath
->s
-WRONG
-You can go pretty much any way from here but not south.
+#+testcase-goto-table-of-noways-bass-bath
+>in
+You can go pretty much any way from here but not inside.
 
 >mass math
 by one point
 
 >w
+
+#testcase-goto-table-of-noways-rut-row
+>s
+Passage south is blocked, but the other three ways, you can try.
 
 >write rave
 by two point
@@ -76,7 +87,7 @@ by one point
 
 >w
 
-#testcase-table-of-noways-slum-slid
+#testcase-goto-table-of-noways-slum-slid
 >w
 Maybe you can go west, but for your safety, it is inadvisable.
 
@@ -91,6 +102,10 @@ by one point
 
 >in
 
+#testcase-goto-table-of-noways-crude-crapper
+>w
+There are no hidden passages. Only back out.
+
 >mood mapper
 by one point
 
@@ -101,7 +116,15 @@ by one point
 >e
 >n
 
+#testcase-goto-table-of-noways-recroom
+>n
+You only have access west and south to Slum, Slid.
+
 >w
+
+#testcase-goto-table-of-noways-cried-creek
+>w
+While the creek and greenery meander off, you might get lost. You can really only go back east.
 
 >stride streak
 by one point
@@ -116,6 +139,10 @@ by one point
 by one point
 
 >e
+
+#+testcase-goto-table-of-noways-recroom
+>n
+You only have access west and south to Slum, Slid.
 
 >meek mooter
 by one point
@@ -138,11 +165,23 @@ by one point
 >e
 >n
 
+#testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south.
+
 >posh planks
 by one point
 
+#+testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south.
+
 >plucky plot
 by one point
+
+#+testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south, or you can say where you want the yacht to take you.
 
 >s
 >w
@@ -154,8 +193,16 @@ by one point
 >e
 >e
 
+#testcase-goto-table-of-noways-tata
+>n
+You can only go back west or, once you've moved the tank(s), past them in whatever direction.
+
 >yall yank
 by one point
+
+#+testcase-goto-table-of-noways-tata
+>n
+You can only go back west or east.
 
 >paul panks
 by one point
@@ -194,8 +241,16 @@ by one point
 
 >e
 
+#testcase-goto-table-of-noways-lane-lax
+>n
+Back west is the only way. For now.
+
 >train tracks
 by one point
+
+#+testcase-goto-table-of-noways-lane-lax
+>e
+The train tracks head north and south, but you can go back west, too.
 
 >main max
 by one point
@@ -204,6 +259,10 @@ by one point
 by one point
 
 >n
+
+#testcase-goto-table-of-noways-wowed-wise-crowd-cries
+>n
+Only way out is south.
 
 >trowed tries
 by one point
@@ -222,17 +281,29 @@ by one point
 >fast fort
 by one point
 
+#testcase-goto-table-of-noways-fast-fort
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+
 >glued glass
 by one point
 
 >cast court
 by one point
 
+#testcase-goto-table-of-noways-cast-court
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+
 >murky map
 by one point
 
 >passed port
 by one point
+
+#testcase-goto-table-of-noways-passed-port
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
 
 >slashing sword
 by one point
@@ -261,6 +332,10 @@ by one point
 
 >u
 
+#testcase-goto-table-of-noways-too-tough-blue-bluff
+>n
+You don't want to get lost in the bluff. Best just go back east once you're done here.
+
 >grew gruff
 by one point
 
@@ -282,6 +357,10 @@ by one point
 by one point
 
 >s
+
+#testcase-goto-table-of-noways-thought-thief-fought-fief
+>e
+Only way back is north.
 
 >bought beef
 by one point
@@ -323,6 +402,10 @@ by one point
 >s
 
 >w
+
+#testcase-goto-table-of-noways-black-blight
+>w
+Beyond is too dangerous. Best just go back down when you're ready.
 
 >hack height
 by one point
@@ -376,6 +459,10 @@ by one point
 
 >e
 
+#testcase-goto-table-of-noways-knell-nook
+>n
+This is a secluded place with the only exit back west.
+
 >bell book
 by one point
 
@@ -418,6 +505,10 @@ by one point
 
 >in
 
+#testcase-goto-table-of-noways-bruising-brew
+>e
+This pub houses no crazy lattice of secret passages. You can only go back out.
+
 >using you
 by one point
 
@@ -433,6 +524,10 @@ by one point
 >out
 
 >u
+
+#testcase-goto-table-of-noways-hailing-hill
+>w
+You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way.
 
 >scaling skill
 by one point

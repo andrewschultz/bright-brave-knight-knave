@@ -486,7 +486,7 @@ WRONG
 
 #testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shooter
 >yall yank
-WRONG
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
 
 >w
 
@@ -539,6 +539,18 @@ It sounds artificial at first to pretend you saw something. Then you think, if I
 
 >w
 
+>kid come
+WRONG
+
+>rid rum
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-kid-come-rule
+#testcase-think-table-of-verb-checks-vc-rid-rum-rule
+>think
+You can say KID COME once a kid is around.
+You can say RID RUM once you have cause to speak out against alcohol.
+
 >hid hum
 by one point
 
@@ -549,6 +561,10 @@ WRONG
 >hid hum
 You already did initial searching!
 
+#+testcase-think-table-of-verb-checks-vc-kid-come-rule
+>think
+You can say KID COME now a kid is around.
+
 >kid come
 by one point
 
@@ -558,6 +574,10 @@ WRONG
 #testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
 >kid come
 You already called the kid over!
+
+#+testcase-think-table-of-verb-checks-vc-rid-rum-rule
+>think
+You can say RID RUM once you have cause to speak out against alcohol.
 
 >rid rum
 by one point
@@ -767,6 +787,24 @@ You already got a seed sack!
 
 >n
 
+>u
+>bailing bill
+WRONG
+>failing phil
+WRONG
+>wailing will
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#testcase-think-table-of-verb-checks-vc-wailing-will-rule
+>think
+You can contact Bailing Bill once you have something to offer him.
+You can contact Failing Phil once you have something to offer him.
+You can contact Wailing Will once you have something to offer him.
+
+>d
+
 >e
 
 >e
@@ -973,6 +1011,13 @@ WRONG
 >bought beef
 You already pretended to have bought beef, or a beef, or something!
 
+#testcase-check-vc-wrought-reef-rule-if-thief-score-<-2
+>wrought reef
+It's still too chaotic to do much!
+
+>think
+You can make a WROUGHT REEF once you've bluffed your way through the fief.
+
 >brought brief
 by one point
 
@@ -982,6 +1027,10 @@ WRONG
 #testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
 >brought brief
 You already pretended you brought huge plans!
+
+#testcase-think-table-of-verb-checks-vc-wrought-reef-rule
+>think
+You can make a WROUGHT REEF now you've bluffed your way through the fief.
 
 >wrought reef
 by one point
@@ -999,11 +1048,29 @@ by one point
 #testcase-run-vr-done-dish-rule-default
 WRONG
 
+#testcase-check-vc-will-won-rule-if-sco-fill-fun-is-false
+>will won
+Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.
+
+#testcase-check-vc-ill-un-in-rule-if-sco-fill-fun-is-false
+>illun
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-will-won-rule
+>think
+You can say ILLUN once you're a little less miserable.
+You can say WILL WON once you're a little less miserable.
+
 >fill fun
 by one point
 
 #testcase-run-vr-fill-fun-rule-default
 WRONG
+
+#+testcase-think-table-of-verb-checks-vc-will-won-rule
+>think
+You can say ILLUN now you're a little less miserable.
+You can say WILL WON now you're a little less miserable.
 
 #testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
 >fill fun
@@ -1344,6 +1411,14 @@ WRONG
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
 >mailing mill
 The mailing mill is already on Hailing Hill!
+
+#+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#+testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#+testcase-think-table-of-verb-checks-vc-wailing-will-rule
+>think
+You can contact Bailing Bill now you have something to offer him.
+You can contact Failing Phil now you have something to offer him.
+You can contact Wailing Will now you have something to offer him.
 
 >failing phil
 by one point

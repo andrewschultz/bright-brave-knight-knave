@@ -525,7 +525,7 @@ You don't have to change yourself, here.
 
 @gt
 #testcase-table-of-noways-white-wave
->gt
+>e
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
 >kite cave
@@ -639,6 +639,15 @@ You decided to WRITE/RIGHT RAVE too soon.
 >undo
 >undo
 
+@gt
+#testcase-goto-table-of-noways-white-wave
+>e
+You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
+\\
+#+testcase-goto-table-of-noways-white-wave
+>w
+You can really only go DOWN through the kite cave hole.
+
 >d
 
 @all
@@ -657,9 +666,9 @@ by one point
 WRONG
 
 @gt
-#testcase-table-of-noways-bass-bath
+#testcase-goto-table-of-noways-bass-bath
 >n
-The bass bath surrounds you. How can you find a way out?
+Every way but back down, and you'll fall into the bass bath.
 
 @mis
 #testcase-mistakes-table-of-bass-bath-guesses-has-hath
@@ -681,6 +690,10 @@ You mentally evaluate the respective merits of Sylvia Plath's poetry and her nov
 #testcase-mistakes-table-of-bass-bath-guesses-race-wrath
 >race wrath
 You get as mad as you can, as fast as you can. You also wonder if you are pronouncing things right.
+\\
+#testcase-mistakes-table-of-general-good-guesses-shite-shave
+>shite shave
+This isn't the time or place to kvetch about personal grooming.
 \\
 #testcase-mistakes-table-of-general-good-guesses-slight-slave
 >slight slave
@@ -739,14 +752,13 @@ You can use MASS MATH now you have something to calculate.
 You already found a pass-path through the bass bath!
 
 @gt
-#+testcase-table-of-noways-bass-bath
+#+testcase-goto-table-of-noways-bass-bath
 >w
-Right now there are almost too many paths from the bass bath. It's tough to wrap your head around all the possibilities.
+You need to reason out which way to go. It's a bit confusing here.
 \\
-#+testcase-table-of-noways-bass-bath
->s
-WRONG
-You can go pretty much any way from here but not south.
+#+testcase-goto-table-of-noways-bass-bath
+>in
+You can go pretty much any way from here but not inside.
 
 >mass math
 by one point
@@ -761,7 +773,7 @@ WRONG
 \\
 #testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shooter
 >yall yank
-WRONG
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
 \\
 >w
 \\
@@ -795,6 +807,11 @@ You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 @all
 #testcase-room-names-rut-row
 `Rut Row
+
+@gt
+#testcase-goto-table-of-noways-rut-row
+>s
+Passage south is blocked, but the other three ways, you can try.
 
 @!min
 >write rave
@@ -849,8 +866,21 @@ It sounds artificial at first to pretend you saw something. Then you think, if I
 #testcase-room-names-slum-slid
 `Slid Slum
 
+@rej
+>kid come
+WRONG
+\\
+>rid rum
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-kid-come-rule
+#testcase-think-table-of-verb-checks-vc-rid-rum-rule
+>think
+You can say KID COME once a kid is around.
+You can say RID RUM once you have cause to speak out against alcohol.
+
 @gt
-#testcase-table-of-noways-slum-slid
+#testcase-goto-table-of-noways-slum-slid
 >w
 Maybe you can go west, but for your safety, it is inadvisable.
 
@@ -918,6 +948,11 @@ Forgiveness is more the thing here.
 >did dumb
 You don't want to reflect on the past.
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-kid-come-rule
+>think
+You can say KID COME now a kid is around.
+
 >kid come
 by one point
 
@@ -940,6 +975,11 @@ That is not the life the coughin' coy boffin boy deserves, and it's not the end 
 >soften soy
 Perhaps the coughin' coy boffin boy will be able to get the education for such a bioengineering job, if you turn things around.
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-rid-rum-rule
+>think
+You can say RID RUM once you have cause to speak out against alcohol.
+
 >rid rum
 by one point
 
@@ -958,6 +998,11 @@ You already got rid of the rum!
 @all
 #testcase-room-names-crude-crapper
 `Crude Crapper
+
+@gt
+#testcase-goto-table-of-noways-crude-crapper
+>w
+There are no hidden passages. Only back out.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-12-mapper-tapper
@@ -1065,6 +1110,11 @@ You don't want to be too much of a moral scold!
 #testcase-room-names-recruiter
 `Recruiter
 
+@gt
+#testcase-goto-table-of-noways-recroom
+>n
+You only have access west and south to Slum, Slid.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-14-meek
 >meek zmooter
@@ -1095,6 +1145,11 @@ You don't want to be too much of a moral scold!
 @all
 #testcase-room-names-spied-speak-cried-creek
 `Spied-Speak-Cried Creek
+
+@gt
+#testcase-goto-table-of-noways-cried-creek
+>w
+While the creek and greenery meander off, you might get lost. You can really only go back east.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-17-freak
@@ -1168,6 +1223,11 @@ WRONG
 
 >e
 
+@gt
+#+testcase-goto-table-of-noways-recroom
+>n
+You only have access west and south to Slum, Slid.
+
 >meek mooter
 by one point
 
@@ -1233,6 +1293,11 @@ by one point
 >plucky zplot
 {$GREENCORE}
 
+@gt
+#testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south.
+
 >posh planks
 by one point
 
@@ -1251,6 +1316,11 @@ Oh, no, let's not make things TOO posh, here!
 #+testcase-room-names-bosh-blanks
 `Posh Planks
 
+@gt
+#+testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south.
+
 >plucky plot
 by one point
 
@@ -1258,6 +1328,11 @@ by one point
 {--all}#testcase-check-vc-plucky-plot-rule-fallthrough
 {--rej}#testcase-run-vr-plucky-plot-rule-default
 WRONG
+
+@gt
+#+testcase-goto-table-of-noways-bosh-blanks
+>n
+You can go back south, or you can say where you want the yacht to take you.
 
 @rej
 #testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
@@ -1341,6 +1416,11 @@ by one point
 #testcase-room-names-tall-tanks
 `Tall Tank(s)
 
+@gt
+#testcase-goto-table-of-noways-tata
+>n
+You can only go back west or, once you've moved the tank(s), past them in whatever direction.
+
 >yall yank
 by one point
 
@@ -1353,6 +1433,11 @@ WRONG
 #testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
 >yall yank
 You've already pulled out the tall tank(s).
+
+@gt
+#+testcase-goto-table-of-noways-tata
+>n
+You can only go back west or east.
 
 @!min
 >paul panks
@@ -1485,6 +1570,25 @@ You already got a seed sack!
 
 >n
 
+@rej
+>u
+>bailing bill
+WRONG
+>failing phil
+WRONG
+>wailing will
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#testcase-think-table-of-verb-checks-vc-wailing-will-rule
+>think
+You can contact Bailing Bill once you have something to offer him.
+You can contact Failing Phil once you have something to offer him.
+You can contact Wailing Will once you have something to offer him.
+\\
+>d
+
 >e
 
 >e
@@ -1518,6 +1622,11 @@ You already got a seed sack!
 >pain zpacks
 {$GREENCORE}
 
+@gt
+#testcase-goto-table-of-noways-lane-lax
+>n
+Back west is the only way. For now.
+
 >train tracks
 by one point
 
@@ -1543,6 +1652,11 @@ You already created train tracks, though they could become sturdier and farther-
 #+testcase-ha-half-table-of-verb-checks-52-max
 >zmain max
 {$GREENCORE}
+
+@gt
+#+testcase-goto-table-of-noways-lane-lax
+>e
+The train tracks head north and south, but you can go back west, too.
 
 >main max
 by one point
@@ -1579,6 +1693,11 @@ You already got some pain packs!
 @all
 #testcase-room-names-wowed-wise-crowd-cries
 Wowed Wise Crowd Cries
+
+@gt
+#testcase-goto-table-of-noways-wowed-wise-crowd-cries
+>n
+Only way out is south.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-55-tries
@@ -1656,6 +1775,11 @@ WRONG
 #testcase-room-names-fast-fort
 `Fast Fort
 
+@gt
+#testcase-goto-table-of-noways-fast-fort
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-28-glass
 >zglued glass
@@ -1701,6 +1825,11 @@ WRONG
 >cast court
 by one point
 
+@gt
+#testcase-goto-table-of-noways-cast-court
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+
 @all,rej
 {--all}#testcase-check-vc-cast-court-rule-fallthrough
 {--rej}#testcase-run-vr-cast-court-rule-default
@@ -1734,6 +1863,11 @@ by one point
 {--all}#testcase-check-vc-passed-port-rule-fallthrough
 {--rej}#testcase-run-vr-passed-port-rule-default
 WRONG
+
+@gt
+#testcase-goto-table-of-noways-passed-port
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-29-salad
@@ -1833,6 +1967,11 @@ You already looked down Rhyme Road!
 @all
 #testcase-room-names-too-tough-blue-bluff
 `Too-Tough Blue Bluff
+
+@gt
+#testcase-goto-table-of-noways-too-tough-blue-bluff
+>n
+You don't want to get lost in the bluff. Best just go back east once you're done here.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-39-grew
@@ -1960,6 +2099,11 @@ But you already got people to trod on the trash!
 #testcase-room-names-thought-theif-fought-fief
 `Thought-Thief-Fought Fief
 
+@gt
+#testcase-goto-table-of-noways-thought-thief-fought-fief
+>e
+Only way back is north.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-57-beef
 >zbought beef
@@ -1997,6 +2141,13 @@ WRONG
 #testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
 >bought beef
 You already pretended to have bought beef, or a beef, or something!
+\\
+#testcase-check-vc-wrought-reef-rule-if-thief-score-<-2
+>wrought reef
+It's still too chaotic to do much!
+\\
+>think
+You can make a WROUGHT REEF once you've bluffed your way through the fief.
 
 >brought brief
 by one point
@@ -2019,6 +2170,11 @@ You already pretended you brought huge plans!
 #+testcase-ha-half-table-of-verb-checks-59-wrought
 >wrought zreef
 {$GREENCORE}
+
+@rej
+#testcase-think-table-of-verb-checks-vc-wrought-reef-rule
+>think
+You can make a WROUGHT REEF now you've bluffed your way through the fief.
 
 >wrought reef
 by one point
@@ -2087,6 +2243,68 @@ WRONG
 #testcase-room-names-nil-none
 `Nil, None
 
+@mis
+#testcase-mistakes-table-of-nil-none-guesses-bill-bun
+>bill bun
+You can pay for food once you're here.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-dill-done
+>dill done
+This isn't a cooking sim.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-gill-gun
+>gill gun
+You don't need a fancy weapon.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-hill-hun-hon
+>hill hun
+You don't need to be attacked, or take saccharine praise, from above.
+>hill hon
+You don't need to be attacked, or take saccharine praise, from above.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-pill-pun
+>pill pun
+Drug humor won't help here.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-shill-shun
+>shill shun
+Alas, there is nobody to reject and feel better about yourself.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-sill-sun
+>sill sun
+No light-giving window appears.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-spill-spun
+>spill spun
+Alas, no solution to your woes is created, nor does it tumble out.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-still-stun
+>still stun
+You do feel a bit stunned. And you will still feel a bit stunned even after you half make your way out of this fog.
+WRONG
+\\
+#testcase-mistakes-table-of-nil-none-guesses-till-til-ton
+>till ton
+Things are weighty enough here.
+\\
+#testcase-mistakes-table-of-nil-none-guesses-till-til-ton
+>til ton
+Things are weighty enough here.
+
+@rej
+#testcase-check-vc-will-won-rule-if-sco-fill-fun-is-false
+>will won
+Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.
+\\
+#testcase-check-vc-ill-un-in-rule-if-sco-fill-fun-is-false
+>illun
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-will-won-rule
+>think
+You can say ILLUN once you're a little less miserable.
+You can say WILL WON once you're a little less miserable.
+
 >fill fun
 by one point
 
@@ -2096,6 +2314,11 @@ by one point
 WRONG
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-will-won-rule
+>think
+You can say ILLUN now you're a little less miserable.
+You can say WILL WON now you're a little less miserable.
+\\
 #testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
 >fill fun
 You already filled yourself up with fun!
@@ -2179,6 +2402,11 @@ You already identified illun'!
 @all
 #testcase-room-names-lack-light-black-blight
 `Lack-Light Black Blight
+
+@gt
+#testcase-goto-table-of-noways-black-blight
+>w
+Beyond is too dangerous. Best just go back down when you're ready.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-42-hack
@@ -2408,6 +2636,11 @@ The time toad's gift of cold coal should be enough.
 #testcase-room-names-dander-dove
 `Dander, Dove
 
+@mis
+#testcase-mistakes-table-of-dander-dove-guesses-strander-strove
+>strander strove
+This would seem to be despairing. You can't already admit you tried but failed.
+
 >stander stove
 by one point
 
@@ -2463,6 +2696,11 @@ WRONG fix msg
 @all
 #testcase-room-names-knell-nook
 `Knell Nook
+
+@gt
+#testcase-goto-table-of-noways-knell-nook
+>n
+This is a secluded place with the only exit back west.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-47-bell
@@ -2636,6 +2874,11 @@ Well, you know not to repeat yourself once you've fished in interesting waters--
 #testcase-room-names-bruising-brew
 `Bruising Brew
 
+@gt
+#testcase-goto-table-of-noways-bruising-brew
+>e
+This pub houses no crazy lattice of secret passages. You can only go back out.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-61-boo
 >boozing boo
@@ -2748,6 +2991,11 @@ WRONG
 #testcase-room-names-hailing-hill
 `Hailing Hill
 
+@gt
+#testcase-goto-table-of-noways-hailing-hill
+>w
+You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-74-ailing
 >ailing zill
@@ -2835,6 +3083,14 @@ WRONG
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
 >mailing mill
 The mailing mill is already on Hailing Hill!
+\\
+#+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#+testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#+testcase-think-table-of-verb-checks-vc-wailing-will-rule
+>think
+You can contact Bailing Bill now you have something to offer him.
+You can contact Failing Phil now you have something to offer him.
+You can contact Wailing Will now you have something to offer him.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-77-bailing
