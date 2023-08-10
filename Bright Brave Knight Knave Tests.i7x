@@ -58,13 +58,13 @@ test h7 with "s/e/n/posh planks/plucky plot/s/w/n/bye/r 2/s/e/e/yall yank". [no 
 
 test h8 with "w/w/n/bye/r 1/s/e/s/need knack". [no plead plaque, S bonus point]
 
-test h9 with "heed hack/seed sack/n/e/e/n/train tracks/main max/pain packs/n/trowed tries/loud lies/s/w/w/n/fast fort/glued glass/cast court/murky map/passed port/slashing sword/salad scent". [no rhyme road, N bonus point]
+test h9 with "heed hack/seed sack/n/e/e/train tracks/main max/pain packs/n/trowed tries/loud lies/s/w/w/n/fast fort/glued glass/cast court/murky map/passed port/slashing sword/salad scent". [no rhyme road, N bonus point]
 
-test h10 with "in/s/w/n/r 3/s/e/s/u/grew gruff/stew stuff/new nuff/d/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish". [got bold bowl]
+test h10 with "in/s/w/n/bye/r 3/s/e/s/w/grew gruff/stew stuff/new nuff/e/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish". [got bold bowl]
 
-test h11 with "n/w/w/n/r 2/s/e/s/w/hack height/slack slight/quack quite/power plate". [no flak flight, S one-of bonus point]
+test h11 with "n/w/w/n/r 2/s/e/s/u/hack height/slack slight/quack quite/power plate". [no flak flight, S one-of bonus point]
 
-test h12 with "e/n/n/passed port/quash quick/slosh slick/time toad". [got cold coal]
+test h12 with "d/n/n/passed port/quash quick/slosh slick/time toad". [got cold coal]
 
 test h13 with "in/s/s/e/bell book/covering candle".
 
