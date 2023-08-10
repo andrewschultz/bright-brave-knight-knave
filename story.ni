@@ -286,7 +286,7 @@ check entering yucky yacht:
 
 chapter sassed sort
 
-the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to go next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks]."
+the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if]."
 
 book Cast Court
 
@@ -463,8 +463,8 @@ check taking inventory when player has lack list:
 	now power plate is unmarked for listing;
 	now all holeitems are unmarked for listing;
 	list the contents of the player, with newlines, indented, with extra indentation, listing marked items only;
-	if nch is 0:
-		say "You don't have any items that fit in the hold hole.";
+	if nch is 0 and hole-done < 3:
+		say "You don't have any [if hole-done > 0]additional [end if]items that fit in the hold hole.";
 	else:
 		say "So far, you've found [the list of carried holeitems] to fit in the hold hole[note-bless].";
 	if nci > 1, say "[line break]";

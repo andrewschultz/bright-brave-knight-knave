@@ -21,7 +21,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
 "jack"	"gist"	--	--	false	true	false	false	--	vc-jack-gist rule	vr-jack-gist rule	--	--
 "eyeing|eying"	"ease"	--	--	false	true	false	false	--	vc-eyeing-eying-ease rule	vr-eyeing-eying-ease rule	--	--
-"fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you have enough worth and confidence in you."
+"fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you are physically and emotionally prepared."
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
@@ -33,25 +33,25 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
 "chic"	"shooter"	--	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
 "weak"	"wooter"	--	--	false	true	true	false	recroom	vc-weak-wooter rule	vr-weak-wooter rule	--	--
+"stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	-- [this comes first for Jerking Jump purposes]
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
 "guide"	"geek"	--	--	false	true	true	false	cried creek	vc-guide-geek rule	vr-guide-geek rule	--	--
-"stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	--
 "harder"	"helm"	--	--	false	true	true	false	cried creek	vc-harder-helm rule	vr-harder-helm rule	--	--
-"posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
-"plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	--
-"cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
-"fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
-"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have decent directions to get there."
 "murky"	"map"	--	--	false	true	true	false	cast court	vc-murky-map rule	vr-murky-map rule	--	--
 "glued"	"glass"	--	--	false	true	true	false	fast fort	vc-glued-glass rule	vr-glued-glass rule	--	--
+"posh"	"planks"	--	--	false	true	true	false	bosh blanks	vc-posh-planks rule	vr-posh-planks rule	--	--
+"plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	"You can hatch a [b]PLUCKY PLOT[r] [once-now of vc-plucky-plot rule] you have the right co-conspirators."
+"cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
+"fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
+"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have readable directions to get there."
 "salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friend is helping you."
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
 "time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
 "rhyme"	"road"	--	--	false	true	false	false	passed port	vc-rhyme-road rule	vr-rhyme-road rule	--	--
-"need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	--
+"need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	"You can say you [b]NEED KNACK[r] [once-now of vc-need-knack rule] you have the right help by the Treed Track."
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
 "plead"	"plaque"	--	--	false	true	false	false	treed track	vc-plead-plaque rule	vr-plead-plaque rule	--	--
@@ -60,8 +60,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	"You can say [b]NEW NUFF[r] [once-now of vc-new-nuff rule] you have something of questionable age."
 "hack"	"height"	--	--	false	true	true	false	lack light black blight	vc-hack-height rule	vr-hack-height rule	--	--
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
-"flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
+"flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "power"	"plate"	--	--	false	true	true	false	--	vc-power-plate rule	vr-power-plate rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	"You can say [b]BELL BOOK[r] [once-now of vc-bell-book rule] you have two other things to prepare the summoning ceremony."
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	"You can say [b]COVERING CANDLE[r] [once-now of vc-covering-candle rule] you have what you need for the summoning ceremony."
@@ -88,10 +88,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "candor|candour"	"cove"	--	--	false	true	true	false	dander dove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "stander"	"stove"	--	--	false	true	true	false	dander dove	vc-stander-stove rule	vr-stander-stove rule	--	--
 "flout"	"fluff"	--	--	false	true	true	false	route rough	vc-flout-fluff rule	vr-flout-fluff rule	--	--
-"nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
 "stout"	"stuff"	--	--	false	true	true	false	route rough	vc-stout-stuff rule	vr-stout-stuff rule	--	--
-"ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
+"nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
 "scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
+"ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
 "mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [if hill-score < 2]once[else]now[end if] you are at the top of Hailing Hill[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
 "bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him."
 "failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him."
@@ -437,7 +437,7 @@ this is the vr-fast-fort rule:
 a goodrhyme rule (this is the vc-passed-port rule):
 	abide by the don't loop yacht around rule for Passed Port;
 	if port-score is 0:
-		vcp "'Sorry,' the Sassed Sort shrugs. 'I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there.";
+		vcp "'Sorry,' the Sassed Sort shrugs. 'I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there.'";
 		not-yet;
 	if port-score is 1:
 		vcp "The Sassed Sort looks at the [if player has murky map]murky map. 'Sorry, I can't quite read that yet[else]glued glass. 'It might help me if I had instructions that were hard to read. But we don't, yet[end if].'";
@@ -447,7 +447,7 @@ a goodrhyme rule (this is the vc-passed-port rule):
 this is the vr-passed-port rule:
 	now sco-passed-port is true;
 	if passed port is unvisited:
-		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, I remember now how to get there. That's a safe route I hadn't considered. Fast, too. Mind if I keep the map and glass?'[paragraph break]Well, you could use the free inventory space. The trip doesn't take long.";
+		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, wow, it's been a while. But wait ... that's a safe route I hadn't considered. It'll save some time. Mind if I keep the map and glass in case I forget it?'[paragraph break]Well, you could use the free inventory space. The trip, indeed, doesn't take long.";
 		moot glued glass;
 		moot murky map;
 	yacht-go passed port;
@@ -1214,18 +1214,6 @@ this is the vr-flout-fluff rule:
 	say "You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.";
 	rough-check;
 
-a goodrhyme rule (this is the vc-nowt-nuff rule):
-	if player is not in route rough, unavailable;
-	if sco-nowt-nuff is true:
-		vcal "You already nullified certain worries and complaints!";
-		already-done;
-	ready;
-
-this is the vr-nowt-nuff rule:
-	now sco-nowt-nuff is true;
-	say "You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.";
-	rough-check;
-
 a goodrhyme rule (this is the vc-stout-stuff rule):
 	if player is not in route rough, unavailable;
 	if sco-stout-stuff is true:
@@ -1236,6 +1224,18 @@ a goodrhyme rule (this is the vc-stout-stuff rule):
 this is the vr-stout-stuff rule:
 	now sco-stout-stuff is true;
 	say "Yup. You feel stouter now.";
+	rough-check;
+
+a goodrhyme rule (this is the vc-nowt-nuff rule):
+	if player is not in route rough, unavailable;
+	if sco-nowt-nuff is true:
+		vcal "You already nullified certain worries and complaints!";
+		already-done;
+	ready;
+
+this is the vr-nowt-nuff rule:
+	now sco-nowt-nuff is true;
+	say "You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.";
 	rough-check;
 
 to rough-check:
@@ -1504,7 +1504,7 @@ volume table of noways
 table of noways
 noway-rm	noway-txt
 White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]You can really only go [b]DOWN[r] through the kite cave hole[end if]."
-Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to figure out which way to go. It's a bit confusing here[else]You can go the main directions but not [noun][end if]."
+Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to reason out which way to go. It's a bit confusing here[else]You can go pretty much any way from here but not [noun][end if]."
 Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
 Bruising Brew	"This pub houses no crazy lattice of secret passages. You can only go back out."
@@ -1518,7 +1518,7 @@ Fast Fort	"[astort]."
 Passed Port	"[astort]."
 Treed Track	"[if sco-need-knack is false]Without any direction, the only way is back north[else if sco-heed-hack is false]You can only go north or up. But maybe with some thought you can find other passages[else]North, west, east and up are all paths out of here, but [noun] isn't[end if]."
 Too Tough Blue Bluff	"You don't want to get lost in the bluff. Best just go back down once you're done here."
-Black Blight	"Beyond is too dangerous. Best just go back east when you're ready."
+Black Blight	"Beyond is too dangerous. Best just go back down when you're ready."
 Knell Nook	"This is a secluded place with the only exit back west."
 tata	"You can only go back west or[if sco-yall-yank is true] east[else], once you've moved the tank(s), past them in whatever direction[end if]."
 Lane Lax	"[if sco-train-tracks is false]Back west is the only way. For now[else]The train tracks head north and south, but you can go back west, too[end if]."
