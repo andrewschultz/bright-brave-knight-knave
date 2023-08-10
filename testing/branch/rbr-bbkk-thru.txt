@@ -212,6 +212,7 @@ You don't have to change yourself, here.
 >fright fully
 {$REJECT}
 \\
+#testcase-check-vc-fusing-phew-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-fusing-phew-rule
 >fusing phew
 {$REJECT}
@@ -416,6 +417,7 @@ You don't have to change yourself, here.
 >trowed tries
 {$REJECT}
 \\
+#testcase-check-vc-using-you-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-using-you-rule
 >using you
 {$REJECT}
@@ -428,18 +430,22 @@ You don't have to change yourself, here.
 >weak wooter
 {$REJECT}
 \\
+#testcase-check-vc-what-whoah-rule-if-player-is-not-in-rut-row
 #testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
 {$REJECT}
 \\
+#testcase-check-vc-will-won-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-will-won-rule
 >will won
 {$REJECT}
 \\
+#testcase-check-vc-wrought-reef-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-wrought-reef-rule
 >wrought reef
 {$REJECT}
 \\
+#testcase-check-vc-yall-yank-rule-if-player-is-not-in-tata
 #testcase-reject-start-table-of-verb-checks-vc-yall-yank-rule
 >yall yank
 {$REJECT}
@@ -453,9 +459,23 @@ You're kind of confused about directions, here. You maybe need to find some way 
 >kite cave
 by one point
 
+@rej
+#testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
+>kite cave
+You already discovered the kite cave to find a path beyond!
+
 >x hold hole
 
 >x list
+
+@!min
+>jack gist
+WRONG
+
+@rej
+#testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
+>jack gist
+You already streamlined things with the list!
 
 @mis
 #testcase-mistakes-table-of-hold-hole-guesses-gold-goal
@@ -605,6 +625,10 @@ NOTE: this command will be useful later, but you aren't ready to use it, yet. Yo
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
+\\
+#testcase-check-vc-mass-math-rule-if-sco-mass-math-is-true
+>mass math
+You already calculated! Overcalculate, and you might miss or reject the obvious.
 
 >pass path
 
@@ -617,6 +641,10 @@ You can use MASS MATH once you have something to calculate.
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH now you have something to calculate.
+\\
+#testcase-check-vc-pass-path-rule-if-sco-pass-path-is-true
+>pass path
+You already found a pass-path through the bass bath!
 
 @gt
 #+testcase-table-of-noways-bass-bath
@@ -631,6 +659,40 @@ You can go pretty much any way from here but not south.
 >mass math
 by one point
 
+@rej
+>e
+\\
+#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shootxer
+>yall yank
+WRONG
+\\
+>w
+\\
+>n
+\\
+>posh planks
+by one point
+\\
+>plucky plot
+WRONG
+\\
+>s
+\\
+>s
+\\
+>need knack
+WRONG
+\\
+>n
+\\
+#testcase-think-table-of-verb-checks-vc-need-knack-rule
+#testcase-think-table-of-verb-checks-vc-yall-yank-rule
+#testcase-think-table-of-verb-checks-vc-plucky-plot-rule
+>think
+You can say you NEED KNACK once you have the right help by the Treed Track.
+You can say YALL YANK once you have the right cohorts.
+You can hatch a PLUCKY PLOT once you have the right co-conspirators.
+
 >w
 
 @all
@@ -640,6 +702,11 @@ by one point
 @!min
 >write rave
 by two point
+
+@rej
+#testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
+>write rave
+You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you, at least. No offense.!
 
 @gt
 >w
@@ -663,6 +730,11 @@ by one point
 
 >what whoah
 by one point
+
+@rej
+#testcase-check-vc-what-whoah-rule-if-sco-what-whoah-is-true
+>what whoah
+You already had a revelation that will push you out of your rut and see a new passage through.
 
 @all
 #testcase-run-vr-what-whoah-rule-default
@@ -696,11 +768,11 @@ Maybe you can go west, but for your safety, it is inadvisable.
 >kid zcome
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-12-rid
+#testcase-ha-half-table-of-verb-checks-11-rid
 >rid zrum
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-12-rum
+#testcase-ha-half-table-of-verb-checks-11-rum
 >zrid rum
 {$YELLOWCORE}
 
@@ -724,6 +796,11 @@ No. A good brave bright knight knave don't look down on people like that.
 >hid hum
 by one point
 
+@rej
+#testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
+>hid hum
+You already did initial searching!
+
 @mis
 #+testcase-mistakes-table-of-slid-slum-guesses-chid-chum
 >chid chum
@@ -736,6 +813,11 @@ You don't want to reflect on the past.
 >kid come
 by one point
 
+@rej
+#testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
+>kid come
+You already called the kid over!
+
 @mis
 #testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-offin-oi
 >offin oi
@@ -747,6 +829,11 @@ Perhaps the coughin' coy boffin boy will be able to get the education for such a
 
 >rid rum
 by one point
+
+@rej
+#testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
+>rid rum
+You already got rid of the rum!
 
 >in
 
@@ -838,6 +925,15 @@ You will need no henchmen to carry out violent dirty work. Friends? Yes. Henchme
 >youd yap er
 You feel as though you want to say something about the state of these environs, but what good would it do?
 
+@!min
+>nude napper
+by one point
+
+@rej
+#testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
+>nude napper
+You don't want to be too much of a moral scold!
+
 >out
 >e
 >n
@@ -913,6 +1009,11 @@ You feel as though you want to say something about the state of these environs, 
 >stride streak
 by one point
 
+@rej
+#testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
+>stride streak
+You already encouraged more action and less moping here!
+
 >guide geek
 by one point
 
@@ -977,12 +1078,23 @@ by one point
 >posh planks
 by one point
 
+@rej
+#testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
+>posh planks
+Oh, no, let's not make things TOO posh, here!
+!by one point
+
 @all
 #+testcase-room-names-bosh-blanks
 `Posh Planks
 
 >plucky plot
 by one point
+
+@rej
+#testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
+>plucky plot
+But you already hatched a plucky plot to clean the yucky yacht!
 
 @ha
 ##balance undos
@@ -1064,9 +1176,19 @@ by one point
 >yall yank
 by one point
 
+@rej
+#testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
+>yall yank
+You've already pulled out the tall tank(s).
+
 @!min
 >paul panks
 by one point
+
+@rej
+#testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
+>paul panks
+You already paid your respects.
 
 >w
 
@@ -1124,24 +1246,44 @@ by one point
 >need knack
 by one point
 
+@rej
+#testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
+>need knack
+You already got the knack for looking around! You won't forget it.
+
 @!min
 >plead plaque
 by one point
 
+@rej
+#testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
+>plead plaque
+You look over the plead plaque again. Man, even more fun adventures once you're done with Bright Brave Knight Knave! You totally can't wait to hit up other-ones, of you haven't already.
+
 @ha
-#testcase-ha-half-table-of-verb-checks-36-hack
+#+testcase-ha-half-table-of-verb-checks-36-hack
 >zheed hack
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-36-heed
+#+testcase-ha-half-table-of-verb-checks-36-heed
 >heed zhack
 {$GREENCORE}
 
 >heed hack
 by one point
 
+@rej
+#testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
+>heed hack
+You look for other ways to hack through the Treed Track, but three all told is pretty good.
+
 >seed sack
 by one point
+
+@rej
+#testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
+>seed sack
+You already got a seed sack!
 
 >n
 
@@ -1185,20 +1327,39 @@ by one point
 #+testcase-room-names-lane-lax
 `Train Tracks
 
+@rej
+#testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
+>train tracks
+You already created train tracks, though they could become sturdier and farther-reaching.
+
 @ha
-#testcase-ha-half-table-of-verb-checks-52-main
+#+testcase-ha-half-table-of-verb-checks-52-main
 >main zmax
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-52-max
+#+testcase-ha-half-table-of-verb-checks-52-max
 >zmain max
 {$GREENCORE}
 
 >main max
 by one point
 
+@rej
+#testcase-check-vc-main-max-rule-if-sco-main-max-is-true
+>main max
+You already upgraded the train tracks!
+\\
+#+testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
+>train tracks
+You already created train tracks.
+
 >pain packs
 by one point
+
+@rej
+#testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
+>pain packs
+You already got some pain packs!
 
 >n
 
@@ -1218,17 +1379,31 @@ Wowed Wise Crowd Cries
 >trowed tries
 by one point
 
+@rej
+#testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
+>trowed tries
+Enough trying. You need to take action!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-56-lies
+#+testcase-ha-half-table-of-verb-checks-56-lies
 >zloud lies
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-56-loud
+#+testcase-ha-half-table-of-verb-checks-56-loud
 >loud zlies
 {$GREENCORE}
 
 >loud lies
 by one point
+
+@rej
+#+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
+>trowed tries
+No need to re-try.
+\\
+#testcase-check-vc-loud-lies-rule-if-sco-loud-lies-is-true
+>loud lies
+You already declaimed the loud lies.
 
 >s
 
@@ -1305,11 +1480,11 @@ by one point
 by one point
 
 @ha
-#testcase-ha-half-table-of-verb-checks-29-salad
+#+testcase-ha-half-table-of-verb-checks-29-salad
 >salad zscent
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-29-scent
+#+testcase-ha-half-table-of-verb-checks-29-scent
 >zsalad scent
 {$GREENCORE}
 \\
@@ -1343,6 +1518,11 @@ by one point
 >salad scent
 by one point
 
+@rej
+#testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
+>salad scent
+Wow! You must really like salad!
+
 @ha
 #testcase-ha-half-table-of-verb-checks-34-rhyme
 >rhyme zroad
@@ -1355,6 +1535,11 @@ by one point
 @!min
 >rhyme road
 by one point
+
+@rej
+#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
+>rhyme road
+You already looked down Rhyme Road!
 
 >in
 
@@ -1377,7 +1562,6 @@ by one point
 @all
 #testcase-room-names-too-tough-blue-bluff
 `Too-Tough Blue Bluff
-#testcase-room-names-treed-track
 
 @ha
 #testcase-ha-half-table-of-verb-checks-39-grew
@@ -1407,29 +1591,44 @@ by one point
 >grew gruff
 by one point
 
+@rej
+#testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
+>grew gruff
+Don't want to overdo it!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-40-stew
+#+testcase-ha-half-table-of-verb-checks-40-stew
 >stew zstuff
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-40-stuff
+#+testcase-ha-half-table-of-verb-checks-40-stuff
 >zstew stuff
 {$GREENCORE}
 
 >stew stuff
 by one point
 
+@rej
+#testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
+>stew stuff
+You can't make any more stew stuff.
+
 @ha
-#testcase-ha-half-table-of-verb-checks-41-new
+#+testcase-ha-half-table-of-verb-checks-41-new
 >new znuff
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-41-nuff
+#+testcase-ha-half-table-of-verb-checks-41-nuff
 >znew nuff
 {$GREENCORE}
 
 >new nuff
 by one point
+
+@rej
+#testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
+>new nuff
+You already revitalized the stew stuff.
 
 >d
 
@@ -1448,16 +1647,21 @@ by one point
 >trod ztrash
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-54-trash-flash
+#+testcase-ha-half-table-of-verb-checks-54-trash-flash
 >zflawed flash
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-54-trod-flawed
+#+testcase-ha-half-table-of-verb-checks-54-trod-flawed
 >flawed zflash
 {$GREENCORE}
 
 >trod trash
 by one point
+
+@rej
+#testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
+>trod trash
+But you already got people to trod on the trash!
 
 >s
 
@@ -1493,31 +1697,46 @@ by one point
 >bought beef
 by one point
 
+@rej
+#testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
+>bought beef
+You already pretended to have bought beef, or a beef, or something!
+
 >brought brief
 by one point
 
+@rej
+#testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
+>brought brief
+You already pretended you brought huge plans!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-59-reef
+#+testcase-ha-half-table-of-verb-checks-59-reef
 >zwrought reef
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-59-wrought
+#+testcase-ha-half-table-of-verb-checks-59-wrought
 >wrought zreef
 {$GREENCORE}
 
 >wrought reef
 by one point
 
+@rej
+#testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
+>wrought reef
+You already wrought the reef!
+
 @all
 #+testcase-room-names-thought-theif-fought-fief
 `Wrought Reef
 
 @ha
-#testcase-ha-half-table-of-verb-checks-60-dish
+#+testcase-ha-half-table-of-verb-checks-60-dish
 >zdone dish
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-60-done
+#+testcase-ha-half-table-of-verb-checks-60-done
 >done zdish
 {$GREENCORE}
 
@@ -1549,7 +1768,7 @@ by one point
 >zill in
 {$YELLOWCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-67-un-in
+#+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill un
 {$YELLOWCORE}
 
@@ -1560,41 +1779,56 @@ by one point
 >fill fun
 by one point
 
+@rej
+#testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
+>fill fun
+You already filled yourself up with fun!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-66-will
+#+testcase-ha-half-table-of-verb-checks-66-will
 >will zwon
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-66-won
+#+testcase-ha-half-table-of-verb-checks-66-won
 >zwill won
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-67-ill
+#+testcase-ha-half-table-of-verb-checks-67-ill
 >ill zin
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-67-un-in
+#+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill in
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-67-un-in
+#+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill un
 {$GREENCORE}
 
 >will won
 by one point
 
+@rej
+#testcase-check-vc-will-won-rule-if-sco-will-won-is-true
+>will won
+You already have a will to win!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-67-ill
+#+testcase-ha-half-table-of-verb-checks-67-ill
 >ill zun
 {$GREENBONUS}
 \\
-#testcase-ha-half-table-of-verb-checks-67-un-in
+#+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill in
 {$GREENBONUS}
 
 >illun
 by one point
+
+@rej
+#testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
+>illun
+You already identified illun'!
 
 >n
 
@@ -1671,11 +1905,11 @@ by one point
 >power zplate
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-33-time
+#+testcase-ha-half-table-of-verb-checks-33-time
 >time ztoad
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-33-toad
+#+testcase-ha-half-table-of-verb-checks-33-toad
 >ztime toad
 {$GREENCORE}
 
@@ -1695,6 +1929,23 @@ by one point
 >flak flight
 by one point
 
+@rej
+#testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
+>flak flight
+You already set some flak to a flight.
+\\
+#testcase-check-vc-slack-slight-rule-if-sco-slack-slight-is-true
+>slack slight
+But you already caused a slack, slight!
+\\
+#testcase-check-vc-hack-height-rule-if-sco-hack-height-is-true
+>hack height
+You already hacked the height. You don't want to, like, become a total hack!
+\\
+#testcase-check-vc-quack-quite-rule-if-sco-quack-quite-is-true
+>quack quite
+You already quacked "Quite!"
+
 >e
 
 >n
@@ -1709,23 +1960,32 @@ by one point
 `Passed Port
 
 @ha
-#testcase-ha-half-table-of-verb-checks-30-quash
+#+testcase-ha-half-table-of-verb-checks-30-quash
 >quash zquick
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-30-quick
+#+testcase-ha-half-table-of-verb-checks-30-quick
 >zquash quick
 {$GREENCORE}
 
 >quash quick
 by one point
 
+@rej
+#testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
+>quash quick
+You already quashed things quickly!
+\\
+#testcase-check-vc-slosh-slick-rule-if-sco-slosh-slick-is-true
+>slosh slick
+You already figured that part of getting the pick!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-31-slick
+#+testcase-ha-half-table-of-verb-checks-31-slick
 >zslosh slick
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-31-slosh
+#+testcase-ha-half-table-of-verb-checks-31-slosh
 >slosh zslick
 {$GREENCORE}
 
@@ -1733,16 +1993,21 @@ by one point
 by one point
 
 @ha
-#testcase-ha-half-table-of-verb-checks-33-time
+#+testcase-ha-half-table-of-verb-checks-33-time
 >time ztoad
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-33-toad
+#+testcase-ha-half-table-of-verb-checks-33-toad
 >ztime toad
 {$GREENCORE}
 
 >time toad
 by one point
+
+@rej
+#testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
+>time toad
+The time toad's gift of cold coal should be enough.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-68-grander
@@ -1780,12 +2045,29 @@ by one point
 >stander stove
 by one point
 
+@rej
+#testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
+>stander stove
+You already found the stander stove!
+
 >candor cove
 by one point
+
+@rej
+#testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
+>candor cove
+You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.
+WRONG change this statement
 
 @!min
 >grander grove
 by one point
+
+@rej
+#testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
+>grander grove
+You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.
+WRONG fix msg
 
 >n
 
@@ -1820,6 +2102,11 @@ by one point
 
 >bell book
 by one point
+
+@rej
+#testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
+>bell book
+You already got the bell and book! Now for the next part.
 
 >covering candle
 by one point
@@ -1860,12 +2147,27 @@ by one point
 >nowt nuff
 by one point
 
+@rej
+#testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
+>nowt nuff
+You already nullified certain worries and complaints!
+
 >stout stuff
 by one point
+
+@rej
+#testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
+>stout stuff
+You already found ways to be stout!
 
 @!min
 >flout fluff
 by one point
+
+@rej
+#testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
+>flout fluff
+You already flouted fluff!
 
 >n
 
@@ -1891,11 +2193,26 @@ by one point
 >harder helm
 by one point
 
+@rej
+#testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
+>harder helm
+That sort of repeated ardor won't get you anywhere!
+
 >e
 
 >s
 
 >e
+
+@!min
+>eyeing ease
+score and bonus
+by one point
+
+@rej
+#testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
+>eyeing ease
+Well, you know not to repeat yourself once you've fished in interesting waters--you found what was there the first time, and you don't want to look like a beggar, now!
 
 >in
 
@@ -1928,23 +2245,52 @@ by one point
 >zfusing phew
 {$YELLOWCORE}
 
+@rej
+#testcase-check-vc-fusing-phew-rule-if-lou-score-<-2
+>fusing phew
+Once you have more than one perspective to fuse together, that'll work.
+\\
+#testcase-think-table-of-verb-checks-vc-fusing-phew-rule
+>think
+You can say FUSING PHEW once you have commiserated more than one way with Lou.
+
 >using you
 by one point
+
+@rej
+#testcase-check-vc-using-you-rule-if-sco-using-you-is-true
+>using you
+You already let Lou know the truth!
 
 >boozing boo
 by one point
 
+@rej
+#testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
+>boozing boo
+Don't overdo the moralizing!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-63-phew
+#+testcase-ha-half-table-of-verb-checks-63-phew
 >zfusing phew
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-63-fusing
+#+testcase-ha-half-table-of-verb-checks-63-fusing
 >fusing zphew
 {$GREENCORE}
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-fusing-phew-rule
+>think
+You can say FUSING PHEW now you have commiserated more than one way with Lou.
+
 >fusing phew
 by one point
+
+@rej
+#testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
+>fusing phew
+Fusing ideas once was exhausting enough.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-64-spew
@@ -2018,34 +2364,49 @@ by one point
 >scaling skill
 by one point
 
+@rej
+#testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
+>scaling skill
+You already improved your climbing ability!
+
 >ailing ill
 by one point
+
+@rej
+#testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
+>ailing ill
+You already expressed that everyone hurts!
 
 >mailing mill
 by one point
 
+@rej
+#testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
+>mailing mill
+The mailing mill is already on Hailing Hill!
+
 @ha
-#testcase-ha-half-table-of-verb-checks-77-bailing
+#+testcase-ha-half-table-of-verb-checks-77-bailing
 >bailing zbill
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-77-bill
+#+testcase-ha-half-table-of-verb-checks-77-bill
 >zbailing bill
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-78-failing
+#+testcase-ha-half-table-of-verb-checks-78-failing
 >failing zphil
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-78-phil
+#+testcase-ha-half-table-of-verb-checks-78-phil
 >zfailing phil
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-79-wailing
+#+testcase-ha-half-table-of-verb-checks-79-wailing
 >wailing zwill
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-79-will
+#+testcase-ha-half-table-of-verb-checks-79-will
 >zwailing will
 {$GREENCORE}
 
@@ -2058,12 +2419,30 @@ by one point
 >bailing bill
 by one point
 
+@rej
+#testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
+>bailing bill
+You have already helped Bailing Bill!
+\\
+#testcase-check-vc-wailing-will-rule-if-sco-wailing-will-is-true
+>wailing will
+You have already helped Wailing Will!
+\\
+#testcase-check-vc-failing-phil-rule-if-sco-failing-phil-is-true
+>failing phil
+You have already helped Failing Phil!
+
 >d
 
 >d
 
 >fight fave
 by one point
+
+@rej
+#testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
+>fight fave
+You already started the final fight! You aren't going to, like, REALLY start fighting now.
 
 @all
 >bright bully
@@ -2092,8 +2471,24 @@ by one point
 >zbright bully
 {$GREENCORE}
 
+@rej
+>bright bully
+by one point
+\\
+#testcase-check-vc-bright-bully-rule-if-sco-bright-bully-is-true
+>bright bully
+There must be another way to see Trite Tully!
+\\
+>undo
+>undo
+
 >frightfully
 by one point
+
+@rej
+#testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
+>frightfully
+There must be another way to see Trite Tully!
 
 >bright bully
 by one point

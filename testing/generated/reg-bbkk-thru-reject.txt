@@ -93,6 +93,7 @@ I couldn't parse that command. You don't need any more than two words long.
 >fright fully
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fusing-phew-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-fusing-phew-rule
 >fusing phew
 I couldn't parse that command. You don't need any more than two words long.
@@ -297,6 +298,7 @@ I couldn't parse that command. You don't need any more than two words long.
 >trowed tries
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-using-you-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-using-you-rule
 >using you
 I couldn't parse that command. You don't need any more than two words long.
@@ -309,18 +311,22 @@ I couldn't parse that command. You don't need any more than two words long.
 >weak wooter
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-what-whoah-rule-if-player-is-not-in-rut-row
 #testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-will-won-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-will-won-rule
 >will won
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-wrought-reef-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-wrought-reef-rule
 >wrought reef
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-yall-yank-rule-if-player-is-not-in-tata
 #testcase-reject-start-table-of-verb-checks-vc-yall-yank-rule
 >yall yank
 I couldn't parse that command. You don't need any more than two words long.
@@ -328,9 +334,20 @@ I couldn't parse that command. You don't need any more than two words long.
 >kite cave
 by one point
 
+#testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
+>kite cave
+You already discovered the kite cave to find a path beyond!
+
 >x hold hole
 
 >x list
+
+>jack gist
+WRONG
+
+#testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
+>jack gist
+You already streamlined things with the list!
 
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
@@ -359,6 +376,10 @@ NOTE: this command will be useful later, but you aren't ready to use it, yet. Yo
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
 
+#testcase-check-vc-mass-math-rule-if-sco-mass-math-is-true
+>mass math
+You already calculated! Overcalculate, and you might miss or reject the obvious.
+
 >pass path
 
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
@@ -366,27 +387,84 @@ You can use MASS MATH once you have something to calculate.
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH now you have something to calculate.
 
+#testcase-check-vc-pass-path-rule-if-sco-pass-path-is-true
+>pass path
+You already found a pass-path through the bass bath!
+
 >mass math
 by one point
+
+>e
+
+#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shootxer
+>yall yank
+WRONG
+
+>w
+
+>n
+
+>posh planks
+by one point
+
+>plucky plot
+WRONG
+
+>s
+
+>s
+
+>need knack
+WRONG
+
+>n
+
+#testcase-think-table-of-verb-checks-vc-need-knack-rule
+#testcase-think-table-of-verb-checks-vc-yall-yank-rule
+#testcase-think-table-of-verb-checks-vc-plucky-plot-rule
+>think
+You can say you NEED KNACK once you have the right help by the Treed Track.
+You can say YALL YANK once you have the right cohorts.
+You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 
 >w
 
 >write rave
 by two point
 
+#testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
+>write rave
+You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you, at least. No offense.!
+
 >what whoah
 by one point
+
+#testcase-check-vc-what-whoah-rule-if-sco-what-whoah-is-true
+>what whoah
+You already had a revelation that will push you out of your rut and see a new passage through.
 
 >w
 
 >hid hum
 by one point
 
+#testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
+>hid hum
+You already did initial searching!
+
 >kid come
 by one point
 
+#testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
+>kid come
+You already called the kid over!
+
 >rid rum
 by one point
+
+#testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
+>rid rum
+You already got rid of the rum!
 
 >in
 
@@ -401,6 +479,13 @@ by one point
 >mood mapper
 You already got the mood mapper/'tude tapper!
 
+>nude napper
+by one point
+
+#testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
+>nude napper
+You don't want to be too much of a moral scold!
+
 >out
 >e
 >n
@@ -409,6 +494,10 @@ You already got the mood mapper/'tude tapper!
 
 >stride streak
 by one point
+
+#testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
+>stride streak
+You already encouraged more action and less moping here!
 
 >guide geek
 by one point
@@ -445,8 +534,17 @@ by one point
 >posh planks
 by one point
 
+#testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
+>posh planks
+Oh, no, let's not make things TOO posh, here!
+!by one point
+
 >plucky plot
 by one point
+
+#testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
+>plucky plot
+But you already hatched a plucky plot to clean the yucky yacht!
 
 >s
 >w
@@ -461,8 +559,16 @@ by one point
 >yall yank
 by one point
 
+#testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
+>yall yank
+You've already pulled out the tall tank(s).
+
 >paul panks
 by one point
+
+#testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
+>paul panks
+You already paid your respects.
 
 >w
 
@@ -483,14 +589,30 @@ by one point
 >need knack
 by one point
 
+#testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
+>need knack
+You already got the knack for looking around! You won't forget it.
+
 >plead plaque
 by one point
+
+#testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
+>plead plaque
+You look over the plead plaque again. Man, even more fun adventures once you're done with Bright Brave Knight Knave! You totally can't wait to hit up other-ones, of you haven't already.
 
 >heed hack
 by one point
 
+#testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
+>heed hack
+You look for other ways to hack through the Treed Track, but three all told is pretty good.
+
 >seed sack
 by one point
+
+#testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
+>seed sack
+You already got a seed sack!
 
 >n
 
@@ -501,19 +623,47 @@ by one point
 >train tracks
 by one point
 
+#testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
+>train tracks
+You already created train tracks, though they could become sturdier and farther-reaching.
+
 >main max
 by one point
 
+#testcase-check-vc-main-max-rule-if-sco-main-max-is-true
+>main max
+You already upgraded the train tracks!
+
+#+testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
+>train tracks
+You already created train tracks.
+
 >pain packs
 by one point
+
+#testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
+>pain packs
+You already got some pain packs!
 
 >n
 
 >trowed tries
 by one point
 
+#testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
+>trowed tries
+Enough trying. You need to take action!
+
 >loud lies
 by one point
+
+#+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
+>trowed tries
+No need to re-try.
+
+#testcase-check-vc-loud-lies-rule-if-sco-loud-lies-is-true
+>loud lies
+You already declaimed the loud lies.
 
 >s
 
@@ -544,8 +694,16 @@ by one point
 >salad scent
 by one point
 
+#testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
+>salad scent
+Wow! You must really like salad!
+
 >rhyme road
 by one point
+
+#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
+>rhyme road
+You already looked down Rhyme Road!
 
 >in
 
@@ -568,11 +726,23 @@ by one point
 >grew gruff
 by one point
 
+#testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
+>grew gruff
+Don't want to overdo it!
+
 >stew stuff
 by one point
 
+#testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
+>stew stuff
+You can't make any more stew stuff.
+
 >new nuff
 by one point
+
+#testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
+>new nuff
+You already revitalized the stew stuff.
 
 >d
 
@@ -585,16 +755,32 @@ by one point
 >trod trash
 by one point
 
+#testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
+>trod trash
+But you already got people to trod on the trash!
+
 >s
 
 >bought beef
 by one point
 
+#testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
+>bought beef
+You already pretended to have bought beef, or a beef, or something!
+
 >brought brief
 by one point
 
+#testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
+>brought brief
+You already pretended you brought huge plans!
+
 >wrought reef
 by one point
+
+#testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
+>wrought reef
+You already wrought the reef!
 
 >done dish
 by one point
@@ -602,11 +788,23 @@ by one point
 >fill fun
 by one point
 
+#testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
+>fill fun
+You already filled yourself up with fun!
+
 >will won
 by one point
 
+#testcase-check-vc-will-won-rule-if-sco-will-won-is-true
+>will won
+You already have a will to win!
+
 >illun
 by one point
+
+#testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
+>illun
+You already identified illun'!
 
 >n
 
@@ -643,6 +841,22 @@ by one point
 >flak flight
 by one point
 
+#testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
+>flak flight
+You already set some flak to a flight.
+
+#testcase-check-vc-slack-slight-rule-if-sco-slack-slight-is-true
+>slack slight
+But you already caused a slack, slight!
+
+#testcase-check-vc-hack-height-rule-if-sco-hack-height-is-true
+>hack height
+You already hacked the height. You don't want to, like, become a total hack!
+
+#testcase-check-vc-quack-quite-rule-if-sco-quack-quite-is-true
+>quack quite
+You already quacked "Quite!"
+
 >e
 
 >n
@@ -655,20 +869,46 @@ by one point
 >quash quick
 by one point
 
+#testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
+>quash quick
+You already quashed things quickly!
+
+#testcase-check-vc-slosh-slick-rule-if-sco-slosh-slick-is-true
+>slosh slick
+You already figured that part of getting the pick!
+
 >slosh slick
 by one point
 
 >time toad
 by one point
 
+#testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
+>time toad
+The time toad's gift of cold coal should be enough.
+
 >stander stove
 by one point
+
+#testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
+>stander stove
+You already found the stander stove!
 
 >candor cove
 by one point
 
+#testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
+>candor cove
+You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.
+WRONG change this statement
+
 >grander grove
 by one point
+
+#testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
+>grander grove
+You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.
+WRONG fix msg
 
 >n
 
@@ -683,17 +923,33 @@ by one point
 >bell book
 by one point
 
+#testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
+>bell book
+You already got the bell and book! Now for the next part.
+
 >covering candle
 by one point
 
 >nowt nuff
 by one point
 
+#testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
+>nowt nuff
+You already nullified certain worries and complaints!
+
 >stout stuff
 by one point
 
+#testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
+>stout stuff
+You already found ways to be stout!
+
 >flout fluff
 by one point
+
+#testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
+>flout fluff
+You already flouted fluff!
 
 >n
 
@@ -710,22 +966,58 @@ by one point
 >harder helm
 by one point
 
+#testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
+>harder helm
+That sort of repeated ardor won't get you anywhere!
+
 >e
 
 >s
 
 >e
 
+>eyeing ease
+score and bonus
+by one point
+
+#testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
+>eyeing ease
+Well, you know not to repeat yourself once you've fished in interesting waters--you found what was there the first time, and you don't want to look like a beggar, now!
+
 >in
+
+#testcase-check-vc-fusing-phew-rule-if-lou-score-<-2
+>fusing phew
+Once you have more than one perspective to fuse together, that'll work.
+
+#testcase-think-table-of-verb-checks-vc-fusing-phew-rule
+>think
+You can say FUSING PHEW once you have commiserated more than one way with Lou.
 
 >using you
 by one point
 
+#testcase-check-vc-using-you-rule-if-sco-using-you-is-true
+>using you
+You already let Lou know the truth!
+
 >boozing boo
 by one point
 
+#testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
+>boozing boo
+Don't overdo the moralizing!
+
+#+testcase-think-table-of-verb-checks-vc-fusing-phew-rule
+>think
+You can say FUSING PHEW now you have commiserated more than one way with Lou.
+
 >fusing phew
 by one point
+
+#testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
+>fusing phew
+Fusing ideas once was exhausting enough.
 
 >spurning spew
 by one point
@@ -737,11 +1029,23 @@ by one point
 >scaling skill
 by one point
 
+#testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
+>scaling skill
+You already improved your climbing ability!
+
 >ailing ill
 by one point
 
+#testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
+>ailing ill
+You already expressed that everyone hurts!
+
 >mailing mill
 by one point
+
+#testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
+>mailing mill
+The mailing mill is already on Hailing Hill!
 
 >failing phil
 by one point
@@ -752,6 +1056,18 @@ by one point
 >bailing bill
 by one point
 
+#testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
+>bailing bill
+You have already helped Bailing Bill!
+
+#testcase-check-vc-wailing-will-rule-if-sco-wailing-will-is-true
+>wailing will
+You have already helped Wailing Will!
+
+#testcase-check-vc-failing-phil-rule-if-sco-failing-phil-is-true
+>failing phil
+You have already helped Failing Phil!
+
 >d
 
 >d
@@ -759,8 +1075,26 @@ by one point
 >fight fave
 by one point
 
+#testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
+>fight fave
+You already started the final fight! You aren't going to, like, REALLY start fighting now.
+
+>bright bully
+by one point
+
+#testcase-check-vc-bright-bully-rule-if-sco-bright-bully-is-true
+>bright bully
+There must be another way to see Trite Tully!
+
+>undo
+>undo
+
 >frightfully
 by one point
+
+#testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
+>frightfully
+There must be another way to see Trite Tully!
 
 >bright bully
 by one point
