@@ -1,0 +1,397 @@
+## reg-bbkk-lone-jjthru.txt
+##
+## no generator file, though i originally got this from the full walkthrough. However, there are negative tests very much worth checking!
+##
+## I also want to make extra sure that there is no fallthrough for if you have the wrong friends along. Hence some detours!
+
+## walkthrough with no bonus points, jumping everywhere
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>jj
+After some thought, you consider the right way forward: KITE CAVE...
+
+# make sure nothing for FIGHT FAVE yet, or WRITE RAVE/JACK GIST
+>jj
+The lurking lump remains immovable. I guess you've done all you need, here.
+
+>x hole
+
+>d
+
+>jj
+After some thought, you consider the right way forward: PASS PATH...
+
+>jj
+After some thought, you consider the right way forward: MASS MATH...
+
+#detour to make sure we can't bust through initial puzzles
+>n
+>jj
+After some thought, you consider the right way forward: POSH PLANKS...
+>jj
+!After
+immovable
+>s
+>e
+>jj
+!After
+immovable
+>w
+>s
+>jj
+After some thought, you consider the right way forward: SEED SACK...
+>jj
+!After
+immovable
+>n
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+But you don't remember anything that could work later.
+
+>w
+
+>jj
+After some thought, you consider the right way forward: WHAT WHOA...
+
+>w
+
+>jj
+After some thought, you consider the right way forward: HID HUM...
+
+>jj
+After some thought, you consider the right way forward: KID COME...
+
+>jj
+After some thought, you consider the right way forward: RID RUM...
+
+>in
+
+>jj
+After some thought, you consider the right way forward: MOOD MAPPER...
+
+# make sure nothing for NUDE NAPPER
+>jj
+The lurking lump remains immovable. I guess you've done all you need, here.
+
+>out
+>e
+>n
+
+>jj
+After some thought, you consider the right way forward: MEEK MOOTER...
+
+>jj
+After some thought, you consider the right way forward: CHIC SHOOTER...
+
+>jj
+After some thought, you consider the right way forward: WEAK WOOTER...
+
+>w
+>jj
+After some thought, you consider the right way forward: STRIDE STREAK...
+
+>jj
+After some thought, you consider the right way forward: FRIED FREAK...
+
+>jj
+After some thought, you consider the right way forward: SNIDE SNEAK...
+
+>jj
+After some thought, you consider the right way forward: GUIDE GEEK...
+
+>e
+>weak wooter
+
+>s
+>e
+>n
+
+>jj
+After some thought, you consider the right way forward: PLUCKY PLOT...
+
+#we now do negative testing on the friend-dependent north bits.
+
+>jj
+After some thought, you consider the right way forward: CAST COURT...
+
+>jj
+After some thought, you consider the right way forward: MURKY MAP...
+
+>jj
+After some thought, you consider the right way forward: FAST FORT...
+
+>jj
+After some thought, you consider the right way forward: GLUED GLASS...
+
+>jj
+After some thought, you consider the right way forward: PASSED PORT...
+
+>jj
+After some thought, you consider the right way forward: SLASHING SWORD...
+
+>jj
+!After
+immovable
+
+>in
+>s
+>w
+>n
+>bye
+>w
+>fried freak
+>e
+>chic shooter
+>s
+>e
+>e
+
+# tanks, no panks
+>jj
+After some thought, you consider the right way forward: YALL YANK...
+>jj
+!After
+immovable
+
+>e
+
+# tracks/max/packs, check don't have the right pals for TROD TRASH
+>jj
+After some thought, you consider the right way forward: TRAIN TRACKS...
+>jj
+After some thought, you consider the right way forward: MAIN MAX...
+>jj
+After some thought, you consider the right way forward: PAIN PACKS...
+>jj
+!After some thought
+
+# crowd cries: don't have the right pals for LOUD LIES, yet
+>n
+>jj
+After some thought, you consider the right way forward: TROWED TRIES...
+>jj
+immovable
+!After
+>s
+
+# check that you can't get the DONE DISH with 
+>s
+>jj
+After some thought, you consider the right way forward: BOUGHT BEEF...
+>jj
+After some thought, you consider the right way forward: BROUGHT BRIEF...
+>jj
+After some thought, you consider the right way forward: WROUGHT REEF...
+>jj
+immovable
+!After
+
+>n
+>w
+>w
+>w
+>n
+>bye
+>r 3
+>s
+>e
+>s
+
+# only two. PLEAD PLAQUE is covered.
+>jj
+After some thought, you consider the right way forward: NEED KNACK...
+>jj
+After some thought, you consider the right way forward: HEED HACK...
+>jj
+!After
+immovable
+
+# check the bluff. Make sure GREW GRUFF doesn't work.
+>w
+>jj
+!After
+immovable
+>e
+
+# now in the blight we only get 3 jumps we need. The 4th would be a bonus point, and the POWER PLATE/SOUR SLATE is not there yet. Reject the Rack, Right
+>u
+>jj
+After some thought, you consider the right way forward: HACK HEIGHT...
+>jj
+After some thought, you consider the right way forward: QUACK QUITE...
+>jj
+After some thought, you consider the right way forward: SLACK SLIGHT...
+>jj
+After some thought, you consider the right way forward: POWER PLATE...
+>jj
+!After
+immovable
+>d
+
+#now scoop up the sneak/mooter specific stuff...
+>n
+>e
+>e
+>n
+>jj
+After some thought, you consider the right way forward: LOUD LIES...
+
+>s
+>w
+>w
+>n
+>passed port
+>jj
+After some thought, you consider the right way forward: SALAD SCENT...
+
+>in
+>s
+>w
+>n
+>bye
+>r 1
+>s
+>e
+>e
+>e
+
+>jj
+After some thought, you consider the right way forward: TROD TRASH...
+
+>w
+>w
+>s
+>w
+>jj
+After some thought, you consider the right way forward: GREW GRUFF...
+>jj
+After some thought, you consider the right way forward: STEW STUFF...
+>jj
+After some thought, you consider the right way forward: NEW NUFF...
+
+>e
+>n
+>e
+>e
+>s
+>jj
+After some thought, you consider the right way forward: DONE DISH...
+
+# Nil None: make sure we don't give an errant bonus point
+>jj
+After some thought, you consider the right way forward: FILL FUN...
+>jj
+After some thought, you consider the right way forward: WILL WON...
+>jj
+!After
+immovable
+>n
+
+>n
+>w
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>s
+>u
+>d
+>n
+>n
+>passed port
+>jj
+After some thought, you consider the right way forward: QUASH QUICK...
+>jj
+After some thought, you consider the right way forward: SLOSH SLICK...
+>jj
+After some thought, you consider the right way forward: TIME TOAD...
+
+#next wrong bit
+>jj
+After some thought, you consider the right way forward: GRANDER GROVE...
+>jj
+After some thought, you consider the right way forward: CANDOR COVE...
+>jj
+!After
+immovable
+>n
+
+>in
+>s
+>s
+>e
+>jj
+>jj
+
+>jj
+After some thought, you consider the right way forward: FLOUT FLUFF...
+>jj
+After some thought, you consider the right way forward: STOUT STUFF...
+>jj
+!After
+immovable
+>w
+>w
+>n
+
+#running up that hill
+>u
+>jj
+After some thought, you consider the right way forward: SCALING SKILL...
+>jj
+After some thought, you consider the right way forward: AILING ILL...
+>jj
+After some thought, you consider the right way forward: MAILING MILL...
+>jj
+After some thought, you consider the right way forward: BAILING BILL...
+>jj
+After some thought, you consider the right way forward: FAILING PHIL...
+>jj
+After some thought, you consider the right way forward: WAILING WILL...
+>d
+
+#Howdy do, Loudie Lou!
+>in
+>jj
+After some thought, you consider the right way forward: BOOZING BOO...
+>jj
+After some thought, you consider the right way forward: USING YOU...
+>jj
+After some thought, you consider the right way forward: FUSING PHEW...
+>jj
+After some thought, you consider the right way forward: SPURNING SPEW...
+>out
+
+>w
+>n
+>w
+>jj
+After some thought, you consider the right way forward: HARDER HELM...
+
+>e
+>s
+>e
+>d
+>jj
+After some thought, you consider the right way forward: FIGHT FAVE...
+>jj
+After some thought, you consider the right way forward: FRIGHTFULLY...
+>jj
+After some thought, you consider the right way forward: BRIGHT BULLY...
+>jj
+
+#this is a temporary hack! I'm not able to figure why it works, but I need to send another command to the prompt, and then STDIN prints something.
+>z
+After some thought, you consider the right way forward: BAM BYE...
+
+>i
+>score
+
+* _remaining
+
