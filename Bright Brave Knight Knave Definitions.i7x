@@ -116,9 +116,9 @@ to decide which eeker is other-guy of (ee - an eeker):
 to decide which number is pairs-used:
 	decide on number of finished eekers / 2;
 
-to move-eekers:
+to move-eekers (rm - a room):
 	repeat with x running through eekers:
-		if x is leftbehind, move x to location of player;
+		if x is leftbehind, move x to rm;
 
 to decide which number is geek-wooter-points:
 	decide on (boolval of sco-plucky-plot) + (boolval of sco-trod-trash) + (boolval of sco-stew-stuff)
@@ -154,8 +154,8 @@ to yacht-go (rm - a room):
 		say "The Sassed Sort nods and guides the yacht back to [rm].";
 	move yacht to rm;
 	move sassed sort to rm;
-	move-eekers;
 	move player to rm;
+	move-eekers rm;
 	now took-yacht is false;
 
 chapter score macros
@@ -269,7 +269,9 @@ to flag-missed (rm - a room): [ this is for the MISSED list at the end. Note it 
 
 book to decide whether (largely game dependent stuff)
 
-to decide whether (ru - a rule) is spaceable: yes; [annoying space breaks in inform]
+to decide whether (ru - a rule) is spaceable: [this is if we want to put spaces between the two words]
+	if ru is vc-ill-un rule or ru is vc-fright-fully rule, no;
+	yes;
 
 to decide whether good-say-guess: no;
 

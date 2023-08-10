@@ -243,7 +243,7 @@ after printing the locale description when number of leftbehind eekers > 0:
 		let rle be random leftbehind eeker;
 		follow the eeker matchups rule for rle;
 		continue the action;
-	move-eekers;
+	move-eekers (location of player);
 	continue the action;
 
 chapter fried freak
