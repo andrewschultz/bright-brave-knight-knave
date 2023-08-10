@@ -350,9 +350,11 @@ book Lack Light Black Blight
 
 Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is east. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
-after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score > 3:
+after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score >= 3 (this is the rack right discovery rule):
 	if fried freak is followish, check-rack-right;
 	continue the action;
+
+The rack right discovery rule is listed last in after printing the locale description.
 
 chapter rack right
 

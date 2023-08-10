@@ -481,6 +481,9 @@ a goodrhyme rule (this is the vc-salad-scent rule):
 	if sco-salad-scent is true:
 		vcal "Wow! You must really like salad!";
 		already-done;
+	if snide sneak is not fungible or meek mooter is not fungible:
+		vcp "You're not properly assisted.";
+		not-yet;
 	ready;
 
 this is the vr-salad-scent rule:
@@ -498,6 +501,9 @@ a goodrhyme rule (this is the vc-slosh-slick rule):
 	if sco-slosh-slick is true:
 		vcal "You already figured that part of getting the pick!";
 		already-done;
+	if fried freak is not in location of player and chic shooter is not in location of player:
+		vcp "You don't have the right pals yet!";
+		not-yet;
 	ready;
 
 this is the vr-slosh-slick rule:
@@ -510,6 +516,9 @@ a goodrhyme rule (this is the vc-quash-quick rule):
 	if sco-quash-quick is true:
 		vcal "You already quashed things quickly!";
 		already-done;
+	if fried freak is not in location of player and chic shooter is not in location of player:
+		vcp "You don't have the right pals yet!";
+		not-yet;
 	ready;
 
 this is the vr-quash-quick rule:
@@ -538,6 +547,7 @@ a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
 	if toad-score < 2:
 		vcp "A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.";
+		not-yet;
 	if sco-time-toad is true:
 		vcal "The time toad's gift of cold coal should be enough.";
 		already-done;
@@ -618,6 +628,9 @@ a goodrhyme rule (this is the vc-trod-trash rule):
 	if sco-trod-trash is true:
 		vcal "But you already got people to trod on the trash!";
 		already-done;
+	if guide geek is not fungible and weak wooter is not fungible:
+		vcp "You don't feel ready to take care of things with the current lineup of friends.";
+		not-yet;
 	ready;
 
 this is the vr-trod-trash rule:
@@ -710,7 +723,7 @@ a goodrhyme rule (this is the vc-need-knack rule):
 this is the vr-need-knack rule:
 	now sco-need-knack is true;
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
-	open-psg up and Too Tough Blue Bluff;
+	open-psg west and Too Tough Blue Bluff;
 	dismiss-sneak-mooter;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
@@ -726,7 +739,7 @@ a goodrhyme rule (this is the vc-heed-hack rule):
 this is the vr-heed-hack rule:
 	now sco-heed-hack is true;
 	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. That's easy, now you know what to do. You find two more passages.";
-	open-psg west and Lack Light Black Blight;
+	open-psg up and Lack Light Black Blight;
 	open-psg east and Knell Nook;
 
 a goodrhyme rule (this is the vc-seed-sack rule):
@@ -827,6 +840,9 @@ a goodrhyme rule (this is the vc-grew-gruff rule):
 	if sco-grew-gruff is true:
 		vcal "Don't want to overdo it!";
 		already-done;
+	if guide geek is not fungible or weak wooter is not fungible:
+		vcp "You don't have the support of friends to grow gruff constructively.";
+		not-yet;
 	ready;
 
 this is the vr-grew-gruff rule:
@@ -870,6 +886,7 @@ a goodrhyme rule (this is the vc-power-plate rule):
 this is the vr-power-plate rule:
 	now sco-power-plate is true;
 	say "Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.";
+	moot sour slate;
 	give-ti power plate;
 
 section knell nook scoring
