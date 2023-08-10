@@ -7,7 +7,7 @@
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
 file=reg-bbkk-thru-min.txt,min,minimum walkthrough
-file=reg-bbkk-thru-all.txt,all,walkthrough with all points
+file=reg-bbkk-thru-all.txt,all,walkthrough with all points and potential neutral retries
 file=reg-bbkk-thru-reject.txt,rej,walkthrough with all rejections and THINK
 file=reg-bbkk-thru-alt-verbs.txt,alt,walkthrough with altverb tests
 file=reg-bbkk-thru-guide-gong.txt,gong,walkthrough testing guide gong
@@ -67,6 +67,7 @@ Taken.
 >au 2
 
 @alt
+##balance undos
 #testcase-alt-words-table-of-verb-checks-1-write-right-rave
 >right rave
 by one point
@@ -524,7 +525,7 @@ You don't have to change yourself, here.
 ====alphabetize off
 
 @gt
-#testcase-table-of-noways-white-wave
+#testcase-goto-table-of-noways-white-wave
 >e
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
@@ -532,9 +533,10 @@ You're kind of confused about directions, here. You maybe need to find some way 
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-kite-cave-rule-fallthrough
-{--rej}#testcase-run-vr-kite-cave-rule-default
-WRONG
+{--rej}#testcase-check-vc-kite-cave-rule-fallthrough
+{--all}#testcase-run-vr-kite-cave-rule-default
+You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
+The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 @rej
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
@@ -550,8 +552,8 @@ You already discovered the kite cave to find a path beyond!
 WRONG
 
 @all,rej
-{--all}#testcase-check-vc-jack-gist-rule-fallthrough
-{--rej}#testcase-run-vr-jack-gist-rule-default
+{--rej}#testcase-check-vc-jack-gist-rule-fallthrough
+{--all}#testcase-run-vr-jack-gist-rule-default
 WRONG
 
 @rej
@@ -733,8 +735,8 @@ You already calculated! Overcalculate, and you might miss or reject the obvious.
 >pass path
 
 @all,rej
-{--all}#testcase-check-vc-pass-path-rule-fallthrough
-{--rej}#testcase-run-vr-pass-path-rule-default
+{--rej}#testcase-check-vc-pass-path-rule-fallthrough
+{--all}#testcase-run-vr-pass-path-rule-default
 WRONG
 
 @all
@@ -764,8 +766,8 @@ You can go pretty much any way from here but not inside.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-mass-math-rule-fallthrough
-{--rej}#testcase-run-vr-mass-math-rule-default
+{--rej}#testcase-check-vc-mass-math-rule-fallthrough
+{--all}#testcase-run-vr-mass-math-rule-default
 WRONG
 
 @rej
@@ -818,8 +820,8 @@ Passage south is blocked, but the other three ways, you can try.
 by two point
 
 @all,rej
-{--all}#testcase-check-vc-write-right-rave-rule-fallthrough
-{--rej}#testcase-run-vr-write-right-rave-rule-default
+{--rej}#testcase-check-vc-write-right-rave-rule-fallthrough
+{--all}#testcase-run-vr-write-right-rave-rule-default
 WRONG
 
 @rej
@@ -832,6 +834,7 @@ You already appealed to my pride! Now it's my turn to feel pride by showing I do
 WRONG
 
 @alt
+##balance undos
 #testcase-alt-words-table-of-verb-checks-8-what-whoa-whoah
 >what whoa
 by one point
@@ -856,8 +859,8 @@ by one point
 You already had a revelation that will push you out of your rut and see a new passage through.
 
 @all,rej
-{--all}#testcase-check-vc-what-whoah-rule-fallthrough
-{--rej}#testcase-run-vr-what-whoah-rule-default
+{--rej}#testcase-check-vc-what-whoah-rule-fallthrough
+{--all}#testcase-run-vr-what-whoah-rule-default
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
 
 >w
@@ -930,8 +933,8 @@ No. A good brave bright knight knave don't look down on people like that.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-hid-hum-rule-fallthrough
-{--rej}#testcase-run-vr-hid-hum-rule-default
+{--rej}#testcase-check-vc-hid-hum-rule-fallthrough
+{--all}#testcase-run-vr-hid-hum-rule-default
 WRONG
 
 @rej
@@ -957,8 +960,8 @@ You can say KID COME now a kid is around.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-kid-come-rule-fallthrough
-{--rej}#testcase-run-vr-kid-come-rule-default
+{--rej}#testcase-check-vc-kid-come-rule-fallthrough
+{--all}#testcase-run-vr-kid-come-rule-default
 WRONG
 
 @rej
@@ -984,8 +987,8 @@ You can say RID RUM once you have cause to speak out against alcohol.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-rid-rum-rule-fallthrough
-{--rej}#testcase-run-vr-rid-rum-rule-default
+{--rej}#testcase-check-vc-rid-rum-rule-fallthrough
+{--all}#testcase-run-vr-rid-rum-rule-default
 WRONG
 
 @rej
@@ -1024,6 +1027,23 @@ There are no hidden passages. Only back out.
 #testcase-ha-half-table-of-verb-checks-13-nude
 >nude znapper
 {$GREENBONUS}
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-verb-checks-12-mood-tude-mapper-tapper
+>tude tapper
+by one point
+\\
+>undo
+\\
+>mood tapper
+WRONG
+\\
+>tude mapper
+WRONG
+\\
+>undo
+>undo
 
 >mood mapper
 by one point
@@ -1093,8 +1113,8 @@ You feel as though you want to say something about the state of these environs, 
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-nude-napper-rule-fallthrough
-{--rej}#testcase-run-vr-nude-napper-rule-default
+{--rej}#testcase-check-vc-nude-napper-rule-fallthrough
+{--all}#testcase-run-vr-nude-napper-rule-default
 WRONG
 
 @rej
@@ -1188,8 +1208,8 @@ While the creek and greenery meander off, you might get lost. You can really onl
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-stride-streak-rule-fallthrough
-{--rej}#testcase-run-vr-stride-streak-rule-default
+{--rej}#testcase-check-vc-stride-streak-rule-fallthrough
+{--all}#testcase-run-vr-stride-streak-rule-default
 WRONG
 
 @rej
@@ -1201,24 +1221,24 @@ You already encouraged more action and less moping here!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-guide-geek-rule-fallthrough
-{--rej}#testcase-run-vr-guide-geek-rule-default
+{--rej}#testcase-check-vc-guide-geek-rule-fallthrough
+{--all}#testcase-run-vr-guide-geek-rule-default
 WRONG
 
 >fried freak
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fried-freak-rule-fallthrough
-{--rej}#testcase-run-vr-fried-freak-rule-default
+{--rej}#testcase-check-vc-fried-freak-rule-fallthrough
+{--all}#testcase-run-vr-fried-freak-rule-default
 WRONG
 
 >snide sneak
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-snide-sneak-rule-fallthrough
-{--rej}#testcase-run-vr-snide-sneak-rule-default
+{--rej}#testcase-check-vc-snide-sneak-rule-fallthrough
+{--all}#testcase-run-vr-snide-sneak-rule-default
 WRONG
 
 >e
@@ -1232,24 +1252,24 @@ You only have access west and south to Slum, Slid.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-meek-mooter-rule-fallthrough
-{--rej}#testcase-run-vr-meek-mooter-rule-default
+{--rej}#testcase-check-vc-meek-mooter-rule-fallthrough
+{--all}#testcase-run-vr-meek-mooter-rule-default
 WRONG
 
 >weak wooter
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-weak-wooter-rule-fallthrough
-{--rej}#testcase-run-vr-weak-wooter-rule-default
+{--rej}#testcase-check-vc-weak-wooter-rule-fallthrough
+{--all}#testcase-run-vr-weak-wooter-rule-default
 WRONG
 
 >chic shooter
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-chic-shooter-rule-fallthrough
-{--rej}#testcase-run-vr-chic-shooter-rule-default
+{--rej}#testcase-check-vc-chic-shooter-rule-fallthrough
+{--all}#testcase-run-vr-chic-shooter-rule-default
 WRONG
 
 >w
@@ -1302,8 +1322,8 @@ You can go back south.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-posh-planks-rule-fallthrough
-{--rej}#testcase-run-vr-posh-planks-rule-default
+{--rej}#testcase-check-vc-posh-planks-rule-fallthrough
+{--all}#testcase-run-vr-posh-planks-rule-default
 WRONG
 
 @rej
@@ -1325,8 +1345,8 @@ You can go back south.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-plucky-plot-rule-fallthrough
-{--rej}#testcase-run-vr-plucky-plot-rule-default
+{--rej}#testcase-check-vc-plucky-plot-rule-fallthrough
+{--all}#testcase-run-vr-plucky-plot-rule-default
 WRONG
 
 @gt
@@ -1425,8 +1445,8 @@ You can only go back west or, once you've moved the tank(s), past them in whatev
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-yall-yank-rule-fallthrough
-{--rej}#testcase-run-vr-yall-yank-rule-default
+{--rej}#testcase-check-vc-yall-yank-rule-fallthrough
+{--all}#testcase-run-vr-yall-yank-rule-default
 WRONG
 
 @rej
@@ -1444,8 +1464,8 @@ You can only go back west or east.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-paul-panks-rule-fallthrough
-{--rej}#testcase-run-vr-paul-panks-rule-default
+{--rej}#testcase-check-vc-paul-panks-rule-fallthrough
+{--all}#testcase-run-vr-paul-panks-rule-default
 WRONG
 
 @rej
@@ -1510,22 +1530,68 @@ You already paid your respects.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-need-knack-rule-fallthrough
-{--rej}#testcase-run-vr-need-knack-rule-default
+{--rej}#testcase-check-vc-need-knack-rule-fallthrough
+{--all}#testcase-run-vr-need-knack-rule-default
 WRONG
 
 @rej
 #testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
 >need knack
 You already got the knack for looking around! You won't forget it.
+##balance undos
+>n
+>u
+#testcase-check-vc-mailing-mill-rule-if-sco-scaling-skill-is-false-or-sco-ailing-ill-is-false
+>mailing mill
+WRONG
+\\
+>think
+WRONG
+\\
+>undo
+>undo
+\\
+>ailing ill
+WRONG
+\\
+>mailing mill
+WRONG
+\\
+>think
+WRONG
+\\
+>undo
+>undo
+>undo
+\\
+>scaling skill
+by one point
+\\
+>mailing mill
+WRONG
+\\
+>think
+WRONG
+\\
+>ailing ill
+by one point
+>mailing mill
+WRONG
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
 
 @!min
 >plead plaque
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-plead-plaque-rule-fallthrough
-{--rej}#testcase-run-vr-plead-plaque-rule-default
+{--rej}#testcase-check-vc-plead-plaque-rule-fallthrough
+{--all}#testcase-run-vr-plead-plaque-rule-default
 WRONG
 
 @rej
@@ -1546,8 +1612,8 @@ You look over the plead plaque again. Man, even more fun adventures once you're 
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-heed-hack-rule-fallthrough
-{--rej}#testcase-run-vr-heed-hack-rule-default
+{--rej}#testcase-check-vc-heed-hack-rule-fallthrough
+{--all}#testcase-run-vr-heed-hack-rule-default
 WRONG
 
 @rej
@@ -1559,15 +1625,52 @@ You look for other ways to hack through the Treed Track, but three all told is p
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-seed-sack-rule-fallthrough
-{--rej}#testcase-run-vr-seed-sack-rule-default
+{--rej}#testcase-check-vc-seed-sack-rule-fallthrough
+{--all}#testcase-run-vr-seed-sack-rule-default
 WRONG
 
 @rej
 #testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
 >seed sack
 You already got a seed sack!
+\\
+>n
+>u
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+\\
+>scaling skill
+by one point
+\\
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+\\
+>failing phil
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+>bailing bill
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+>wailing will
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+\\
+>ailing ill
+by one point
+\\
+>mailing mill
+by one point
+\\
+#testcase-check-vc-bailing-bill-rule-if-player-does-not-have-bold-bowl
+>bailing bill
+You sense you cannot offer Failing Phil what he needs. Yet.
+\\
+#testcase-check-vc-failing-phil-rule-if-player-does-not-have-cold-coal
+>failing phil
+You sense you cannot offer Failing Phil what he needs. Yet.
+\\
+#testcase-check-vc-wailing-will-rule-if-player-does-not-have-sold-soul
+>wailing will
+You sense you cannot offer Failing Phil what he needs. Yet.
 
+@!
 >n
 
 @rej
@@ -1631,8 +1734,8 @@ Back west is the only way. For now.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-train-tracks-rule-fallthrough
-{--rej}#testcase-run-vr-train-tracks-rule-default
+{--rej}#testcase-check-vc-train-tracks-rule-fallthrough
+{--all}#testcase-run-vr-train-tracks-rule-default
 WRONG
 
 @all
@@ -1662,8 +1765,8 @@ The train tracks head north and south, but you can go back west, too.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-main-max-rule-fallthrough
-{--rej}#testcase-run-vr-main-max-rule-default
+{--rej}#testcase-check-vc-main-max-rule-fallthrough
+{--all}#testcase-run-vr-main-max-rule-default
 WRONG
 
 @rej
@@ -1679,8 +1782,8 @@ You already created train tracks.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-pain-packs-rule-fallthrough
-{--rej}#testcase-run-vr-pain-packs-rule-default
+{--rej}#testcase-check-vc-pain-packs-rule-fallthrough
+{--all}#testcase-run-vr-pain-packs-rule-default
 WRONG
 
 @rej
@@ -1720,8 +1823,8 @@ Only way out is south.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-trowed-tries-rule-fallthrough
-{--rej}#testcase-run-vr-trowed-tries-rule-default
+{--rej}#testcase-check-vc-trowed-tries-rule-fallthrough
+{--all}#testcase-run-vr-trowed-tries-rule-default
 WRONG
 
 @rej
@@ -1742,8 +1845,8 @@ Enough trying. You need to take action!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-loud-lies-rule-fallthrough
-{--rej}#testcase-run-vr-loud-lies-rule-default
+{--rej}#testcase-check-vc-loud-lies-rule-fallthrough
+{--all}#testcase-run-vr-loud-lies-rule-default
 WRONG
 
 @rej
@@ -1763,22 +1866,61 @@ You already declaimed the loud lies.
 
 >n
 
+@rej
+##balance undos
+>cast court
+by one point
+\\
+>murky map
+by one point
+\\
+>passed port
+You can visit the PASSED PORT once you have readable directions to get there.
+\\
+>undo
+>undo
+>undo
+##end balance undos
+\\
+#testcase-check-vc-passed-port-rule-if-port-score-is-0
+>passed port
+"Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
+\\
+#testcase-think-table-of-verb-checks-vc-passed-port-rule
+>think
+You can visit the PASSED PORT once you have decent directions to get there.
+
 >fast fort
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fast-fort-rule-fallthrough
-{--rej}#testcase-run-vr-fast-fort-rule-default
+{--rej}#testcase-check-vc-fast-fort-rule-fallthrough
+{--all}#testcase-run-vr-fast-fort-rule-default
 WRONG
 
 @all
 #testcase-room-names-fast-fort
 `Fast Fort
+\\
+>in
+Posh Planks
+\\
+>fast fort
+!by one point
+`Fast Fort
+The Sassed Sort nods and guides the yacht back to Fast Fort.
+
+@rej
+>passed port
+The Sassed Sort looks at the glued glass. "It might help me if I had instructions that were hard to read. But we don't, yet."
+\\
+>think
+You can visit the PASSED PORT once you have readable directions to get there.
 
 @gt
 #testcase-goto-table-of-noways-fast-fort
 >n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-28-glass
@@ -1793,8 +1935,8 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-glued-glass-rule-fallthrough
-{--rej}#testcase-run-vr-glued-glass-rule-default
+{--rej}#testcase-check-vc-glued-glass-rule-fallthrough
+{--all}#testcase-run-vr-glued-glass-rule-default
 WRONG
 
 @ha
@@ -1825,19 +1967,27 @@ WRONG
 >cast court
 by one point
 
-@gt
-#testcase-goto-table-of-noways-cast-court
->n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
-
 @all,rej
-{--all}#testcase-check-vc-cast-court-rule-fallthrough
-{--rej}#testcase-run-vr-cast-court-rule-default
+{--rej}#testcase-check-vc-cast-court-rule-fallthrough
+{--all}#testcase-run-vr-cast-court-rule-default
 WRONG
 
 @all
 #testcase-room-names-cast-court
 `Cast Court
+\\
+>in
+Posh Planks
+\\
+>cast court
+!by one point
+`Cast Court
+The Sassed Sort nods and guides the yacht back to Cast Court.
+
+@gt
+#testcase-goto-table-of-noways-cast-court
+>n
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-27-map
@@ -1852,22 +2002,36 @@ WRONG
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-murky-map-rule-fallthrough
-{--rej}#testcase-run-vr-murky-map-rule-default
+{--rej}#testcase-check-vc-murky-map-rule-fallthrough
+{--all}#testcase-run-vr-murky-map-rule-default
 WRONG
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-passed-port-rule
+>think
+You can visit the PASSED PORT now you have decent directions to get there.
 
 >passed port
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-passed-port-rule-fallthrough
-{--rej}#testcase-run-vr-passed-port-rule-default
-WRONG
+{--rej}#testcase-check-vc-passed-port-rule-fallthrough
+{--all}#testcase-run-vr-passed-port-rule-fallthrough
+{--all}#testcase-run-vr-passed-port-rule-if-passed-port-is-unvisited
+You hand the murky map and glued glass to the Sassed Sort. "Wow! Yeah, wow, it's been a while. But wait ... that's a safe route I hadn't considered. It'll save some time. Mind if I keep the map and glass in case I forget it?"
+Well, you could use the free inventory space. The trip, indeed, doesn't take long.
+
+@all
+#testcase-run-vr-passed-port-rule-default
+>in
+Posh Planks
+
+>passed port
 
 @gt
 #testcase-goto-table-of-noways-passed-port
 >n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-29-salad
@@ -1906,16 +2070,16 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-slashing-sword-rule-fallthrough
-{--rej}#testcase-run-vr-slashing-sword-rule-default
+{--rej}#testcase-check-vc-slashing-sword-rule-fallthrough
+{--all}#testcase-run-vr-slashing-sword-rule-default
 WRONG
 
 >salad scent
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-salad-scent-rule-fallthrough
-{--rej}#testcase-run-vr-salad-scent-rule-default
+{--rej}#testcase-check-vc-salad-scent-rule-fallthrough
+{--all}#testcase-run-vr-salad-scent-rule-default
 WRONG
 
 @rej
@@ -1937,8 +2101,8 @@ Wow! You must really like salad!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-rhyme-road-rule-fallthrough
-{--rej}#testcase-run-vr-rhyme-road-rule-default
+{--rej}#testcase-check-vc-rhyme-road-rule-fallthrough
+{--all}#testcase-run-vr-rhyme-road-rule-default
 WRONG
 
 @rej
@@ -2002,8 +2166,8 @@ You don't want to get lost in the bluff. Best just go back east once you're done
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-grew-gruff-rule-fallthrough
-{--rej}#testcase-run-vr-grew-gruff-rule-default
+{--rej}#testcase-check-vc-grew-gruff-rule-fallthrough
+{--all}#testcase-run-vr-grew-gruff-rule-default
 WRONG
 
 @rej
@@ -2020,12 +2184,17 @@ Don't want to overdo it!
 >zstew stuff
 {$GREENCORE}
 
+@rej
+#testcase-check-vc-new-nuff-rule-if-sco-stew-stuff-is-false
+>new nuff
+You have nothing to make new 'nuff, yet.
+
 >stew stuff
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-stew-stuff-rule-fallthrough
-{--rej}#testcase-run-vr-stew-stuff-rule-default
+{--rej}#testcase-check-vc-stew-stuff-rule-fallthrough
+{--all}#testcase-run-vr-stew-stuff-rule-default
 WRONG
 
 @rej
@@ -2046,8 +2215,8 @@ You can't make any more stew stuff.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-new-nuff-rule-fallthrough
-{--rej}#testcase-run-vr-new-nuff-rule-default
+{--rej}#testcase-check-vc-new-nuff-rule-fallthrough
+{--all}#testcase-run-vr-new-nuff-rule-default
 WRONG
 
 @rej
@@ -2080,12 +2249,20 @@ You already revitalized the stew stuff.
 >flawed zflash
 {$GREENCORE}
 
+@alt
+##balance undos
+#testcase-alt-words-table-of-verb-checks-54-trod-flawed-trash-flash
+>flawed flash
+by one point
+\\
+>undo
+
 >trod trash
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-trod-trash-rule-fallthrough
-{--rej}#testcase-run-vr-trod-trash-rule-default
+{--rej}#testcase-check-vc-trod-trash-rule-fallthrough
+{--all}#testcase-run-vr-trod-trash-rule-default
 WRONG
 
 @rej
@@ -2133,8 +2310,8 @@ Only way back is north.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-bought-beef-rule-fallthrough
-{--rej}#testcase-run-vr-bought-beef-rule-default
+{--rej}#testcase-check-vc-bought-beef-rule-fallthrough
+{--all}#testcase-run-vr-bought-beef-rule-default
 WRONG
 
 @rej
@@ -2153,8 +2330,8 @@ You can make a WROUGHT REEF once you've bluffed your way through the fief.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-brought-brief-rule-fallthrough
-{--rej}#testcase-run-vr-brought-brief-rule-default
+{--rej}#testcase-check-vc-brought-brief-rule-fallthrough
+{--all}#testcase-run-vr-brought-brief-rule-default
 WRONG
 
 @rej
@@ -2180,8 +2357,8 @@ You can make a WROUGHT REEF now you've bluffed your way through the fief.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-wrought-reef-rule-fallthrough
-{--rej}#testcase-run-vr-wrought-reef-rule-default
+{--rej}#testcase-check-vc-wrought-reef-rule-fallthrough
+{--all}#testcase-run-vr-wrought-reef-rule-default
 WRONG
 
 @rej
@@ -2206,8 +2383,8 @@ You already wrought the reef!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-done-dish-rule-fallthrough
-{--rej}#testcase-run-vr-done-dish-rule-default
+{--rej}#testcase-check-vc-done-dish-rule-fallthrough
+{--all}#testcase-run-vr-done-dish-rule-default
 WRONG
 
 @ha
@@ -2309,8 +2486,8 @@ You can say WILL WON once you're a little less miserable.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fill-fun-rule-fallthrough
-{--rej}#testcase-run-vr-fill-fun-rule-default
+{--rej}#testcase-check-vc-fill-fun-rule-fallthrough
+{--all}#testcase-run-vr-fill-fun-rule-default
 WRONG
 
 @rej
@@ -2348,8 +2525,8 @@ You already filled yourself up with fun!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-will-won-rule-fallthrough
-{--rej}#testcase-run-vr-will-won-rule-default
+{--rej}#testcase-check-vc-will-won-rule-fallthrough
+{--all}#testcase-run-vr-will-won-rule-default
 WRONG
 
 @rej
@@ -2370,8 +2547,8 @@ You already have a will to win!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-ill-un-rule-fallthrough
-{--rej}#testcase-run-vr-ill-un-rule-default
+{--rej}#testcase-check-vc-ill-un-rule-fallthrough
+{--all}#testcase-run-vr-ill-un-rule-default
 WRONG
 
 @rej
@@ -2445,24 +2622,24 @@ Beyond is too dangerous. Best just go back down when you're ready.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-hack-height-rule-fallthrough
-{--rej}#testcase-run-vr-hack-height-rule-default
+{--rej}#testcase-check-vc-hack-height-rule-fallthrough
+{--all}#testcase-run-vr-hack-height-rule-default
 WRONG
 
 >slack slight
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-slack-slight-rule-fallthrough
-{--rej}#testcase-run-vr-slack-slight-rule-default
+{--rej}#testcase-check-vc-slack-slight-rule-fallthrough
+{--all}#testcase-run-vr-slack-slight-rule-default
 WRONG
 
 >quack quite
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-quack-quite-rule-fallthrough
-{--rej}#testcase-run-vr-quack-quite-rule-default
+{--rej}#testcase-check-vc-quack-quite-rule-fallthrough
+{--all}#testcase-run-vr-quack-quite-rule-default
 WRONG
 
 @ha
@@ -2486,8 +2663,8 @@ WRONG
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-power-plate-rule-fallthrough
-{--rej}#testcase-run-vr-power-plate-rule-default
+{--rej}#testcase-check-vc-power-plate-rule-fallthrough
+{--all}#testcase-run-vr-power-plate-rule-default
 WRONG
 
 @ha
@@ -2504,8 +2681,8 @@ WRONG
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-flak-flight-rule-fallthrough
-{--rej}#testcase-run-vr-flak-flight-rule-default
+{--rej}#testcase-check-vc-flak-flight-rule-fallthrough
+{--all}#testcase-run-vr-flak-flight-rule-default
 WRONG
 
 @rej
@@ -2551,8 +2728,8 @@ You already quacked "Quite!"
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-quash-quick-rule-fallthrough
-{--rej}#testcase-run-vr-quash-quick-rule-default
+{--rej}#testcase-check-vc-quash-quick-rule-fallthrough
+{--all}#testcase-run-vr-quash-quick-rule-default
 WRONG
 
 @rej
@@ -2577,8 +2754,8 @@ You already figured that part of getting the pick!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-slosh-slick-rule-fallthrough
-{--rej}#testcase-run-vr-slosh-slick-rule-default
+{--rej}#testcase-check-vc-slosh-slick-rule-fallthrough
+{--all}#testcase-run-vr-slosh-slick-rule-default
 WRONG
 
 @ha
@@ -2594,8 +2771,8 @@ WRONG
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-time-toad-rule-fallthrough
-{--rej}#testcase-run-vr-time-toad-rule-default
+{--rej}#testcase-check-vc-time-toad-rule-fallthrough
+{--all}#testcase-run-vr-time-toad-rule-default
 WRONG
 
 @rej
@@ -2645,8 +2822,8 @@ This would seem to be despairing. You can't already admit you tried but failed.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-stander-stove-rule-fallthrough
-{--rej}#testcase-run-vr-stander-stove-rule-default
+{--rej}#testcase-check-vc-stander-stove-rule-fallthrough
+{--all}#testcase-run-vr-stander-stove-rule-default
 WRONG
 
 @rej
@@ -2654,12 +2831,20 @@ WRONG
 >stander stove
 You already found the stander stove!
 
+@alt
+##balance undos
+#testcase-alt-words-table-of-verb-checks-69-candor-candour-cove
+>candour cove
+by one point
+\\
+>undo
+
 >candor cove
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-candor-cove-rule-fallthrough
-{--rej}#testcase-run-vr-candor-cove-rule-default
+{--rej}#testcase-check-vc-candor-cove-rule-fallthrough
+{--all}#testcase-run-vr-candor-cove-rule-default
 WRONG
 
 @rej
@@ -2673,8 +2858,8 @@ WRONG change this statement
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-grander-grove-rule-fallthrough
-{--rej}#testcase-run-vr-grander-grove-rule-default
+{--rej}#testcase-check-vc-grander-grove-rule-fallthrough
+{--all}#testcase-run-vr-grander-grove-rule-default
 WRONG
 
 @rej
@@ -2719,25 +2904,38 @@ This is a secluded place with the only exit back west.
 >covering zcandle
 {$GREENCORE}
 
+@rej
+#testcase-check-vc-covering-candle-rule-if-sco-bell-book-is-false
+>covering candle
+The first part of the ceremony comes first. I think you know what it is?
+\\
+#testcase-think-table-of-verb-checks-vc-covering-candle-rule
+>think
+You can say COVERING CANDLE once you have what you need for the summoning ceremony.
+
 >bell book
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-bell-book-rule-fallthrough
-{--rej}#testcase-run-vr-bell-book-rule-default
+{--rej}#testcase-check-vc-bell-book-rule-fallthrough
+{--all}#testcase-run-vr-bell-book-rule-default
 WRONG
 
 @rej
 #testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
 >bell book
 You already got the bell and book! Now for the next part.
+\\
+#+testcase-think-table-of-verb-checks-vc-covering-candle-rule
+>think
+You can say COVERING CANDLE now you have what you need for the summoning ceremony.
 
 >covering candle
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-covering-candle-rule-fallthrough
-{--rej}#testcase-run-vr-covering-candle-rule-default
+{--rej}#testcase-check-vc-covering-candle-rule-fallthrough
+{--all}#testcase-run-vr-covering-candle-rule-default
 WRONG
 
 @all
@@ -2777,8 +2975,8 @@ WRONG
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-nowt-nuff-rule-fallthrough
-{--rej}#testcase-run-vr-nowt-nuff-rule-default
+{--rej}#testcase-check-vc-nowt-nuff-rule-fallthrough
+{--all}#testcase-run-vr-nowt-nuff-rule-default
 WRONG
 
 @rej
@@ -2790,8 +2988,8 @@ You already nullified certain worries and complaints!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-stout-stuff-rule-fallthrough
-{--rej}#testcase-run-vr-stout-stuff-rule-default
+{--rej}#testcase-check-vc-stout-stuff-rule-fallthrough
+{--all}#testcase-run-vr-stout-stuff-rule-default
 WRONG
 
 @rej
@@ -2804,8 +3002,8 @@ You already found ways to be stout!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-flout-fluff-rule-fallthrough
-{--rej}#testcase-run-vr-flout-fluff-rule-default
+{--rej}#testcase-check-vc-flout-fluff-rule-fallthrough
+{--all}#testcase-run-vr-flout-fluff-rule-default
 WRONG
 
 @rej
@@ -2838,8 +3036,8 @@ You already flouted fluff!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-harder-helm-rule-fallthrough
-{--rej}#testcase-run-vr-harder-helm-rule-default
+{--rej}#testcase-check-vc-harder-helm-rule-fallthrough
+{--all}#testcase-run-vr-harder-helm-rule-default
 WRONG
 
 @rej
@@ -2853,14 +3051,22 @@ That sort of repeated ardor won't get you anywhere!
 
 >e
 
+@alt
+##balance undos
+#testcase-alt-words-table-of-verb-checks-4-eyeing-eying-ease
+>eyeing eying ease
+by one point
+\\
+>undo
+
 @!min
 >eyeing ease
 score and bonus
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-eyeing-eying-ease-rule-fallthrough
-{--rej}#testcase-run-vr-eyeing-eying-ease-rule-default
+{--rej}#testcase-check-vc-eyeing-eying-ease-rule-fallthrough
+{--all}#testcase-run-vr-eyeing-eying-ease-rule-default
 WRONG
 
 @rej
@@ -2917,8 +3123,8 @@ You can say FUSING PHEW once you have commiserated more than one way with Lou.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-using-you-rule-fallthrough
-{--rej}#testcase-run-vr-using-you-rule-default
+{--rej}#testcase-check-vc-using-you-rule-fallthrough
+{--all}#testcase-run-vr-using-you-rule-default
 WRONG
 
 @rej
@@ -2930,8 +3136,8 @@ You already let Lou know the truth!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-boozing-boo-rule-fallthrough
-{--rej}#testcase-run-vr-boozing-boo-rule-default
+{--rej}#testcase-check-vc-boozing-boo-rule-fallthrough
+{--all}#testcase-run-vr-boozing-boo-rule-default
 WRONG
 
 @rej
@@ -2957,8 +3163,8 @@ You can say FUSING PHEW now you have commiserated more than one way with Lou.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fusing-phew-rule-fallthrough
-{--rej}#testcase-run-vr-fusing-phew-rule-default
+{--rej}#testcase-check-vc-fusing-phew-rule-fallthrough
+{--all}#testcase-run-vr-fusing-phew-rule-default
 WRONG
 
 @rej
@@ -2979,8 +3185,8 @@ Fusing ideas once was exhausting enough.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-spurning-spew-rule-fallthrough
-{--rej}#testcase-run-vr-spurning-spew-rule-default
+{--rej}#testcase-check-vc-spurning-spew-rule-fallthrough
+{--all}#testcase-run-vr-spurning-spew-rule-default
 WRONG
 
 >out
@@ -3049,8 +3255,8 @@ You are at the top of the hill. It was such a long journey up, you lost track of
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-scaling-skill-rule-fallthrough
-{--rej}#testcase-run-vr-scaling-skill-rule-default
+{--rej}#testcase-check-vc-scaling-skill-rule-fallthrough
+{--all}#testcase-run-vr-scaling-skill-rule-default
 WRONG
 
 @rej
@@ -3062,8 +3268,8 @@ You already improved your climbing ability!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-ailing-ill-rule-fallthrough
-{--rej}#testcase-run-vr-ailing-ill-rule-default
+{--rej}#testcase-check-vc-ailing-ill-rule-fallthrough
+{--all}#testcase-run-vr-ailing-ill-rule-default
 WRONG
 
 @rej
@@ -3075,8 +3281,8 @@ You already expressed that everyone hurts!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-mailing-mill-rule-fallthrough
-{--rej}#testcase-run-vr-mailing-mill-rule-default
+{--rej}#testcase-check-vc-mailing-mill-rule-fallthrough
+{--all}#testcase-run-vr-mailing-mill-rule-default
 WRONG
 
 @rej
@@ -3121,24 +3327,24 @@ You can contact Wailing Will now you have something to offer him.
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-failing-phil-rule-fallthrough
-{--rej}#testcase-run-vr-failing-phil-rule-default
+{--rej}#testcase-check-vc-failing-phil-rule-fallthrough
+{--all}#testcase-run-vr-failing-phil-rule-default
 WRONG
 
 >wailing will
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-wailing-will-rule-fallthrough
-{--rej}#testcase-run-vr-wailing-will-rule-default
+{--rej}#testcase-check-vc-wailing-will-rule-fallthrough
+{--all}#testcase-run-vr-wailing-will-rule-default
 WRONG
 
 >bailing bill
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-bailing-bill-rule-fallthrough
-{--rej}#testcase-run-vr-bailing-bill-rule-default
+{--rej}#testcase-check-vc-bailing-bill-rule-fallthrough
+{--all}#testcase-run-vr-bailing-bill-rule-default
 WRONG
 
 @rej
@@ -3162,8 +3368,8 @@ You have already helped Failing Phil!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fight-fave-rule-fallthrough
-{--rej}#testcase-run-vr-fight-fave-rule-default
+{--rej}#testcase-check-vc-fight-fave-rule-fallthrough
+{--all}#testcase-run-vr-fight-fave-rule-default
 WRONG
 
 @rej
@@ -3172,10 +3378,14 @@ WRONG
 You already started the final fight! You aren't going to, like, REALLY start fighting now.
 
 @all
+#testcase-run-vr-bright-bully-rule-abide-by-the-frightfully-bright-bully-rule
 >bright bully
+Tully shakes their head a bit. You've seen into them, but you feel like you can do more.
 by one point
 \\
+#testcase-run-vr-fright-fully-rule-abide-by-the-frightfully-bright-bully-rule
 >frightfully
+No! No! It can't be!
 by one point
 \\
 >undo
@@ -3213,8 +3423,8 @@ There must be another way to see Trite Tully!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-fright-fully-rule-fallthrough
-{--rej}#testcase-run-vr-fright-fully-rule-default
+{--rej}#testcase-check-vc-fright-fully-rule-fallthrough
+{--all}#testcase-run-vr-fright-fully-rule-default
 WRONG
 
 @rej
@@ -3226,8 +3436,8 @@ There must be another way to see Trite Tully!
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-bright-bully-rule-fallthrough
-{--rej}#testcase-run-vr-bright-bully-rule-default
+{--rej}#testcase-check-vc-bright-bully-rule-fallthrough
+{--all}#testcase-run-vr-bright-bully-rule-default
 WRONG
 
 @mis
@@ -3571,6 +3781,8 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 {$REJECT2}
 ====alphabetize off
 
+>bam bye
+
 @min
 # I don't understand what's going on here, but this won't show the final command for MIN, even though it does so for other commands.
 >misses
@@ -3589,10 +3801,9 @@ You could have tried to JACK GIST for a shorter command to read the track tryst 
 \\
 >z
 
->bam bye
 by one point
 
 @all,rej
-{--all}#testcase-check-vc-bam-bye-rule-fallthrough
-{--rej}#testcase-run-vr-bam-bye-rule-default
+{--rej}#testcase-check-vc-bam-bye-rule-fallthrough
+{--all}#testcase-run-vr-bam-bye-rule-default
 WRONG

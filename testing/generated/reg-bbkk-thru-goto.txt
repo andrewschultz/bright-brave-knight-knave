@@ -13,7 +13,7 @@ Taken.
 
 >au 2
 
-#testcase-table-of-noways-white-wave
+#testcase-goto-table-of-noways-white-wave
 >e
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
@@ -235,331 +235,67 @@ by one point
 >seed sack
 by one point
 
->n
-
->e
-
->e
-
 #testcase-goto-table-of-noways-lane-lax
 >n
 Back west is the only way. For now.
-
->train tracks
-by one point
 
 #+testcase-goto-table-of-noways-lane-lax
 >e
 The train tracks head north and south, but you can go back west, too.
 
->main max
-by one point
-
->pain packs
-by one point
-
->n
-
 #testcase-goto-table-of-noways-wowed-wise-crowd-cries
 >n
 Only way out is south.
 
->trowed tries
-by one point
-
->loud lies
-by one point
-
->s
-
->w
-
->w
-
->n
-
->fast fort
-by one point
-
 #testcase-goto-table-of-noways-fast-fort
 >n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
-
->glued glass
-by one point
-
->cast court
-by one point
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 #testcase-goto-table-of-noways-cast-court
 >n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
-
->murky map
-by one point
-
->passed port
-by one point
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 #testcase-goto-table-of-noways-passed-port
 >n
-You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go.
-
->slashing sword
-by one point
-
->salad scent
-by one point
+You sense exploring this island would get you lost. ENTER the yacht to re-visit Posh Planks, or specify where else you want to go.
 
 >rhyme road
 by one point
-
->in
-
->s
-
->w
-
->n
-
->r 3
-
->s
-
->e
-
->s
-
->u
 
 #testcase-goto-table-of-noways-too-tough-blue-bluff
 >n
 You don't want to get lost in the bluff. Best just go back east once you're done here.
 
->grew gruff
-by one point
-
->stew stuff
-by one point
-
->new nuff
-by one point
-
->d
-
->n
-
->e
-
->e
-
->trod trash
-by one point
-
->s
-
 #testcase-goto-table-of-noways-thought-thief-fought-fief
 >e
 Only way back is north.
-
->bought beef
-by one point
-
->brought brief
-by one point
-
->wrought reef
-by one point
-
->done dish
-by one point
-
->fill fun
-by one point
-
->will won
-by one point
-
->illun
-by one point
-
->n
-
->n
-
->w
-
->w
-
->n
-
->r 2
-
->s
-
->e
-
->s
-
->w
 
 #testcase-goto-table-of-noways-black-blight
 >w
 Beyond is too dangerous. Best just go back down when you're ready.
 
->hack height
-by one point
-
->slack slight
-by one point
-
->quack quite
-by one point
-
->power plate
-by one point
-
 >flak flight
-by one point
-
->e
-
->n
-
->n
-
->passed port
-!by one point
-
->quash quick
-by one point
-
->slosh slick
-by one point
-
->time toad
-by one point
-
->stander stove
-by one point
-
->candor cove
 by one point
 
 >grander grove
 by one point
 
->n
-
->in
-
->s
-
->s
-
->e
-
 #testcase-goto-table-of-noways-knell-nook
 >n
 This is a secluded place with the only exit back west.
 
->bell book
-by one point
-
->covering candle
-by one point
-
->nowt nuff
-by one point
-
->stout stuff
-by one point
-
 >flout fluff
 by one point
-
->n
-
->w
-
->n
-
->w
-
->n
-
->w
-
->harder helm
-by one point
-
->e
-
->s
-
->e
 
 >eyeing ease
 score and bonus
 by one point
 
->in
-
 #testcase-goto-table-of-noways-bruising-brew
 >e
 This pub houses no crazy lattice of secret passages. You can only go back out.
 
->using you
-by one point
-
->boozing boo
-by one point
-
->fusing phew
-by one point
-
->spurning spew
-by one point
-
->out
-
->u
-
 #testcase-goto-table-of-noways-hailing-hill
 >w
 You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way.
-
->scaling skill
-by one point
-
->ailing ill
-by one point
-
->mailing mill
-by one point
-
->failing phil
-by one point
-
->wailing will
-by one point
-
->bailing bill
-by one point
-
->d
-
->d
-
->fight fave
-by one point
-
->frightfully
-by one point
-
->bright bully
-by one point
-
->bam bye
-by one point
 

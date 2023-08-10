@@ -406,8 +406,9 @@ I couldn't parse that command. You don't need any more than two words long.
 >kite cave
 by one point
 
-#testcase-run-vr-kite-cave-rule-default
-WRONG
+#testcase-check-vc-kite-cave-rule-fallthrough
+You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
+The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
 >kite cave
@@ -420,7 +421,7 @@ You already discovered the kite cave to find a path beyond!
 >jack gist
 WRONG
 
-#testcase-run-vr-jack-gist-rule-default
+#testcase-check-vc-jack-gist-rule-fallthrough
 WRONG
 
 #testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
@@ -464,7 +465,7 @@ You already calculated! Overcalculate, and you might miss or reject the obvious.
 
 >pass path
 
-#testcase-run-vr-pass-path-rule-default
+#testcase-check-vc-pass-path-rule-fallthrough
 WRONG
 
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
@@ -479,7 +480,7 @@ You already found a pass-path through the bass bath!
 >mass math
 by one point
 
-#testcase-run-vr-mass-math-rule-default
+#testcase-check-vc-mass-math-rule-fallthrough
 WRONG
 
 >e
@@ -520,7 +521,7 @@ You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 >write rave
 by two point
 
-#testcase-run-vr-write-right-rave-rule-default
+#testcase-check-vc-write-right-rave-rule-fallthrough
 WRONG
 
 #testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
@@ -534,7 +535,7 @@ by one point
 >what whoah
 You already had a revelation that will push you out of your rut and see a new passage through.
 
-#testcase-run-vr-what-whoah-rule-default
+#testcase-check-vc-what-whoah-rule-fallthrough
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
 
 >w
@@ -554,7 +555,7 @@ You can say RID RUM once you have cause to speak out against alcohol.
 >hid hum
 by one point
 
-#testcase-run-vr-hid-hum-rule-default
+#testcase-check-vc-hid-hum-rule-fallthrough
 WRONG
 
 #testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
@@ -568,7 +569,7 @@ You can say KID COME now a kid is around.
 >kid come
 by one point
 
-#testcase-run-vr-kid-come-rule-default
+#testcase-check-vc-kid-come-rule-fallthrough
 WRONG
 
 #testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
@@ -582,7 +583,7 @@ You can say RID RUM once you have cause to speak out against alcohol.
 >rid rum
 by one point
 
-#testcase-run-vr-rid-rum-rule-default
+#testcase-check-vc-rid-rum-rule-fallthrough
 WRONG
 
 #testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
@@ -605,7 +606,7 @@ You already got the mood mapper/'tude tapper!
 >nude napper
 by one point
 
-#testcase-run-vr-nude-napper-rule-default
+#testcase-check-vc-nude-napper-rule-fallthrough
 WRONG
 
 #testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
@@ -621,7 +622,7 @@ You don't want to be too much of a moral scold!
 >stride streak
 by one point
 
-#testcase-run-vr-stride-streak-rule-default
+#testcase-check-vc-stride-streak-rule-fallthrough
 WRONG
 
 #testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
@@ -631,19 +632,19 @@ You already encouraged more action and less moping here!
 >guide geek
 by one point
 
-#testcase-run-vr-guide-geek-rule-default
+#testcase-check-vc-guide-geek-rule-fallthrough
 WRONG
 
 >fried freak
 by one point
 
-#testcase-run-vr-fried-freak-rule-default
+#testcase-check-vc-fried-freak-rule-fallthrough
 WRONG
 
 >snide sneak
 by one point
 
-#testcase-run-vr-snide-sneak-rule-default
+#testcase-check-vc-snide-sneak-rule-fallthrough
 WRONG
 
 >e
@@ -651,19 +652,19 @@ WRONG
 >meek mooter
 by one point
 
-#testcase-run-vr-meek-mooter-rule-default
+#testcase-check-vc-meek-mooter-rule-fallthrough
 WRONG
 
 >weak wooter
 by one point
 
-#testcase-run-vr-weak-wooter-rule-default
+#testcase-check-vc-weak-wooter-rule-fallthrough
 WRONG
 
 >chic shooter
 by one point
 
-#testcase-run-vr-chic-shooter-rule-default
+#testcase-check-vc-chic-shooter-rule-fallthrough
 WRONG
 
 >w
@@ -681,7 +682,7 @@ by one point
 >posh planks
 by one point
 
-#testcase-run-vr-posh-planks-rule-default
+#testcase-check-vc-posh-planks-rule-fallthrough
 WRONG
 
 #testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
@@ -692,7 +693,7 @@ Oh, no, let's not make things TOO posh, here!
 >plucky plot
 by one point
 
-#testcase-run-vr-plucky-plot-rule-default
+#testcase-check-vc-plucky-plot-rule-fallthrough
 WRONG
 
 #testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
@@ -712,7 +713,7 @@ But you already hatched a plucky plot to clean the yucky yacht!
 >yall yank
 by one point
 
-#testcase-run-vr-yall-yank-rule-default
+#testcase-check-vc-yall-yank-rule-fallthrough
 WRONG
 
 #testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
@@ -722,7 +723,7 @@ You've already pulled out the tall tank(s).
 >paul panks
 by one point
 
-#testcase-run-vr-paul-panks-rule-default
+#testcase-check-vc-paul-panks-rule-fallthrough
 WRONG
 
 #testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
@@ -748,17 +749,62 @@ You already paid your respects.
 >need knack
 by one point
 
-#testcase-run-vr-need-knack-rule-default
+#testcase-check-vc-need-knack-rule-fallthrough
 WRONG
 
 #testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
 >need knack
 You already got the knack for looking around! You won't forget it.
+>n
+>u
+#testcase-check-vc-mailing-mill-rule-if-sco-scaling-skill-is-false-or-sco-ailing-ill-is-false
+>mailing mill
+WRONG
+
+>think
+WRONG
+
+>undo
+>undo
+
+>ailing ill
+WRONG
+
+>mailing mill
+WRONG
+
+>think
+WRONG
+
+>undo
+>undo
+>undo
+
+>scaling skill
+by one point
+
+>mailing mill
+WRONG
+
+>think
+WRONG
+
+>ailing ill
+by one point
+>mailing mill
+WRONG
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
 
 >plead plaque
 by one point
 
-#testcase-run-vr-plead-plaque-rule-default
+#testcase-check-vc-plead-plaque-rule-fallthrough
 WRONG
 
 #testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
@@ -768,7 +814,7 @@ You look over the plead plaque again. Man, even more fun adventures once you're 
 >heed hack
 by one point
 
-#testcase-run-vr-heed-hack-rule-default
+#testcase-check-vc-heed-hack-rule-fallthrough
 WRONG
 
 #testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
@@ -778,7 +824,7 @@ You look for other ways to hack through the Treed Track, but three all told is p
 >seed sack
 by one point
 
-#testcase-run-vr-seed-sack-rule-default
+#testcase-check-vc-seed-sack-rule-fallthrough
 WRONG
 
 #testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
@@ -786,6 +832,40 @@ WRONG
 You already got a seed sack!
 
 >n
+>u
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+
+>scaling skill
+by one point
+
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+
+>failing phil
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+>bailing bill
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+>wailing will
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+#testcase-check-vc-bailing-bill-rule-if-player-does-not-have-bold-bowl
+>bailing bill
+You sense you cannot offer Failing Phil what he needs. Yet.
+
+#testcase-check-vc-failing-phil-rule-if-player-does-not-have-cold-coal
+>failing phil
+You sense you cannot offer Failing Phil what he needs. Yet.
+
+#testcase-check-vc-wailing-will-rule-if-player-does-not-have-sold-soul
+>wailing will
+You sense you cannot offer Failing Phil what he needs. Yet.
 
 >u
 >bailing bill
@@ -805,24 +885,14 @@ You can contact Wailing Will once you have something to offer him.
 
 >d
 
->e
-
->e
-
->train tracks
-by one point
-
-#testcase-run-vr-train-tracks-rule-default
+#testcase-check-vc-train-tracks-rule-fallthrough
 WRONG
 
 #testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
 >train tracks
 You already created train tracks, though they could become sturdier and farther-reaching.
 
->main max
-by one point
-
-#testcase-run-vr-main-max-rule-default
+#testcase-check-vc-main-max-rule-fallthrough
 WRONG
 
 #testcase-check-vc-main-max-rule-if-sco-main-max-is-true
@@ -833,32 +903,21 @@ You already upgraded the train tracks!
 >train tracks
 You already created train tracks.
 
->pain packs
-by one point
-
-#testcase-run-vr-pain-packs-rule-default
+#testcase-check-vc-pain-packs-rule-fallthrough
 WRONG
 
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
 >pain packs
 You already got some pain packs!
 
->n
-
->trowed tries
-by one point
-
-#testcase-run-vr-trowed-tries-rule-default
+#testcase-check-vc-trowed-tries-rule-fallthrough
 WRONG
 
 #testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
 >trowed tries
 Enough trying. You need to take action!
 
->loud lies
-by one point
-
-#testcase-run-vr-loud-lies-rule-default
+#testcase-check-vc-loud-lies-rule-fallthrough
 WRONG
 
 #+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
@@ -869,54 +928,57 @@ No need to re-try.
 >loud lies
 You already declaimed the loud lies.
 
->s
-
->w
-
->w
-
->n
-
->fast fort
-by one point
-
-#testcase-run-vr-fast-fort-rule-default
-WRONG
-
->glued glass
-by one point
-
-#testcase-run-vr-glued-glass-rule-default
-WRONG
-
 >cast court
 by one point
-
-#testcase-run-vr-cast-court-rule-default
-WRONG
 
 >murky map
 by one point
 
-#testcase-run-vr-murky-map-rule-default
+>passed port
+You can visit the PASSED PORT once you have readable directions to get there.
+
+>undo
+>undo
+>undo
+
+#testcase-check-vc-passed-port-rule-if-port-score-is-0
+>passed port
+"Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
+
+#testcase-think-table-of-verb-checks-vc-passed-port-rule
+>think
+You can visit the PASSED PORT once you have decent directions to get there.
+
+#testcase-check-vc-fast-fort-rule-fallthrough
 WRONG
 
 >passed port
-by one point
+The Sassed Sort looks at the glued glass. "It might help me if I had instructions that were hard to read. But we don't, yet."
 
-#testcase-run-vr-passed-port-rule-default
+>think
+You can visit the PASSED PORT once you have readable directions to get there.
+
+#testcase-check-vc-glued-glass-rule-fallthrough
 WRONG
 
->slashing sword
-by one point
-
-#testcase-run-vr-slashing-sword-rule-default
+#testcase-check-vc-cast-court-rule-fallthrough
 WRONG
 
->salad scent
-by one point
+#testcase-check-vc-murky-map-rule-fallthrough
+WRONG
 
-#testcase-run-vr-salad-scent-rule-default
+#+testcase-think-table-of-verb-checks-vc-passed-port-rule
+>think
+You can visit the PASSED PORT now you have decent directions to get there.
+
+#testcase-check-vc-passed-port-rule-fallthrough
+You hand the murky map and glued glass to the Sassed Sort. "Wow! Yeah, wow, it's been a while. But wait ... that's a safe route I hadn't considered. It'll save some time. Mind if I keep the map and glass in case I forget it?"
+Well, you could use the free inventory space. The trip, indeed, doesn't take long.
+
+#testcase-check-vc-slashing-sword-rule-fallthrough
+WRONG
+
+#testcase-check-vc-salad-scent-rule-fallthrough
 WRONG
 
 #testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
@@ -926,85 +988,46 @@ Wow! You must really like salad!
 >rhyme road
 by one point
 
-#testcase-run-vr-rhyme-road-rule-default
+#testcase-check-vc-rhyme-road-rule-fallthrough
 WRONG
 
 #testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
 >rhyme road
 You already looked down Rhyme Road!
 
->in
-
->s
-
->w
-
->n
-
->r 3
-
->s
-
->e
-
->s
-
->u
-
->grew gruff
-by one point
-
-#testcase-run-vr-grew-gruff-rule-default
+#testcase-check-vc-grew-gruff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
 >grew gruff
 Don't want to overdo it!
 
->stew stuff
-by one point
+#testcase-check-vc-new-nuff-rule-if-sco-stew-stuff-is-false
+>new nuff
+You have nothing to make new 'nuff, yet.
 
-#testcase-run-vr-stew-stuff-rule-default
+#testcase-check-vc-stew-stuff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
 >stew stuff
 You can't make any more stew stuff.
 
->new nuff
-by one point
-
-#testcase-run-vr-new-nuff-rule-default
+#testcase-check-vc-new-nuff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
 >new nuff
 You already revitalized the stew stuff.
 
->d
-
->n
-
->e
-
->e
-
->trod trash
-by one point
-
-#testcase-run-vr-trod-trash-rule-default
+#testcase-check-vc-trod-trash-rule-fallthrough
 WRONG
 
 #testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
 >trod trash
 But you already got people to trod on the trash!
 
->s
-
->bought beef
-by one point
-
-#testcase-run-vr-bought-beef-rule-default
+#testcase-check-vc-bought-beef-rule-fallthrough
 WRONG
 
 #testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
@@ -1018,10 +1041,7 @@ It's still too chaotic to do much!
 >think
 You can make a WROUGHT REEF once you've bluffed your way through the fief.
 
->brought brief
-by one point
-
-#testcase-run-vr-brought-brief-rule-default
+#testcase-check-vc-brought-brief-rule-fallthrough
 WRONG
 
 #testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
@@ -1032,20 +1052,14 @@ You already pretended you brought huge plans!
 >think
 You can make a WROUGHT REEF now you've bluffed your way through the fief.
 
->wrought reef
-by one point
-
-#testcase-run-vr-wrought-reef-rule-default
+#testcase-check-vc-wrought-reef-rule-fallthrough
 WRONG
 
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
 >wrought reef
 You already wrought the reef!
 
->done dish
-by one point
-
-#testcase-run-vr-done-dish-rule-default
+#testcase-check-vc-done-dish-rule-fallthrough
 WRONG
 
 #testcase-check-vc-will-won-rule-if-sco-fill-fun-is-false
@@ -1061,10 +1075,7 @@ WRONG
 You can say ILLUN once you're a little less miserable.
 You can say WILL WON once you're a little less miserable.
 
->fill fun
-by one point
-
-#testcase-run-vr-fill-fun-rule-default
+#testcase-check-vc-fill-fun-rule-fallthrough
 WRONG
 
 #+testcase-think-table-of-verb-checks-vc-will-won-rule
@@ -1076,74 +1087,36 @@ You can say WILL WON now you're a little less miserable.
 >fill fun
 You already filled yourself up with fun!
 
->will won
-by one point
-
-#testcase-run-vr-will-won-rule-default
+#testcase-check-vc-will-won-rule-fallthrough
 WRONG
 
 #testcase-check-vc-will-won-rule-if-sco-will-won-is-true
 >will won
 You already have a will to win!
 
->illun
-by one point
-
-#testcase-run-vr-ill-un-rule-default
+#testcase-check-vc-ill-un-rule-fallthrough
 WRONG
 
 #testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
 >illun
 You already identified illun'!
 
->n
-
->n
-
->w
-
->w
-
->n
-
->r 2
-
->s
-
->e
-
->s
-
->w
-
->hack height
-by one point
-
-#testcase-run-vr-hack-height-rule-default
+#testcase-check-vc-hack-height-rule-fallthrough
 WRONG
 
->slack slight
-by one point
-
-#testcase-run-vr-slack-slight-rule-default
+#testcase-check-vc-slack-slight-rule-fallthrough
 WRONG
 
->quack quite
-by one point
-
-#testcase-run-vr-quack-quite-rule-default
+#testcase-check-vc-quack-quite-rule-fallthrough
 WRONG
 
->power plate
-by one point
-
-#testcase-run-vr-power-plate-rule-default
+#testcase-check-vc-power-plate-rule-fallthrough
 WRONG
 
 >flak flight
 by one point
 
-#testcase-run-vr-flak-flight-rule-default
+#testcase-check-vc-flak-flight-rule-fallthrough
 WRONG
 
 #testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
@@ -1162,19 +1135,7 @@ You already hacked the height. You don't want to, like, become a total hack!
 >quack quite
 You already quacked "Quite!"
 
->e
-
->n
-
->n
-
->passed port
-!by one point
-
->quash quick
-by one point
-
-#testcase-run-vr-quash-quick-rule-default
+#testcase-check-vc-quash-quick-rule-fallthrough
 WRONG
 
 #testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
@@ -1185,36 +1146,24 @@ You already quashed things quickly!
 >slosh slick
 You already figured that part of getting the pick!
 
->slosh slick
-by one point
-
-#testcase-run-vr-slosh-slick-rule-default
+#testcase-check-vc-slosh-slick-rule-fallthrough
 WRONG
 
->time toad
-by one point
-
-#testcase-run-vr-time-toad-rule-default
+#testcase-check-vc-time-toad-rule-fallthrough
 WRONG
 
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
 >time toad
 The time toad's gift of cold coal should be enough.
 
->stander stove
-by one point
-
-#testcase-run-vr-stander-stove-rule-default
+#testcase-check-vc-stander-stove-rule-fallthrough
 WRONG
 
 #testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
 >stander stove
 You already found the stander stove!
 
->candor cove
-by one point
-
-#testcase-run-vr-candor-cove-rule-default
+#testcase-check-vc-candor-cove-rule-fallthrough
 WRONG
 
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
@@ -1225,7 +1174,7 @@ WRONG change this statement
 >grander grove
 by one point
 
-#testcase-run-vr-grander-grove-rule-default
+#testcase-check-vc-grander-grove-rule-fallthrough
 WRONG
 
 #testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
@@ -1233,46 +1182,36 @@ WRONG
 You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.
 WRONG fix msg
 
->n
+#testcase-check-vc-covering-candle-rule-if-sco-bell-book-is-false
+>covering candle
+The first part of the ceremony comes first. I think you know what it is?
 
->in
+#testcase-think-table-of-verb-checks-vc-covering-candle-rule
+>think
+You can say COVERING CANDLE once you have what you need for the summoning ceremony.
 
->s
-
->s
-
->e
-
->bell book
-by one point
-
-#testcase-run-vr-bell-book-rule-default
+#testcase-check-vc-bell-book-rule-fallthrough
 WRONG
 
 #testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
 >bell book
 You already got the bell and book! Now for the next part.
 
->covering candle
-by one point
+#+testcase-think-table-of-verb-checks-vc-covering-candle-rule
+>think
+You can say COVERING CANDLE now you have what you need for the summoning ceremony.
 
-#testcase-run-vr-covering-candle-rule-default
+#testcase-check-vc-covering-candle-rule-fallthrough
 WRONG
 
->nowt nuff
-by one point
-
-#testcase-run-vr-nowt-nuff-rule-default
+#testcase-check-vc-nowt-nuff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
 >nowt nuff
 You already nullified certain worries and complaints!
 
->stout stuff
-by one point
-
-#testcase-run-vr-stout-stuff-rule-default
+#testcase-check-vc-stout-stuff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
@@ -1282,53 +1221,30 @@ You already found ways to be stout!
 >flout fluff
 by one point
 
-#testcase-run-vr-flout-fluff-rule-default
+#testcase-check-vc-flout-fluff-rule-fallthrough
 WRONG
 
 #testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
 >flout fluff
 You already flouted fluff!
 
->n
-
->w
-
->n
-
->w
-
->n
-
->w
-
->harder helm
-by one point
-
-#testcase-run-vr-harder-helm-rule-default
+#testcase-check-vc-harder-helm-rule-fallthrough
 WRONG
 
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
 That sort of repeated ardor won't get you anywhere!
 
->e
-
->s
-
->e
-
 >eyeing ease
 score and bonus
 by one point
 
-#testcase-run-vr-eyeing-eying-ease-rule-default
+#testcase-check-vc-eyeing-eying-ease-rule-fallthrough
 WRONG
 
 #testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
 >eyeing ease
 Well, you know not to repeat yourself once you've fished in interesting waters--you found what was there the first time, and you don't want to look like a beggar, now!
-
->in
 
 #testcase-check-vc-fusing-phew-rule-if-lou-score-<-2
 >fusing phew
@@ -1338,20 +1254,14 @@ Once you have more than one perspective to fuse together, that'll work.
 >think
 You can say FUSING PHEW once you have commiserated more than one way with Lou.
 
->using you
-by one point
-
-#testcase-run-vr-using-you-rule-default
+#testcase-check-vc-using-you-rule-fallthrough
 WRONG
 
 #testcase-check-vc-using-you-rule-if-sco-using-you-is-true
 >using you
 You already let Lou know the truth!
 
->boozing boo
-by one point
-
-#testcase-run-vr-boozing-boo-rule-default
+#testcase-check-vc-boozing-boo-rule-fallthrough
 WRONG
 
 #testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
@@ -1362,50 +1272,31 @@ Don't overdo the moralizing!
 >think
 You can say FUSING PHEW now you have commiserated more than one way with Lou.
 
->fusing phew
-by one point
-
-#testcase-run-vr-fusing-phew-rule-default
+#testcase-check-vc-fusing-phew-rule-fallthrough
 WRONG
 
 #testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
 >fusing phew
 Fusing ideas once was exhausting enough.
 
->spurning spew
-by one point
-
-#testcase-run-vr-spurning-spew-rule-default
+#testcase-check-vc-spurning-spew-rule-fallthrough
 WRONG
 
->out
-
->u
-
->scaling skill
-by one point
-
-#testcase-run-vr-scaling-skill-rule-default
+#testcase-check-vc-scaling-skill-rule-fallthrough
 WRONG
 
 #testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
 >scaling skill
 You already improved your climbing ability!
 
->ailing ill
-by one point
-
-#testcase-run-vr-ailing-ill-rule-default
+#testcase-check-vc-ailing-ill-rule-fallthrough
 WRONG
 
 #testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
 >ailing ill
 You already expressed that everyone hurts!
 
->mailing mill
-by one point
-
-#testcase-run-vr-mailing-mill-rule-default
+#testcase-check-vc-mailing-mill-rule-fallthrough
 WRONG
 
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
@@ -1420,22 +1311,13 @@ You can contact Bailing Bill now you have something to offer him.
 You can contact Failing Phil now you have something to offer him.
 You can contact Wailing Will now you have something to offer him.
 
->failing phil
-by one point
-
-#testcase-run-vr-failing-phil-rule-default
+#testcase-check-vc-failing-phil-rule-fallthrough
 WRONG
 
->wailing will
-by one point
-
-#testcase-run-vr-wailing-will-rule-default
+#testcase-check-vc-wailing-will-rule-fallthrough
 WRONG
 
->bailing bill
-by one point
-
-#testcase-run-vr-bailing-bill-rule-default
+#testcase-check-vc-bailing-bill-rule-fallthrough
 WRONG
 
 #testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
@@ -1450,14 +1332,7 @@ You have already helped Wailing Will!
 >failing phil
 You have already helped Failing Phil!
 
->d
-
->d
-
->fight fave
-by one point
-
-#testcase-run-vr-fight-fave-rule-default
+#testcase-check-vc-fight-fave-rule-fallthrough
 WRONG
 
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
@@ -1474,20 +1349,14 @@ There must be another way to see Trite Tully!
 >undo
 >undo
 
->frightfully
-by one point
-
-#testcase-run-vr-fright-fully-rule-default
+#testcase-check-vc-fright-fully-rule-fallthrough
 WRONG
 
 #testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
 >frightfully
 There must be another way to see Trite Tully!
 
->bright bully
-by one point
-
-#testcase-run-vr-bright-bully-rule-default
+#testcase-check-vc-bright-bully-rule-fallthrough
 WRONG
 
 #testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
@@ -1786,8 +1655,5 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >yall yank
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
->bam bye
-by one point
-
-#testcase-run-vr-bam-bye-rule-default
+#testcase-check-vc-bam-bye-rule-fallthrough
 WRONG
