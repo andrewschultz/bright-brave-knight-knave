@@ -332,15 +332,19 @@ Okay, only one pair of friends left to adventure with.
 
 > DONE DISH (49)
 
-Hooray! A bold bowl! But now you are dumped somewhere odd.
+Hooray! A bold bowl! But now you are dumped somewhere odd. I'd like to point out now that there's one bonus point you could've gotten at any time in the story, but now that you've seen all the regions in the status bar, you can give a guess. Sighing Seas, Plying Please, etc.
 
-> FILL FUN (50)
+> EYEING EASE (50)
 
-> WILL WON (51)
+A Bright Brave Knight Knave always looks for shortcuts!
+
+> FILL FUN (51)
+
+> WILL WON (52)
 
 Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in.
 
-> ILLUN (52)
+> ILLUN (53)
 
 > N
 
@@ -364,19 +368,19 @@ And you're back where you were!
 
 > W
 
-> HACK HEIGHT (53)
+> HACK HEIGHT (54)
 
-> SLACK SLIGHT (54)
+> SLACK SLIGHT (55)
 
-> QUACK QUITE (55)
+> QUACK QUITE (56)
 
 With the friends you have, you'll find the rack (right).
 
-> POWER PLATE (56)
+> POWER PLATE (57)
 
 Oh, and a bonus point, if you want. This is a three-of-four room, with the sour slate appearing after your first three successful rhymes.
 
-> FLAK FLIGHT (57)
+> FLAK FLIGHT (58)
 
 > E
 
@@ -386,21 +390,21 @@ Oh, and a bonus point, if you want. This is a three-of-four room, with the sour 
 
 > PASSED PORT
 
-> QUASH QUICK (58)
+> QUASH QUICK (59)
 
-> SLOSH SLICK (59)
+> SLOSH SLICK (60)
 
 And now you get the posh pick.
 
-> TIME TOAD (60)
+> TIME TOAD (61)
 
 Let's get the first odd point out of the way, for variety's sake. This is a two out of three, then advance, room.
 
-> STANDER STOVE (61)
+> STANDER STOVE (62)
 
-> CANDOR COVE (62)
+> CANDOR COVE (63)
 
-> GRANDER GROVE (63)
+> GRANDER GROVE (64)
 
 And now just go any direction to leave...
 
@@ -417,17 +421,17 @@ Now for the final
 
 You have the preparatory items for the ritual.
 
-> BELL BOOK (64)
+> BELL BOOK (65)
 
-> COVERING CANDLE (65)
+> COVERING CANDLE (66)
 
 Another 2-of-3 area.
 
-> NOWT NUFF (66)
+> NOWT NUFF (67)
 
-> STOUT STUFF (67)
+> STOUT STUFF (68)
 
-> FLOUT FLUFF (68)
+> FLOUT FLUFF (69)
 
 > N
 
@@ -445,7 +449,7 @@ Okay, we're doing pretty well ... but we're still missing three items we need fo
 
 What's this ardor elm?
 
-> HARDER HELM (69)
+> HARDER HELM (70)
 
 Bck to the center.
 
@@ -461,15 +465,15 @@ We haven't gone inside yet.
 
 Poor Lou.
 
-> USING YOU (70)
+> USING YOU (71)
 
-> BOOZING BOO (71)
+> BOOZING BOO (72)
 
-> FUSING PHEW (72)
+> FUSING PHEW (73)
 
 His book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
 
-> SPURNING SPEW (73)
+> SPURNING SPEW (74)
 
 > OUT
 
@@ -479,23 +483,23 @@ Let's tackle the hill!
 
 First climb up it...
 
-> SCALING SKILL (74)
+> SCALING SKILL (75)
 
 Then, solidarity with others frustrated...
 
-> AILING ILL (75)
+> AILING ILL (76)
 
 Now, to communicate more formally.
 
-> MAILING MILL (76)
+> MAILING MILL (77)
 
 Now, to help specific individuals!
 
-> FAILING PHIL (77)
+> FAILING PHIL (78)
 
-> WAILING WILL (78)
+> WAILING WILL (79)
 
-> BAILING BILL (79)
+> BAILING BILL (80)
 
 > D
 
@@ -503,16 +507,16 @@ And now to return to the start!
 
 > D
 
-> FIGHT FAVE (80)
+> FIGHT FAVE (81)
 
 Good thing we had all that paraphernalia!
 
-> FRIGHTFULLY (81)
+> FRIGHTFULLY (82)
 
-> BRIGHT BULLY (82)
+> BRIGHT BULLY (83)
 
 Okay, a new form. We're not fooled ... or are we?
 
 There's an option to be too harsh, or not harsh enough. Let's take the middle road.
 
-> BAM BYE (83)
+> BAM BYE (84)

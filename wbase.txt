@@ -368,7 +368,12 @@ Okay, only one pair of friends left to adventure with.
 
 > DONE DISH (1)
 
-Hooray! A bold bowl! But now you are dumped somewhere odd.
+Hooray! A bold bowl! But now you are dumped somewhere odd. I'd like to point out now that there's one bonus point you could've gotten at any time in the story, but now that you've seen all the regions in the status bar, you can give a guess. Sighing Seas, Plying Please, etc.
+
+@max
+> EYEING EASE (1)
+\\
+A Bright Brave Knight Knave always looks for shortcuts!
 
 > FILL FUN (1)
 
