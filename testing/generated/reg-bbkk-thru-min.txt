@@ -395,6 +395,7 @@ by one point
 >bright bully
 by one point
 
+# I don't understand what's going on here, but this won't show the final command for MIN, even though it does so for other commands.
 >misses
 You could have tried to WRITE/RIGHT RAVE to flatter me.
 You could have noted a pattern with the regions in the status line and tried EYEING EASE.
@@ -408,6 +409,8 @@ You didn't uncover the RHYME ROAD in Passed Port.
 You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
 You didn't find the PLEAD PLAQUE in Treed Track.
 You could have tried to JACK GIST for a shorter command to read the track tryst lack list.
+
+>z
 
 >bam bye
 by one point

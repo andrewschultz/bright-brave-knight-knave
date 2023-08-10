@@ -103,7 +103,7 @@ by one point
 >mood mapper
 by one point
 
-#testcase-check-vc-mood-mapper-rule-fallthrough
+#testcase-run-vr-mood-mapper-rule-default
 You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!
 by one point
 

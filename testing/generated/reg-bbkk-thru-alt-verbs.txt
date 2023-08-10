@@ -54,7 +54,7 @@ by one point
 >write rave
 by two point
 
-#testcase-alt-words-table-of-verb-checks-7-what-whoa-whoah
+#testcase-alt-words-table-of-verb-checks-8-what-whoa-whoah
 >what whoa
 by one point
 

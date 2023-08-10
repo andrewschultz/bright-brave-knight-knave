@@ -13,30 +13,6 @@ Taken.
 
 >au 2
 
-#testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
->hid hum
-I couldn't parse that command. You don't need any more than two words long.
-
-#testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
->kid come
-I couldn't parse that command. You don't need any more than two words long.
-
-#testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
->mass math
-I couldn't parse that command. You don't need any more than two words long.
-
-#testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
->pass path
-I couldn't parse that command. You don't need any more than two words long.
-
-#testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
->rid rum
-I couldn't parse that command. You don't need any more than two words long.
-
-#testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
->what whoah
-I couldn't parse that command. You don't need any more than two words long.
-
 #testcase-reject-start-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
 I couldn't parse that command. You don't need any more than two words long.
@@ -59,6 +35,10 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-bought-beef-rule
 >bought beef
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
+>bright bully
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-brought-brief-rule
@@ -109,6 +89,10 @@ I couldn't parse that command. You don't need any more than two words long.
 >fried freak
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
+>fright fully
+I couldn't parse that command. You don't need any more than two words long.
+
 #testcase-reject-start-table-of-verb-checks-vc-fusing-phew-rule
 >fusing phew
 I couldn't parse that command. You don't need any more than two words long.
@@ -141,12 +125,20 @@ I couldn't parse that command. You don't need any more than two words long.
 >heed hack
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
+>hid hum
+I couldn't parse that command. You don't need any more than two words long.
+
 #testcase-reject-start-table-of-verb-checks-vc-ill-un-rule
 >illun
 Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-jack-gist-rule
 >jack gist
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
+>kid come
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
@@ -159,6 +151,10 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-main-max-rule
 >main max
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
+>mass math
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-meek-mooter-rule
@@ -191,6 +187,10 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-pain-packs-rule
 >pain packs
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
+>pass path
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-passed-port-rule
@@ -227,6 +227,10 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
 >rhyme road
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
+>rid rum
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-salad-scent-rule
@@ -303,6 +307,10 @@ I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-weak-wooter-rule
 >weak wooter
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
+>what whoah
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-will-won-rule
@@ -757,18 +765,6 @@ by one point
 >bright bully
 by one point
 
-#testcase-reject-end-table-of-verb-checks-vc-mass-math-rule
->mass math
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-pass-path-rule
->pass path
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-what-whoah-rule
->what whoah
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 #testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -893,6 +889,10 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >main max
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-reject-end-table-of-verb-checks-vc-mass-math-rule
+>mass math
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 #testcase-reject-end-table-of-verb-checks-vc-meek-mooter-rule
 >meek mooter
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -923,6 +923,10 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vc-pain-packs-rule
 >pain packs
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-pass-path-rule
+>pass path
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-passed-port-rule
@@ -1039,6 +1043,10 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vc-weak-wooter-rule
 >weak wooter
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-what-whoah-rule
+>what whoah
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-will-won-rule
