@@ -132,82 +132,102 @@ You don't have to change yourself, here.
 
 @rej
 ====alphabetize on
+#testcase-check-vc-ailing-ill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
 {$REJECT}
 \\
+#testcase-check-vc-bailing-bill-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-bailing-bill-rule
 >bailing bill
 {$REJECT}
 \\
+#testcase-check-vc-bam-bye-rule-if-tully-score-<-2
 #testcase-reject-start-table-of-verb-checks-vc-bam-bye-rule
 >bam bye
 {$REJECT}
 \\
+#testcase-check-vc-bell-book-rule-abide-by-the-any-nook-rule
 #testcase-reject-start-table-of-verb-checks-vc-bell-book-rule
 >bell book
 {$REJECT}
 \\
+#testcase-check-vc-boozing-boo-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-boozing-boo-rule
 >boozing boo
 {$REJECT}
 \\
+#testcase-check-vc-bought-beef-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-bought-beef-rule
 >bought beef
 {$REJECT}
 \\
+#testcase-check-vc-bright-bully-rule-abide-by-the-tully-triage-rule
 #testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
 >bright bully
 {$REJECT}
 \\
+#testcase-check-vc-brought-brief-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-brought-brief-rule
 >brought brief
 {$REJECT}
 \\
+#testcase-check-vc-candor-cove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-candor-cove-rule
 >candor cove
 {$REJECT}
 \\
+#testcase-check-vc-cast-court-rule-abide-by-the-don't-loop-yacht-around-rule-for-cast-court
 #testcase-reject-start-table-of-verb-checks-vc-cast-court-rule
 >cast court
 {$REJECT}
 \\
+#testcase-check-vc-chic-shooter-rule-abide-by-the-eeker-precheck-rule-for-chic-shooter
 #testcase-reject-start-table-of-verb-checks-vc-chic-shooter-rule
 >chic shooter
 {$REJECT}
 \\
+#testcase-check-vc-covering-candle-rule-if-player-is-not-in-knell-nook
 #testcase-reject-start-table-of-verb-checks-vc-covering-candle-rule
 >covering candle
 {$REJECT}
 \\
+#testcase-check-vc-done-dish-rule-if-wish-fun-fish-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-done-dish-rule
 >done dish
 {$REJECT}
 \\
+#testcase-check-vc-failing-phil-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-failing-phil-rule
 >failing phil
 {$REJECT}
 \\
+#testcase-check-vc-fast-fort-rule-abide-by-the-don't-loop-yacht-around-rule-for-fast-fort
 #testcase-reject-start-table-of-verb-checks-vc-fast-fort-rule
 >fast fort
 {$REJECT}
 \\
+#testcase-check-vc-fill-fun-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-fill-fun-rule
 >fill fun
 {$REJECT}
 \\
+#testcase-check-vc-flak-flight-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-flak-flight-rule
 >flak flight
 {$REJECT}
 \\
+#testcase-check-vc-flout-fluff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-flout-fluff-rule
 >flout fluff
 {$REJECT}
 \\
+#testcase-check-vc-fried-freak-rule-abide-by-the-eeker-precheck-rule-for-fried-freak
 #testcase-reject-start-table-of-verb-checks-vc-fried-freak-rule
 >fried freak
 {$REJECT}
 \\
+#testcase-check-vc-fright-fully-rule-abide-by-the-tully-triage-rule
 #testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
 >fright fully
 {$REJECT}
@@ -217,202 +237,252 @@ You don't have to change yourself, here.
 >fusing phew
 {$REJECT}
 \\
+#testcase-check-vc-glued-glass-rule-if-lewd-lass-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-glued-glass-rule
 >glued glass
 {$REJECT}
 \\
+#testcase-check-vc-grander-grove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-grander-grove-rule
 >grander grove
 {$REJECT}
 \\
+#testcase-check-vc-grew-gruff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-grew-gruff-rule
 >grew gruff
 {$REJECT}
 \\
+#testcase-check-vc-guide-geek-rule-abide-by-the-eeker-precheck-rule-for-guide-geek
 #testcase-reject-start-table-of-verb-checks-vc-guide-geek-rule
 >guide geek
 {$REJECT}
 \\
+#testcase-check-vc-hack-height-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-hack-height-rule
 >hack height
 {$REJECT}
 \\
+#testcase-check-vc-harder-helm-rule-if-ardor-elm-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-harder-helm-rule
 >harder helm
 {$REJECT}
 \\
+#testcase-check-vc-heed-hack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-heed-hack-rule
 >heed hack
 {$REJECT}
 \\
+#testcase-check-vc-hid-hum-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
 >hid hum
 {$REJECT}
 \\
+#testcase-check-vc-ill-un-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-ill-un-rule
 >illun
 {$REJECT1}
 \\
+#testcase-check-vc-jack-gist-rule-if-player-does-not-have-lack-list
 #testcase-reject-start-table-of-verb-checks-vc-jack-gist-rule
 >jack gist
 {$REJECT}
 \\
+#testcase-check-vc-kid-come-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
 >kid come
 {$REJECT}
 \\
+#testcase-check-vc-loud-lies-rule-if-player-is-not-in-wowed-wise-crowd-cries
 #testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
 >loud lies
 {$REJECT}
 \\
+#testcase-check-vc-mailing-mill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-mailing-mill-rule
 >mailing mill
 {$REJECT}
 \\
+#testcase-check-vc-main-max-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-main-max-rule
 >main max
 {$REJECT}
 \\
+#testcase-check-vc-mass-math-rule-if-player-is-not-in-bass-bath
 #testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
 >mass math
 {$REJECT}
 \\
+#testcase-check-vc-meek-mooter-rule-abide-by-the-eeker-precheck-rule-for-meek-mooter
 #testcase-reject-start-table-of-verb-checks-vc-meek-mooter-rule
 >meek mooter
 {$REJECT}
 \\
+#testcase-check-vc-mood-mapper-rule-if-player-is-not-in-crude-crapper-and-player-does-not-have-mood-mapper
 #testcase-reject-start-table-of-verb-checks-vc-mood-mapper-rule
 >mood mapper
 {$REJECT}
 \\
+#testcase-check-vc-murky-map-rule-if-perky-pap-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-murky-map-rule
 >murky map
 {$REJECT}
 \\
+#testcase-check-vc-need-knack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-need-knack-rule
 >need knack
 {$REJECT}
 \\
+#testcase-check-vc-new-nuff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-new-nuff-rule
 >new nuff
 {$REJECT}
 \\
+#testcase-check-vc-nowt-nuff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-nowt-nuff-rule
 >nowt nuff
 {$REJECT}
 \\
+#testcase-check-vc-nude-napper-rule-if-player-is-not-in-crude-crapper
 #testcase-reject-start-table-of-verb-checks-vc-nude-napper-rule
 >nude napper
 {$REJECT}
 \\
+#testcase-check-vc-pain-packs-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-pain-packs-rule
 >pain packs
 {$REJECT}
 \\
+#testcase-check-vc-pass-path-rule-if-player-is-not-in-bass-bath
 #testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
 >pass path
 {$REJECT}
 \\
+#testcase-check-vc-passed-port-rule-abide-by-the-don't-loop-yacht-around-rule-for-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-passed-port-rule
 >passed port
 {$REJECT}
 \\
+#testcase-check-vc-paul-panks-rule-if-player-is-not-in-tata
 #testcase-reject-start-table-of-verb-checks-vc-paul-panks-rule
 >paul panks
 {$REJECT}
 \\
+#testcase-check-vc-plead-plaque-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-plead-plaque-rule
 >plead plaque
 {$REJECT}
 \\
+#testcase-check-vc-plucky-plot-rule-if-yucky-yacht-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-plucky-plot-rule
 >plucky plot
 {$REJECT}
 \\
+#testcase-check-vc-posh-planks-rule-if-player-is-not-in-bosh-blanks
 #testcase-reject-start-table-of-verb-checks-vc-posh-planks-rule
 >posh planks
 {$REJECT}
 \\
+#testcase-check-vc-power-plate-rule-if-sour-slate-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-power-plate-rule
 >power plate
 {$REJECT}
 \\
+#testcase-check-vc-quack-quite-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-quack-quite-rule
 >quack quite
 {$REJECT}
 \\
+#testcase-check-vc-quash-quick-rule-if-posh-pick-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-quash-quick-rule
 >quash quick
 {$REJECT}
 \\
+#testcase-check-vc-rhyme-road-rule-if-player-is-not-in-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
 >rhyme road
 {$REJECT}
 \\
+#testcase-check-vc-rid-rum-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
 >rid rum
 {$REJECT}
 \\
+#testcase-check-vc-salad-scent-rule-if-pallid-pent-valid-vent-is-untouchable
 #testcase-reject-start-table-of-verb-checks-vc-salad-scent-rule
 >salad scent
 {$REJECT}
 \\
+#testcase-check-vc-scaling-skill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-scaling-skill-rule
 >scaling skill
 {$REJECT}
 \\
+#testcase-check-vc-seed-sack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-seed-sack-rule
 >seed sack
 {$REJECT}
 \\
+#testcase-check-vc-slack-slight-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-slack-slight-rule
 >slack slight
 {$REJECT}
 \\
+#testcase-check-vc-slashing-sword-rule-if-clashing-cord-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-slashing-sword-rule
 >slashing sword
 {$REJECT}
 \\
+#testcase-check-vc-slosh-slick-rule-if-posh-pick-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-slosh-slick-rule
 >slosh slick
 {$REJECT}
 \\
+#testcase-check-vc-snide-sneak-rule-abide-by-the-eeker-precheck-rule-for-snide-sneak
 #testcase-reject-start-table-of-verb-checks-vc-snide-sneak-rule
 >snide sneak
 {$REJECT}
 \\
+#testcase-check-vc-spurning-spew-rule-if-learning-lou-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-spurning-spew-rule
 >spurning spew
 {$REJECT}
 \\
+#testcase-check-vc-stander-stove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-stander-stove-rule
 >stander stove
 {$REJECT}
 \\
+#testcase-check-vc-stew-stuff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-stew-stuff-rule
 >stew stuff
 {$REJECT}
 \\
+#testcase-check-vc-stout-stuff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-stout-stuff-rule
 >stout stuff
 {$REJECT}
 \\
+#testcase-check-vc-stride-streak-rule-if-player-is-not-in-cried-creek
 #testcase-reject-start-table-of-verb-checks-vc-stride-streak-rule
 >stride streak
 {$REJECT}
 \\
+#testcase-check-vc-time-toad-rule-if-player-is-not-in-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-time-toad-rule
 >time toad
 {$REJECT}
 \\
+#testcase-check-vc-train-tracks-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-train-tracks-rule
 >train tracks
 {$REJECT}
 \\
+#testcase-check-vc-trod-trash-rule-if-broad-brash-clod-clash-is-untouchable-and-odd-ash-is-untouchable
 #testcase-reject-start-table-of-verb-checks-vc-trod-trash-rule
 >trod trash
 {$REJECT}
 \\
+#testcase-check-vc-trowed-tries-rule-if-player-is-not-in-wowed-wise-crowd-cries
 #testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
 >trowed tries
 {$REJECT}
@@ -422,10 +492,12 @@ You don't have to change yourself, here.
 >using you
 {$REJECT}
 \\
+#testcase-check-vc-wailing-will-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-wailing-will-rule
 >wailing will
 {$REJECT}
 \\
+#testcase-check-vc-weak-wooter-rule-abide-by-the-eeker-precheck-rule-for-weak-wooter
 #testcase-reject-start-table-of-verb-checks-vc-weak-wooter-rule
 >weak wooter
 {$REJECT}
@@ -459,6 +531,11 @@ You're kind of confused about directions, here. You maybe need to find some way 
 >kite cave
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-kite-cave-rule-fallthrough
+{--rej}#testcase-run-vr-kite-cave-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
 >kite cave
@@ -470,6 +547,11 @@ You already discovered the kite cave to find a path beyond!
 
 @!min
 >jack gist
+WRONG
+
+@all,rej
+{--all}#testcase-check-vc-jack-gist-rule-fallthrough
+{--rej}#testcase-run-vr-jack-gist-rule-default
 WRONG
 
 @rej
@@ -569,6 +651,11 @@ by one point
 \\
 >undo
 
+@rej
+#testcase-check-vc-fight-fave-rule-if-player-is-not-in-white-wave-and-debug-allow-final-is-false
+>fight fave
+WRONG
+
 @gt
 #testcase-table-of-noways-bass-bath
 >n
@@ -632,6 +719,11 @@ You already calculated! Overcalculate, and you might miss or reject the obvious.
 
 >pass path
 
+@all,rej
+{--all}#testcase-check-vc-pass-path-rule-fallthrough
+{--rej}#testcase-run-vr-pass-path-rule-default
+WRONG
+
 @all
 #+testcase-room-names-bass-bath
 `Pass Path
@@ -659,10 +751,15 @@ You can go pretty much any way from here but not south.
 >mass math
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-mass-math-rule-fallthrough
+{--rej}#testcase-run-vr-mass-math-rule-default
+WRONG
+
 @rej
 >e
 \\
-#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shootxer
+#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shooter
 >yall yank
 WRONG
 \\
@@ -703,6 +800,11 @@ You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 >write rave
 by two point
 
+@all,rej
+{--all}#testcase-check-vc-write-right-rave-rule-fallthrough
+{--rej}#testcase-run-vr-write-right-rave-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
 >write rave
@@ -736,8 +838,9 @@ by one point
 >what whoah
 You already had a revelation that will push you out of your rut and see a new passage through.
 
-@all
-#testcase-run-vr-what-whoah-rule-default
+@all,rej
+{--all}#testcase-check-vc-what-whoah-rule-fallthrough
+{--rej}#testcase-run-vr-what-whoah-rule-default
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
 
 >w
@@ -796,6 +899,11 @@ No. A good brave bright knight knave don't look down on people like that.
 >hid hum
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-hid-hum-rule-fallthrough
+{--rej}#testcase-run-vr-hid-hum-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
 >hid hum
@@ -813,6 +921,11 @@ You don't want to reflect on the past.
 >kid come
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-kid-come-rule-fallthrough
+{--rej}#testcase-run-vr-kid-come-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
 >kid come
@@ -829,6 +942,11 @@ Perhaps the coughin' coy boffin boy will be able to get the education for such a
 
 >rid rum
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-rid-rum-rule-fallthrough
+{--rej}#testcase-run-vr-rid-rum-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
@@ -929,6 +1047,11 @@ You feel as though you want to say something about the state of these environs, 
 >nude napper
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-nude-napper-rule-fallthrough
+{--rej}#testcase-run-vr-nude-napper-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
 >nude napper
@@ -1009,6 +1132,11 @@ You don't want to be too much of a moral scold!
 >stride streak
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-stride-streak-rule-fallthrough
+{--rej}#testcase-run-vr-stride-streak-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
 >stride streak
@@ -1017,22 +1145,52 @@ You already encouraged more action and less moping here!
 >guide geek
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-guide-geek-rule-fallthrough
+{--rej}#testcase-run-vr-guide-geek-rule-default
+WRONG
+
 >fried freak
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-fried-freak-rule-fallthrough
+{--rej}#testcase-run-vr-fried-freak-rule-default
+WRONG
+
 >snide sneak
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-snide-sneak-rule-fallthrough
+{--rej}#testcase-run-vr-snide-sneak-rule-default
+WRONG
 
 >e
 
 >meek mooter
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-meek-mooter-rule-fallthrough
+{--rej}#testcase-run-vr-meek-mooter-rule-default
+WRONG
+
 >weak wooter
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-weak-wooter-rule-fallthrough
+{--rej}#testcase-run-vr-weak-wooter-rule-default
+WRONG
+
 >chic shooter
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-chic-shooter-rule-fallthrough
+{--rej}#testcase-run-vr-chic-shooter-rule-default
+WRONG
 
 >w
 >fried freak
@@ -1078,6 +1236,11 @@ by one point
 >posh planks
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-posh-planks-rule-fallthrough
+{--rej}#testcase-run-vr-posh-planks-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
 >posh planks
@@ -1090,6 +1253,11 @@ Oh, no, let's not make things TOO posh, here!
 
 >plucky plot
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-plucky-plot-rule-fallthrough
+{--rej}#testcase-run-vr-plucky-plot-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
@@ -1176,6 +1344,11 @@ by one point
 >yall yank
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-yall-yank-rule-fallthrough
+{--rej}#testcase-run-vr-yall-yank-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
 >yall yank
@@ -1184,6 +1357,11 @@ You've already pulled out the tall tank(s).
 @!min
 >paul panks
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-paul-panks-rule-fallthrough
+{--rej}#testcase-run-vr-paul-panks-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
@@ -1246,6 +1424,11 @@ You already paid your respects.
 >need knack
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-need-knack-rule-fallthrough
+{--rej}#testcase-run-vr-need-knack-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
 >need knack
@@ -1254,6 +1437,11 @@ You already got the knack for looking around! You won't forget it.
 @!min
 >plead plaque
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-plead-plaque-rule-fallthrough
+{--rej}#testcase-run-vr-plead-plaque-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
@@ -1272,6 +1460,11 @@ You look over the plead plaque again. Man, even more fun adventures once you're 
 >heed hack
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-heed-hack-rule-fallthrough
+{--rej}#testcase-run-vr-heed-hack-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
 >heed hack
@@ -1279,6 +1472,11 @@ You look for other ways to hack through the Treed Track, but three all told is p
 
 >seed sack
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-seed-sack-rule-fallthrough
+{--rej}#testcase-run-vr-seed-sack-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
@@ -1323,6 +1521,11 @@ You already got a seed sack!
 >train tracks
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-train-tracks-rule-fallthrough
+{--rej}#testcase-run-vr-train-tracks-rule-default
+WRONG
+
 @all
 #+testcase-room-names-lane-lax
 `Train Tracks
@@ -1344,6 +1547,11 @@ You already created train tracks, though they could become sturdier and farther-
 >main max
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-main-max-rule-fallthrough
+{--rej}#testcase-run-vr-main-max-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-main-max-rule-if-sco-main-max-is-true
 >main max
@@ -1355,6 +1563,11 @@ You already created train tracks.
 
 >pain packs
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-pain-packs-rule-fallthrough
+{--rej}#testcase-run-vr-pain-packs-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
@@ -1368,6 +1581,14 @@ You already got some pain packs!
 Wowed Wise Crowd Cries
 
 @ha
+#testcase-ha-half-table-of-verb-checks-55-tries
+>ztrowed tries
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-trowed
+>trowed ztries
+{$GREENCORE}
+\\
 #testcase-ha-half-table-of-verb-checks-56-lies
 >zloud lies
 {$YELLOWCORE}
@@ -1378,6 +1599,11 @@ Wowed Wise Crowd Cries
 
 >trowed tries
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-trowed-tries-rule-fallthrough
+{--rej}#testcase-run-vr-trowed-tries-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
@@ -1395,6 +1621,11 @@ Enough trying. You need to take action!
 
 >loud lies
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-loud-lies-rule-fallthrough
+{--rej}#testcase-run-vr-loud-lies-rule-default
+WRONG
 
 @rej
 #+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
@@ -1416,6 +1647,11 @@ You already declaimed the loud lies.
 >fast fort
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-fast-fort-rule-fallthrough
+{--rej}#testcase-run-vr-fast-fort-rule-default
+WRONG
+
 @all
 #testcase-room-names-fast-fort
 `Fast Fort
@@ -1431,6 +1667,11 @@ by one point
 
 >glued glass
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-glued-glass-rule-fallthrough
+{--rej}#testcase-run-vr-glued-glass-rule-default
+WRONG
 
 @ha
 #testcase-ha-half-table-of-verb-checks-24-cast
@@ -1460,6 +1701,11 @@ by one point
 >cast court
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-cast-court-rule-fallthrough
+{--rej}#testcase-run-vr-cast-court-rule-default
+WRONG
+
 @all
 #testcase-room-names-cast-court
 `Cast Court
@@ -1476,8 +1722,18 @@ by one point
 >murky map
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-murky-map-rule-fallthrough
+{--rej}#testcase-run-vr-murky-map-rule-default
+WRONG
+
 >passed port
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-passed-port-rule-fallthrough
+{--rej}#testcase-run-vr-passed-port-rule-default
+WRONG
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-29-salad
@@ -1515,8 +1771,18 @@ by one point
 >slashing sword
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-slashing-sword-rule-fallthrough
+{--rej}#testcase-run-vr-slashing-sword-rule-default
+WRONG
+
 >salad scent
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-salad-scent-rule-fallthrough
+{--rej}#testcase-run-vr-salad-scent-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
@@ -1535,6 +1801,11 @@ Wow! You must really like salad!
 @!min
 >rhyme road
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-rhyme-road-rule-fallthrough
+{--rej}#testcase-run-vr-rhyme-road-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
@@ -1591,6 +1862,11 @@ You already looked down Rhyme Road!
 >grew gruff
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-grew-gruff-rule-fallthrough
+{--rej}#testcase-run-vr-grew-gruff-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
 >grew gruff
@@ -1608,6 +1884,11 @@ Don't want to overdo it!
 >stew stuff
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-stew-stuff-rule-fallthrough
+{--rej}#testcase-run-vr-stew-stuff-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
 >stew stuff
@@ -1624,6 +1905,11 @@ You can't make any more stew stuff.
 
 >new nuff
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-new-nuff-rule-fallthrough
+{--rej}#testcase-run-vr-new-nuff-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
@@ -1657,6 +1943,11 @@ You already revitalized the stew stuff.
 
 >trod trash
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-trod-trash-rule-fallthrough
+{--rej}#testcase-run-vr-trod-trash-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
@@ -1697,6 +1988,11 @@ But you already got people to trod on the trash!
 >bought beef
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-bought-beef-rule-fallthrough
+{--rej}#testcase-run-vr-bought-beef-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
 >bought beef
@@ -1704,6 +2000,11 @@ You already pretended to have bought beef, or a beef, or something!
 
 >brought brief
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-brought-brief-rule-fallthrough
+{--rej}#testcase-run-vr-brought-brief-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
@@ -1721,6 +2022,11 @@ You already pretended you brought huge plans!
 
 >wrought reef
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-wrought-reef-rule-fallthrough
+{--rej}#testcase-run-vr-wrought-reef-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
@@ -1742,6 +2048,11 @@ You already wrought the reef!
 
 >done dish
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-done-dish-rule-fallthrough
+{--rej}#testcase-run-vr-done-dish-rule-default
+WRONG
 
 @ha
 #testcase-ha-half-table-of-verb-checks-65-fill
@@ -1779,6 +2090,11 @@ by one point
 >fill fun
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-fill-fun-rule-fallthrough
+{--rej}#testcase-run-vr-fill-fun-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
 >fill fun
@@ -1808,6 +2124,11 @@ You already filled yourself up with fun!
 >will won
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-will-won-rule-fallthrough
+{--rej}#testcase-run-vr-will-won-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-will-won-rule-if-sco-will-won-is-true
 >will won
@@ -1824,6 +2145,11 @@ You already have a will to win!
 
 >illun
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-ill-un-rule-fallthrough
+{--rej}#testcase-run-vr-ill-un-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
@@ -1890,11 +2216,26 @@ You already identified illun'!
 >hack height
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-hack-height-rule-fallthrough
+{--rej}#testcase-run-vr-hack-height-rule-default
+WRONG
+
 >slack slight
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-slack-slight-rule-fallthrough
+{--rej}#testcase-run-vr-slack-slight-rule-default
+WRONG
+
 >quack quite
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-quack-quite-rule-fallthrough
+{--rej}#testcase-run-vr-quack-quite-rule-default
+WRONG
 
 @ha
 #testcase-ha-half-table-of-verb-checks-46-plate
@@ -1916,6 +2257,11 @@ by one point
 >power plate
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-power-plate-rule-fallthrough
+{--rej}#testcase-run-vr-power-plate-rule-default
+WRONG
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-44-flak
 >flak zflight
@@ -1928,6 +2274,11 @@ by one point
 @!min
 >flak flight
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-flak-flight-rule-fallthrough
+{--rej}#testcase-run-vr-flak-flight-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
@@ -1971,6 +2322,11 @@ You already quacked "Quite!"
 >quash quick
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-quash-quick-rule-fallthrough
+{--rej}#testcase-run-vr-quash-quick-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
 >quash quick
@@ -1992,6 +2348,11 @@ You already figured that part of getting the pick!
 >slosh slick
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-slosh-slick-rule-fallthrough
+{--rej}#testcase-run-vr-slosh-slick-rule-default
+WRONG
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-33-time
 >time ztoad
@@ -2003,6 +2364,11 @@ by one point
 
 >time toad
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-time-toad-rule-fallthrough
+{--rej}#testcase-run-vr-time-toad-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
@@ -2045,6 +2411,11 @@ The time toad's gift of cold coal should be enough.
 >stander stove
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-stander-stove-rule-fallthrough
+{--rej}#testcase-run-vr-stander-stove-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
 >stander stove
@@ -2052,6 +2423,11 @@ You already found the stander stove!
 
 >candor cove
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-candor-cove-rule-fallthrough
+{--rej}#testcase-run-vr-candor-cove-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
@@ -2062,6 +2438,11 @@ WRONG change this statement
 @!min
 >grander grove
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-grander-grove-rule-fallthrough
+{--rej}#testcase-run-vr-grander-grove-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
@@ -2103,6 +2484,11 @@ WRONG fix msg
 >bell book
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-bell-book-rule-fallthrough
+{--rej}#testcase-run-vr-bell-book-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
 >bell book
@@ -2110,6 +2496,11 @@ You already got the bell and book! Now for the next part.
 
 >covering candle
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-covering-candle-rule-fallthrough
+{--rej}#testcase-run-vr-covering-candle-rule-default
+WRONG
 
 @all
 #testcase-route-rough-name
@@ -2147,6 +2538,11 @@ by one point
 >nowt nuff
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-nowt-nuff-rule-fallthrough
+{--rej}#testcase-run-vr-nowt-nuff-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
 >nowt nuff
@@ -2154,6 +2550,11 @@ You already nullified certain worries and complaints!
 
 >stout stuff
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-stout-stuff-rule-fallthrough
+{--rej}#testcase-run-vr-stout-stuff-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
@@ -2163,6 +2564,11 @@ You already found ways to be stout!
 @!min
 >flout fluff
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-flout-fluff-rule-fallthrough
+{--rej}#testcase-run-vr-flout-fluff-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
@@ -2193,6 +2599,11 @@ You already flouted fluff!
 >harder helm
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-harder-helm-rule-fallthrough
+{--rej}#testcase-run-vr-harder-helm-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
@@ -2208,6 +2619,11 @@ That sort of repeated ardor won't get you anywhere!
 >eyeing ease
 score and bonus
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-eyeing-eying-ease-rule-fallthrough
+{--rej}#testcase-run-vr-eyeing-eying-ease-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
@@ -2257,6 +2673,11 @@ You can say FUSING PHEW once you have commiserated more than one way with Lou.
 >using you
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-using-you-rule-fallthrough
+{--rej}#testcase-run-vr-using-you-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-using-you-rule-if-sco-using-you-is-true
 >using you
@@ -2264,6 +2685,11 @@ You already let Lou know the truth!
 
 >boozing boo
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-boozing-boo-rule-fallthrough
+{--rej}#testcase-run-vr-boozing-boo-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
@@ -2287,6 +2713,11 @@ You can say FUSING PHEW now you have commiserated more than one way with Lou.
 >fusing phew
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-fusing-phew-rule-fallthrough
+{--rej}#testcase-run-vr-fusing-phew-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
 >fusing phew
@@ -2303,6 +2734,11 @@ Fusing ideas once was exhausting enough.
 
 >spurning spew
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-spurning-spew-rule-fallthrough
+{--rej}#testcase-run-vr-spurning-spew-rule-default
+WRONG
 
 >out
 
@@ -2364,6 +2800,11 @@ by one point
 >scaling skill
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-scaling-skill-rule-fallthrough
+{--rej}#testcase-run-vr-scaling-skill-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
 >scaling skill
@@ -2372,6 +2813,11 @@ You already improved your climbing ability!
 >ailing ill
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-ailing-ill-rule-fallthrough
+{--rej}#testcase-run-vr-ailing-ill-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
 >ailing ill
@@ -2379,6 +2825,11 @@ You already expressed that everyone hurts!
 
 >mailing mill
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-mailing-mill-rule-fallthrough
+{--rej}#testcase-run-vr-mailing-mill-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
@@ -2413,11 +2864,26 @@ The mailing mill is already on Hailing Hill!
 >failing phil
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-failing-phil-rule-fallthrough
+{--rej}#testcase-run-vr-failing-phil-rule-default
+WRONG
+
 >wailing will
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-wailing-will-rule-fallthrough
+{--rej}#testcase-run-vr-wailing-will-rule-default
+WRONG
+
 >bailing bill
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-bailing-bill-rule-fallthrough
+{--rej}#testcase-run-vr-bailing-bill-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
@@ -2438,6 +2904,11 @@ You have already helped Failing Phil!
 
 >fight fave
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-fight-fave-rule-fallthrough
+{--rej}#testcase-run-vr-fight-fave-rule-default
+WRONG
 
 @rej
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
@@ -2485,6 +2956,11 @@ There must be another way to see Trite Tully!
 >frightfully
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-fright-fully-rule-fallthrough
+{--rej}#testcase-run-vr-fright-fully-rule-default
+WRONG
+
 @rej
 #testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
 >frightfully
@@ -2492,6 +2968,11 @@ There must be another way to see Trite Tully!
 
 >bright bully
 by one point
+
+@all,rej
+{--all}#testcase-check-vc-bright-bully-rule-fallthrough
+{--rej}#testcase-run-vr-bright-bully-rule-default
+WRONG
 
 @mis
 #testcase-mistakes-table-of-trite-tully-guesses-damn-die
@@ -2855,3 +3336,7 @@ You could have tried to JACK GIST for a shorter command to read the track tryst 
 >bam bye
 by one point
 
+@all,rej
+{--all}#testcase-check-vc-bam-bye-rule-fallthrough
+{--rej}#testcase-run-vr-bam-bye-rule-default
+WRONG

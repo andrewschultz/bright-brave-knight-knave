@@ -496,6 +496,14 @@ by one point
 
 >n
 
+#testcase-ha-half-table-of-verb-checks-55-tries
+>ztrowed tries
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-55-trowed
+>trowed ztries
+The HA HALF button on your Leet Learner lights up green.
+
 #testcase-ha-half-table-of-verb-checks-56-lies
 >zloud lies
 The HA HALF button on your Leet Learner lights up yellow.

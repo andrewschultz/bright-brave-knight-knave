@@ -19,11 +19,17 @@ Taken.
 >kite cave
 by one point
 
+#testcase-check-vc-kite-cave-rule-fallthrough
+WRONG
+
 >x hold hole
 
 >x list
 
 >jack gist
+WRONG
+
+#testcase-check-vc-jack-gist-rule-fallthrough
 WRONG
 
 >bold bowl
@@ -64,11 +70,17 @@ by one point
 
 >pass path
 
+#testcase-check-vc-pass-path-rule-fallthrough
+WRONG
+
 #+testcase-room-names-bass-bath
 `Pass Path
 
 >mass math
 by one point
+
+#testcase-check-vc-mass-math-rule-fallthrough
+WRONG
 
 >w
 
@@ -78,10 +90,13 @@ by one point
 >write rave
 by two point
 
+#testcase-check-vc-write-right-rave-rule-fallthrough
+WRONG
+
 >what whoah
 by one point
 
-#testcase-run-vr-what-whoah-rule-default
+#testcase-check-vc-what-whoah-rule-fallthrough
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
 
 >w
@@ -92,11 +107,20 @@ It sounds artificial at first to pretend you saw something. Then you think, if I
 >hid hum
 by one point
 
+#testcase-check-vc-hid-hum-rule-fallthrough
+WRONG
+
 >kid come
 by one point
 
+#testcase-check-vc-kid-come-rule-fallthrough
+WRONG
+
 >rid rum
 by one point
+
+#testcase-check-vc-rid-rum-rule-fallthrough
+WRONG
 
 >in
 
@@ -113,6 +137,9 @@ by one point
 >nude napper
 by one point
 
+#testcase-check-vc-nude-napper-rule-fallthrough
+WRONG
+
 >out
 >e
 >n
@@ -128,25 +155,46 @@ by one point
 >stride streak
 by one point
 
+#testcase-check-vc-stride-streak-rule-fallthrough
+WRONG
+
 >guide geek
 by one point
+
+#testcase-check-vc-guide-geek-rule-fallthrough
+WRONG
 
 >fried freak
 by one point
 
+#testcase-check-vc-fried-freak-rule-fallthrough
+WRONG
+
 >snide sneak
 by one point
+
+#testcase-check-vc-snide-sneak-rule-fallthrough
+WRONG
 
 >e
 
 >meek mooter
 by one point
 
+#testcase-check-vc-meek-mooter-rule-fallthrough
+WRONG
+
 >weak wooter
 by one point
 
+#testcase-check-vc-weak-wooter-rule-fallthrough
+WRONG
+
 >chic shooter
 by one point
+
+#testcase-check-vc-chic-shooter-rule-fallthrough
+WRONG
 
 >w
 >fried freak
@@ -166,11 +214,17 @@ by one point
 >posh planks
 by one point
 
+#testcase-check-vc-posh-planks-rule-fallthrough
+WRONG
+
 #+testcase-room-names-bosh-blanks
 `Posh Planks
 
 >plucky plot
 by one point
+
+#testcase-check-vc-plucky-plot-rule-fallthrough
+WRONG
 
 >s
 >w
@@ -188,8 +242,14 @@ by one point
 >yall yank
 by one point
 
+#testcase-check-vc-yall-yank-rule-fallthrough
+WRONG
+
 >paul panks
 by one point
+
+#testcase-check-vc-paul-panks-rule-fallthrough
+WRONG
 
 >w
 
@@ -213,14 +273,26 @@ by one point
 >need knack
 by one point
 
+#testcase-check-vc-need-knack-rule-fallthrough
+WRONG
+
 >plead plaque
 by one point
+
+#testcase-check-vc-plead-plaque-rule-fallthrough
+WRONG
 
 >heed hack
 by one point
 
+#testcase-check-vc-heed-hack-rule-fallthrough
+WRONG
+
 >seed sack
 by one point
+
+#testcase-check-vc-seed-sack-rule-fallthrough
+WRONG
 
 >n
 
@@ -234,14 +306,23 @@ by one point
 >train tracks
 by one point
 
+#testcase-check-vc-train-tracks-rule-fallthrough
+WRONG
+
 #+testcase-room-names-lane-lax
 `Train Tracks
 
 >main max
 by one point
 
+#testcase-check-vc-main-max-rule-fallthrough
+WRONG
+
 >pain packs
 by one point
+
+#testcase-check-vc-pain-packs-rule-fallthrough
+WRONG
 
 >n
 
@@ -251,8 +332,14 @@ Wowed Wise Crowd Cries
 >trowed tries
 by one point
 
+#testcase-check-vc-trowed-tries-rule-fallthrough
+WRONG
+
 >loud lies
 by one point
+
+#testcase-check-vc-loud-lies-rule-fallthrough
+WRONG
 
 >s
 
@@ -265,14 +352,23 @@ by one point
 >fast fort
 by one point
 
+#testcase-check-vc-fast-fort-rule-fallthrough
+WRONG
+
 #testcase-room-names-fast-fort
 `Fast Fort
 
 >glued glass
 by one point
 
+#testcase-check-vc-glued-glass-rule-fallthrough
+WRONG
+
 >cast court
 by one point
+
+#testcase-check-vc-cast-court-rule-fallthrough
+WRONG
 
 #testcase-room-names-cast-court
 `Cast Court
@@ -280,17 +376,32 @@ by one point
 >murky map
 by one point
 
+#testcase-check-vc-murky-map-rule-fallthrough
+WRONG
+
 >passed port
 by one point
+
+#testcase-check-vc-passed-port-rule-fallthrough
+WRONG
 
 >slashing sword
 by one point
 
+#testcase-check-vc-slashing-sword-rule-fallthrough
+WRONG
+
 >salad scent
 by one point
 
+#testcase-check-vc-salad-scent-rule-fallthrough
+WRONG
+
 >rhyme road
 by one point
+
+#testcase-check-vc-rhyme-road-rule-fallthrough
+WRONG
 
 >in
 
@@ -316,11 +427,20 @@ by one point
 >grew gruff
 by one point
 
+#testcase-check-vc-grew-gruff-rule-fallthrough
+WRONG
+
 >stew stuff
 by one point
 
+#testcase-check-vc-stew-stuff-rule-fallthrough
+WRONG
+
 >new nuff
 by one point
+
+#testcase-check-vc-new-nuff-rule-fallthrough
+WRONG
 
 >d
 
@@ -333,6 +453,9 @@ by one point
 >trod trash
 by one point
 
+#testcase-check-vc-trod-trash-rule-fallthrough
+WRONG
+
 >s
 
 #testcase-room-names-thought-theif-fought-fief
@@ -341,11 +464,20 @@ by one point
 >bought beef
 by one point
 
+#testcase-check-vc-bought-beef-rule-fallthrough
+WRONG
+
 >brought brief
 by one point
 
+#testcase-check-vc-brought-brief-rule-fallthrough
+WRONG
+
 >wrought reef
 by one point
+
+#testcase-check-vc-wrought-reef-rule-fallthrough
+WRONG
 
 #+testcase-room-names-thought-theif-fought-fief
 `Wrought Reef
@@ -353,17 +485,29 @@ by one point
 >done dish
 by one point
 
+#testcase-check-vc-done-dish-rule-fallthrough
+WRONG
+
 #testcase-room-names-nil-none
 `Nil, None
 
 >fill fun
 by one point
 
+#testcase-check-vc-fill-fun-rule-fallthrough
+WRONG
+
 >will won
 by one point
 
+#testcase-check-vc-will-won-rule-fallthrough
+WRONG
+
 >illun
 by one point
+
+#testcase-check-vc-ill-un-rule-fallthrough
+WRONG
 
 >n
 
@@ -391,17 +535,32 @@ by one point
 >hack height
 by one point
 
+#testcase-check-vc-hack-height-rule-fallthrough
+WRONG
+
 >slack slight
 by one point
+
+#testcase-check-vc-slack-slight-rule-fallthrough
+WRONG
 
 >quack quite
 by one point
 
+#testcase-check-vc-quack-quite-rule-fallthrough
+WRONG
+
 >power plate
 by one point
 
+#testcase-check-vc-power-plate-rule-fallthrough
+WRONG
+
 >flak flight
 by one point
+
+#testcase-check-vc-flak-flight-rule-fallthrough
+WRONG
 
 >e
 
@@ -418,11 +577,20 @@ by one point
 >quash quick
 by one point
 
+#testcase-check-vc-quash-quick-rule-fallthrough
+WRONG
+
 >slosh slick
 by one point
 
+#testcase-check-vc-slosh-slick-rule-fallthrough
+WRONG
+
 >time toad
 by one point
+
+#testcase-check-vc-time-toad-rule-fallthrough
+WRONG
 
 #testcase-room-names-dander-dove
 `Dander, Dove
@@ -430,11 +598,20 @@ by one point
 >stander stove
 by one point
 
+#testcase-check-vc-stander-stove-rule-fallthrough
+WRONG
+
 >candor cove
 by one point
 
+#testcase-check-vc-candor-cove-rule-fallthrough
+WRONG
+
 >grander grove
 by one point
+
+#testcase-check-vc-grander-grove-rule-fallthrough
+WRONG
 
 >n
 
@@ -452,8 +629,14 @@ by one point
 >bell book
 by one point
 
+#testcase-check-vc-bell-book-rule-fallthrough
+WRONG
+
 >covering candle
 by one point
+
+#testcase-check-vc-covering-candle-rule-fallthrough
+WRONG
 
 #testcase-route-rough-name
 `Route, Rough
@@ -464,11 +647,20 @@ by one point
 >nowt nuff
 by one point
 
+#testcase-check-vc-nowt-nuff-rule-fallthrough
+WRONG
+
 >stout stuff
 by one point
 
+#testcase-check-vc-stout-stuff-rule-fallthrough
+WRONG
+
 >flout fluff
 by one point
+
+#testcase-check-vc-flout-fluff-rule-fallthrough
+WRONG
 
 >n
 
@@ -485,6 +677,9 @@ by one point
 >harder helm
 by one point
 
+#testcase-check-vc-harder-helm-rule-fallthrough
+WRONG
+
 >e
 
 >s
@@ -495,6 +690,9 @@ by one point
 score and bonus
 by one point
 
+#testcase-check-vc-eyeing-eying-ease-rule-fallthrough
+WRONG
+
 >in
 
 #testcase-room-names-bruising-brew
@@ -503,14 +701,26 @@ by one point
 >using you
 by one point
 
+#testcase-check-vc-using-you-rule-fallthrough
+WRONG
+
 >boozing boo
 by one point
+
+#testcase-check-vc-boozing-boo-rule-fallthrough
+WRONG
 
 >fusing phew
 by one point
 
+#testcase-check-vc-fusing-phew-rule-fallthrough
+WRONG
+
 >spurning spew
 by one point
+
+#testcase-check-vc-spurning-spew-rule-fallthrough
+WRONG
 
 >out
 
@@ -522,20 +732,38 @@ by one point
 >scaling skill
 by one point
 
+#testcase-check-vc-scaling-skill-rule-fallthrough
+WRONG
+
 >ailing ill
 by one point
+
+#testcase-check-vc-ailing-ill-rule-fallthrough
+WRONG
 
 >mailing mill
 by one point
 
+#testcase-check-vc-mailing-mill-rule-fallthrough
+WRONG
+
 >failing phil
 by one point
+
+#testcase-check-vc-failing-phil-rule-fallthrough
+WRONG
 
 >wailing will
 by one point
 
+#testcase-check-vc-wailing-will-rule-fallthrough
+WRONG
+
 >bailing bill
 by one point
+
+#testcase-check-vc-bailing-bill-rule-fallthrough
+WRONG
 
 >d
 
@@ -544,6 +772,9 @@ by one point
 >fight fave
 by one point
 
+#testcase-check-vc-fight-fave-rule-fallthrough
+WRONG
+
 >bright bully
 by one point
 
@@ -556,9 +787,17 @@ by one point
 >frightfully
 by one point
 
+#testcase-check-vc-fright-fully-rule-fallthrough
+WRONG
+
 >bright bully
 by one point
+
+#testcase-check-vc-bright-bully-rule-fallthrough
+WRONG
 
 >bam bye
 by one point
 
+#testcase-check-vc-bam-bye-rule-fallthrough
+WRONG

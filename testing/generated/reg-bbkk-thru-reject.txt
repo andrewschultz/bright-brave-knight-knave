@@ -13,82 +13,102 @@ Taken.
 
 >au 2
 
+#testcase-check-vc-ailing-ill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-bailing-bill-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-bailing-bill-rule
 >bailing bill
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-bam-bye-rule-if-tully-score-<-2
 #testcase-reject-start-table-of-verb-checks-vc-bam-bye-rule
 >bam bye
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-bell-book-rule-abide-by-the-any-nook-rule
 #testcase-reject-start-table-of-verb-checks-vc-bell-book-rule
 >bell book
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-boozing-boo-rule-if-player-is-not-in-bruising-brew
 #testcase-reject-start-table-of-verb-checks-vc-boozing-boo-rule
 >boozing boo
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-bought-beef-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-bought-beef-rule
 >bought beef
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-bright-bully-rule-abide-by-the-tully-triage-rule
 #testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
 >bright bully
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-brought-brief-rule-if-player-is-not-in-thought-thief-fought-fief
 #testcase-reject-start-table-of-verb-checks-vc-brought-brief-rule
 >brought brief
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-candor-cove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-candor-cove-rule
 >candor cove
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-cast-court-rule-abide-by-the-don't-loop-yacht-around-rule-for-cast-court
 #testcase-reject-start-table-of-verb-checks-vc-cast-court-rule
 >cast court
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-chic-shooter-rule-abide-by-the-eeker-precheck-rule-for-chic-shooter
 #testcase-reject-start-table-of-verb-checks-vc-chic-shooter-rule
 >chic shooter
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-covering-candle-rule-if-player-is-not-in-knell-nook
 #testcase-reject-start-table-of-verb-checks-vc-covering-candle-rule
 >covering candle
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-done-dish-rule-if-wish-fun-fish-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-done-dish-rule
 >done dish
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-failing-phil-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-failing-phil-rule
 >failing phil
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fast-fort-rule-abide-by-the-don't-loop-yacht-around-rule-for-fast-fort
 #testcase-reject-start-table-of-verb-checks-vc-fast-fort-rule
 >fast fort
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fill-fun-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-fill-fun-rule
 >fill fun
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-flak-flight-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-flak-flight-rule
 >flak flight
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-flout-fluff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-flout-fluff-rule
 >flout fluff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fried-freak-rule-abide-by-the-eeker-precheck-rule-for-fried-freak
 #testcase-reject-start-table-of-verb-checks-vc-fried-freak-rule
 >fried freak
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fright-fully-rule-abide-by-the-tully-triage-rule
 #testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
 >fright fully
 I couldn't parse that command. You don't need any more than two words long.
@@ -98,202 +118,252 @@ I couldn't parse that command. You don't need any more than two words long.
 >fusing phew
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-glued-glass-rule-if-lewd-lass-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-glued-glass-rule
 >glued glass
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-grander-grove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-grander-grove-rule
 >grander grove
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-grew-gruff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-grew-gruff-rule
 >grew gruff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-guide-geek-rule-abide-by-the-eeker-precheck-rule-for-guide-geek
 #testcase-reject-start-table-of-verb-checks-vc-guide-geek-rule
 >guide geek
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-hack-height-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-hack-height-rule
 >hack height
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-harder-helm-rule-if-ardor-elm-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-harder-helm-rule
 >harder helm
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-heed-hack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-heed-hack-rule
 >heed hack
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-hid-hum-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
 >hid hum
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-ill-un-rule-if-player-is-not-in-nil-none
 #testcase-reject-start-table-of-verb-checks-vc-ill-un-rule
 >illun
 Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-jack-gist-rule-if-player-does-not-have-lack-list
 #testcase-reject-start-table-of-verb-checks-vc-jack-gist-rule
 >jack gist
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-kid-come-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
 >kid come
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-loud-lies-rule-if-player-is-not-in-wowed-wise-crowd-cries
 #testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
 >loud lies
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-mailing-mill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-mailing-mill-rule
 >mailing mill
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-main-max-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-main-max-rule
 >main max
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-mass-math-rule-if-player-is-not-in-bass-bath
 #testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
 >mass math
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-meek-mooter-rule-abide-by-the-eeker-precheck-rule-for-meek-mooter
 #testcase-reject-start-table-of-verb-checks-vc-meek-mooter-rule
 >meek mooter
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-mood-mapper-rule-if-player-is-not-in-crude-crapper-and-player-does-not-have-mood-mapper
 #testcase-reject-start-table-of-verb-checks-vc-mood-mapper-rule
 >mood mapper
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-murky-map-rule-if-perky-pap-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-murky-map-rule
 >murky map
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-need-knack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-need-knack-rule
 >need knack
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-new-nuff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-new-nuff-rule
 >new nuff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-nowt-nuff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-nowt-nuff-rule
 >nowt nuff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-nude-napper-rule-if-player-is-not-in-crude-crapper
 #testcase-reject-start-table-of-verb-checks-vc-nude-napper-rule
 >nude napper
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-pain-packs-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-pain-packs-rule
 >pain packs
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-pass-path-rule-if-player-is-not-in-bass-bath
 #testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
 >pass path
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-passed-port-rule-abide-by-the-don't-loop-yacht-around-rule-for-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-passed-port-rule
 >passed port
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-paul-panks-rule-if-player-is-not-in-tata
 #testcase-reject-start-table-of-verb-checks-vc-paul-panks-rule
 >paul panks
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-plead-plaque-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-plead-plaque-rule
 >plead plaque
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-plucky-plot-rule-if-yucky-yacht-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-plucky-plot-rule
 >plucky plot
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-posh-planks-rule-if-player-is-not-in-bosh-blanks
 #testcase-reject-start-table-of-verb-checks-vc-posh-planks-rule
 >posh planks
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-power-plate-rule-if-sour-slate-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-power-plate-rule
 >power plate
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-quack-quite-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-quack-quite-rule
 >quack quite
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-quash-quick-rule-if-posh-pick-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-quash-quick-rule
 >quash quick
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-rhyme-road-rule-if-player-is-not-in-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
 >rhyme road
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-rid-rum-rule-if-player-is-not-in-slid-slum
 #testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
 >rid rum
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-salad-scent-rule-if-pallid-pent-valid-vent-is-untouchable
 #testcase-reject-start-table-of-verb-checks-vc-salad-scent-rule
 >salad scent
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-scaling-skill-rule-if-player-is-not-in-hailing-hill
 #testcase-reject-start-table-of-verb-checks-vc-scaling-skill-rule
 >scaling skill
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-seed-sack-rule-if-player-is-not-in-treed-track
 #testcase-reject-start-table-of-verb-checks-vc-seed-sack-rule
 >seed sack
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-slack-slight-rule-if-player-is-not-in-lack-light-black-blight
 #testcase-reject-start-table-of-verb-checks-vc-slack-slight-rule
 >slack slight
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-slashing-sword-rule-if-clashing-cord-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-slashing-sword-rule
 >slashing sword
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-slosh-slick-rule-if-posh-pick-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-slosh-slick-rule
 >slosh slick
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-snide-sneak-rule-abide-by-the-eeker-precheck-rule-for-snide-sneak
 #testcase-reject-start-table-of-verb-checks-vc-snide-sneak-rule
 >snide sneak
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-spurning-spew-rule-if-learning-lou-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-spurning-spew-rule
 >spurning spew
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-stander-stove-rule-if-player-is-not-in-dander-dove
 #testcase-reject-start-table-of-verb-checks-vc-stander-stove-rule
 >stander stove
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-stew-stuff-rule-if-player-is-not-in-too-tough-blue-bluff
 #testcase-reject-start-table-of-verb-checks-vc-stew-stuff-rule
 >stew stuff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-stout-stuff-rule-if-player-is-not-in-route-rough
 #testcase-reject-start-table-of-verb-checks-vc-stout-stuff-rule
 >stout stuff
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-stride-streak-rule-if-player-is-not-in-cried-creek
 #testcase-reject-start-table-of-verb-checks-vc-stride-streak-rule
 >stride streak
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-time-toad-rule-if-player-is-not-in-passed-port
 #testcase-reject-start-table-of-verb-checks-vc-time-toad-rule
 >time toad
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-train-tracks-rule-if-player-is-not-in-lane-lax
 #testcase-reject-start-table-of-verb-checks-vc-train-tracks-rule
 >train tracks
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-trod-trash-rule-if-broad-brash-clod-clash-is-untouchable-and-odd-ash-is-untouchable
 #testcase-reject-start-table-of-verb-checks-vc-trod-trash-rule
 >trod trash
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-trowed-tries-rule-if-player-is-not-in-wowed-wise-crowd-cries
 #testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
 >trowed tries
 I couldn't parse that command. You don't need any more than two words long.
@@ -303,10 +373,12 @@ I couldn't parse that command. You don't need any more than two words long.
 >using you
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-wailing-will-rule-abide-by-the-can-mail-rule
 #testcase-reject-start-table-of-verb-checks-vc-wailing-will-rule
 >wailing will
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-weak-wooter-rule-abide-by-the-eeker-precheck-rule-for-weak-wooter
 #testcase-reject-start-table-of-verb-checks-vc-weak-wooter-rule
 >weak wooter
 I couldn't parse that command. You don't need any more than two words long.
@@ -334,6 +406,9 @@ I couldn't parse that command. You don't need any more than two words long.
 >kite cave
 by one point
 
+#testcase-run-vr-kite-cave-rule-default
+WRONG
+
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
 >kite cave
 You already discovered the kite cave to find a path beyond!
@@ -343,6 +418,9 @@ You already discovered the kite cave to find a path beyond!
 >x list
 
 >jack gist
+WRONG
+
+#testcase-run-vr-jack-gist-rule-default
 WRONG
 
 #testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
@@ -367,6 +445,10 @@ score and bonus points just went up by one point.
 
 >d
 
+#testcase-check-vc-fight-fave-rule-if-player-is-not-in-white-wave-and-debug-allow-final-is-false
+>fight fave
+WRONG
+
 >mass math
 You have nothing to do mass math on. Yet.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
@@ -382,6 +464,9 @@ You already calculated! Overcalculate, and you might miss or reject the obvious.
 
 >pass path
 
+#testcase-run-vr-pass-path-rule-default
+WRONG
+
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
@@ -394,9 +479,12 @@ You already found a pass-path through the bass bath!
 >mass math
 by one point
 
+#testcase-run-vr-mass-math-rule-default
+WRONG
+
 >e
 
-#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shootxer
+#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shooter
 >yall yank
 WRONG
 
@@ -432,6 +520,9 @@ You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 >write rave
 by two point
 
+#testcase-run-vr-write-right-rave-rule-default
+WRONG
+
 #testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
 >write rave
 You already appealed to my pride! Now it's my turn to feel pride by showing I don't need a second dose. Well, from you, at least. No offense.!
@@ -443,10 +534,16 @@ by one point
 >what whoah
 You already had a revelation that will push you out of your rut and see a new passage through.
 
+#testcase-run-vr-what-whoah-rule-default
+It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
+
 >w
 
 >hid hum
 by one point
+
+#testcase-run-vr-hid-hum-rule-default
+WRONG
 
 #testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
 >hid hum
@@ -455,12 +552,18 @@ You already did initial searching!
 >kid come
 by one point
 
+#testcase-run-vr-kid-come-rule-default
+WRONG
+
 #testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
 >kid come
 You already called the kid over!
 
 >rid rum
 by one point
+
+#testcase-run-vr-rid-rum-rule-default
+WRONG
 
 #testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
 >rid rum
@@ -482,6 +585,9 @@ You already got the mood mapper/'tude tapper!
 >nude napper
 by one point
 
+#testcase-run-vr-nude-napper-rule-default
+WRONG
+
 #testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
 >nude napper
 You don't want to be too much of a moral scold!
@@ -495,6 +601,9 @@ You don't want to be too much of a moral scold!
 >stride streak
 by one point
 
+#testcase-run-vr-stride-streak-rule-default
+WRONG
+
 #testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
 >stride streak
 You already encouraged more action and less moping here!
@@ -502,22 +611,40 @@ You already encouraged more action and less moping here!
 >guide geek
 by one point
 
+#testcase-run-vr-guide-geek-rule-default
+WRONG
+
 >fried freak
 by one point
 
+#testcase-run-vr-fried-freak-rule-default
+WRONG
+
 >snide sneak
 by one point
+
+#testcase-run-vr-snide-sneak-rule-default
+WRONG
 
 >e
 
 >meek mooter
 by one point
 
+#testcase-run-vr-meek-mooter-rule-default
+WRONG
+
 >weak wooter
 by one point
 
+#testcase-run-vr-weak-wooter-rule-default
+WRONG
+
 >chic shooter
 by one point
+
+#testcase-run-vr-chic-shooter-rule-default
+WRONG
 
 >w
 >fried freak
@@ -534,6 +661,9 @@ by one point
 >posh planks
 by one point
 
+#testcase-run-vr-posh-planks-rule-default
+WRONG
+
 #testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
 >posh planks
 Oh, no, let's not make things TOO posh, here!
@@ -541,6 +671,9 @@ Oh, no, let's not make things TOO posh, here!
 
 >plucky plot
 by one point
+
+#testcase-run-vr-plucky-plot-rule-default
+WRONG
 
 #testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
 >plucky plot
@@ -559,12 +692,18 @@ But you already hatched a plucky plot to clean the yucky yacht!
 >yall yank
 by one point
 
+#testcase-run-vr-yall-yank-rule-default
+WRONG
+
 #testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
 >yall yank
 You've already pulled out the tall tank(s).
 
 >paul panks
 by one point
+
+#testcase-run-vr-paul-panks-rule-default
+WRONG
 
 #testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
 >paul panks
@@ -589,12 +728,18 @@ You already paid your respects.
 >need knack
 by one point
 
+#testcase-run-vr-need-knack-rule-default
+WRONG
+
 #testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
 >need knack
 You already got the knack for looking around! You won't forget it.
 
 >plead plaque
 by one point
+
+#testcase-run-vr-plead-plaque-rule-default
+WRONG
 
 #testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
 >plead plaque
@@ -603,12 +748,18 @@ You look over the plead plaque again. Man, even more fun adventures once you're 
 >heed hack
 by one point
 
+#testcase-run-vr-heed-hack-rule-default
+WRONG
+
 #testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
 >heed hack
 You look for other ways to hack through the Treed Track, but three all told is pretty good.
 
 >seed sack
 by one point
+
+#testcase-run-vr-seed-sack-rule-default
+WRONG
 
 #testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
 >seed sack
@@ -623,12 +774,18 @@ You already got a seed sack!
 >train tracks
 by one point
 
+#testcase-run-vr-train-tracks-rule-default
+WRONG
+
 #testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
 >train tracks
 You already created train tracks, though they could become sturdier and farther-reaching.
 
 >main max
 by one point
+
+#testcase-run-vr-main-max-rule-default
+WRONG
 
 #testcase-check-vc-main-max-rule-if-sco-main-max-is-true
 >main max
@@ -641,6 +798,9 @@ You already created train tracks.
 >pain packs
 by one point
 
+#testcase-run-vr-pain-packs-rule-default
+WRONG
+
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
 >pain packs
 You already got some pain packs!
@@ -650,12 +810,18 @@ You already got some pain packs!
 >trowed tries
 by one point
 
+#testcase-run-vr-trowed-tries-rule-default
+WRONG
+
 #testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
 >trowed tries
 Enough trying. You need to take action!
 
 >loud lies
 by one point
+
+#testcase-run-vr-loud-lies-rule-default
+WRONG
 
 #+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
 >trowed tries
@@ -676,23 +842,44 @@ You already declaimed the loud lies.
 >fast fort
 by one point
 
+#testcase-run-vr-fast-fort-rule-default
+WRONG
+
 >glued glass
 by one point
+
+#testcase-run-vr-glued-glass-rule-default
+WRONG
 
 >cast court
 by one point
 
+#testcase-run-vr-cast-court-rule-default
+WRONG
+
 >murky map
 by one point
+
+#testcase-run-vr-murky-map-rule-default
+WRONG
 
 >passed port
 by one point
 
+#testcase-run-vr-passed-port-rule-default
+WRONG
+
 >slashing sword
 by one point
 
+#testcase-run-vr-slashing-sword-rule-default
+WRONG
+
 >salad scent
 by one point
+
+#testcase-run-vr-salad-scent-rule-default
+WRONG
 
 #testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
 >salad scent
@@ -700,6 +887,9 @@ Wow! You must really like salad!
 
 >rhyme road
 by one point
+
+#testcase-run-vr-rhyme-road-rule-default
+WRONG
 
 #testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
 >rhyme road
@@ -726,6 +916,9 @@ You already looked down Rhyme Road!
 >grew gruff
 by one point
 
+#testcase-run-vr-grew-gruff-rule-default
+WRONG
+
 #testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
 >grew gruff
 Don't want to overdo it!
@@ -733,12 +926,18 @@ Don't want to overdo it!
 >stew stuff
 by one point
 
+#testcase-run-vr-stew-stuff-rule-default
+WRONG
+
 #testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
 >stew stuff
 You can't make any more stew stuff.
 
 >new nuff
 by one point
+
+#testcase-run-vr-new-nuff-rule-default
+WRONG
 
 #testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
 >new nuff
@@ -755,6 +954,9 @@ You already revitalized the stew stuff.
 >trod trash
 by one point
 
+#testcase-run-vr-trod-trash-rule-default
+WRONG
+
 #testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
 >trod trash
 But you already got people to trod on the trash!
@@ -764,12 +966,18 @@ But you already got people to trod on the trash!
 >bought beef
 by one point
 
+#testcase-run-vr-bought-beef-rule-default
+WRONG
+
 #testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
 >bought beef
 You already pretended to have bought beef, or a beef, or something!
 
 >brought brief
 by one point
+
+#testcase-run-vr-brought-brief-rule-default
+WRONG
 
 #testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
 >brought brief
@@ -778,6 +986,9 @@ You already pretended you brought huge plans!
 >wrought reef
 by one point
 
+#testcase-run-vr-wrought-reef-rule-default
+WRONG
+
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
 >wrought reef
 You already wrought the reef!
@@ -785,8 +996,14 @@ You already wrought the reef!
 >done dish
 by one point
 
+#testcase-run-vr-done-dish-rule-default
+WRONG
+
 >fill fun
 by one point
+
+#testcase-run-vr-fill-fun-rule-default
+WRONG
 
 #testcase-check-vc-fill-fun-rule-if-sco-fill-fun-is-true
 >fill fun
@@ -795,12 +1012,18 @@ You already filled yourself up with fun!
 >will won
 by one point
 
+#testcase-run-vr-will-won-rule-default
+WRONG
+
 #testcase-check-vc-will-won-rule-if-sco-will-won-is-true
 >will won
 You already have a will to win!
 
 >illun
 by one point
+
+#testcase-run-vr-ill-un-rule-default
+WRONG
 
 #testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
 >illun
@@ -829,17 +1052,32 @@ You already identified illun'!
 >hack height
 by one point
 
+#testcase-run-vr-hack-height-rule-default
+WRONG
+
 >slack slight
 by one point
+
+#testcase-run-vr-slack-slight-rule-default
+WRONG
 
 >quack quite
 by one point
 
+#testcase-run-vr-quack-quite-rule-default
+WRONG
+
 >power plate
 by one point
 
+#testcase-run-vr-power-plate-rule-default
+WRONG
+
 >flak flight
 by one point
+
+#testcase-run-vr-flak-flight-rule-default
+WRONG
 
 #testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
 >flak flight
@@ -869,6 +1107,9 @@ You already quacked "Quite!"
 >quash quick
 by one point
 
+#testcase-run-vr-quash-quick-rule-default
+WRONG
+
 #testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
 >quash quick
 You already quashed things quickly!
@@ -880,8 +1121,14 @@ You already figured that part of getting the pick!
 >slosh slick
 by one point
 
+#testcase-run-vr-slosh-slick-rule-default
+WRONG
+
 >time toad
 by one point
+
+#testcase-run-vr-time-toad-rule-default
+WRONG
 
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
 >time toad
@@ -890,12 +1137,18 @@ The time toad's gift of cold coal should be enough.
 >stander stove
 by one point
 
+#testcase-run-vr-stander-stove-rule-default
+WRONG
+
 #testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
 >stander stove
 You already found the stander stove!
 
 >candor cove
 by one point
+
+#testcase-run-vr-candor-cove-rule-default
+WRONG
 
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
 >candor cove
@@ -904,6 +1157,9 @@ WRONG change this statement
 
 >grander grove
 by one point
+
+#testcase-run-vr-grander-grove-rule-default
+WRONG
 
 #testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
 >grander grove
@@ -923,6 +1179,9 @@ WRONG fix msg
 >bell book
 by one point
 
+#testcase-run-vr-bell-book-rule-default
+WRONG
+
 #testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
 >bell book
 You already got the bell and book! Now for the next part.
@@ -930,8 +1189,14 @@ You already got the bell and book! Now for the next part.
 >covering candle
 by one point
 
+#testcase-run-vr-covering-candle-rule-default
+WRONG
+
 >nowt nuff
 by one point
+
+#testcase-run-vr-nowt-nuff-rule-default
+WRONG
 
 #testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
 >nowt nuff
@@ -940,12 +1205,18 @@ You already nullified certain worries and complaints!
 >stout stuff
 by one point
 
+#testcase-run-vr-stout-stuff-rule-default
+WRONG
+
 #testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
 >stout stuff
 You already found ways to be stout!
 
 >flout fluff
 by one point
+
+#testcase-run-vr-flout-fluff-rule-default
+WRONG
 
 #testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
 >flout fluff
@@ -966,6 +1237,9 @@ You already flouted fluff!
 >harder helm
 by one point
 
+#testcase-run-vr-harder-helm-rule-default
+WRONG
+
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
 That sort of repeated ardor won't get you anywhere!
@@ -979,6 +1253,9 @@ That sort of repeated ardor won't get you anywhere!
 >eyeing ease
 score and bonus
 by one point
+
+#testcase-run-vr-eyeing-eying-ease-rule-default
+WRONG
 
 #testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
 >eyeing ease
@@ -997,12 +1274,18 @@ You can say FUSING PHEW once you have commiserated more than one way with Lou.
 >using you
 by one point
 
+#testcase-run-vr-using-you-rule-default
+WRONG
+
 #testcase-check-vc-using-you-rule-if-sco-using-you-is-true
 >using you
 You already let Lou know the truth!
 
 >boozing boo
 by one point
+
+#testcase-run-vr-boozing-boo-rule-default
+WRONG
 
 #testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
 >boozing boo
@@ -1015,12 +1298,18 @@ You can say FUSING PHEW now you have commiserated more than one way with Lou.
 >fusing phew
 by one point
 
+#testcase-run-vr-fusing-phew-rule-default
+WRONG
+
 #testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
 >fusing phew
 Fusing ideas once was exhausting enough.
 
 >spurning spew
 by one point
+
+#testcase-run-vr-spurning-spew-rule-default
+WRONG
 
 >out
 
@@ -1029,12 +1318,18 @@ by one point
 >scaling skill
 by one point
 
+#testcase-run-vr-scaling-skill-rule-default
+WRONG
+
 #testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
 >scaling skill
 You already improved your climbing ability!
 
 >ailing ill
 by one point
+
+#testcase-run-vr-ailing-ill-rule-default
+WRONG
 
 #testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
 >ailing ill
@@ -1043,6 +1338,9 @@ You already expressed that everyone hurts!
 >mailing mill
 by one point
 
+#testcase-run-vr-mailing-mill-rule-default
+WRONG
+
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
 >mailing mill
 The mailing mill is already on Hailing Hill!
@@ -1050,11 +1348,20 @@ The mailing mill is already on Hailing Hill!
 >failing phil
 by one point
 
+#testcase-run-vr-failing-phil-rule-default
+WRONG
+
 >wailing will
 by one point
 
+#testcase-run-vr-wailing-will-rule-default
+WRONG
+
 >bailing bill
 by one point
+
+#testcase-run-vr-bailing-bill-rule-default
+WRONG
 
 #testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
 >bailing bill
@@ -1075,6 +1382,9 @@ You have already helped Failing Phil!
 >fight fave
 by one point
 
+#testcase-run-vr-fight-fave-rule-default
+WRONG
+
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
 >fight fave
 You already started the final fight! You aren't going to, like, REALLY start fighting now.
@@ -1092,12 +1402,18 @@ There must be another way to see Trite Tully!
 >frightfully
 by one point
 
+#testcase-run-vr-fright-fully-rule-default
+WRONG
+
 #testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
 >frightfully
 There must be another way to see Trite Tully!
 
 >bright bully
 by one point
+
+#testcase-run-vr-bright-bully-rule-default
+WRONG
 
 #testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
@@ -1398,3 +1714,5 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >bam bye
 by one point
 
+#testcase-run-vr-bam-bye-rule-default
+WRONG
