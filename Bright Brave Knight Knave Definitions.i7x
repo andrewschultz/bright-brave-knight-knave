@@ -279,6 +279,9 @@ to decide whether rhyme-mechanism-known:
 
 to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
 	if r1 is adjacent to r2, yes;
+	if map region of r1 is sighing seas and map region of r2 is sighing seas:
+		if r1 is r2, no;
+		yes;
 	no;
 
 this is the stuck-right-now rule:

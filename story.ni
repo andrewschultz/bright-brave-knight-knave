@@ -151,7 +151,8 @@ after printing the locale description for Bass Bath:
 		now hailing hill is mapped above bass bath;
 		now bass bath is mapped below hailing hill;
 	if bool-brew-available is false and hub-expand-score is 3:
-		say "Wait! What's this? A passage you hadn't noticed before! You can go inside to what looks like a bar!";
+		say "Wait! What's this? The mood mapper beeps once again! Then, surprisingly, it vaporizes! A passage you hadn't noticed before! You can go inside to what looks like a bar! Perhaps someone is really bummed there, though.";
+		moot mood mapper;
 		now bool-brew-available is true;
 		open-psg inside and Bruising Brew;
 	continue the action;

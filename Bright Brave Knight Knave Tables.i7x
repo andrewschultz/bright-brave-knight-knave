@@ -556,6 +556,8 @@ this is the vr-time-toad rule:
 	now sco-time-toad is true;
 	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]The time toad nods to you, then hops off, its work here done.";
 	give-hi cold coal;
+	moot right rack;
+	moot odd ash;
 
 a goodrhyme rule (this is the vc-rhyme-road rule):
 	if player is not in passed port, unavailable;
@@ -1142,13 +1144,6 @@ this is the vr-ill-un rule:
 	say "You come to grips with how you [if sco-will-won is true]were[else]are[end if] slightly illun[']. This may not be terribly practical, but it's an important part of the Knave code now, you remember.";
 	check-nil-alts;
 
-a goodrhyme rule (this is the vc-fright-fully rule):
-	if Trite Tully is not fungible, unavailable;
-	if sco-fright-fully is true:
-		vcal "There must be another way to see Trite Tully!";
-		already-done;
-	ready;
-
 to check-nil-alts:
 	if nil-score is 2:
 		alt-last Nil None;
@@ -1283,13 +1278,20 @@ to see-if-top:
 
 section very endgame stuff
 
+a goodrhyme rule (this is the vc-fright-fully rule):
+	abide by the tully-triage rule;
+	if sco-fright-fully is true:
+		vcal "There must be another way to see Trite Tully!";
+		already-done;
+	ready;
+
 this is the vr-fright-fully rule:
 	now sco-fright-fully is true;
 	say "Well, that got rid of some of the irony of 'trite.'";
 	abide by the frightfully-bright-bully rule;
 
 a goodrhyme rule (this is the vc-bright-bully rule):
-	if Trite Tully is not fungible, unavailable;
+	abide by the tully-triage rule;
 	if sco-bright-bully is true:
 		vcal "There must be another way to see Trite Tully!";
 		already-done;
@@ -1308,6 +1310,12 @@ this is the vr-bam-bye rule:
 	now sco-bam-bye is true;
 	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.";
 	win-the-game;
+
+a goodrhyme rule (this is the tully-triage rule):
+	if trite tully is not fungible, unavailable;
+	if tully-score is 2:
+		vcal "Trite Tully is now the Sham, Shy. The old phrases won't work. A new one will seal the deal.";
+		already-done;
 
 section auxiliary rules
 
@@ -1335,21 +1343,25 @@ to dismiss-geek-wooter: if geek-wooter-points is 3, fully-dismiss guide geek;
 
 to dismiss-freak-shooter: if freak-shooter-points is 4, fully-dismiss fried freak;
 
+to decide which number is eekers-near:
+	decide on number of eekers in location of player;
+
 an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck rule):
-	if ee is finished:
-		if vc-dont-print is false, say "You and [the ee] and [the other-guy of ee] already worked well enough together.";
-		already-done;
 	if ee is fungible:
 		if vc-dont-print is false, say "But [the ee] is already here!";
 		already-done;
-	if ee is creeky and number of fungible creeky eekers is 1 and player is not in cried creek:
-		vcp "You need to be back at [creek] to touch base with a new creek denizen.";
-		not-yet;
-	if ee is crooty and number of fungible crooty eekers is 1 and player is not in recroom:
-		vcp "You need to be back at [recroom] to touch base with a new recruit.";
-		not-yet;
+	if eekers-near is 1:
+		if ee is creeky and player is not in cried creek:
+			vcp "You need to be back at [creek] to touch base with a new creek denizen.";
+			not-yet;
+		if ee is crooty and player is not in recroom:
+			vcp "You need to be back at [recroom] to touch base with a new recruit.";
+			not-yet;
 	if ee is creeky and player is not in cried creek, unavailable;
 	if ee is crooty and player is not in recroom, unavailable;
+	if ee is finished:
+		if vc-dont-print is false, say "You and [the ee] and [the other-guy of ee] already worked well enough together.";
+		already-done;
 
 to bring-over (ee - an eeker):
 	now ee is followish;
@@ -1474,7 +1486,7 @@ to give-hi (hi - a holeitem):
 
 to give-ti (ti - a trystitem):
 	now player has ti;
-	choose row (number of carried trystitems) in table of trystitem stuff;
+	choose row trystcount in table of trystitem stuff;
 	say "[hooray entry][line break]";
 
 table of trystitem stuff
