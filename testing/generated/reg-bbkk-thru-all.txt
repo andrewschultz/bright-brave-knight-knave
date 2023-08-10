@@ -19,15 +19,25 @@ Taken.
 >kite cave
 by one point
 
+>x hold hole
+
+>x list
+
 >bold bowl
-WRONG
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+!by one point
 
 >cold coal
-WRONG
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
 
 >sold soul
-WRONG
-by one point
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
 
 >d
 
@@ -51,9 +61,12 @@ by one point
 `Rut Row
 
 >what whoah
+by one point
 
 #testcase-run-vr-what-whoah-rule-default
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
+
+>w
 
 #testcase-room-names-slum-slid
 `Slid Slum
@@ -67,7 +80,7 @@ by one point
 >rid rum
 by one point
 
->s
+>in
 
 #testcase-room-names-crude-crapper
 `Crude Crapper
@@ -89,8 +102,10 @@ by one point
 >w
 
 #testcase-room-names-recruiter
-`Recruiter
-Spied-Speak-Cried Creek
+`Spied-Speak-Cried Creek
+
+>stride streak
+by one point
 
 >guide geek
 by one point
@@ -124,8 +139,12 @@ by one point
 >e
 >n
 
->bosh blanks
+`Bosh, Blanks!
+
+>posh planks
 by one point
+
+`Posh Planks
 
 >plucky plot
 by one point
@@ -334,7 +353,7 @@ by one point
 >n
 
 >passed port
-by one point
+!by one point
 
 >quash quick
 by one point

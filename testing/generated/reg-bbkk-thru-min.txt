@@ -13,6 +13,10 @@
 >kite cave
 by one point
 
+>x hold hole
+
+>x list
+
 >d
 
 >pass path
@@ -23,6 +27,9 @@ by one point
 >w
 
 >what whoah
+by one point
+
+>w
 
 >hid hum
 by one point
@@ -33,7 +40,7 @@ by one point
 >rid rum
 by one point
 
->s
+>in
 
 >mood mapper
 by one point
@@ -43,6 +50,9 @@ by one point
 >n
 
 >w
+
+>stride streak
+by one point
 
 >guide geek
 by one point
@@ -69,16 +79,18 @@ by one point
 >e
 >bye
 
->guide geek
-!by one point
 >weak wooter
 !by one point
+>w
+>guide geek
+!by one point
+>e
 
 >s
 >e
 >n
 
->bosh blanks
+>posh planks
 by one point
 
 >plucky plot
@@ -276,7 +288,7 @@ by one point
 >n
 
 >passed port
-by one point
+!by one point
 
 >quash quick
 by one point

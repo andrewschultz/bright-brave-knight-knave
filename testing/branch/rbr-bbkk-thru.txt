@@ -169,6 +169,10 @@ You're kind of confused about directions, here. You maybe need to find some way 
 >kite cave
 by one point
 
+>x hold hole
+
+>x list
+
 @mis
 #testcase-mistakes-table-of-hold-hole-guesses-gold-goal
 >gold goal
@@ -207,14 +211,20 @@ That's a bit too repetitive, but the general idea feels right.
 
 @!min
 >bold bowl
-WRONG
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+!by one point
 \\
 >cold coal
-WRONG
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
 \\
 >sold soul
-WRONG
-by one point
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
 
 @mis
 #testcase-mistakes-table-of-hold-hole-guesses-bold-bowl
@@ -352,10 +362,13 @@ by one point
 {$GREENCORE}
 
 >what whoah
+by one point
 
 @all
 #testcase-run-vr-what-whoah-rule-default
 It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
+
+>w
 
 @all
 #testcase-room-names-slum-slid
@@ -435,7 +448,7 @@ Perhaps the coughin' coy boffin boy will be able to get the education for such a
 >rid rum
 by one point
 
->s
+>in
 
 @all
 #testcase-room-names-crude-crapper
@@ -461,7 +474,6 @@ by one point
 #testcase-ha-half-table-of-verb-checks-12-nude
 >nude znapper
 {$GREENBONUS}
-\\
 
 >mood mapper
 by one point
@@ -562,8 +574,7 @@ You feel as though you want to say something about the state of these environs, 
 
 @all
 #testcase-room-names-recruiter
-`Recruiter
-Spied-Speak-Cried Creek
+`Spied-Speak-Cried Creek
 
 @ha
 #testcase-ha-half-table-of-verb-checks-16-freak
@@ -598,6 +609,9 @@ Spied-Speak-Cried Creek
 >stride zstreak
 {$GREENCORE}
 
+>stride streak
+by one point
+
 >guide geek
 by one point
 
@@ -624,10 +638,12 @@ by one point
 >bye
 
 @min
->guide geek
-!by one point
 >weak wooter
 !by one point
+>w
+>guide geek
+!by one point
+>e
 @!
 >r 3
 by one point
@@ -635,6 +651,9 @@ by one point
 >s
 >e
 >n
+
+@all
+`Bosh, Blanks!
 
 @ha
 #testcase-ha-half-table-of-verb-checks-21-planks
@@ -653,8 +672,11 @@ by one point
 >plucky zplot
 {$GREENCORE}
 
->bosh blanks
+>posh planks
 by one point
+
+@all
+`Posh Planks
 
 >plucky plot
 by one point
@@ -1330,7 +1352,7 @@ by one point
 >n
 
 >passed port
-by one point
+!by one point
 
 @ha
 #testcase-ha-half-table-of-verb-checks-29-quash
