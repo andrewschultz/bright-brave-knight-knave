@@ -39,13 +39,25 @@ Yes. The sold soul must be one of the three entities that fit in the hold hole. 
 You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 
+>write rave
+by one point
+
+>misses
+You decided to WRITE/RIGHT RAVE too soon.
+
+>undo
+>undo
+
 >d
 
 #testcase-room-names-bass-bath
 `Bass Bath
 
 >write rave
+For me?
 by one point
+
+>undo
 
 >pass path
 
@@ -59,6 +71,9 @@ by one point
 
 #testcase-room-names-rut-row
 `Rut Row
+
+>write rave
+by two point
 
 >what whoah
 by one point
@@ -365,7 +380,7 @@ by one point
 
 >w
 
-#testcase-room-names-smack-smite-black-blight
+#testcase-room-names-lack-light-black-blight
 `Lack-Light Black Blight
 
 >hack height
@@ -515,8 +530,6 @@ by one point
 
 >d
 
-* _endgame
-
 >d
 
 >fight fave
@@ -527,7 +540,6 @@ by one point
 
 >frightfully
 by one point
-UNDO
 
 >undo
 >undo
@@ -537,7 +549,7 @@ by one point
 
 >bright bully
 by one point
-UNDO
 
 >bam bye
+by one point
 

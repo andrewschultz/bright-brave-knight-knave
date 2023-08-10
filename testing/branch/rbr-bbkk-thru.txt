@@ -26,7 +26,7 @@ file=reg-bbkk-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
 }$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
-}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
@@ -124,41 +124,317 @@ You don't have to change yourself, here.
 
 @rej
 ====alphabetize on
+#testcase-reject-start-table-of-verb-checks-vc-ailing-ill-rule
+>ailing ill
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-bailing-bill-rule
+>bailing bill
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-bam-bye-rule
+>bam bye
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-bell-book-rule
+>bell book
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-boozing-boo-rule
+>boozing boo
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-bought-beef-rule
+>bought beef
+{$REJECT}
+\\
 #testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
 >bright bully
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-brought-brief-rule
+>brought brief
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-candor-cove-rule
+>candor cove
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-cast-court-rule
+>cast court
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-chic-shooter-rule
+>chic shooter
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-covering-candle-rule
+>covering candle
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-done-dish-rule
+>done dish
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-failing-phil-rule
+>failing phil
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fast-fort-rule
+>fast fort
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fill-fun-rule
+>fill fun
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-flak-flight-rule
+>flak flight
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-flout-fluff-rule
+>flout fluff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fried-freak-rule
+>fried freak
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
 >fright fully
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fusing-phew-rule
+>fusing phew
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-glued-glass-rule
+>glued glass
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-grander-grove-rule
+>grander grove
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-grew-gruff-rule
+>grew gruff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-guide-geek-rule
+>guide geek
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-hack-height-rule
+>hack height
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-harder-helm-rule
+>harder helm
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-heed-hack-rule
+>heed hack
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
 >hid hum
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-ill-un-rule
+>illun
+{$REJECT1}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-jack-gist-rule
+>jack gist
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
 >kid come
-{$REJECT2}
+{$REJECT}
 \\
-#testcase-reject-start-table-of-verb-checks-vc-kite-cave-rule
->kite cave
-{$REJECT2}
+#testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
+>loud lies
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-mailing-mill-rule
+>mailing mill
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-main-max-rule
+>main max
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
 >mass math
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-meek-mooter-rule
+>meek mooter
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-mood-mapper-rule
+>mood mapper
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-murky-map-rule
+>murky map
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-need-knack-rule
+>need knack
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-new-nuff-rule
+>new nuff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-nowt-nuff-rule
+>nowt nuff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-nude-napper-rule
+>nude napper
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-pain-packs-rule
+>pain packs
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
 >pass path
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-passed-port-rule
+>passed port
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-paul-panks-rule
+>paul panks
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-plead-plaque-rule
+>plead plaque
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-plucky-plot-rule
+>plucky plot
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-posh-planks-rule
+>posh planks
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-power-plate-rule
+>power plate
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-quack-quite-rule
+>quack quite
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-quash-quick-rule
+>quash quick
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
+>rhyme road
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
 >rid rum
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-salad-scent-rule
+>salad scent
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-scaling-skill-rule
+>scaling skill
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-seed-sack-rule
+>seed sack
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-slack-slight-rule
+>slack slight
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-slashing-sword-rule
+>slashing sword
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-slosh-slick-rule
+>slosh slick
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-snide-sneak-rule
+>snide sneak
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-spurning-spew-rule
+>spurning spew
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-stander-stove-rule
+>stander stove
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-stew-stuff-rule
+>stew stuff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-stout-stuff-rule
+>stout stuff
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-stride-streak-rule
+>stride streak
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-time-toad-rule
+>time toad
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-train-tracks-rule
+>train tracks
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-trod-trash-rule
+>trod trash
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
+>trowed tries
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-using-you-rule
+>using you
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-wailing-will-rule
+>wailing will
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-weak-wooter-rule
+>weak wooter
+{$REJECT}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
-{$REJECT2}
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-will-won-rule
+>will won
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-wrought-reef-rule
+>wrought reef
+{$REJECT}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-yall-yank-rule
+>yall yank
+{$REJECT}
 ====alphabetize off
 
 @gt
@@ -243,15 +519,27 @@ WRONG
 >polled pole
 That's a bit too repetitive, and there's nothing more to figure out, anyway
 
+@all
+>write rave
+by one point
+\\
+>misses
+You decided to WRITE/RIGHT RAVE too soon.
+\\
+>undo
+>undo
+
 >d
 
 @all
 #testcase-room-names-bass-bath
 `Bass Bath
-
-@!min
+\\
 >write rave
+For me?
 by one point
+\\
+>undo
 
 @gt
 #testcase-table-of-noways-bass-bath
@@ -320,7 +608,7 @@ You can use MASS MATH once you have something to calculate.
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
-You can use MASS MATH once you have something to calculate.
+You can use MASS MATH now you have something to calculate.
 
 @gt
 #+testcase-table-of-noways-bass-bath
@@ -340,6 +628,10 @@ by one point
 @all
 #testcase-room-names-rut-row
 `Rut Row
+
+@!min
+>write rave
+by two point
 
 @gt
 >w
@@ -1316,7 +1608,7 @@ by one point
 >w
 
 @all
-#testcase-room-names-smack-smite-black-blight
+#testcase-room-names-lack-light-black-blight
 `Lack-Light Black Blight
 
 @ha
@@ -1759,8 +2051,6 @@ by one point
 
 >d
 
-* _endgame
-
 >d
 
 >fight fave
@@ -1772,7 +2062,6 @@ by one point
 \\
 >frightfully
 by one point
-UNDO
 \\
 >undo
 >undo
@@ -1799,7 +2088,6 @@ by one point
 
 >bright bully
 by one point
-UNDO
 
 @mis
 #testcase-mistakes-table-of-trite-tully-guesses-damn-die
@@ -1843,27 +2131,323 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 >zbam bye
 {$GREENCORE}
 
->bam bye
-
-#####################################################################ending stuff put in here for later
-
 @rej
->gt hidey house
-\\
 ====alphabetize on
-#testcase-reject-end-table-of-verb-checks-vc-kite-cave-rule
->kite cave
+#testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
+>ailing ill
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-bailing-bill-rule
+>bailing bill
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-bell-book-rule
+>bell book
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-boozing-boo-rule
+>boozing boo
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-bought-beef-rule
+>bought beef
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-brought-brief-rule
+>brought brief
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-candor-cove-rule
+>candor cove
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-cast-court-rule
+>cast court
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-chic-shooter-rule
+>chic shooter
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-covering-candle-rule
+>covering candle
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-done-dish-rule
+>done dish
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-failing-phil-rule
+>failing phil
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fast-fort-rule
+>fast fort
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fill-fun-rule
+>fill fun
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-flak-flight-rule
+>flak flight
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-flout-fluff-rule
+>flout fluff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fried-freak-rule
+>fried freak
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fusing-phew-rule
+>fusing phew
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-glued-glass-rule
+>glued glass
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-grander-grove-rule
+>grander grove
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-grew-gruff-rule
+>grew gruff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-guide-geek-rule
+>guide geek
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-hack-height-rule
+>hack height
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-harder-helm-rule
+>harder helm
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-heed-hack-rule
+>heed hack
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-hid-hum-rule
+>hid hum
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-ill-un-rule
+>illun
+{$REJECT1}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-kid-come-rule
+>kid come
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-loud-lies-rule
+>loud lies
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-mailing-mill-rule
+>mailing mill
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-main-max-rule
+>main max
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-mass-math-rule
 >mass math
 {$REJECT2}
 \\
+#testcase-reject-end-table-of-verb-checks-vc-meek-mooter-rule
+>meek mooter
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-mood-mapper-rule
+>mood mapper
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-murky-map-rule
+>murky map
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-need-knack-rule
+>need knack
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-new-nuff-rule
+>new nuff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-nowt-nuff-rule
+>nowt nuff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-nude-napper-rule
+>nude napper
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pain-packs-rule
+>pain packs
+{$REJECT2}
+\\
 #testcase-reject-end-table-of-verb-checks-vc-pass-path-rule
 >pass path
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-passed-port-rule
+>passed port
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-paul-panks-rule
+>paul panks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-plead-plaque-rule
+>plead plaque
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-plucky-plot-rule
+>plucky plot
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-posh-planks-rule
+>posh planks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-power-plate-rule
+>power plate
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-quack-quite-rule
+>quack quite
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-quash-quick-rule
+>quash quick
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-rhyme-road-rule
+>rhyme road
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-rid-rum-rule
+>rid rum
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-salad-scent-rule
+>salad scent
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-scaling-skill-rule
+>scaling skill
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-seed-sack-rule
+>seed sack
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-slack-slight-rule
+>slack slight
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-slashing-sword-rule
+>slashing sword
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-slosh-slick-rule
+>slosh slick
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-snide-sneak-rule
+>snide sneak
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-spurning-spew-rule
+>spurning spew
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-stander-stove-rule
+>stander stove
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-stew-stuff-rule
+>stew stuff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-stout-stuff-rule
+>stout stuff
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-stride-streak-rule
+>stride streak
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-time-toad-rule
+>time toad
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-train-tracks-rule
+>train tracks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-trod-trash-rule
+>trod trash
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-trowed-tries-rule
+>trowed tries
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-using-you-rule
+>using you
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-wailing-will-rule
+>wailing will
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-weak-wooter-rule
+>weak wooter
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
 {$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-will-won-rule
+>will won
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-wrought-reef-rule
+>wrought reef
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-yall-yank-rule
+>yall yank
+{$REJECT2}
 ====alphabetize off
+
+@min
+# I don't understand what's going on here, but this won't show the final command for MIN, even though it does so for other commands.
+>misses
+You could have tried to WRITE/RIGHT RAVE to flatter me.
+You could have noted a pattern with the regions in the status line and tried EYEING EASE.
+You could have been a bright knave and said R 3 once you'd paired two groups of friends, whether you knew their names or not.
+You didn't guess the the bold bowl, the sold soul and the cold coal before finding them.
+You could have told a NUDE NAPPER to be more modest in the Crude Crapper.
+You could've said FLOUT FLUFF in Out, Uff!.
+You could've said FLAK FLIGHT in Sack Site.
+You could've said GRANDER GROVE in Dander, Dove.
+You didn't uncover the RHYME ROAD in Passed Port.
+You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
+You didn't find the PLEAD PLAQUE in Treed Track.
+You could have tried to JACK GIST for a shorter command to read the track tryst lack list.
+\\
+>z
+
+>bam bye
+by one point
+

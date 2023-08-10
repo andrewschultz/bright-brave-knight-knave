@@ -13,41 +13,309 @@ Taken.
 
 >au 2
 
-#testcase-reject-start-table-of-verb-checks-vc-bright-bully-rule
->bright bully
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-start-table-of-verb-checks-vc-fright-fully-rule
->fright fully
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 #testcase-reject-start-table-of-verb-checks-vc-hid-hum-rule
 >hid hum
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-kid-come-rule
 >kid come
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-start-table-of-verb-checks-vc-kite-cave-rule
->kite cave
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-mass-math-rule
 >mass math
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-pass-path-rule
 >pass path
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-rid-rum-rule
 >rid rum
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-reject-start-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-ailing-ill-rule
+>ailing ill
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-bailing-bill-rule
+>bailing bill
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-bam-bye-rule
+>bam bye
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-bell-book-rule
+>bell book
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-boozing-boo-rule
+>boozing boo
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-bought-beef-rule
+>bought beef
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-brought-brief-rule
+>brought brief
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-candor-cove-rule
+>candor cove
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-cast-court-rule
+>cast court
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-chic-shooter-rule
+>chic shooter
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-covering-candle-rule
+>covering candle
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-done-dish-rule
+>done dish
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-failing-phil-rule
+>failing phil
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-fast-fort-rule
+>fast fort
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-fill-fun-rule
+>fill fun
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-flak-flight-rule
+>flak flight
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-flout-fluff-rule
+>flout fluff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-fried-freak-rule
+>fried freak
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-fusing-phew-rule
+>fusing phew
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-glued-glass-rule
+>glued glass
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-grander-grove-rule
+>grander grove
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-grew-gruff-rule
+>grew gruff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-guide-geek-rule
+>guide geek
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-hack-height-rule
+>hack height
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-harder-helm-rule
+>harder helm
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-heed-hack-rule
+>heed hack
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-ill-un-rule
+>illun
+Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-jack-gist-rule
+>jack gist
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
+>loud lies
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-mailing-mill-rule
+>mailing mill
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-main-max-rule
+>main max
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-meek-mooter-rule
+>meek mooter
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-mood-mapper-rule
+>mood mapper
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-murky-map-rule
+>murky map
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-need-knack-rule
+>need knack
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-new-nuff-rule
+>new nuff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-nowt-nuff-rule
+>nowt nuff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-nude-napper-rule
+>nude napper
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-pain-packs-rule
+>pain packs
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-passed-port-rule
+>passed port
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-paul-panks-rule
+>paul panks
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-plead-plaque-rule
+>plead plaque
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-plucky-plot-rule
+>plucky plot
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-posh-planks-rule
+>posh planks
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-power-plate-rule
+>power plate
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-quack-quite-rule
+>quack quite
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-quash-quick-rule
+>quash quick
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
+>rhyme road
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-salad-scent-rule
+>salad scent
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-scaling-skill-rule
+>scaling skill
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-seed-sack-rule
+>seed sack
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-slack-slight-rule
+>slack slight
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-slashing-sword-rule
+>slashing sword
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-slosh-slick-rule
+>slosh slick
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-snide-sneak-rule
+>snide sneak
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-spurning-spew-rule
+>spurning spew
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-stander-stove-rule
+>stander stove
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-stew-stuff-rule
+>stew stuff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-stout-stuff-rule
+>stout stuff
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-stride-streak-rule
+>stride streak
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-time-toad-rule
+>time toad
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-train-tracks-rule
+>train tracks
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-trod-trash-rule
+>trod trash
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
+>trowed tries
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-using-you-rule
+>using you
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-wailing-will-rule
+>wailing will
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-weak-wooter-rule
+>weak wooter
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-will-won-rule
+>will won
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-wrought-reef-rule
+>wrought reef
+I couldn't parse that command. You don't need any more than two words long.
+
+#testcase-reject-start-table-of-verb-checks-vc-yall-yank-rule
+>yall yank
+I couldn't parse that command. You don't need any more than two words long.
 
 >kite cave
 by one point
@@ -74,9 +342,6 @@ score and bonus points just went up by one point.
 
 >d
 
->write rave
-by one point
-
 >mass math
 You have nothing to do mass math on. Yet.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
@@ -91,12 +356,15 @@ You can use MASS MATH once you have something to calculate.
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
-You can use MASS MATH once you have something to calculate.
+You can use MASS MATH now you have something to calculate.
 
 >mass math
 by one point
 
 >w
+
+>write rave
+by two point
 
 >what whoah
 by one point
@@ -478,8 +746,6 @@ by one point
 
 >d
 
-* _endgame
-
 >d
 
 >fight fave
@@ -490,24 +756,303 @@ by one point
 
 >bright bully
 by one point
-UNDO
-
->bam bye
-
->gt hidey house
-
-#testcase-reject-end-table-of-verb-checks-vc-kite-cave-rule
->kite cave
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-mass-math-rule
 >mass math
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-pass-path-rule
 >pass path
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-what-whoah-rule
 >what whoah
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Civil Seeming Drivel Dreaming has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
+>ailing ill
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-bailing-bill-rule
+>bailing bill
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-bell-book-rule
+>bell book
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-boozing-boo-rule
+>boozing boo
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-bought-beef-rule
+>bought beef
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-brought-brief-rule
+>brought brief
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-candor-cove-rule
+>candor cove
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-cast-court-rule
+>cast court
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-chic-shooter-rule
+>chic shooter
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-covering-candle-rule
+>covering candle
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-done-dish-rule
+>done dish
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-failing-phil-rule
+>failing phil
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-fast-fort-rule
+>fast fort
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-fill-fun-rule
+>fill fun
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-flak-flight-rule
+>flak flight
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-flout-fluff-rule
+>flout fluff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-fried-freak-rule
+>fried freak
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-fusing-phew-rule
+>fusing phew
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-glued-glass-rule
+>glued glass
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-grander-grove-rule
+>grander grove
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-grew-gruff-rule
+>grew gruff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-guide-geek-rule
+>guide geek
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-hack-height-rule
+>hack height
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-harder-helm-rule
+>harder helm
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-heed-hack-rule
+>heed hack
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-hid-hum-rule
+>hid hum
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-ill-un-rule
+>illun
+Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-kid-come-rule
+>kid come
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-loud-lies-rule
+>loud lies
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-mailing-mill-rule
+>mailing mill
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-main-max-rule
+>main max
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-meek-mooter-rule
+>meek mooter
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-mood-mapper-rule
+>mood mapper
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-murky-map-rule
+>murky map
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-need-knack-rule
+>need knack
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-new-nuff-rule
+>new nuff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-nowt-nuff-rule
+>nowt nuff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-nude-napper-rule
+>nude napper
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-pain-packs-rule
+>pain packs
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-passed-port-rule
+>passed port
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-paul-panks-rule
+>paul panks
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-plead-plaque-rule
+>plead plaque
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-plucky-plot-rule
+>plucky plot
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-posh-planks-rule
+>posh planks
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-power-plate-rule
+>power plate
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-quack-quite-rule
+>quack quite
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-quash-quick-rule
+>quash quick
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-rhyme-road-rule
+>rhyme road
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-rid-rum-rule
+>rid rum
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-salad-scent-rule
+>salad scent
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-scaling-skill-rule
+>scaling skill
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-seed-sack-rule
+>seed sack
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-slack-slight-rule
+>slack slight
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-slashing-sword-rule
+>slashing sword
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-slosh-slick-rule
+>slosh slick
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-snide-sneak-rule
+>snide sneak
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-spurning-spew-rule
+>spurning spew
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-stander-stove-rule
+>stander stove
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-stew-stuff-rule
+>stew stuff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-stout-stuff-rule
+>stout stuff
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-stride-streak-rule
+>stride streak
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-time-toad-rule
+>time toad
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-train-tracks-rule
+>train tracks
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-trod-trash-rule
+>trod trash
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-trowed-tries-rule
+>trowed tries
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-using-you-rule
+>using you
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-wailing-will-rule
+>wailing will
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-weak-wooter-rule
+>weak wooter
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-will-won-rule
+>will won
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-wrought-reef-rule
+>wrought reef
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-yall-yank-rule
+>yall yank
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+>bam bye
+by one point
+

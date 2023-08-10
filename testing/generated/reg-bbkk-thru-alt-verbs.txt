@@ -44,15 +44,15 @@ score and bonus points just went up by one point.
 
 >d
 
->write rave
-by one point
-
 >pass path
 
 >mass math
 by one point
 
 >w
+
+>write rave
+by two point
 
 #testcase-alt-words-table-of-verb-checks-7-what-whoa-whoah
 >what whoa
@@ -432,8 +432,6 @@ by one point
 
 >d
 
-* _endgame
-
 >d
 
 >fight fave
@@ -444,7 +442,7 @@ by one point
 
 >bright bully
 by one point
-UNDO
 
 >bam bye
+by one point
 

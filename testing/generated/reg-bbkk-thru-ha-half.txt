@@ -73,9 +73,6 @@ score and bonus points just went up by one point.
 
 >d
 
->write rave
-by one point
-
 #testcase-ha-half-table-of-verb-checks-5-pass
 >pass zpath
 The HA HALF button on your Leet Learner lights up green.
@@ -98,6 +95,9 @@ The HA HALF button on your Leet Learner lights up yellow.
 by one point
 
 >w
+
+>write rave
+by two point
 
 #testcase-ha-half-table-of-verb-checks-7-what
 >what zwhoah
@@ -1243,8 +1243,6 @@ by one point
 
 >d
 
-* _endgame
-
 >d
 
 >fight fave
@@ -1271,7 +1269,6 @@ by one point
 
 >bright bully
 by one point
-UNDO
 
 #testcase-ha-half-table-of-verb-checks-81-bam
 >bam zbye
@@ -1282,4 +1279,5 @@ The HA HALF button on your Leet Learner lights up green.
 The HA HALF button on your Leet Learner lights up green.
 
 >bam bye
+by one point
 
