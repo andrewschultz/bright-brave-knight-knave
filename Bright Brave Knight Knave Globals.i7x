@@ -6,7 +6,7 @@ volume score values
 
 core-max is 71.
 
-max-bonus is 13.
+max-bonus is 14.
 
 entry-in-series is 6.
 
@@ -41,6 +41,8 @@ sco-write-right-rave is a truth state that varies.
 sco-kite-cave is a truth state that varies.
 
 sco-jack-gist is a truth state that varies.
+
+sco-eyeing-eying-ease is a truth state that varies.
 
 section bass bath
 

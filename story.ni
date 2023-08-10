@@ -727,6 +727,8 @@ this is the show-misses rule:
 		say "You could have tried to [wr] to flatter me.";
 	else if got-rave-bonus is false:
 		say "You decided to [wr] too soon.";
+	if sco-eyeing-eying-ease is false:
+		say "You could have noted a pattern with the regions in the status line and tried [b]EYEING EASE[r].";
 	if r-shortcut-got is false:
 		say "You could have been a bright knave and said [b]R 3[r] once you'd paired two groups of friends, whether you knew their names or not.";
 	if got-hole-bonus is false:

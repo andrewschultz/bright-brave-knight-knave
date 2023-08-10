@@ -20,6 +20,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "write|right"	"rave"	--	--	false	false	false	false	white wave	vc-write-right-rave rule	vr-write-right-rave rule	--	--
 "kite"	"cave"	--	--	false	true	true	false	white wave	vc-kite-cave rule	vr-kite-cave rule	--	--
 "jack"	"gist"	--	--	false	true	false	false	--	vc-jack-gist rule	vr-jack-gist rule	--	--
+"eyeing|eying"	"ease"	--	--	false	true	false	false	--	vc-eyeing-eying-ease rule	vr-eyeing-eying-ease rule	--	--
 "fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you have enough worth and confidence in you."
 "pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
@@ -146,6 +147,16 @@ this is the vr-jack-gist rule:
 	now sco-jack-gist is true;
 	say "Wow! You figured what to do. Now instead of typing [b]X LIST[r], you can just type [b]X[r] or even [b]I[r].";
 
+a goodrhyme rule (this is the vc-eyeing-eying-ease rule):
+	if sco-eyeing-eying-ease is true:
+		vcal "Well, you know not to repeat yourself once you've fished in interesting waters--you found what was there the first time, and you don't want to look like a beggar, now!";
+		already-done;
+	ready;
+
+this is the vr-eyeing-eying-ease rule:
+	now sco-eyeing-eying-ease is true;
+	say "A good [bbkk] is always on the lookouts for shortcuts and simplicity. Perhaps a bit too much, but it's not the worst fault to have.";
+
 a goodrhyme rule (this is the vc-fight-fave rule):
 	if player is not in white wave and debug-allow-final is false:
 		vcp "Not here. There is a proper place for that, though.";
@@ -171,6 +182,7 @@ this is the vr-fight-fave rule:
 	now cur-max-bonus is cur-bonus;
 	if sco-write-right-rave is false, increase cur-max-bonus by 2;
 	if sco-jack-gist is false, increase cur-max-bonus by 1;
+	if sco-eyeing-eying-ease is false, increase cur-max-bonus by 1;
 
 section bass bath point scoring
 
