@@ -417,6 +417,14 @@ a sort navigation rule for a room (called rm) (this is the don't loop yacht arou
 	if rm is location of player:
 		vcal "But you're already here!";
 		already-done;
+	process this-gong-rule of rm;
+	let room-done be the outcome of the rulebook;
+	if room-done is the uncompleted outcome, continue the action;
+	if room-done is the llp-remaining outcome and hunt-bonus-points is true:
+		if vc-dont-print is false, say "You have a bit more to do in [rm]. Nothing critical. Just maybe tying up a loose end.";
+		continue the action;
+	if vc-dont-print is false, say "No. On second thought, you feel like you've done all you needed in [rm], and you wouldn't want to expose the Sassed Sort to the Guide Gong.";
+	already-done;
 
 a goodrhyme rule (this is the vc-cast-court rule):
 	abide by the don't loop yacht around rule for Cast Court;

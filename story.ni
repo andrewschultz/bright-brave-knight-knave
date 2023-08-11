@@ -721,6 +721,156 @@ table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 "see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
 
+volume gong rules and files
+
+this-gong-rule of White Wave is the everything-left gong rule.
+
+this-gong-rule of Bass Bath is the bass-bath-gong rule.
+
+this is the bass-bath-gong rule:
+	if number of carried trystitems is 5, completed;
+	uncompleted;
+
+this-gong-rule of Hailing Hill is the hailing-hill-gong rule.
+
+this is the hailing-hill-gong rule:
+	if hill-score is 6, completed;
+	uncompleted;
+
+this-gong-rule of Rut Row is the rut-row-gong rule.
+
+this is the rut-row-gong rule:
+	if sco-what-whoah is true, completed;
+	uncompleted;
+
+this-gong-rule of Slid Slum is the slid-slum-gong rule.
+
+this is the slid-slum-gong rule:
+	if sco-rid-rum is true, completed;
+	uncompleted;
+
+this-gong-rule of Crude Crapper is the crude-crapper-gong rule.
+
+this is the crude-crapper-gong rule:
+	if sco-mood-mapper is false, uncompleted;
+	if sco-nude-napper is false, llp-remaining;
+	completed;
+
+this-gong-rule of recroom is the recroom-gong rule.
+
+this is the recroom-gong rule:
+	if eekers-done, completed;
+	uncompleted;
+
+this-gong-rule of Spied Speak Cried Creek is the spied-speak-cried-creek-gong rule.
+
+this is the spied-speak-cried-creek-gong rule:
+	if sco-harder-helm is false, uncompleted;
+	completed;
+
+this-gong-rule of Bosh Blanks is the bosh-blanks-gong rule.
+
+this is the bosh-blanks-gong rule:
+	if sco-passed-port is false, uncompleted;
+	completed;
+
+this-gong-rule of Cast Court is the cast-court-gong rule.
+
+this is the cast-court-gong rule:
+	if sco-murky-map is false, uncompleted;
+	completed;
+
+this-gong-rule of Fast Fort is the fast-fort-gong rule.
+
+this is the fast-fort-gong rule:
+	if sco-glued-glass is false, uncompleted;
+	completed;
+
+this-gong-rule of Passed Port is the passed-port-gong rule.
+
+this is the passed-port-gong rule:
+	if sco-time-toad is false or pick-score < 2, uncompleted;
+	if sco-rhyme-road is false, llp-remaining;
+	completed;
+
+this-gong-rule of Treed Track is the treed-track-gong rule.
+
+this is the treed-track-gong rule:
+	if sco-heed-hack is false or sco-seed-sack is false, uncompleted;
+	if sco-plead-plaque is false, llp-remaining;
+	completed;
+
+this-gong-rule of Too Tough Blue Bluff is the too-tough-blue-bluff-gong rule.
+
+this is the too-tough-blue-bluff-gong rule:
+	if sco-stew-stuff is false, uncompleted;
+	completed;
+
+this-gong-rule of Lack Light Black Blight is the lack-light-black-blight-gong rule.
+
+this is the lack-light-black-blight-gong rule:
+	if sco-power-plate is false, uncompleted;
+	if blight-score is 3, llp-remaining;
+	completed;
+
+this-gong-rule of Knell Nook is the knell-nook-gong rule.
+
+this is the knell-nook-gong rule:
+	if sco-covering-candle is false, uncompleted;
+	completed;
+
+this-gong-rule of tata is the tata-gong rule.
+
+this is the tata-gong rule:
+	if sco-yall-yank is false, uncompleted;
+	if sco-paul-panks is false, llp-remaining;
+	completed;
+
+this-gong-rule of Lane Lax is the lane-lax-gong rule.
+
+this is the lane-lax-gong rule:
+	if sco-trod-trash is false, uncompleted;
+	completed;
+
+this-gong-rule of Wowed Wise Crowd Cries is the wowed-wise-crowd-cries-gong rule.
+
+this is the wowed-wise-crowd-cries-gong rule:
+	if sco-loud-lies is false, uncompleted;
+	completed;
+
+this-gong-rule of Thought Thief Fought Fief is the thought-thief-fought-fief-gong rule.
+
+this is the thought-thief-fought-fief-gong rule:
+	if sco-done-dish is false, uncompleted;
+	completed;
+
+this-gong-rule of Bruising Brew is the bruising-brew-gong rule.
+
+this is the bruising-brew-gong rule:
+	if sco-spurning-spew is false, uncompleted;
+	completed;
+
+[this-gong-rule of Nil None is the nil-none-gong rule.
+
+this is the nil-none-gong rule:
+	if nil-score < 2, uncompleted;
+	if nil-score is 2, llp-remaining;
+	completed;
+
+this-gong-rule of Dander Dove is the dander-dove-gong rule.
+
+this is the dander-dove-gong rule:
+	if dander-score < 2, uncompleted;
+	if dander-score is 2, llp-remaining;
+	uncompleted;
+
+this-gong-rule of Route Rough is the route-rough-gong rule.
+
+this is the route-rough-gong rule:
+	if route-rough-score < 2, uncompleted;
+	if route-rough-score is 2, llp-remaining;
+	uncompleted;]
+
 volume endgame
 
 to say wr: say "[b]WRITE/RIGHT RAVE[r]"
