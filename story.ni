@@ -266,7 +266,7 @@ book Bosh Blanks
 
 Bosh Blanks is a room in Sighing Seas. printed name is "[if sco-posh-planks is true]Posh Planks[else]Bosh, Blanks![end if]". "[if sco-posh-planks is false]It's disappointingly empty here. As-is, you can only go back south[else][planks-desc][end if]."
 
-to say planks-desc: say "There's water on pretty much all sides here. A yucky yacht might allow access once fixed"
+to say planks-desc: say "There's water on pretty much all sides here. A yucky yacht [if sco-plucky-plot is true]allows you to travel, now you fixed it[else]might allow access once fixed[end if]"
 
 chapter yucky yacht
 

@@ -470,6 +470,7 @@ this is the vr-murky-map rule:
 	now sco-murky-map is true;
 	say "Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.";
 	now player has murky map;
+	moot perky pap;
 
 section fast fort scoring
 
@@ -480,6 +481,7 @@ a goodrhyme rule (this is the vc-glued-glass rule):
 this is the vr-glued-glass rule:
 	now sco-glued-glass is true;
 	say "You don't particularly like [lass], but it does clue you as to what you need.";
+	moot crude crass lewd lass;
 	now player has glued glass;
 
 section passed port scoring
