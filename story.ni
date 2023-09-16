@@ -40,6 +40,7 @@ the player is in White Wave.
 
 check going down in White Wave:
 	if sco-fight-fave is true, say "You can't shirk the final fight!" instead;
+	if sco-kite-cave is false, continue the action;
 	if hold hole is unexamined and number of preguessed holeitems < 3, say "You may wish to examine the hold hole you created first." instead;
 
 chapter leet learner
@@ -138,7 +139,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[end if]".
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you can't see any way forward. There are lots of nice fish here, though, and you're tempted to try and tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]You only see a small path to the north, but the fish are still nice to look at.[else]You see passages to the north, west and east.[end if]"
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else]You see passages to the north, west and east.[end if]You can also go back [b]DOWN[r] to White Wave."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -148,8 +149,7 @@ after printing the locale description for Bass Bath:
 	if bool-hill-available is false and player has mood mapper:
 		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up!";
 		now bool-hill-available is true;
-		now hailing hill is mapped above bass bath;
-		now bass bath is mapped below hailing hill;
+		open-psg up and hailing hill;
 	if bool-brew-available is false and hub-expand-score is 3:
 		say "Wait! What's this? The mood mapper beeps once again! Then, surprisingly, it vaporizes! A passage you hadn't noticed before! You can go inside to what looks like a bar! Perhaps someone is really bummed there, though.";
 		moot mood mapper;
@@ -167,7 +167,14 @@ volume Plying Please (west)
 
 book Rut Row
 
-Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable and almost physically impenetrable[else]You cleverly forged a way west[end if], and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And there's always back east to Pass Path."
+Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable for the moment, unless you figure a crazy, surprising way through[else]You cleverly forged a way west[end if][rut-2]."
+
+to say rut-2:
+	if sco-what-whoah is true:
+		say ", and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And";
+	 else:
+		say "Well,";
+	say " there's always back east to Pass Path"
 
 check going west in Rut Row:
 	if sco-what-whoah is false, say "Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened." instead;
@@ -177,17 +184,19 @@ check going north in Rut Row:
 	if recruiter is unvisited:
 		say "A voice proclaims you as perhaps not classy enough, but you're not fooled. The mood mapper helps you detect what, on reflection, is pretty lame hubris. You could've seen it easy back when you had more confidence. But you see it more fully, being more worldly-wise.";
 
-chapter the kid
-
-the coughin coy boffin boy is a rhymable.
-
-guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
-
 book Slum Slid
 
-Slid Slum is a room in Plying Please.
+Slid Slum is a room in Plying Please. "[if sco-rid-rum is true]You can see around a bit more clearly now. In addition to the path back east, there's somewhere you can go inside[else]It's very crowded and suspicious here. Until you get more street-savvy, you only feel like you can go back east[end if].".
 
 guess-table of slid slum is the table of slid slum guesses.
+
+chapter coughin coy boffin boy
+
+chapter the kid
+
+the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words."
+
+guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
 
 book Crude Crapper
 
@@ -195,7 +204,7 @@ Crude Crapper is a room in Plying Please. "You can only really go outside here. 
 
 to say crapper-status:
 	if sco-mood-mapper is true:
-		say "[if sco-nude-napper is true]There's nothing left to do here[else]You got the mood mapper, but you can mooch around for brownie points[end if]";
+		say "[if sco-nude-napper is true]You're surprised you found anything at all, really[else]You got the mood mapper, but you can mooch around for brownie points[end if]";
 	else:
 		say "[if sco-nude-napper is true]You've had a bit of fun, but perhaps there's something practical, here[else]Something must be at work here. You suspect you'll feel a bit silly once you figure what you're looking for[end if]"
 
@@ -231,7 +240,7 @@ the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is -3.
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is west of recroom. it is in Plying Please. "You can only go back east here. You might get lost in the other directions.". printed name is "Spied-Speak-Cried Creek".
+Spied Speak Cried Creek is west of recroom. it is in Plying Please. "It would be lovely to wander around here, but any direction other than back east to the Recruiter, and you might get lost.". printed name is "Spied-Speak-Cried Creek".
 
 check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
@@ -334,13 +343,13 @@ volume Trying Trees (south)
 
 book Treed Track
 
-Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]."
+Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]. You can, of course, always go back north to Pass Path."
 
 the seed sack is a thing.
 
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]There's nothing more to do here[end if]. You can go back down to Treed Track.". printed name is "Too-Tough Blue Bluff".
+Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]You've looted the campground. There's nothing more to do here[end if]. You can go back down to Treed Track. You'd probably get lost wandering anywhere else.". printed name is "Too-Tough Blue Bluff".
 
 chapter stew stuff
 
@@ -403,7 +412,6 @@ to say mama: if sco-main-max is true, say "Main Max "
 
 check going in Lane Lax:
 	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
-	if sco-pain-packs is false, say "You aren't equipped with emergency provisions." instead;
 
 [??the train tracks are not all they could be, and they do not lead all the places they could]
 
