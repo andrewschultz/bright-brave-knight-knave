@@ -455,7 +455,16 @@ chapter spurning spew
 
 Spurning Spew is a proper-named trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
 
-volume unsorted
+volume miscellaneous / universal rules
+
+for printing a locale paragraph about an eeker (called ee):
+	if ee is mentioned, continue the action;
+	if number of eekers in location of player is 1:
+		say "The [ee] shuffles around here, seemingly glad to follow you, but also a bit lonely.";
+	else:
+		say "The [list of eekers in location of player] hang together here, chatting with each other but ready to help when needed.";
+	now ee is mentioned;
+	now other-guy of ee is mentioned;
 
 volume meta verbs
 
