@@ -136,7 +136,7 @@ this is the vr-kite-cave rule:
 	now White Wave is mapped below Bass Bath;
 	now player has track tryst lack list;
 
-a goodrhyme rule (this is the vc-jack-gist rule): [doesn't have to be done here but it's the best place]
+a goodrhyme rule (this is the vc-jack-gist rule):
 	if player does not have lack list, unavailable;
 	if sco-jack-gist is true:
 		vcal "You already streamlined things with the list!";
@@ -158,7 +158,7 @@ this is the vr-eyeing-eying-ease rule:
 	say "A good [bbkk] is always on the lookouts for shortcuts and simplicity. Perhaps a bit too much, but it's not the worst fault to have.";
 
 a goodrhyme rule (this is the vc-fight-fave rule):
-	if player is not in white wave and debug-allow-final is false:
+	if player is not in white wave:
 		vcp "Not here. There is a proper place for that, though.";
 		not-yet;
 	if hold hole is off-stage:
@@ -197,10 +197,6 @@ this is the vr-pass-path rule:
 	now sco-pass-path is true;
 	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
 	print-the-loc;
-	open-psg west and rut row;
-	open-psg north and bosh blanks;
-	open-psg south and Treed Track;
-	open-psg east and tata;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -215,6 +211,10 @@ a goodrhyme rule (this is the vc-mass-math rule):
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
 	say "You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.";
+	open-psg west and rut row;
+	open-psg north and bosh blanks;
+	open-psg south and Treed Track;
+	open-psg east and tata;
 
 section rut row point scoring
 
@@ -241,7 +241,8 @@ a goodrhyme rule (this is the vc-hid-hum rule):
 
 this is the vr-hid-hum rule:
 	now sco-hid-hum is true;
-	say "You figure there must be something here, and you are right ... there's a kid. They seem to be holding something behind their back. They don't trust you yet.";
+	say "You figure there must be something here, and you are right ... there's a kid. And not just any kid! A coughin['] coy boffin boy! They seem to be holding something behind their back. They don't trust you yet. Who would, in such an urban hellscape?";
+	move boffin boy to Slum Slid;
 
 a goodrhyme rule (this is the vc-kid-come rule):
 	if player is not in slid slum, unavailable;
@@ -272,8 +273,9 @@ a goodrhyme rule (this is the vc-rid-rum rule):
 
 this is the vr-rid-rum rule:
 	now sco-rid-rum is true;
-	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You and [the boffin] part ways, and you see things a bit more clearly now. Oh, wow! There's somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
+	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You ask [the boffin] how to navigate this crazy town, and he helps you so much! Oh, wow! There's even somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
 	open-psg inside and crude crapper;
+	moot coughin coy boffin boy;
 
 section crude crapper scoring
 
@@ -703,7 +705,7 @@ a goodrhyme rule (this is the vc-done-dish rule):
 		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
 		not-yet;
 	if sco-new-nuff is false:
-		vcp "The [fish] blups suspiciously at the stew stuff. What if it is too old? The fish needs reassurance.";
+		vcp "The [fish] blups suspiciously at the stew stuff. As if there is no assurance the stew stuff is any good.";
 		not-yet;
 	ready;
 
@@ -851,7 +853,7 @@ a goodrhyme rule (this is the vc-grew-gruff rule):
 		vcal "Don't want to overdo it!";
 		already-done;
 	if guide geek is not fungible or weak wooter is not fungible:
-		vcp "You don't have the support of friends to grow gruff constructively.";
+		vcp "You don't have the support of the right friends to grow gruff constructively.";
 		not-yet;
 	ready;
 
@@ -944,6 +946,8 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
+	if sco-paul-panks is false:
+		now to-number of tata is -2705;
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
@@ -975,7 +979,7 @@ this is the vr-trowed-tries rule:
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in wowed wise crowd cries, unavailable;
 	if sco-trowed-tries is false:
-		vcp "You can't just jump to this. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.";
+		vcp "You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.";
 		not-yet;
 	if not pair-here of snide sneak:
 		vcp "You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. You need assistance!";
@@ -1076,7 +1080,7 @@ a goodrhyme rule (this is the vc-mailing-mill rule):
 		not-yet;
 	if sco-seed-sack is false:
 		vcp "A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.";
-		not-yet;
+		not-yet; [?? note very borderline case: the hint for THINK may reveal you need a seed sack, too, if you get through that first. This is doable with if vc-dont-print is false, but right now it's too tricky]
 	if sco-mailing-mill is true:
 		vcal "The mailing mill is already on Hailing Hill!";
 		already-done;
@@ -1161,6 +1165,9 @@ this is the vr-will-won rule:
 
 a goodrhyme rule (this is the vc-ill-un rule):
 	if player is not in nil none, unavailable;
+	if sco-fill-fun is false:
+		vcp "Whether or not you are illun['] or illin['], you may need to cheer yourself up to face that truth constructively.";
+		not-yet;
 	if sco-ill-un is true:
 		vcal "You already identified illun[']!";
 		already-done;
@@ -1479,17 +1486,17 @@ to check-points:
 	if debug-state is true:
 		repeat through table of verb checks:
 			if idid entry is false:
-				say "[w1 entry] [w2 entry] undone.";
+				say "[run-rule entry] not processed.";
 				now any-missed is true;
 	if any-missed is false, say "Got everything!"
 
 to win-the-game:
-	check-points;
 	if cur-bonus is max-bonus:
 		choose row with final response rule of show-misses rule in the Table of Final Question Options;
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;
 	force-status;
+	check-points;
 	end the story finally saying "Woo woo woo";
 	follow the shutdown rules;
 
@@ -1536,7 +1543,7 @@ Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
 Bruising Brew	"This pub houses no crazy lattice of secret passages. You can only go back out."
 Hailing Hill	"You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way."
-recroom	"You only have access [swh of cried creek] and [swh of slum slid]."
+recroom	"You can only go west[if creek is visited] to Cried Creek[end if] and south to Slum Slid."
 Cried Creek	"While the creek and greenery meander off, you might get lost. You can really only go back east."
 Crude Crapper	"There are no hidden passages. Only back out."
 Bosh Blanks	"You can go back south[if sco-plucky-plot is true], or you can say where you want the yacht to take you[end if]."
@@ -1544,7 +1551,7 @@ Cast Court	"[astort]."
 Fast Fort	"[astort]."
 Passed Port	"[astort]."
 Treed Track	"[if sco-need-knack is false]Without any direction, the only way is back north[else if sco-heed-hack is false]You can only go north or up. But maybe with some thought you can find other passages[else]North, west, east and up are all paths out of here, but [noun] isn't[end if]."
-Too Tough Blue Bluff	"You don't want to get lost in the bluff. Best just go back down once you're done here."
+Too Tough Blue Bluff	"You don't want to get lost in the bluff. Best just go back down [if sco-stew-stuff is false]once[else]now[end if] you're done here."
 Black Blight	"Beyond is too dangerous. Best just go back down when you're ready."
 Knell Nook	"This is a secluded place with the only exit back west."
 tata	"You can only go back west or[if sco-yall-yank is true] east[else], once you've moved the tank(s), past them in whatever direction[end if]."
