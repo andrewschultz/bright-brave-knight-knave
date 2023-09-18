@@ -80,7 +80,7 @@ test wi5 with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5".
 
 book cheat through
 
-test c6 with "r 3/bye/lone 1/test g7/quash quick/slosh slick/salad scent/in/s".
+test c6 with "r 3/bye/sweet swap/test g7/quash quick/slosh slick/salad scent/in/s".
 
 test c7 with "e/yall yank/paul panks/e/train tracks/pain packs/main max/trod trash/n/trowed tries/loud lies/s/s/brought brief/bought beef/wrought reef/n/w/w".
 
@@ -148,17 +148,38 @@ test cr3 with "test cr/snide sneak/e/meek mooter".
 
 book testing commands
 
-chapter loneing
 
-loneing is an action out of world applying to one number.
+chapter palsing
 
-understand the command "lone" as something new.
+palsing is an action applying to one number.
 
-understand "lone [number]" as loneing.
+understand the command "pals" as something new.
 
-carry out loneing:
-	now pfft-friends is whether or not number understood is not 0;
-	say "Friends now [if pfft-friends is true]not [end if]needed to complete puzzles.";
+understand "pals [number]" as palsing.
+
+to eek-fol (ek - an eeker):
+	move ek to location of player;
+	now ek is followish;
+
+carry out palsing:
+	let ee be fried freak;
+	let x be number understood / 10;
+	let y be remainder after dividing number understood by 10;
+	if y > 3, say "ones digit 1=creek guy 2=cruit guy 3=both 0=none." instead;
+	if x is 1:
+		now ee is fried freak;
+	else if x is 2:
+		now ee is guide geek;
+	else if x is 3:
+		now ee is snide sneak;
+	else:
+		say "You need a number between 10 and 33.";
+	let eo be other-guy of ee;
+	now all eekers are off-stage;
+	if y is 0, say "Moved all eekers off-stage." instead;
+	if y >= 2, eek-fol eo;
+	if y is 1 or y is 3, eek-fol ee;	
+	say "Now [list of eekers in location of player] moved to location of player.";
 	the rule succeeds;
 
 Bright Brave Knight Knave Tests ends here.
