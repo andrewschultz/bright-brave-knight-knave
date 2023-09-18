@@ -31,7 +31,7 @@ to decide whether hold-poke:
 	if number of unguessed holeitems < 3, no;
 	yes;
 
-a trystitem is a kind of thing. a trystitem has text called vaguedesc.
+a trystitem is a kind of rhymable. a trystitem has text called vaguedesc.
 
 to decide which number is trystcount: decide on number of carried trystitems;
 

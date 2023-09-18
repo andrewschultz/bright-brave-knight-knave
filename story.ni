@@ -316,7 +316,9 @@ to say planks-desc: say "There's water on pretty much all sides here. A yucky ya
 
 chapter yucky yacht
 
-the yucky yacht is scenery. "[if sco-plucky-plot is false]Obviously it's seen better days. Maybe you can find a way to make it serviceable[else]The people who bought this yacht would still find it yucky, but it works just fine for you[end if]."
+the yucky yacht is a rhymable. it is scenery. "[if sco-plucky-plot is false]Obviously it's seen better days. Maybe you can find a way to make it serviceable[else]The people who bought this yacht would still find it yucky, but it works just fine for you[end if]."
+
+guess-table of yucky yacht is the table of yucky yacht guesses.
 
 from-number of yucky yacht is 2755. to-number of yucky yacht is 2804.
 
@@ -342,7 +344,9 @@ Cast Court is a room in Sighing Seas. "Stuff is strewn about here[if sco-murky-m
 
 chapter perky pap
 
-the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better.". description is "You try to read the perky pap, but it's all fluff and no information. Much as you hate to be all utilitarian, you really aren't in the mood for that right now.".
+the perky pap is a rhymable in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better.". description is "You try to read the perky pap, but it's all fluff and no information. Much as you hate to be all utilitarian, you really aren't in the mood for that right now.".
+
+guess-table of perky pap is the table of perky pap guesses.
 
 from-number of perky pap is 2753. to-number of perky pap is 2753.
 
@@ -356,17 +360,21 @@ Fast Fort is a room in Sighing Seas. "Here in the fort, you feel overwhelmed wit
 
 chapter CCLL
 
-to say ccll: say "[i]Crude Crass Lewd Lass[r]"
-
-Crude Crass Lewd Lass is a thing in Fast Fort. "[one of]Oh dear. Someone left a copy of [ccll] here. You're not acquainted with the literature, but it can't be good. It would be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
+Crude Crass Lewd Lass is a rhymable in Fast Fort. "[one of]Oh dear. Someone left a copy of [ccll] here. You're not acquainted with the literature, but it can't be good. It would be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
 
 understand "ccll" as crude crass lewd lass.
+
+to say ccll: say "[i]Crude Crass Lewd Lass[r]"
+
+guess-table of crude crass lewd lass is the table of crude crass lewd lass guesses.
 
 from-number of crude crass lewd lass is 5459. to-number of crude crass lewd lass is 2755.
 
 section glued glass
 
-the glued glass is a thing. description is "It works pretty well, for having fallen apart a bit. It can magnify what you need."
+the glued glass is a rhymable. description is "It works pretty well, for having fallen apart a bit. It can magnify what you need."
+
+guess-table of glued glass is the table of crude crass lewd lass guesses.
 
 book Passed Port
 
@@ -376,7 +384,9 @@ to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if
 
 chapter slime slowed rime road
 
-the slime slowed rime road is scenery in Passed Port. "[if sco-time-toad is true]You regard the road with reverence. You'll never look at slime the same way again![else]Well, it's not something you feel comfortable touching. Who knows what secrets it might hide, though?[end if]"
+the slime slowed rime road is a rhymable in Passed Port. it is scenery. "[if sco-time-toad is true]You regard the road with reverence. You'll never look at slime the same way again![else]Well, it's not something you feel comfortable touching. Who knows what secrets it might hide, though?[end if]"
+
+guess-table of rime road is the table of rime road guesses.
 
 from-number of slime slowed rime road is 5460. to-number of slime slowed rime road is 2704.
 
@@ -398,13 +408,17 @@ from-number of posh pick is 2704. to-number of posh pick is 5510.
 
 chapter clashing cord
 
-the clashing cord is scenery in passed port. "It doesn't really fit aesthetically with the vent. Or here at all, really. And it doesn't seem useful to you, either. What could it become?"
+the clashing cord is a rhymable in passed port. it is scenery. "It doesn't really fit aesthetically with the vent. Or here at all, really. And it doesn't seem useful to you, either. What could it become?"
+
+guess-table of clashing cord is the table of clashing cord guesses.
 
 from-number of clashing cord is 2904. to-number of clashing cord is 2905.
 
 chapter slashing sword
 
 the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense". description is "The slashing sword feels right for you. You sense it should be used for defense, not offense."
+
+guess-table of slashing sword is the table of clashing cord guesses.
 
 volume Trying Trees (south)
 
@@ -420,15 +434,19 @@ Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue h
 
 from-number of too tough blue bluff is 5360. to-number of too tough blue bluff is 2705.
 
+guess-table of blue bluff is the table of stew stuff guesses.
+
 check lling bluff when player has stew stuff:
 	say "Nothing, but the stew stuff...";
 	try lling stew stuff instead;
 
 chapter stew stuff
 
-The stew stuff is a thing. description is "Mmm. All manner of meat and mushrooms and seasoning. Good enough to eat now without cooking. Alas, you have no can opener. Perhaps you will find someone who does. And who can cook it, too!"
+The stew stuff is a rhymable. description is "Mmm. All manner of meat and mushrooms and seasoning. Good enough to eat now without cooking. Alas, you have no can opener. Perhaps you will find someone who does. And who can cook it, too!"
 
 from-number of stew stuff is 2705. to-number of stew stuff is 2654.
+
+guess-table of stew stuff is the table of stew stuff guesses.
 
 book Lack Light Black Blight
 
@@ -451,7 +469,9 @@ the rack right is a thing. printed name is "rack, right". description of rack ri
 
 chapter sour slate
 
-the sour slate is a thing. "A sour slate lies here, pushing you away in its current form.". description is "Whew! You feel the negativity bouncing off it. It's good at repelling stuff, but maybe it's a bit too good in its current form. You know the difference between good defense and defensiveness? The sour slate doesn't."
+the sour slate is a rhymable. "A sour slate lies here, pushing you away in its current form.". description is "Whew! You feel the negativity bouncing off it. It's good at repelling stuff, but maybe it's a bit too good in its current form. You know the difference between good defense and defensiveness? The sour slate doesn't."
+
+guess-table of sour slate is the table of sour slate guesses.
 
 from-number of sour slate is 2705. to-number of sour slate is 2755.
 
@@ -545,7 +565,9 @@ Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrou
 
 chapter one wish fun fish
 
-there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
+there is a rhymable called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
+
+guess-table of wish fun fish is the table of one wish fun fish guesses.
 
 from-number of wish fun fish is 5308. to-number of wish fun fish is 2704.
 
@@ -559,15 +581,23 @@ chapter the two faces of Lou (not-Christie)
 
 Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? He introduces himself as Losing Lou. He seems bummed about many things[or]Losing Lou sits here, pensively--well, he thinks so, but it's a bit worse than that[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
+guess-table of losing lou is the table of losing lou guesses.
+
 from-number of losing lou is 2803. to-number of losing lou is 5606.
 
+section learning lou
+
 Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge he's gotten from you, even if it isn't profound. He just needs insight into his book title, now!" [more bytes saved this way]
+
+guess-table of Learning Lou is the table of spurning spew guesses.
 
 from-number of turning to learning lou is 5755. to-number of turning to learning lou is 2904.
 
 chapter spurning spew
 
 Spurning Spew is a proper-named trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
+
+guess-table of spurning spew is the table of spurning spew guesses.
 
 volume miscellaneous eeker manipulation
 

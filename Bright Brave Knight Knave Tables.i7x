@@ -1657,9 +1657,9 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker bypass ru
 		not-yet;
 	if vc-dont-print is false:
 		if number of eekers in location of player is 0:
-			say "You figure [the ee] and [the eo] would work well together here.";
+			say "You figure [the ee] and [the eo] would work well together here."; [vcok]
 		else:
-			say "You temporarily dismiss [the list of eekers in location of player] for [the ee] and [the eo], who'd seem to work better here...";
+			say "You temporarily dismiss [the list of eekers in location of player] for [the ee] and [the eo], who'd seem to work better here..."; [vcok]
 	ready;
 
 volume table of noways
