@@ -423,6 +423,7 @@ a sort navigation rule for a room (called rm) (this is the don't loop yacht arou
 	if rm is location of player:
 		vcal "But you're already here!";
 		already-done;
+	if player-room-allow-threshold is nothing-left, continue the action;
 	process this-gong-rule of rm;
 	let room-done be the outcome of the rulebook;
 	if room-done is the uncompleted outcome, continue the action;
@@ -534,11 +535,15 @@ this is the vr-slosh-slick rule:
 
 a goodrhyme rule (this is the vc-quash-quick rule):
 	if posh pick is not touchable, unavailable;
+	abide by the eeker bypass rule for fried freak;
 	if sco-quash-quick is true:
 		vcal "You already quashed things quickly!";
 		already-done;
-	if fried freak is not in location of player and chic shooter is not in location of player:
-		vcp "You don't have the right pals yet!";
+	if number of eekers in location of player < 2:
+		vcp "This is a job for you and two friends.";
+		not-yet;
+	if fried freak is not in location of player:
+		vcp "Your current friends don't seem up to such a grimy task.";
 		not-yet;
 	ready;
 
@@ -566,12 +571,12 @@ this is the vr-slashing-sword rule:
 
 a goodrhyme rule (this is the vc-time-toad rule):
 	if player is not in passed port, unavailable;
-	if toad-score < 2:
-		vcp "A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.";
-		not-yet;
 	if sco-time-toad is true:
 		vcal "The time toad's gift of cold coal should be enough.";
 		already-done;
+	if toad-score < 2:
+		vcp "A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.";
+		not-yet;
 	ready;
 
 to say toad-okay:
@@ -855,12 +860,15 @@ to blight-alt:
 		now sour slate is in black blight;
 		check-rack-right;
 		if player does not have rack right, say "There must be something here in the Sack Site! But you wouldn't know where to start searching, and you wouldn't have the energy to search very long. Maybe if you were a more old-school parser adventurer, you would. But that part of the curriculum was streamlined these days.";
+	else if blight-score is 4:
+		say "You feel good about doing more than the bare minimum to repel your fears. It's something you always feared, because what if you do more than the bare minimum, and your fears catch up to you anyway? That'd be depressing. Maybe it will happen. But since you've beaten your fears back a bit further, it will take longer than if you do more than the bare minimum, feel fear, and feel silly for not doing more to repel fears in the future. So that's something."
 
 to check-rack-right:
-	if fried freak is in location of player or pfft-friends is true:
-		say "The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
-		now player has rack right;
-		dismiss-freak-shooter;
+	if fried freak is dormant, continue the action;
+	if fried freak is not in location of player and opt-sweet-swap is false, continue the action;
+	say "The fried freak[if fried freak is not in location of player], whom you decided to call over temporarily,[end if] begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
+	now player has rack right;
+	dismiss-freak-shooter;
 
 section too tough blue bluff scoring
 
