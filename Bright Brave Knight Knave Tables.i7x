@@ -31,8 +31,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	"mood mapper" or "tude tapper"	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
 "meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
-"chic"	"shooter"	--	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
-"weak"	"wooter"	--	--	false	true	true	false	recroom	vc-weak-wooter rule	vr-weak-wooter rule	--	--
+"chic"	"shooter"	"sheik|sheikh"	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
+"weak"	"wooter|w00ter"	--	--	false	true	true	false	recroom	vc-weak-wooter rule	vr-weak-wooter rule	--	--
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	-- [this comes first for Jerking Jump purposes]
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
 "snide"	"sneak"	--	--	false	true	true	false	cried creek	vc-snide-sneak rule	vr-snide-sneak rule	--	--
@@ -550,6 +550,7 @@ a goodrhyme rule (this is the vc-quash-quick rule):
 this is the vr-quash-quick rule:
 	now sco-quash-quick is true;
 	say "The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.";
+	check-pick-score;
 
 to check-pick-score:
 	if pick-score is 2:

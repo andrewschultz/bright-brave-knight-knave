@@ -122,6 +122,7 @@ after printing the locale description for white wave:
 		now all carried holeitems are in white wave;
 	else if number of carried not blessed holeitems > 0:
 		say "You sort of expected something to happen with [the list of carried holeitems], but nothing did. Perhaps what you have is not properly prepared.";
+		continue the action;
 	if number of holeitems in white wave is 3:
 		say "[line break]The hole is completed. It cracks. You sense you must settle a score here and now.";
 		moot hold hole;
