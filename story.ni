@@ -468,7 +468,39 @@ chapter spurning spew
 
 Spurning Spew is a proper-named trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
 
-volume miscellaneous / universal rules
+volume miscellaneous eeker manipulation
+
+book eeker cheats
+
+chapter cheatchopping
+
+cheatchopping is an action out of world.
+
+understand the command "cheat chop" as something new.
+
+understand "cheat chop" as cheatchopping.
+
+carry out cheatchopping:
+	say "The sweet-swap option is [if opt-sweet-swap is false]now[else]already[end if] off.";
+	now opt-sweet-swap is false;
+	now know-sweet-swap is true;
+	the rule succeeds;
+
+chapter sweetswaping
+
+sweetswaping is an action out of world.
+
+understand the command "sweet swap" as something new.
+
+understand "sweet swap" as sweetswaping.
+
+carry out sweetswaping:
+	say "The sweet-swap option is [if opt-sweet-swap is false]now[else]already[end if] on.";
+	now opt-sweet-swap is true;
+	now know-sweet-swap is true;
+	the rule succeeds;
+
+book printing their appearance
 
 for printing a locale paragraph about an eeker (called ee):
 	if ee is mentioned, continue the action;

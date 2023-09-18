@@ -216,6 +216,11 @@ game-elm-seen is a truth state that varies. [have you seen the Ardor Elm yet?]
 
 bold-hole is a truth state that varies. [we put holeitem names in BOLD if examining the hole]
 
+chapter options
+
+opt-sweet-swap is a truth state that varies. [lets you solve puzzles without friends]
+know-sweet-swap is a truth state that varies. [don't repeat the message, or the player can use it early]
+
 chapter miscellaneous bonus variables (game state)
 
 guessed-bold-bowl is a truth state that varies. [this and the others track getting the bonus point to start]
@@ -237,8 +242,6 @@ r-warn-yet is a truth state that varies. [allows us to use the R command]
 chapter debug variables
 
 debug-allow-final is a truth state that varies. [lets you go to the final fight without going through hoops]
-
-pfft-friends is a truth state that varies. [lets you solve puzzles without friends]
 
 Bright Brave Knight Knave Globals ends here.
 
