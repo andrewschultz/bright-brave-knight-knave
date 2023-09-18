@@ -26,8 +26,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
-"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-hid-hum rule] a kid is around."
-"rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-kid-come rule] you have cause to speak out against alcohol."
+"kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
+"rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-rid-rum rule] you have cause to speak out against alcohol."
 "mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	"mood mapper" or "tude tapper"	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
 "meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
@@ -44,9 +44,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plucky"	"plot"	--	--	false	true	true	false	bosh blanks	vc-plucky-plot rule	vr-plucky-plot rule	--	"You can hatch a [b]PLUCKY PLOT[r] [once-now of vc-plucky-plot rule] you have the right co-conspirators."
 "cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
 "fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
-"passed"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have readable directions to get there."
-"salad"	"scent"	--	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
-"quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friend is helping you."
+"passed|past"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have readable directions to get there."
+"salad"	"scent"	"sent|cent"	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
+"quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friends are helping you."
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
 "time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
@@ -56,7 +56,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
 "plead"	"plaque"	--	--	false	true	false	false	treed track	vc-plead-plaque rule	vr-plead-plaque rule	--	--
 "grew"	"gruff"	--	--	false	true	true	false	too tough blue bluff	vc-grew-gruff rule	vr-grew-gruff rule	--	"You can say [b]GREW GRUFF[r] [once-now of vc-grew-gruff rule] you have the support of friends."
-"stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	--
+"stew"	"stuff"	--	--	false	true	true	false	too tough blue bluff	vc-stew-stuff rule	vr-stew-stuff rule	--	"You can find [b]STEW STUFF[r] [once-now of vc-stew-stuff rule] you don't feel bad searching through left-behind belongings."
 "new"	"nuff"	--	--	false	true	true	false	too tough blue bluff	vc-new-nuff rule	vr-new-nuff rule	--	"You can say [b]NEW NUFF[r] [once-now of vc-new-nuff rule] you have something of questionable age."
 "hack"	"height"	--	--	false	true	true	false	lack light black blight	vc-hack-height rule	vr-hack-height rule	--	--
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
@@ -65,10 +65,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "power"	"plate"	--	--	false	true	true	false	--	vc-power-plate rule	vr-power-plate rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	"You can say [b]BELL BOOK[r] [once-now of vc-bell-book rule] you have two other things to prepare the summoning ceremony."
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	"You can say [b]COVERING CANDLE[r] [once-now of vc-covering-candle rule] you have what you need for the summoning ceremony."
-"yall"	"yank"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
+"yall"	"yank|yanks"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
 "paul"	"panks"	--	--	false	true	false	false	tata	vc-paul-panks rule	vr-paul-panks rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
-"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-train-tracks rule] it's busier by the [lane lax]."
+"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-main-max rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "trod|flawed"	"trash|flash"	--	--	false	true	true	false	lane lax	vc-trod-trash rule	vr-trod-trash rule	"trod trash" or "flawed flash"	--
 "trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
@@ -92,10 +92,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
 "scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
 "ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
-"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [if hill-score < 2]once[else]now[end if] you are at the top of Hailing Hill[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
-"bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him."
-"failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him."
-"wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him."
+"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [if hill-score < 2]once[else]now[end if] you can access the top of Hailing Hill[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
+"bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him and the means to do so."
+"failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him and the means to do so."
+"wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him and the means to do so."
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
