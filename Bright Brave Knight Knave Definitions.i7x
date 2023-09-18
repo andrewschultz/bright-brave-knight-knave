@@ -260,6 +260,8 @@ to alt-last (rm - a room): [this makes the final flip an optional point]
 	repeat through table of verb checks:
 		unless there is a best-room entry and best-room entry is rm, next;
 		if idid entry is false, now core entry is false;
+	now from-number of rm is 0 - from-number of rm;
+	now to-number of rm is 0 - to-number of rm;
 
 to flag-missed (rm - a room): [ this is for the MISSED list at the end. Note it cuts corners: if you missed 2 things, it would only track the first. But BK6 doesn't allow that. ]
 	repeat through table of verb checks:

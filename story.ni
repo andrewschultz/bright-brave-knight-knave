@@ -40,7 +40,11 @@ book white wave
 
 White Wave is a room in Flying Flees. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
 
-the player is in White Wave.
+from-number of white wave is 2754. to-number of white wave is 2704.
+
+the player is in White Wave. description is "Not quite as bright and brave as ever. Your reputation took a hit. You tried to make sure you never went over the line, but ... whispers happened."
+
+from-number of player is -5610. to-number of player is -2754.
 
 check going down in White Wave:
 	if sco-fight-fave is true, say "You can't shirk the final fight!" instead;
@@ -136,6 +140,8 @@ chapter Trite Tully
 
 Trite Tully is a person. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]". description is "Trite Tully sneers at you. You're nice and all, but Tully is DYNAMIC, man, not bothering with boring stuffy stuff like basic decency."
 
+from-number of trite tully is 2755. to-number of trite tully is 5610.
+
 guess-table of trite tully is the table of trite tully guesses.
 
 to say tulstill: if tully-score is 1, say "still ";
@@ -150,7 +156,7 @@ Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false
 
 guess-table of bass bath is the table of bass bath guesses.
 
-from-number of bass bath is 5404. to-number of bass bath is 5404.
+from-number of bass bath is 2704. to-number of bass bath is 2704.
 
 after printing the locale description for Bass Bath:
 	if bool-hill-available is false and player has mood mapper:
@@ -168,13 +174,21 @@ book Hailing Hill
 
 Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
 
+from-number of hailing hill is 2854. to-number of hailing hill is 5658.
+
+chapter mailing mill
+
 the mailing mill is scenery. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
+
+from-number of mailing mill is 2854. to-number of mailing mill is 8562.
 
 volume Plying Please (west)
 
 book Rut Row
 
 Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable for the moment, unless you figure a crazy, surprising way through[else]You cleverly forged a way west[end if][rut-2]."
+
+from-number of rut row is 2653. to-number of rut row is 2705.
 
 to say rut-2:
 	if sco-what-whoah is true:
@@ -197,6 +211,8 @@ Slid Slum is a room in Plying Please. "[if sco-rid-rum is true]You can see aroun
 
 guess-table of slid slum is the table of slid slum guesses.
 
+from-number of slid slum is 2704. to-number of slid slum is 2653.
+
 chapter coughin coy boffin boy
 
 chapter the kid
@@ -205,9 +221,13 @@ the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continu
 
 guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
 
+check lling boffin: say "Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all." instead;
+
 book Crude Crapper
 
 Crude Crapper is a room in Plying Please. "You can only really go outside here. [crapper-status].";
+
+from-number of crude crapper is 2757. to-number of crude crapper is 2706.
 
 to say crapper-status:
 	if sco-mood-mapper is true:
@@ -227,7 +247,13 @@ recroom is a privately-named room in Plying Please. It is north of Rut Row. prin
 
 guess-table of recroom is the table of recroom guesses.
 
+check lling recroom: try lling recruiter instead;
+
+chapter recruiter
+
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
+
+from-number of recruiter is 2656. to-number of rec ruiter is 8119.
 
 check going in recroom:
 	unless noun is west or noun is south, continue the action;
@@ -248,6 +274,8 @@ the Weak Wooter is a crooty eeker. description is "Very earnest, but not very lo
 book spied speak cried creek
 
 Spied Speak Cried Creek is west of recroom. it is in Plying Please. "It would be lovely to wander around here, but any direction other than back east to the Recruiter, and you might get lost.". printed name is "Spied-Speak-Cried Creek".
+
+from-number of spied speak cried creek is 5510. to-number of spied speak cried creek is 11070.
 
 check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
@@ -282,11 +310,15 @@ book Bosh Blanks
 
 Bosh Blanks is a room in Sighing Seas. printed name is "[if sco-posh-planks is true]Posh Planks[else]Bosh, Blanks![end if]". "[if sco-posh-planks is false]It's disappointingly empty here. As-is, you can only go back south[else][planks-desc][end if]."
 
+from-number of bosh blanks is 2706. to-number of bosh blanks is 2706.
+
 to say planks-desc: say "There's water on pretty much all sides here. A yucky yacht [if sco-plucky-plot is true]allows you to travel, now you fixed it[else]might allow access once fixed[end if]"
 
 chapter yucky yacht
 
 the yucky yacht is scenery. "[if sco-plucky-plot is false]Obviously it's seen better days. Maybe you can find a way to make it serviceable[else]The people who bought this yacht would still find it yucky, but it works just fine for you[end if]."
+
+from-number of yucky yacht is 2755. to-number of yucky yacht is 2804.
 
 rule for supplying a missing noun when entering:
 	if yacht is in location of player, now noun is yacht;
@@ -308,7 +340,13 @@ book Cast Court
 
 Cast Court is a room in Sighing Seas. "Stuff is strewn about here[if sco-murky-map is true], but you can't imagine there's anything more valuable than the map[end if]. You can't really wander off, either. You might lose track of your yucky yacht."
 
+chapter perky pap
+
 the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better.". description is "You try to read the perky pap, but it's all fluff and no information. Much as you hate to be all utilitarian, you really aren't in the mood for that right now.".
+
+from-number of perky pap is 2753. to-number of perky pap is 2753.
+
+section murky map
 
 the murky map is a thing. description is "Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.".
 
@@ -316,9 +354,17 @@ book Fast Fort
 
 Fast Fort is a room in Sighing Seas. "Here in the fort, you feel overwhelmed with thoughts rushing through your head. You sense if you went anywhere on foot, you might get lost, uh, fast."
 
+chapter CCLL
+
 to say ccll: say "[i]Crude Crass Lewd Lass[r]"
 
 Crude Crass Lewd Lass is a thing in Fast Fort. "[one of]Oh dear. Someone left a copy of [ccll] here. You're not acquainted with the literature, but it can't be good. It would be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
+
+understand "ccll" as crude crass lewd lass.
+
+from-number of crude crass lewd lass is 5459. to-number of crude crass lewd lass is 2755.
+
+section glued glass
 
 the glued glass is a thing. description is "It works pretty well, for having fallen apart a bit. It can magnify what you need."
 
@@ -328,11 +374,19 @@ Passed Port is a room in Sighing Seas. "The air is alive here with weirdness and
 
 to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
 
+chapter slime slowed rime road
+
 the slime slowed rime road is scenery in Passed Port. "[if sco-time-toad is true]You regard the road with reverence. You'll never look at slime the same way again![else]Well, it's not something you feel comfortable touching. Who knows what secrets it might hide, though?[end if]"
+
+from-number of slime slowed rime road is 5460. to-number of slime slowed rime road is 2704.
 
 chapter pallid pent valid vent
 
 the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
+
+from-number of pallid pent valid vent is 5558. to-number of pallid pent valid vent is 2755.
+
+section salad sent
 
 the salad sent is a thing. description is "Oh, man! What a salad it is! All sorts of vegetables you recognize and all sorts you don't!"
 
@@ -340,9 +394,13 @@ chapter posh pick
 
 the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
 
+from-number of posh pick is 2704. to-number of posh pick is 5510.
+
 chapter clashing cord
 
 the clashing cord is scenery in passed port. "It doesn't really fit aesthetically with the vent. Or here at all, really. And it doesn't seem useful to you, either. What could it become?"
+
+from-number of clashing cord is 2904. to-number of clashing cord is 2905.
 
 chapter slashing sword
 
@@ -360,13 +418,23 @@ book Too Tough Blue Bluff
 
 Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]You've looted the campground. There's nothing more to do here[end if]. You can go back east to Treed Track. You'd probably get lost wandering anywhere else.". printed name is "Too-Tough Blue Bluff".
 
+from-number of too tough blue bluff is 5360. to-number of too tough blue bluff is 2705.
+
+check lling bluff when player has stew stuff:
+	say "Nothing, but the stew stuff...";
+	try lling stew stuff instead;
+
 chapter stew stuff
 
 The stew stuff is a thing. description is "Mmm. All manner of meat and mushrooms and seasoning. Good enough to eat now without cooking. Alas, you have no can opener. Perhaps you will find someone who does. And who can cook it, too!"
 
+from-number of stew stuff is 2705. to-number of stew stuff is 2654.
+
 book Lack Light Black Blight
 
 Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+
+from-number of lack light black blight is 5461. to-number of lack light black blight is 10923.
 
 after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score >= 3 (this is the rack right discovery rule):
 	if fried freak is followish:
@@ -385,17 +453,29 @@ chapter sour slate
 
 the sour slate is a thing. "A sour slate lies here, pushing you away in its current form.". description is "Whew! You feel the negativity bouncing off it. It's good at repelling stuff, but maybe it's a bit too good in its current form. You know the difference between good defense and defensiveness? The sour slate doesn't."
 
+from-number of sour slate is 2705. to-number of sour slate is 2755.
+
 chapter power plate
 
 the power plate is a trystitem. description is "Surprisingly lightweight but sturdy armor.". vaguedesc is "replacement armor".
 
 book Knell Nook
 
-Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [if sco-covering-candle is false]get the feeling a ritual should be performed here[else]performed a ritual, so there's not much else to do here[end if]."
+Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [knell-txt]."
 
-chapter sold soul
+from-number of knell nook is 2754. to-number of knell nook is 2704.
 
-the sold soul is a thing.
+to say knell-txt:
+	if sco-covering-candle is true:
+		say "performed a ritual, so there's not much else to do here";
+	else:
+		say "[if sco-bell-book is true]got the bell and the book for the ritual, but you need more[else]may have to summon ritual materials[end if]. Also, there's a hovering handle floating about, which seems odd"
+
+chapter covering candle
+
+the hovering handle is scenery in knell nook. "The handle hovers in mid-air. It doesn't seem to be opening anything."
+
+from-number of hovering handle is 2906. to-number of hovering handle is 2906.
 
 volume Lying Leas (east)
 
@@ -403,13 +483,21 @@ book Tall Tank(s)
 
 tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true. "You can go back west to Pass Path, [if sco-yall-yank is false]but a tall tank blocks the way east. It might be tanks. But perhaps it is easier to think: one tank at a time[else]and tall tanks you pushed aside allow passage east[end if]."
 
-from-number of tata is 2704. to-number of tata is 2704.
+from-number of tall tanks is 2704. to-number of tall tanks is 2704.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
+
+check lling tata:
+	try lling  tall tanks;
+
+check lling tata when sco-yall-yank is true and sco-paul-panks is false:
+	say "You think of the tanks as tanks, here...";
 
 chapter ardor elm
 
 the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want.[else]The ardor elm your friends showed you stands here. [elm-status][end if].". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
+
+from-number of ardor elm is 2753. to-number of ardor elm is 2804.
 
 to say elm-status:
 	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
@@ -421,6 +509,8 @@ the harder helm is a trystitem. description is "So lightweight, you don't even f
 book Lane Lax
 
 Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]Oh! There's a broad brash clod clash going on here that you probably need to break up, some way[end if].[paragraph break]Of course, you can always just go back west, too."
+
+from-number of lane lax is 2703. to-number of lane lax is 5461.
 
 to say mama: if sco-main-max is true, say "Main Max "
 
@@ -445,25 +535,35 @@ book Wowed Wise Crowd Cries
 
 Wowed Wise Crowd Cries is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.".
 
+from-number of crowd cries is 5459. to-number of crowd cries is 2754.
+
 the proud prize is a thing. description is "It appears the original recipient had their name rubbed off. If you squint very closely, you see S S."
 
 book Thought Thief Fought Fief
 
-Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]". "[if sco-wrought-reef is true]The old evil village is gone, and a more idyllic reef remains[else if thief-score < 2]Here is a dark village, full of suspicion and double-talk. Perhaps being less than honest is a survival strategy here[else]You are alone here, in a dark village, but you sense it could become much more in tune with nature[end if]. The only way back is north."
+Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]". "[if sco-done-dish is true]The one-wish fun fish has left. It's idyllic here. So idyllic, there's nothing to do[else if sco-wrought-reef is true]The old evil village is gone, and a more idyllic reef remains[else if thief-score < 2]Here is a dark village, full of suspicion and double-talk. Perhaps being less than honest is a survival strategy here[else]You are alone here, in a dark village, but you sense it could become much more in tune with nature[end if]. The only way back is north."
 
 chapter one wish fun fish
 
 there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
 
+from-number of wish fun fish is 5308. to-number of wish fun fish is 2704.
+
 book Bruising Brew
 
 Bruising Brew is a room in Flying Flees. "This is a seedy bar that pretends to thrive on its seediness. You'd have found it very exciting once and felt bad you couldn't be exciting enough for it. You know better now.".
+
+from-number of bruising brew is 2904. to-number of bruising brew is 5606.
 
 chapter the two faces of Lou (not-Christie)
 
 Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? He introduces himself as Losing Lou. He seems bummed about many things[or]Losing Lou sits here, pensively--well, he thinks so, but it's a bit worse than that[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
+from-number of losing lou is 2803. to-number of losing lou is 5606.
+
 Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge he's gotten from you, even if it isn't profound. He just needs insight into his book title, now!" [more bytes saved this way]
+
+from-number of turning to learning lou is 5755. to-number of turning to learning lou is 2904.
 
 chapter spurning spew
 
@@ -675,6 +775,8 @@ book Dander Dove
 
 Dander Dove is a room in Shying Sheez. printed name is "Dander, Dove". "[dander-detail]."
 
+from-number of dander dove is 2804. to-number of dander dove is 8514.
+
 dander-list is a list of text variable. dander-list is { "cold", "small", "fraudulent" }.
 
 to say dander-detail:
@@ -696,6 +798,8 @@ guess-table of Dander Dove is the table of Dander Dove guesses.
 book Rough Route
 
 Route Rough is a room in Shying Sheez. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+
+from-number of route rough is 2755. to-number of route rough is 8163.
 
 check going in route rough:
 	if route-rough-score >= 2:

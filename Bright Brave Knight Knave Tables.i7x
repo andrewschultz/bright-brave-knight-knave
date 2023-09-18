@@ -120,6 +120,7 @@ this is the vr-write-right-rave rule:
 		now got-rave-bonus is true;
 	else:
 		max-down;
+	declue the player;
 
 a goodrhyme rule (this is the vc-kite-cave rule):
 	if player is not in white wave, unavailable;
@@ -135,6 +136,7 @@ this is the vr-kite-cave rule:
 	now Bass Bath is mapped below White Wave;
 	now White Wave is mapped below Bass Bath;
 	now player has track tryst lack list;
+	now to-number of white wave is 2754;
 
 a goodrhyme rule (this is the vc-jack-gist rule):
 	if player does not have lack list, unavailable;
@@ -180,12 +182,13 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 
 this is the vr-fight-fave rule:
 	now sco-fight-fave is true;
-	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.";
+	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedly trite! But the deal is, Tully's so trite, yet people like you can't deal with Tully easily, which says something about you. Right?";
 	move trite tully to White Wave;
 	now cur-max-bonus is cur-bonus;
 	if sco-write-right-rave is false, increase cur-max-bonus by 2;
 	if sco-jack-gist is false, increase cur-max-bonus by 1;
 	if sco-eyeing-eying-ease is false, increase cur-max-bonus by 1;
+	declue-here;
 
 section bass bath point scoring
 
@@ -200,6 +203,7 @@ this is the vr-pass-path rule:
 	now sco-pass-path is true;
 	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
 	print-the-loc;
+	declue bass bath;
 
 a goodrhyme rule (this is the vc-mass-math rule):
 	if player is not in bass bath, unavailable;
@@ -232,6 +236,7 @@ this is the vr-what-whoah rule:
 	now sco-what-whoah is true;
 	say "It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.";
 	open-psg west and slum slid;
+	declue-here;
 
 section slid slum point scoring
 
@@ -246,6 +251,7 @@ this is the vr-hid-hum rule:
 	now sco-hid-hum is true;
 	say "You figure there must be something here, and you are right ... there's a kid. And not just any kid! A coughin['] coy boffin boy! They seem to be holding something behind their back. They don't trust you yet. Who would, in such an urban hellscape?";
 	move boffin boy to Slum Slid;
+	now to-number of slid slum is 2654;
 
 a goodrhyme rule (this is the vc-kid-come rule):
 	if player is not in slid slum, unavailable;
@@ -260,6 +266,7 @@ a goodrhyme rule (this is the vc-kid-come rule):
 this is the vr-kid-come rule:
 	now sco-kid-come is true;
 	say "The [boffin] looks awkwardly at you. He shuffles forward hesitantly. He seems to be hiding something behind his back!";
+	now to-number of slid slum is 2653;
 
 a goodrhyme rule (this is the vc-rid-rum rule):
 	if player is not in slid slum, unavailable;
@@ -279,6 +286,7 @@ this is the vr-rid-rum rule:
 	say "The [boffin] shows what they have behind their back. They're a bit ashamed of all this. But you assure them it's very understandable. There's general discussion of what a tough world we live in and so forth. Your hearts both feel lightened by it. You ask [the boffin] how to navigate this crazy town, and he helps you so much! Oh, wow! There's even somewhere scungy you can go [b]INSIDE[r] to. You're up to it now.";
 	open-psg inside and crude crapper;
 	moot coughin coy boffin boy;
+	declue-here;
 
 section crude crapper scoring
 
@@ -293,6 +301,11 @@ this is the vr-mood-mapper rule:
 	now sco-mood-mapper is true;
 	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
 	now player has mood mapper;
+	if sco-nude-napper is true:
+		declue-here;
+	else:
+		now from-number of crude crapper is -2757;
+		now to-number of crude crapper is -2706;
 
 a goodrhyme rule (this is the vc-nude-napper rule):
 	if player is not in crude crapper, unavailable;
@@ -304,6 +317,7 @@ a goodrhyme rule (this is the vc-nude-napper rule):
 this is the vr-nude-napper rule:
 	now sco-nude-napper is true;
 	say "You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others['] personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.";
+	if sco-mood-mapper is true, declue-here;
 
 section recruiter
 
@@ -314,6 +328,7 @@ a goodrhyme rule (this is the vc-chic-shooter rule):
 this is the vr-chic-shooter rule:
 	now sco-chic-shooter is true;
 	abide by the eeker vr rule for chic shooter;
+	recruit 2707;
 
 a goodrhyme rule (this is the vc-meek-mooter rule):
 	abide by the eeker precheck rule for meek mooter;
@@ -322,6 +337,7 @@ a goodrhyme rule (this is the vc-meek-mooter rule):
 this is the vr-meek-mooter rule:
 	now sco-meek-mooter is true;
 	abide by the eeker vr rule for meek mooter;
+	recruit 2706;
 
 a goodrhyme rule (this is the vc-weak-wooter rule):
 	abide by the eeker precheck rule for weak wooter;
@@ -330,6 +346,11 @@ a goodrhyme rule (this is the vc-weak-wooter rule):
 this is the vr-weak-wooter rule:
 	now sco-weak-wooter is true;
 	abide by the eeker vr rule for weak wooter;
+	recruit 2706;
+
+to recruit (nu - a number):
+	decrease to-number of recruiter by nu;
+	if to-number of recruiter is 0, declue recruiter;
 
 section spied speak cried creek point scoring
 
@@ -340,6 +361,7 @@ a goodrhyme rule (this is the vc-fried-freak rule):
 this is the vr-fried-freak rule:
 	now sco-fried-freak is true;
 	abide by the eeker vr rule for fried freak;
+	decrease to-number of spied speak cried creek by 2755; [vr-fried-freak]
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
 	abide by the eeker precheck rule for snide sneak;
@@ -348,6 +370,7 @@ a goodrhyme rule (this is the vc-snide-sneak rule):
 this is the vr-snide-sneak rule:
 	now sco-snide-sneak is true;
 	abide by the eeker vr rule for snide sneak;
+	decrease to-number of spied speak cried creek by 2755; [vr-snide-sneak]
 
 a goodrhyme rule (this is the vc-guide-geek rule):
 	abide by the eeker precheck rule for guide geek;
@@ -356,6 +379,7 @@ a goodrhyme rule (this is the vc-guide-geek rule):
 this is the vr-guide-geek rule:
 	now sco-guide-geek is true;
 	abide by the eeker vr rule for guide geek;
+	decrease to-number of spied speak cried creek by 2754; [vr-guide-geek]
 
 a goodrhyme rule (this is the vc-stride-streak rule):
 	if player is not in cried creek, unavailable;
@@ -367,6 +391,7 @@ a goodrhyme rule (this is the vc-stride-streak rule):
 this is the vr-stride-streak rule:
 	now sco-stride-streak is true;
 	say "Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.";
+	decrease to-number of spied speak cried creek by 2806; [vr-stride-streak]
 
 a goodrhyme rule (this is the vc-harder-helm rule):
 	if ardor elm is not touchable, unavailable;
@@ -557,8 +582,10 @@ to check-pick-score:
 		say "Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.";
 		now player has posh pick;
 		dismiss-freak-shooter;
+		declue posh pick;
 	else:
-		say "That must be half of the puzzle. You wonder what the other half is."
+		say "That must be half of the puzzle. You wonder what the other half is.";
+		now to-number of posh pick is 2755;
 
 a goodrhyme rule (this is the vc-slashing-sword rule):
 	if clashing cord is not touchable, unavailable;
@@ -609,6 +636,8 @@ this is the vr-rhyme-road rule:
 
 section lane lax scoring
 
+to trax-check: if sco-main-max is true and sco-pain-packs is true, declue-here;
+
 a goodrhyme rule (this is the vc-train-tracks rule):
 	if player is not in lane lax, unavailable;
 	if sco-train-tracks is true:
@@ -619,6 +648,7 @@ a goodrhyme rule (this is the vc-train-tracks rule):
 this is the vr-train-tracks rule:
 	now sco-train-tracks is true;
 	say "The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.";
+	decrease to-number of lane lax by 103;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-main-max rule):
@@ -637,6 +667,7 @@ this is the vr-main-max rule:
 	move broad brash clod clash to lane lax;
 	open-psg north and Wowed Wise Crowd Cries;
 	open-psg south and Thought Thief Fought Fief;
+	trax-check;
 
 a goodrhyme rule (this is the vc-pain-packs rule):
 	if player is not in lane lax, unavailable;
@@ -649,6 +680,8 @@ this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
 	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
 	give-ti pain packs;
+	decrease to-number of lane lax by 2705;
+	trax-check;
 
 a goodrhyme rule (this is the vc-trod-trash rule):
 	if broad brash clod clash is untouchable and odd ash is untouchable, unavailable;
@@ -682,6 +715,7 @@ a goodrhyme rule (this is the vc-bought-beef rule):
 this is the vr-bought-beef rule:
 	now sco-bought-beef is true;
 	say "You convince the people that you bought beef, whether it be physical or more mental.";
+	decrease to-number of thought thief fought fief by 2804;
 	check-thievery;
 
 a goodrhyme rule (this is the vc-brought-brief rule):
@@ -694,11 +728,13 @@ a goodrhyme rule (this is the vc-brought-brief rule):
 this is the vr-brought-brief rule:
 	now sco-brought-brief is true;
 	say "You manage to pretend you had huge plans. You wince inwardly, sure others will call your bluff. But they do not. Everyone is impressed.";
+	decrease to-number of thought thief fought fief by 2855;
 	check-thievery;
 
 to check-thievery:
 	if thief-score is 2:
 		say "Everyone disperses around you, as they realize you're nobody to be trifled with.";
+		now to-number of fought fief is 2854;
 	else:
 		say "You seem to have gained a bit of respect, but you need more.";
 
@@ -716,6 +752,7 @@ this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
 	say "You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.";
 	move wish fun fish to Fought Fief;
+	declue-here;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-done-dish rule):
@@ -760,6 +797,7 @@ this is the vr-need-knack rule:
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. The Sneak is snide but would love even more sneaking to be snide about! So it's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
 	open-psg west and Too Tough Blue Bluff;
 	dismiss-sneak-mooter;
+	decrement to-number of Treed Track;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
 	if player is not in treed track, unavailable;
@@ -776,6 +814,8 @@ this is the vr-heed-hack rule:
 	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. You imagine it wouldn't be sneaky to tell you everything at once, and maybe they were sneakily giving you a reason to feel smart, solving this. And it's so easy, now you know what to do. You find two more passages.";
 	open-psg up and Lack Light Black Blight;
 	open-psg east and Knell Nook;
+	decrease to-number of treed track by 2704;
+	adjust-hack-learner;
 
 a goodrhyme rule (this is the vc-seed-sack rule):
 	if player is not in treed track, unavailable;
@@ -788,6 +828,8 @@ this is the vr-seed-sack rule:
 	now sco-seed-sack is true;
 	say "You manage to discover a seed sack nearby. You're not sure what it's good for--it seems to discuss more reliable methods of communication than, you know, actually growing plants. But it's bound to come in handy, you think! You hope.";
 	now player has seed sack;
+	decrease to-number of treed track by 2704;
+	adjust-hack-learner;
 
 a goodrhyme rule (this is the vc-plead-plaque rule):
 	if player is not in treed track, unavailable;
@@ -799,6 +841,15 @@ a goodrhyme rule (this is the vc-plead-plaque rule):
 this is the vr-plead-plaque rule:
 	now sco-plead-plaque is true;
 	say "Oh my goodness! You've discovered a treasure that is as priceless as your quest, but more so! It expresses congratulations for getting this far and being so observant and also humbly suggests you also enjoy [other-ones], once you've solved this terribly important quest, of course.[paragraph break]There is a perfectly sensible small-print disclaimer that those adventures are not quite as unbelievably dope as this one, since the author has only gotten better at writing text adventures with time, but the author still had fun making them.";
+	adjust-hack-learner;
+
+to adjust-hack-learner:
+	if sco-heed-hack is true and sco-seed-sack is true:
+		if sco-plead-plaque is true:
+			declue-here;
+		else:
+			now to-number of treed track is -2756;
+			now from-number of treed track is -2755;
 
 section lack light black blight scoring
 
@@ -812,6 +863,7 @@ a goodrhyme rule (this is the vc-hack-height rule):
 this is the vr-hack-height rule:
 	now sco-hack-height is true;
 	say "You feel less dizzy and such this high up. It's a relief.";
+	decrease to-number of lack light black blight by 2706;
 	blight-alt;
 
 a goodrhyme rule (this is the vc-quack-quite rule):
@@ -824,6 +876,7 @@ a goodrhyme rule (this is the vc-quack-quite rule):
 this is the vr-quack-quite rule:
 	now sco-quack-quite is true;
 	say "You show you can blow off fear, a little, by quacking 'quite.'";
+	decrease to-number of lack light black blight by 2755;
 	blight-alt;
 
 a goodrhyme rule (this is the vc-flak-flight rule):
@@ -836,6 +889,7 @@ a goodrhyme rule (this is the vc-flak-flight rule):
 this is the vr-flak-flight rule:
 	now sco-flak-flight is true;
 	say "The verbal and mental flak that clung to you? Some of it peels off. It feels good.";
+	decrease to-number of lack light black blight by 2706;
 	blight-alt;
 
 
@@ -849,6 +903,7 @@ a goodrhyme rule (this is the vc-slack-slight rule):
 this is the vr-slack-slight rule:
 	now sco-slack-slight is true;
 	say "The oppression has a slack, slight. You feel better.";
+	decrease to-number of lack light black blight by 2756;
 	blight-alt;
 
 to blight-alt:
@@ -862,7 +917,8 @@ to blight-alt:
 		check-rack-right;
 		if player does not have rack right, say "There must be something here in the Sack Site! But you wouldn't know where to start searching, and you wouldn't have the energy to search very long. Maybe if you were a more old-school parser adventurer, you would. But that part of the curriculum was streamlined these days.";
 	else if blight-score is 4:
-		say "You feel good about doing more than the bare minimum to repel your fears. It's something you always feared, because what if you do more than the bare minimum, and your fears catch up to you anyway? That'd be depressing. Maybe it will happen. But since you've beaten your fears back a bit further, it will take longer than if you do more than the bare minimum, feel fear, and feel silly for not doing more to repel fears in the future. So that's something."
+		say "You feel good about doing more than the bare minimum to repel your fears. It's something you always feared, because what if you do more than the bare minimum, and your fears catch up to you anyway? That'd be depressing. Maybe it will happen. But since you've beaten your fears back a bit further, it will take longer than if you do more than the bare minimum, feel fear, and feel silly for not doing more to repel fears in the future. So that's something.";
+		declue-here;
 
 to check-rack-right:
 	if fried freak is dormant, continue the action;
@@ -902,6 +958,7 @@ this is the vr-stew-stuff rule:
 	now sco-stew-stuff is true;
 	say "Now that you know what to look for, it's not too bad to find. You find enough to make a stew.";
 	now player has stew stuff;
+	declue blue bluff;
 	dismiss-geek-wooter;
 
 a goodrhyme rule (this is the vc-new-nuff rule):
@@ -975,7 +1032,8 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 this is the vr-yall-yank rule:
 	now sco-yall-yank is true;
 	if sco-paul-panks is false:
-		now to-number of tata is -2705;
+		now to-number of tall tanks is -2705;
+		now from-number of tall tanks is -2705;
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
@@ -1003,6 +1061,7 @@ a goodrhyme rule (this is the vc-trowed-tries rule):
 this is the vr-trowed-tries rule:
 	now sco-trowed-tries is true;
 	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
+	now to-number of crowd cries is 2704.
 
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in wowed wise crowd cries, unavailable;
@@ -1023,6 +1082,7 @@ this is the vr-loud-lies rule:
 	say "With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.";
 	now player has proud prize;
 	dismiss-sneak-mooter;
+	declue-here;
 
 section Bruising Brew scoring
 
@@ -1036,6 +1096,8 @@ a goodrhyme rule (this is the vc-boozing-boo rule):
 this is the vr-boozing-boo rule:
 	now sco-boozing-boo is true;
 	say "You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.";
+	decrease to-number of losing lou by 2853;
+	decrease to-number of bruising brew by 2853;
 	lou-check;
 
 a goodrhyme rule (this is the vc-using-you rule):
@@ -1048,6 +1110,8 @@ a goodrhyme rule (this is the vc-using-you rule):
 this is the vr-using-you rule:
 	now sco-using-you is true;
 	say "You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.";
+	decrease to-number of losing lou by 2753;
+	decrease to-number of bruising brew by 2753;
 	lou-check;
 
 a goodrhyme rule (this is the vc-fusing-phew rule):
@@ -1065,6 +1129,7 @@ this is the vr-fusing-phew rule:
 	say "You put things together--the boozing, the using. Lou nods. He has a revelation. 'No more will I be Losing Lou. I will be Turning-to-Learning Lou!' He runs off and scribbles out some notes on various cocktail napkins. It's impressively fast, and you're entranced. There are so many napkins, they make a pretty thick book.[paragraph break]'Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?'";
 	moot losing lou;
 	now learning lou is in Bruising Brew;
+	declue bruising brew;
 
 a goodrhyme rule (this is the vc-spurning-spew rule):
 	if Learning Lou is not touchable, unavailable;
@@ -1118,6 +1183,7 @@ a goodrhyme rule (this is the vc-mailing-mill rule):
 this is the vr-mailing-mill rule:
 	now sco-mailing-mill is true;
 	say "Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.";
+	now to-number of hailing hill is 8562;
 
 a goodrhyme rule (this is the vc-bailing-bill rule):
 	abide by the can-mail rule;
@@ -1133,6 +1199,7 @@ this is the vr-bailing-bill rule:
 	now sco-bailing-bill is true;
 	say "Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.";
 	now bold bowl is blessed;
+	decrease-hill-ll;
 
 a goodrhyme rule (this is the vc-failing-phil rule):
 	abide by the can-mail rule;
@@ -1148,6 +1215,7 @@ this is the vr-failing-phil rule:
 	now sco-failing-phil is true;
 	say "Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.";
 	now cold coal is blessed;
+	decrease-hill-ll;
 
 a goodrhyme rule (this is the vc-wailing-will rule):
 	abide by the can-mail rule;
@@ -1163,6 +1231,7 @@ this is the vr-wailing-will rule:
 	now sco-wailing-will is true;
 	say "Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.";
 	now sold soul is blessed;
+	decrease-hill-ll;
 
 section nil none point scoring
 
@@ -1227,6 +1296,7 @@ this is the vr-grander-grove rule:
 	now sco-grander-grove is true;
 	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.";
 	dander-upgrade "small";
+	dander-reclue 2855;
 
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in dander dove, unavailable;
@@ -1239,6 +1309,7 @@ this is the vr-candor-cove rule:
 	now sco-candor-cove is true;
 	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.";
 	dander-upgrade "fraudulent";
+	dander-reclue 2804;
 
 a goodrhyme rule (this is the vc-stander-stove rule):
 	if player is not in dander dove, unavailable;
@@ -1251,6 +1322,10 @@ this is the vr-stander-stove rule:
 	now sco-stander-stove is true;
 	say "You picture a stove to step into! It's weird, but it's good for burning excess dander.";
 	dander-upgrade "cold";
+	dander-reclue 2855;
+
+to dander-reclue (nu - a number):
+	decrease to-number of dander dove by nu;
 
 to dander-upgrade (t - text):
 	remove t from dander-list;
@@ -1258,7 +1333,7 @@ to dander-upgrade (t - text):
 	if dander-score is 1:
 		say "The dander you dove into sinks a bit. You still feel stuck.";
 	else if dander-score is 2:
-		say "You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.";
+		say "You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.";
 		alt-last dander dove;
 	else:
 		say "You no longer have dander on your mind.";
@@ -1275,7 +1350,7 @@ a goodrhyme rule (this is the vc-flout-fluff rule):
 this is the vr-flout-fluff rule:
 	now sco-flout-fluff is true;
 	say "You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.";
-	rough-check;
+	rough-check 2755;
 
 a goodrhyme rule (this is the vc-stout-stuff rule):
 	if player is not in route rough, unavailable;
@@ -1287,7 +1362,7 @@ a goodrhyme rule (this is the vc-stout-stuff rule):
 this is the vr-stout-stuff rule:
 	now sco-stout-stuff is true;
 	say "Yup. You feel stouter now.";
-	rough-check;
+	rough-check 2755;
 
 a goodrhyme rule (this is the vc-nowt-nuff rule):
 	if player is not in route rough, unavailable;
@@ -1299,9 +1374,9 @@ a goodrhyme rule (this is the vc-nowt-nuff rule):
 this is the vr-nowt-nuff rule:
 	now sco-nowt-nuff is true;
 	say "You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.";
-	rough-check;
+	rough-check 2704;
 
-to rough-check:
+to rough-check (nu - a number):
 	say "[line break]You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
 	if route-rough-score is 2:
 		alt-last route rough;
@@ -1334,10 +1409,20 @@ a goodrhyme rule (this is the the can-mail rule):
 to see-if-top:
 	if sco-ailing-ill is false:
 		say "Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.";
+		now to-number of hailing hill is 2855;
 	else if sco-scaling-skill is false:
 		say "Complaining about various things wrong makes you more motivated to get to the top, but the flesh is weak.";
+		now to-number of hailing hill is 2803;
 	else:
 		say "You stand at the top of the hill and feel more connected with others despite, or perhaps because of, their faults.";
+		now to-number of hailing hill is 2854; [mailing mill needed]
+
+to decrease-hill-ll:
+	decrease to-number of hailing hill by 2854;
+	decrease to-number of mailing mill by 2854;
+	if to-number of hailing hill is 0:
+		declue-here;
+		declue mailing mill;
 
 section very endgame stuff
 
@@ -1352,6 +1437,7 @@ this is the vr-fright-fully rule:
 	now sco-fright-fully is true;
 	say "Well, that got rid of some of the irony of 'trite.'";
 	abide by the frightfully-bright-bully rule;
+[	decrease to-number of trite tully by 2805;]
 
 a goodrhyme rule (this is the vc-bright-bully rule):
 	abide by the tully-triage rule;
@@ -1364,6 +1450,7 @@ this is the vr-bright-bully rule:
 	now sco-bright-bully is true;
 	say "Yes, indeed, it isn't just about being trite or having irony.";
 	abide by the frightfully-bright-bully rule;
+[	decrease to-number of trite tully by 2805;]
 
 a goodrhyme rule (this is the vc-bam-bye rule):
 	if tully-score < 2, unavailable;
@@ -1383,7 +1470,13 @@ a goodrhyme rule (this is the tully-triage rule):
 section auxiliary rules
 
 to lou-check:
-	say "[line break][if lou-score is 1]Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.[else]Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help![end if]"
+	say "[line break]";
+	if lou-score is 1:
+		say "Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.";
+	else:
+		say "Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help!";
+		now to-number of bruising brew is 2804;
+		now to-number of losing lou is 2804;
 
 to part-dismiss (ee - an eeker):
 	now ee is finished;
@@ -1516,7 +1609,7 @@ to win-the-game:
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;
 	force-status;
-	end the story finally saying "Woo woo woo";
+	end the story finally saying "Fiend fell. Weaned well!";
 	follow the shutdown rules;
 
 to give-hi (hi - a holeitem):
