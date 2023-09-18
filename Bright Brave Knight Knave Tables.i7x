@@ -1539,15 +1539,16 @@ to give-hi (hi - a holeitem):
 to give-ti (ti - a trystitem):
 	now player has ti;
 	choose row trystcount in table of trystitem stuff;
-	say "[hooray entry][line break]";
+	say "[line break][hooray entry][paragraph break]";
+	if trystcount is 5, moot lack list.
 
 table of trystitem stuff
 hooray
 "You pause a minute. Hey, wait, that one item on [the list]. Yes! You just found your first! You're not prepared for the final fight, but this is a start."
-"Try 2"
-"Try 3"
-"Try 4"
-"You have everything on the list! Wow!"
+"You consult [the list] again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!"
+"There you go. Something else on [the list]. Whatever fight is ahead, you feel more ready for it. But not ready enough."
+"You check off the next-to-last item on [the list]. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list."
+"You double-check [the list]. Yes, indeed, you have everything! You place it inside [spew], making it an infinitesimally stronger shield."
 
 chapter cheaty stuff
 
