@@ -148,6 +148,25 @@ test cr3 with "test cr/snide sneak/e/meek mooter".
 
 book testing commands
 
+[chapter cping
+
+to check-points:
+	let any-missed be false;
+	repeat through table of verb checks:
+		if idid entry is false and core entry is false:
+			say "[run-rule entry] not processed.";
+			now any-missed is true;
+	if any-missed is false, say "Got everything!"
+
+cping is an action out of world.
+
+understand the command "cp" as something new.
+
+understand "cp" as cping.
+
+carry out cping:
+	check-points;
+	the rule succeeds;]
 
 chapter palsing
 
