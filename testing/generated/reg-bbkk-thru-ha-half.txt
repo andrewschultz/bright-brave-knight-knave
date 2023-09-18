@@ -210,8 +210,11 @@ The HA HALF button on your Leet Learner lights up green.
 >weak zwooter
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-16-wooter
+#testcase-ha-half-table-of-verb-checks-16-wooter-w00ter
 >zweak wooter
+The HA HALF button on your Leet Learner lights up green.
+
+>zweak w00ter
 The HA HALF button on your Leet Learner lights up green.
 
 >w
@@ -365,8 +368,12 @@ The HA HALF button on your Leet Learner lights up yellow.
 >yall zyank
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-49-yank
+#testcase-ha-half-table-of-verb-checks-49-yank-yanks
 >zyall yank
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-49-yank-yanks
+>zyall yanks
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-50-panks
@@ -568,8 +575,12 @@ The HA HALF button on your Leet Learner lights up green.
 >zfast fort
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-28-passed
+#testcase-ha-half-table-of-verb-checks-28-passed-past
 >passed zport
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-28-passed-past
+>past zport
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-28-port

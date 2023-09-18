@@ -519,7 +519,7 @@ this is the vr-glued-glass rule:
 section passed port scoring
 
 a goodrhyme rule (this is the vc-salad-scent rule):
-	if player is not in passed port, unavailable;
+	if pallid pent valid vent is untouchable, unavailable;
 	if sco-salad-scent is true:
 		vcal "Wow! You must really like salad!";
 		already-done;

@@ -125,6 +125,12 @@ by one point
 >meek mooter
 by one point
 
+#testcase-alt-words-table-of-verb-checks-16-weak-wooter-w00ter
+>weak w00ter
+by one point
+
+>undo
+
 >weak wooter
 by one point
 
@@ -159,6 +165,12 @@ by one point
 >s
 >e
 >e
+
+#testcase-alt-words-table-of-verb-checks-49-yall-yank-yanks
+>yall yanks
+by one point
+
+>undo
 
 >yall yank
 by one point
@@ -236,6 +248,12 @@ by one point
 
 >murky map
 by one point
+
+#testcase-alt-words-table-of-verb-checks-28-passed-past-port
+>past port
+by one point
+
+>undo
 
 >passed port
 by one point

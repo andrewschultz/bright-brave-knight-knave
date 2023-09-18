@@ -545,6 +545,15 @@ You're kind of confused about directions, here. You maybe need to find some way 
 Perhaps in the far future. But right now, you've only gotten here. You need to build your strength and worth.
 NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
 
+@hfull
+#testcase-values-from-number-of-white-wave-is-2754
+>ll
+BZZT
+\\
+#testcase-values-from-number-of-player-is--5610
+>ll me
+BZZT
+
 >kite cave
 by one point
 
@@ -908,6 +917,11 @@ by one point
 >zwhat whoah
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-rut-row-is-2653
+>ll
+WRONG
+
 >what whoah
 by one point
 
@@ -989,6 +1003,11 @@ You don't need parental support or quiet.
 >skid scum
 No. A good brave bright knight knave don't look down on people like that.
 
+@hfull
+#testcase-values-from-number-of-slid-slum-is-2704
+>ll
+WRONG
+
 >hid hum
 by one point
 
@@ -1020,6 +1039,11 @@ You don't want to reflect on the past.
 >think
 You can say KID COME now a kid is around.
 
+@hfull
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+WRONG
+
 >kid come
 by one point
 
@@ -1047,6 +1071,11 @@ Perhaps the coughin' coy boffin boy will be able to get the education for such a
 >think
 You can say RID RUM now you have cause to speak out against alcohol.
 
+@hfull
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+WRONG
+
 >rid rum
 by one point
 
@@ -1058,6 +1087,11 @@ by one point
 #testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
 >rid rum
 You already got rid of the rum!
+
+@hfull
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+WRONG
 
 >in
 
@@ -1107,6 +1141,11 @@ WRONG
 \\
 >undo
 >undo
+
+@hfull
+#testcase-values-from-number-of-crude-crapper-is-2757
+>ll
+WRONG
 
 >mood mapper
 by one point
@@ -1178,6 +1217,11 @@ You will need no henchmen to carry out violent dirty work. Friends? Yes. Henchme
 >youd yap er
 You feel as though you want to say something about the state of these environs, but what good would it do?
 
+@hfull
+#+testcase-values-from-number-of-crude-crapper-is-2757
+>ll
+WRONG
+
 @!min
 >nude napper
 by one point
@@ -1222,6 +1266,11 @@ You don't want to be too much of a moral scold!
 >seek suitor
 Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together.
 
+@hfull
+#testcase-values-from-number-of-recruiter-is-2656
+>ll
+WRONG
+
 @gt
 #testcase-goto-table-of-noways-recroom
 >n
@@ -1248,8 +1297,11 @@ You only have access west and south to Slum, Slid.
 >weak zwooter
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-16-wooter
+#testcase-ha-half-table-of-verb-checks-16-wooter-w00ter
 >zweak wooter
+{$GREENCORE}
+\\
+>zweak w00ter
 {$GREENCORE}
 
 >w
@@ -1296,6 +1348,11 @@ While the creek and greenery meander off, you might get lost. You can really onl
 >stride zstreak
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+WRONG
+
 >stride streak
 by one point
 
@@ -1309,6 +1366,11 @@ Things feel far less lethargic here. You don't feel like you're stuck, and other
 >stride streak
 You already encouraged more action and less moping here!
 
+@hfull
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+WRONG
+
 >guide geek
 by one point
 
@@ -1316,6 +1378,11 @@ by one point
 {--rej}#testcase-check-vc-guide-geek-rule-fallthrough
 {--all}#testcase-run-vr-guide-geek-rule-default
 The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+
+@hfull
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+WRONG
 
 >fried freak
 by one point
@@ -1325,6 +1392,11 @@ by one point
 {--all}#testcase-run-vr-fried-freak-rule-default
 The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
 
+@hfull
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+WRONG
+
 >snide sneak
 by one point
 
@@ -1332,6 +1404,11 @@ by one point
 {--rej}#testcase-check-vc-snide-sneak-rule-fallthrough
 {--all}#testcase-run-vr-snide-sneak-rule-default
 The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
+
+@hfull
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+WRONG
 
 >e
 
@@ -1351,6 +1428,18 @@ What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they
 /^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
 /^\[Your score just went up by one point.
 
+@hfull
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+WRONG
+
+@alt
+#testcase-alt-words-table-of-verb-checks-16-weak-wooter-w00ter
+>weak w00ter
+by one point
+\\
+>undo
+
 >weak wooter
 by one point
 
@@ -1359,6 +1448,11 @@ by one point
 {--all}#testcase-run-vr-weak-wooter-rule-default
 The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter.
 
+@hfull
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+WRONG
+
 >chic shooter
 by one point
 
@@ -1366,6 +1460,11 @@ by one point
 {--rej}#testcase-check-vc-chic-shooter-rule-fallthrough
 {--all}#testcase-run-vr-chic-shooter-rule-default
 The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
+
+@hfull
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+WRONG
 
 >w
 >fried freak
@@ -1602,6 +1701,20 @@ You don't have the support of the right friends to grow gruff constructively.
 >pals 33
 >grew gruff
 You don't have the support of the right friends to grow gruff constructively.
+\\
+#testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF once you have the support of friends.
+\\
+>swap sweet
+\\
+#+testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF now you have the support of friends.
+\\
+>undo
+>undo
+>undo
 >undo
 >undo
 \\
@@ -2129,6 +2242,11 @@ There must be something here in the Sack Site!
 >n
 You can go back south.
 
+@hfull
+#testcase-values-from-number-of-bosh-blanks-is-2706
+>ll
+WRONG
+
 >posh planks
 by one point
 
@@ -2151,6 +2269,11 @@ Oh, no, let's not make things TOO posh, here!
 #+testcase-goto-table-of-noways-bosh-blanks
 >n
 You can go back south.
+
+@hfull
+#testcase-values-from-number-of-yucky-yacht-is-2755
+>ll
+WRONG
 
 >plucky plot
 by one point
@@ -2217,6 +2340,11 @@ by one point
 >undo
 >undo
 
+@hfull
+#+testcase-values-from-number-of-yucky-yacht-is-2755
+>ll
+WRONG
+
 >s
 >w
 >n
@@ -2232,8 +2360,12 @@ by one point
 >yall zyank
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-49-yank
+#testcase-ha-half-table-of-verb-checks-49-yank-yanks
 >zyall yank
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-49-yank-yanks
+>zyall yanks
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-50-panks
@@ -2253,7 +2385,25 @@ by one point
 >n
 You can only go back west or, once you've moved the tank(s), past them in whatever direction.
 
-=>yall yank
+@hfull
+#testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+WRONG
+\\
+>ll tanks
+WRONG
+\\
+>ll tank
+WRONG
+
+@alt
+#testcase-alt-words-table-of-verb-checks-49-yall-yank-yanks
+>yall yanks
+by one point
+\\
+>undo
+
+>yall yank
 by one point
 
 @all,rej
@@ -2271,6 +2421,11 @@ You've already pulled out the tall tank(s).
 >n
 You can only go back west or east.
 
+@hfull
+#+testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+WRONG
+
 @!min,gong,prong
 >paul panks
 by one point
@@ -2284,6 +2439,11 @@ You think back to someone who competed in IFComp about as many times as the auth
 #testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
 >paul panks
 You already paid your respects.
+
+@hfull
+#+testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+WRONG
 
 >w
 
@@ -2606,6 +2766,11 @@ Yes, perhaps this place could and should become bigger and more important. As a 
 >think
 You can say MAIN MAX once it's busier by the Lane, Lax.
 
+@hfull
+#testcase-values-from-number-of-lane-lax-is-2703
+>ll
+WRONG
+
 >train tracks
 by one point
 
@@ -2641,6 +2806,11 @@ You can say MAIN MAX now it's busier by the Train Tracks.
 >e
 The train tracks head north and south, but you can go back west, too.
 
+@hfull
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+WRONG
+
 >main max
 by one point
 
@@ -2658,6 +2828,11 @@ You already upgraded the train tracks!
 >train tracks
 You already created train tracks.
 
+@hfull
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+WRONG
+
 >pain packs
 by one point
 
@@ -2672,11 +2847,16 @@ You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! 
 >pain packs
 You already got some pain packs!
 
+@hfull
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+WRONG
+
 >n
 
 @all
 #testcase-room-names-wowed-wise-crowd-cries
-Wowed Wise Crowd Cries
+`Wowed Wise Crowd Cries
 
 @gt
 #testcase-goto-table-of-noways-wowed-wise-crowd-cries
@@ -2709,6 +2889,11 @@ You can't just jump to an immediate denunciation. Perhaps you can let the crowd 
 >think
 You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
 
+@hfull
+#testcase-values-from-number-of-crowd-cries-is-5459
+>ll
+WRONG
+
 >trowed tries
 by one point
 
@@ -2725,6 +2910,11 @@ Enough trying. You need to take action!
 #+testcase-think-table-of-verb-checks-vc-loud-lies-rule
 >think
 You can denounce LOUD LIES now you've tweaked the crowd more subjectively.
+
+@hfull
+#+testcase-values-from-number-of-crowd-cries-is-5459
+>ll
+WRONG
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-56-lies
@@ -2851,6 +3041,11 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 >glued zglass
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-crude-crass-lewd-lass-is-5459
+>ll
+WRONG
+
 >glued glass
 by one point
 
@@ -2876,8 +3071,12 @@ You don't particularly like Crude Crass Lewd Lass, but it does clue you as to wh
 >zfast fort
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-28-passed
+#testcase-ha-half-table-of-verb-checks-28-passed-past
 >passed zport
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-28-passed-past
+>past zport
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-28-port
@@ -2922,6 +3121,11 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 >murky zmap
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-perky-pap-is-2753
+>ll
+WRONG
+
 >murky map
 by one point
 
@@ -2934,6 +3138,13 @@ Well, you search through the pap, and what do you know? You turn up something. I
 #+testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
 You can visit the PASSED PORT now you have readable directions to get there.
+
+@alt
+#testcase-alt-words-table-of-verb-checks-28-passed-past-port
+>past port
+by one point
+\\
+>undo
 
 >passed port
 by one point
@@ -2971,7 +3182,7 @@ You can summon the TIME TOAD once you have two artifacts it finds valuable.
 >quash quick
 Your current friends don't seem up to such a grimy task.
 \\
-#testcase-think-table-of-verb-checks-vc-quash-quick-rule
+#+testcase-think-table-of-verb-checks-vc-quash-quick-rule
 >think
 You can QUASH QUICK once the right friends are helping you.
 
@@ -3037,6 +3248,11 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 >zslashing sword
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-clashing-cord-is-2904
+>ll
+WRONG
+
 >slashing sword
 by one point
 
@@ -3072,6 +3288,11 @@ You can make a DONE DISH once you've got certifiably acceptable ingredients for 
 >undo
 >undo
 >undo
+
+@hfull
+#testcase-values-from-number-of-pallid-pent-valid-vent-is-5558
+>ll
+WRONG
 
 >salad scent
 by one point
@@ -3192,6 +3413,11 @@ You haven't steeled yourself to look for what you need, yet. You feel bad for th
 >think
 You can find STEW STUFF once you don't feel bad searching through left-behind belongings.
 
+@hfull
+#testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+WRONG
+
 >grew gruff
 by one point
 
@@ -3223,6 +3449,11 @@ You have nothing to make new 'nuff, yet.
 >think
 You can find STEW STUFF now you don't feel bad searching through left-behind belongings.
 You can say NEW NUFF once you have something of questionable age.
+
+@hfull
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+WRONG
 
 >stew stuff
 by one point
@@ -3272,6 +3503,15 @@ The one-wish fun fish blups suspiciously at the stew stuff. As if there is no as
 >undo
 >undo
 >undo
+
+@hfull
+#testcase-values-from-number-of-stew-stuff-is-2705
+>ll stew
+WRONG
+\\
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+WRONG
 
 >new nuff
 by one point
@@ -3468,6 +3708,11 @@ You already wrought the reef!
 #+testcase-ha-half-table-of-verb-checks-60-done
 >done zdish
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-wish-fun-fish-is-5308
+>ll
+WRONG
 
 >done dish
 by one point
@@ -3737,6 +3982,11 @@ Beyond is too dangerous. Best just go back down when you're ready.
 >zslack slight
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+WRONG
+
 >hack height
 by one point
 
@@ -3745,6 +3995,11 @@ by one point
 {--all}#testcase-run-vr-hack-height-rule-default
 You feel less dizzy and such this high up. It's a relief.
 
+@hfull
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+WRONG
+
 >slack slight
 by one point
 
@@ -3752,6 +4007,11 @@ by one point
 {--rej}#testcase-check-vc-slack-slight-rule-fallthrough
 {--all}#testcase-run-vr-slack-slight-rule-default
 The oppression has a slack, slight. You feel better.
+
+@hfull
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+WRONG
 
 >quack quite
 by one point
@@ -3781,6 +4041,11 @@ The fried freak begins looking through all the bags in the sack site. And what d
 >ztime toad
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-sour-slate-is-2705
+>ll
+WRONG
+
 >power plate
 by one point
 
@@ -3807,6 +4072,11 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 \\
 >undo
 >undo
+
+@hfull
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+WRONG
 
 @!min
 >flak flight
@@ -3861,6 +4131,11 @@ You already quacked "Quite!"
 >zquash quick
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-posh-pick-is-2704
+>ll
+WRONG
+
 >quash quick
 
 @all,rej
@@ -3885,6 +4160,11 @@ You can SLOSH SLICK now you've had someone make a path through the slime, slowed
 #+testcase-ha-half-table-of-verb-checks-31-slosh
 >slosh zslick
 {$GREENCORE}
+
+@hfull
+#+testcase-values-from-number-of-posh-pick-is-2704
+>ll
+WRONG
 
 >slosh slick
 by one point
@@ -3913,6 +4193,15 @@ You already figured that part of getting the pick!
 >think
 You can summon the TIME TOAD now you have two artifacts it finds valuable.
 
+@hfull
+#+testcase-values-from-number-of-posh-pick-is-2704
+>ll
+WRONG
+\\
+#testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll
+WRONG
+
 >time toad
 by one point
 
@@ -3923,6 +4212,7 @@ A great rumbling and ribbiting proclaims the entrance of a very loud and large t
 
 @rej
 >gonear passed port
+\\
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
 >time toad
 The time toad's gift of cold coal should be enough.
@@ -3967,6 +4257,11 @@ The time toad's gift of cold coal should be enough.
 >strander strove
 This would seem to be despairing. You can't already admit you tried but failed.
 
+@hfull
+#testcase-values-from-number-of-dander-dove-is-2804
+>ll
+WRONG
+
 >stander stove
 by one point
 
@@ -3988,6 +4283,11 @@ by one point
 \\
 >undo
 
+@hfull
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+WRONG
+
 >candor cove
 by one point
 
@@ -4001,6 +4301,11 @@ You can now walk through all the dander you made and searched for in pretty much
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
 >candor cove
 You already successfully sought out the candor cove and its concrete goals.
+
+@hfull
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+WRONG
 
 @!min
 >grander grove
@@ -4017,7 +4322,17 @@ You no longer have dander on your mind.
 >grander grove
 You already successfully sought out the grander grove and its dreamy goals.
 
+@hfull
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+WRONG
+
 >n
+
+@hfull
+#+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll
+WRONG
 
 >in
 
@@ -4101,6 +4416,11 @@ The first part of the ceremony comes first. I think you know what it is?
 >think
 You can say COVERING CANDLE once you have what you need for the summoning ceremony.
 
+@hfull
+#testcase-values-from-number-of-knell-nook-is-2754
+>ll
+WRONG
+
 >bell book
 by one point
 
@@ -4117,6 +4437,15 @@ You already got the bell and book! Now for the next part.
 #+testcase-think-table-of-verb-checks-vc-covering-candle-rule
 >think
 You can say COVERING CANDLE now you have what you need for the summoning ceremony.
+
+@hfull
+#testcase-values-from-number-of-hovering-handle-is-2906
+>ll handle
+WRONG
+\\
+#+testcase-values-from-number-of-knell-nook-is-2754
+>ll
+WRONG
 
 >covering candle
 by one point
@@ -4155,6 +4484,11 @@ The knell nook shakes. A spirit appears -- it is a sold soul! It nods with famil
 #testcase-room-names-route-rough
 `Route, Rough
 
+@hfull
+#testcase-values-from-number-of-route-rough-is-2755
+>ll
+WRONG
+
 >nowt nuff
 by one point
 
@@ -4169,6 +4503,11 @@ You see a light at the end of the tunnel. But it is not enough.
 >nowt nuff
 You already nullified certain worries and complaints!
 
+@hfull
+#+testcase-values-from-number-of-route-rough-is-2755
+>ll
+WRONG
+
 >stout stuff
 by one point
 
@@ -4182,6 +4521,11 @@ You feel as though you can leave, if you want, though it's always fun to try and
 #testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
 >stout stuff
 You already found ways to be stout!
+
+@hfull
+#+testcase-values-from-number-of-route-rough-is-2755
+>ll
+WRONG
 
 @!min
 >flout fluff
@@ -4245,6 +4589,11 @@ by one point
 #testcase-ha-half-table-of-verb-checks-21-helm
 >zharder helm
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-ardor-elm-is-2753
+>ll
+WRONG
 
 >harder helm
 by one point
@@ -4357,6 +4706,26 @@ Once you have more than one perspective to fuse together, that'll work.
 >think
 You can say FUSING PHEW once you have commiserated more than one way with Lou.
 
+@hfull
+#testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+WRONG
+\\
+#testcase-values-from-number-of-losing-lou-is-2803
+>ll lou
+WRONG
+\\
+##BALANCE UNDOS
+>boozing boo
+by one point
+\\
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+WRONG
+\\
+>undo
+>undo
+
 >using you
 by one point
 
@@ -4370,6 +4739,11 @@ Well, that was pretty life-affirming. Lou feels a bit better, but you need to do
 #testcase-check-vc-using-you-rule-if-sco-using-you-is-true
 >using you
 You already let Lou know the truth about alcohol!
+
+@hfull
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+WRONG
 
 >boozing boo
 by one point
@@ -4421,6 +4795,11 @@ Fusing ideas once was exhausting enough.
 >spurning zspew
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-turning-to-learning-lou-is-5755
+>ll
+WRONG
+
 >spurning spew
 by one point
 
@@ -4455,9 +4834,9 @@ Nothing's (yet) available here that can message anyone by that name or, indeed, 
 >wailing will
 Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
 \\
-#testcase-think-table-of-verb-checks-vc-bailing-bill-rule
-#testcase-think-table-of-verb-checks-vc-failing-phil-rule
-#testcase-think-table-of-verb-checks-vc-wailing-will-rule
+#+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#+testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#+testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
 You can contact Bailing Bill once you have something to offer him and the means to do so.
 You can contact Failing Phil once you have something to offer him and the means to do so.
@@ -4517,6 +4896,22 @@ You are at the top of the hill. It was such a long journey up, you lost track of
 >zwailing will
 {$YELLOWCORE}
 
+@hfull
+#testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+WRONG
+\\
+##BALANCE UNDOS
+>ailing ill
+by one point
+\\
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+WRONG
+\\
+>undo
+>undo
+
 >scaling skill
 by one point
 
@@ -4531,6 +4926,11 @@ Although you're on top of the hill now, you may wish to show discretion and vent
 >scaling skill
 You already improved your climbing ability!
 
+@hfull
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+WRONG
+
 >ailing ill
 by one point
 
@@ -4544,6 +4944,11 @@ You stand at the top of the hill and feel more connected with others despite, or
 #testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
 >ailing ill
 You already expressed that everyone hurts!
+
+@hfull
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+WRONG
 
 >mailing mill
 by one point
@@ -4583,6 +4988,11 @@ The mailing mill is already on Hailing Hill!
 >zwailing will
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-mailing-mill-is-2854
+>ll mill
+WRONG
+
 @rej
 #+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
 #+testcase-think-table-of-verb-checks-vc-failing-phil-rule
@@ -4591,6 +5001,11 @@ The mailing mill is already on Hailing Hill!
 You can contact Bailing Bill now you have something to offer him and the means to do so.
 You can contact Failing Phil now you have something to offer him and the means to do so.
 You can contact Wailing Will now you have something to offer him and the means to do so.
+
+@hfull
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+WRONG
 
 >failing phil
 by one point
@@ -4745,6 +5160,20 @@ There must be another way to see Trite Tully!
 >undo
 >undo
 
+@hfull
+#testcase-values-from-number-of-trite-tully-is-2755
+>ll bully
+WRONG
+\\
+>bright bully
+by one point
+\\
+>ll bully
+WRONG
+\\
+>undo
+>undo
+
 >frightfully
 by one point
 
@@ -4758,6 +5187,11 @@ Tully shakes their head a bit. You've seen into them, but you feel like you can 
 #testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
 >frightfully
 There must be another way to see Trite Tully!
+
+@hfull
+#+testcase-values-from-number-of-trite-tully-is-2755
+>ll
+WRONG
 
 >bright bully
 by one point
@@ -4782,8 +5216,11 @@ WRONG
 >fam fie
 Tully isn't really looking to be a close friend.
 \\
-#testcase-mistakes-table-of-trite-tully-guesses-ham-hi
+#testcase-mistakes-table-of-trite-tully-guesses-ham-hi-high
 >ham hi
+Yes, Tully is overacting, but knowing this fact won't do enough.
+\\
+>ham high
 Yes, Tully is overacting, but knowing this fact won't do enough.
 \\
 #testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
@@ -5110,6 +5547,11 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 >yall yank
 {$REJECT2}
 ====alphabetize off
+
+@hfull
+#+testcase-values-from-number-of-trite-tully-is-2755
+>ll
+WRONG
 
 >bam bye
 by one point

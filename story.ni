@@ -253,7 +253,7 @@ chapter recruiter
 
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
 
-from-number of recruiter is 2656. to-number of rec ruiter is 8119.
+from-number of recruiter is 2656. to-number of recruiter is 8119.
 
 check going in recroom:
 	unless noun is west or noun is south, continue the action;

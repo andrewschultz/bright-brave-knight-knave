@@ -926,6 +926,20 @@ You don't have the support of the right friends to grow gruff constructively.
 >pals 33
 >grew gruff
 You don't have the support of the right friends to grow gruff constructively.
+
+#testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF once you have the support of friends.
+
+>swap sweet
+
+#+testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF now you have the support of friends.
+
+>undo
+>undo
+>undo
 >undo
 >undo
 
@@ -1862,7 +1876,7 @@ You can summon the TIME TOAD once you have two artifacts it finds valuable.
 >quash quick
 Your current friends don't seem up to such a grimy task.
 
-#testcase-think-table-of-verb-checks-vc-quash-quick-rule
+#+testcase-think-table-of-verb-checks-vc-quash-quick-rule
 >think
 You can QUASH QUICK once the right friends are helping you.
 
@@ -2279,6 +2293,7 @@ by one point
 A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up the slime slowed rime road as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.
 
 >gonear passed port
+
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
 >time toad
 The time toad's gift of cold coal should be enough.
@@ -2492,9 +2507,9 @@ Nothing's (yet) available here that can message anyone by that name or, indeed, 
 >wailing will
 Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
 
-#testcase-think-table-of-verb-checks-vc-bailing-bill-rule
-#testcase-think-table-of-verb-checks-vc-failing-phil-rule
-#testcase-think-table-of-verb-checks-vc-wailing-will-rule
+#+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#+testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#+testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
 You can contact Bailing Bill once you have something to offer him and the means to do so.
 You can contact Failing Phil once you have something to offer him and the means to do so.
