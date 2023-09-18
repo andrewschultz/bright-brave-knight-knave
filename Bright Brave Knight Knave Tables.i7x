@@ -165,7 +165,10 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 		vcp "Perhaps in the far future. But right now, you've only gotten here. You need to build your strength and worth.";
 		not-yet;
 	if hole-progress < 3:
-		vcp "You aren't ready yet. The hold hole is not complete[if availval is 3]. And it seems to repel [the list of unblessed holeitems]. Well, for now[end if].";
+		if number of carried holeitems is 0:
+			vcp "You haven't placed any items in the hold hole yet. You'll need to, to be worthy and confident for the final fight.";
+		else:
+			vcp "You aren't ready yet. The hold hole is not complete[if availval is 3]. And it seems to repel [the list of unblessed holeitems]. Well, for now[end if].";
 		not-yet;
 	if trystcount < number of trystitems:
 		vcp "You look at [the list]. You only have [trystcount in words] of the [number of trystitems in words] things you need to succeed.";
@@ -256,7 +259,7 @@ a goodrhyme rule (this is the vc-kid-come rule):
 
 this is the vr-kid-come rule:
 	now sco-kid-come is true;
-	say "The kid looks awkwardly at you. They shuffle forward.";
+	say "The [boffin] looks awkwardly at you. He shuffles forward hesitantly. He seems to be hiding something behind his back!";
 
 a goodrhyme rule (this is the vc-rid-rum rule):
 	if player is not in slid slum, unavailable;
@@ -408,7 +411,7 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 
 this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
-	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer places.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
+	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
 	dismiss-geek-wooter;
 
@@ -471,7 +474,7 @@ a goodrhyme rule (this is the vc-murky-map rule):
 
 this is the vr-murky-map rule:
 	now sco-murky-map is true;
-	say "Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.";
+	say "Well, you search through the pap, and what do you know? You turn up something. It's a murky map. [if sco-glued-glass is false]Not very readable, but perhaps you can find a way[else]Putting it under the glued glass, though, it is more readable[end if].";
 	now player has murky map;
 	moot perky pap;
 
@@ -705,14 +708,14 @@ a goodrhyme rule (this is the vc-wrought-reef rule):
 
 this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
-	say "You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.";
+	say "You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.";
 	move wish fun fish to Fought Fief;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-done-dish rule):
 	if wish fun fish is not touchable, unavailable;
 	if fish-score < 2:
-		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, to complete a dish.";
+		vcp "The [fish] blups at you apologetically. You don't have [if fish-score is 1]enough[else]anything[end if] to work with, yet, to complete a dish.";
 		not-yet;
 	if sco-new-nuff is false:
 		vcp "The [fish] blups suspiciously at the stew stuff. As if there is no assurance the stew stuff is any good.";
@@ -731,20 +734,24 @@ section treed track scoring
 
 a goodrhyme rule (this is the vc-need-knack rule):
 	if player is not in treed track, unavailable;
-	if only-here of Snide Sneak:
-		vcp "The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
-		not-yet;
-	if not pair-here of Snide Sneak:
-		vcp "You'd like to, but you need assistance from others as to how.";
-		not-yet;
 	if sco-need-knack is true:
 		vcal "You already got the knack for looking around! You won't forget it.";
 		already-done;
+	abide by the eeker bypass rule for snide sneak;
+	if only-here of Snide Sneak:
+		vcp "The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
+		not-yet;
+	if number of eekers in location of player < 2:
+		vcp "To get the knack for not getting lost, you may need help from more than one friend.";
+		not-yet;
+	if not pair-here of Snide Sneak:
+		vcp "It's all well and good to need assistance, but your current friends can't give any.";
+		not-yet;
 	ready;
 
 this is the vr-need-knack rule:
 	now sco-need-knack is true;
-	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. It's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
+	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. The Sneak is snide but would love even more sneaking to be snide about! So it's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
 	open-psg west and Too Tough Blue Bluff;
 	dismiss-sneak-mooter;
 
@@ -760,7 +767,7 @@ a goodrhyme rule (this is the vc-heed-hack rule):
 
 this is the vr-heed-hack rule:
 	now sco-heed-hack is true;
-	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. That's easy, now you know what to do. You find two more passages.";
+	say "You figure what the Snide Sneak was really trying to say. Yep, there you go. You imagine it wouldn't be sneaky to tell you everything at once, and maybe they were sneakily giving you a reason to feel smart, solving this. And it's so easy, now you know what to do. You find two more passages.";
 	open-psg up and Lack Light Black Blight;
 	open-psg east and Knell Nook;
 
@@ -870,7 +877,7 @@ a goodrhyme rule (this is the vc-grew-gruff rule):
 
 this is the vr-grew-gruff rule:
 	now sco-grew-gruff is true;
-	say "You get rid of a bit of sentiment. It's certainly sad a tragedy may have happened here, but why make things more tragic?";
+	say "You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.";
 
 a goodrhyme rule (this is the vc-stew-stuff rule):
 	if player is not in too tough blue bluff, unavailable;
@@ -900,7 +907,7 @@ a goodrhyme rule (this is the vc-new-nuff rule):
 
 this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
-	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff.";
+	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff. It's canned. It doesn't need to be perfectly fresh.";
 
 a goodrhyme rule (this is the vc-power-plate rule):
 	if sour slate is not touchable, unavailable;
@@ -923,7 +930,7 @@ a goodrhyme rule (this is the vc-bell-book rule):
 
 this is the vr-bell-book rule:
 	now sco-bell-book is true;
-	say "The bell and book are in place. There is one more item. Perhaps you can guess it.";
+	say "Received adventure game knowledge FTW! The bell and book are in place. There is one more item. Perhaps you can guess it.";
 
 a goodrhyme rule (this is the vc-covering-candle rule):
 	abide by the any-nook rule;
@@ -935,7 +942,7 @@ a goodrhyme rule (this is the vc-covering-candle rule):
 
 this is the vr-covering-candle rule:
 	now sco-covering-candle is true;
-	say "The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. 'DESTROY THEM.' You do. The knell nook begins shaking and soon collapses.[paragraph break]The sold soul thanks you. It will follow wordlessly until you need it.";
+	say "The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. 'DESTROY THEM. THEY ARE LEGACIES OF A GREEDY LIFE.' You do. The knell nook begins shaking and soon collapses.[paragraph break]The sold soul thanks you. It will follow wordlessly until you need it.";
 	give-hi sold soul;
 	moot proud prize;
 	moot posh pick;
@@ -1019,19 +1026,19 @@ a goodrhyme rule (this is the vc-boozing-boo rule):
 
 this is the vr-boozing-boo rule:
 	now sco-boozing-boo is true;
-	say "You explain that boozing is just not the way to go.";
+	say "You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.";
 	lou-check;
 
 a goodrhyme rule (this is the vc-using-you rule):
 	if player is not in Bruising Brew, unavailable;
 	if sco-using-you is true:
-		vcal "You already let Lou know the truth!";
+		vcal "You already let Lou know the truth about alcohol!";
 		already-done;
 	ready;
 
 this is the vr-using-you rule:
 	now sco-using-you is true;
-	say "You break down some harsh truths to Lou without hopefully being too stark. He nods in appreciation.";
+	say "You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.";
 	lou-check;
 
 a goodrhyme rule (this is the vc-fusing-phew rule):
@@ -1203,7 +1210,7 @@ section dander dove scoring
 a goodrhyme rule (this is the vc-grander-grove rule):
 	if player is not in dander dove, unavailable;
 	if sco-grander-grove is true:
-		vcal "You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.";
+		vcal "You already successfully sought out the grander grove and its dreamy goals.";
 		already-done;
 	ready;
 
@@ -1215,7 +1222,7 @@ this is the vr-grander-grove rule:
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in dander dove, unavailable;
 	if sco-candor-cove is true:
-		vcal "You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.";
+		vcal "You already successfully sought out the candor cove and its concrete goals.";
 		already-done;
 	ready;
 
@@ -1227,7 +1234,7 @@ this is the vr-candor-cove rule:
 a goodrhyme rule (this is the vc-stander-stove rule):
 	if player is not in dander dove, unavailable;
 	if sco-stander-stove is true:
-		vcal "You already found the stander stove!";
+		vcal "You already discovered the stander stove to warm yourself spiritually and physically!";
 		already-done;
 	ready;
 
@@ -1286,7 +1293,7 @@ this is the vr-nowt-nuff rule:
 	rough-check;
 
 to rough-check:
-	say "You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
+	say "[line break]You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
 	if route-rough-score is 2:
 		alt-last route rough;
 
@@ -1367,10 +1374,7 @@ a goodrhyme rule (this is the tully-triage rule):
 section auxiliary rules
 
 to lou-check:
-	if lou-score is 1:
-		say "Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.";
-	else:
-		say "Lou nods at the different perspectives but is unable to integrate them. Maybe you can help!"
+	say "[line break][if lou-score is 1]Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.[else]Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help![end if]"
 
 to part-dismiss (ee - an eeker):
 	now ee is finished;
@@ -1379,9 +1383,9 @@ to part-dismiss (ee - an eeker):
 to fully-dismiss (ee - an eeker):
 	part-dismiss ee;
 	part-dismiss other-guy of ee;
-	say "You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
+	say "[line break]You and [the ee] and [the other-guy of ee] look at each other for a bit. There's an awkward silence, and then they mention they're pretty sure they've done all they can for you. They thank you for taking them on this journey. It was real, but, you know -- well, they want to get to know each other better now.";
 	if eekers-done:
-		say "[line break]But they also realize something else--you've helped everyone you could have a bit of fun! Surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. There may be a surprise for you.[end if]";
+		say "[line break]But they also realize something else--you've helped everyone you could have fun and adventure! They thought the recruiting was a scam. You proved it wrong, and surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. They know this one tree that may help. It always seemed special.[end if]";
 		move ardor elm to cried creek;
 
 to dismiss-sneak-mooter: if sneak-mooter-points is 3, fully-dismiss snide sneak;
@@ -1492,19 +1496,10 @@ weak wooter	chic shooter	"<stuff>"
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:
-		say "[tully] looks shocked! 'No! No! It can't be!' Suddenly, they look much more humble.[paragraph break]'Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!'[paragraph break]You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.";
+		say "Trite Tully looks shocked! 'No! No! It can't be!' Suddenly, they look much more humble.[paragraph break]'Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!'[paragraph break]You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.";
 		now Trite Tully is not proper-named;
 	else:
 		say "Tully shakes their head a bit. You've seen into them, but you feel like you can do more.";
-
-to check-points:
-	let any-missed be false;
-	if debug-state is true:
-		repeat through table of verb checks:
-			if idid entry is false:
-				say "[run-rule entry] not processed.";
-				now any-missed is true;
-	if any-missed is false, say "Got everything!"
 
 to win-the-game:
 	if cur-bonus is max-bonus:
@@ -1512,7 +1507,6 @@ to win-the-game:
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;
 	force-status;
-	check-points;
 	end the story finally saying "Woo woo woo";
 	follow the shutdown rules;
 
@@ -1574,7 +1568,7 @@ Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall i
 Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
 Bruising Brew	"This pub houses no crazy lattice of secret passages. You can only go back out."
-Hailing Hill	"You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way."
+Hailing Hill	"You are at the top of the hill. It's like being at the North Pole, but not so cold. You lost track of compass directions, anyway. You can really only go back down."
 recroom	"You can only go west[if creek is visited] to Cried Creek[end if] and south to Slum Slid."
 Cried Creek	"While the creek and greenery meander off, you might get lost. You can really only go back east."
 Crude Crapper	"There are no hidden passages. Only back out."
@@ -1583,15 +1577,15 @@ Cast Court	"[astort]."
 Fast Fort	"[astort]."
 Passed Port	"[astort]."
 Treed Track	"[if sco-need-knack is false]Without any direction, the only way is back north[else if sco-heed-hack is false]You can only go north or up. But maybe with some thought you can find other passages[else]North, west, east and up are all paths out of here, but [noun] isn't[end if]."
-Too Tough Blue Bluff	"You don't want to get lost in the bluff. Best just go back down [if sco-stew-stuff is false]once[else]now[end if] you're done here."
-Black Blight	"Beyond is too dangerous. Best just go back down when you're ready."
+Too Tough Blue Bluff	"The drop is not to steep, but you don't know how you'd climb back up. Best just go back east [if sco-stew-stuff is false]once[else]now[end if] you're done here."
+Black Blight	"Beyond is too wild. Best just go back down the way you came when you're ready."
 Knell Nook	"This is a secluded place with the only exit back west."
 tata	"You can only go back west or[if sco-yall-yank is true] east[else], once you've moved the tank(s), past them in whatever direction[end if]."
 Lane Lax	"[if sco-train-tracks is false]Back west is the only way. For now[else]The train tracks head north and south, but you can go back west, too[end if]."
 Wowed Wise Crowd Cries	"Only way out is south."
 Thought Thief Fought Fief	"Only way back is north."
 
-to say astort: say "You sense exploring this island would get you lost. ENTER the yacht to re-visit Bosh Blanks, or specify where else you want to go"
+to say astort: say "You sense exploring this island would get you lost. [b]ENTER[r] the yacht to re-visit Bosh Blanks, or specify where else you want to go"
 
 volume homonyms
 

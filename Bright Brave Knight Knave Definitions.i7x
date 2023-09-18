@@ -264,7 +264,7 @@ to alt-last (rm - a room): [this makes the final flip an optional point]
 to flag-missed (rm - a room): [ this is for the MISSED list at the end. Note it cuts corners: if you missed 2 things, it would only track the first. But BK6 doesn't allow that. ]
 	repeat through table of verb checks:
 		if idid entry is false and there is a best-room entry and best-room entry is rm:
-			say "You could've said [b][w1 entry in upper case] [w2 entry in upper case][r] in [rm].";
+			say "You could've said [b][firstor of w1 entry] [firstor of w2 entry][r] in [rm].";
 			continue the action;
 
 book to decide whether (largely game dependent stuff)
