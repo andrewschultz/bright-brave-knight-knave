@@ -610,6 +610,28 @@ check taking inventory when lack list is not off-stage:
 			say "So far, from [the list], you've found [the list of carried trystitems].";
 	the rule succeeds;
 
+book abouting
+
+carry out abouting:
+	say "[this-game] is the sixth entry in the [pprr] series. You do not need experience with [series-names] to get through successfully.";
+	say "[line break]It came about while I figured 'haha, I've overdone the concept, but what if?' And I had some ideas. But I wanted to do more. I wanted to give you NPCs.";
+	say "[line break]I had a month-or-so desert after doing a lot of technical tests, so the story may not have the polish it could, for the comp. But I stand by the work, and the jokes.";
+	say "[line break]I welcome bug reports, big or small, as well as transcripts. [this-game]'s repository is at https://github.com/andrewschultz/bright-vrave-knight-knave/issues. Transcripts sent to my email blurglecruncheon@gmail.com are also appreciated.";
+	the rule succeeds;
+
+book creditsing
+
+carry out creditsing:
+	say "Thanks to testers here!"
+
+book optsing
+
+carry out optsing:
+	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just bonus points left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONG[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if player has leet learner, say "You can [b]READ[r] the leet learner for options there.";
+	if know-sweet-swap is true, say "You can [b]SWEET SWAP[r] to swap companions in and out without going back to the recruiter and creek. This speeds the game up a bit.";
+	the rule succeeds;
+
 book verbsing
 
 carry out verbsing:
@@ -617,6 +639,8 @@ carry out verbsing:
 	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well. The four ";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
+
+report verbsing:
 	if r-warn-yet is true and pairs-used < 3:
 		say "You can say [b]BYE[r] to get rid of a friend pair.";
 		repeat with XX running through creeky eekers:
