@@ -397,6 +397,7 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 	if sco-plucky-plot is true:
 		vcal "But you already hatched a plucky plot to clean the yucky yacht!";
 		already-done;
+	abide by the eeker bypass rule for guide geek;
 	if not assisted:
 		vcp "You need a couple assistants to hatch a plot.";
 		not-yet;
@@ -482,19 +483,23 @@ a goodrhyme rule (this is the vc-glued-glass rule):
 
 this is the vr-glued-glass rule:
 	now sco-glued-glass is true;
-	say "You don't particularly like [lass], but it does clue you as to what you need.";
+	say "[lass] folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative art. [if sco-murky-map is false]What could it make clearer?[else]In fact, holding it over the murky map makes the map clearer![end if]";
 	moot crude crass lewd lass;
 	now player has glued glass;
 
 section passed port scoring
 
 a goodrhyme rule (this is the vc-salad-scent rule):
-	if pallid pent valid vent is untouchable, unavailable;
+	if player is not in passed port, unavailable;
 	if sco-salad-scent is true:
 		vcal "Wow! You must really like salad!";
 		already-done;
-	if snide sneak is not fungible or meek mooter is not fungible:
-		vcp "You're not properly assisted.";
+	abide by the eeker bypass rule for snide sneak;
+	if number of eekers in location of player < 2:
+		vcp "You will need a couple friends to make a human ladder to get to the vent.";
+		not-yet;
+	if snide sneak is not fungible:
+		vcp "Your current friends seem unwilling to make a human ladder to get to the vent.";
 		not-yet;
 	ready;
 
@@ -507,12 +512,13 @@ this is the vr-salad-scent rule:
 
 a goodrhyme rule (this is the vc-slosh-slick rule):
 	if posh pick is not touchable, unavailable;
-	if sco-quash-quick is false:
-		vcp "The area around the posh pick is too deep. Is there any way to lessen it?";
-		not-yet;
 	if sco-slosh-slick is true:
 		vcal "You already figured that part of getting the pick!";
 		already-done;
+	abide by the eeker bypass rule for fried freak;
+	if sco-quash-quick is false:
+		vcp "The area around the posh pick is too deep. Is there any way to lessen it?";
+		not-yet;
 	if fried freak is not in location of player and chic shooter is not in location of player:
 		vcp "You don't have the right pals yet!";
 		not-yet;
@@ -640,8 +646,12 @@ a goodrhyme rule (this is the vc-trod-trash rule):
 	if sco-trod-trash is true:
 		vcal "But you already got people to trod on the trash!";
 		already-done;
-	if guide geek is not fungible and weak wooter is not fungible:
-		vcp "You don't feel ready to take care of things with the current lineup of friends.";
+	abide by the eeker bypass rule for guide geek;
+	if number of eekers in location of player < 2:
+		vcp "There's a lot of trash to get people to trod! You'll need friends to help.";
+		not-yet;
+	if guide geek is not fungible:
+		vcp "You don't see how to plan a trash-trod with your current friends nearby.";
 		not-yet;
 	ready;
 
@@ -852,6 +862,7 @@ a goodrhyme rule (this is the vc-grew-gruff rule):
 	if sco-grew-gruff is true:
 		vcal "Don't want to overdo it!";
 		already-done;
+	abide by the eeker bypass rule for guide geek;
 	if guide geek is not fungible or weak wooter is not fungible:
 		vcp "You don't have the support of the right friends to grow gruff constructively.";
 		not-yet;
@@ -933,15 +944,16 @@ section tall tank(s) scoring
 
 a goodrhyme rule (this is the vc-yall-yank rule):
 	if player is not in tata, unavailable;
+	if sco-yall-yank is true:
+		vcal "You've already pulled out the tall tank(s).";
+		already-done;
+	abide by the eeker bypass rule for fried freak;
 	if not assisted:
 		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it!";
 		not-yet;
 	unless pair-here of Chic Shooter:
 		vcp "You sense resistance to physical work from [list of touchable eekers]. You need pals more action-based.";
 		not-yet;
-	if sco-yall-yank is true:
-		vcal "You've already pulled out the tall tank(s).";
-		already-done;
 	ready;
 
 this is the vr-yall-yank rule:
@@ -978,15 +990,16 @@ this is the vr-trowed-tries rule:
 
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in wowed wise crowd cries, unavailable;
+	if sco-loud-lies is true:
+		vcal "You already declaimed the loud lies.";
+		already-done;
+	abide by the eeker bypass rule for snide sneak;
 	if sco-trowed-tries is false:
 		vcp "You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.";
 		not-yet;
 	if not pair-here of snide sneak:
-		vcp "You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. You need assistance!";
+		vcp "You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.";
 		not-yet;
-	if sco-loud-lies is true:
-		vcal "You already declaimed the loud lies.";
-		already-done;
 	ready;
 
 this is the vr-loud-lies rule:
@@ -1456,8 +1469,11 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups 
 	bring-over ee;
 	now rfe is followish;
 	if r-warn-yet is false:
-		say "[i][bracket][b]NOTE:[r][i] you can say [b]BYE[r][i] at any time to get rid of your new friends. You can also bring them back with [b]R [matchnum of ee][r][i].[close bracket][r]";
+		say "[line break][i][bracket][b]NOTE:[r][i] you can say [b]BYE[r][i] at any time to get rid of your new friends. You can also bring them back with [b]R [matchnum of ee][r][i].[close bracket][r][line break]";
 		now r-warn-yet is true;
+	if know-sweet-swap is false:
+		say "[line break][i][bracket][b]NOTE:[r][i] if you wish to make shortcuts, you can use the command [b]SWEET SWAP[r][i], which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.[close bracket][r][line break]";
+		now know-sweet-swap is true;
 
 table of similar eeker conflicts
 eekold	eeknew	eektxt
@@ -1531,7 +1547,23 @@ hooray
 "Try 4"
 "You have everything on the list! Wow!"
 
-section undefined-yet rules
+chapter cheaty stuff
+
+an eeker manipulation rule for an eeker (called ee) (this is the eeker bypass rule):
+	if opt-sweet-swap is false, continue the action;
+	let eo be other-guy of ee;
+	if ee is dormant or eo is dormant:
+		vcp "That feels right. But you sense you haven't summoned the friends you needed to, yet.";
+		not-yet;
+	unless ee is pairedyet and eo is pairedyet:
+		vcp "That feels right. But you sense you haven't paired the friends you needed to, yet.";
+		not-yet;
+	if vc-dont-print is false:
+		if number of eekers in location of player is 0:
+			say "You figure [the ee] and [the eo] would work well together here.";
+		else:
+			say "You temporarily dismiss [the list of eekers in location of player] for [the ee] and [the eo], who'd seem to work better here...";
+	ready;
 
 volume table of noways
 
