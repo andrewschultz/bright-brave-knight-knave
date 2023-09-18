@@ -46,7 +46,9 @@ by one point
 by one point
 
 >out
+
 >e
+
 >n
 
 >w
@@ -88,6 +90,7 @@ by one point
 
 >s
 >e
+
 >n
 
 >posh planks
@@ -134,6 +137,276 @@ by one point
 >seed sack
 by one point
 
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>e
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+
+>slosh slick
+by one point
+
+>time toad
+by one point
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+#testcase-run-vr-fight-fave-rule-if-sco-eyeing-eying-ease-is-false
+#testcase-run-vr-fight-fave-rule-if-sco-jack-gist-is-false
+#testcase-run-vr-fight-fave-rule-if-sco-write-right-rave-is-false
+>score
+You have scored a total of 69 out of 85 points and need 72 to win. You have found 1 of 14 bonus points so far. You are locked out of 9 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+You haven't figured any ideas that might score a point later, but if you do, Bright Brave Knight Knave will explicitly warn you. THINK would give more detailed information.
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+
+>bam bye
+by one point
+
 # I don't understand what's going on here, but this won't show the final command for MIN, even though it does so for other commands.
 >misses
 You could have tried to WRITE/RIGHT RAVE to flatter me.
@@ -148,6 +421,3 @@ You didn't uncover the RHYME ROAD in Passed Port.
 You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
 You didn't find the PLEAD PLAQUE in Treed Track.
 You could have tried to JACK GIST for a shorter command to read the track tryst lack list.
-
->z
-

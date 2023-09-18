@@ -403,6 +403,11 @@ I couldn't parse that command. You don't need any more than two words long.
 >yall yank
 I couldn't parse that command. You don't need any more than two words long.
 
+#testcase-check-vc-fight-fave-rule-if-hold-hole-is-off-stage
+>fight fave
+Perhaps in the far future. But right now, you've only gotten here. You need to build your strength and worth.
+NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+
 >kite cave
 by one point
 
@@ -416,13 +421,23 @@ You already discovered the kite cave to find a path beyond!
 
 >x hold hole
 
+#testcase-check-vc-fight-fave-rule-if-hole-progress-<-3
+>fight fave
+You haven't placed any items in the hold hole yet. You'll need to, to be worthy and confident for the final fight.
+!for now
+!NOTE: this command will be useful later
+
+#testcase-think-table-of-verb-checks-vc-fight-fave-rule
+>think
+You can FIGHT FAVE once you are physically and emotionally prepared.
+
 >x list
 
 >jack gist
-WRONG
+Your score and bonus points just went up by one point.
 
 #testcase-check-vc-jack-gist-rule-fallthrough
-WRONG
+Wow! You figured what to do. Now instead of typing X LIST, you can just type X or even I.
 
 #testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
 >jack gist
@@ -446,27 +461,24 @@ score and bonus points just went up by one point.
 
 >d
 
-#testcase-check-vc-fight-fave-rule-if-player-is-not-in-white-wave-and-debug-allow-final-is-false
+#testcase-check-vc-fight-fave-rule-if-player-is-not-in-white-wave
 >fight fave
-WRONG
+Not here. There is a proper place for that, though.
 
+#testcase-check-vc-mass-math-rule-if-sco-pass-path-is-false
 >mass math
 You have nothing to do mass math on. Yet.
-NOTE: this command will be useful later, but you aren't ready to use it, yet. You can track commands like this by typing THINK, which will also clue you if they now work.
+!will be useful later
 
 #testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
 
-#testcase-check-vc-mass-math-rule-if-sco-mass-math-is-true
->mass math
-You already calculated! Overcalculate, and you might miss or reject the obvious.
-
 >pass path
 
 #testcase-check-vc-pass-path-rule-fallthrough
-WRONG
+Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.
 
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
@@ -481,48 +493,66 @@ You already found a pass-path through the bass bath!
 by one point
 
 #testcase-check-vc-mass-math-rule-fallthrough
-WRONG
+You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
+You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.
+
+#testcase-check-vc-mass-math-rule-if-sco-mass-math-is-true
+>mass math
+You already calculated! Overcalculate, and you might miss or reject the obvious.
 
 >e
 
-#testcase-check-vc-yall-yank-rule-unless-pair-here-of-chic-shooter
+#testcase-check-vc-yall-yank-rule-if-not-assisted
 >yall yank
 Whoah! The tall tank is big! You'll need help from more than one person to move it!
 
->w
+#testcase-think-table-of-verb-checks-vc-yall-yank-rule
+>think
+You can say YALL YANK once you have the right cohorts.
+
+>undo
+>undo
+>undo
 
 >n
 
 >posh planks
 by one point
 
+#testcase-check-vc-plucky-plot-rule-if-not-assisted
 >plucky plot
-WRONG
+You need a couple assistants to hatch a plot.
 
->s
-
->s
-
->need knack
-WRONG
-
->n
-
-#testcase-think-table-of-verb-checks-vc-need-knack-rule
-#testcase-think-table-of-verb-checks-vc-yall-yank-rule
 #testcase-think-table-of-verb-checks-vc-plucky-plot-rule
 >think
-You can say you NEED KNACK once you have the right help by the Treed Track.
-You can say YALL YANK once you have the right cohorts.
 You can hatch a PLUCKY PLOT once you have the right co-conspirators.
+
+>undo
+>undo
+>undo
+>undo
+
+>s
+
+#testcase-check-vc-need-knack-rule-if-not-pair-here-of-snide-sneak
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+
+#testcase-think-table-of-verb-checks-vc-need-knack-rule
+>think
+You can say you NEED KNACK once you have the right help by the Treed Track.
+
+>undo
+>undo
+>undo
 
 >w
 
 >write rave
-by two point
+by two points
 
 #testcase-check-vc-write-right-rave-rule-fallthrough
-WRONG
+Your score and bonus points just went up by two points.
 
 #testcase-check-vc-write-right-rave-rule-if-sco-write-right-rave-is-true
 >write rave
@@ -531,20 +561,22 @@ You already appealed to my pride! Now it's my turn to feel pride by showing I do
 >what whoah
 by one point
 
+#testcase-check-vc-what-whoah-rule-fallthrough
+It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
+
 #testcase-check-vc-what-whoah-rule-if-sco-what-whoah-is-true
 >what whoah
 You already had a revelation that will push you out of your rut and see a new passage through.
 
-#testcase-check-vc-what-whoah-rule-fallthrough
-It sounds artificial at first to pretend you saw something. Then you think, if I did see something useful, what sort of thing would I see? And somehow, it works! You find a path west through Rut Row.
-
 >w
 
+#testcase-check-vc-kid-come-rule-if-sco-hid-hum-is-false
 >kid come
-WRONG
+There's no kid around yet!
 
+#testcase-check-vc-rid-rum-rule-if-sco-hid-hum-is-false
 >rid rum
-WRONG
+There is no rum to rid that you can sense. Yet.
 
 #testcase-think-table-of-verb-checks-vc-kid-come-rule
 #testcase-think-table-of-verb-checks-vc-rid-rum-rule
@@ -556,11 +588,15 @@ You can say RID RUM once you have cause to speak out against alcohol.
 by one point
 
 #testcase-check-vc-hid-hum-rule-fallthrough
-WRONG
+You figure there must be something here, and you are right ... there's a kid. And not just any kid! A coughin' coy boffin boy! They seem to be holding something behind their back. They don't trust you yet. Who would, in such an urban hellscape?
 
 #testcase-check-vc-hid-hum-rule-if-sco-hid-hum-is-true
 >hid hum
 You already did initial searching!
+
+#testcase-check-vc-rid-rum-rule-if-sco-kid-come-is-false
+>rid rum
+The kid doesn't trust you enough yet! They feel no closeness.
 
 #+testcase-think-table-of-verb-checks-vc-kid-come-rule
 >think
@@ -570,7 +606,7 @@ You can say KID COME now a kid is around.
 by one point
 
 #testcase-check-vc-kid-come-rule-fallthrough
-WRONG
+The coughin' coy boffin boy looks awkwardly at you. He shuffles forward hesitantly. He seems to be hiding something behind his back!
 
 #testcase-check-vc-kid-come-rule-if-sco-kid-come-is-true
 >kid come
@@ -578,13 +614,12 @@ You already called the kid over!
 
 #+testcase-think-table-of-verb-checks-vc-rid-rum-rule
 >think
-You can say RID RUM once you have cause to speak out against alcohol.
+You can say RID RUM now you have cause to speak out against alcohol.
 
 >rid rum
 by one point
 
 #testcase-check-vc-rid-rum-rule-fallthrough
-WRONG
 
 #testcase-check-vc-rid-rum-rule-if-sco-rid-rum-is-true
 >rid rum
@@ -607,14 +642,16 @@ You already got the mood mapper/'tude tapper!
 by one point
 
 #testcase-check-vc-nude-napper-rule-fallthrough
-WRONG
+You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others' personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.
 
 #testcase-check-vc-nude-napper-rule-if-sco-nude-napper-is-true
 >nude napper
 You don't want to be too much of a moral scold!
 
 >out
+
 >e
+
 >n
 
 >w
@@ -623,7 +660,7 @@ You don't want to be too much of a moral scold!
 by one point
 
 #testcase-check-vc-stride-streak-rule-fallthrough
-WRONG
+Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.
 
 #testcase-check-vc-stride-streak-rule-if-sco-stride-streak-is-true
 >stride streak
@@ -633,19 +670,19 @@ You already encouraged more action and less moping here!
 by one point
 
 #testcase-check-vc-guide-geek-rule-fallthrough
-WRONG
+The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
 
 >fried freak
 by one point
 
 #testcase-check-vc-fried-freak-rule-fallthrough
-WRONG
+The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
 
 >snide sneak
 by one point
 
 #testcase-check-vc-snide-sneak-rule-fallthrough
-WRONG
+The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
 
 >e
 
@@ -653,19 +690,22 @@ WRONG
 by one point
 
 #testcase-check-vc-meek-mooter-rule-fallthrough
-WRONG
+What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they fill in each other's holes, personality-wise.
+/^\[NOTE: you can say BYE
+/^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
+/^\[Your score just went up by one point.
 
 >weak wooter
 by one point
 
 #testcase-check-vc-weak-wooter-rule-fallthrough
-WRONG
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter.
 
 >chic shooter
 by one point
 
 #testcase-check-vc-chic-shooter-rule-fallthrough
-WRONG
+The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
 
 >w
 >fried freak
@@ -677,13 +717,709 @@ by one point
 
 >s
 >e
+
+#testcase-check-vc-mailing-mill-rule-if-sco-seed-sack-is-false
+>u
+
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+
+#testcase-think-table-of-verb-checks-vc-mailing-mill-rule
+>think
+You can place a mailing mill once you are at the top of Hailing Hill.
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-mailing-mill-rule
+>mailing mill
+A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.
+
+>think
+You can place a mailing mill now you are at the top of Hailing Hill and once you have the raw materials.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+#
+# freak = 1 geek = 2 sneak = 3
+#
+>n
+>posh planks
+
+>plucky plot
+You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.
+But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.
+>undo
+
+>pals 11
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 12
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 13
+>plucky plot
+Your current friends aren't quite up to plotting.
+>undo
+>undo
+
+>pals 21
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 22
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 31
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 32
+>plucky plot
+You need a couple assistants to hatch a plot.
+>undo
+>undo
+
+>pals 33
+>plucky plot
+Your current friends aren't quite up to plotting.
+>undo
+>undo
+
+#undo top commands
+>undo
+>undo
+
+>gonear lane lax
+>train tracks
+by one point
+>main max
+by one point
+
+>trod trash
+Your score just went up by one point.
+>undo
+
+>pals 11
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 12
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 13
+>trod trash
+You don't see how to plan a trash-trod with your current friends nearby.
+>undo
+>undo
+
+>pals 21
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 22
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 31
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 32
+>trod trash
+There's a lot of trash to get people to trod! You'll need friends to help.
+>undo
+>undo
+
+>pals 33
+>trod trash
+You don't see how to plan a trash-trod with your current friends nearby.
+>undo
+>undo
+
+#undo top commands
+>undo
+>undo
+>undo
+
+>gonear blue bluff
+
+>grew gruff
+by one point
+>undo
+
+>pals 11
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 12
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 13
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 21
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 22
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 31
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 32
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+>pals 33
+>grew gruff
+You don't have the support of the right friends to grow gruff constructively.
+>undo
+>undo
+
+#undo top commands
+>undo
+
+>e
+
+>yall yank
+You sense resistance to physical work from Guide Geek and Weak Wooter. You need pals more action-based.
+>undo
+
+>pals 21
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 22
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 23
+>yall yank
+You sense resistance to physical work from Guide Geek and Weak Wooter. You need pals more action-based.
+>undo
+>undo
+
+>pals 11
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 12
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 31
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 32
+>yall yank
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+>undo
+>undo
+
+>pals 33
+>yall yank
+You sense resistance to physical work from Snide Sneak and Meek Mooter. You need pals more action-based.
+>undo
+>undo
+
+#undo top commands
+>undo
+
+>s
+
+>need knack
+It's all well and good to need assistance, but your current friends can't give any.
+>undo
+
+>pals 21
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+>undo
+>undo
+
+>pals 22
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+>undo
+>undo
+
+>pals 23
+>need knack
+It's all well and good to need assistance, but your current friends can't give any.
+>undo
+>undo
+
+>pals 31
+>need knack
+The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!
+>undo
+>undo
+
+>pals 32
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+>undo
+>undo
+
+>pals 11
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+>undo
+>undo
+
+>pals 12
+>need knack
+To get the knack for not getting lost, you may need help from more than one friend.
+>undo
+>undo
+
+>pals 13
+>need knack
+It's all well and good to need assistance, but your current friends can't give any.
+>undo
+>undo
+
+#undo top commands
+>undo
+
+>gonear cries
+>trowed tries
+by one point
+
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+
+>pals 21
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 22
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 23
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 31
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 32
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 11
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 12
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+>pals 13
+>loud lies
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+>undo
+>undo
+
+#undo top commands
+>undo
+>undo
+
+>gonear passed port
+
+>salad scent
+Your current friends seem unwilling to make a human ladder to get to the vent.
+>undo
+
+>pals 21
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 22
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 23
+>salad scent
+Your current friends seem unwilling to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 31
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 32
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 11
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 12
+>salad scent
+You will need a couple friends to make a human ladder to get to the vent.
+>undo
+>undo
+
+>pals 13
+>salad scent
+Your current friends seem unwilling to make a human ladder to get to the vent.
+>undo
+>undo
+
+#undo top commands
+>undo
+
+>gonear passed port
+
+>quash quick
+Your current friends don't seem up to such a grimy task.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+
+>pals 21
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 22
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 23
+>quash quick
+Your current friends don't seem up to such a grimy task.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 11
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 12
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 31
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 32
+>quash quick
+This is a job for you and two friends.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+>pals 33
+>quash quick
+Your current friends don't seem up to such a grimy task.
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+>undo
+>undo
+>undo
+
+#undo top commands
+>undo
+
+>gonear black blight
+>quack quite
+by one point
+>slack slight
+by one point
+>bye
+
+#first, we look around with flak flight activated first
+
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+
+>pals 13
+>l
+!There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+Rack-Right
+
+>undo
+>undo
+
+>pals 12
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 11
+>l
+!There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+Rack-Right
+
+>undo
+>undo
+
+>pals 23
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 22
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 21
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 33
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 32
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>pals 31
+>l
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
+!Rack-Right
+
+>undo
+>undo
+
+>undo
+
+>pals 10
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 21
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 22
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 23
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 11
+>flak flight
+by one point
+!There must be something here in the Sack Site!
+Rack-Right
+>undo
+>undo
+
+>pals 12
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 31
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 32
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+>pals 33
+>flak flight
+by one point
+There must be something here in the Sack Site!
+!Rack-Right
+>undo
+>undo
+
+#undo top commands
+>undo
+>undo
+>undo
+>undo
+
 >n
 
 >posh planks
 by one point
 
 #testcase-check-vc-posh-planks-rule-fallthrough
-WRONG
+Everything becomes a lot more sophisticated here. But not too sophisticated! Things are a bit run-down, right now, as evidenced by that yucky yacht nearby. You sense you should clean it, but you're not sure how. You're not posh enough to get near, you suspect!
 
 #testcase-check-vc-posh-planks-rule-if-sco-posh-planks-is-true
 >posh planks
@@ -694,7 +1430,7 @@ Oh, no, let's not make things TOO posh, here!
 by one point
 
 #testcase-check-vc-plucky-plot-rule-fallthrough
-WRONG
+Of course! Bucky-Bot!
 
 #testcase-check-vc-plucky-plot-rule-if-sco-plucky-plot-is-true
 >plucky plot
@@ -714,7 +1450,7 @@ But you already hatched a plucky plot to clean the yucky yacht!
 by one point
 
 #testcase-check-vc-yall-yank-rule-fallthrough
-WRONG
+The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.
 
 #testcase-check-vc-yall-yank-rule-if-sco-yall-yank-is-true
 >yall yank
@@ -724,7 +1460,7 @@ You've already pulled out the tall tank(s).
 by one point
 
 #testcase-check-vc-paul-panks-rule-fallthrough
-WRONG
+You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking.
 
 #testcase-check-vc-paul-panks-rule-if-sco-paul-panks-is-true
 >paul panks
@@ -746,35 +1482,44 @@ You already paid your respects.
 
 >s
 
+#testcase-check-vc-heed-hack-rule-if-sco-need-knack-is-false
+>heed hack
+But you have not figured out any basic hacks to progress further! Well, not yet. First things first.
+
+#testcase-think-table-of-verb-checks-vc-heed-hack-rule
+>think
+You can HEED HACK once you have an idea how to navigate the Treed Track.
+
 >need knack
 by one point
 
 #testcase-check-vc-need-knack-rule-fallthrough
-WRONG
+It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks.
 
 #testcase-check-vc-need-knack-rule-if-sco-need-knack-is-true
 >need knack
 You already got the knack for looking around! You won't forget it.
 >n
 >u
+
 #testcase-check-vc-mailing-mill-rule-if-sco-scaling-skill-is-false-or-sco-ailing-ill-is-false
 >mailing mill
-WRONG
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-WRONG
+You can place a mailing mill once you are at the top of Hailing Hill.
 
 >undo
 >undo
 
 >ailing ill
-WRONG
+by one point
 
 >mailing mill
-WRONG
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-WRONG
+You can place a mailing mill once you are at the top of Hailing Hill.
 
 >undo
 >undo
@@ -784,15 +1529,15 @@ WRONG
 by one point
 
 >mailing mill
-WRONG
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-WRONG
+You can place a mailing mill once you are at the top of Hailing Hill.
 
 >ailing ill
 by one point
 >mailing mill
-WRONG
+A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.
 >undo
 >undo
 >undo
@@ -805,17 +1550,17 @@ WRONG
 by one point
 
 #testcase-check-vc-plead-plaque-rule-fallthrough
-WRONG
+Oh my goodness! You've discovered a treasure that is as priceless as your quest, but more so! It expresses congratulations for getting this far and being so observant and also humbly suggests you also enjoy
 
 #testcase-check-vc-plead-plaque-rule-if-sco-plead-plaque-is-true
 >plead plaque
-You look over the plead plaque again. Man, even more fun adventures once you're done with Bright Brave Knight Knave! You totally can't wait to hit up other-ones, of you haven't already.
+You look over the plead plaque again. Man, even more fun adventures once you're done with Bright Brave Knight Knave! You totally can't wait to hit up Very Vile Fairy File, Quite Queer Night Near, Low-Key Learny Jokey Journey, Civil Seeming Drivel Dreaming and There Those Dare Doze, the other five entries in the Prime Pro-Rhyme Row series, of you haven't already.
 
 >heed hack
 by one point
 
 #testcase-check-vc-heed-hack-rule-fallthrough
-WRONG
+You figure what the Snide Sneak was really trying to say. Yep, there you go. You imagine it wouldn't be sneaky to tell you everything at once, and maybe they were sneakily giving you a reason to feel smart, solving this. And it's so easy, now you know what to do. You find two more passages.
 
 #testcase-check-vc-heed-hack-rule-if-sco-heed-hack-is-true
 >heed hack
@@ -825,16 +1570,53 @@ You look for other ways to hack through the Treed Track, but three all told is p
 by one point
 
 #testcase-check-vc-seed-sack-rule-fallthrough
-WRONG
+You manage to discover a seed sack nearby.
 
 #testcase-check-vc-seed-sack-rule-if-sco-seed-sack-is-true
 >seed sack
 You already got a seed sack!
 
+>e
+
+#testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
+>bell book
+You feel you do not have any artifacts to perform whatever ceremony you need to.
+
+#+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
+>covering candle
+You feel you do not have any artifacts to perform whatever ceremony you need to.
+
+>w
 >n
+
 >u
+
 >mailing mill
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+
+>undo
+
+>failing phil
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>bailing bill
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>wailing will
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>undo
+>undo
+>undo
+
+>ailing ill
+by one point
+
+>mailing mill
+A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
+
+>undo
+>undo
 
 >scaling skill
 by one point
@@ -842,12 +1624,7 @@ by one point
 >mailing mill
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
->failing phil
-Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
->bailing bill
-Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
->wailing will
-Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+>undo
 
 >ailing ill
 by one point
@@ -857,7 +1634,7 @@ by one point
 
 #testcase-check-vc-bailing-bill-rule-if-player-does-not-have-bold-bowl
 >bailing bill
-You sense you cannot offer Failing Phil what he needs. Yet.
+You sense you cannot offer Bailing Bill what he needs. Yet.
 
 #testcase-check-vc-failing-phil-rule-if-player-does-not-have-cold-coal
 >failing phil
@@ -865,35 +1642,56 @@ You sense you cannot offer Failing Phil what he needs. Yet.
 
 #testcase-check-vc-wailing-will-rule-if-player-does-not-have-sold-soul
 >wailing will
-You sense you cannot offer Failing Phil what he needs. Yet.
-
->u
->bailing bill
-WRONG
->failing phil
-WRONG
->wailing will
-WRONG
+You sense you cannot offer Wailing Will what he needs. Yet.
 
 #testcase-think-table-of-verb-checks-vc-bailing-bill-rule
 #testcase-think-table-of-verb-checks-vc-failing-phil-rule
 #testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
-You can contact Bailing Bill once you have something to offer him.
-You can contact Failing Phil once you have something to offer him.
-You can contact Wailing Will once you have something to offer him.
+You can contact Bailing Bill once you have something to offer him and the means to do so.
+You can contact Failing Phil once you have something to offer him and the means to do so.
+You can contact Wailing Will once you have something to offer him and the means to do so.
 
->d
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>e
+
+>e
+
+#testcase-check-vc-main-max-rule-if-sco-train-tracks-is-false
+>main max
+Yes, perhaps this place could and should become bigger and more important. As a transportation hub. But not as-is.
+
+#testcase-think-table-of-verb-checks-vc-main-max-rule
+>think
+You can say MAIN MAX once it's busier by the Lane, Lax.
+
+>train tracks
+by one point
 
 #testcase-check-vc-train-tracks-rule-fallthrough
-WRONG
+The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.
 
 #testcase-check-vc-train-tracks-rule-if-sco-train-tracks-is-true
 >train tracks
 You already created train tracks, though they could become sturdier and farther-reaching.
 
+#+testcase-think-table-of-verb-checks-vc-main-max-rule
+>think
+You can say MAIN MAX now it's busier by the Train Tracks.
+
+>main max
+by one point
+
 #testcase-check-vc-main-max-rule-fallthrough
-WRONG
+The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. A broad brash clod clash breaks out!
 
 #testcase-check-vc-main-max-rule-if-sco-main-max-is-true
 >main max
@@ -903,22 +1701,46 @@ You already upgraded the train tracks!
 >train tracks
 You already created train tracks.
 
+>pain packs
+by one point
+
 #testcase-check-vc-pain-packs-rule-fallthrough
-WRONG
+You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!
+You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
 >pain packs
 You already got some pain packs!
 
+>n
+
+#testcase-check-vc-loud-lies-rule-if-sco-trowed-tries-is-false
+>loud lies
+You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.
+
+#testcase-think-table-of-verb-checks-vc-loud-lies-rule
+>think
+You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
+
+>trowed tries
+by one point
+
 #testcase-check-vc-trowed-tries-rule-fallthrough
-WRONG
+You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!
 
 #testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
 >trowed tries
 Enough trying. You need to take action!
 
+#+testcase-think-table-of-verb-checks-vc-loud-lies-rule
+>think
+You can denounce LOUD LIES now you've tweaked the crowd more subjectively.
+
+>loud lies
+by one point
+
 #testcase-check-vc-loud-lies-rule-fallthrough
-WRONG
+With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.
 
 #+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
 >trowed tries
@@ -928,15 +1750,37 @@ No need to re-try.
 >loud lies
 You already declaimed the loud lies.
 
+>s
+
+>w
+
+>w
+
+>n
+
 >cast court
 by one point
 
+>passed port
+"Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
+
+>think
+You can visit the PASSED PORT once you have readable directions to get there.
+
+#testcase-check-vc-passed-port-rule-if-port-score-is-1
 >murky map
 by one point
 
+#+testcase-check-vc-passed-port-rule-if-port-score-is-1
 >passed port
+The Sassed Sort looks at the murky map. "Sorry, I can't quite read that yet."
+
+>think
 You can visit the PASSED PORT once you have readable directions to get there.
 
+>undo
+>undo
+>undo
 >undo
 >undo
 >undo
@@ -947,56 +1791,184 @@ You can visit the PASSED PORT once you have readable directions to get there.
 
 #testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
-You can visit the PASSED PORT once you have decent directions to get there.
+You can visit the PASSED PORT once you have readable directions to get there.
+
+>fast fort
+by one point
 
 #testcase-check-vc-fast-fort-rule-fallthrough
-WRONG
+"Fast Fort? Yes, yes, I know that place well. It won't be long," says the Sassed Sort.
 
+>fast fort
+But you're already here!
+
+#+testcase-check-vc-passed-port-rule-if-port-score-is-1
 >passed port
-The Sassed Sort looks at the glued glass. "It might help me if I had instructions that were hard to read. But we don't, yet."
+"Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
 
 >think
 You can visit the PASSED PORT once you have readable directions to get there.
 
+>glued glass
+by one point
+
 #testcase-check-vc-glued-glass-rule-fallthrough
-WRONG
+You don't particularly like Crude Crass Lewd Lass, but it does clue you as to what you need.
+
+>cast court
+by one point
 
 #testcase-check-vc-cast-court-rule-fallthrough
-WRONG
+"Cast Court? Yes, yes, I know that place well. It won't be long," says the Sassed Sort.
+
+>cast court
+But you're already here!
+
+>murky map
+by one point
 
 #testcase-check-vc-murky-map-rule-fallthrough
-WRONG
+Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.
 
 #+testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
-You can visit the PASSED PORT now you have decent directions to get there.
+You can visit the PASSED PORT now you have readable directions to get there.
+
+>passed port
+by one point
 
 #testcase-check-vc-passed-port-rule-fallthrough
 You hand the murky map and glued glass to the Sassed Sort. "Wow! Yeah, wow, it's been a while. But wait ... that's a safe route I hadn't considered. It'll save some time. Mind if I keep the map and glass in case I forget it?"
 Well, you could use the free inventory space. The trip, indeed, doesn't take long.
 
+>passed port
+But you're already here!
+
+#testcase-check-vc-time-toad-rule-if-toad-score-<-2
+>time toad
+A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.
+
+#testcase-check-vc-slosh-slick-rule-if-sco-quash-quick-is-false
+>slosh slick
+The area around the posh pick is too deep. Is there any way to lessen it?
+
+#testcase-think-table-of-verb-checks-vc-time-toad-rule
+#testcase-think-table-of-verb-checks-vc-slosh-slick-rule
+>think
+You can SLOSH SLICK once you've had someone make a path through the slime, slowed.
+You can summon the TIME TOAD once you have two artifacts it finds valuable.
+
+#testcase-think-table-of-verb-checks-vc-quash-quick-rule
+>quash quick
+Your current friends don't seem up to such a grimy task.
+
+#testcase-think-table-of-verb-checks-vc-quash-quick-rule
+>think
+You can QUASH QUICK once the right friends are helping you.
+
+>slashing sword
+by one point
+
 #testcase-check-vc-slashing-sword-rule-fallthrough
-WRONG
+The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!
+
+>gonear fief
+
+>brought brief
+by one point
+
+>bought beef
+by one point
+
+>wrought reef
+by one point
+
+#testcase-check-vc-done-dish-rule-if-fish-score-<-2
+>done dish
+The one-wish fun fish blups at you apologetically. You don't have anything to work with, to complete a dish.
+
+#testcase-think-table-of-verb-checks-vc-done-dish-rule
+>think
+You can make a DONE DISH once you've got certifiably acceptable ingredients for a dish.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>salad scent
+by one point
 
 #testcase-check-vc-salad-scent-rule-fallthrough
-WRONG
+Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid vent is way up there! You can't get there by yourself! The Snide Sneak offers to climb on you, letting the Meek Mooter do the dirty work.
 
 #testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
 >salad scent
 Wow! You must really like salad!
 
+>gonear fief
+
+>brought brief
+by one point
+
+>bought beef
+by one point
+
+>wrought reef
+by one point
+
+#+testcase-check-vc-done-dish-rule-if-fish-score-<-2
+>done dish
+The one-wish fun fish blups at you apologetically. You don't have enough to work with, to complete a dish.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >rhyme road
 by one point
 
 #testcase-check-vc-rhyme-road-rule-fallthrough
-WRONG
+The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
 
 #testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
 >rhyme road
 You already looked down Rhyme Road!
 
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+#testcase-check-vc-stew-stuff-rule-if-sco-grew-gruff-is-false
+>stew stuff
+You haven't steeled yourself to look for what you need, yet. You feel bad for the people who might've lost what they need to eat.
+
+>think
+You can find STEW STUFF once you don't feel bad searching through left-behind belongings.
+
+>grew gruff
+by one point
+
 #testcase-check-vc-grew-gruff-rule-fallthrough
-WRONG
+You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
 
 #testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
 >grew gruff
@@ -1006,29 +1978,99 @@ Don't want to overdo it!
 >new nuff
 You have nothing to make new 'nuff, yet.
 
+#testcase-think-table-of-verb-checks-vc-new-nuff-rule
+>think
+You can find STEW STUFF now you don't feel bad searching through left-behind belongings.
+You can say NEW NUFF once you have something of questionable age.
+
+>stew stuff
+by one point
+
 #testcase-check-vc-stew-stuff-rule-fallthrough
-WRONG
+Now that you know what to look for, it's not too bad to find. You find enough to make a stew.
 
 #testcase-check-vc-stew-stuff-rule-if-sco-stew-stuff-is-true
 >stew stuff
 You can't make any more stew stuff.
 
+#+testcase-think-table-of-verb-checks-vc-new-nuff-rule
+>think
+You can say NEW NUFF now you have something of questionable age.
+
+>gonear fief
+
+>brought brief
+by one point
+
+>bought beef
+by one point
+
+>wrought reef
+by one point
+
+#testcase-check-vc-done-dish-rule-if-sco-new-nuff-is-false
+>done dish
+The one-wish fun fish blups suspiciously at the stew stuff. As if there is no assurance the stew stuff is any good.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>new nuff
+by one point
+
 #testcase-check-vc-new-nuff-rule-fallthrough
-WRONG
+Boom! The stew stuff isn't perfectly shiny, but it's, well, new 'nuff. It's canned. It doesn't need to be perfectly fresh.
 
 #testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
 >new nuff
 You already revitalized the stew stuff.
 
+>e
+
+>e
+
+#+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
+>bell book
+You feel you do not have enough artifacts to perform whatever ceremony you need to.
+
+#+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
+>covering candle
+You feel you do not have enough artifacts to perform whatever ceremony you need to.
+
+#testcase-think-table-of-verb-checks-vc-bell-book-rule
+>think
+You can say BELL BOOK once you have two other things to prepare the summoning ceremony.
+
+>w
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
 #testcase-check-vc-trod-trash-rule-fallthrough
-WRONG
+You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
+You and the Guide Geek and the Weak Wooter look at each other for a bit.
 
 #testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
 >trod trash
 But you already got people to trod on the trash!
 
+>s
+
+>bought beef
+by one point
+
 #testcase-check-vc-bought-beef-rule-fallthrough
-WRONG
+You convince the people that you bought beef, whether it be physical or more mental.
+You seem to have gained a bit of respect, but you need more.
 
 #testcase-check-vc-bought-beef-rule-if-sco-bought-beef-is-true
 >bought beef
@@ -1041,8 +2083,12 @@ It's still too chaotic to do much!
 >think
 You can make a WROUGHT REEF once you've bluffed your way through the fief.
 
+>brought brief
+by one point
+
 #testcase-check-vc-brought-brief-rule-fallthrough
-WRONG
+You manage to pretend you had huge plans. You wince inwardly, sure others will call your bluff. But they do not. Everyone is impressed.
+Everyone disperses around you, as they realize you're nobody to be trifled with.
 
 #testcase-check-vc-brought-brief-rule-if-sco-brought-brief-is-true
 >brought brief
@@ -1052,31 +2098,41 @@ You already pretended you brought huge plans!
 >think
 You can make a WROUGHT REEF now you've bluffed your way through the fief.
 
+>wrought reef
+by one point
+
 #testcase-check-vc-wrought-reef-rule-fallthrough
-WRONG
+You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.
 
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
 >wrought reef
 You already wrought the reef!
 
+>done dish
+by one point
+
 #testcase-check-vc-done-dish-rule-fallthrough
-WRONG
+You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.
 
 #testcase-check-vc-will-won-rule-if-sco-fill-fun-is-false
 >will won
 Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.
 
-#testcase-check-vc-ill-un-in-rule-if-sco-fill-fun-is-false
+#testcase-check-vc-ill-un-rule-if-sco-fill-fun-is-false
 >illun
-WRONG
+Whether or not you are illun' or illin', you may need to cheer yourself up to face that truth constructively.
 
+#testcase-think-table-of-verb-checks-vc-ill-un-rule
 #testcase-think-table-of-verb-checks-vc-will-won-rule
 >think
 You can say ILLUN once you're a little less miserable.
 You can say WILL WON once you're a little less miserable.
 
+>fill fun
+by one point
+
 #testcase-check-vc-fill-fun-rule-fallthrough
-WRONG
+You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course.
 
 #+testcase-think-table-of-verb-checks-vc-will-won-rule
 >think
@@ -1087,37 +2143,81 @@ You can say WILL WON now you're a little less miserable.
 >fill fun
 You already filled yourself up with fun!
 
+>will won
+by one point
+
 #testcase-check-vc-will-won-rule-fallthrough
-WRONG
+Yes. You sit and think. You regain your will to win. You are ready to move on. You can move in any direction back to familiar territory, now.
+You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort.
 
 #testcase-check-vc-will-won-rule-if-sco-will-won-is-true
 >will won
 You already have a will to win!
 
+>illun
+by one point
+
 #testcase-check-vc-ill-un-rule-fallthrough
-WRONG
+You come to grips with how you were slightly illun'. This may not be terribly practical, but it's an important part of the Knave code now, you remember.
+You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction.
 
 #testcase-check-vc-ill-un-rule-if-sco-ill-un-is-true
 >illun
 You already identified illun'!
 
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
 #testcase-check-vc-hack-height-rule-fallthrough
-WRONG
+You feel less dizzy and such this high up. It's a relief.
+
+>slack slight
+by one point
 
 #testcase-check-vc-slack-slight-rule-fallthrough
-WRONG
+The oppression has a slack, slight. You feel better.
+
+>quack quite
+by one point
 
 #testcase-check-vc-quack-quite-rule-fallthrough
-WRONG
+You show you can blow off fear, a little, by quacking "quite."
+The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.
+There's a sour slate lying around, which you don't want to touch in its current form.
+The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right.
+
+>power plate
+by one point
 
 #testcase-check-vc-power-plate-rule-fallthrough
-WRONG
+Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.
 
 >flak flight
 by one point
 
 #testcase-check-vc-flak-flight-rule-fallthrough
-WRONG
+The verbal and mental flak that clung to you? Some of it peels off. It feels good.
+You feel good about doing more than the bare minimum to repel your fears. It's something you always feared, because what if you do more than the bare minimum, and your fears catch up to you anyway? That'd be depressing. Maybe it will happen. But since you've beaten your fears back a bit further, it will take longer than if you do more than the bare minimum, feel fear, and feel silly for not doing more to repel fears in the future. So that's something.
 
 #testcase-check-vc-flak-flight-rule-if-sco-flak-flight-is-true
 >flak flight
@@ -1135,52 +2235,97 @@ You already hacked the height. You don't want to, like, become a total hack!
 >quack quite
 You already quacked "Quite!"
 
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+
 #testcase-check-vc-quash-quick-rule-fallthrough
-WRONG
+The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.
 
 #testcase-check-vc-quash-quick-rule-if-sco-quash-quick-is-true
 >quash quick
 You already quashed things quickly!
 
+#+testcase-think-table-of-verb-checks-vc-slosh-slick-rule
+>think
+You can SLOSH SLICK now you've had someone make a path through the slime, slowed.
+
+>slosh slick
+by one point
+
+#testcase-check-vc-slosh-slick-rule-fallthrough
+The Fried Freak has no problem sloshing through.
+Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.
+
 #testcase-check-vc-slosh-slick-rule-if-sco-slosh-slick-is-true
 >slosh slick
 You already figured that part of getting the pick!
 
-#testcase-check-vc-slosh-slick-rule-fallthrough
-WRONG
+#+testcase-think-table-of-verb-checks-vc-time-toad-rule
+>think
+You can summon the TIME TOAD now you have two artifacts it finds valuable.
+
+>time toad
+by one point
 
 #testcase-check-vc-time-toad-rule-fallthrough
-WRONG
+A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up the slime slowed rime road as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.
 
+>gonear passed port
 #testcase-check-vc-time-toad-rule-if-sco-time-toad-is-true
 >time toad
 The time toad's gift of cold coal should be enough.
 
+>gonear dander dove
+
+>stander stove
+by one point
+
 #testcase-check-vc-stander-stove-rule-fallthrough
-WRONG
+You picture a stove to step into! It's weird, but it's good for burning excess dander.
 
 #testcase-check-vc-stander-stove-rule-if-sco-stander-stove-is-true
 >stander stove
-You already found the stander stove!
+You already discovered the stander stove to warm yourself spiritually and physically!
+
+>candor cove
+by one point
 
 #testcase-check-vc-candor-cove-rule-fallthrough
-WRONG
+You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
+You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.
 
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
 >candor cove
-You already successfully sought out the candor cove. You need something else uplifting. Something more dreamy, stuff to reach for.
-WRONG change this statement
+You already successfully sought out the candor cove and its concrete goals.
 
 >grander grove
 by one point
 
 #testcase-check-vc-grander-grove-rule-fallthrough
-WRONG
+You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.
+You no longer have dander on your mind.
 
 #testcase-check-vc-grander-grove-rule-if-sco-grander-grove-is-true
 >grander grove
-You already successfully sought out the grander grove. You need something else uplifting. Something more concrete.
-WRONG fix msg
+You already successfully sought out the grander grove and its dreamy goals.
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
 
 #testcase-check-vc-covering-candle-rule-if-sco-bell-book-is-false
 >covering candle
@@ -1190,8 +2335,11 @@ The first part of the ceremony comes first. I think you know what it is?
 >think
 You can say COVERING CANDLE once you have what you need for the summoning ceremony.
 
+>bell book
+by one point
+
 #testcase-check-vc-bell-book-rule-fallthrough
-WRONG
+Received adventure game knowledge FTW! The bell and book are in place. There is one more item. Perhaps you can guess it.
 
 #testcase-check-vc-bell-book-rule-if-sco-bell-book-is-true
 >bell book
@@ -1201,18 +2349,29 @@ You already got the bell and book! Now for the next part.
 >think
 You can say COVERING CANDLE now you have what you need for the summoning ceremony.
 
+>covering candle
+by one point
+
 #testcase-check-vc-covering-candle-rule-fallthrough
-WRONG
+The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. "DESTROY THEM. THEY ARE LEGACIES OF A GREEDY LIFE." You do. The knell nook begins shaking and soon collapses.
+
+>nowt nuff
+by one point
 
 #testcase-check-vc-nowt-nuff-rule-fallthrough
-WRONG
+You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.
+You see a light at the end of the tunnel. But it is not enough.
 
 #testcase-check-vc-nowt-nuff-rule-if-sco-nowt-nuff-is-true
 >nowt nuff
 You already nullified certain worries and complaints!
 
+>stout stuff
+by one point
+
 #testcase-check-vc-stout-stuff-rule-fallthrough
-WRONG
+Yup. You feel stouter now.
+You feel as though you can leave, if you want, though it's always fun to try and do a bit more.
 
 #testcase-check-vc-stout-stuff-rule-if-sco-stout-stuff-is-true
 >stout stuff
@@ -1222,29 +2381,53 @@ You already found ways to be stout!
 by one point
 
 #testcase-check-vc-flout-fluff-rule-fallthrough
-WRONG
+You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.
+You went the extra mile to rid yourself of angst.
 
 #testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
 >flout fluff
 You already flouted fluff!
 
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
 #testcase-check-vc-harder-helm-rule-fallthrough
-WRONG
+Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
 
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
 That sort of repeated ardor won't get you anywhere!
+
+>e
+
+>s
+
+>e
 
 >eyeing ease
 score and bonus
 by one point
 
 #testcase-check-vc-eyeing-eying-ease-rule-fallthrough
-WRONG
+A good Bright Brave Knight Knave is always on the lookouts for shortcuts and simplicity. Perhaps a bit too much, but it's not the worst fault to have.
 
 #testcase-check-vc-eyeing-eying-ease-rule-if-sco-eyeing-eying-ease-is-true
 >eyeing ease
 Well, you know not to repeat yourself once you've fished in interesting waters--you found what was there the first time, and you don't want to look like a beggar, now!
+
+>in
 
 #testcase-check-vc-fusing-phew-rule-if-lou-score-<-2
 >fusing phew
@@ -1254,15 +2437,23 @@ Once you have more than one perspective to fuse together, that'll work.
 >think
 You can say FUSING PHEW once you have commiserated more than one way with Lou.
 
+>using you
+by one point
+
 #testcase-check-vc-using-you-rule-fallthrough
-WRONG
+You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.
+Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.
 
 #testcase-check-vc-using-you-rule-if-sco-using-you-is-true
 >using you
-You already let Lou know the truth!
+You already let Lou know the truth about alcohol!
+
+>boozing boo
+by one point
 
 #testcase-check-vc-boozing-boo-rule-fallthrough
-WRONG
+You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.
+Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help!
 
 #testcase-check-vc-boozing-boo-rule-if-sco-boozing-boo-is-true
 >boozing boo
@@ -1272,32 +2463,70 @@ Don't overdo the moralizing!
 >think
 You can say FUSING PHEW now you have commiserated more than one way with Lou.
 
+>fusing phew
+by one point
+
 #testcase-check-vc-fusing-phew-rule-fallthrough
-WRONG
+"Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?"
 
 #testcase-check-vc-fusing-phew-rule-if-sco-fusing-phew-is-true
 >fusing phew
 Fusing ideas once was exhausting enough.
 
+>spurning spew
+by one point
+
 #testcase-check-vc-spurning-spew-rule-fallthrough
-WRONG
+Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
+
+>out
+
+>u
+
+>bailing bill
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>failing phil
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+>wailing will
+Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.
+
+#testcase-think-table-of-verb-checks-vc-bailing-bill-rule
+#testcase-think-table-of-verb-checks-vc-failing-phil-rule
+#testcase-think-table-of-verb-checks-vc-wailing-will-rule
+>think
+You can contact Bailing Bill once you have something to offer him and the means to do so.
+You can contact Failing Phil once you have something to offer him and the means to do so.
+You can contact Wailing Will once you have something to offer him and the means to do so.
+
+>scaling skill
+by one point
 
 #testcase-check-vc-scaling-skill-rule-fallthrough
-WRONG
+You work on your climbing ability. What do you know, it pays off!
+Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.
 
 #testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
 >scaling skill
 You already improved your climbing ability!
 
+>ailing ill
+by one point
+
 #testcase-check-vc-ailing-ill-rule-fallthrough
-WRONG
+Man! Without getting too overwrought, you relate your disappointments and shortcomings while on your journey. Hailing Hill seems more welcoming now.
+You stand at the top of the hill and feel more connected with others despite, or perhaps because of, their faults.
 
 #testcase-check-vc-ailing-ill-rule-if-sco-ailing-ill-is-true
 >ailing ill
 You already expressed that everyone hurts!
 
+>mailing mill
+by one point
+
 #testcase-check-vc-mailing-mill-rule-fallthrough
-WRONG
+Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.
 
 #testcase-check-vc-mailing-mill-rule-if-sco-mailing-mill-is-true
 >mailing mill
@@ -1307,18 +2536,27 @@ The mailing mill is already on Hailing Hill!
 #+testcase-think-table-of-verb-checks-vc-failing-phil-rule
 #+testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
-You can contact Bailing Bill now you have something to offer him.
-You can contact Failing Phil now you have something to offer him.
-You can contact Wailing Will now you have something to offer him.
+You can contact Bailing Bill now you have something to offer him and the means to do so.
+You can contact Failing Phil now you have something to offer him and the means to do so.
+You can contact Wailing Will now you have something to offer him and the means to do so.
+
+>failing phil
+by one point
 
 #testcase-check-vc-failing-phil-rule-fallthrough
-WRONG
+Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.
+
+>wailing will
+by one point
 
 #testcase-check-vc-wailing-will-rule-fallthrough
-WRONG
+Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.
+
+>bailing bill
+by one point
 
 #testcase-check-vc-bailing-bill-rule-fallthrough
-WRONG
+Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.
 
 #testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
 >bailing bill
@@ -1332,8 +2570,24 @@ You have already helped Wailing Will!
 >failing phil
 You have already helped Failing Phil!
 
+>d
+
+>d
+
+>banish harder helm
+
+#testcase-check-vc-fight-fave-rule-if-trystcount-<-number-of-trystitems
+>fight fave
+You look at the track tryst lack list. You only have four of the five things you need to succeed.
+
+>undo
+>undo
+
+>fight fave
+by one point
+
 #testcase-check-vc-fight-fave-rule-fallthrough
-WRONG
+You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.
 
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
 >fight fave
@@ -1349,15 +2603,25 @@ There must be another way to see Trite Tully!
 >undo
 >undo
 
+>frightfully
+by one point
+
 #testcase-check-vc-fright-fully-rule-fallthrough
-WRONG
+Well, that got rid of some of the irony of "trite."
+Tully shakes their head a bit. You've seen into them, but you feel like you can do more.
 
 #testcase-check-vc-fright-fully-rule-if-sco-fright-fully-is-true
 >frightfully
 There must be another way to see Trite Tully!
 
+>bright bully
+by one point
+
 #testcase-check-vc-bright-bully-rule-fallthrough
-WRONG
+Yes, indeed, it isn't just about being trite or having irony.
+Trite Tully looks shocked! "No! No! It can't be!" Suddenly, they look much more humble.
+"Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!"
+You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.
 
 #testcase-reject-end-table-of-verb-checks-vc-ailing-ill-rule
 >ailing ill
@@ -1655,5 +2919,10 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >yall yank
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+>bam bye
+by one point
+
 #testcase-check-vc-bam-bye-rule-fallthrough
-WRONG
+You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?
+Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.
+

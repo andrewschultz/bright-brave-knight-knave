@@ -27,7 +27,7 @@ by one point
 >x list
 
 >jack gist
-WRONG
+Your score and bonus points just went up by one point.
 
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
@@ -55,7 +55,7 @@ by one point
 >w
 
 >write rave
-by two point
+by two points
 
 #testcase-alt-words-table-of-verb-checks-8-what-whoa-whoah
 >what whoa
@@ -101,7 +101,9 @@ by one point
 by one point
 
 >out
+
 >e
+
 >n
 
 >w
@@ -139,6 +141,7 @@ by one point
 
 >s
 >e
+
 >n
 
 >posh planks
@@ -191,8 +194,95 @@ by one point
 >seed sack
 by one point
 
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
 >rhyme road
 by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>e
+
+>n
+
+>e
+
+>e
 
 #testcase-alt-words-table-of-verb-checks-54-trod-flawed-trash-flash
 >flawed flash
@@ -200,7 +290,85 @@ by one point
 
 >undo
 
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
 >flak flight
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+
+>slosh slick
+by one point
+
+>time toad
+by one point
+
+>stander stove
 by one point
 
 #testcase-alt-words-table-of-verb-checks-69-candor-candour-cove
@@ -209,11 +377,57 @@ by one point
 
 >undo
 
+>candor cove
+by one point
+
 >grander grove
+by one point
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
 by one point
 
 >flout fluff
 by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
 
 #testcase-alt-words-table-of-verb-checks-4-eyeing-eying-ease
 >eyeing eying ease
@@ -223,5 +437,57 @@ by one point
 
 >eyeing ease
 score and bonus
+by one point
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+
+>bam bye
 by one point
 

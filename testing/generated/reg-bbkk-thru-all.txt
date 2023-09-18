@@ -28,10 +28,10 @@ The cave collapses. There's a passage down, but next to it is a hold-hole. Perha
 >x list
 
 >jack gist
-WRONG
+Your score and bonus points just went up by one point.
 
 #testcase-run-vr-jack-gist-rule-default
-WRONG
+Wow! You figured what to do. Now instead of typing X LIST, you can just type X or even I.
 
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
@@ -72,7 +72,7 @@ by one point
 >pass path
 
 #testcase-run-vr-pass-path-rule-default
-WRONG
+Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.
 
 #+testcase-room-names-bass-bath
 `Pass Path
@@ -81,7 +81,8 @@ WRONG
 by one point
 
 #testcase-run-vr-mass-math-rule-default
-WRONG
+You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
+You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.
 
 >w
 
@@ -89,10 +90,16 @@ WRONG
 `Rut Row
 
 >write rave
-by two point
+by two points
+
+#testcase-run-vr-write-right-rave-rule-if-extra-rave-points
+And you've seen so much of the game!
 
 #testcase-run-vr-write-right-rave-rule-default
-WRONG
+Your score and bonus points just went up by two points.
+
+>score
+You have scored a total of 7 out of 85 points and need 75 to win. You have found 4 of 14 bonus points so far.
 
 >what whoah
 by one point
@@ -109,19 +116,18 @@ It sounds artificial at first to pretend you saw something. Then you think, if I
 by one point
 
 #testcase-run-vr-hid-hum-rule-default
-WRONG
+You figure there must be something here, and you are right ... there's a kid. And not just any kid! A coughin' coy boffin boy! They seem to be holding something behind their back. They don't trust you yet. Who would, in such an urban hellscape?
 
 >kid come
 by one point
 
 #testcase-run-vr-kid-come-rule-default
-WRONG
+The coughin' coy boffin boy looks awkwardly at you. He shuffles forward hesitantly. He seems to be hiding something behind his back!
 
 >rid rum
 by one point
 
 #testcase-run-vr-rid-rum-rule-default
-WRONG
 
 >in
 
@@ -139,10 +145,12 @@ by one point
 by one point
 
 #testcase-run-vr-nude-napper-rule-default
-WRONG
+You're liberal and lenient and all that, but some things cross the line. It's something you didn't want to see, and something that's awkward to deal with, but you find the offender and suggest they move on. If they aren't physically hurting anyone, they are, and will be, in others' personal space. There's no need for lectures. You nod your head pointedly. They understand, or seem to. Perhaps they will just move on elsewhere, but maybe if enough people speak up, they'll get the big message.
 
 >out
+
 >e
+
 >n
 
 #testcase-room-names-recruiter
@@ -157,25 +165,25 @@ WRONG
 by one point
 
 #testcase-run-vr-stride-streak-rule-default
-WRONG
+Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.
 
 >guide geek
 by one point
 
 #testcase-run-vr-guide-geek-rule-default
-WRONG
+The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
 
 >fried freak
 by one point
 
 #testcase-run-vr-fried-freak-rule-default
-WRONG
+The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
 
 >snide sneak
 by one point
 
 #testcase-run-vr-snide-sneak-rule-default
-WRONG
+The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
 
 >e
 
@@ -183,19 +191,22 @@ WRONG
 by one point
 
 #testcase-run-vr-meek-mooter-rule-default
-WRONG
+What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they fill in each other's holes, personality-wise.
+/^\[NOTE: you can say BYE
+/^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
+/^\[Your score just went up by one point.
 
 >weak wooter
 by one point
 
 #testcase-run-vr-weak-wooter-rule-default
-WRONG
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter.
 
 >chic shooter
 by one point
 
 #testcase-run-vr-chic-shooter-rule-default
-WRONG
+The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
 
 >w
 >fried freak
@@ -207,6 +218,7 @@ by one point
 
 >s
 >e
+
 >n
 
 #testcase-room-names-bosh-blanks
@@ -216,7 +228,7 @@ by one point
 by one point
 
 #testcase-run-vr-posh-planks-rule-default
-WRONG
+Everything becomes a lot more sophisticated here. But not too sophisticated! Things are a bit run-down, right now, as evidenced by that yucky yacht nearby. You sense you should clean it, but you're not sure how. You're not posh enough to get near, you suspect!
 
 #+testcase-room-names-bosh-blanks
 `Posh Planks
@@ -225,7 +237,7 @@ WRONG
 by one point
 
 #testcase-run-vr-plucky-plot-rule-default
-WRONG
+Of course! Bucky-Bot!
 
 >s
 >w
@@ -243,14 +255,14 @@ WRONG
 >yall yank
 by one point
 
-#testcase-run-vr-yall-yank-rule-default
-WRONG
+#testcase-run-vr-yall-yank-rule-fallthrough
+The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.
 
 >paul panks
 by one point
 
 #testcase-run-vr-paul-panks-rule-default
-WRONG
+You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking.
 
 >w
 
@@ -275,52 +287,87 @@ WRONG
 by one point
 
 #testcase-run-vr-need-knack-rule-default
-WRONG
+It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks.
 
 >plead plaque
 by one point
 
 #testcase-run-vr-plead-plaque-rule-default
-WRONG
+Oh my goodness! You've discovered a treasure that is as priceless as your quest, but more so! It expresses congratulations for getting this far and being so observant and also humbly suggests you also enjoy
 
 >heed hack
 by one point
 
 #testcase-run-vr-heed-hack-rule-default
-WRONG
+You figure what the Snide Sneak was really trying to say. Yep, there you go. You imagine it wouldn't be sneaky to tell you everything at once, and maybe they were sneakily giving you a reason to feel smart, solving this. And it's so easy, now you know what to do. You find two more passages.
 
 >seed sack
 by one point
 
 #testcase-run-vr-seed-sack-rule-default
-WRONG
+You manage to discover a seed sack nearby.
+
+>n
+
+>e
+
+>e
 
 #testcase-room-names-lane-lax
 `Lane, Lax
 
+>train tracks
+by one point
+
 #testcase-run-vr-train-tracks-rule-default
-WRONG
+The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.
 
 #+testcase-room-names-lane-lax
 `Train Tracks
 
+>main max
+by one point
+
 #testcase-run-vr-main-max-rule-default
-WRONG
+The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. A broad brash clod clash breaks out!
+
+>pain packs
+by one point
 
 #testcase-run-vr-pain-packs-rule-default
-WRONG
+You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!
+You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
+
+>n
 
 #testcase-room-names-wowed-wise-crowd-cries
 Wowed Wise Crowd Cries
 
+>trowed tries
+by one point
+
 #testcase-run-vr-trowed-tries-rule-default
-WRONG
+You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!
+
+>loud lies
+by one point
 
 #testcase-run-vr-loud-lies-rule-default
-WRONG
+With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
 
 #testcase-run-vr-fast-fort-rule-default
-WRONG
+"Fast Fort? Yes, yes, I know that place well. It won't be long," says the Sassed Sort.
 
 #testcase-room-names-fast-fort
 `Fast Fort
@@ -333,11 +380,17 @@ Posh Planks
 `Fast Fort
 The Sassed Sort nods and guides the yacht back to Fast Fort.
 
+>glued glass
+by one point
+
 #testcase-run-vr-glued-glass-rule-default
-WRONG
+You don't particularly like Crude Crass Lewd Lass, but it does clue you as to what you need.
+
+>cast court
+by one point
 
 #testcase-run-vr-cast-court-rule-default
-WRONG
+"Cast Court? Yes, yes, I know that place well. It won't be long," says the Sassed Sort.
 
 #testcase-room-names-cast-court
 `Cast Court
@@ -350,8 +403,17 @@ Posh Planks
 `Cast Court
 The Sassed Sort nods and guides the yacht back to Cast Court.
 
+>murky map
+by one point
+
 #testcase-run-vr-murky-map-rule-default
-WRONG
+Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.
+
+>passed port
+by one point
+
+#testcase-room-names-passed-port
+`Passed Port
 
 #testcase-run-vr-passed-port-rule-fallthrough
 #testcase-run-vr-passed-port-rule-if-passed-port-is-unvisited
@@ -362,186 +424,413 @@ Well, you could use the free inventory space. The trip, indeed, doesn't take lon
 >in
 Posh Planks
 
+>passed port
+
+Passed Port
+
+>slashing sword
+by one point
+
 #testcase-run-vr-slashing-sword-rule-default
-WRONG
+The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!
+
+>salad scent
+by one point
 
 #testcase-run-vr-salad-scent-rule-default
-WRONG
+Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid vent is way up there! You can't get there by yourself! The Snide Sneak offers to climb on you, letting the Meek Mooter do the dirty work.
 
 >rhyme road
 by one point
 
 #testcase-run-vr-rhyme-road-rule-default
-WRONG
+The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
 
 #testcase-room-names-too-tough-blue-bluff
 `Too-Tough Blue Bluff
 
+>grew gruff
+by one point
+
 #testcase-run-vr-grew-gruff-rule-default
-WRONG
+You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
+
+>stew stuff
+by one point
 
 #testcase-run-vr-stew-stuff-rule-default
-WRONG
+Now that you know what to look for, it's not too bad to find. You find enough to make a stew.
+
+>new nuff
+by one point
 
 #testcase-run-vr-new-nuff-rule-default
-WRONG
+Boom! The stew stuff isn't perfectly shiny, but it's, well, new 'nuff. It's canned. It doesn't need to be perfectly fresh.
+
+>e
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
 
 #testcase-run-vr-trod-trash-rule-default
-WRONG
+You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
+You and the Guide Geek and the Weak Wooter look at each other for a bit.
 
-#testcase-room-names-thought-theif-fought-fief
+>s
+
+#testcase-room-names-thought-thief-fought-fief
 `Thought-Thief-Fought Fief
 
+>bought beef
+by one point
+
 #testcase-run-vr-bought-beef-rule-default
-WRONG
+You convince the people that you bought beef, whether it be physical or more mental.
+You seem to have gained a bit of respect, but you need more.
+
+>brought brief
+by one point
 
 #testcase-run-vr-brought-brief-rule-default
-WRONG
+You manage to pretend you had huge plans. You wince inwardly, sure others will call your bluff. But they do not. Everyone is impressed.
+Everyone disperses around you, as they realize you're nobody to be trifled with.
+
+>wrought reef
+by one point
 
 #testcase-run-vr-wrought-reef-rule-default
-WRONG
+You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.
 
-#+testcase-room-names-thought-theif-fought-fief
+#+testcase-room-names-thought-thief-fought-fief
 `Wrought Reef
 
+>done dish
+by one point
+
 #testcase-run-vr-done-dish-rule-default
-WRONG
+You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.
 
 #testcase-room-names-nil-none
 `Nil, None
 
+>fill fun
+by one point
+
 #testcase-run-vr-fill-fun-rule-default
-WRONG
+You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course.
+
+>will won
+by one point
 
 #testcase-run-vr-will-won-rule-default
-WRONG
+Yes. You sit and think. You regain your will to win. You are ready to move on. You can move in any direction back to familiar territory, now.
+You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort.
+
+>illun
+by one point
 
 #testcase-run-vr-ill-un-rule-default
-WRONG
+You come to grips with how you were slightly illun'. This may not be terribly practical, but it's an important part of the Knave code now, you remember.
+You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction.
+
+>n
+
+`Wrought Reef
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
 
 #testcase-room-names-lack-light-black-blight
 `Lack-Light Black Blight
 
+>hack height
+by one point
+
 #testcase-run-vr-hack-height-rule-default
-WRONG
+You feel less dizzy and such this high up. It's a relief.
+
+>slack slight
+by one point
 
 #testcase-run-vr-slack-slight-rule-default
-WRONG
+The oppression has a slack, slight. You feel better.
+
+>quack quite
+by one point
 
 #testcase-run-vr-quack-quite-rule-default
-WRONG
+You show you can blow off fear, a little, by quacking "quite."
+The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.
+There's a sour slate lying around, which you don't want to touch in its current form.
+The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right.
+
+>power plate
+by one point
 
 #testcase-run-vr-power-plate-rule-default
-WRONG
+Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.
 
 >flak flight
 by one point
 
 #testcase-run-vr-flak-flight-rule-default
-WRONG
+The verbal and mental flak that clung to you? Some of it peels off. It feels good.
+You feel good about doing more than the bare minimum to repel your fears. It's something you always feared, because what if you do more than the bare minimum, and your fears catch up to you anyway? That'd be depressing. Maybe it will happen. But since you've beaten your fears back a bit further, it will take longer than if you do more than the bare minimum, feel fear, and feel silly for not doing more to repel fears in the future. So that's something.
 
-#testcase-room-names-passed-port
-`Passed Port
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
 
 #testcase-run-vr-quash-quick-rule-default
-WRONG
+The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.
+
+>slosh slick
+by one point
 
 #testcase-run-vr-slosh-slick-rule-default
-WRONG
+The Fried Freak has no problem sloshing through.
+Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.
+
+>time toad
+by one point
 
 #testcase-run-vr-time-toad-rule-default
-WRONG
+A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up the slime slowed rime road as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.
 
 #testcase-room-names-dander-dove
 `Dander, Dove
 
+>stander stove
+by one point
+
 #testcase-run-vr-stander-stove-rule-default
-WRONG
+You picture a stove to step into! It's weird, but it's good for burning excess dander.
+
+>candor cove
+by one point
 
 #testcase-run-vr-candor-cove-rule-default
-WRONG
+You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
+You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.
 
 >grander grove
 by one point
 
 #testcase-run-vr-grander-grove-rule-default
-WRONG
+You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.
+You no longer have dander on your mind.
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
 
 #testcase-room-names-knell-nook
 `Knell Nook
 
+>bell book
+by one point
+
 #testcase-run-vr-bell-book-rule-default
-WRONG
+Received adventure game knowledge FTW! The bell and book are in place. There is one more item. Perhaps you can guess it.
+
+>covering candle
+by one point
 
 #testcase-run-vr-covering-candle-rule-default
-WRONG
-
-#testcase-route-rough-name
-`Route, Rough
+The knell nook shakes. A spirit appears -- it is a sold soul! It nods with familiarity at the posh pick and proud prize. "DESTROY THEM. THEY ARE LEGACIES OF A GREEDY LIFE." You do. The knell nook begins shaking and soon collapses.
 
 #testcase-room-names-route-rough
 `Route, Rough
 
+>nowt nuff
+by one point
+
 #testcase-run-vr-nowt-nuff-rule-default
-WRONG
+You recall some hang-ups you've had for a while, and you realize it's time to move on, and it has been for a while.
+You see a light at the end of the tunnel. But it is not enough.
+
+>stout stuff
+by one point
 
 #testcase-run-vr-stout-stuff-rule-default
-WRONG
+Yup. You feel stouter now.
+You feel as though you can leave, if you want, though it's always fun to try and do a bit more.
 
 >flout fluff
 by one point
 
 #testcase-run-vr-flout-fluff-rule-default
-WRONG
+You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.
+You went the extra mile to rid yourself of angst.
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
 
 #testcase-run-vr-harder-helm-rule-default
-WRONG
+Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
+
+>e
+
+>s
+
+>e
 
 >eyeing ease
 score and bonus
 by one point
 
 #testcase-run-vr-eyeing-eying-ease-rule-default
-WRONG
+A good Bright Brave Knight Knave is always on the lookouts for shortcuts and simplicity. Perhaps a bit too much, but it's not the worst fault to have.
+
+>in
 
 #testcase-room-names-bruising-brew
 `Bruising Brew
 
+>using you
+by one point
+
 #testcase-run-vr-using-you-rule-default
-WRONG
+You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.
+Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.
+
+>boozing boo
+by one point
 
 #testcase-run-vr-boozing-boo-rule-default
-WRONG
+You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.
+Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help!
+
+>fusing phew
+by one point
 
 #testcase-run-vr-fusing-phew-rule-default
-WRONG
+"Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?"
+
+>spurning spew
+by one point
 
 #testcase-run-vr-spurning-spew-rule-default
-WRONG
+Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
+
+>out
+
+>u
 
 #testcase-room-names-hailing-hill
 `Hailing Hill
 
+>scaling skill
+by one point
+
 #testcase-run-vr-scaling-skill-rule-default
-WRONG
+You work on your climbing ability. What do you know, it pays off!
+Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.
+
+>ailing ill
+by one point
 
 #testcase-run-vr-ailing-ill-rule-default
-WRONG
+Man! Without getting too overwrought, you relate your disappointments and shortcomings while on your journey. Hailing Hill seems more welcoming now.
+You stand at the top of the hill and feel more connected with others despite, or perhaps because of, their faults.
+
+>mailing mill
+by one point
 
 #testcase-run-vr-mailing-mill-rule-default
-WRONG
+Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.
+
+>failing phil
+by one point
 
 #testcase-run-vr-failing-phil-rule-default
-WRONG
+Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.
+
+>wailing will
+by one point
 
 #testcase-run-vr-wailing-will-rule-default
-WRONG
+Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.
+
+>bailing bill
+by one point
 
 #testcase-run-vr-bailing-bill-rule-default
-WRONG
+Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.
+
+>d
+
+>d
+
+>fight fave
+by one point
 
 #testcase-run-vr-fight-fave-rule-default
-WRONG
+You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.
 
 #testcase-run-vr-bright-bully-rule-abide-by-the-frightfully-bright-bully-rule
 >bright bully
@@ -556,11 +845,26 @@ by one point
 >undo
 >undo
 
+>frightfully
+by one point
+
 #testcase-run-vr-fright-fully-rule-default
-WRONG
+Well, that got rid of some of the irony of "trite."
+Tully shakes their head a bit. You've seen into them, but you feel like you can do more.
+
+>bright bully
+by one point
 
 #testcase-run-vr-bright-bully-rule-default
-WRONG
+Yes, indeed, it isn't just about being trite or having irony.
+Trite Tully looks shocked! "No! No! It can't be!" Suddenly, they look much more humble.
+"Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!"
+You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.
+
+>bam bye
+by one point
 
 #testcase-run-vr-bam-bye-rule-default
-WRONG
+You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?
+Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.
+
