@@ -1,0 +1,390 @@
+## reg-bbjj-lone-swap.txt
+
+## checking quick swap-through
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>kite cave
+by one point
+
+>x hold hole
+
+>x list
+
+>d
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>what whoah
+by one point
+
+>w
+
+>hid hum
+by one point
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>in
+
+>mood mapper
+by one point
+
+>out
+
+>e
+
+>n
+
+>w
+
+>stride streak
+by one point
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+>e
+>bye
+
+>weak wooter
+!by one point
+>w
+>guide geek
+!by one point
+>e
+
+>bye
+
+>fried freak
+>w
+>chic shooter
+>bye
+
+>e
+
+>sweet swap
+
+>s
+>e
+
+>n
+
+>posh planks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>e
+
+>yall yank
+by one point
+
+>w
+>s
+
+>need knack
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>passed port
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>s
+
+>w
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>e
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+>time toad
+by one point
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>n
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+
+>bam bye
+by one point
+
+>misses
+You could have tried to WRITE/RIGHT RAVE to flatter me.
+You could have noted a pattern with the regions in the status line and tried EYEING EASE.
+You could have been a bright knave and said R 3 once you'd paired two groups of friends, whether you knew their names or not.
+You didn't guess the the bold bowl, the sold soul and the cold coal before finding them.
+You could have told a NUDE NAPPER to be more modest in the Crude Crapper.
+You could've said FLOUT FLUFF in Out, Uff!.
+You could've said FLAK FLIGHT in Sack Site.
+You could've said GRANDER GROVE in Dander, Dove.
+You didn't uncover the RHYME ROAD in Passed Port.
+You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
+You didn't find the PLEAD PLAQUE in Treed Track.
+You could have tried to JACK GIST for a shorter command to read the track tryst lack list.
