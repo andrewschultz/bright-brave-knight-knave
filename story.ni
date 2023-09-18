@@ -511,34 +511,6 @@ for printing a locale paragraph about an eeker (called ee):
 	now ee is mentioned;
 	now other-guy of ee is mentioned;
 
-volume meta verbs
-
-book taking inventory
-
-to say note-bless:
-	if nbh < nch, say ". However, [the list of carried not blessed holeitems] seem[if nch - nbh is 1]s[end if], well, not perfect, yet"
-
-check taking inventory when player has lack list:
-	let nci be number of things carried by the player;
-	if nci > 1: [technically we must check if trystitems are available, but since we can't get them until we have a lot of items ... forget it]
-		say "You are carrying:[line break]";
-	now all carried things are marked for listing;
-	now lack list is unmarked for listing;
-	now power plate is unmarked for listing;
-	now all holeitems are unmarked for listing;
-	list the contents of the player, with newlines, indented, with extra indentation, listing marked items only;
-	if nch is 0 and hole-done < 3:
-		say "You don't have any [if hole-done > 0]additional [end if]items that fit in the hold hole.";
-	else:
-		say "So far, you've found [the list of carried holeitems] to fit in the hold hole[note-bless].";
-	if nci > 1, say "[line break]";
-	if player has lack list:
-		if trystcount is 0:
-			say "You haven't found anything on [the list] yet.";
-		else:
-			say "So far, from [the list], you've found [the list of carried trystitems].";
-	the rule succeeds;
-
 book eeker stuff
 
 chapter byeing
@@ -608,8 +580,43 @@ volume parsing
 after reading a command:
 	abide by the punctuation-munge rule;
 
+volume meta verbs
+
+book taking inventory
+
+to say note-bless:
+	if nbh < nch, say ". However, [the list of carried not blessed holeitems] seem[if nch - nbh is 1]s[end if], well, not perfect, yet"
+
+check taking inventory when lack list is not off-stage:
+	let nci be number of things carried by the player;
+	if nci > 1: [technically we must check if trystitems are available, but since we can't get them until we have a lot of items ... forget it]
+		say "You are carrying:[line break]";
+	now all carried things are marked for listing;
+	now lack list is unmarked for listing;
+	now all trystitems are unmarked for listing;
+	now all holeitems are unmarked for listing;
+	list the contents of the player, with newlines, indented, with extra indentation, listing marked items only;
+	if nch is 0 and hole-done < 3:
+		say "You don't have any [if hole-done > 0]additional [end if]items that fit in the hold hole.";
+	else:
+		say "So far, you've found [the list of carried holeitems] to fit in the hold hole[note-bless].";
+	if nci > 1, say "[line break]";
+	if lack list is moot:
+		say "You got all the items on [the lack list]: [the list of trystitems].";
+	else if player has lack list:
+		if trystcount is 0:
+			say "You haven't found anything on [the list] yet.";
+		else:
+			say "So far, from [the list], you've found [the list of carried trystitems].";
+	the rule succeeds;
+
+book verbsing
 
 carry out verbsing:
+	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
+	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well. The four ";
+	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
+	the rule succeeds;
 	if r-warn-yet is true and pairs-used < 3:
 		say "You can say [b]BYE[r] to get rid of a friend pair.";
 		repeat with XX running through creeky eekers:
