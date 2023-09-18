@@ -1,5 +1,7 @@
 "Bright Brave Knight Knave" by Andrew Schultz
 
+[use memory economy.] [pull the trigger on this if files get close to z-machine. Remember they can always be tested in glulx and compiled in z-machine.]
+
 include Trivial Niceties by Andrew Schultz.
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
@@ -17,6 +19,8 @@ include Bright Brave Knight Knave Globals by Andrew Schultz.
 include Bright Brave Knight Knave Mistakes by Andrew Schultz.
 
 include Bright Brave Knight Knave Tables by Andrew Schultz.
+
+include Punctuation Stripper by Andrew Schultz.
 
 section testing - not for release
 
@@ -567,7 +571,11 @@ this is the cheat-bonus rule:
 		now r-shortcut-got is true;
 		say "You try to be a bit sneaky. You recognize, by process of elimination, that there can only be one person left to recruit both in the creek and in the office proper. So you wonder if you can, just, you know, call them up without knowing who they are. It's a nice idea, nice enough to deserve a bonus point as a possible loophole, but you'll have to figure who you want.";
 
-chapter verbsing
+volume parsing
+
+after reading a command:
+	abide by the punctuation-munge rule;
+
 
 carry out verbsing:
 	if r-warn-yet is true and pairs-used < 3:
