@@ -96,17 +96,19 @@ to say tryst-list:
 
 section cold coal
 
-a cold coal is a holeitem.
+a cold coal is a holeitem. "You'd assume it's just a cold coal, but perhaps it can be something more."
 
 section bold bowl
 
-a bold bowl is a holeitem.
+a bold bowl is a holeitem. "It's very round and sturdy, yet as you inspect it, you feel some supernatural power flow through it."
 
 section sold soul
 
-a sold soul is a holeitem.
+a sold soul is a holeitem. description is "So ethereal. You can see through it, sort of. It looks exhausted, searching for a final resting place."
 
 chapter hole finding items
+
+check taking a holeitem: if noun is in white wave, say "No, [the noun] belongs in the hold hole." instead;
 
 after printing the locale description for white wave:
 	if nch is 0, continue the action;
@@ -127,7 +129,7 @@ after printing the locale description for white wave:
 
 chapter Trite Tully
 
-Trite Tully is a person. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]"
+Trite Tully is a person. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]". description is "Trite Tully sneers at you. You're nice and all, but Tully is DYNAMIC, man, not bothering with boring stuffy stuff like basic decency."
 
 guess-table of trite tully is the table of trite tully guesses.
 
@@ -135,11 +137,11 @@ to say tulstill: if tully-score is 1, say "still ";
 
 understand "sham shy" and "sham/shy" as Trite Tully when tully-score is 2.
 
-printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[end if]".
+printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[else]Trite Tully[end if]".
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else]You see passages to the north, west and east.[end if]You can also go back [b]DOWN[r] to White Wave."
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else]You see passages to the north, west and east.[end if] You can also go back [b]DOWN[r] to White Wave."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -194,7 +196,7 @@ chapter coughin coy boffin boy
 
 chapter the kid
 
-the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words."
+the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words.". description is "Terrified and meek and small. Maybe you can do him a kindness.". printed name is "coughin['] coy boffin boy".
 
 guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
 
@@ -228,15 +230,15 @@ check going in recroom:
 
 chapter chic shooter
 
-the Chic Shooter is a crooty eeker. matchnum of Chic Shooter is -1.
+the Chic Shooter is a crooty eeker. description is "A bit too cool for his own good, maybe, but his coolness may keep you in good stead through certain challenges.". matchnum of Chic Shooter is -1.
 
 chapter meek mooter
 
-the Meek Mooter is a crooty eeker. matchnum of Meek Mooter is -2.
+the Meek Mooter is a crooty eeker. description is "Seems to have the word 'but' perpetually on their lips. They need encouragement, you sense, to note when things aren't quite going right.". matchnum of Meek Mooter is -2.
 
 chapter weak wooter
 
-the Weak Wooter is a crooty eeker. matchnum of Weak Wooter is -3.
+the Weak Wooter is a crooty eeker. description is "Very earnest, but not very loud. Still, they may give encouragement when needed, even if -- or especially when -- someone is not fully confident they're right and any push will help.". matchnum of Weak Wooter is -3.
 
 book spied speak cried creek
 
@@ -257,15 +259,15 @@ after printing the locale description when number of leftbehind eekers > 0:
 
 chapter fried freak
 
-the Fried Freak is an creeky eeker. matchnum of Fried Freak is -1.
+the Fried Freak is an creeky eeker. description is "A bit odd, really, with hair sticking out everywhere. But as a [this-game-noi], you know not to rely on such appearances.". matchnum of Fried Freak is -1.
 
 chapter snide sneak
 
-the Snide Sneak is an eeker. matchnum of Snide Sneak is -2.
+the Snide Sneak is an eeker. description is "A bit too shifty to be a long-term close friend. But as a [this-game-noi], you know they can be goaded into clever insights, if you ask right.". matchnum of Snide Sneak is -2.
 
 chapter guide geek
 
-the Guide Geek is an eeker. matchnum of Guide Geek is -3.
+the Guide Geek is an eeker. description is "Perhaps at risk of droning on too much to show how smart they are. But as a [this-game-noi], you know how to keep them focused to provide useful information to you and others.". matchnum of Guide Geek is -3.
 
 book eeker logic and manipulation
 
@@ -279,7 +281,7 @@ to say planks-desc: say "There's water on pretty much all sides here. A yucky ya
 
 chapter yucky yacht
 
-the yucky yacht is scenery.
+the yucky yacht is scenery. "[if sco-plucky-plot is false]Obviously it's seen better days. Maybe you can find a way to make it serviceable[else]The people who bought this yacht would still find it yucky, but it works just fine for you[end if]."
 
 rule for supplying a missing noun when entering:
 	if yacht is in location of player, now noun is yacht;
@@ -295,37 +297,39 @@ check entering yucky yacht:
 
 chapter sassed sort
 
-the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if]."
+the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if].". description is "Slightly disheveled, but peaceful. They seem to sense you're more considerate than the usual clientele."
 
 book Cast Court
 
-Cast Court is a room in Sighing Seas. "Stuff is strewn about here."
+Cast Court is a room in Sighing Seas. "Stuff is strewn about here[if sco-murky-map is true], but you can't imagine there's anything more valuable than the map[end if]. You can't really wander off, either. You might lose track of your yucky yacht."
 
-the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better."
+the perky pap is a thing in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better.". description is "You try to read the perky pap, but it's all fluff and no information. Much as you hate to be all utilitarian, you really aren't in the mood for that right now.".
 
-the murky map is a thing.
+the murky map is a thing. description is "Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.".
 
 book Fast Fort
 
-Fast Fort is a room in Sighing Seas.
+Fast Fort is a room in Sighing Seas. "Here in the fort, you feel overwhelmed with thoughts rushing through your head. You sense if you went anywhere on foot, you might get lost, uh, fast."
 
-Crude Crass Lewd Lass is a thing in Fast Fort.
+to say ccll: say "[i]Crude Crass Lewd Lass[r]"
 
-the glued glass is a thing.
+Crude Crass Lewd Lass is a thing in Fast Fort. "[one of]Oh dear. Someone left a copy of [ccll] here. You're not acquainted with the literature, but it can't be good. It would be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
+
+the glued glass is a thing. description is "It works pretty well, for having fallen apart a bit. It can magnify what you need."
 
 book Passed Port
 
-Passed Port is a room in Sighing Seas. "It's rather busy here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
+Passed Port is a room in Sighing Seas. "The air is alive here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
 
 to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
 
-the slime slowed rime road is scenery in Passed Port.
+the slime slowed rime road is scenery in Passed Port. "[if sco-time-toad is true]You regard the road with reverence. You'll never look at slime the same way again![else]Well, it's not something you feel comfortable touching. Who knows what secrets it might hide, though?[end if]"
 
 chapter pallid pent valid vent
 
 the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
 
-the salad sent is a thing.
+the salad sent is a thing. description is "Oh, man! What a salad it is! All sorts of vegetables you recognize and all sorts you don't!"
 
 chapter posh pick
 
@@ -337,7 +341,7 @@ the clashing cord is scenery in passed port. "It doesn't really fit aestheticall
 
 chapter slashing sword
 
-the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense".
+the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense". description is "The slashing sword feels right for you. You sense it should be used for defense, not offense."
 
 volume Trying Trees (south)
 
@@ -345,22 +349,25 @@ book Treed Track
 
 Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]. You can, of course, always go back north to Pass Path."
 
-the seed sack is a thing.
+the seed sack is a thing. description is "Instead of discussing what plants the seeds grow, the sack emphasizes the importance of meaningful interpersonal communication. How could seeds help with that?"
 
 book Too Tough Blue Bluff
 
-Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]You've looted the campground. There's nothing more to do here[end if]. You can go back down to Treed Track. You'd probably get lost wandering anywhere else.". printed name is "Too-Tough Blue Bluff".
+Too Tough Blue Bluff is a room in Trying Trees. "It's not, like, actually blue here. Except for the sky. But it sure is bleak. [if sco-stew-stuff is false]A deserted campground--perhaps if you knew what to look for, and you could steel yourself properly, you could find what you need[else]You've looted the campground. There's nothing more to do here[end if]. You can go back east to Treed Track. You'd probably get lost wandering anywhere else.". printed name is "Too-Tough Blue Bluff".
 
 chapter stew stuff
 
-The stew stuff is a thing.
+The stew stuff is a thing. description is "Mmm. All manner of meat and mushrooms and seasoning. Good enough to eat now without cooking. Alas, you have no can opener. Perhaps you will find someone who does. And who can cook it, too!"
 
 book Lack Light Black Blight
 
-Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is east. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
 after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score >= 3 (this is the rack right discovery rule):
-	if fried freak is followish, check-rack-right;
+	if fried freak is followish:
+		check-rack-right;
+	else:
+		say "There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.";
 	continue the action;
 
 The rack right discovery rule is listed last in after printing the locale description.
@@ -379,7 +386,7 @@ the power plate is a trystitem. description is "Surprisingly lightweight but stu
 
 book Knell Nook
 
-Knell Nook is a room in Trying Trees.
+Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [if sco-covering-candle is false]get the feeling a ritual should be performed here[else]performed a ritual, so there's not much else to do here[end if]."
 
 chapter sold soul
 
@@ -389,24 +396,26 @@ volume Lying Leas (east)
 
 book Tall Tank(s)
 
-tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true.
+tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true. "You can go back west to Pass Path, [if sco-yall-yank is false]but a tall tank blocks the way east. It might be tanks. But perhaps it is easier to think: one tank at a time[else]and tall tanks you pushed aside allow passage east[end if]."
+
+from-number of tata is 2704. to-number of tata is 2704.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
 
 chapter ardor elm
 
-the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want.[else]The ardor elm your friends showed you stands here. [elm-status][end if]."
+the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want.[else]The ardor elm your friends showed you stands here. [elm-status][end if].". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
 
 to say elm-status:
 	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
 
 chapter harder helm
 
-the harder helm is a trystitem. vaguedesc is "replacement head protection".
+the harder helm is a trystitem. description is "So lightweight, you don't even feel it on your head.". vaguedesc is "replacement head protection".
 
 book Lane Lax
 
-Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if]."
+Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]Oh! There's a broad brash clod clash going on here that you probably need to break up, some way[end if].[paragraph break]Of course, you can always just go back west, too."
 
 to say mama: if sco-main-max is true, say "Main Max "
 
@@ -417,39 +426,39 @@ check going in Lane Lax:
 
 chapter broad brash clod clash
 
-The broad brash clod clash is scenery in Lane Lax. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+The broad brash clod clash is scenery. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
 
 chapter odd ash
 
-the odd ash is a thing. "Looking at the odd ash, you wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
+the odd ash is a thing. description is "It's bound together by some sort of translucent gelatinous ball that's surprisingly sturdy. You wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
 
 chapter pain packs
 
-the pain packs are a plural-named trystitem. "They look like they could really heal some hit points, if that's how health is tracked here.". vaguedesc is "something to heal you if you get a scratch".
+the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "something to heal you if you get a scratch".
 
 book Wowed Wise Crowd Cries
 
-Wowed Wise Crowd Cries is a room in Lying Leas.
+Wowed Wise Crowd Cries is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.".
 
-the proud prize is a thing.
+the proud prize is a thing. description is "It appears the original recipient had their name rubbed off. If you squint very closely, you see S S."
 
 book Thought Thief Fought Fief
 
-Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]".
+Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]". "[if sco-wrought-reef is true]The old evil village is gone, and a more idyllic reef remains[else if thief-score < 2]Here is a dark village, full of suspicion and double-talk. Perhaps being less than honest is a survival strategy here[else]You are alone here, in a dark village, but you sense it could become much more in tune with nature[end if]. The only way back is north."
 
 chapter one wish fun fish
 
-there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.".
+there is a thing called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
 
 book Bruising Brew
 
-Bruising Brew is a room in Flying Flees.
+Bruising Brew is a room in Flying Flees. "This is a seedy bar that pretends to thrive on its seediness. You'd have found it very exciting once and felt bad you couldn't be exciting enough for it. You know better now.".
 
 chapter the two faces of Lou (not-Christie)
 
-Losing Lou is a person in Bruising Brew.
+Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? He introduces himself as Losing Lou. He seems bummed about many things[or]Losing Lou sits here, pensively--well, he thinks so, but it's a bit worse than that[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
-Turning to Learning Lou is a person in Bruising Brew. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?" [more bytes saved this way]
+Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge he's gotten from you, even if it isn't profound. He just needs insight into his book title, now!" [more bytes saved this way]
 
 chapter spurning spew
 
@@ -573,7 +582,13 @@ volume distraction rooms
 
 book Nil None
 
-Nil None is a room in Shying Sheez. printed name is "Nil, None".
+Nil None is a room in Shying Sheez. printed name is "Nil, None". description is "[if nil-score is 0]Bummer! You don't feel like going anywhere. You need to mope, or find a way to stop moping. Whichever[else if nil-score is 1]You see a possible way out. But not yet[else]Now you've dug a way out of your mental rut, it seems like you could just leave any which way. [nilstuff][end if]."
+
+to say nilstuff:
+	if nil-score is 3:
+		say "You've shaken everything off, after all";
+	else:
+		say "There's something more to shake off, but you feel like you don't have to deal with it"
 
 check going in Nil None:
 	if sco-fill-fun is false, say "You have momentarily lost all sense of joy, or all hope to find it. Why bother to look?" instead;
