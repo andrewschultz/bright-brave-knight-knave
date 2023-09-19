@@ -520,7 +520,7 @@ book Tall Tank(s)
 
 tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true. "You can go back west to Pass Path, [if sco-yall-yank is false]but a tall tank blocks the way east. It might be tanks. But perhaps it is easier to think: one tank at a time[else]and tall tanks you pushed aside allow passage east[end if]."
 
-from-number of tall tanks is 2704. to-number of tall tanks is 2704.
+chapter tall tanks
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
 
@@ -528,6 +528,8 @@ understand "tall tank" and "tank" as tall tanks.
 
 check lling tata:
 	try lling tall tanks;
+
+from-number of tall tanks is 2704. to-number of tall tanks is 2704.
 
 check lling tata when sco-yall-yank is true and sco-paul-panks is false:
 	say "You think of the tanks as tanks, here...";
@@ -581,6 +583,8 @@ the proud prize is a thing. description is "It appears the original recipient ha
 book Thought Thief Fought Fief
 
 Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]". "[if sco-done-dish is true]The one-wish fun fish has left. It's idyllic here. So idyllic, there's nothing to do[else if sco-wrought-reef is true]The old evil village is gone, and a more idyllic reef remains[else if thief-score < 2]Here is a dark village, full of suspicion and double-talk. Perhaps being less than honest is a survival strategy here[else]You are alone here, in a dark village, but you sense it could become much more in tune with nature[end if]. The only way back is north."
+
+from-number of thought thief fought fief is 5659. to-number of thought thief fought fief is 5659.
 
 chapter one wish fun fish
 

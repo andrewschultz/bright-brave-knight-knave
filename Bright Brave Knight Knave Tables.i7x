@@ -642,6 +642,11 @@ this is the vr-time-toad rule:
 	give-hi cold coal;
 	moot right rack;
 	moot odd ash;
+	if sco-rhyme-road is false:
+		now from-number of rime road is -5460;
+		now to-number of rime road is -2704;
+	else:
+		declue rime road;
 
 a goodrhyme rule (this is the vc-rhyme-road rule):
 	if player is not in passed port, unavailable;
@@ -653,6 +658,7 @@ a goodrhyme rule (this is the vc-rhyme-road rule):
 this is the vr-rhyme-road rule:
 	now sco-rhyme-road is true;
 	say "The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have, from [other-ones]. Impressive, indeed! But then the vision fades. You have much left to do here.";
+	declue rime road;
 
 section lane lax scoring
 
@@ -668,7 +674,7 @@ a goodrhyme rule (this is the vc-train-tracks rule):
 this is the vr-train-tracks rule:
 	now sco-train-tracks is true;
 	say "The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.";
-	decrease to-number of lane lax by 103;
+	decrease to-number of lane lax by 53;
 	now from-number of lane lax is 2756;
 	print-the-loc;
 
@@ -688,6 +694,8 @@ this is the vr-main-max rule:
 	move broad brash clod clash to lane lax;
 	open-psg north and Wowed Wise Crowd Cries;
 	open-psg south and Thought Thief Fought Fief;
+	decrease to-number of lane lax by 2703;
+	now from-number of lane lax is 5459;
 	trax-check;
 
 a goodrhyme rule (this is the vc-pain-packs rule):
@@ -979,7 +987,7 @@ this is the vr-stew-stuff rule:
 	now sco-stew-stuff is true;
 	say "Now that you know what to look for, it's not too bad to find. You find enough to make a stew.";
 	now player has stew stuff;
-	declue blue bluff;
+	now to-number of blue bluff is 2654;
 	dismiss-geek-wooter;
 
 a goodrhyme rule (this is the vc-new-nuff rule):
@@ -995,6 +1003,8 @@ a goodrhyme rule (this is the vc-new-nuff rule):
 this is the vr-new-nuff rule:
 	now sco-new-nuff is true;
 	say "Boom! The stew stuff isn't perfectly shiny, but it's, well, new [']nuff. It's canned. It doesn't need to be perfectly fresh.";
+	declue blue bluff;
+	declue stew stuff;
 
 a goodrhyme rule (this is the vc-power-plate rule):
 	if sour slate is not touchable, unavailable;
@@ -1018,6 +1028,7 @@ a goodrhyme rule (this is the vc-bell-book rule):
 this is the vr-bell-book rule:
 	now sco-bell-book is true;
 	say "Received adventure game knowledge FTW! The bell and book are in place. There is one more item. Perhaps you can guess it.";
+	declue-here;
 
 a goodrhyme rule (this is the vc-covering-candle rule):
 	abide by the any-nook rule;
@@ -1055,6 +1066,8 @@ this is the vr-yall-yank rule:
 	if sco-paul-panks is false:
 		now to-number of tall tanks is -2705;
 		now from-number of tall tanks is -2705;
+	else:
+		declue tall tanks;
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
@@ -1069,6 +1082,7 @@ a goodrhyme rule (this is the vc-paul-panks rule):
 this is the vr-paul-panks rule:
 	now sco-paul-panks is true;
 	say "You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking. But ... I thought about him a lot, though he died before I came on the scene. And I enjoyed Hannes Schueller's tribute, The Ninja's Fate. I was humbled to see I'd passed Paul Panks in number of things written. He paved the way for me, sort of. So when I had a chance to leave this memento, I did.";
+	if sco-yall-yank is true, declue tall tanks;
 
 section wowed wise crowd cries scoring
 
@@ -1082,7 +1096,7 @@ a goodrhyme rule (this is the vc-trowed-tries rule):
 this is the vr-trowed-tries rule:
 	now sco-trowed-tries is true;
 	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
-	now to-number of crowd cries is 2704.
+	now to-number of crowd cries is 2704;
 
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in wowed wise crowd cries, unavailable;
@@ -1205,6 +1219,7 @@ this is the vr-mailing-mill rule:
 	now sco-mailing-mill is true;
 	say "Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.";
 	now to-number of hailing hill is 8562;
+	move mailing mill to hailing hill;
 
 a goodrhyme rule (this is the vc-bailing-bill rule):
 	abide by the can-mail rule;
@@ -1316,8 +1331,8 @@ a goodrhyme rule (this is the vc-grander-grove rule):
 this is the vr-grander-grove rule:
 	now sco-grander-grove is true;
 	say "You dream of a place where you can relax and feel good about what you've done, whether it is big or small. It comes to pass. You see it in the distance, then you lose track of it. But it's there, for you, and for others. That makes you happier.";
-	dander-upgrade "small";
 	dander-reclue 2855;
+	dander-upgrade "small";
 
 a goodrhyme rule (this is the vc-candor-cove rule):
 	if player is not in dander dove, unavailable;
@@ -1329,8 +1344,8 @@ a goodrhyme rule (this is the vc-candor-cove rule):
 this is the vr-candor-cove rule:
 	now sco-candor-cove is true;
 	say "You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.";
-	dander-upgrade "fraudulent";
 	dander-reclue 2804;
+	dander-upgrade "fraudulent";
 
 a goodrhyme rule (this is the vc-stander-stove rule):
 	if player is not in dander dove, unavailable;
@@ -1342,11 +1357,14 @@ a goodrhyme rule (this is the vc-stander-stove rule):
 this is the vr-stander-stove rule:
 	now sco-stander-stove is true;
 	say "You picture a stove to step into! It's weird, but it's good for burning excess dander.";
-	dander-upgrade "cold";
 	dander-reclue 2855;
+	dander-upgrade "cold";
 
 to dander-reclue (nu - a number):
-	decrease to-number of dander dove by nu;
+	if to-number of dander dove < 0:
+		declue-here;
+	else:
+		decrease to-number of dander dove by nu;
 
 to dander-upgrade (t - text):
 	remove t from dander-list;
@@ -1399,7 +1417,12 @@ this is the vr-nowt-nuff rule:
 
 to rough-check (nu - a number):
 	say "[line break]You [if route-rough-score is 1]see a light at the end of the tunnel. But it is not enough[else if route-rough-score is 2]feel as though you can leave, if you want, though it's always fun to try and do a bit more[else]went the extra mile to rid yourself of angst[end if].";
+	if route-rough-score is 3:
+		declue-here;
+	else:
+		decrease to-number of route rough by nu;
 	if route-rough-score is 2:
+		now from-number of route rough is 2653;
 		alt-last route rough;
 
 section knell nook auxiliary
@@ -1430,10 +1453,10 @@ a goodrhyme rule (this is the the can-mail rule):
 to see-if-top:
 	if sco-ailing-ill is false:
 		say "Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.";
-		now to-number of hailing hill is 2855;
+		now to-number of hailing hill is 2803;
 	else if sco-scaling-skill is false:
 		say "Complaining about various things wrong makes you more motivated to get to the top, but the flesh is weak.";
-		now to-number of hailing hill is 2803;
+		now to-number of hailing hill is 2855;
 	else:
 		say "You stand at the top of the hill and feel more connected with others despite, or perhaps because of, their faults.";
 		now to-number of hailing hill is 2854; [mailing mill needed]

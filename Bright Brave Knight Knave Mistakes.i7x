@@ -151,7 +151,7 @@ to say item-guess of (hi - a holeitem):
 
 table of one wish fun fish guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"gun"	"gish"	--	false	--	"You get a gish gallop going, but the fishdoesn't seem to understand."
+"gun"	"gish"	--	false	--	"You get a gish gallop going, but the fish doesn't seem to understand."
 "none"	"nish"	--	false	--	"The fish swims around, ignoring your temporary nihilism."
 "pun"	"pish"	--	false	--	"The fish looks blankly at you. It has no knowledge of puns."
 
