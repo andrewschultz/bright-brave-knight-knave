@@ -638,8 +638,10 @@ chapter cheatchopping
 cheatchopping is an action out of world.
 
 understand the command "cheat chop" as something new.
+understand the command "chop cheat" as something new.
 
 understand "cheat chop" as cheatchopping.
+understand "chop cheat" as cheatchopping.
 
 carry out cheatchopping:
 	say "The sweet-swap option is [if opt-sweet-swap is false]now[else]already[end if] off.";
@@ -652,13 +654,24 @@ chapter sweetswaping
 sweetswaping is an action out of world.
 
 understand the command "sweet swap" as something new.
+understand the command "swap sweet" as something new.
 
 understand "sweet swap" as sweetswaping.
+understand "swap sweet" as sweetswaping.
 
 carry out sweetswaping:
 	say "The sweet-swap option is [if opt-sweet-swap is false]now[else]already[end if] on.";
 	now opt-sweet-swap is true;
 	now know-sweet-swap is true;
+	let npe be number of pairedyet eekers;
+	if npe is 6, the rule succeeds;
+	if npe is 0:
+		if zero-swap-warn is false:
+			say "[line break][i][bracket][b]NOTE:[r][i] setting this option doesn't make things easier until you pair two friends together.[close bracket][r]";
+			now zero-swap-warn is true;
+	else if below-six-swap-warn is false:
+		say "[i][bracket][b]NOTE:[r][i] friends you haven't paired together yet won't be quickly accessible for certain puzzles.[close bracket][r]";
+		now below-six-swap-warn is true;
 	the rule succeeds;
 
 book printing their appearance

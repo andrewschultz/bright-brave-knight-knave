@@ -221,6 +221,9 @@ chapter options
 opt-sweet-swap is a truth state that varies. [lets you solve puzzles without friends]
 know-sweet-swap is a truth state that varies. [don't repeat the message, or the player can use it early]
 
+zero-swap-warn is a truth state that varies. [SWEET SWAP before pairing any friends]
+below-six-swap-warn is a truth state that varies. [SWEET SWAP before pairing all friends]
+
 chapter miscellaneous bonus variables (game state)
 
 guessed-bold-bowl is a truth state that varies. [this and the others track getting the bonus point to start]
