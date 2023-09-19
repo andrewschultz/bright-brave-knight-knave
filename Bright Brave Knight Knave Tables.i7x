@@ -470,6 +470,7 @@ a goodrhyme rule (this is the vc-cast-court rule):
 
 this is the vr-cast-court rule:
 	now sco-cast-court is true;
+	sort-deduct 2705;
 	yacht-go cast court;
 
 a goodrhyme rule (this is the vc-fast-fort rule):
@@ -478,6 +479,7 @@ a goodrhyme rule (this is the vc-fast-fort rule):
 
 this is the vr-fast-fort rule:
 	now sco-fast-fort is true;
+	sort-deduct 2704;
 	yacht-go fast fort;
 
 a goodrhyme rule (this is the vc-passed-port rule):
@@ -496,7 +498,19 @@ this is the vr-passed-port rule:
 		say "You hand the murky map and glued glass to the Sassed Sort. 'Wow! Yeah, wow, it's been a while. But wait ... that's a safe route I hadn't considered. It'll save some time. Mind if I keep the map and glass in case I forget it?'[paragraph break]Well, you could use the free inventory space. The trip, indeed, doesn't take long.";
 		moot glued glass;
 		moot murky map;
+	sort-deduct 2804;
 	yacht-go passed port;
+
+to sort-deduct (nu - a number):
+	decrease to-number of cast court by nu;
+	decrease to-number of fast fort by nu;
+	decrease to-number of passed port by nu;
+	decrease to-number of sassed sort by nu;
+	if to-number of sassed sort is 0:
+		declue sassed sort;
+		declue passed port;
+		declue cast court;
+		declue fast fort;
 
 section cast court scoring
 

@@ -348,6 +348,8 @@ book Cast Court
 
 Cast Court is a room in Sighing Seas. "Stuff is strewn about here[if sco-murky-map is true], but you can't imagine there's anything more valuable than the map[end if]. You can't really wander off, either. You might lose track of your yucky yacht."
 
+from-number of fast fort is 2704. to-number of fast fort is 8213.
+
 chapter perky pap
 
 the perky pap is a rhymable in Cast Court. "Some perky pap lies about. Perhaps it can be made into something better.". description is "You try to read the perky pap, but it's all fluff and no information. Much as you hate to be all utilitarian, you really aren't in the mood for that right now.".
@@ -363,6 +365,8 @@ the murky map is a thing. description is "Unfortunately, you can't quite read it
 book Fast Fort
 
 Fast Fort is a room in Sighing Seas. "Here in the fort, you feel overwhelmed with thoughts rushing through your head. You sense if you went anywhere on foot, you might get lost, uh, fast."
+
+from-number of cast court is 2705. to-number of cast court is 8213.
 
 chapter CCLL
 
@@ -387,6 +391,8 @@ book Passed Port
 Passed Port is a room in Sighing Seas. "The air is alive here with weirdness and magic. Of course, that's not surprising, since it's so hard to find[if valid vent is in port]. A pallid pent valid vent is off to the side. Maybe something is flowing through it[end if][cord-note]."
 
 to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
+
+from-number of passed sort is 2804. to-number of passed sort is 8213.
 
 chapter slime slowed rime road
 
