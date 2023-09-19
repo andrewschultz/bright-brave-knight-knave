@@ -563,7 +563,7 @@ from-number of lane lax is 2703. to-number of lane lax is 5461.
 to say mama: if sco-main-max is true, say "Main Max "
 
 check going in Lane Lax:
-	if sco-train-tracks is false, say "No one way seems better than the other, at the moment." instead;
+	if noun is not west and sco-train-tracks is false, say "Back west is the only way. For now." instead;
 
 [??the train tracks are not all they could be, and they do not lead all the places they could]
 

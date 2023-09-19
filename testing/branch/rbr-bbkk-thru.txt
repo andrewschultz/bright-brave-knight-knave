@@ -698,10 +698,6 @@ You decided to WRITE/RIGHT RAVE too soon.
 
 @gt
 #+testcase-goto-table-of-noways-white-wave
->e
-You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
-\\
-#+testcase-goto-table-of-noways-white-wave
 >w
 You can really only go DOWN through the kite cave hole.
 
@@ -817,10 +813,6 @@ You already found a pass-path through the bass bath!
 #+testcase-goto-table-of-noways-bass-bath
 >w
 You need to reason out which way to go. It's a bit confusing here.
-\\
-#+testcase-goto-table-of-noways-bass-bath
->in
-You can go pretty much any way from here but not inside.
 
 >mass math
 by one point
@@ -883,6 +875,11 @@ You can say you NEED KNACK once you have the right help by the Treed Track.
 >undo
 >undo
 
+@gt
+#+testcase-goto-table-of-noways-bass-bath
+>in
+You can go pretty much any way from here but not inside.
+
 >w
 
 @all
@@ -918,7 +915,7 @@ You have scored a total of 7 out of 85 points and need 75 to win. You have found
 
 @gt
 >w
-WRONG
+Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened.
 
 @alt
 ##balance undos
@@ -1307,7 +1304,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 @gt
 #testcase-goto-table-of-noways-recroom
 >n
-You only have access west and south to Slum, Slid.
+You can only go west to somewhere new and south to Slum Slid.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-14-meek
@@ -1449,7 +1446,7 @@ Nothing comes up. The general area here has been changed enough.
 @gt
 #+testcase-goto-table-of-noways-recroom
 >n
-You only have access west and south to Slum, Slid.
+You can only go west to Cried Creek and south to Slum Slid.
 
 >meek mooter
 by one point
@@ -3590,7 +3587,7 @@ The one-wish fun fish blups at you apologetically. You don't have enough to work
 @gt
 #testcase-goto-table-of-noways-too-tough-blue-bluff
 >n
-You don't want to get lost in the bluff. Best just go back east once you're done here.
+The drop is not too steep, but you don't know how you'd climb back up. Best just go back east once you're done here.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-39-grew
@@ -3852,6 +3849,11 @@ You shuffle your feet a bit, exaggerating what has happened and what you face.
 #+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
 >slew sluff
 You blink, only to find you have not wound up in a bog, which is probably for the better.
+
+@gt
+#testcase-goto-table-of-noways-too-tough-blue-bluff
+>n
+The drop is not too steep, but you don't know how you'd climb back up. Best just go back east now you're done here.
 
 >new nuff
 by one point
@@ -4343,7 +4345,7 @@ You already identified illun'!
 @gt
 #testcase-goto-table-of-noways-black-blight
 >w
-Beyond is too dangerous. Best just go back down when you're ready.
+Beyond is too wild. Best just go back down the way you came when you're ready.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-42-hack
@@ -5386,7 +5388,7 @@ You can contact Wailing Will once you have something to offer him and the means 
 @gt
 #testcase-goto-table-of-noways-hailing-hill
 >w
-You are at the top of the hill. It was such a long journey up, you lost track of compass directions. Down is the only way.
+You are at the top of the hill. It's like being at the North Pole, but not so cold. You lost track of compass directions, anyway. You can really only go back down.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-75-ailing
