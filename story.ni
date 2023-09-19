@@ -49,6 +49,9 @@ the bkbk self check rule is listed instead of the ll self check rule in the chec
 check lling (this is the bkbk self check rule):
 	if noun is player and sco-write-right-rave is true, say "You don't have any other bonus point tricks up your sleeve." instead;
 	if noun is boffin boy, say "Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all." instead;
+	if sassed sort is touchable:
+		if noun is sassed sort or noun is location of player:
+			if passed port is visited, say "Nothing. You've found everywhere the Sassed Sort can go." instead;
 
 from-number of player is -5610. to-number of player is -2754.
 
@@ -348,7 +351,7 @@ book Cast Court
 
 Cast Court is a room in Sighing Seas. "Stuff is strewn about here[if sco-murky-map is true], but you can't imagine there's anything more valuable than the map[end if]. You can't really wander off, either. You might lose track of your yucky yacht."
 
-from-number of fast fort is 2704. to-number of fast fort is 8213.
+from-number of cast court is 2705. to-number of cast court is 8213.
 
 chapter perky pap
 
@@ -366,7 +369,7 @@ book Fast Fort
 
 Fast Fort is a room in Sighing Seas. "Here in the fort, you feel overwhelmed with thoughts rushing through your head. You sense if you went anywhere on foot, you might get lost, uh, fast."
 
-from-number of cast court is 2705. to-number of cast court is 8213.
+from-number of fast fort is 2704. to-number of fast fort is 8213.
 
 chapter CCLL
 
@@ -983,8 +986,8 @@ rule for supplying a missing noun when lling (this is the get readings from room
 		now noun is recruiter;
 	else if player is in tata:
 		now noun is tall tanks;
-	else if player is in passed port or player is in fast fort or player is in cast court:
-		now noun is sassed sort;
+	else if player is in cast court or player is in fast fort or player is in passed port:
+		now noun is location of player;
 	else:
 		abide by the general-ll-locations rule;
 		reject the player's command;
