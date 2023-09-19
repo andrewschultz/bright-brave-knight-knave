@@ -575,13 +575,13 @@ book Bruising Brew
 
 Bruising Brew is a room in Flying Flees. "This is a seedy bar that pretends to thrive on its seediness. You'd have found it very exciting once and felt bad you couldn't be exciting enough for it. You know better now.".
 
+guess-table of bruising brew is the table of bruising brew guesses.
+
 from-number of bruising brew is 2904. to-number of bruising brew is 5606.
 
 chapter the two faces of Lou (not-Christie)
 
 Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? He introduces himself as Losing Lou. He seems bummed about many things[or]Losing Lou sits here, pensively--well, he thinks so, but it's a bit worse than that[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
-
-guess-table of losing lou is the table of losing lou guesses.
 
 from-number of losing lou is 2803. to-number of losing lou is 5606.
 

@@ -30,6 +30,11 @@ to say wrong-pron-lace: if the player's command matches "lace", say "[wrong-pron
 
 to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
+table of bruising brew guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"choosing"	"chew"	--	false	--	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
+"rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
+
 table of crude crapper guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
@@ -144,34 +149,33 @@ to say item-guess of (hi - a holeitem):
 			say "[line break]There is one more item to guess, if you want.";
 		now hi is preguessed;
 
-table of losing lou guesses
-mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"choosing"	"chew"	--	false	--	"<CLEVER REJECT TEXT>"
-"rusing"	"rue"	--	false	--	"<CLEVER REJECT TEXT>"
-
 table of one wish fun fish guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"gun"	"gish"	--	false	--	"<CLEVER REJECT TEXT>"
-"none"	"nish"	--	false	--	"<CLEVER REJECT TEXT>"
-"pun"	"pish"	--	false	--	"<CLEVER REJECT TEXT>"
+"gun"	"gish"	--	false	--	"You get a gish gallop going, but the fishdoesn't seem to understand."
+"none"	"nish"	--	false	--	"The fish swims around, ignoring your temporary nihilism."
+"pun"	"pish"	--	false	--	"The fish looks blankly at you. It has no knowledge of puns."
+
+table of pallid pent valid vent guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"ballad"	"bent"	--	false	--	"Being a bright brave knight knave, you love keeping an ear open for off-color tunes."
 
 table of perky pap guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"clerky"	"clap"	--	false	--	"<CLEVER REJECT TEXT>"
-"irky"	"app"	--	false	--	"<CLEVER REJECT TEXT>"
-"kirky"	"cap"	--	false	--	"<CLEVER REJECT TEXT>"
-"lurky"	"lap"	--	false	--	"<CLEVER REJECT TEXT>"
-"turkey"	"tap"	--	false	--	"<CLEVER REJECT TEXT>"
-"worky"	"whap"	--	false	--	"<CLEVER REJECT TEXT>"
+"clerky"	"clap"	--	false	--	"You consider the right way to applaud bureaucracy."
+"irky"	"app"	--	false	--	"You download no annoying application to your phone. You don't even have a phone on you."
+"kirky"	"cap"	--	false	--	"You find no clothes that make you talk with dramatic pauses or yell KHAN."
+"lurky"	"lap"	--	false	--	"You slightly fear your junior-high gym teacher just waiting to give out punishment."
+"turkey"	"tap"	--	false	--	"Even if one appeared, you'd wonder how they'd fit through there."
+"worky"	"whap"	--	false	--	"Nobody is there to kick or shove you into gear."
 
 table of rime road guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"chime"	"choad|chode"	--	false	--	"<CLEVER REJECT TEXT>"
-"crime"	"crowed"	--	false	--	"<CLEVER REJECT TEXT>"
-"dime"	"dohed"	--	false	--	"<CLEVER REJECT TEXT>"
-"grime"	"growed"	--	false	--	"<CLEVER REJECT TEXT>"
-"im"	"owed"	--	false	--	"<CLEVER REJECT TEXT>"
-"lime"	"load"	--	false	--	"<CLEVER REJECT TEXT>"
+"chime"	"choad|chode"	--	false	--	"You are all for off-color humor but it doesn't seem appropriate here."
+"crime"	"crowed"	--	false	--	"You eavesdrop on no criminal confessions."
+"dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread"
+"grime"	"growed"	--	false	--	"Ungrammatical, "
+"im"	"owed"	--	false	--	"All this entitlement is bravebut not bright."
+"lime"	"load"	--	false	--	"The fruit or the stone, you can't see yourself lugging it around."
 
 table of sour slate guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -179,23 +183,23 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"burning"	"boo"	--	false	--	"<CLEVER REJECT TEXT>"
-"churning"	"chew"	--	false	--	"<CLEVER REJECT TEXT>"
+"burning"	"boo"	--	false	--	"No, you need something more positive."
+"churning"	"chew"	--	false	--	"No, you need something less reflexive."
 
 table of stew stuff guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"boo"	"buff"	--	false	--	"<CLEVER REJECT TEXT>"
-"chew|choo"	"chuff"	--	false	--	"<CLEVER REJECT TEXT>"
-"coo"	"cuff"	--	false	--	"<CLEVER REJECT TEXT>"
-"do"	"duff"	--	false	--	"<CLEVER REJECT TEXT>"
-"flew|flu"	"fluff"	--	false	--	"<CLEVER REJECT TEXT>"
-"goo"	"guff"	--	false	--	"<CLEVER REJECT TEXT>"
-"moo"	"muff"	--	false	--	"<CLEVER REJECT TEXT>"
-"poo|pooh"	"puff"	--	false	--	"<CLEVER REJECT TEXT>"
-"rue"	"rough"	--	false	--	"<CLEVER REJECT TEXT>"
-"skew"	"scuff"	--	false	--	"<CLEVER REJECT TEXT>"
-"slew"	"sluff|slough"	--	false	--	"<CLEVER REJECT TEXT>"
-"who"	"huff"	--	false	--	"<CLEVER REJECT TEXT>"
+"boo"	"buff"	--	false	--	"It's stew ingredients, not protein shake ingredients."
+"chew|choo"	"chuff"	--	false	--	"You make train noises, but none appears."
+"coo"	"cuff"	--	false	--	"You consider lashing out for its own sake."
+"do"	"duff"	--	false	--	"No, you want to do something right."
+"flew|flu"	"fluff"	--	false	--	"You don't have time to fly, or get sick, or other frivolities!"
+"goo"	"guff"	--	false	--	"You produce no sticky stuff."
+"moo"	"muff"	--	false	--	"You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise."
+"poo|pooh"	"puff"	--	false	--	"You feel fake exhaustion for a bit."
+"rue"	"rough"	--	false	--	"Bummer, you think, that things aren't given to you."
+"skew"	"scuff"	--	false	--	"You shuffle your feet a bit, exaggerating what has happened and what you face."
+"slew|slue"	"sluff|slough"	--	false	--	"You blink, only to find you have not wound up in a bog, which is probably for the better."
+"hoo|who"	"huff"	--	false	--	"Alas (or not,) there is nobody to get huffy at."
 
 table of trite tully guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
