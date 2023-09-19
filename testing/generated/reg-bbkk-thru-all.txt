@@ -36,7 +36,6 @@ Wow! You figured what to do. Now instead of typing X LIST, you can just type X o
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 !by one point
 
 >cold coal
@@ -440,12 +439,6 @@ by one point
 #testcase-run-vr-salad-scent-rule-default
 Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid vent is way up there! You can't get there by yourself! The Snide Sneak offers to climb on you, letting the Meek Mooter do the dirty work.
 
->rhyme road
-by one point
-
-#testcase-run-vr-rhyme-road-rule-default
-The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
-
 >in
 
 >s
@@ -626,6 +619,7 @@ You feel good about doing more than the bare minimum to repel your fears. It's s
 !by one point
 
 >quash quick
+by one point
 
 #testcase-run-vr-quash-quick-rule-default
 The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.
@@ -667,6 +661,12 @@ You dream of a place where you can relax and feel good about what you've done, w
 You no longer have dander on your mind.
 
 >n
+
+>rhyme road
+by one point
+
+#testcase-run-vr-rhyme-road-rule-default
+The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
 
 >in
 

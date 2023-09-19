@@ -69,7 +69,6 @@ Your score and bonus points just went up by one point.
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 !by one point
 
 >cold coal
@@ -650,9 +649,6 @@ The HA HALF button on your Leet Learner lights up green.
 >zrhyme road
 The HA HALF button on your Leet Learner lights up green.
 
->rhyme road
-by one point
-
 >in
 
 >s
@@ -975,6 +971,7 @@ The HA HALF button on your Leet Learner lights up green.
 The HA HALF button on your Leet Learner lights up green.
 
 >quash quick
+by one point
 
 #+testcase-ha-half-table-of-verb-checks-31-slick
 >zslosh slick
@@ -1036,6 +1033,9 @@ by one point
 by one point
 
 >n
+
+>rhyme road
+by one point
 
 >in
 

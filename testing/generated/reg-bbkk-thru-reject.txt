@@ -446,7 +446,6 @@ You already streamlined things with the list!
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 !by one point
 
 >cold coal
@@ -1976,16 +1975,6 @@ The one-wish fun fish blups at you apologetically. You don't have enough to work
 >undo
 >undo
 
->rhyme road
-by one point
-
-#testcase-check-vc-rhyme-road-rule-fallthrough
-The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
-
-#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
->rhyme road
-You already looked down Rhyme Road!
-
 >in
 
 >s
@@ -2294,6 +2283,7 @@ You already quacked "Quite!"
 !by one point
 
 >quash quick
+by one point
 
 #testcase-check-vc-quash-quick-rule-fallthrough
 The Chic Shooter managed to, well, quash things quickly. The Fried Freak nods at you, as if to say, I can put up with icky stuff, with the right order.
@@ -2368,6 +2358,16 @@ You no longer have dander on your mind.
 You already successfully sought out the grander grove and its dreamy goals.
 
 >n
+
+>rhyme road
+by one point
+
+#testcase-check-vc-rhyme-road-rule-fallthrough
+The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
+
+#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
+>rhyme road
+You already looked down Rhyme Road!
 
 >in
 

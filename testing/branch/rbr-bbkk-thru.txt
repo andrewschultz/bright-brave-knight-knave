@@ -548,11 +548,15 @@ NOTE: this command will be useful later, but you aren't ready to use it, yet. Yo
 @hfull
 #testcase-values-from-number-of-white-wave-is-2754
 >ll
-BZZT
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 \\
 #testcase-values-from-number-of-player-is--5610
 >ll me
-BZZT
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >kite cave
 by one point
@@ -601,71 +605,85 @@ You already streamlined things with the list!
 #testcase-mistakes-table-of-hold-hole-guesses-gold-goal
 >gold goal
 "Sacrilege!" a voice booms. "YOU HAVE DESERTED YOUR TRUE NATURE!"
-WRONG
+Po', Pal! Mo' Mal!
 \\
 >undo
 
 @mis+
 #testcase-mistakes-table-of-hold-hole-guesses-scold-skoal
 >scold skoal
-Discouraging a Viking feast might be brave, but it also might not be bright.
+You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright.
+!LCD
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-told-toll
 >told toll
 You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-fold-foal
 >fold foal
 The hold hole does not seek animal sacrifice, and neither should you.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-mold-mole
 >mold mole
 The hold hole does not seek animal sacrifice, and neither should you.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
 >polled pole
 That's a bit too repetitive, but the general idea feels right.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-rolled-role-roll
 >rolled roll
 That's a bit too repetitive, but the general idea feels right.
+!LCD
 \\
 >rolled role
 That's a bit too repetitive, but the general idea feels right.
+!LCD
 
 @!min
 >bold bowl
 Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 !by one point
+{--mis}!LCD
 \\
 >cold coal
 Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
 !NOTE
 !by one point
+{--mis}!LCD
 \\
 >sold soul
 Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
 You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
+{--mis}!LCD
 
 @mis
 #testcase-mistakes-table-of-hold-hole-guesses-bold-bowl
 >bold bowl
-WRONG
+But you have already divined a need for the bold bowl.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-cold-coal
 >cold coal
-WRONG
+But you have already divined a need for the cold coal.
+!LCD
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-sold-soul
 >sold soul
-WRONG
+But you have already divined a need for the sold soul.
+!LCD
 \\
 #+testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
 >polled pole
 That's a bit too repetitive, and there's nothing more to figure out, anyway.
+!LCD
 
 @all
 >write rave
@@ -702,8 +720,9 @@ by one point
 #testcase-values-from-number-of-bass-bath-is-2704
 >ll
 You scan the area.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -3.00.)
-The leet learner is giving a funny readout. You could maybe climb UP to the old rocks and get another reading.
+!most of the time
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0
 
 @rej
 #testcase-check-vc-fight-fave-rule-if-player-is-not-in-white-wave
@@ -920,7 +939,9 @@ by one point
 @hfull
 #testcase-values-from-number-of-rut-row-is-2653
 >ll
-WRONG
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 >what whoah
 by one point
@@ -993,7 +1014,7 @@ You have no friend to chide.
 \\
 #testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
-A brave bright knight knave doesn't put people through the ringer for past mistakes.
+You don't want to reflect on the past.
 \\
 #testcase-mistakes-table-of-slid-slum-guesses-mid-mum
 >mid mum
@@ -1001,12 +1022,14 @@ You don't need parental support or quiet.
 \\
 #testcase-mistakes-table-of-slid-slum-guesses-skid-scum
 >skid scum
-No. A good brave bright knight knave don't look down on people like that.
+No. A good Bright Brave Knight Knave don't look down on people like that.
 
 @hfull
 #testcase-values-from-number-of-slid-slum-is-2704
 >ll
-WRONG
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >hid hum
 by one point
@@ -1032,7 +1055,7 @@ Forgiveness is more the thing here.
 \\
 #+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
-You don't want to reflect on the past.
+A Bright Brave Knight Knave doesn't put people through the ringer for past mistakes.
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-kid-come-rule
@@ -1042,7 +1065,10 @@ You can say KID COME now a kid is around.
 @hfull
 #+testcase-values-from-number-of-slid-slum-is-2704
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+\\
+>ll kid
+Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all.
 
 >kid come
 by one point
@@ -1074,7 +1100,7 @@ You can say RID RUM now you have cause to speak out against alcohol.
 @hfull
 #+testcase-values-from-number-of-slid-slum-is-2704
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >rid rum
 by one point
@@ -1091,7 +1117,12 @@ You already got rid of the rum!
 @hfull
 #+testcase-values-from-number-of-slid-slum-is-2704
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
+
+@mis
+#+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+You don't want to reflect on the past.
 
 >in
 
@@ -1145,7 +1176,7 @@ WRONG
 @hfull
 #testcase-values-from-number-of-crude-crapper-is-2757
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >mood mapper
 by one point
@@ -1211,7 +1242,7 @@ That would be a villain worth fighting, but no.
 \\
 #testcase-mistakes-table-of-crude-crapper-guesses-wooed-whapper
 >wooed whapper
-You will need no henchmen to carry out violent dirty work. Friends? Yes. Henchmen? No.
+You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty.
 \\
 #testcase-mistakes-table-of-crude-crapper-guesses-youd-yap-er
 >youd yap er
@@ -1220,7 +1251,8 @@ You feel as though you want to say something about the state of these environs, 
 @hfull
 #+testcase-values-from-number-of-crude-crapper-is-2757
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
 >nude napper
@@ -1269,7 +1301,7 @@ Other people are seeking suitors--platonic, perhaps, but it's your job to bring 
 @hfull
 #testcase-values-from-number-of-recruiter-is-2656
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.33.)
 
 @gt
 #testcase-goto-table-of-noways-recroom
@@ -1351,7 +1383,7 @@ While the creek and greenery meander off, you might get lost. You can really onl
 @hfull
 #testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, 0.00.)
 
 >stride streak
 by one point
@@ -1369,7 +1401,7 @@ You already encouraged more action and less moping here!
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.33.)
 
 >guide geek
 by one point
@@ -1382,7 +1414,7 @@ The Guide Geek looks around, slightly uncomfortable. They see no one they immedi
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >fried freak
 by one point
@@ -1395,7 +1427,7 @@ The Fried Freak and the Guide Geek brush past each other with little or no ackno
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >snide sneak
 by one point
@@ -1408,7 +1440,8 @@ The Snide Sneak and the Fried Freak brush past each other with little or no ackn
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
+!LCD
 
 >e
 
@@ -1431,7 +1464,7 @@ What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they
 @hfull
 #+testcase-values-from-number-of-recruiter-is-2656
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
 @alt
 #testcase-alt-words-table-of-verb-checks-16-weak-wooter-w00ter
@@ -1451,7 +1484,7 @@ The Meek Mooter and Snide Sneak understand you wish to call someone new. They de
 @hfull
 #+testcase-values-from-number-of-recruiter-is-2656
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >chic shooter
 by one point
@@ -1464,7 +1497,8 @@ The Chic Shooter and the Weak Wooter brush past each other with little or no ack
 @hfull
 #+testcase-values-from-number-of-recruiter-is-2656
 >ll
-WRONG
+Nothing comes up. You've changed the Recruiter as much as you needed to.
+!LCD
 
 >w
 >fried freak
@@ -2232,7 +2266,7 @@ You can go back south.
 @hfull
 #testcase-values-from-number-of-bosh-blanks-is-2706
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 ##BALANCE UNDOS
@@ -2307,8 +2341,54 @@ You can go back south.
 
 @hfull
 #testcase-values-from-number-of-yucky-yacht-is-2755
+>ll yucky yacht
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
+\\
+#+testcase-values-from-number-of-bosh-blanks-is-2706
 >ll
-WRONG
+Nothing comes up.
+!LCD
+
+@mis
+#testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bought
+Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+\\
+#+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bot
+Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-clucky-clot
+>clucky clot
+You think about people who've wasted your time with meaningless jabber.
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-ducky-dot
+>ducky dot
+You see no dot or person named Dorothea to proclaim as ducky.
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-lucky-lot
+>lucky lot
+You grumble about rich people for a bit. It doesn't hurt.
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
+>nucky knot
+You don't want to cross a mogul of a Boardwalk Empire just now.
+\\
+#+testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
+>nucky not
+You don't want to cross a mogul of a Boardwalk Empire just now.
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
+>sucky sot
+Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+\\
+#+testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
+>sucky sought
+Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+\\
+#testcase-mistakes-table-of-yucky-yacht-guesses-trucky-trot
+>trucky trot
+You have no need to walk through or over anyone.
 
 >plucky plot
 by one point
@@ -2375,10 +2455,20 @@ by one point
 >undo
 >undo
 
+@mis
+#+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bought
+{$REJECT2}
+
 @hfull
 #+testcase-values-from-number-of-yucky-yacht-is-2755
->ll
-WRONG
+>ll yucky yacht
+Nothing comes up.
+!LCD
+\\
+#testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.33, 0.33.)
 
 >s
 >w
@@ -2423,13 +2513,13 @@ You can only go back west or, once you've moved the tank(s), past them in whatev
 @hfull
 #testcase-values-from-number-of-tall-tanks-is-2704
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
 >ll tanks
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
 >ll tank
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @alt
 #testcase-alt-words-table-of-verb-checks-49-yall-yank-yanks
@@ -2459,7 +2549,10 @@ You can only go back west or east.
 @hfull
 #+testcase-values-from-number-of-tall-tanks-is-2704
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+>ll tanks
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @!min,gong,prong
 >paul panks
@@ -2478,7 +2571,10 @@ You already paid your respects.
 @hfull
 #+testcase-values-from-number-of-tall-tanks-is-2704
 >ll
-WRONG
+Nothing comes up. You've changed the tall tanks as much as you needed to.
+\\
+>ll tanks
+Nothing comes up. You've changed the tall tanks as much as you needed to.
 
 >w
 
@@ -2804,7 +2900,7 @@ You can say MAIN MAX once it's busier by the Lane, Lax.
 @hfull
 #testcase-values-from-number-of-lane-lax-is-2703
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 2.50.)
 
 >train tracks
 by one point
@@ -2844,7 +2940,7 @@ The train tracks head north and south, but you can go back west, too.
 @hfull
 #+testcase-values-from-number-of-lane-lax-is-2703
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
 >main max
 by one point
@@ -2866,7 +2962,7 @@ You already created train tracks.
 @hfull
 #+testcase-values-from-number-of-lane-lax-is-2703
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
 
 >pain packs
 by one point
@@ -2885,7 +2981,8 @@ You already got some pain packs!
 @hfull
 #+testcase-values-from-number-of-lane-lax-is-2703
 >ll
-WRONG
+Nothing
+!LCD
 
 >n
 
@@ -2927,7 +3024,7 @@ You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
 @hfull
 #testcase-values-from-number-of-crowd-cries-is-5459
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
 >trowed tries
 by one point
@@ -2949,7 +3046,7 @@ You can denounce LOUD LIES now you've tweaked the crowd more subjectively.
 @hfull
 #+testcase-values-from-number-of-crowd-cries-is-5459
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-56-lies
@@ -3079,7 +3176,47 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 @hfull
 #testcase-values-from-number-of-crude-crass-lewd-lass-is-5459
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+\\
+#+testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.50.)
+\\
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+@mis
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-booed-bass
+>booed bass
+You don't want to get sea bass irritable.
+\\
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
+>brewed brass
+The armor on the track tryst lack list probably needs to be stronger than brass.
+\\
+#+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
+>brood brass
+The armor on the track tryst lack list probably needs to be stronger than brass.
+\\
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
+>mood mass
+You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+\\
+#+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
+>mooed mass
+You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+\\
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-poohed-pass
+>poohed pass
+You think you see an exit out, but nah, it's just get you more lost.
+\\
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-sued-sass
+>sued sass
+How very anti-freedom of speech and unlike a Bright Brave Knight Knave!
+\\
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-tude-tass
+>tude tass
+You're already in the text adventure spirit.
 
 >glued glass
 by one point
@@ -3158,8 +3295,40 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 
 @hfull
 #testcase-values-from-number-of-perky-pap-is-2753
+>ll perky pap
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#+testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, -1.00.)
+
+@mis
+#testcase-mistakes-table-of-perky-pap-guesses-clerky-clap
+>clerky clap
+You consider the right way to applaud bureaucracy.
+\\
+#testcase-mistakes-table-of-perky-pap-guesses-irky-app
+>irky app
+You download no annoying application to your phone. You don't even have a phone on you.
+\\
+#testcase-mistakes-table-of-perky-pap-guesses-kirky-cap
+>kirky cap
+You find no clothes that make you talk with dramatic pauses or yell KHAN.
+\\
+#testcase-mistakes-table-of-perky-pap-guesses-lurky-lap
+>lurky lap
+You slightly fear your junior-high gym teacher just waiting to give out punishment.
+\\
+#testcase-mistakes-table-of-perky-pap-guesses-turkey-tap
+>turkey tap
+Even if one appeared, you'd wonder how they'd fit through there.
+\\
+#testcase-mistakes-table-of-perky-pap-guesses-worky-whap
+>worky whap
+Nobody is there to kick or shove you into gear.
 
 >murky map
 by one point
@@ -3285,8 +3454,13 @@ You sense exploring this island would get you lost. ENTER the yacht to re-visit 
 
 @hfull
 #testcase-values-from-number-of-clashing-cord-is-2904
->ll
-WRONG
+>ll clashing cord
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+@mis
+#testcase-mistakes-table-of-clashing-cord-guesses-flashing-ford
+>flashing ford
+No bridge across a river, or car, or intergalactic space traveler whizzes by.
 
 >slashing sword
 by one point
@@ -3327,7 +3501,12 @@ You can make a DONE DISH once you've got certifiably acceptable ingredients for 
 @hfull
 #testcase-values-from-number-of-pallid-pent-valid-vent-is-5558
 >ll
-WRONG
+Nothing. You've found everywhere the Sassed Sort can go.
+
+@mis
+#testcase-mistakes-table-of-pallid-pent-valid-vent-guesses-ballad-bent
+>ballad bent
+Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tunes.
 
 >salad scent
 by one point
@@ -3373,20 +3552,6 @@ The one-wish fun fish blups at you apologetically. You don't have enough to work
 >undo
 >undo
 >undo
-
-@!min,gong,prong
->rhyme road
-by one point
-
-@all,rej
-{--rej}#testcase-check-vc-rhyme-road-rule-fallthrough
-{--all}#testcase-run-vr-rhyme-road-rule-default
-The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
-
-@rej
-#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
->rhyme road
-You already looked down Rhyme Road!
 
 >in
 
@@ -3452,7 +3617,76 @@ You can find STEW STUFF once you don't feel bad searching through left-behind be
 @hfull
 #testcase-values-from-number-of-too-tough-blue-bluff-is-5360
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
+
+@mis
+#testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+You try to puff yourself out as more muscular than you actually are. No dice.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>chew chuff
+You make train noises, but none appears.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>choo chuff
+You make train noises, but none appears.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
+>coo cuff
+You consider lashing out for its own sake.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-do-duff
+>do duff
+No, you want to do something right.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flew fluff
+You don't have time to fly, or get sick, or other frivolities!
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flu fluff
+You don't have time to fly, or get sick, or other frivolities!
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
+>goo guff
+You produce no sticky stuff.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>hoo huff
+Alas (or not,) there is nobody to get huffy at.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>who huff
+Alas (or not,) there is nobody to get huffy at.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
+>moo muff
+You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>poo puff
+You feel fake exhaustion for a bit.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>pooh puff
+You feel fake exhaustion for a bit.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
+>rue rough
+Bummer, you think, that things aren't given to you.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
+>skew scuff
+You shuffle your feet a bit, exaggerating what has happened and what you face.
+\\
+#testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slue slough
+You blink, only to find you have not wound up in a bog, which is probably for the better.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slew sluff
+You blink, only to find you have not wound up in a bog, which is probably for the better.
 
 >grew gruff
 by one point
@@ -3490,7 +3724,7 @@ You can say NEW NUFF once you have something of questionable age.
 @hfull
 #+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
 
 >stew stuff
 by one point
@@ -3544,11 +3778,60 @@ The one-wish fun fish blups suspiciously at the stew stuff. As if there is no as
 @hfull
 #testcase-values-from-number-of-stew-stuff-is-2705
 >ll stew
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 \\
 #+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+
+@mis
+#+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+It's stew ingredients, not protein shake ingredients.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>chew chuff
+You make train noises, but none appears.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
+>coo cuff
+You consider lashing out for its own sake.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-do-duff
+>do duff
+No, you want to do something right.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flew fluff
+You don't have time to fly, or get sick, or other frivolities!
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
+>goo guff
+You produce no sticky stuff.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>hoo huff
+Alas (or not,) there is nobody to get huffy at.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
+>moo muff
+You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>pooh puff
+You feel fake exhaustion for a bit.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
+>rue rough
+Bummer, you think, that things aren't given to you.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
+>skew scuff
+You shuffle your feet a bit, exaggerating what has happened and what you face.
+\\
+#+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slew sluff
+You blink, only to find you have not wound up in a bog, which is probably for the better.
 
 >new nuff
 by one point
@@ -3562,6 +3845,18 @@ Boom! The stew stuff isn't perfectly shiny, but it's, well, new 'nuff. It's cann
 #testcase-check-vc-new-nuff-rule-if-sco-new-nuff-is-true
 >new nuff
 You already revitalized the stew stuff.
+
+@hfull
+#+testcase-values-from-number-of-stew-stuff-is-2705
+>ll stew
+Nothing comes up. You've changed the stew stuff as much as you needed to.
+!LCD
+\\
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
+!LCD
 
 >e
 
@@ -3671,6 +3966,18 @@ Only way back is north.
 >wrought zreef
 {$YELLOWCORE}
 
+@hfull
+##BALANCE UNDOS
+>brought brief
+by one point
+\\
+#testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
+\\
+>undo
+>undo
+
 >bought beef
 by one point
 
@@ -3691,6 +3998,11 @@ It's still too chaotic to do much!
 \\
 >think
 You can make a WROUGHT REEF once you've bluffed your way through the fief.
+
+@hfull
+#+testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >brought brief
 by one point
@@ -3720,6 +4032,11 @@ You already pretended you brought huge plans!
 >think
 You can make a WROUGHT REEF now you've bluffed your way through the fief.
 
+@hfull
+#+testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
+
 >wrought reef
 by one point
 
@@ -3748,8 +4065,25 @@ You already wrought the reef!
 
 @hfull
 #testcase-values-from-number-of-wish-fun-fish-is-5308
+>ll fish
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+\\
 >ll
-WRONG
+Nothing comes up.
+!LCD
+
+@mis
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-gun-gish
+>gun gish
+You get a gish gallop going, but the fish doesn't seem to understand.
+\\
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-none-nish
+>none nish
+The fish swims around, ignoring your temporary nihilism.
+\\
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-pun-pish
+>pun pish
+The fish looks blankly at you. It has no knowledge of puns.
 
 >done dish
 by one point
@@ -3829,8 +4163,7 @@ Alas, no solution to your woes is created, nor does it tumble out.
 \\
 #testcase-mistakes-table-of-nil-none-guesses-still-stun
 >still stun
-You do feel a bit stunned. And you will still feel a bit stunned even after you half make your way out of this fog.
-WRONG
+You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog.
 \\
 #testcase-mistakes-table-of-nil-none-guesses-till-til-ton
 >till ton
@@ -3893,6 +4226,12 @@ You already filled yourself up with fun!
 #+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill un
 {$GREENCORE}
+
+@mis
+#+testcase-mistakes-table-of-nil-none-guesses-still-stun
+>still stun
+!stunned
+It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
 
 >will won
 by one point
@@ -4022,7 +4361,7 @@ Beyond is too dangerous. Best just go back down when you're ready.
 @hfull
 #testcase-values-from-number-of-lack-light-black-blight-is-5461
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.25.)
 
 >hack height
 by one point
@@ -4035,7 +4374,7 @@ You feel less dizzy and such this high up. It's a relief.
 @hfull
 #+testcase-values-from-number-of-lack-light-black-blight-is-5461
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.17, 0.17.)
 
 >slack slight
 by one point
@@ -4048,7 +4387,7 @@ The oppression has a slack, slight. You feel better.
 @hfull
 #+testcase-values-from-number-of-lack-light-black-blight-is-5461
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >quack quite
 by one point
@@ -4080,8 +4419,13 @@ The fried freak begins looking through all the bags in the sack site. And what d
 
 @hfull
 #testcase-values-from-number-of-sour-slate-is-2705
->ll
-WRONG
+>ll sour slate
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+@mis
+#testcase-mistakes-table-of-sour-slate-guesses-hour-late
+>hour late
+You frown at the sour slate, wishing you'd seen it sooner.
 
 >power plate
 by one point
@@ -4110,10 +4454,16 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 >undo
 >undo
 
+@mis
+#+testcase-mistakes-table-of-sour-slate-guesses-hour-late
+>hour late
+You frown at the power plate, wishing you'd seen it sooner.
+
 @hfull
 #+testcase-values-from-number-of-lack-light-black-blight-is-5461
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
 >flak flight
@@ -4170,10 +4520,11 @@ You already quacked "Quite!"
 
 @hfull
 #testcase-values-from-number-of-posh-pick-is-2704
->ll
-WRONG
+>ll posh pick
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >quash quick
+by one point
 
 @all,rej
 {--rej}#testcase-check-vc-quash-quick-rule-fallthrough
@@ -4200,8 +4551,8 @@ You can SLOSH SLICK now you've had someone make a path through the slime, slowed
 
 @hfull
 #+testcase-values-from-number-of-posh-pick-is-2704
->ll
-WRONG
+>ll posh pick
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >slosh slick
 by one point
@@ -4232,12 +4583,45 @@ You can summon the TIME TOAD now you have two artifacts it finds valuable.
 
 @hfull
 #+testcase-values-from-number-of-posh-pick-is-2704
->ll
-WRONG
+>ll posh pick
+Nothing comes up. You've changed the posh pick as much as you needed to.
 \\
 #testcase-values-from-number-of-slime-slowed-rime-road-is-5460
->ll
-WRONG
+>ll rime road
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+
+@mis
+#testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
+>chime choad
+You are all for off-color humor but it doesn't seem appropriate here.
+\\
+#+testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
+>chime chode
+You are all for off-color humor but it doesn't seem appropriate here.
+\\
+#testcase-mistakes-table-of-rime-road-guesses-crime-crowed
+>crime crowed
+You eavesdrop on no criminal confessions.
+\\
+#testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
+>dime dohed
+You find no money in a loaf of bread
+\\
+#+testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
+>dime doughed
+You find no money in a loaf of bread
+\\
+#testcase-mistakes-table-of-rime-road-guesses-grime-growed
+>grime growed
+Ungrammatical, and anyway, you are trying to clean things up here!
+\\
+#testcase-mistakes-table-of-rime-road-guesses-im-owed
+>im owed
+All this entitlement is bravebut not bright.
+\\
+#testcase-mistakes-table-of-rime-road-guesses-lime-load
+>lime load
+The fruit or the stone, you can't see yourself lugging it around.
 
 >time toad
 by one point
@@ -4297,7 +4681,7 @@ This would seem to be despairing. You can't already admit you tried but failed.
 @hfull
 #testcase-values-from-number-of-dander-dove-is-2804
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.67, 0.67.)
 
 >stander stove
 by one point
@@ -4323,7 +4707,7 @@ by one point
 @hfull
 #+testcase-values-from-number-of-dander-dove-is-2804
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >candor cove
 by one point
@@ -4342,7 +4726,7 @@ You already successfully sought out the candor cove and its concrete goals.
 @hfull
 #+testcase-values-from-number-of-dander-dove-is-2804
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 @!min
 >grander grove
@@ -4362,14 +4746,35 @@ You already successfully sought out the grander grove and its dreamy goals.
 @hfull
 #+testcase-values-from-number-of-dander-dove-is-2804
 >ll
-WRONG
+Nothing comes up. The general area here has been changed enough.
 
 >n
 
 @hfull
 #+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
->ll
-WRONG
+>ll rime road
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+it's really dim
+
+@!min,gong,prong
+>rhyme road
+by one point
+
+@all,rej
+{--rej}#testcase-check-vc-rhyme-road-rule-fallthrough
+{--all}#testcase-run-vr-rhyme-road-rule-default
+The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
+
+@rej
+#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
+>rhyme road
+You already looked down Rhyme Road!
+
+@hfull
+#+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll rime road
+Nothing
+!LCD
 
 >in
 
@@ -4456,7 +4861,7 @@ You can say COVERING CANDLE once you have what you need for the summoning ceremo
 @hfull
 #testcase-values-from-number-of-knell-nook-is-2754
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 >bell book
 by one point
@@ -4478,11 +4883,12 @@ You can say COVERING CANDLE now you have what you need for the summoning ceremon
 @hfull
 #testcase-values-from-number-of-hovering-handle-is-2906
 >ll handle
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
 #+testcase-values-from-number-of-knell-nook-is-2754
 >ll
-WRONG
+Nothing
+!LCD
 
 >covering candle
 by one point
@@ -4524,7 +4930,7 @@ The knell nook shakes. A spirit appears -- it is a sold soul! It nods with famil
 @hfull
 #testcase-values-from-number-of-route-rough-is-2755
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.67, -0.67.)
 
 >nowt nuff
 by one point
@@ -4543,7 +4949,7 @@ You already nullified certain worries and complaints!
 @hfull
 #+testcase-values-from-number-of-route-rough-is-2755
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
 
 >stout stuff
 by one point
@@ -4562,7 +4968,8 @@ You already found ways to be stout!
 @hfull
 #+testcase-values-from-number-of-route-rough-is-2755
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
 >flout fluff
@@ -4629,8 +5036,8 @@ by one point
 
 @hfull
 #testcase-values-from-number-of-ardor-elm-is-2753
->ll
-WRONG
+>ll elm
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >harder helm
 by one point
@@ -4644,6 +5051,12 @@ Clunk! A harder helm drops from the top branches of the ardor elm. You try it on
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
 That sort of repeated ardor won't get you anywhere!
+
+@hfull
+#+testcase-values-from-number-of-ardor-elm-is-2753
+>ll
+Nothing
+!LCD
 
 >e
 
@@ -4678,7 +5091,7 @@ That sort of repeated ardor won't get you anywhere!
 @alt
 ##balance undos
 #testcase-alt-words-table-of-verb-checks-4-eyeing-eying-ease
->eyeing eying ease
+>eying ease
 by one point
 \\
 >undo
@@ -4734,6 +5147,19 @@ This pub houses no crazy lattice of secret passages. You can only go back out.
 >zfusing phew
 {$YELLOWCORE}
 
+@mis
+#testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+Trading alcohol for tobacco would just be a lateral move.
+\\
+#testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
+>rusing roo
+No sneaky kangaroo appears, which is probably for the better.
+\\
+#+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
+>rusing rue
+No sneaky kangaroo appears, which is probably for the better.
+
 @rej
 #testcase-check-vc-fusing-phew-rule-if-lou-score-<-2
 >fusing phew
@@ -4746,11 +5172,11 @@ You can say FUSING PHEW once you have commiserated more than one way with Lou.
 @hfull
 #testcase-values-from-number-of-bruising-brew-is-2904
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -1.00.)
 \\
 #testcase-values-from-number-of-losing-lou-is-2803
 >ll lou
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
 ##BALANCE UNDOS
 >boozing boo
@@ -4758,7 +5184,7 @@ by one point
 \\
 #+testcase-values-from-number-of-bruising-brew-is-2904
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -1.00.)
 \\
 >undo
 >undo
@@ -4780,7 +5206,7 @@ You already let Lou know the truth about alcohol!
 @hfull
 #+testcase-values-from-number-of-bruising-brew-is-2904
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >boozing boo
 by one point
@@ -4796,6 +5222,11 @@ Lou nods at the different perspectives you provided but is unable to integrate t
 >boozing boo
 Don't overdo the moralizing!
 
+@mis
+#+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+After helping Lou kick alcohol, you recommend that? Ouch!
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-63-phew
 >zfusing phew
@@ -4810,6 +5241,15 @@ Don't overdo the moralizing!
 >think
 You can say FUSING PHEW now you have commiserated more than one way with Lou.
 
+@hfull
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, 0.00.)
+\\
+#+testcase-values-from-number-of-losing-lou-is-2803
+>ll lou
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
 >fusing phew
 by one point
 
@@ -4823,6 +5263,11 @@ by one point
 >fusing phew
 Fusing ideas once was exhausting enough.
 
+@mis
+#+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+You think what a lovely bubble gum shop this would make!
+
 @ha
 #testcase-ha-half-table-of-verb-checks-64-spew
 >zspurning spew
@@ -4834,8 +5279,21 @@ Fusing ideas once was exhausting enough.
 
 @hfull
 #testcase-values-from-number-of-turning-to-learning-lou-is-5755
+>ll lou
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
+\\
 >ll
-WRONG
+Nothing
+!LCD
+
+@mis
+#testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
+>burning boo
+No, you need something more positive.
+\\
+#testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
+>churning chew
+No, you need something less reflexive.
 
 >spurning spew
 by one point
@@ -4844,6 +5302,15 @@ by one point
 {--rej}#testcase-check-vc-spurning-spew-rule-fallthrough
 {--all}#testcase-run-vr-spurning-spew-rule-default
 Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
+
+@mis
+#+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
+>burning boo
+No, you needed something more positive.
+\\
+#+testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
+>churning chew
+No, you needed something less reflexive.
 
 >out
 
@@ -4936,7 +5403,7 @@ You are at the top of the hill. It was such a long journey up, you lost track of
 @hfull
 #testcase-values-from-number-of-hailing-hill-is-2854
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
 \\
 ##BALANCE UNDOS
 >ailing ill
@@ -4944,7 +5411,7 @@ by one point
 \\
 #+testcase-values-from-number-of-hailing-hill-is-2854
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 \\
 >undo
 >undo
@@ -4966,7 +5433,7 @@ You already improved your climbing ability!
 @hfull
 #+testcase-values-from-number-of-hailing-hill-is-2854
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >ailing ill
 by one point
@@ -4985,7 +5452,7 @@ You already expressed that everyone hurts!
 @hfull
 #+testcase-values-from-number-of-hailing-hill-is-2854
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >mailing mill
 by one point
@@ -5028,7 +5495,7 @@ The mailing mill is already on Hailing Hill!
 @hfull
 #testcase-values-from-number-of-mailing-mill-is-2854
 >ll mill
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-bailing-bill-rule
@@ -5042,7 +5509,7 @@ You can contact Wailing Will now you have something to offer him and the means t
 @hfull
 #+testcase-values-from-number-of-hailing-hill-is-2854
 >ll
-WRONG
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >failing phil
 by one point
@@ -5199,14 +5666,14 @@ There must be another way to see Trite Tully!
 
 @hfull
 #testcase-values-from-number-of-trite-tully-is-2755
->ll bully
-WRONG
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 \\
 >bright bully
 by one point
 \\
->ll bully
-WRONG
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 \\
 >undo
 >undo
@@ -5227,8 +5694,8 @@ There must be another way to see Trite Tully!
 
 @hfull
 #+testcase-values-from-number-of-trite-tully-is-2755
->ll
-WRONG
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >bright bully
 by one point
@@ -5244,8 +5711,7 @@ You wonder what to do. Tully looks pleadingly at you, but you still detect conte
 @mis
 #testcase-mistakes-table-of-trite-tully-guesses-damn-die
 >damn die
-You were too harsh!
-WRONG
+Struck, Strikes? Yuck, Yikes!
 \\
 >undo
 \\
@@ -5262,8 +5728,9 @@ Yes, Tully is overacting, but knowing this fact won't do enough.
 \\
 #testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
 >lamb lie
-You were not harsh enough!
-WRONG
+Curse-y Cad Mercy?! MAD!
+\\
+>undo
 \\
 #testcase-mistakes-table-of-trite-tully-guesses-maam-my
 >maam my
@@ -5587,8 +6054,24 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 
 @hfull
 #+testcase-values-from-number-of-trite-tully-is-2755
->ll
-WRONG
+>ll sham
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+\\
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+@mis
+#testcase-mistakes-table-of-trite-tully-guesses-cram-cry
+>cram cry
+Now's not the time to get too emotional.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-dram-dry
+>dram dry
+Now's not the time for alcohol.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-wham-why
+>wham why
+It's pointless to ask a troll why.
 
 >bam bye
 by one point
