@@ -1165,10 +1165,10 @@ by one point
 >undo
 \\
 >mood tapper
-WRONG
+Ooh! You're close. You've probably juggled two valid solutions.
 \\
 >tude mapper
-WRONG
+Ooh! You're close. You've probably juggled two valid solutions.
 \\
 >undo
 >undo
@@ -4623,6 +4623,13 @@ All this entitlement is bravebut not bright.
 >lime load
 The fruit or the stone, you can't see yourself lugging it around.
 
+@all
+>mime mode
+by one point
+Your audience eats it up
+\\
+>undo
+
 >time toad
 by one point
 
@@ -4758,13 +4765,12 @@ it's really dim
 
 @!min,gong,prong
 >mime mode
-Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all 'was it something I said?' But here you just sort of act as if you're being sucked into the rime road. Your audience eats it up.
 by one point
 
 @all,rej
 {--rej}#testcase-check-vc-mime-mode-rule-fallthrough
 {--all}#testcase-run-vr-mime-mode-rule-default
-The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
+Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all "was it something I said?" But here you just sort of act as if you're being sucked into the rime road. It feels really good, even with nobody around.
 
 @rej
 #testcase-check-vc-mime-mode-rule-if-sco-mime-mode-is-true

@@ -385,13 +385,8 @@ After some thought, you consider the right way forward: FRIGHTFULLY...
 >jj
 After some thought, you consider the right way forward: BRIGHT BULLY...
 >jj
-
-#this is a temporary hack! I'm not able to figure why it works, but I need to send another command to the prompt, and then STDIN prints something.
->z
 After some thought, you consider the right way forward: BAM BYE...
-
->i
->score
+RESTART
 
 * _remaining
 

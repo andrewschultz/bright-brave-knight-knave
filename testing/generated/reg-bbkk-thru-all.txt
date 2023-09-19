@@ -631,6 +631,12 @@ by one point
 The Fried Freak has no problem sloshing through.
 Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.
 
+>mime mode
+by one point
+Your audience eats it up
+
+>undo
+
 >time toad
 by one point
 
@@ -663,11 +669,10 @@ You no longer have dander on your mind.
 >n
 
 >mime mode
-Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all 'was it something I said?' But here you just sort of act as if you're being sucked into the rime road. Your audience eats it up.
 by one point
 
 #testcase-run-vr-mime-mode-rule-default
-The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
+Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all "was it something I said?" But here you just sort of act as if you're being sucked into the rime road. It feels really good, even with nobody around.
 
 >in
 
