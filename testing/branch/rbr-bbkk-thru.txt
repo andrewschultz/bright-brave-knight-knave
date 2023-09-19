@@ -1702,19 +1702,6 @@ You don't have the support of the right friends to grow gruff constructively.
 >grew gruff
 You don't have the support of the right friends to grow gruff constructively.
 \\
-#testcase-think-table-of-verb-checks-vc-grew-gruff-rule
->think
-You can say GREW GRUFF once you have the support of friends.
-\\
->swap sweet
-\\
-#+testcase-think-table-of-verb-checks-vc-grew-gruff-rule
->think
-You can say GREW GRUFF now you have the support of friends.
-\\
->undo
->undo
->undo
 >undo
 >undo
 \\
@@ -2246,6 +2233,54 @@ You can go back south.
 #testcase-values-from-number-of-bosh-blanks-is-2706
 >ll
 WRONG
+
+@rej
+##BALANCE UNDOS
+>bye
+\\
+>gonear blue bluff
+\\
+>grew gruff
+!by one point
+\\
+#testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF once you have the support of friends.
+\\
+>swap sweet
+\\
+#+testcase-think-table-of-verb-checks-vc-grew-gruff-rule
+>think
+You can say GREW GRUFF now you have the support of friends.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+\\
+>gonear passed port
+\\
+>salad scent
+!by one point
+\\
+#testcase-think-table-of-verb-checks-vc-salad-scent-rule
+>think
+You can track the SALAD SCENT once you have adequate willing help to climb up to the vent.
+\\
+>swap sweet
+\\
+#+testcase-think-table-of-verb-checks-vc-salad-scent-rule
+>think
+You can track the SALAD SCENT now you have adequate willing help to climb up to the vent.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+\\
+>undo
 
 >posh planks
 by one point
@@ -3410,6 +3445,7 @@ You don't want to get lost in the bluff. Best just go back east once you're done
 >stew stuff
 You haven't steeled yourself to look for what you need, yet. You feel bad for the people who might've lost what they need to eat.
 \\
+#testcase-think-table-of-verb-checks-vc-stew-stuff-rule
 >think
 You can find STEW STUFF once you don't feel bad searching through left-behind belongings.
 
@@ -3446,6 +3482,7 @@ Don't want to overdo it!
 You have nothing to make new 'nuff, yet.
 \\
 #testcase-think-table-of-verb-checks-vc-new-nuff-rule
+#+testcase-think-table-of-verb-checks-vc-stew-stuff-rule
 >think
 You can find STEW STUFF now you don't feel bad searching through left-behind belongings.
 You can say NEW NUFF once you have something of questionable age.
