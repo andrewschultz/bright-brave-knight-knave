@@ -1502,7 +1502,7 @@ a goodrhyme rule (this is the vc-bam-bye rule):
 
 this is the vr-bam-bye rule:
 	now sco-bam-bye is true;
-	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.";
+	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]'Oh, on! Go! Gone!' you blurt. Tully begins to yell at you, in shock, but you feel prepared. 'Yo, yawn,' you say. Tully looks around in disbelief. There's no crowd to egg them on. Tully sheds a tear. 'So hurtful.'[paragraph break]But were you?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.";
 	win-the-game;
 
 a goodrhyme rule (this is the tully-triage rule):
@@ -1653,7 +1653,7 @@ to win-the-game:
 		blank out the whole row; [don't let the player see MISSED if they got everything]
 	follow the score and thinking changes rule;
 	force-status;
-	end the story finally saying "Fiend fell. Weaned well!";
+	end the story finally saying "Goal, Gotten: Troll? TROTTIN[']!";
 	follow the shutdown rules;
 
 to give-hi (hi - a holeitem):

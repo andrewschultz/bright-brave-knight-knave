@@ -23,10 +23,10 @@ table of bass bath guesses
 mist-1	mist-2	mist-rule	got-yet	leet-rule	mist-txt
 "has"	"hath"	--	false	--	"You conjugate old English verbs, in case this may be important in the future. It isn't right now."
 "(lace|lass)"	"lath"	--	false	--	"You need no washing machine, especially not early in the game before you worked up a sweat[wrong-pron-lace]."
-"place"	"plath"	--	false	--	"You mentally evaluate Sylvia Plath's poetry and her novel, [i]The Bell Jar[r][wrong-pron]."
+"place"	"plath"	--	false	--	"You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, [i]The Bell Jar[r][wrong-pron]."
 "race"	"wrath"	--	false	--	"You get as mad as you can, as fast as you can[wrong-pron]."
 
-to say wrong-pron-lace: if the player's command matches "lace", say "[wrong-pron]".
+to say wrong-pron-lace: if the player's command includes "lace", say "[wrong-pron]".
 
 to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
@@ -38,7 +38,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of crude crapper guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
-"clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [bkn]."
+"clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [this-game-noi]."
 "cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
 "food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
 "lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
@@ -47,7 +47,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "snood"	"snapper"	--	false	--	"You don't always remember what a snood is, but you're pretty sure none need to be snapped."
 "sued"	"sapper"	--	false	--	"That would be a villain worth fighting, but no."
 "strewed"	"strapper"	--	false	--	"No such contraption exists, fortunately. I think."
-"wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work."
+"wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty."
 "youd"	"yap er"	--	false	--	"You feel as though you want to say something about the state of these environs, but what good would it do?"
 
 table of nil none guesses
@@ -60,7 +60,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "shill"	"shun"	--	false	--	"Alas, there is nobody to reject and feel better about yourself."
 "sill"	"sun"	--	false	--	"No light-giving window appears."
 "spill"	"spun"	--	false	--	"Alas, no solution to your woes is created, nor does it tumble out."
-"still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even after you half make your way out of this fog."
+"still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog."
 "till|til"	"ton"	--	false	--	"Things are weighty enough here."
 
 this is the nil-none-name rule:
@@ -73,10 +73,10 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"chid"	"chum"	--	false	--	"[if boffin boy is fungible]You have no friend to chide[else]forgiveness is more the thing here[end if]."
-"did"	"dumb"	--	false	--	"[if boffin boy is fungible]You don't want to reflect on the past[else]A [bkn] doesn't put people through the ringer for past mistakes[end if]."
+"chid"	"chum"	--	false	--	"[if boffin boy is not fungible]You have no friend to chide[else]Forgiveness is more the thing here[end if]."
+"did"	"dumb"	--	false	--	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
 "mid"	"mum"	--	false	--	"You don't need parental support or quiet."
-"skid"	"scum"	--	false	--	"No. A good [bkn] don't look down on people like that."
+"skid"	"scum"	--	false	--	"No. A good [this-game-noi] don't look down on people like that."
 
 table of dander dove guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -99,7 +99,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "brewed|brood"	"brass"	--	false	--	"[if player has power plate]You already have much better armor[else]The armor on [the lack list] probably needs to be stronger than brass[end if]."
 "mood|mooed"	"mass"	--	false	--	"You'd be kind of creeped out to hear something inanimate start making morose cow noises."
 "poohed"	"pass"	--	false	--	"You think you see an exit out, but nah, it's just get you more lost."
-"sued"	"sass"	--	false	--	"How very anti-freedom of speech and unlike a Bright Brave Knight Knave!"
+"sued"	"sass"	--	false	--	"How very anti-freedom of speech and unlike a [this-game-noi]!"
 "tude"	"tass"	--	false	--	"You're already in the text adventure spirit."
 
 table of hold hole guesses
@@ -114,10 +114,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "scold"	"skoal"	--	false	trivially false rule	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
 "sold"	"soul"	--	false	trivially false rule	"[item-guess of sold soul]"
 "told"	"toll"	--	false	trivially false rule	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
+"trolled"	"troll"	--	false	trivially false rule	"[too-rep]."
+
+definition: a holeitem (called hi) is playerknown:
+	if hi is preguessed, yes;
+	if hi is not off-stage, yes;
+	no;
 
 to say too-rep:
 	say "That's a bit too repetitive, ";
-	if hole-progress is 3:
+	if number of playerknown holeitems is 3:
 		say "and there's nothing more to figure out, anyway";
 	else:
 		say "but the general idea feels right";
@@ -157,7 +163,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of pallid pent valid vent guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"ballad"	"bent"	--	false	--	"Being a bright brave knight knave, you love keeping an ear open for off-color tunes."
+"ballad"	"bent"	--	false	--	"Being a [this-game-noi], you love keeping an ear open for off-color tunes."
 
 table of perky pap guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -179,7 +185,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of sour slate guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"hour"	"late"	--	false	--	"You frown at the slate, wishing you'd seen it sooner."
+"hour"	"late"	--	false	--	"You frown at the [if sco-power-plate is true]power plate[else]sour slate[end if], wishing you'd seen it sooner."
 
 table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -206,22 +212,22 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of trite tully guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "cram"	"cry"	sham-yet rule	false	--	"Now's not the time to get too emotional."
-"damn"	"die"	sham-yet rule	false	--	"You were too harsh![end-tough]"
+"damn"	"die"	sham-yet rule	false	--	"Tully obviously had to be neutralized, but that was too much. Sadly, though many people sympathize you, enough say 'Aww, that's just Tully, you'd have liked them if you got to know them.' Which wasn't quite true, but perhaps there was another way to deal forcefully.[end-tough]"
 "dram"	"dry"	sham-yet rule	false	--	"Now's not the time for alcohol."
 "fam"	"fie"	sham-yet rule	false	--	"Tully isn't really looking to be a close friend."
 "ham"	"hi|high"	sham-yet rule	false	--	"Yes, Tully is overacting, but knowing this fact won't do enough."
-"lamb"	"lie"	sham-yet rule	false	--	"You were not harsh enough![end-lenient]"
+"lamb"	"lie"	sham-yet rule	false	--	"You figure you should be much, much nicer to trolls than they are to you, neglecting that that is already the case. Trite Tully eases up for a bit but comes back with a new style a few weeks later ... and new allegations against you! This time, everyone says, well, they were okay forgiving you the first time, but people just don't deserve second chances like that. Unless they are as exciting as Tully.[end-lenient]"
 "maam"	"my"	sham-yet rule	false	--	"Your appeal to female authority falls on deaf ears."
 "spam"	"spy"	sham-yet rule	false	--	"It's no secret that Tully spams their opinions."
 "tram"	"try"	sham-yet rule	false	--	"If there were a train to catch, you could send Tully on it. Alas, no."
 "wham"	"why"	sham-yet rule	false	--	"It's pointless to ask a troll why."
 
 to say end-tough:
-	end the story saying "Flout Fluff?! ... Stout stuff!";
+	end the story saying "Struck, Strikes? Yuck, Yikes!";
 	follow the shutdown rules;
 
 to say end-lenient:
-	end the story saying "Route: Rough?!";
+	end the story saying "Curse-y Cad Mercy?! MAD!";
 	follow the shutdown rules;
 
 this is the sham-yet rule:
@@ -235,7 +241,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "ducky"	"dot"	--	false	--	"You see no dot or person named Dorothea to proclaim as ducky."
 "lucky"	"lot"	--	false	--	"You grumble about rich people for a bit. It doesn't hurt."
 "nucky"	"not|knot"	--	false	--	"You don't want to cross a mogul of a Boardwalk Empire just now."
-"sucky"	"sot|sought"	--	false	--	"Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!"
+"sucky"	"sot|sought"	--	false	--	"[this-game-noi]s aren't negative like that! Everyone sought is worthwhile!"
 "trucky"	"trot"	--	false	--	"You have no need to walk through or over anyone."
 
 this is the no-plot-yet rule:

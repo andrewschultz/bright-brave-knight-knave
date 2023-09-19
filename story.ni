@@ -412,9 +412,11 @@ from-number of slime slowed rime road is 5460. to-number of slime slowed rime ro
 
 chapter pallid pent valid vent
 
-the pallid pent valid vent is scenery in Passed Port. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
+the pallid pent valid vent is a rhymable in Passed Port. it is scenery. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
 
 from-number of pallid pent valid vent is 5558. to-number of pallid pent valid vent is 2755.
+
+guess-table of valid vent is table of pallid pent valid vent guesses.
 
 section salad sent
 
@@ -809,11 +811,16 @@ report verbsing:
 			if og is dormant, next;
 			say "You can also say [b]R [matchnum of XX][r] to resummon the [XX] and [og].";
 
+book xyzzying
+
+carry out xyzzying:
+	say "A mean note scribbled 'Too Marty Stu, Smarty,' with a caricature of you on it, floats down and goes POOF before you realize it isn't very gender-inclusive.";
+
 volume distraction rooms
 
 book Nil None
 
-Nil None is a room in Shying Sheez. printed name is "Nil, None". description is "[if nil-score is 0]Bummer! You don't feel like going anywhere. You need to mope, or find a way to stop moping. Whichever[else if nil-score is 1]You see a possible way out. But not yet[else]Now you've dug a way out of your mental rut, it seems like you could just leave any which way. [nilstuff][end if]."
+Nil None is a room in Shying Sheez. printed name is "[if sco-fill-fun is false]Nil, None[else]Still Stun[end if]". description is "[if nil-score is 0]Bummer! You don't feel like going anywhere. You need to mope, or find a way to stop moping. Whichever[else if nil-score is 1]You see a possible way out. But not yet[else]Now you've dug a way out of your mental rut, it seems like you could just leave any which way. [nilstuff][end if]."
 
 to say nilstuff:
 	if nil-score is 3:
