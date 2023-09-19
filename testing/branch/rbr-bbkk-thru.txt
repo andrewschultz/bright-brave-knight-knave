@@ -408,9 +408,9 @@ You are now blocked from paths with no points, critical or bonus, available in a
 >quash quick
 {$REJECT}
 \\
-#testcase-check-vc-rhyme-road-rule-if-player-is-not-in-passed-port
-#testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
->rhyme road
+#testcase-check-vc-mime-mode-rule-if-player-is-not-in-passed-port
+#testcase-reject-start-table-of-verb-checks-vc-mime-mode-rule
+>mime mode
 {$REJECT}
 \\
 #testcase-check-vc-rid-rum-rule-if-player-is-not-in-slid-slum
@@ -3522,13 +3522,13 @@ Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid 
 Wow! You must really like salad!
 
 @ha
-#testcase-ha-half-table-of-verb-checks-34-rhyme
->rhyme zroad
-{$GREENCORE}
+#testcase-ha-half-table-of-verb-checks-34-mime
+>mime zmode
+{$GREENBONUS}
 \\
-#testcase-ha-half-table-of-verb-checks-34-road
->zrhyme road
-{$GREENCORE}
+#testcase-ha-half-table-of-verb-checks-34-mode
+>zmime mode
+{$GREENBONUS}
 
 @rej
 ##BALANCE UNDOS
@@ -4757,18 +4757,19 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 it's really dim
 
 @!min,gong,prong
->rhyme road
+>mime mode
+Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all 'was it something I said?' But here you just sort of act as if you're being sucked into the rime road. Your audience eats it up.
 by one point
 
 @all,rej
-{--rej}#testcase-check-vc-rhyme-road-rule-fallthrough
-{--all}#testcase-run-vr-rhyme-road-rule-default
+{--rej}#testcase-check-vc-mime-mode-rule-fallthrough
+{--all}#testcase-run-vr-mime-mode-rule-default
 The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
 
 @rej
-#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
->rhyme road
-You already looked down Rhyme Road!
+#testcase-check-vc-mime-mode-rule-if-sco-mime-mode-is-true
+>mime mode
+You already looked down mime mode!
 
 @hfull
 #+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
@@ -4804,7 +4805,7 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 You have a bit more to do in Passed Port. Nothing critical. Just maybe tying up a loose end.
 Passed Port
 \\
->rhyme road
+>mime mode
 by one point
 \\
 >in
@@ -5951,8 +5952,8 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 >quash quick
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vc-rhyme-road-rule
->rhyme road
+#testcase-reject-end-table-of-verb-checks-vc-mime-mode-rule
+>mime mode
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-rid-rum-rule
@@ -6093,7 +6094,7 @@ You could have told a NUDE NAPPER to be more modest in the Crude Crapper.
 You could've said FLOUT FLUFF in Out, Uff!.
 You could've said FLAK FLIGHT in Sack Site.
 You could've said GRANDER GROVE in Dander, Dove.
-You didn't uncover the RHYME ROAD in Passed Port.
+You didn't uncover the mime mode in Passed Port.
 You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
 You didn't find the PLEAD PLAQUE in Treed Track.
 You could have tried to JACK GIST for a shorter command to read the track tryst lack list.

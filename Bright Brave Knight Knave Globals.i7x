@@ -97,7 +97,7 @@ sco-quash-quick is a truth state that varies.
 sco-time-toad is a truth state that varies.
 sco-slashing-sword is a truth state that varies.
 
-sco-rhyme-road is a truth state that varies.
+sco-mime-mode is a truth state that varies.
 
 chapter south area
 

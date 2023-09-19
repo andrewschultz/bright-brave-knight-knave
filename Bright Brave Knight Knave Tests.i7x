@@ -58,7 +58,7 @@ test h7 with "s/e/n/posh planks/plucky plot/s/w/n/bye/r 2/s/e/e/yall yank". [no 
 
 test h8 with "w/w/n/bye/r 1/s/e/s/need knack". [no plead plaque, S bonus point]
 
-test h9 with "heed hack/seed sack/n/e/e/train tracks/main max/pain packs/n/trowed tries/loud lies/s/w/w/n/fast fort/glued glass/cast court/murky map/passed port/slashing sword/salad scent". [no rhyme road, N bonus point]
+test h9 with "heed hack/seed sack/n/e/e/train tracks/main max/pain packs/n/trowed tries/loud lies/s/w/w/n/fast fort/glued glass/cast court/murky map/passed port/slashing sword/salad scent". [no mime mode, N bonus point]
 
 test h10 with "in/s/w/n/bye/r 3/s/e/s/w/grew gruff/stew stuff/new nuff/e/n/e/e/trod trash/s/bought beef/brought brief/wrought reef/done dish". [got bold bowl]
 
@@ -72,7 +72,7 @@ test h13 with "in/s/s/e/bell book/covering candle".
 
 test wa with "test g1/test g2/test g3/test g4/test g5/test h6m/test h7/test h8/test h9/test h10/test gnilnone/test h11/test h12/test gdander/test h13/test groute/w/n/test ghelm/test glou/test ghill/test gend".
 
-test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/paul panks/test h8/plead plaque/test h9/rhyme road/test h10/test gnilnoneb/test h11/flak flight/test h12/stander stove/test gdander/test h13/nowt nuff/test groute/w/n/test ghelm/test glou/test ghill/test gend".
+test wb with "test g1/test g1b/test g2/test g3/test g3b/test g4/test g5/test h6/test h7/paul panks/test h8/plead plaque/test h9/mime mode/test h10/test gnilnoneb/test h11/flak flight/test h12/stander stove/test gdander/test h13/nowt nuff/test groute/w/n/test ghelm/test glou/test ghill/test gend".
 
 book full walkthrough
 
@@ -90,7 +90,7 @@ test c9 with "in/boozing boo/using you/fusing phew/spurning spew/out".
 
 test c10 with "e/e/s/done dish/grander grove/candor cove/stander stove/n/n/w/w"
 
-test c11 with "n/passed port/rhyme road/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
+test c11 with "n/passed port/mime mode/time toad/stout stuff/flout fluff/nowt nuff/s/in/s".
 
 test c12 with "w/n/w/harder helm/e/s/e".
 

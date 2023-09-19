@@ -7,6 +7,7 @@
 #--command usage to compare walkthrough to what's in the IDE: wch.py
 
 #  SO DON'T USE WDROP.PY. rbr.py incorporates wdrop because of the line below.
+file=walkthrough-swap-pre.txt,swap,swap walkthrough
 file=walkthrough-pre.txt,min,minimum walkthrough
 file=walkthrough-full-pre.txt,max,maximum walkthrough
 postproc=wdrop.py
@@ -14,8 +15,12 @@ cmdflags=58
 
 @max
 This is a full walkthrough for Bright Brave Knight Knave. It details all bonus points.
-@!
+
+@min
 This is a quick walkthrough for Bright Brave Knight Knave. It neglects bonus points.
+
+@swap
+This is a walkthrough for Bright Brave Knight Knave that uses the SWAP command. It neglects bonus points.
 
 Because walkthroughs can be spoilers, I thought I'd offer some general hints up front about what to look for and how to use clues. There is HINT (item) or HINT to see if you can do anything in a room. You also may wish to mess about with the leet learner. This is strictly a walkthrough, so I won't explain it here, but if you use the learner before trying a puzzle, you'll see differences and be able to guess what they mean. A brief overview: the leet learner can scan both areas (LL) or items (LL THING).
 
@@ -158,7 +163,8 @@ So ... if you want the bonus points, and you've paid attention to commands, you 
 @max
 > R 3 (1)
 ###skip test checking
-@!
+
+@min
 > WEAK WOOTER
 \\
 > W
@@ -167,7 +173,12 @@ So ... if you want the bonus points, and you've paid attention to commands, you 
 \\
 > E
 
-All right! We're ready to tackle what's beyond the pass path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
+@swap
+> SWAP SWEET
+\\
+This allows you to roam around and not worry who your current friends are.
+
+All right! We're ready to tackle what's beyond Pass Path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
 
 > S
 
@@ -187,18 +198,19 @@ Your friends help you, and you don't need them any more for here. We could go fa
 
 > S
 
+@!swap
 > W
-
+\\
 > N
-
+\\
 > BYE
-
+\\
 > R 2
-
+\\
 This should get you the Fried Freak and Chic Shooter.
-
+\\
 > S
-
+\\
 > E
 
 > E
@@ -207,7 +219,7 @@ Okay, tall tank(s).
 
 > YALL YANK (1)
 
-Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did/
+Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did.
 
 @max
 > PAUL PANKS (1)
@@ -216,16 +228,17 @@ While his games were not the best, his ardor was commendable.
 
 > W
 
+@!swap
 > W
-
+\\
 > N
-
+\\
 > BYE
-
+\\
 > R 1
-
+\\
 > S
-
+\\
 > E
 
 > S
@@ -311,25 +324,25 @@ Well, look at your inventory. Read the list. You have one of the five items you 
 
 One pair of friends leaves at this point. You've used them in each area. You may wonder why you haven't gotten a hold hole item yet, but each one requires items from two other areas that you need two different pairs of friends to get. So let's bring a new pair over and get our first hole item.
 
-Oh, before you leave, you can do something with the slime, slowed, for fun.
+Oh, before you leave, you can do something with the slime-slowed rhyme road for fun.
 
 @max
-> RHYME ROAD (1)
-\\
-More self-promotion!
+> MIME MODE (1)
+###skip test checking
 
 > IN
 
 > S
 
+@!swap
 > W
-
+\\
 > N
-
+\\
 > R 3
-
+\\
 > S
-
+\\
 > E
 
 > S
@@ -393,14 +406,15 @@ And you're back where you were!
 
 > W
 
+@!swap
 > W
-
+\\
 > N
-
+\\
 > R 2
-
+\\
 > S
-
+\\
 > E
 
 > S
@@ -453,7 +467,8 @@ And now just go any direction to leave...
 
 > N
 
-Now for the final
+Now for the final bit.
+
 > IN
 
 > S
@@ -496,7 +511,7 @@ What's this ardor elm?
 
 > HARDER HELM (1)
 
-Bck to the center.
+Back to the center.
 
 > E
 
@@ -516,7 +531,7 @@ Poor Lou.
 
 > FUSING PHEW (1)
 
-His book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
+Lou's book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
 
 > SPURNING SPEW (1)
 

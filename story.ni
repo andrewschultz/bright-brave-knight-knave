@@ -1078,7 +1078,7 @@ this-gong-rule of Passed Port is the passed-port-gong rule.
 
 this is the passed-port-gong rule:
 	if sco-time-toad is false or pick-score < 2, uncompleted;
-	if sco-rhyme-road is false, llp-remaining;
+	if sco-mime-mode is false, llp-remaining;
 	completed;
 
 this-gong-rule of Treed Track is the treed-track-gong rule.
@@ -1180,8 +1180,8 @@ this is the show-misses rule:
 	flag-missed route rough;
 	flag-missed black blight;
 	flag-missed dander dove;
-	if sco-rhyme-road is false:
-		say "You didn't uncover the [b]RHYME ROAD[r] in Passed Port.";
+	if sco-mime-mode is false:
+		say "You didn't enter [b]MIME MODE[r] in Passed Port.";
 	if sco-paul-panks is false:
 		say "You didn't take a moment to remember [b]PAUL PANKS[r] in Tall Tank(s).";
 	if sco-plead-plaque is false:

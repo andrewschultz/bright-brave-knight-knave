@@ -278,9 +278,9 @@ I couldn't parse that command. You don't need any more than two words long.
 >quash quick
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-check-vc-rhyme-road-rule-if-player-is-not-in-passed-port
-#testcase-reject-start-table-of-verb-checks-vc-rhyme-road-rule
->rhyme road
+#testcase-check-vc-mime-mode-rule-if-player-is-not-in-passed-port
+#testcase-reject-start-table-of-verb-checks-vc-mime-mode-rule
+>mime mode
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-check-vc-rid-rum-rule-if-player-is-not-in-slid-slum
@@ -2359,15 +2359,16 @@ You already successfully sought out the grander grove and its dreamy goals.
 
 >n
 
->rhyme road
+>mime mode
+Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... as well as people who mimic other people noiselessly and then get all 'was it something I said?' But here you just sort of act as if you're being sucked into the rime road. Your audience eats it up.
 by one point
 
-#testcase-check-vc-rhyme-road-rule-fallthrough
+#testcase-check-vc-mime-mode-rule-fallthrough
 The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have,
 
-#testcase-check-vc-rhyme-road-rule-if-sco-rhyme-road-is-true
->rhyme road
-You already looked down Rhyme Road!
+#testcase-check-vc-mime-mode-rule-if-sco-mime-mode-is-true
+>mime mode
+You already looked down mime mode!
 
 >in
 
@@ -2869,8 +2870,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >quash quick
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-reject-end-table-of-verb-checks-vc-rhyme-road-rule
->rhyme road
+#testcase-reject-end-table-of-verb-checks-vc-mime-mode-rule
+>mime mode
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-rid-rum-rule

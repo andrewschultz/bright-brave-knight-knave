@@ -50,7 +50,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
 "time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
-"rhyme"	"road"	--	--	false	true	false	false	passed port	vc-rhyme-road rule	vr-rhyme-road rule	--	--
+"mime"	"mode"	--	--	false	true	false	false	passed port	vc-mime-mode rule	vr-mime-mode rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	"You can say you [b]NEED KNACK[r] [once-now of vc-need-knack rule] you have the right help by the Treed Track."
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -642,23 +642,23 @@ this is the vr-time-toad rule:
 	give-hi cold coal;
 	moot right rack;
 	moot odd ash;
-	if sco-rhyme-road is false:
+	if sco-mime-mode is false:
 		now from-number of rime road is -5460;
 		now to-number of rime road is -2704;
 	else:
 		declue rime road;
 
-a goodrhyme rule (this is the vc-rhyme-road rule):
+a goodrhyme rule (this is the vc-mime-mode rule):
 	if player is not in passed port, unavailable;
-	if sco-rhyme-road is true:
-		vcal "You already looked down Rhyme Road!";
+	if sco-mime-mode is true:
+		vcal "You already entered mime mode for a brief interlude!";
 		already-done;
 	ready;
 
-this is the vr-rhyme-road rule:
-	now sco-rhyme-road is true;
-	say "The slime, slowed, momentarily opens up. You see the fun that can be had, or that you did have, from [other-ones]. Impressive, indeed! But then the vision fades. You have much left to do here.";
-	declue rime road;
+this is the vr-mime-mode rule:
+	now sco-mime-mode is true;
+	say "Man. Even though you're a [this-game-noi], you really hate mimes ... as well as people who mimic other people noiselessly and then get all 'was it something I said?' But here you just sort of act as if you're being sucked into the rime road. [if number of eekers in location of player > 0]Your audience eats it up[else]It feels really good, even with nobody around[end if].";
+	if sco-time-toad is true, declue rime road;
 
 section lane lax scoring
 

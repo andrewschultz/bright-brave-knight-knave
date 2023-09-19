@@ -122,7 +122,7 @@ So ... if you want the bonus points, and you've paid attention to commands, you 
 
 > E
 
-All right! We're ready to tackle what's beyond the pass path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
+All right! We're ready to tackle what's beyond Pass Path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
 
 > S
 
@@ -162,7 +162,7 @@ Okay, tall tank(s).
 
 > YALL YANK (18)
 
-Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did/
+Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did.
 
 > W
 
@@ -256,7 +256,7 @@ Well, look at your inventory. Read the list. You have one of the five items you 
 
 One pair of friends leaves at this point. You've used them in each area. You may wonder why you haven't gotten a hold hole item yet, but each one requires items from two other areas that you need two different pairs of friends to get. So let's bring a new pair over and get our first hole item.
 
-Oh, before you leave, you can do something with the slime, slowed, for fun.
+Oh, before you leave, you can do something with the slime-slowed rhyme road for fun.
 
 > IN
 
@@ -376,7 +376,8 @@ And now just go any direction to leave...
 
 > N
 
-Now for the final
+Now for the final bit.
+
 > IN
 
 > S
@@ -415,7 +416,7 @@ What's this ardor elm?
 
 > HARDER HELM (57)
 
-Bck to the center.
+Back to the center.
 
 > E
 
@@ -435,7 +436,7 @@ Poor Lou.
 
 > FUSING PHEW (60)
 
-His book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
+Lou's book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
 
 > SPURNING SPEW (61)
 
