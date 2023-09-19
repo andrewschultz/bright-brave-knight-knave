@@ -327,8 +327,8 @@ a goodrhyme rule (this is the vc-chic-shooter rule):
 
 this is the vr-chic-shooter rule:
 	now sco-chic-shooter is true;
-	abide by the eeker vr rule for chic shooter;
 	recruit 2707;
+	abide by the eeker vr rule for chic shooter;
 
 a goodrhyme rule (this is the vc-meek-mooter rule):
 	abide by the eeker precheck rule for meek mooter;
@@ -336,8 +336,8 @@ a goodrhyme rule (this is the vc-meek-mooter rule):
 
 this is the vr-meek-mooter rule:
 	now sco-meek-mooter is true;
-	abide by the eeker vr rule for meek mooter;
 	recruit 2706;
+	abide by the eeker vr rule for meek mooter;
 
 a goodrhyme rule (this is the vc-weak-wooter rule):
 	abide by the eeker precheck rule for weak wooter;
@@ -345,8 +345,8 @@ a goodrhyme rule (this is the vc-weak-wooter rule):
 
 this is the vr-weak-wooter rule:
 	now sco-weak-wooter is true;
-	abide by the eeker vr rule for weak wooter;
 	recruit 2706;
+	abide by the eeker vr rule for weak wooter;
 
 to recruit (nu - a number):
 	decrease to-number of recruiter by nu;
@@ -360,8 +360,8 @@ a goodrhyme rule (this is the vc-fried-freak rule):
 
 this is the vr-fried-freak rule:
 	now sco-fried-freak is true;
+	creek-ll 2755; [vr-fried-freak]
 	abide by the eeker vr rule for fried freak;
-	decrease to-number of spied speak cried creek by 2755; [vr-fried-freak]
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
 	abide by the eeker precheck rule for snide sneak;
@@ -369,8 +369,8 @@ a goodrhyme rule (this is the vc-snide-sneak rule):
 
 this is the vr-snide-sneak rule:
 	now sco-snide-sneak is true;
+	creek-ll 2755; [vr-snide-sneak]
 	abide by the eeker vr rule for snide sneak;
-	decrease to-number of spied speak cried creek by 2755; [vr-snide-sneak]
 
 a goodrhyme rule (this is the vc-guide-geek rule):
 	abide by the eeker precheck rule for guide geek;
@@ -378,8 +378,8 @@ a goodrhyme rule (this is the vc-guide-geek rule):
 
 this is the vr-guide-geek rule:
 	now sco-guide-geek is true;
+	creek-ll 2754; [vr-guide-geek]
 	abide by the eeker vr rule for guide geek;
-	decrease to-number of spied speak cried creek by 2754; [vr-guide-geek]
 
 a goodrhyme rule (this is the vc-stride-streak rule):
 	if player is not in cried creek, unavailable;
@@ -391,7 +391,7 @@ a goodrhyme rule (this is the vc-stride-streak rule):
 this is the vr-stride-streak rule:
 	now sco-stride-streak is true;
 	say "Things feel far less lethargic here. You don't feel like you're stuck, and others won't, either.";
-	decrease to-number of spied speak cried creek by 2806; [vr-stride-streak]
+	creek-ll 2806; [vr-stride-streak]
 
 a goodrhyme rule (this is the vc-harder-helm rule):
 	if ardor elm is not touchable, unavailable;
@@ -404,6 +404,10 @@ this is the vr-harder-helm rule:
 	now sco-harder-helm is true;
 	say "Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on [the list].";
 	give-ti harder helm;
+
+to creek-ll (nu - a number):
+	decrease to-number of cried creek by nu;
+	if to-number of cried creek is 0, declue-here;
 
 section bosh blanks scoring
 
@@ -418,6 +422,7 @@ this is the vr-posh-planks rule:
 	now sco-posh-planks is true;
 	say "Everything becomes a lot more sophisticated here. But not too sophisticated! Things are a bit run-down, right now, as evidenced by that yucky yacht nearby. You sense you should clean it, but you're not sure how. You're not posh enough to get near, you suspect!";
 	move yucky yacht to Bosh Blanks;
+	declue-here;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-plucky-plot rule):
@@ -439,6 +444,7 @@ this is the vr-plucky-plot rule:
 	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
 	dismiss-geek-wooter;
+	declue yucky yacht;
 
 [ this costs about 200 bytes as opposed to writing this out individually ]
 the sort navigation rules are a room based rulebook. the sort navigation rules have outcomes unavailable and already-done.
@@ -649,6 +655,7 @@ this is the vr-train-tracks rule:
 	now sco-train-tracks is true;
 	say "The ground rumbles! Train tracks pop up! They're not very good train tracks, alas.";
 	decrease to-number of lane lax by 103;
+	now from-number of lane lax is 2756;
 	print-the-loc;
 
 a goodrhyme rule (this is the vc-main-max rule):

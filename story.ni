@@ -46,7 +46,9 @@ the player is in White Wave. description is "Not quite as bright and brave as ev
 
 the bkbk self check rule is listed instead of the ll self check rule in the check lling rulebook.
 
-check lling (this is the bkbk self check rule): if sco-write-right-rave is true, say "You don't have any other bonus point tricks up your sleeve." instead;
+check lling (this is the bkbk self check rule):
+	if noun is player and sco-write-right-rave is true, say "You don't have any other bonus point tricks up your sleeve." instead;
+	if noun is boffin boy, say "Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all." instead;
 
 from-number of player is -5610. to-number of player is -2754.
 
@@ -223,9 +225,9 @@ chapter the kid
 
 the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words.". description is "Terrified and meek and small. Maybe you can do him a kindness.". printed name is "coughin['] coy boffin boy".
 
-guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
+understand "kid" as boffin boy when boffin boy is in slid slum.
 
-check lling boffin: say "Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all." instead;
+guess-table of coughin coy boffin boy is the table of coughin coy boffin boy guesses.
 
 book Crude Crapper
 
@@ -250,8 +252,6 @@ book Recruiter
 recroom is a privately-named room in Plying Please. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
 
 guess-table of recroom is the table of recroom guesses.
-
-check lling recroom: try lling recruiter instead;
 
 chapter recruiter
 
@@ -341,6 +341,8 @@ check entering yucky yacht:
 chapter sassed sort
 
 the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if].". description is "Slightly disheveled, but peaceful. They seem to sense you're more considerate than the usual clientele."
+
+from-number of sassed sort is 2804. to-number of sassed sort is 8213.
 
 book Cast Court
 
@@ -513,8 +515,10 @@ from-number of tall tanks is 2704. to-number of tall tanks is 2704.
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
 
+understand "tall tank" and "tank" as tall tanks.
+
 check lling tata:
-	try lling  tall tanks;
+	try lling tall tanks;
 
 check lling tata when sco-yall-yank is true and sco-paul-panks is false:
 	say "You think of the tanks as tanks, here...";
@@ -969,8 +973,15 @@ volume auxiliary rules for general PPRR commands
 
 rule for supplying a missing noun when lling (this is the get readings from room rule):
 	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
-	abide by the general-ll-locations rule;
-	reject the player's command;
+	if player is in recroom:
+		now noun is recruiter;
+	else if player is in tata:
+		now noun is tall tanks;
+	else if player is in passed port or player is in fast fort or player is in cast court:
+		now noun is sassed sort;
+	else:
+		abide by the general-ll-locations rule;
+		reject the player's command;
 
 volume gong rules and files
 
