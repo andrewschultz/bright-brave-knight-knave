@@ -326,8 +326,8 @@ a goodrhyme rule (this is the vc-chic-shooter rule):
 	ready;
 
 this is the vr-chic-shooter rule:
+	if sco-chic-shooter is false, recruit 2707;
 	now sco-chic-shooter is true;
-	recruit 2707;
 	abide by the eeker vr rule for chic shooter;
 
 a goodrhyme rule (this is the vc-meek-mooter rule):
@@ -335,8 +335,8 @@ a goodrhyme rule (this is the vc-meek-mooter rule):
 	ready;
 
 this is the vr-meek-mooter rule:
+	if sco-meek-mooter is false, recruit 2706;
 	now sco-meek-mooter is true;
-	recruit 2706;
 	abide by the eeker vr rule for meek mooter;
 
 a goodrhyme rule (this is the vc-weak-wooter rule):
@@ -344,8 +344,8 @@ a goodrhyme rule (this is the vc-weak-wooter rule):
 	ready;
 
 this is the vr-weak-wooter rule:
+	if sco-weak-wooter is false, recruit 2706;
 	now sco-weak-wooter is true;
-	recruit 2706;
 	abide by the eeker vr rule for weak wooter;
 
 to recruit (nu - a number):
@@ -359,8 +359,8 @@ a goodrhyme rule (this is the vc-fried-freak rule):
 	ready;
 
 this is the vr-fried-freak rule:
+	if sco-fried-freak is false, creek-ll 2755; [vr-fried-freak]
 	now sco-fried-freak is true;
-	creek-ll 2755; [vr-fried-freak]
 	abide by the eeker vr rule for fried freak;
 
 a goodrhyme rule (this is the vc-snide-sneak rule):
@@ -368,8 +368,8 @@ a goodrhyme rule (this is the vc-snide-sneak rule):
 	ready;
 
 this is the vr-snide-sneak rule:
+	if sco-snide-sneak is false, creek-ll 2755; [vr-snide-sneak]
 	now sco-snide-sneak is true;
-	creek-ll 2755; [vr-snide-sneak]
 	abide by the eeker vr rule for snide sneak;
 
 a goodrhyme rule (this is the vc-guide-geek rule):
@@ -377,8 +377,8 @@ a goodrhyme rule (this is the vc-guide-geek rule):
 	ready;
 
 this is the vr-guide-geek rule:
+	if sco-guide-geek is false, creek-ll 2754; [vr-guide-geek]
 	now sco-guide-geek is true;
-	creek-ll 2754; [vr-guide-geek]
 	abide by the eeker vr rule for guide geek;
 
 a goodrhyme rule (this is the vc-stride-streak rule):
