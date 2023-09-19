@@ -132,14 +132,6 @@ You are now blocked from paths with no points, critical or bonus, available in a
 #testcase-ha-half-table-of-verb-checks-5-fight
 >fight zfave
 {$YELLOWCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-3-gist
->zjack gist
-{$GREENBONUS}
-\\
-#testcase-ha-half-table-of-verb-checks-3-jack
->jack zgist
-{$GREENBONUS}
 
 @rej
 ====alphabetize on
@@ -572,6 +564,15 @@ The cave collapses. There's a passage down, but next to it is a hold-hole. Perha
 >kite cave
 You already discovered the kite cave to find a path beyond!
 
+@ha
+#testcase-ha-half-table-of-verb-checks-3-gist
+>zjack gist
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-3-jack
+>jack zgist
+{$GREENBONUS}
+
 >x hold hole
 
 @rej
@@ -774,7 +775,7 @@ You grumble about how you are a slight slave to your quest. It's therapeutic.
 \\
 #testcase-ha-half-table-of-verb-checks-7-mass
 >mass zmath
-{$YELLOWCOREFIRST}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-7-math
 >zmass math
@@ -2249,14 +2250,6 @@ There must be something here in the Sack Site!
 #testcase-ha-half-table-of-verb-checks-24-posh
 >posh zplanks
 {$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-25-plot
->zplucky plot
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-25-plucky
->plucky zplot
-{$GREENCORE}
 
 @gt
 #testcase-goto-table-of-noways-bosh-blanks
@@ -2389,6 +2382,15 @@ Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwh
 #testcase-mistakes-table-of-yucky-yacht-guesses-trucky-trot
 >trucky trot
 You have no need to walk through or over anyone.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-25-plot
+>zplucky plot
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-plucky
+>plucky zplot
+{$GREENCORE}
 
 >plucky plot
 by one point
@@ -3128,6 +3130,15 @@ You can visit the PASSED PORT once you have readable directions to get there.
 >think
 You can visit the PASSED PORT once you have readable directions to get there.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-27-fast
+>fast zfort
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-fort
+>zfast fort
+{$GREENCORE}
+
 >fast fort
 by one point
 
@@ -3235,25 +3246,17 @@ You don't particularly like Crude Crass Lewd Lass, but it does clue you as to wh
 >zcast court
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-27-fast
->fast zfort
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-27-fort
->zfast fort
-{$GREENCORE}
-\\
 #testcase-ha-half-table-of-verb-checks-28-passed-past
 >passed zport
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #+testcase-ha-half-table-of-verb-checks-28-passed-past
 >past zport
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-28-port
 >zpassed port
-{$GREENCORE}
+{$YELLOWCORE}
 
 >cast court
 by one point
@@ -3349,6 +3352,15 @@ You can visit the PASSED PORT now you have readable directions to get there.
 by one point
 \\
 >undo
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-28-passed-past
+>passed zport
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-28-port
+>zpassed port
+{$GREENCORE}
 
 >passed port
 by one point
@@ -3591,19 +3603,19 @@ You don't want to get lost in the bluff. Best just go back east once you're done
 \\
 #testcase-ha-half-table-of-verb-checks-40-stew
 >stew zstuff
-{$GREENBONUS}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-40-stuff
 >zstew stuff
-{$GREENBONUS}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-41-new
 >new znuff
-{$GREENBONUS}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-41-nuff
 >znew nuff
-{$GREENBONUS}
+{$YELLOWCORE}
 
 @rej
 #testcase-check-vc-stew-stuff-rule-if-sco-grew-gruff-is-false
@@ -3709,6 +3721,14 @@ Don't want to overdo it!
 #+testcase-ha-half-table-of-verb-checks-40-stuff
 >zstew stuff
 {$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-41-new
+>new znuff
+{$YELLOWCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-41-nuff
+>znew nuff
+{$YELLOWCORE}
 
 @rej
 #testcase-check-vc-new-nuff-rule-if-sco-stew-stuff-is-false
@@ -4408,14 +4428,6 @@ The fried freak begins looking through all the bags in the sack site. And what d
 #testcase-ha-half-table-of-verb-checks-46-power
 >power zplate
 {$GREENCORE}
-\\
-#+testcase-ha-half-table-of-verb-checks-33-time
->time ztoad
-{$GREENCORE}
-\\
-#+testcase-ha-half-table-of-verb-checks-33-toad
->ztime toad
-{$GREENCORE}
 
 @hfull
 #testcase-values-from-number-of-sour-slate-is-2705
@@ -4629,6 +4641,15 @@ by one point
 Your audience eats it up
 \\
 >undo
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-33-time
+>time ztoad
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-33-toad
+>ztime toad
+{$GREENCORE}
 
 >time toad
 by one point
@@ -4850,11 +4871,11 @@ This is a secluded place with the only exit back west.
 \\
 #testcase-ha-half-table-of-verb-checks-48-candle
 >zcovering candle
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-48-covering
 >covering zcandle
-{$GREENCORE}
+{$YELLOWCORE}
 
 @rej
 #testcase-check-vc-covering-candle-rule-if-sco-bell-book-is-false
@@ -4896,6 +4917,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll
 Nothing
 !LCD
+
+@ha
+#testcase-ha-half-table-of-verb-checks-48-candle
+>zcovering candle
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-48-covering
+>covering zcandle
+{$GREENCORE}
 
 >covering candle
 by one point
@@ -5131,11 +5161,11 @@ This pub houses no crazy lattice of secret passages. You can only go back out.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-61-boo
->boozing boo
+>zboozing boo
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-61-boozing
->boozing boo
+>boozing zboo
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-62-using
@@ -5377,11 +5407,11 @@ You are at the top of the hill. It was such a long journey up, you lost track of
 \\
 #testcase-ha-half-table-of-verb-checks-76-mailing
 >mailing zmill
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-76-mill
 >zmailing mill
-{$GREENCORE}
+{$YELLOWCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-77-bailing
 >bailing zbill
@@ -5460,6 +5490,15 @@ You already expressed that everyone hurts!
 #+testcase-values-from-number-of-hailing-hill-is-2854
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-76-mailing
+>mailing zmill
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-76-mill
+>zmailing mill
+{$GREENCORE}
 
 >mailing mill
 by one point

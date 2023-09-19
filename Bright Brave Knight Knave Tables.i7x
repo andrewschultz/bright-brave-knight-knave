@@ -83,7 +83,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "spurning"	"spew"	--	--	false	true	true	false	Bruising Brew	vc-spurning-spew rule	vr-spurning-spew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable."
-"ill"	"un/in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	"You can say [b]ILLUN[r] [once-now of vc-ill-un rule] you're a little less miserable." [technically the same as above, but combining with a to-say would have us pick a rule, and if we changed stuff...]
+"ill"	"un|in"	--	--	false	true	false	false	nil none	vc-ill-un rule	vr-ill-un rule	"illun/illin"	"You can say [b]ILLUN[r] [once-now of vc-ill-un rule] you're a little less miserable." [technically the same as above, but combining with a to-say would have us pick a rule, and if we changed stuff...]
 "grander"	"grove"	--	--	false	true	true	false	dander dove	vc-grander-grove rule	vr-grander-grove rule	--	--
 "candor|candour"	"cove"	--	--	false	true	true	false	dander dove	vc-candor-cove rule	vr-candor-cove rule	--	--
 "stander"	"stove"	--	--	false	true	true	false	dander dove	vc-stander-stove rule	vr-stander-stove rule	--	--
