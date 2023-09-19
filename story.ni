@@ -34,6 +34,11 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
+volume when play begins
+
+when play begins:
+	say "Rue rep? You? Yep!"
+
 volume Flying Flees (intro)
 
 book white wave
@@ -770,13 +775,14 @@ carry out abouting:
 	say "[this-game] is the sixth entry in the [pprr] series. You do not need experience with [series-names] to get through successfully.";
 	say "[line break]It came about while I figured 'haha, I've overdone the concept, but what if?' And I had some ideas. But I wanted to do more. I wanted to give you NPCs.";
 	say "[line break]I had a month-or-so desert after doing a lot of technical tests, so the story may not have the polish it could, for the comp. But I stand by the work, and the jokes.";
-	say "[line break]I welcome bug reports, big or small, as well as transcripts. [this-game]'s repository is at https://github.com/andrewschultz/bright-vrave-knight-knave/issues. Transcripts sent to my email blurglecruncheon@gmail.com are also appreciated.";
+	say "[line break]I welcome bug reports, big or small, as well as transcripts. [this-game]'s repository is at https://github.com/andrewschultz/bright-brave-knight-knave/issues. Transcripts sent to my email blurglecruncheon@gmail.com are also appreciated.";
 	the rule succeeds;
 
 book creditsing
 
 carry out creditsing:
-	say "Thanks to testers here!"
+	say "Thanks to ClubFloyd for testing this game so well!";
+	say "[line break]Thanks to Zarf for his Python scripts that helped me regression-test.";
 
 book optsing
 
