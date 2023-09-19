@@ -532,7 +532,7 @@ a goodrhyme rule (this is the vc-glued-glass rule):
 
 this is the vr-glued-glass rule:
 	now sco-glued-glass is true;
-	say "[lass] folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative art. [if sco-murky-map is false]What could it make clearer?[else]In fact, holding it over the murky map makes the map clearer![end if]";
+	say "[lass] folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative-for-its-own-sake art. [if sco-murky-map is false]What could it make clearer?[else]In fact, holding it over the murky map makes the map clearer![end if]";
 	moot crude crass lewd lass;
 	now player has glued glass;
 

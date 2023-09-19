@@ -3232,7 +3232,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-glued-glass-rule-fallthrough
 {--all}#testcase-run-vr-glued-glass-rule-default
-You don't particularly like Crude Crass Lewd Lass, but it does clue you as to what you need.
+Crude Crass Lewd Lass folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative-for-its-own-sake art. What could it make clearer?
 
 @ha
 #testcase-ha-half-table-of-verb-checks-26-cast
@@ -3336,7 +3336,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-murky-map-rule-fallthrough
 {--all}#testcase-run-vr-murky-map-rule-default
-Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.
+Well, you search through the pap, and what do you know? You turn up something. It's a murky map. Putting it under the glued glass, though, it is more readable.
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-passed-port-rule
@@ -4065,7 +4065,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-wrought-reef-rule-fallthrough
 {--all}#testcase-run-vr-wrought-reef-rule-default
-You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.
+You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.
 
 @rej
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
@@ -4523,6 +4523,14 @@ You already quacked "Quite!"
 >passed port
 !by one point
 
+@all
+#SLOSH SLICK gets rid of your pals for good, thus ruining the "mime around friends" test case so put mime first
+>mime mode
+by one point
+Your audience eats it up
+\\
+>undo
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-30-quash
 >quash zquick
@@ -4637,13 +4645,6 @@ All this entitlement is bravebut not bright.
 >lime load
 The fruit or the stone, you can't see yourself lugging it around.
 
-@all
->mime mode
-by one point
-Your audience eats it up
-\\
->undo
-
 @ha
 #+testcase-ha-half-table-of-verb-checks-33-time
 >time ztoad
@@ -4746,7 +4747,7 @@ by one point
 {--rej}#testcase-check-vc-candor-cove-rule-fallthrough
 {--all}#testcase-run-vr-candor-cove-rule-default
 You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
-You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.
+You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.
 
 @rej
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
@@ -5663,7 +5664,7 @@ You haven't figured any ideas that might score a point later, but if you do, Bri
 @all,rej
 {--rej}#testcase-check-vc-fight-fave-rule-fallthrough
 {--all}#testcase-run-vr-fight-fave-rule-default
-You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.
+You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedly trite! But the deal is, Tully's so trite, yet people like you can't deal with Tully easily, which says something about you. Right?
 
 @rej
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true

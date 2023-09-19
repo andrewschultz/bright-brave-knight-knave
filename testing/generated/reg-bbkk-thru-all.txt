@@ -383,7 +383,7 @@ The Sassed Sort nods and guides the yacht back to Fast Fort.
 by one point
 
 #testcase-run-vr-glued-glass-rule-default
-You don't particularly like Crude Crass Lewd Lass, but it does clue you as to what you need.
+Crude Crass Lewd Lass folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative-for-its-own-sake art. What could it make clearer?
 
 >cast court
 by one point
@@ -406,7 +406,7 @@ The Sassed Sort nods and guides the yacht back to Cast Court.
 by one point
 
 #testcase-run-vr-murky-map-rule-default
-Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.
+Well, you search through the pap, and what do you know? You turn up something. It's a murky map. Putting it under the glued glass, though, it is more readable.
 
 >passed port
 by one point
@@ -516,7 +516,7 @@ Everyone disperses around you, as they realize you're nobody to be trifled with.
 by one point
 
 #testcase-run-vr-wrought-reef-rule-default
-You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.
+You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.
 
 #+testcase-room-names-thought-thief-fought-fief
 `Wrought Reef
@@ -618,6 +618,13 @@ You feel good about doing more than the bare minimum to repel your fears. It's s
 >passed port
 !by one point
 
+#SLOSH SLICK gets rid of your pals for good, thus ruining the "mime around friends" test case so put mime first
+>mime mode
+by one point
+Your audience eats it up
+
+>undo
+
 >quash quick
 by one point
 
@@ -630,12 +637,6 @@ by one point
 #testcase-run-vr-slosh-slick-rule-default
 The Fried Freak has no problem sloshing through.
 Your two friends work together to fight through the slime. And they recover the posh pick! You wipe it clean.
-
->mime mode
-by one point
-Your audience eats it up
-
->undo
 
 >time toad
 by one point
@@ -657,7 +658,7 @@ by one point
 
 #testcase-run-vr-candor-cove-rule-default
 You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
-You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.
+You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.
 
 >grander grove
 by one point
@@ -836,7 +837,7 @@ Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and
 by one point
 
 #testcase-run-vr-fight-fave-rule-default
-You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.
+You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedly trite! But the deal is, Tully's so trite, yet people like you can't deal with Tully easily, which says something about you. Right?
 
 #testcase-run-vr-bright-bully-rule-abide-by-the-frightfully-bright-bully-rule
 >bright bully

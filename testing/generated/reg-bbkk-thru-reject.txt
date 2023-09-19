@@ -1859,7 +1859,7 @@ You can visit the PASSED PORT once you have readable directions to get there.
 by one point
 
 #testcase-check-vc-glued-glass-rule-fallthrough
-You don't particularly like Crude Crass Lewd Lass, but it does clue you as to what you need.
+Crude Crass Lewd Lass folds up bizarrely and somehow becomes a glued glass. You feel a bit icky taking the glass, given what it was, but ... it's much more useful than provocative-for-its-own-sake art. What could it make clearer?
 
 >cast court
 by one point
@@ -1874,7 +1874,7 @@ But you're already here!
 by one point
 
 #testcase-check-vc-murky-map-rule-fallthrough
-Well, you search through the pap, and what do you know? You turn up something. It's a murky map. not very readable, but perhaps you can find a way.
+Well, you search through the pap, and what do you know? You turn up something. It's a murky map. Putting it under the glued glass, though, it is more readable.
 
 #+testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
@@ -2140,7 +2140,7 @@ You can make a WROUGHT REEF now you've bluffed your way through the fief.
 by one point
 
 #testcase-check-vc-wrought-reef-rule-fallthrough
-You hear a loud crumbling noice. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring hte right supplies.
+You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.
 
 #testcase-check-vc-wrought-reef-rule-if-sco-wrought-reef-is-true
 >wrought reef
@@ -2340,7 +2340,7 @@ by one point
 
 #testcase-check-vc-candor-cove-rule-fallthrough
 You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
-You can now walk through all the dander you made and searched for in pretty much any direction to continue your quest.
+You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.
 
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
 >candor cove
@@ -2637,7 +2637,7 @@ You look at the track tryst lack list. You only have four of the five things you
 by one point
 
 #testcase-check-vc-fight-fave-rule-fallthrough
-You are ready to fight! The fave, Trite Tully, appears. Boy, is he trite! But the deal is, he's so trite, yet people like you can't deal with him, which says something about you.
+You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedly trite! But the deal is, Tully's so trite, yet people like you can't deal with Tully easily, which says something about you. Right?
 
 #testcase-check-vc-fight-fave-rule-if-sco-fight-fave-is-true
 >fight fave
