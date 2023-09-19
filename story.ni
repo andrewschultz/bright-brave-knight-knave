@@ -44,6 +44,10 @@ from-number of white wave is 2754. to-number of white wave is 2704.
 
 the player is in White Wave. description is "Not quite as bright and brave as ever. Your reputation took a hit. You tried to make sure you never went over the line, but ... whispers happened."
 
+the bkbk self check rule is listed instead of the ll self check rule in the check lling rulebook.
+
+check lling (this is the bkbk self check rule): if sco-write-right-rave is true, say "You don't have any other bonus point tricks up your sleeve." instead;
+
 from-number of player is -5610. to-number of player is -2754.
 
 check going down in White Wave:
@@ -478,6 +482,8 @@ from-number of sour slate is 2705. to-number of sour slate is 2755.
 chapter power plate
 
 the power plate is a trystitem. description is "Surprisingly lightweight but sturdy armor.". vaguedesc is "replacement armor".
+
+guess-table of power plate is table of sour slate guesses.
 
 book Knell Nook
 
@@ -958,6 +964,13 @@ this is the verb-checker rule:
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 "see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
+
+volume auxiliary rules for general PPRR commands
+
+rule for supplying a missing noun when lling (this is the get readings from room rule):
+	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
+	abide by the general-ll-locations rule;
+	reject the player's command;
 
 volume gong rules and files
 

@@ -86,7 +86,7 @@ volume thing stuff
 
 table of clashing cord guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"flashing"	"ford"	--	false	--	"<CLEVER REJECT TEXT>"
+"flashing"	"ford"	--	false	--	"No bridge across a river, or car, or intergalactic space traveler whizzes by."
 
 table of coughin coy boffin boy guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -95,25 +95,25 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of crude crass lewd lass guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"booed"	"bass"	--	false	--	"<CLEVER REJECT TEXT>"
-"brood"	"brass"	--	false	--	"<CLEVER REJECT TEXT>"
-"mood|mooed"	"mass"	--	false	--	"<CLEVER REJECT TEXT>"
-"poohed"	"pass"	--	false	--	"<CLEVER REJECT TEXT>"
-"sued"	"sass"	--	false	--	"<CLEVER REJECT TEXT>"
-"tude"	"tass"	--	false	--	"<CLEVER REJECT TEXT>"
+"booed"	"bass"	--	false	--	"You don't want to get sea bass irritable."
+"brewed|brood"	"brass"	--	false	--	"[if player has power plate]You already have much better armor[else]The armor on [the lack list] probably needs to be stronger than brass[end if]."
+"mood|mooed"	"mass"	--	false	--	"You'd be kind of creeped out to hear something inanimate start making morose cow noises."
+"poohed"	"pass"	--	false	--	"You think you see an exit out, but nah, it's just get you more lost."
+"sued"	"sass"	--	false	--	"How very anti-freedom of speech and unlike a Bright Brave Knight Knave!"
+"tude"	"tass"	--	false	--	"You're already in the text adventure spirit."
 
 table of hold hole guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bold"	"bowl"	--	false	--	"[item-guess of bold bowl]"
-"cold"	"coal"	--	false	--	"[item-guess of cold coal]"
-"fold"	"foal"	--	false	--	"[no-animal-sac]."
-"gold"	"goal"	--	false	--	"'Sacrilege!' a voice booms. 'YOU HAVE DESERTED YOUR TRUE NATURE!'[gold-death]"
-"mold"	"mole"	--	false	--	"[no-animal-sac]."
-"polled"	"pole|poll"	--	false	--	"[too-rep]."
-"rolled"	"role|roll"	--	false	--	"[too-rep]."
-"scold"	"skoal"	--	false	--	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
-"sold"	"soul"	--	false	--	"[item-guess of sold soul]"
-"told"	"toll"	--	false	--	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
+"bold"	"bowl"	--	false	trivially false rule	"[item-guess of bold bowl]"
+"cold"	"coal"	--	false	trivially false rule	"[item-guess of cold coal]"
+"fold"	"foal"	--	false	trivially false rule	"[no-animal-sac]."
+"gold"	"goal"	--	false	trivially false rule	"'Sacrilege!' a voice booms. 'YOU HAVE DESERTED YOUR TRUE NATURE!'[gold-death]"
+"mold"	"mole"	--	false	trivially false rule	"[no-animal-sac]."
+"polled"	"pole|poll"	--	false	trivially false rule	"[too-rep]."
+"rolled"	"role|roll"	--	false	trivially false rule	"[too-rep]."
+"scold"	"skoal"	--	false	trivially false rule	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
+"sold"	"soul"	--	false	trivially false rule	"[item-guess of sold soul]"
+"told"	"toll"	--	false	trivially false rule	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
 
 to say too-rep:
 	say "That's a bit too repetitive, ";
@@ -173,7 +173,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chime"	"choad|chode"	--	false	--	"You are all for off-color humor but it doesn't seem appropriate here."
 "crime"	"crowed"	--	false	--	"You eavesdrop on no criminal confessions."
 "dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread"
-"grime"	"growed"	--	false	--	"Ungrammatical, "
+"grime"	"growed"	--	false	--	"Ungrammatical, and anyway, you are trying to clean things up here!"
 "im"	"owed"	--	false	--	"All this entitlement is bravebut not bright."
 "lime"	"load"	--	false	--	"The fruit or the stone, you can't see yourself lugging it around."
 
@@ -183,12 +183,14 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"burning"	"boo"	--	false	--	"No, you need something more positive."
-"churning"	"chew"	--	false	--	"No, you need something less reflexive."
+"burning"	"boo"	--	false	--	"No, you need[edspew] something more positive."
+"churning"	"chew"	--	false	--	"No, you need[edspew] something less reflexive."
+
+to say edspew: if sco-spurning-spew is true, say "ed"
 
 table of stew stuff guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"boo"	"buff"	--	false	--	"It's stew ingredients, not protein shake ingredients."
+"boo"	"buff"	--	false	--	"[if sco-grew-gruff is false]You try to puff yourself out as more muscular than you actually are. No dice[else]It's stew ingredients, not protein shake ingredients[end if]."
 "chew|choo"	"chuff"	--	false	--	"You make train noises, but none appears."
 "coo"	"cuff"	--	false	--	"You consider lashing out for its own sake."
 "do"	"duff"	--	false	--	"No, you want to do something right."
@@ -228,13 +230,17 @@ this is the sham-yet rule:
 
 table of yucky yacht guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bucky"	"bought|bot"	--	false	--	"<CLEVER REJECT TEXT>"
-"clucky"	"clot"	--	false	--	"<CLEVER REJECT TEXT>"
-"ducky"	"dot"	--	false	--	"<CLEVER REJECT TEXT>"
-"lucky"	"lot"	--	false	--	"<CLEVER REJECT TEXT>"
-"nucky"	"not|knot"	--	false	--	"<CLEVER REJECT TEXT>"
-"sucky"	"sot|sought"	--	false	--	"<CLEVER REJECT TEXT>"
-"trucky"	"trot"	--	false	--	"<CLEVER REJECT TEXT>"
+"bucky"	"bought|bot"	no-plot-yet rule	false	--	"Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?"
+"clucky"	"clot"	--	false	--	"You think about people who've wasted your time with meaningless jabber."
+"ducky"	"dot"	--	false	--	"You see no dot or person named Dorothea to proclaim as ducky."
+"lucky"	"lot"	--	false	--	"You grumble about rich people for a bit. It doesn't hurt."
+"nucky"	"not|knot"	--	false	--	"You don't want to cross a mogul of a Boardwalk Empire just now."
+"sucky"	"sot|sought"	--	false	--	"Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!"
+"trucky"	"trot"	--	false	--	"You have no need to walk through or over anyone."
+
+this is the no-plot-yet rule:
+	if sco-plucky-plot is false, the rule succeeds;
+	the rule fails;
 
 volume other
 
