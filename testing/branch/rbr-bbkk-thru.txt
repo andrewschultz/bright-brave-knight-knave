@@ -1527,7 +1527,7 @@ A mailing mill would be nice, but you haven't reached the top of Hailing Hill ye
 \\
 #testcase-think-table-of-verb-checks-vc-mailing-mill-rule
 >think
-You can place a mailing mill once you are at the top of Hailing Hill.
+You can place a mailing mill once you can access the top of Hailing Hill.
 \\
 >scaling skill
 by one point
@@ -1540,7 +1540,7 @@ by one point
 A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.
 \\
 >think
-You can place a mailing mill now you are at the top of Hailing Hill and once you have the raw materials.
+You can place a mailing mill now you can access the top of Hailing Hill and once you have the raw materials.
 \\
 >undo
 >undo
@@ -2668,7 +2668,7 @@ You already got the knack for looking around! You won't forget it.
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 \\
 >think
-You can place a mailing mill once you are at the top of Hailing Hill.
+You can place a mailing mill once you can access the top of Hailing Hill.
 \\
 >undo
 >undo
@@ -2680,7 +2680,7 @@ by one point
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 \\
 >think
-You can place a mailing mill once you are at the top of Hailing Hill.
+You can place a mailing mill once you can access the top of Hailing Hill.
 \\
 >undo
 >undo
@@ -2693,7 +2693,7 @@ by one point
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 \\
 >think
-You can place a mailing mill once you are at the top of Hailing Hill.
+You can place a mailing mill once you can access the top of Hailing Hill.
 \\
 >ailing ill
 by one point
@@ -3494,7 +3494,7 @@ by one point
 \\
 #testcase-check-vc-done-dish-rule-if-fish-score-<-2
 >done dish
-The one-wish fun fish blups at you apologetically. You don't have anything to work with, to complete a dish.
+The one-wish fun fish blups at you apologetically. You don't have anything to work with, yet, to complete a dish.
 \\
 #testcase-think-table-of-verb-checks-vc-done-dish-rule
 >think
@@ -3525,11 +3525,6 @@ by one point
 {--all}#testcase-run-vr-salad-scent-rule-default
 Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid vent is way up there! You can't get there by yourself! The Snide Sneak offers to climb on you, letting the Meek Mooter do the dirty work.
 
-@rej
-#testcase-check-vc-salad-scent-rule-if-sco-salad-scent-is-true
->salad scent
-Wow! You must really like salad!
-
 @ha
 #testcase-ha-half-table-of-verb-checks-34-mime
 >mime zmode
@@ -3554,7 +3549,7 @@ by one point
 \\
 #+testcase-check-vc-done-dish-rule-if-fish-score-<-2
 >done dish
-The one-wish fun fish blups at you apologetically. You don't have enough to work with, to complete a dish.
+The one-wish fun fish blups at you apologetically. You don't have enough to work with, yet, to complete a dish.
 \\
 >undo
 >undo
@@ -4747,7 +4742,7 @@ by one point
 {--rej}#testcase-check-vc-candor-cove-rule-fallthrough
 {--all}#testcase-run-vr-candor-cove-rule-default
 You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
-You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.
+You can now walk in pretty much any direction to continue your quest, through the remains of the dander you made and dove into. Or you can get rid of it all before moving on.
 
 @rej
 #testcase-check-vc-candor-cove-rule-if-sco-candor-cove-is-true
@@ -4799,7 +4794,7 @@ Man. Even though you're a Bright Brave Knight Knave, you really hate mimes ... a
 @rej
 #testcase-check-vc-mime-mode-rule-if-sco-mime-mode-is-true
 >mime mode
-You already looked down mime mode!
+You already entered mime mode for a brief interlude!
 
 @hfull
 #+testcase-values-from-number-of-slime-slowed-rime-road-is-5460

@@ -540,9 +540,6 @@ section passed port scoring
 
 a goodrhyme rule (this is the vc-salad-scent rule):
 	if pallid pent valid vent is untouchable, unavailable;
-	if sco-salad-scent is true:
-		vcal "Wow! You must really like salad!";
-		already-done;
 	abide by the eeker bypass rule for snide sneak;
 	if number of eekers in location of player < 2:
 		vcp "You will need a couple friends to make a human ladder to get to the vent.";
@@ -1372,7 +1369,7 @@ to dander-upgrade (t - text):
 	if dander-score is 1:
 		say "The dander you dove into sinks a bit. You still feel stuck.";
 	else if dander-score is 2:
-		say "You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.";
+		say "You can now walk in pretty much any direction to continue your quest, through the remains of the dander you made and dove into. Or you can get rid of it all before moving on.";
 		alt-last dander dove;
 	else:
 		say "You no longer have dander on your mind.";

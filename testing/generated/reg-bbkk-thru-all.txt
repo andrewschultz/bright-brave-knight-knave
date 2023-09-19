@@ -658,7 +658,7 @@ by one point
 
 #testcase-run-vr-candor-cove-rule-default
 You dream of a place where people are not blunt but rather truthful about who you are, what you've done, and how much you've made of your opportunities.
-You can now walk through the remains of dander you made in pretty much any direction to continue your quest. Or you can get rid of it all before moving on.
+You can now walk in pretty much any direction to continue your quest, through the remains of the dander you made and dove into. Or you can get rid of it all before moving on.
 
 >grander grove
 by one point
