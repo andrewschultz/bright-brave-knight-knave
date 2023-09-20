@@ -1101,7 +1101,7 @@ a goodrhyme rule (this is the vc-wowed-whys rule):
 this is the vr-wowed-whys rule:
 	now sco-wowed-whys is true;
 	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
-	now to-number of OECC is 2704;
+	now to-number of crowd cries is 2704;
 
 a goodrhyme rule (this is the vc-loud-lies rule):
 	if player is not in OECC, unavailable;
@@ -1122,7 +1122,7 @@ this is the vr-loud-lies rule:
 	say "With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.";
 	now player has proud prize;
 	dismiss-sneak-mooter;
-	declue-here;
+	declue oecc;
 
 section Bruising Brew scoring
 

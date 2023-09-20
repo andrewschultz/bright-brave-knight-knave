@@ -292,10 +292,6 @@ by one point
 >passed port
 by one point
 
-#testcase-values-from-number-of-passed-port-is-2804
->ll
-WRONG
-
 >slashing sword
 by one point
 

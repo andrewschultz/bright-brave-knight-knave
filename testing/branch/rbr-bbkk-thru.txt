@@ -3613,10 +3613,10 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >flashing ford
 No bridge across a river, or car, or intergalactic space traveler whizzes by.
 
-@ver
+@hfull
 #testcase-values-from-number-of-passed-port-is-2804
 >ll
-WRONG
+Nothing. You've found everywhere the Sassed Sort can go.
 
 >slashing sword
 by one point
