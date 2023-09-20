@@ -1586,29 +1586,33 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck
 			bring-over ee;
 			bring-over other-guy of ee;
 			the rule succeeds;
-		say "The [ee] looks around, slightly uncomfortable. They see no one they immediately dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
+		say "The [ee] comes into view [if ee is postponed]again [end if]and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
 		move ee to location of player;
 		now ee is active;
+		if note-bye-yet is false:
+			say "[line break][i][bracket][b]NOTE:[r][i] you can use the [b]BYE[r][i] command to get rid of your companion or companions at any time.[close bracket][r][line break]";
+			now note-bye-yet is true;
 		the rule succeeds;
 	let rfe be a random fungible eeker;
 	if (rfe is crooty and ee is crooty) or (rfe is creeky and ee is creeky):
-		repeat through table of similar eeker conflicts:
-			unless rfe is eekold entry and ee is eeknew entry, next;
-			say "The [ee] and the [rfe] brush past each other with little or no acknowledgement.";
-			say "[eektxt entry][line break]";
-			sideline rfe;
-			now rfe is postponed;
-			bring-over ee;
-			the rule succeeds;
-		say "BUG [rfe] and [ee] should have mismatch text but don't.";
+		say "The [ee] and the [rfe] brush past each other with little or no acknowledgment[one of]. You ask [the ee] what that was about. They know each other too well--they both need to expand their circle[or][stopping].";
+		sideline rfe;
+		now rfe is postponed;
+		bring-over ee;
 		the rule succeeds;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups rule):
 	let rfe be a random fungible eeker that is not ee;
 	if matchnum of ee is not matchnum of rfe: [ make a table for this? ]
-		say "Oh no! The [ee] and [rfe] seem to have nothing in common at all. They go their separate ways.";
+		repeat through table of mismatched eekers:
+			unless (ee is e1 entry and rfe is e2 entry) or (ee is e2 entry and rfe is e1 entry), next;
+			say "[splits entry][paragraph break]They go their separate ways for now.";
+			sideline ee;
+			sideline rfe;
+			the rule succeeds;
 		sideline ee;
 		sideline rfe;
+		say "ERROR I should have special text for why [ee] and [rfe] aren't a good fit. I kicked them both off-stage.";
 		the rule succeeds;
 	if ee is pairedyet:
 		say "The [ee] and [rfe] seem pleased to be reunited, and they're ready to go!";
@@ -1631,20 +1635,14 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups 
 		say "[line break][i][bracket][b]NOTE:[r][i] if you wish to make shortcuts, you can use the command [b]SWEET SWAP[r][i], which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.[close bracket][r][line break]";
 		now know-sweet-swap is true;
 
-table of similar eeker conflicts
-eekold	eeknew	eektxt
-fried freak	guide geek	"<stuff>"
-fried freak	snide sneak	"<stuff>"
-guide geek	fried freak	"<stuff>"
-guide geek	snide sneak	"<stuff>"
-snide sneak	fried freak	"<stuff>"
-snide sneak	guide geek	"<stuff>"
-chic shooter	meek mooter	"<stuff>"
-chic shooter	weak wooter	"<stuff>"
-meek mooter	chic shooter	"<stuff>"
-meek mooter	weak wooter	"<stuff>"
-weak wooter	meek mooter	"<stuff>"
-weak wooter	chic shooter	"<stuff>"
+table of mismatched eekers
+e1	e2	splits
+fried freak	meek mooter	"The Meek Mooter and Fried Freak sit around, exhausted, with nothing to say to each other. Awkward!"
+fried freak	weak wooter	"The Fried Freak finds the Weak Wooter's encouragement too much and too little at the same time. They should be able to appreciate it, but they can't! They might not be a good fit together."
+snide sneak	weak wooter	"The Weak Wooter's reserved encouragement as the Snide Sneak starts speaking nineteen to the dozen gets under the Snide Sneak's skin. 'You trying to be funny, here?'"
+snide sneak	chic shooter	"The Snide Sneak can't abide the Chic Shooter's effortless swagger. The Chic Shooter finds the Snide Sneak too shifty. It's not working out, here."
+guide geek	meek mooter	"The Guide Geek tries to explain something to the Meek Mooter, who actually keeps finding decent counterpoints. 'Be that way, then,' says the Guide Geek."
+guide geek	chic shooter	"The Chic Shooter doesn't want any advice from the Guide Geek, and the Guide Geek doesn't want to give any."
 
 this is the frightfully-bright-bully rule:
 	if tully-score is 2:

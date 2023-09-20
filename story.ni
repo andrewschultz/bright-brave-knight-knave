@@ -704,6 +704,7 @@ carry out byeing:
 	if nelp is 0, say "But there is nobody here to say bye to!" instead;
 	say "You say good-bye to [the list of eekers in location of player].";
 	sideline-eekers;
+	now note-bye-yet is true;
 	the rule succeeds;
 
 chapter Plying Please
@@ -821,13 +822,15 @@ book verbsing
 
 carry out verbsing:
 	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
-	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well. The four ";
+	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well.";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
 
 report verbsing:
-	if r-warn-yet is true and pairs-used < 3:
+	if pairs-used is 3, continue the action;
+	if note-bye-yet is true:
 		say "You can say [b]BYE[r] to get rid of a friend pair.";
+	if r-warn-yet is true:
 		repeat with XX running through creeky eekers:
 			if XX is finished or XX is dormant, next;
 			let og be other-guy of XX;

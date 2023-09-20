@@ -216,6 +216,8 @@ game-elm-seen is a truth state that varies. [have you seen the Ardor Elm yet?]
 
 bold-hole is a truth state that varies. [we put holeitem names in BOLD if examining the hole]
 
+note-bye-yet is a truth state that varies. [this is if the BYE command has been clued. We can't quite use if dormant = 5 as we *could* say meek/bye/meek.]
+
 chapter options
 
 opt-sweet-swap is a truth state that varies. [lets you solve puzzles without friends]
