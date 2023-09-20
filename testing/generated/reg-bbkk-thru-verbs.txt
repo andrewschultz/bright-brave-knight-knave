@@ -20,6 +20,7 @@ by one point
 >t hold hole
 Silence back.
 
+#testcase-mainverbs-carry-out-ting-if-noun-is-the-player
 >t me
 "Be back, Me! ... Mac?"
 
@@ -290,6 +291,10 @@ by one point
 
 >passed port
 by one point
+
+#testcase-values-from-number-of-passed-port-is-2804
+>ll
+WRONG
 
 >slashing sword
 by one point

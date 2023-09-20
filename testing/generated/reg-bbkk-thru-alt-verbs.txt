@@ -227,9 +227,13 @@ by one point
 >trowed tries
 by one point
 
+>undo
+
 #+testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
 >plowed plies
 by one point
+
+>undo
 
 >wowed whys
 by one point

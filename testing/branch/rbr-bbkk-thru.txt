@@ -578,6 +578,7 @@ You already discovered the kite cave to find a path beyond!
 >t hold hole
 Silence back.
 \\
+#testcase-mainverbs-carry-out-ting-if-noun-is-the-player
 >t me
 "Be back, Me! ... Mac?"
 
@@ -1449,7 +1450,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-guide-geek-rule-fallthrough
-{--all}#testcase-run-vr-guide-geek-rule-default
+{--all}#testcase-run-vr-guide-geek-rule-fallthrough
 The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
 
 @hfull
@@ -1467,7 +1468,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-fried-freak-rule-fallthrough
-{--all}#testcase-run-vr-fried-freak-rule-default
+{--all}#testcase-run-vr-fried-freak-rule-fallthrough
 The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
 
 @hfull
@@ -1485,7 +1486,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-snide-sneak-rule-fallthrough
-{--all}#testcase-run-vr-snide-sneak-rule-default
+{--all}#testcase-run-vr-snide-sneak-rule-fallthrough
 The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
 
 @hfull
@@ -1511,7 +1512,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-meek-mooter-rule-fallthrough
-{--all}#testcase-run-vr-meek-mooter-rule-default
+{--all}#testcase-run-vr-meek-mooter-rule-fallthrough
 What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they fill in each other's holes, personality-wise.
 /^\[NOTE: you can say BYE
 /^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
@@ -1543,7 +1544,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-weak-wooter-rule-fallthrough
-{--all}#testcase-run-vr-weak-wooter-rule-default
+{--all}#testcase-run-vr-weak-wooter-rule-fallthrough
 The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter.
 
 @hfull
@@ -1564,7 +1565,7 @@ by one point
 
 @all,rej
 {--rej}#testcase-check-vc-chic-shooter-rule-fallthrough
-{--all}#testcase-run-vr-chic-shooter-rule-default
+{--all}#testcase-run-vr-chic-shooter-rule-fallthrough
 The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
 
 @hfull
@@ -3074,6 +3075,7 @@ by one point
 {--rej}#testcase-check-vc-pain-packs-rule-fallthrough
 {--all}#testcase-run-vr-pain-packs-rule-default
 You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!
+{--all}#testcase-gameprogress-table-of-trystitem-stuff-1
 You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 @rej
@@ -3150,9 +3152,13 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >trowed tries
 by one point
 \\
+>undo
+\\
 #+testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
 >plowed plies
 by one point
+\\
+>undo
 
 >wowed whys
 by one point
@@ -3324,6 +3330,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll sassed sort
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.50.)
 \\
+#testcase-values-from-number-of-fast-fort-is-2704
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
 
@@ -3436,6 +3443,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll sassed sort
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
+#testcase-values-from-number-of-cast-court-is-2705
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, -1.00.)
 
@@ -3605,6 +3613,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >flashing ford
 No bridge across a river, or car, or intergalactic space traveler whizzes by.
 
+@ver
+#testcase-values-from-number-of-passed-port-is-2804
+>ll
+WRONG
+
 >slashing sword
 by one point
 
@@ -3612,6 +3625,8 @@ by one point
 {--rej}#testcase-check-vc-slashing-sword-rule-fallthrough
 {--all}#testcase-run-vr-slashing-sword-rule-default
 The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!
+{--all}#testcase-gameprogress-table-of-trystitem-stuff-2
+{--all}You consult the track tryst lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
 
 @rej
 ##BALANCE UNDOS
@@ -4607,6 +4622,8 @@ by one point
 {--rej}#testcase-check-vc-power-plate-rule-fallthrough
 {--all}#testcase-run-vr-power-plate-rule-default
 Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.
+{--all}#testcase-gameprogress-table-of-trystitem-stuff-3
+{--all}There you go. Something else on the track tryst lack list. Whatever fight is ahead, you feel more ready for it. But not ready enough.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-45-flak
@@ -5245,6 +5262,8 @@ by one point
 {--rej}#testcase-check-vc-harder-helm-rule-fallthrough
 {--all}#testcase-run-vr-harder-helm-rule-default
 Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
+{--all}#testcase-gameprogress-table-of-trystitem-stuff-4
+{--all}You check off the next-to-last item on the track tryst lack list. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list.
 
 @rej
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
@@ -5511,6 +5530,8 @@ by one point
 {--rej}#testcase-check-vc-spurning-spew-rule-fallthrough
 {--all}#testcase-run-vr-spurning-spew-rule-default
 Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
+{--all}#testcase-gameprogress-table-of-trystitem-stuff-5
+{--all}You double-check the track tryst lack list. Yes, indeed, you have everything! You place it inside Spurning Spew, making it an infinitesimally stronger shield.
 
 @mis
 #+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo

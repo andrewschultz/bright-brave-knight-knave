@@ -400,7 +400,7 @@ Passed Port is a room in Sighing Seas. "The air is alive here with weirdness and
 
 to say cord-note: if clashing cord is in passed port, say ". A clashing cord [if sco-salad-scent is false]hangs down from it[else]has fallen to the ground, too[end if]"
 
-from-number of passed sort is 2804. to-number of passed sort is 8213.
+from-number of passed port is 2804. to-number of passed port is 8213.
 
 chapter slime slowed rime road
 
@@ -424,7 +424,7 @@ the salad sent is a thing. description is "Oh, man! What a salad it is! All sort
 
 chapter posh pick
 
-the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It seems monogrammed with the letters S S. Hmm."
+the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It's initialed with the letters SoSo. Hmm."
 
 from-number of posh pick is 2704. to-number of posh pick is 5510.
 
@@ -583,9 +583,9 @@ book Ow'ed Eyes / Crowd Cries
 
 OECC is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.". printed name is "Ow'ed Eyes, Crowd Cries".
 
-from-number of OECC is 5459. to-number of OECC is 2754.
+the crowd cries are scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC. "The crowd cries go on and on, accompanied by ow'ed eyes, where some people rub them in fake crying, mocking the straw men they attack, and others claim they are brought to tears by those who disagree with them in any measure."
 
-the crowd cries are scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC.
+from-number of crowd cries is 5459. to-number of crowd cries is 2754.
 
 chapter proud prize
 
@@ -1057,6 +1057,8 @@ rule for supplying a missing noun when lling (this is the get readings from room
 		now noun is recruiter;
 	else if player is in tata:
 		now noun is tall tanks;
+	else if player is in OECC:
+		now noun is crowd cries;
 	else if player is in cast court or player is in fast fort or player is in passed port:
 		now noun is location of player;
 	else:
