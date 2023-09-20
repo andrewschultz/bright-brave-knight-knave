@@ -31,7 +31,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mood|tude"	"mapper|tapper"	--	--	false	true	true	false	crude crapper	vc-mood-mapper rule	vr-mood-mapper rule	"mood mapper" or "tude tapper"	--
 "nude"	"napper"	--	--	false	true	false	false	crude crapper	vc-nude-napper rule	vr-nude-napper rule	--	--
 "meek"	"mooter"	--	--	false	true	true	false	recroom	vc-meek-mooter rule	vr-meek-mooter rule	--	--
-"chic"	"shooter"	"sheik|sheikh"	--	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
+"chic"	"shooter"	"sheik/sheikh"	vh-sheik-shooter rule	false	true	true	false	recroom	vc-chic-shooter rule	vr-chic-shooter rule	--	--
 "weak"	"wooter|w00ter"	--	--	false	true	true	false	recroom	vc-weak-wooter rule	vr-weak-wooter rule	--	--
 "stride"	"streak"	--	--	false	true	true	false	cried creek	vc-stride-streak rule	vr-stride-streak rule	--	-- [this comes first for Jerking Jump purposes]
 "fried"	"freak"	--	--	false	true	true	false	cried creek	vc-fried-freak rule	vr-fried-freak rule	--	--
@@ -45,7 +45,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "cast"	"court"	--	--	false	true	true	false	bosh blanks	vc-cast-court rule	vr-cast-court rule	--	--
 "fast"	"fort"	--	--	false	true	true	false	bosh blanks	vc-fast-fort rule	vr-fast-fort rule	--	--
 "passed|past"	"port"	--	--	false	true	true	false	bosh blanks	vc-passed-port rule	vr-passed-port rule	--	"You can visit the [b]PASSED PORT[r] [once-now of vc-passed-port rule] you have readable directions to get there."
-"salad"	"scent"	"sent|cent"	--	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
+"salad"	"scent"	"sent/cent"	vh-salad-sent-cent rule	false	true	true	false	passed port	vc-salad-scent rule	vr-salad-scent rule	--	"You can track the [b]SALAD SCENT[r] [once-now of vc-salad-scent rule] you have adequate willing help to climb up to the vent."
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friends are helping you."
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
@@ -325,6 +325,10 @@ a goodrhyme rule (this is the vc-chic-shooter rule):
 	abide by the eeker precheck rule for chic shooter;
 	ready;
 
+this is the vh-sheik-shooter rule:
+	say "A different foreign word. We don't want to shoot anyone in particular.";
+	the rule succeeds;
+
 this is the vr-chic-shooter rule:
 	if sco-chic-shooter is false, recruit 2707;
 	now sco-chic-shooter is true;
@@ -548,6 +552,10 @@ a goodrhyme rule (this is the vc-salad-scent rule):
 		vcp "Your current friends seem unwilling to make a human ladder to get to the vent.";
 		not-yet;
 	ready;
+
+this is the vh-salad-sent-cent rule:
+	say "No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.";
+	the rule succeeds;
 
 this is the vr-salad-scent rule:
 	now sco-salad-scent is true;
@@ -1700,8 +1708,11 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker bypass ru
 	if vc-dont-print is false:
 		if number of eekers in location of player is 0:
 			say "You figure [the ee] and [the eo] would work well together here."; [vcok]
+		else if ee is in location of player:
+			say "You wonder if you need to do a sweet swap. No! Your current companions look up to the task!"; [vcok]
 		else:
 			say "You temporarily dismiss [the list of eekers in location of player] for [the ee] and [the eo], who'd seem to work better here..."; [vcok]
+		say "[line break]";
 	ready;
 
 volume table of noways

@@ -1551,6 +1551,14 @@ The Meek Mooter and Snide Sneak understand you wish to call someone new. They de
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-sheik-sheikh
+>sheik shooter
+A different foreign word. We don't want to shoot anyone in particular.
+\\
+>sheikh shooter
+A different foreign word. We don't want to shoot anyone in particular.
+
 >chic shooter
 by one point
 
@@ -3647,6 +3655,14 @@ Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tu
 #testcase-mainverbs-carry-out-ting-if-noun-is-valid-vent
 >t vent
 You hear an old echo and think "Hold, heck, oh." But no gold gecko scrambles out, for better or worse.
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-sent-cent
+>salad sent
+No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
+\\
+>salad cent
+No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
 
 >salad scent
 by one point

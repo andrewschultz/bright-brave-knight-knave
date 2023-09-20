@@ -112,6 +112,13 @@ by one point
 >weak wooter
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-sheik-sheikh
+>sheik shooter
+A different foreign word. We don't want to shoot anyone in particular.
+
+>sheikh shooter
+A different foreign word. We don't want to shoot anyone in particular.
+
 >chic shooter
 by one point
 
@@ -227,6 +234,13 @@ by one point
 
 >slashing sword
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-sent-cent
+>salad sent
+No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
+
+>salad cent
+No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
 
 >salad scent
 by one point
