@@ -1,0 +1,241 @@
+## reg-bbjj-lone-pairings.txt
+
+## checking all bad pairings for creek and recruiter
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>kite cave
+by one point
+
+>x hold hole
+
+>x list
+
+>d
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>what whoah
+by one point
+
+>w
+
+>hid hum
+by one point
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>in
+
+>mood mapper
+by one point
+
+>out
+
+>e
+
+>n
+
+#######################################################single matchups
+
+
+>meek mooter
+by one point
+The Meek Mooter comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+[NOTE: you can use the BYE command to get rid of your companion or companions at any time.]
+
+>bye
+
+>weak wooter
+by one point
+The Weak Wooter comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+!NOTE
+
+>bye
+
+>chic shooter
+by one point
+The Chic Shooter comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+
+>meek mooter
+!by one point
+The Meek Mooter and the Chic Shooter brush past each other with little or no acknowledgment. You ask the Meek Mooter what that was about. They know each other too well--they both need to expand their circle.
+
+>weak wooter
+!by one point
+The Weak Wooter and the Meek Mooter brush past each other with little or no acknowledgment.
+!they both need
+
+>chic shooter
+!by one point
+The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgment.
+!they both need
+
+>weak wooter
+!by one point
+The Weak Wooter and the Chic Shooter brush past each other with little or no acknowledgment.
+
+>meek mooter
+!by one point
+The Meek Mooter and the Weak Wooter brush past each other with little or no acknowledgment.
+
+>chic shooter
+!by one point
+The Chic Shooter and the Meek Mooter brush past each other with little or no acknowledgment.
+
+>bye
+
+>w
+
+>stride streak
+by one point
+
+>fried freak
+by one point
+The Fried Freak comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+
+>bye
+
+>snide sneak
+by one point
+The Snide Sneak comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+
+>bye
+
+>guide geek
+by one point
+The Guide Geek comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+
+>fried freak
+!by one point
+The Fried Freak and the Guide Geek brush past each other with little or no acknowledgment.
+
+>snide sneak
+!by one point
+The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgment.
+
+>guide geek
+!by one point
+The Guide Geek and the Snide Sneak brush past each other with little or no acknowledgment.
+
+>snide sneak
+!by one point
+The Snide Sneak and the Guide Geek brush past each other with little or no acknowledgment.
+
+###############################matching similar eekers is over. Now let's try to match ones that aren't the same.
+
+####################creek to recruiter first
+
+>e
+
+>chic shooter
+!by one point
+The Snide Sneak can't abide the Chic Shooter's effortless swagger. The Chic Shooter finds the Snide Sneak too shifty. It's not working out, here.
+
+>undo
+
+>weak wooter
+!by one point
+The Weak Wooter's reserved encouragement as the Snide Sneak starts speaking nineteen to the dozen gets under the Snide Sneak's skin. "You trying to be funny, here?"
+
+>undo
+>undo
+
+>bye
+
+>fried freak
+
+>e
+
+>meek mooter
+!by one point
+The Meek Mooter and Fried Freak sit around, exhausted, with nothing to say to each other. Awkward!
+
+>undo
+
+>weak wooter
+!by one point
+The Fried Freak finds the Weak Wooter's encouragement too much and too little at the same time. They should be able to appreciate it, but they can't! They might not be a good fit together.
+
+>undo
+>undo
+
+>bye
+
+>guide geek
+
+>e
+
+>meek mooter
+!by one point
+The Guide Geek tries to explain something to the Meek Mooter, who actually keeps finding decent counterpoints. "Be that way, then," says the Guide Geek.
+
+>undo
+
+>chic shooter
+!by one point
+The Chic Shooter doesn't want any advice from the Guide Geek, and the Guide Geek doesn't want to give any.
+
+>chic shooter
+
+########################################west to east now
+
+>w
+
+>guide geek
+!by one point
+The Chic Shooter doesn't want any advice from the Guide Geek, and the Guide Geek doesn't want to give any.
+
+>undo
+
+>snide sneak
+!by one point
+The Snide Sneak can't abide the Chic Shooter's effortless swagger. The Chic Shooter finds the Snide Sneak too shifty. It's not working out, here.
+
+>undo
+>undo
+
+>weak wooter
+
+>w
+
+>fried freak
+!by one point
+The Fried Freak finds the Weak Wooter's encouragement too much and too little at the same time. They should be able to appreciate it, but they can't! They might not be a good fit together.
+
+>undo
+
+>snide sneak
+!by one point
+The Weak Wooter's reserved encouragement as the Snide Sneak starts speaking nineteen to the dozen gets under the Snide Sneak's skin. "You trying to be funny, here?"
+
+>undo
+>undo
+
+>meek mooter
+
+>w
+
+>fried freak
+!by one point
+The Meek Mooter and Fried Freak sit around, exhausted, with nothing to say to each other. Awkward!
+
+>undo
+
+>guide geek
+!by one point
+The Guide Geek tries to explain something to the Meek Mooter, who actually keeps finding decent counterpoints. "Be that way, then," says the Guide Geek.
