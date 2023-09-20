@@ -223,7 +223,15 @@ by one point
 
 >n
 
+#testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
 >trowed tries
+by one point
+
+#+testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
+>plowed plies
+by one point
+
+>wowed whys
 by one point
 
 >loud lies

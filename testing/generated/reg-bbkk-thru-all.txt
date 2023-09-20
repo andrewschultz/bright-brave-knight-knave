@@ -340,13 +340,13 @@ You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! 
 
 >n
 
-#testcase-room-names-wowed-wise-crowd-cries
-`Wowed Wise Crowd Cries
+#testcase-room-names-oecc
+`Ow'ed Eyes, Crowd Cries
 
->trowed tries
+>wowed whys
 by one point
 
-#testcase-run-vr-trowed-tries-rule-default
+#testcase-run-vr-wowed-whys-rule-default
 You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!
 
 >loud lies

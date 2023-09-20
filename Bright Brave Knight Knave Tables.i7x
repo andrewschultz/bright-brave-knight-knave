@@ -71,8 +71,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-main-max rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "trod|flawed"	"trash|flash"	--	--	false	true	true	false	lane lax	vc-trod-trash rule	vr-trod-trash rule	"trod trash" or "flawed flash"	--
-"trowed"	"tries"	--	--	false	true	true	false	wowed wise crowd cries	vc-trowed-tries rule	vr-trowed-tries rule	--	--
-"loud"	"lies"	--	--	false	true	true	false	wowed wise crowd cries	vc-loud-lies rule	vr-loud-lies rule	--	"You can denounce [b]LOUD LIES[r] [once-now of vc-loud-lies rule] you've tweaked the crowd more subjectively."
+"wowed|trowed|plowed"	"whys|tries|plies"	--	--	false	true	true	false	OECC	vc-wowed-whys rule	vr-wowed-whys rule	"wowed whys" or "trowed tries" or "plowed plies"	--
+"loud"	"lies"	--	--	false	true	true	false	OECC	vc-loud-lies rule	vr-loud-lies rule	--	"You can denounce [b]LOUD LIES[r] [once-now of vc-loud-lies rule] you've tweaked the crowd more subjectively."
 "bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
 "brought"	"brief"	--	--	false	true	true	false	thought thief fought fief	vc-brought-brief rule	vr-brought-brief rule	--	--
 "wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	"You can make a [b]WROUGHT REEF[r] [once-now of vc-wrought-reef rule] you've bluffed your way through the fief."
@@ -689,7 +689,7 @@ this is the vr-main-max rule:
 	now sco-main-max is true;
 	say "The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. A broad brash clod clash breaks out!";
 	move broad brash clod clash to lane lax;
-	open-psg north and Wowed Wise Crowd Cries;
+	open-psg north and OECC;
 	open-psg south and Thought Thief Fought Fief;
 	decrease to-number of lane lax by 2703;
 	now from-number of lane lax is 5459;
@@ -1081,27 +1081,27 @@ this is the vr-paul-panks rule:
 	say "You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking. But ... I thought about him a lot, though he died before I came on the scene. And I enjoyed Hannes Schueller's tribute, The Ninja's Fate. I was humbled to see I'd passed Paul Panks in number of things written. He paved the way for me, sort of. So when I had a chance to leave this memento, I did.";
 	if sco-yall-yank is true, declue tall tanks;
 
-section wowed wise crowd cries scoring
+section ow'ed eyes crowd cries scoring
 
-a goodrhyme rule (this is the vc-trowed-tries rule):
-	if player is not in wowed wise crowd cries, unavailable;
-	if sco-trowed-tries is true:
+a goodrhyme rule (this is the vc-wowed-whys rule):
+	if player is not in OECC, unavailable;
+	if sco-wowed-whys is true:
 		vcal "[if sco-loud-lies is true]No need to re-try.[else]Enough trying. You need to take action![end if]";
 		already-done;
 	ready;
 
-this is the vr-trowed-tries rule:
-	now sco-trowed-tries is true;
+this is the vr-wowed-whys rule:
+	now sco-wowed-whys is true;
 	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
-	now to-number of crowd cries is 2704;
+	now to-number of OECC is 2704;
 
 a goodrhyme rule (this is the vc-loud-lies rule):
-	if player is not in wowed wise crowd cries, unavailable;
+	if player is not in OECC, unavailable;
 	if sco-loud-lies is true:
 		vcal "You already declaimed the loud lies.";
 		already-done;
 	abide by the eeker bypass rule for snide sneak;
-	if sco-trowed-tries is false:
+	if sco-wowed-whys is false:
 		vcp "You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.";
 		not-yet;
 	if not pair-here of snide sneak:
@@ -1727,7 +1727,7 @@ Black Blight	"Beyond is too wild. Best just go back down the way you came when y
 Knell Nook	"This is a secluded place with the only exit back west."
 tata	"You can only go back west or[if sco-yall-yank is true] east[else], once you've moved the tank(s), past them in whatever direction[end if]."
 Lane Lax	"[if sco-train-tracks is false]Back west is the only way. For now[else]The train tracks head north and south, but you can go back west, too[end if]."
-Wowed Wise Crowd Cries	"Only way out is south."
+OECC	"Only way out is south."
 Thought Thief Fought Fief	"Only way back is north."
 
 to say astort: say "You sense exploring this island would get you lost. [b]ENTER[r] the yacht to re-visit Posh Planks, or specify where else you want to go"

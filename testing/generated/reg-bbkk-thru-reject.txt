@@ -173,7 +173,7 @@ I couldn't parse that command. You don't need any more than two words long.
 >kid come
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-check-vc-loud-lies-rule-if-player-is-not-in-wowed-wise-crowd-cries
+#testcase-check-vc-loud-lies-rule-if-player-is-not-in-oecc
 #testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
 >loud lies
 I couldn't parse that command. You don't need any more than two words long.
@@ -363,9 +363,9 @@ I couldn't parse that command. You don't need any more than two words long.
 >trod trash
 I couldn't parse that command. You don't need any more than two words long.
 
-#testcase-check-vc-trowed-tries-rule-if-player-is-not-in-wowed-wise-crowd-cries
-#testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
->trowed tries
+#testcase-check-vc-wowed-whys-rule-if-player-is-not-in-oecc
+#testcase-reject-start-table-of-verb-checks-vc-wowed-whys-rule
+>wowed whys
 I couldn't parse that command. You don't need any more than two words long.
 
 #testcase-check-vc-using-you-rule-if-player-is-not-in-bruising-brew
@@ -1048,7 +1048,7 @@ It's all well and good to need assistance, but your current friends can't give a
 >undo
 
 >gonear cries
->trowed tries
+>wowed whys
 by one point
 
 >loud lies
@@ -1761,7 +1761,7 @@ You already got some pain packs!
 
 >n
 
-#testcase-check-vc-loud-lies-rule-if-sco-trowed-tries-is-false
+#testcase-check-vc-loud-lies-rule-if-sco-wowed-whys-is-false
 >loud lies
 You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.
 
@@ -1769,14 +1769,14 @@ You can't just jump to an immediate denunciation. Perhaps you can let the crowd 
 >think
 You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
 
->trowed tries
+>wowed whys
 by one point
 
-#testcase-check-vc-trowed-tries-rule-fallthrough
+#testcase-check-vc-wowed-whys-rule-fallthrough
 You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!
 
-#testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
->trowed tries
+#testcase-check-vc-wowed-whys-rule-if-sco-wowed-whys-is-true
+>wowed whys
 Enough trying. You need to take action!
 
 #+testcase-think-table-of-verb-checks-vc-loud-lies-rule
@@ -1789,8 +1789,8 @@ by one point
 #testcase-check-vc-loud-lies-rule-fallthrough
 With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.
 
-#+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
->trowed tries
+#+testcase-check-vc-wowed-whys-rule-if-sco-wowed-whys-is-true
+>wowed whys
 No need to re-try.
 
 #testcase-check-vc-loud-lies-rule-if-sco-loud-lies-is-true
@@ -2934,8 +2934,8 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >trod trash
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-reject-end-table-of-verb-checks-vc-trowed-tries-rule
->trowed tries
+#testcase-reject-end-table-of-verb-checks-vc-wowed-whys-rule
+>wowed whys
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-using-you-rule

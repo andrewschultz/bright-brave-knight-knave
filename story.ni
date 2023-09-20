@@ -579,13 +579,13 @@ chapter pain packs
 
 the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "something to heal you if you get a scratch".
 
-book Wowed Wise Crowd Cries
+book Ow'ed Eyes / Crowd Cries
 
-Wowed Wise Crowd Cries is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.".
+OECC is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.". printed name is "Ow'ed Eyes, Crowd Cries".
 
-from-number of crowd cries is 5459. to-number of crowd cries is 2754.
+from-number of OECC is 5459. to-number of OECC is 2754.
 
-wwcc are scenery in cries. understand "crowd/cries" as wwcc.
+the crowd cries are scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC.
 
 chapter proud prize
 
@@ -857,7 +857,7 @@ carry out ting:
 	if noun is learning lou, say "Lou need something specific--the right name for that new book." instead;
 	if noun is fun fish, say "It says nothing but looks at you ... hungrily?" instead; [east]
 	if noun is broad brash clod clash, say "Interrupting their fight with words won't help." instead;
-	if noun is wwcc, say "Casual chat won't work. You need to be more forceful." instead;
+	if noun is crowd cries, say "Casual chat won't work. You need to be more forceful." instead;
 	if noun is sassed sort, say "The Sassed Sort does look a bit weary. Perhaps you should just point out where to go." instead; [north]
 	if noun is valid vent, say "You hear an old echo and think 'Hold, heck, oh.' But no gold gecko scrambles out, for better or worse." instead;
 	if noun is trite tully, say "[if tully-score is 2]You just need to find the final phrase[else]Conversation won't change Tully's mind[end if]." instead; [finale]
@@ -1168,9 +1168,9 @@ this is the lane-lax-gong rule:
 	if sco-trod-trash is false, uncompleted;
 	completed;
 
-this-gong-rule of Wowed Wise Crowd Cries is the wowed-wise-crowd-cries-gong rule.
+this-gong-rule of OECC is the oecc-gong rule.
 
-this is the wowed-wise-crowd-cries-gong rule:
+this is the oecc-gong rule:
 	if sco-loud-lies is false, uncompleted;
 	completed;
 
@@ -1268,7 +1268,7 @@ section Lying Leas (east)
 
 index map with tata mapped east of Bass Bath.
 index map with Lane Lax mapped east of tata.
-index map with Wowed Wise Crowd Cries mapped north of Lax Lane.
+index map with OECC mapped north of Lax Lane.
 index map with Thought Thief Fought Fief mapped south of Lax Lane.
 
 section Shying Sheez (interlude)

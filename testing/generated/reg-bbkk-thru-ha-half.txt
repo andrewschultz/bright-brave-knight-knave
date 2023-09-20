@@ -507,12 +507,28 @@ by one point
 
 >n
 
-#testcase-ha-half-table-of-verb-checks-55-tries
+#testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
+>zwowed whys
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
 >ztrowed tries
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-55-trowed
+#+testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
+>zplowed plies
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
+>wowed zwhys
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
 >trowed ztries
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
+>plowed zplies
 The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-56-lies
@@ -523,7 +539,7 @@ The HA HALF button on your Leet Learner lights up yellow.
 >loud zlies
 The HA HALF button on your Leet Learner lights up yellow.
 
->trowed tries
+>wowed whys
 by one point
 
 #+testcase-ha-half-table-of-verb-checks-56-lies

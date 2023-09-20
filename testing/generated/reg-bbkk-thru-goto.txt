@@ -271,11 +271,11 @@ by one point
 
 >n
 
-#testcase-goto-table-of-noways-wowed-wise-crowd-cries
+#testcase-goto-table-of-noways-oecc
 >n
 Only way out is south.
 
->trowed tries
+>wowed whys
 by one point
 
 >loud lies

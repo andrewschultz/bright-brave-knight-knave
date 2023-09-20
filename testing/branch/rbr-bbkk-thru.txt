@@ -295,7 +295,7 @@ You are now blocked from paths with no points, critical or bonus, available in a
 >kid come
 {$REJECT}
 \\
-#testcase-check-vc-loud-lies-rule-if-player-is-not-in-wowed-wise-crowd-cries
+#testcase-check-vc-loud-lies-rule-if-player-is-not-in-oecc
 #testcase-reject-start-table-of-verb-checks-vc-loud-lies-rule
 >loud lies
 {$REJECT}
@@ -485,9 +485,9 @@ You are now blocked from paths with no points, critical or bonus, available in a
 >trod trash
 {$REJECT}
 \\
-#testcase-check-vc-trowed-tries-rule-if-player-is-not-in-wowed-wise-crowd-cries
-#testcase-reject-start-table-of-verb-checks-vc-trowed-tries-rule
->trowed tries
+#testcase-check-vc-wowed-whys-rule-if-player-is-not-in-oecc
+#testcase-reject-start-table-of-verb-checks-vc-wowed-whys-rule
+>wowed whys
 {$REJECT}
 \\
 #testcase-check-vc-using-you-rule-if-player-is-not-in-bruising-brew
@@ -1578,7 +1578,7 @@ Nothing comes up. You've changed the Recruiter as much as you needed to.
 >t shooter
 "Oh, man, me and the Fried Freak are gonna be the ultimate buddy cop team! Just don't you be the Sergeant who yells too loud at us."
 \\
-#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+#+testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
 >t freak
 "Wow, man, the Chic Shooter is really cool! They might help me be less uncool but still be me and use my special talents, whatever they are!"
 
@@ -1597,11 +1597,11 @@ Nothing comes up. You've changed the Recruiter as much as you needed to.
 by one point
 
 @ver
-#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+#+testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
 >t guide geek
 "Hey wow thanks for finding a friend who's properly impressed by me! I'll be showing them a lot of plans."
 \\
-#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+#+testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
 >t wooter
 "I'm happier than I look and sound to have met the Guide Geek! They know so much!"
 
@@ -1952,7 +1952,7 @@ It's all well and good to need assistance, but your current friends can't give a
 ##BALANCE UNDOS
 #############################test LOUD LIES for all friend configurations
 >gonear cries
->trowed tries
+>wowed whys
 by one point
 \\
 >loud lies
@@ -3082,21 +3082,37 @@ Nothing
 >n
 
 @all
-#testcase-room-names-wowed-wise-crowd-cries
-`Wowed Wise Crowd Cries
+#testcase-room-names-oecc
+`Ow'ed Eyes, Crowd Cries
 
 @gt
-#testcase-goto-table-of-noways-wowed-wise-crowd-cries
+#testcase-goto-table-of-noways-oecc
 >n
 Only way out is south.
 
 @ha
-#testcase-ha-half-table-of-verb-checks-55-tries
+#testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
+>zwowed whys
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
 >ztrowed tries
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-55-trowed
+#+testcase-ha-half-table-of-verb-checks-55-whys-tries-plies
+>zplowed plies
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
+>wowed zwhys
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
 >trowed ztries
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-55-wowed-trowed-plowed
+>plowed zplies
 {$GREENCORE}
 \\
 #testcase-ha-half-table-of-verb-checks-56-lies
@@ -3108,7 +3124,7 @@ Only way out is south.
 {$YELLOWCORE}
 
 @rej
-#testcase-check-vc-loud-lies-rule-if-sco-trowed-tries-is-false
+#testcase-check-vc-loud-lies-rule-if-sco-wowed-whys-is-false
 >loud lies
 You can't just jump to an immediate denunciation. Perhaps you can let the crowd know you know their game. That'll give you confidence to refute the lies.
 \\
@@ -3121,17 +3137,26 @@ You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
 
+@alt
+#testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
 >trowed tries
+by one point
+\\
+#+testcase-alt-words-table-of-verb-checks-55-wowed-trowed-plowed-whys-tries-plies
+>plowed plies
+by one point
+
+>wowed whys
 by one point
 
 @all,rej
-{--rej}#testcase-check-vc-trowed-tries-rule-fallthrough
-{--all}#testcase-run-vr-trowed-tries-rule-default
+{--rej}#testcase-check-vc-wowed-whys-rule-fallthrough
+{--all}#testcase-run-vr-wowed-whys-rule-default
 You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!
 
 @rej
-#testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
->trowed tries
+#testcase-check-vc-wowed-whys-rule-if-sco-wowed-whys-is-true
+>wowed whys
 Enough trying. You need to take action!
 \\
 #+testcase-think-table-of-verb-checks-vc-loud-lies-rule
@@ -3166,8 +3191,8 @@ by one point
 With the help of the Snide Sneak, as well as the Meek Mooter who points out what might be too much bluster, you're able to call the lies for what they are! The crowd seems shocked. You leave with a proud prize.
 
 @rej
-#+testcase-check-vc-trowed-tries-rule-if-sco-trowed-tries-is-true
->trowed tries
+#+testcase-check-vc-wowed-whys-rule-if-sco-wowed-whys-is-true
+>wowed whys
 No need to re-try.
 \\
 #testcase-check-vc-loud-lies-rule-if-sco-loud-lies-is-true
@@ -3177,10 +3202,10 @@ You already declaimed the loud lies.
 >s
 
 @gong,prong
-{--gong}#testcase-gong-checks-wowed-wise-crowd-cries
-{--prong}#testcase-prong-checks-wowed-wise-crowd-cries
+{--gong}#testcase-gong-checks-oecc
+{--prong}#testcase-prong-checks-oecc
 >n
-{$GONG} Wowed Wise Crowd Cries.
+{$GONG} Ow'ed Eyes, Crowd Cries.
 \\
 >undo
 
@@ -6216,8 +6241,8 @@ You just need to find the final phrase.
 >trod trash
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vc-trowed-tries-rule
->trowed tries
+#testcase-reject-end-table-of-verb-checks-vc-wowed-whys-rule
+>wowed whys
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-using-you-rule
@@ -6290,7 +6315,7 @@ You could have told a NUDE NAPPER to be more modest in the Crude Crapper.
 You could've said FLOUT FLUFF in Out, Uff!.
 You could've said FLAK FLIGHT in Sack Site.
 You could've said GRANDER GROVE in Dander, Dove.
-You didn't uncover the mime mode in Passed Port.
+You didn't enter MIME MODE in Passed Port.
 You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
 You didn't find the PLEAD PLAQUE in Treed Track.
 You could have tried to JACK GIST for a shorter command to read the track tryst lack list.

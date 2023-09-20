@@ -164,7 +164,7 @@ by one point
 >t shooter
 "Oh, man, me and the Fried Freak are gonna be the ultimate buddy cop team! Just don't you be the Sergeant who yells too loud at us."
 
-#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+#+testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
 >t freak
 "Wow, man, the Chic Shooter is really cool! They might help me be less uncool but still be me and use my special talents, whatever they are!"
 
@@ -174,11 +174,11 @@ by one point
 >r 3
 by one point
 
-#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+#+testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
 >t guide geek
 "Hey wow thanks for finding a friend who's properly impressed by me! I'll be showing them a lot of plans."
 
-#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+#+testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
 >t wooter
 "I'm happier than I look and sound to have met the Guide Geek! They know so much!"
 
@@ -258,7 +258,7 @@ by one point
 
 >n
 
->trowed tries
+>wowed whys
 by one point
 
 #testcase-mainverbs-carry-out-ting-if-noun-is-crowd-cries

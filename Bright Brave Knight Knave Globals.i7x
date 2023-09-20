@@ -144,9 +144,9 @@ sco-pain-packs is a truth state that varies.
 
 sco-trod-trash is a truth state that varies.
 
-section Wowed Wise Crowd Cries
+section Ow'ed Eyes Crowd Cries
 
-sco-trowed-tries is a truth state that varies.
+sco-wowed-whys is a truth state that varies.
 sco-loud-lies is a truth state that varies.
 
 section Thought Thief Fought Fief
