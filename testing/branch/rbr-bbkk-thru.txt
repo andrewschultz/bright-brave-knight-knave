@@ -573,6 +573,14 @@ You already discovered the kite cave to find a path beyond!
 >jack zgist
 {$GREENBONUS}
 
+@ver
+#testcase-mainverbs-carry-out-ting-fallthrough
+>t hold hole
+Silence back.
+\\
+>t me
+"Be back, Me! ... Mac?"
+
 >x hold hole
 
 @rej
@@ -1068,6 +1076,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll kid
 Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all.
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-boffin-boy
+>t boy
+He has probably had enough of lectures.
+
 >kid come
 by one point
 
@@ -1334,6 +1347,27 @@ You can only go west to somewhere new and south to Slum Slid.
 >zweak w00ter
 {$GREENCORE}
 
+@ver
+##BALANCE UNDOS
+>meek mooter
+by one point
+\\
+#testcase-mainverbs-carry-out-ting-if-noun-is-meek-mooter
+>t meek
+"It's pretty cool to be able to sort out the details in braver people's plans, I think. When I get the chance."
+\\
+>undo
+>undo
+\\
+>weak wooter
+\\
+#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+>t wooter
+"I don't know if I deserve a friend full of knowledge and wisdom because I might not praise them enthusiastically enough. But I'd like to try!"
+\\
+>undo
+>undo
+
 >w
 
 @all
@@ -1414,6 +1448,11 @@ The Guide Geek looks around, slightly uncomfortable. They see no one they immedi
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+>t geek
+"Sure would be nice if you could find someone who finds my wisdom great."
+
 >fried freak
 by one point
 
@@ -1426,6 +1465,11 @@ The Fried Freak and the Guide Geek brush past each other with little or no ackno
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+>t freak
+"Boy, I could use someone to help me be less uncool. I have talents I'm pretty sure. They're just weird ones!"
 
 >snide sneak
 by one point
@@ -1440,6 +1484,11 @@ The Snide Sneak and the Fried Freak brush past each other with little or no ackn
 >ll
 Nothing comes up. The general area here has been changed enough.
 !LCD
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-snide-sneak
+>t sneak
+"People say I could use a little humility and caution, but really, I'd just like a friend to delegate that to."
 
 >e
 
@@ -1471,6 +1520,15 @@ by one point
 \\
 >undo
 
+@ver
+#+testcase-mainverbs-carry-out-ting-if-noun-is-snide-sneak
+>t sneak
+"Hey, this pal you found for me seems to be good at filling in details."
+\\
+#+testcase-mainverbs-carry-out-ting-if-noun-is-meek-mooter
+>t meek
+"Geez, I hope I can help the Snide Sneak out. Maybe they will help me take those shortcuts I talk myself out of."
+
 >weak wooter
 by one point
 
@@ -1498,8 +1556,23 @@ The Chic Shooter and the Weak Wooter brush past each other with little or no ack
 Nothing comes up. You've changed the Recruiter as much as you needed to.
 !LCD
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-chic-shooter
+>t shooter
+"Man, I'd love to have a friend who is undercover cool."
+
 >w
 >fried freak
+
+@ver
+#+testcase-mainverbs-carry-out-ting-if-noun-is-chic-shooter
+>t shooter
+"Oh, man, me and the Fried Freak are gonna be the ultimate buddy cop team! Just don't you be the Sergeant who yells too loud at us."
+\\
+#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+>t freak
+"Wow, man, the Chic Shooter is really cool! They might help me be less uncool but still be me and use my special talents, whatever they are!"
+
 >e
 >bye
 
@@ -1513,6 +1586,15 @@ Nothing comes up. You've changed the Recruiter as much as you needed to.
 @!
 >r 3
 by one point
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+>t guide geek
+"Hey wow thanks for finding a friend who's properly impressed by me! I'll be showing them a lot of plans."
+\\
+#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+>t wooter
+"I'm happier than I look and sound to have met the Guide Geek! They know so much!"
 
 >s
 >e
@@ -2469,6 +2551,11 @@ Nothing comes up.
 >ll sassed sort
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.33, 0.33.)
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-sassed-sort
+>t sassed
+The Sassed Sort does look a bit weary. Perhaps you should just point out where to go.
+
 >s
 >w
 >n
@@ -3056,6 +3143,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >loud zlies
 {$GREENCORE}
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-crowd-cries
+>t crowd
+Casual chat won't work. You need to be more forceful.
+
 >loud lies
 by one point
 
@@ -3517,6 +3609,11 @@ Nothing. You've found everywhere the Sassed Sort can go.
 >ballad bent
 Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tunes.
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-valid-vent
+>t vent
+You hear an old echo and think "Hold, heck, oh." But no gold gecko scrambles out, for better or worse.
+
 >salad scent
 by one point
 
@@ -3933,6 +4030,11 @@ by one point
 \\
 >undo
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-broad-brash-clod-clash
+>t clash
+Interrupting their fight with words won't help.
+
 >trod trash
 by one point
 
@@ -4101,6 +4203,11 @@ The fish swims around, ignoring your temporary nihilism.
 #testcase-mistakes-table-of-one-wish-fun-fish-guesses-pun-pish
 >pun pish
 The fish looks blankly at you. It has no knowledge of puns.
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-fun-fish
+>t fish
+It says nothing but looks at you ... hungrily?
 
 >done dish
 by one point
@@ -5224,6 +5331,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 >undo
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-losing-lou
+>t lou
+Losing Lou doesn't need small talk right now but answers.
+
 >using you
 by one point
 
@@ -5329,6 +5441,11 @@ No, you need something more positive.
 #testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
 No, you need something less reflexive.
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-learning-lou
+>t lou
+Lou need something specific--the right name for that new book.
 
 >spurning spew
 by one point
@@ -5555,6 +5672,11 @@ You can contact Wailing Will now you have something to offer him and the means t
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-mailing-mill
+>t mill
+You can just request whomever you need.
+
 >failing phil
 by one point
 
@@ -5666,6 +5788,11 @@ You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedl
 >fight fave
 You already started the final fight! You aren't going to, like, REALLY start fighting now.
 
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t tully
+Conversation won't change Tully's mind.
+
 @all
 #testcase-run-vr-bright-bully-rule-abide-by-the-frightfully-bright-bully-rule
 >bright bully
@@ -5741,6 +5868,11 @@ There must be another way to see Trite Tully!
 >ll tully
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
+@ver
+#+testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t tully
+Conversation won't change Tully's mind.
+
 >bright bully
 by one point
 
@@ -5796,6 +5928,11 @@ If there were a train to catch, you could send Tully on it. Alas, no.
 #testcase-ha-half-table-of-verb-checks-82-bye
 >zbam bye
 {$GREENCORE}
+
+@ver
+#+testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t sham
+You just need to find the final phrase.
 
 @rej
 ====alphabetize on

@@ -1,0 +1,563 @@
+## reg-bbkk-thru-verbs.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing special verbs
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+>kite cave
+by one point
+
+#testcase-mainverbs-carry-out-ting-fallthrough
+>t hold hole
+Silence back.
+
+>t me
+"Be back, Me! ... Mac?"
+
+>x hold hole
+
+>x list
+
+>jack gist
+Your score and bonus points just went up by one point.
+
+>bold bowl
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+!by one point
+
+>cold coal
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
+
+>sold soul
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
+
+>d
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>write rave
+by two points
+
+>what whoah
+by one point
+
+>w
+
+>hid hum
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-boffin-boy
+>t boy
+He has probably had enough of lectures.
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>in
+
+>mood mapper
+by one point
+
+>nude napper
+by one point
+
+>out
+
+>e
+
+>n
+
+>meek mooter
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-meek-mooter
+>t meek
+"It's pretty cool to be able to sort out the details in braver people's plans, I think. When I get the chance."
+
+>undo
+>undo
+
+>weak wooter
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+>t wooter
+"I don't know if I deserve a friend full of knowledge and wisdom because I might not praise them enthusiastically enough. But I'd like to try!"
+
+>undo
+>undo
+
+>w
+
+>stride streak
+by one point
+
+>guide geek
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+>t geek
+"Sure would be nice if you could find someone who finds my wisdom great."
+
+>fried freak
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+>t freak
+"Boy, I could use someone to help me be less uncool. I have talents I'm pretty sure. They're just weird ones!"
+
+>snide sneak
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-snide-sneak
+>t sneak
+"People say I could use a little humility and caution, but really, I'd just like a friend to delegate that to."
+
+>e
+
+>meek mooter
+by one point
+
+#+testcase-mainverbs-carry-out-ting-if-noun-is-snide-sneak
+>t sneak
+"Hey, this pal you found for me seems to be good at filling in details."
+
+#+testcase-mainverbs-carry-out-ting-if-noun-is-meek-mooter
+>t meek
+"Geez, I hope I can help the Snide Sneak out. Maybe they will help me take those shortcuts I talk myself out of."
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-chic-shooter
+>t shooter
+"Man, I'd love to have a friend who is undercover cool."
+
+>w
+>fried freak
+
+#+testcase-mainverbs-carry-out-ting-if-noun-is-chic-shooter
+>t shooter
+"Oh, man, me and the Fried Freak are gonna be the ultimate buddy cop team! Just don't you be the Sergeant who yells too loud at us."
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-fried-freak
+>t freak
+"Wow, man, the Chic Shooter is really cool! They might help me be less uncool but still be me and use my special talents, whatever they are!"
+
+>e
+>bye
+
+>r 3
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-guide-geek
+>t guide geek
+"Hey wow thanks for finding a friend who's properly impressed by me! I'll be showing them a lot of plans."
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-weak-wooter
+>t wooter
+"I'm happier than I look and sound to have met the Guide Geek! They know so much!"
+
+>s
+>e
+
+>n
+
+>posh planks
+by one point
+
+>plucky plot
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-sassed-sort
+>t sassed
+The Sassed Sort does look a bit weary. Perhaps you should just point out where to go.
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+>paul panks
+by one point
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+>plead plaque
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>trowed tries
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-crowd-cries
+>t crowd
+Casual chat won't work. You need to be more forceful.
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+>slashing sword
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-valid-vent
+>t vent
+You hear an old echo and think "Hold, heck, oh." But no gold gecko scrambles out, for better or worse.
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>e
+
+>n
+
+>e
+
+>e
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-broad-brash-clod-clash
+>t clash
+Interrupting their fight with words won't help.
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-fun-fish
+>t fish
+It says nothing but looks at you ... hungrily?
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+>flak flight
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+>time toad
+by one point
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>grander grove
+by one point
+
+>n
+
+>mime mode
+by one point
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>flout fluff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>eyeing ease
+score and bonus
+by one point
+
+>in
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-losing-lou
+>t lou
+Losing Lou doesn't need small talk right now but answers.
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-learning-lou
+>t lou
+Lou need something specific--the right name for that new book.
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-mailing-mill
+>t mill
+You can just request whomever you need.
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+#testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t tully
+Conversation won't change Tully's mind.
+
+>frightfully
+by one point
+
+#+testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t tully
+Conversation won't change Tully's mind.
+
+>bright bully
+by one point
+
+#+testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
+>t sham
+You just need to find the final phrase.
+
+>bam bye
+by one point
+

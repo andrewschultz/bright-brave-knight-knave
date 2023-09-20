@@ -585,6 +585,10 @@ Wowed Wise Crowd Cries is a room in Lying Leas. "An invisible crowd roars at deb
 
 from-number of crowd cries is 5459. to-number of crowd cries is 2754.
 
+wwcc are scenery in cries. understand "crowd/cries" as wwcc.
+
+chapter proud prize
+
 the proud prize is a thing. description is "It appears the original recipient had their name rubbed off. If you squint very closely, you see S S."
 
 book Thought Thief Fought Fief
@@ -828,6 +832,37 @@ book xyzzying
 
 carry out xyzzying:
 	say "A mean note scribbled 'Too Marty Stu, Smarty,' with a caricature of you on it, floats down and goes POOF before you realize it isn't very gender-inclusive.";
+
+volume standard and action verbs
+
+chapter ting
+
+ting is an action applying to thing.
+
+understand the command "t" as something new.
+
+understand "t [something]" as ting.
+
+carry out ting:
+	if noun is the player, say "'Be back, Me! ... Mac?'" instead;
+	if noun is chic shooter, say "'[if chic shooter is pairedyet]Oh, man, me and the Fried Freak are gonna be the ultimate buddy cop team! Just don't you be the Sergeant who yells too loud at us[else]Man, I'd love to have a friend who is undercover cool[end if].'" instead; [recruiter]
+	if noun is meek mooter, say "'[if meek mooter is pairedyet]Geez, I hope I can help the Snide Sneak out. Maybe they will help me take those shortcuts I talk myself out of[else]It's pretty cool to be able to sort out the details in braver people's plans, I think. When I get the chance[end if].'" instead;
+	if noun is weak wooter, say "'[if weak wooter is pairedyet]I'm happier than I look and sound to have met the Guide Geek! They know so much[else]I don't know if I deserve a friend full of knowledge and wisdom because I might not praise them enthusiastically enough. But I'd like to try[end if]!'" instead;
+	if noun is fried freak, say "'[if fried freak is pairedyet]Wow, man, the Chic Shooter is really cool! They might help me be less uncool but still be me and use my special talents, whatever they are[else]Boy, I could use someone to help me be less uncool. I have talents I'm pretty sure. They're just weird ones[end if]!'" instead; [cried creek]
+	if noun is guide geek, say "'[if guide geek is pairedyet]Hey wow thanks for finding a friend who's properly impressed by me! I'll be showing them a lot of plans[else]Sure would be nice if you could find someone who finds my wisdom great[end if].'" instead;
+	if noun is snide sneak, say "'[if snide sneak is pairedyet]Hey, this pal you found for me seems to be good at filling in details[else]People say I could use a little humility and caution, but really, I'd just like a friend to delegate that to[end if].'" instead;
+	if noun is boffin boy, say "He has probably had enough of lectures." instead; [west]
+	if noun is mailing mill, say "You can just request whomever you need." instead;
+	if noun is losing lou, say "Losing Lou doesn't need small talk right now but answers." instead; [center]
+	if noun is learning lou, say "Lou need something specific--the right name for that new book." instead;
+	if noun is fun fish, say "It says nothing but looks at you ... hungrily?" instead; [east]
+	if noun is broad brash clod clash, say "Interrupting their fight with words won't help." instead;
+	if noun is wwcc, say "Casual chat won't work. You need to be more forceful." instead;
+	if noun is sassed sort, say "The Sassed Sort does look a bit weary. Perhaps you should just point out where to go." instead; [north]
+	if noun is valid vent, say "You hear an old echo and think 'Hold, heck, oh.' But no gold gecko scrambles out, for better or worse." instead;
+	if noun is trite tully, say "[if tully-score is 2]You just need to find the final phrase[else]Conversation won't change Tully's mind[end if]." instead; [finale]
+	say "Silence back." instead;
+	the rule succeeds;
 
 volume distraction rooms
 
