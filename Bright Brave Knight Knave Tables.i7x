@@ -563,7 +563,7 @@ a goodrhyme rule (this is the vc-slosh-slick rule):
 		already-done;
 	abide by the eeker bypass rule for fried freak;
 	if sco-quash-quick is false:
-		vcp "The area around the posh pick is too deep. Is there any way to lessen it?";
+		vcp "The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?";
 		not-yet;
 	if fried freak is not in location of player and chic shooter is not in location of player:
 		vcp "You don't have the right pals yet!";
@@ -1435,10 +1435,10 @@ a goodrhyme rule (this is the any-nook rule):
 
 section hailing hill auxiliary
 
-a goodrhyme rule (this is the the can-mail rule):
+a goodrhyme rule (this is the can-mail rule):
 	if player is not in hailing hill, unavailable;
 	if sco-mailing-mill is false:
-		vcp "Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist.";
+		vcp "Nothing's (yet) available here that can message anyone by that name or, indeed, verify they exist. Maybe they are in hiding.";
 		not-yet;
 	if sco-scaling-skill is false:
 		vcp "The mailing mill would probably belong on the top of the hill. You can't get anywhere near the top!";
@@ -1463,7 +1463,8 @@ to decrease-hill-ll:
 	decrease to-number of mailing mill by 2854;
 	if to-number of hailing hill is 0:
 		declue-here;
-		declue mailing mill;
+		moot mailing mill;
+		say "[line break]The mailing mill retracts into the ground. You've probably found all you could from it--makes sense, three people, three hole items."
 
 section very endgame stuff
 

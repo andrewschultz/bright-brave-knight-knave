@@ -645,6 +645,11 @@ The hold hole does not seek animal sacrifice, and neither should you.
 That's a bit too repetitive, but the general idea feels right.
 !LCD
 \\
+#+testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled poll
+That's a bit too repetitive, but the general idea feels right.
+!LCD
+\\
 #testcase-mistakes-table-of-hold-hole-guesses-rolled-role-roll
 >rolled roll
 That's a bit too repetitive, but the general idea feels right.
@@ -653,6 +658,10 @@ That's a bit too repetitive, but the general idea feels right.
 >rolled role
 That's a bit too repetitive, but the general idea feels right.
 !LCD
+\\
+#testcase-mistakes-table-of-hold-hole-guesses-trolled-troll
+>trolled troll
+That's a bit too repetitive, but the general idea feels right.
 
 @!min
 >bold bowl
@@ -2068,7 +2077,7 @@ Your current friends seem unwilling to make a human ladder to get to the vent.
 >quash quick
 Your current friends don't seem up to such a grimy task.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 \\
@@ -2076,7 +2085,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2085,7 +2094,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2094,7 +2103,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 Your current friends don't seem up to such a grimy task.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2103,7 +2112,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2112,7 +2121,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2121,7 +2130,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2130,7 +2139,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 This is a job for you and two friends.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -2139,7 +2148,7 @@ The area around the posh pick is too deep. Is there any way to lessen it?
 >quash quick
 Your current friends don't seem up to such a grimy task.
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >undo
 >undo
 >undo
@@ -3475,7 +3484,7 @@ A large, dignified time toad appears. Alas, it shakes its head solemnly. It need
 \\
 #testcase-check-vc-slosh-slick-rule-if-sco-quash-quick-is-false
 >slosh slick
-The area around the posh pick is too deep. Is there any way to lessen it?
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 \\
 #testcase-think-table-of-verb-checks-vc-time-toad-rule
 #testcase-think-table-of-verb-checks-vc-slosh-slick-rule
@@ -3943,7 +3952,7 @@ You shuffle your feet a bit, exaggerating what has happened and what you face.
 You blink, only to find you have not wound up in a bog, which is probably for the better.
 
 @gt
-#testcase-goto-table-of-noways-too-tough-blue-bluff
+#+testcase-goto-table-of-noways-too-tough-blue-bluff
 >n
 The drop is not too steep, but you don't know how you'd climb back up. Best just go back east now you're done here.
 
@@ -4379,6 +4388,13 @@ You already have a will to win!
 #+testcase-ha-half-table-of-verb-checks-67-un-in
 >zill in
 {$GREENBONUS}
+
+@alt
+#testcase-alt-words-table-of-verb-checks-67-ill-un-in
+>illin
+by one point
+\\
+>undo
 
 >illun
 by one point
@@ -5024,11 +5040,11 @@ Nothing
 !LCD
 
 @ha
-#testcase-ha-half-table-of-verb-checks-48-candle
+#+testcase-ha-half-table-of-verb-checks-48-candle
 >zcovering candle
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-48-covering
+#+testcase-ha-half-table-of-verb-checks-48-covering
 >covering zcandle
 {$GREENCORE}
 

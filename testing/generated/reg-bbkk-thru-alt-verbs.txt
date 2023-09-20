@@ -138,6 +138,7 @@ by one point
 
 >w
 >fried freak
+
 >e
 >bye
 
@@ -326,6 +327,12 @@ by one point
 
 >will won
 by one point
+
+#testcase-alt-words-table-of-verb-checks-67-ill-un-in
+>illin
+by one point
+
+>undo
 
 >illun
 by one point

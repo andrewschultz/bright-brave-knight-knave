@@ -275,6 +275,7 @@ by one point
 
 >w
 >fried freak
+
 >e
 >bye
 
@@ -1080,11 +1081,11 @@ The HA HALF button on your Leet Learner lights up yellow.
 >bell book
 by one point
 
-#testcase-ha-half-table-of-verb-checks-48-candle
+#+testcase-ha-half-table-of-verb-checks-48-candle
 >zcovering candle
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-48-covering
+#+testcase-ha-half-table-of-verb-checks-48-covering
 >covering zcandle
 The HA HALF button on your Leet Learner lights up green.
 

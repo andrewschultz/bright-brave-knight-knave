@@ -152,6 +152,7 @@ by one point
 
 >w
 >fried freak
+
 >e
 >bye
 
@@ -349,7 +350,7 @@ by one point
 >stew stuff
 by one point
 
-#testcase-goto-table-of-noways-too-tough-blue-bluff
+#+testcase-goto-table-of-noways-too-tough-blue-bluff
 >n
 The drop is not too steep, but you don't know how you'd climb back up. Best just go back east now you're done here.
 
