@@ -715,8 +715,12 @@ understand "r [number]" as recruiting when r-warn-yet is true.
 carry out recruiting:
 	if number understood > 3 or number understood < 1, say "You need to pick 1, 2 or 3." instead;
 	if number of pairedyet eekers is 2 and number understood > 1, say "I can't deduce the next pair you'd like to enlist. There are two more." instead;
-	if number of fungible eekers > 0, say "I can technically do better, but right now, you'll want to run this command without anyone else around." instead;
 	if mrlp is Shying Sheez, say "You can't call on anyone when you're stuck here!" instead;
+	if number of fungible eekers > 0:
+		let er be a random fungible eeker;
+		if matchnum of er is number understood, say "But you've already got [list of fungible eekers] here!" instead;
+		sideline-eekers;
+		say "Dismissing [list of fungible eekers]...[paragraph break]";
 	repeat with XX running through creeky eekers:
 		if matchnum of XX is number understood:
 			let og be other-guy of XX;
@@ -746,6 +750,8 @@ carry out recruiting:
 			move og to recroom;
 			now xx is followish;
 			now og is followish;
+			if player is in passed port or player is in cast court or player is in fast fort, move sassed sort to bosh blanks;
+			the rule succeeds;
 
 this is the cheat-bonus rule:
 	if number of pairedyet eekers is 4:
