@@ -5,7 +5,7 @@
 ** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
-* main-thru
+* _to-recruit
 
 >au 2
 
@@ -13,8 +13,6 @@
 by one point
 
 >x hold hole
-
->x list
 
 >d
 
@@ -50,8 +48,72 @@ by one point
 
 >n
 
-#######################################################single matchups
+* right-1-to-1
 
+>{include} _to-recruit
+
+>w
+>stride streak
+
+>fried freak
+>e
+>chic shooter
+The Chic Shooter and Fried Freak seem like opposites, but they start chatting and realize they fill in holes in each other's personality. Each has done and seen a lot of things the other wanted to. Perhaps with you, they could do more!
+
+>undo
+>undo
+>undo
+
+>guide geek
+>e
+>weak wooter
+The Guide Geek starts yacking away, and somehow, the Weak Wooter's encouragement helps the Guide Geek ... well, not gain humility, and they don't need confidence, but ... stay focused. You're even learning something, yourself. You've managed to pair two friends together!
+
+>undo
+>undo
+>undo
+
+>snide sneak
+>e
+>meek mooter
+The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide Sneak tries to show who's boss, but the Meek Mooter deflects surprisingly effectively. The Snide Sneak laughs. They shake hands. They'll be sticking together.
+
+>undo
+>undo
+>undo
+
+>e
+
+>chic shooter
+>w
+>fried freak
+The Chic Shooter and Fried Freak seem like opposites, but they start chatting and realize they fill in holes in each other's personality. Each has done and seen a lot of things the other wanted to. Perhaps with you, they could do more!
+
+>undo
+>undo
+>undo
+
+>weak wooter
+>w
+>guide geek
+The Guide Geek starts yacking away, and somehow, the Weak Wooter's encouragement helps the Guide Geek ... well, not gain humility, and they don't need confidence, but ... stay focused. You're even learning something, yourself. You've managed to pair two friends together!
+
+>undo
+>undo
+>undo
+
+>meek mooter
+>w
+>snide sneak
+The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide Sneak tries to show who's boss, but the Meek Mooter deflects surprisingly effectively. The Snide Sneak laughs. They shake hands. They'll be sticking together.
+
+>undo
+>undo
+>undo
+
+* wrong-1-to-1
+
+>{include} _to-recruit
 
 >meek mooter
 by one point
@@ -239,3 +301,259 @@ The Meek Mooter and Fried Freak sit around, exhausted, with nothing to say to ea
 >guide geek
 !by one point
 The Guide Geek tries to explain something to the Meek Mooter, who actually keeps finding decent counterpoints. "Be that way, then," says the Guide Geek.
+
+* wrong-1-to-2
+
+>{include} _to-recruit
+
+>w
+>stride streak
+
+>fried freak
+by one point
+>e
+>chic shooter
+by one point
+
+>weak wooter
+The Chic Shooter and Fried Freak understand you wish to call someone new. They depart to make way for the Weak Wooter.
+>undo
+>meek mooter
+The Chic Shooter and Fried Freak understand you wish to call someone new. They depart to make way for the Meek Mooter.
+>undo
+
+>w
+>guide geek
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Guide Geek.
+>undo
+>snide sneak
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Snide Sneak.
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+#####################geek/wooter
+
+>guide geek
+by one point
+>e
+>weak wooter
+by one point
+
+>chic shooter
+The Weak Wooter and Guide Geek understand you wish to call someone new. They depart to make way for the Chic Shooter.
+>undo
+>meek mooter
+The Weak Wooter and Guide Geek understand you wish to call someone new. They depart to make way for the Meek Mooter.
+>undo
+
+>w
+>fried freak
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Fried Freak.
+>undo
+>snide sneak
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Snide Sneak.
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+#####################sneak/mooter
+
+>snide sneak
+by one point
+>e
+>meek mooter
+by one point
+
+>weak wooter
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter.
+>undo
+>chic shooter
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Chic Shooter.
+>undo
+
+>w
+>guide geek
+The Snide Sneak and Meek Mooter understand you wish to call someone new. They depart to make way for the Guide Geek.
+>undo
+>fried freak
+The Snide Sneak and Meek Mooter understand you wish to call someone new. They depart to make way for the Fried Freak.
+>undo
+
+>undo
+>undo
+>undo
+>undo
+
+* replace-2-with-2
+
+>{include} _to-recruit
+
+>w
+>stride streak
+by one point
+
+>w
+>guide geek
+by one point
+>e
+>weak wooter
+by one point
+
+>bye
+
+>chic shooter
+>w
+>fried freak
+>bye
+
+>r 3
+by one point
+
+>snide sneak
+by one point
+>e
+>meek mooter
+by one point
+
+#####sneak and mooter
+
+>weak wooter
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Weak Wooter and the Guide Geek.
+>l
+The Guide Geek and Weak Wooter hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+>chic shooter
+The Meek Mooter and Snide Sneak understand you wish to call someone new. They depart to make way for the Chic Shooter and the Fried Freak.
+>l
+The Fried Freak and Chic Shooter hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>w
+
+>fried freak
+The Snide Sneak and Meek Mooter understand you wish to call someone new. They depart to make way for the Fried Freak and the Chic Shooter.
+>l
+The Chic Shooter and Fried Freak hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+>guide geek
+The Snide Sneak and Meek Mooter understand you wish to call someone new. They depart to make way for the Guide Geek and the Weak Wooter.
+>l
+The Weak Wooter and Guide Geek hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>undo
+>bye
+
+#####freak and shooter
+
+>fried freak
+>e
+>chic shooter
+
+>weak wooter
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Weak Wooter and the Guide Geek.
+>l
+The Guide Geek and Weak Wooter hang together here, chatting with each other but ready to help when needed
+>undo
+>undo
+>meek mooter
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Meek Mooter and the Snide Sneak.
+>l
+The Snide Sneak and Meek Mooter hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>w
+
+>snide sneak
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Snide Sneak and the Meek Mooter.
+>l
+The Meek Mooter and Snide Sneak hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+>guide geek
+The Fried Freak and Chic Shooter understand you wish to call someone new. They depart to make way for the Guide Geek and the Weak Wooter.
+>l
+The Weak Wooter and Guide Geek hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>undo
+>bye
+
+#####geek and wooter
+
+>guide geek
+>e
+>weak wooter
+
+>chic shooter
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Chic Shooter and the Fried Freak.
+>l
+The Fried Freak and Chic Shooter hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+>meek mooter
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Meek Mooter and the Snide Sneak.
+>l
+The Snide Sneak and Meek Mooter hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>w
+
+>snide sneak
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Snide Sneak and the Meek Mooter.
+>l
+The Meek Mooter and Snide Sneak hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+>fried freak
+The Guide Geek and Weak Wooter understand you wish to call someone new. They depart to make way for the Fried Freak and the Chic Shooter.
+>l
+The Chic Shooter and Fried Freak hang together here, chatting with each other but ready to help when needed.
+>undo
+>undo
+
+>undo
+>bye
+
+######################now singletons hiring double
+
+>chic shooter
+You call the Chic Shooter, who appears with their friend, the Fried Freak.
+>undo
+
+>meek mooter
+You call the Meek Mooter, who appears with their friend, the Snide Sneak.
+>undo
+
+>weak wooter
+You call the Weak Wooter, who appears with their friend, the Guide Geek.
+>undo
+
+>w
+
+>fried freak
+You call the Fried Freak, who appears with their friend, the Chic Shooter.
+>undo
+
+>snide sneak
+You call the Snide Sneak, who appears with their friend, the Meek Mooter.
+>undo
+
+>guide geek
+You call the Guide Geek, who appears with their friend, the Weak Wooter.
+>undo
+
