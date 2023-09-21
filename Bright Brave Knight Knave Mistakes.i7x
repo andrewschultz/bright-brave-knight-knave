@@ -50,6 +50,17 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty."
 "youd"	"yap er"	--	false	--	"You feel as though you want to say something about the state of these environs, but what good would it do?"
 
+table of dander dove guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"strander"	"strove"	--	false	--	"This would seem to be despairing. You can't already admit you tried but failed."
+
+table of fought fief guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"grot"	"grief"	--	false	--	"You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!"
+"lot"	"leaf"	--	false	--	"You observe the fauna and flora, specifically not looking for any leaves to burn."
+"shot"	"sheaf"	--	false	--	"You look around for papers, but [if sco-brought-brief is false]maybe you aren't looking for the right ones[else]there are no more[end if]."
+"tot"	"teef"	--	false	--	"You look for something to give the Tooth Fairy. Nothing."
+
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bill"	"bun"	--	false	--	"You can pay for food once you're here."
@@ -67,6 +78,20 @@ this is the nil-none-name rule:
 	if sco-fill-fun is false, the rule succeeds;
 	the rule fails;
 
+guess-table of oecc is the table of oecc guesses.
+
+table of oecc guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bowed"	"byes|buys"	--	false	--	"No need for bowing here."
+"howd"	"hies|his"	--	false	--	"How [if sco-wowed-whys is false]isn't[else]wasn't[end if] quite the question to ask."
+"powed"	"pies"	--	false	--	"No pie ambushes anyone, for better or worse."
+"proud"	"pries|prize"	prize-yet rule	false	--	"Well, that's what you get if you figure what to do here."
+"thoud"	"thys"	--	false	--	"Old English might [if sco-loud-lies is true]have confused[else]confuse[end if] the crowd but won't really make a lasting impression."
+
+this is the prize-yet rule:
+	if sco-loud-lies is false, the rule succeeds;
+	the rule fails;
+
 table of recroom guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "seek"	"suitor"	--	false	--	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
@@ -77,10 +102,6 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "did"	"dumb"	--	false	--	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
 "mid"	"mum"	--	false	--	"You don't need parental support or quiet."
 "skid"	"scum"	--	false	--	"No. A good [this-game-noi] don't look down on people like that."
-
-table of dander dove guesses
-mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"strander"	"strove"	--	false	--	"This would seem to be despairing. You can't already admit you tried but failed."
 
 volume thing stuff
 

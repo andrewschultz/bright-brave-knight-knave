@@ -1719,7 +1719,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker bypass ru
 			say "You wonder if you need to do a sweet swap. No! Your current companions look up to the task!"; [vcok]
 		else:
 			say "You temporarily dismiss [the list of eekers in location of player] for [the ee] and [the eo], who'd seem to work better here..."; [vcok]
-		say "[line break]";
+		say "[line break]"; [vcok]
 	ready;
 
 volume table of noways

@@ -418,11 +418,50 @@ by one point
 
 >n
 
+#testcase-mistakes-table-of-oecc-guesses-bowed-byes-buys
+>bowed buys
+No need for bowing here.
+
+>bowed byes
+No need for bowing here.
+
+#testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd hies
+How isn't quite the question to ask.
+
+#+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd his
+How isn't quite the question to ask.
+
+#testcase-mistakes-table-of-oecc-guesses-powed-pies
+>powed pies
+No pie ambushes anyone, for better or worse.
+
+#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+>proud prize
+Well, that's what you get if you figure what to do here.
+
+#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+>proud pries
+Well, that's what you get if you figure what to do here.
+
+#testcase-mistakes-table-of-oecc-guesses-thoud-thys
+>thoud thys
+Old English might confuse the crowd but won't really make a lasting impression.
+
 >wowed whys
 by one point
 
+#+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd his
+How wasn't quite the question to ask.
+
 >loud lies
 by one point
+
+#+testcase-mistakes-table-of-oecc-guesses-thoud-thys
+>thoud thys
+Old English might have confused the crowd but won't really make a lasting impression.
 
 >s
 
@@ -673,11 +712,31 @@ by one point
 
 >s
 
+#testcase-mistakes-table-of-fought-fief-guesses-grot-grief
+>grot grief
+You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!
+
+#testcase-mistakes-table-of-fought-fief-guesses-lot-leaf
+>lot leaf
+You observe the fauna and flora, specifically not looking for any leaves to burn.
+
+#testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
+>shot sheaf
+You look around for papers, but maybe you aren't looking for the right ones.
+
+#testcase-mistakes-table-of-fought-fief-guesses-tot-teef
+>tot teef
+You look for something to give the Tooth Fairy. Nothing.
+
 >bought beef
 by one point
 
 >brought brief
 by one point
+
+#+testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
+>shot sheaf
+You look around for papers, but there are no more.
 
 >wrought reef
 by one point

@@ -1553,7 +1553,9 @@ The Meek Mooter and Snide Sneak understand you wish to call someone new. They de
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 @hom
+#testcase-homonym-reject-table-of-verb-checks-vh-sheik-shooter-rule-sheik-sheikh
 #testcase-homonym-reject-table-of-verb-checks-sheik-sheikh
+#testcase-homonym-detail-vh-sheik-shooter-rule-default
 >sheik shooter
 A different foreign word. We don't want to shoot anyone in particular.
 \\
@@ -3160,6 +3162,38 @@ by one point
 \\
 >undo
 
+@mis
+#testcase-mistakes-table-of-oecc-guesses-bowed-byes-buys
+>bowed buys
+No need for bowing here.
+\\
+>bowed byes
+No need for bowing here.
+\\
+#testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd hies
+How isn't quite the question to ask.
+\\
+#+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd his
+How isn't quite the question to ask.
+\\
+#testcase-mistakes-table-of-oecc-guesses-powed-pies
+>powed pies
+No pie ambushes anyone, for better or worse.
+\\
+#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+>proud prize
+Well, that's what you get if you figure what to do here.
+\\
+#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+>proud pries
+Well, that's what you get if you figure what to do here.
+\\
+#testcase-mistakes-table-of-oecc-guesses-thoud-thys
+>thoud thys
+Old English might confuse the crowd but won't really make a lasting impression.
+
 >wowed whys
 by one point
 
@@ -3196,6 +3230,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >t crowd
 Casual chat won't work. You need to be more forceful.
 
+@mis
+#+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
+>howd his
+How wasn't quite the question to ask.
+
 >loud lies
 by one point
 
@@ -3212,6 +3251,11 @@ No need to re-try.
 #testcase-check-vc-loud-lies-rule-if-sco-loud-lies-is-true
 >loud lies
 You already declaimed the loud lies.
+
+@mis
+#+testcase-mistakes-table-of-oecc-guesses-thoud-thys
+>thoud thys
+Old English might have confused the crowd but won't really make a lasting impression.
 
 >s
 
@@ -3672,7 +3716,9 @@ Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tu
 You hear an old echo and think "Hold, heck, oh." But no gold gecko scrambles out, for better or worse.
 
 @hom
+#testcase-homonym-reject-table-of-verb-checks-vh-salad-sent-cent-rule-sent-cent
 #testcase-homonym-reject-table-of-verb-checks-sent-cent
+#testcase-homonym-detail-vh-salad-sent-cent-rule-default
 >salad sent
 No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
 \\
@@ -4162,6 +4208,23 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 >undo
 
+@mis
+#testcase-mistakes-table-of-fought-fief-guesses-grot-grief
+>grot grief
+You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!
+\\
+#testcase-mistakes-table-of-fought-fief-guesses-lot-leaf
+>lot leaf
+You observe the fauna and flora, specifically not looking for any leaves to burn.
+\\
+#testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
+>shot sheaf
+You look around for papers, but maybe you aren't looking for the right ones.
+\\
+#testcase-mistakes-table-of-fought-fief-guesses-tot-teef
+>tot teef
+You look for something to give the Tooth Fairy. Nothing.
+
 >bought beef
 by one point
 
@@ -4220,6 +4283,11 @@ You can make a WROUGHT REEF now you've bluffed your way through the fief.
 #+testcase-values-from-number-of-thought-thief-fought-fief-is-5659
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
+
+@mis
+#+testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
+>shot sheaf
+You look around for papers, but there are no more.
 
 >wrought reef
 by one point

@@ -595,6 +595,8 @@ book Thought Thief Fought Fief
 
 Thought Thief Fought Fief is a room in Lying Leas. printed name is "[if sco-wrought-reef is false]Thought-Thief-Fought Fief[else]Wrought Reef[end if]". "[if sco-done-dish is true]The one-wish fun fish has left. It's idyllic here. So idyllic, there's nothing to do[else if sco-wrought-reef is true]The old evil village is gone, and a more idyllic reef remains[else if thief-score < 2]Here is a dark village, full of suspicion and double-talk. Perhaps being less than honest is a survival strategy here[else]You are alone here, in a dark village, but you sense it could become much more in tune with nature[end if]. The only way back is north."
 
+guess-table of fought fief is the table of fought fief guesses.
+
 from-number of thought thief fought fief is 5659. to-number of thought thief fought fief is 5659.
 
 chapter one wish fun fish
