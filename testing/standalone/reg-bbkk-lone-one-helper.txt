@@ -1,0 +1,206 @@
+## reg-bbkk-lone-one-helper.txt
+
+## this goes through odd hinting test cases
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main
+
+>{_basic}
+
+>fried freak
+>s
+>e
+>e
+
+>yall yank
+!by one point
+WRONG
+
+>gonear passed port
+>slosh slick
+!by one point
+WRONG
+>quash quick
+!by one point
+WRONG
+
+>gonear black blight
+>hack height
+>flak flight
+>quack quite
+WRONG
+>undo
+>undo
+>undo
+>undo
+
+>gonear recruiter
+>bye
+>chic shooter
+>s
+>e
+>e
+
+>yall yank
+!by one point
+WRONG
+
+>gonear passed port
+>slosh slick
+!by one point
+WRONG
+>quash quick
+!by one point
+WRONG
+
+>gonear black blight
+>hack height
+>flak flight
+>quack quite
+WRONG
+>undo
+>undo
+>undo
+>undo
+
+>gonear recruiter
+>bye
+>weak wooter
+>s
+>e
+>n
+>posh planks
+by one point
+>plucky plot
+!by one point
+WRONG
+>gonear lane lax
+>train tracks
+>main max
+>trod trash
+!by one point
+WRONG
+>gonear blue bluff
+>grew gruff
+!by one point
+WRONG
+
+>gonear creek
+>bye
+>guide geek
+>s
+>e
+>n
+>plucky plot
+!by one point
+WRONG
+>gonear lane lax
+>trod trash
+!by one point
+WRONG
+>gonear blue bluff
+>grew gruff
+!by one point
+WRONG
+
+>gonear recruiter
+>bye
+>meek mooter
+>s
+>e
+>s
+>need knack
+!by one point
+WRONG
+>gonear passed port
+>salad scent
+!by one point
+WRONG
+>gonear crowd cries
+>wowed whys
+>loud lies
+!by one point
+WRONG
+
+>gonear creek
+>bye
+>snide sneak
+>s
+>e
+>s
+>need knack
+!by one point
+WRONG
+>gonear passed port
+>salad scent
+!by one point
+WRONG
+>gonear crowd cries
+>loud lies
+!by one point
+WRONG
+
+* walk-rack-right
+
+>{_basic}
+>snide sneak
+>e
+>mooter meek
+>s
+>e
+>s
+>need knack
+>heed hack
+>u
+>flak flight
+>quack quite
+>slack slight
+>bye
+>d
+>n
+>w
+>n
+>chic shooter
+>s
+>e
+>s
+>u
+WRONG
+>bye
+>d
+>n
+>w
+>n
+>w
+>fried freak
+>e
+>s
+>e
+>s
+>u
+WRONG
+
+* _basic
+
+>kite cave
+
+>x list
+>x hole
+
+>d
+>w
+>what whoah
+>w
+>hid hum
+>kid come
+>rid rum
+>in
+>mood mapper
+>out
+>n
+>e
+>n
+>w
+>stride streak

@@ -1,0 +1,149 @@
+## reg-bbkk-lone-no-helpers.txt
+
+## this makes sure rejections are sensible if you bring no helpers to a puzzle
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main
+
+>kite cave
+
+>x list
+>x hole
+
+>d
+>pass path
+>mass math
+>w
+>what whoah
+>w
+>hid hum
+>kid come
+>rid rum
+>in
+>mood mapper
+>out
+>e
+>e
+
+>e
+>yall yank
+!by one point
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+
+>w
+>n
+>posh planks
+by one point
+>plucky plot
+!by one point
+You need a couple assistants to hatch a plot.
+
+>s
+>s
+>need knack
+!by one point
+To get the knack for not getting lost, you may need help from more than one friend.
+
+>gonear passed port
+>slosh slick
+!by one point
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
+>quash quick
+!by one point
+This is a job for you and two friends.
+
+>bye
+>gonear recruiter
+>chic shooter
+>s
+>e
+>e
+
+>gonear passed port
+>slosh slick
+!by one point
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
+>quash quick
+!by one point
+This is a job for you and two friends.
+
+>bye
+>gonear recruiter
+>weak wooter
+>s
+>e
+>n
+>gonear lane lax
+>train tracks
+>main max
+>trod trash
+!by one point
+There's a lot of trash to get people to trod! You'll need friends to help.
+>gonear blue bluff
+>grew gruff
+!by one point
+You don't have the support of the right friends to grow gruff constructively.
+
+>bye
+>gonear creek
+>stride streak
+>guide geek
+>e
+>s
+>e
+>n
+>plucky plot
+!by one point
+You need a couple assistants to hatch a plot.
+>gonear lane lax
+>trod trash
+!by one point
+There's a lot of trash to get people to trod! You'll need friends to help.
+>gonear blue bluff
+>grew gruff
+!by one point
+You don't have the support of the right friends to grow gruff constructively.
+
+>bye
+>gonear recruiter
+>meek mooter
+>s
+>e
+>s
+>gonear passed port
+>salad scent
+!by one point
+You will need a couple friends to make a human ladder to get to the vent.
+>gonear crowd cries
+>wowed whys
+>loud lies
+!by one point
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+
+>bye
+>gonear creek
+>snide sneak
+>e
+>s
+>e
+>s
+>need knack
+!by one point
+The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!
+>gonear passed port
+>salad scent
+!by one point
+You will need a couple friends to make a human ladder to get to the vent.
+>gonear crowd cries
+>loud lies
+!by one point
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
+
+>gonear black blight
+>quack quite
+>slack slight
+>hack height
+!Rack
+by one point
