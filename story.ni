@@ -206,7 +206,7 @@ from-number of rut row is 2653. to-number of rut row is 2705.
 
 to say rut-2:
 	if sco-what-whoah is true:
-		say ", and [if recruiter is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And";
+		say ", and [if recroom is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And";
 	 else:
 		say "Well,";
 	say " there's always back east to Pass Path"
@@ -216,7 +216,7 @@ check going west in Rut Row:
 
 check going north in Rut Row:
 	if sco-mood-mapper is false, say "You make your way north, but you are shooed by a loud voice saying 'Really! We can do better than your kind, here.' You have a feeling it's just trying to act snooty and hifalutin, but you have no proof, so you trudge back south.[paragraph break]If only you had a gauge for this sort of thing!" instead;
-	if recruiter is unvisited:
+	if recroom is unvisited:
 		say "A voice proclaims you as perhaps not classy enough, but you're not fooled. The mood mapper helps you detect what, on reflection, is pretty lame hubris. You could've seen it easy back when you had more confidence. But you see it more fully, being more worldly-wise.";
 
 book Slum Slid
@@ -294,7 +294,8 @@ check going east in Cried Creek:
 
 after printing the locale description when number of leftbehind eekers > 0:
 	if took-yacht is true or mrlp is Shying Sheez, continue the action;
-	say "The [list of leftbehind eekers] follow[if number of leftbehind eekers is 1]s[end if] you to [location of player].";
+	let lbe be number of leftbehind eekers;
+	say "The [list of leftbehind eekers] follow[if lbe is 1]s[end if] you to [location of player][if player is in rut row and player was in recroom and lbe is 1] but looks backward longingly[end if].";
 	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
 		let rle be random leftbehind eeker;
 		follow the eeker matchups rule for rle;

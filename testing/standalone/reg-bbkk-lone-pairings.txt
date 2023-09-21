@@ -1,9 +1,15 @@
 ## reg-bbjj-lone-pairings.txt
 
 ## checking all bad pairings for creek and recruiter
+# change <_to and <_cheat or back to speed up/test fully
+# space-underscore-main and space-main toggling makes sections (un)testable if we want to focus or do a general sweep
 
 ** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* _cheat-recruit
+
+> gonear recruiter
 
 * _to-recruit
 
@@ -48,7 +54,7 @@ by one point
 
 >n
 
-* right-1-to-1
+* main-right-1-to-1
 
 >{include} _to-recruit
 
@@ -111,7 +117,7 @@ The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide
 >undo
 >undo
 
-* wrong-1-to-1
+* main-wrong-1-to-1
 
 >{include} _to-recruit
 
@@ -302,7 +308,7 @@ The Meek Mooter and Fried Freak sit around, exhausted, with nothing to say to ea
 !by one point
 The Guide Geek tries to explain something to the Meek Mooter, who actually keeps finding decent counterpoints. "Be that way, then," says the Guide Geek.
 
-* wrong-1-to-2
+* main-wrong-1-to-2
 
 >{include} _to-recruit
 
@@ -391,7 +397,7 @@ The Snide Sneak and Meek Mooter understand you wish to call someone new. They de
 >undo
 >undo
 
-* replace-2-with-2
+* main-replace-2-with-2
 
 >{include} _to-recruit
 
@@ -557,3 +563,93 @@ You call the Snide Sneak, who appears with their friend, the Meek Mooter.
 You call the Guide Geek, who appears with their friend, the Weak Wooter.
 >undo
 
+* no-sneaking
+
+>{include} _to-recruit
+
+>chic shooter
+>w
+The Chic Shooter seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!Chic Shooter
+
+>fried freak
+>e
+The Fried Freak seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!fried freak
+
+>meek mooter
+>w
+The Meek Mooter seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!Meek Mooter
+
+>guide geek
+>e
+The Guide Geek seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!Guide Geek
+
+>weak wooter
+>w
+The Weak Wooter seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!Weak Wooter
+
+>snide sneak
+>e
+The Snide Sneak seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?
+>l
+!Snide Sneak
+
+>bye
+>w
+>stride streak
+>e
+>bye
+>w
+
+>snide sneak
+>e
+>s
+The Snide Sneak follows you to Rut Row but looks backward longingly.
+>undo
+>undo
+>undo
+
+>guide geek
+>e
+>s
+The Guide Geek follows you to Rut Row but looks backward longingly.
+>undo
+>undo
+>undo
+
+>fried freak
+>e
+>s
+The Fried Freak follows you to Rut Row but looks backward longingly.
+>undo
+>undo
+>undo
+
+>e
+
+>meek mooter
+>s
+The Meek Mooter follows you to Rut Row but looks backward longingly.
+>undo
+>undo
+
+>weak wooter
+>s
+The Weak Wooter follows you to Rut Row but looks backward longingly.
+>undo
+>undo
+
+>chic shooter
+>s
+The Chic Shooter follows you to Rut Row but looks backward longingly.
+>undo
+>undo

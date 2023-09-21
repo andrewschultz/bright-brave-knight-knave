@@ -55,7 +55,7 @@ this is the eeker-start-follow rule:
 	if sco-stride-streak is true:
 		now onlyeek is followish;
 	else:
-		say "The [onlyeek] seems apathetic, as if they'd like to follow you but can't. How can you grease the skids?";
+		say "The [onlyeek] seems apathetic, as if they'd like to follow you but can't. They stay behind. How can you grease the skids?";
 
 to decide whether either-here of (ee - an eeker):
 	if opt-sweet-swap is true, yes;
