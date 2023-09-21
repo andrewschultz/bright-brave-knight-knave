@@ -1575,16 +1575,18 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
 	abide by the eeker matchups rule for ee;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker postcheck rule):
+	let eo be other-guy of ee;
 	if nelp is 2:
-		say "The [list of fungible eekers] understand you wish to call someone new. They depart to make way for [the ee].";
+		say "The [list of fungible eekers] understand you wish to call someone new. They depart to make way for [the ee][if ee is pairedyet] and [the eo][end if].";
 		sideline-eekers;
 		bring-over ee;
+		if ee is pairedyet, bring-over eo;
 		the rule succeeds;
 	if nelp is 0:
 		if ee is pairedyet:
-			say "You figure [the ee] and [the other-guy of ee] would be good to call together.";
+			say "You call [the ee], who appears with their friend, [the eo]."; [vcok]
 			bring-over ee;
-			bring-over other-guy of ee;
+			bring-over eo;
 			the rule succeeds;
 		say "The [ee] comes into view [if ee is postponed]again [end if]and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod [if ee is postponed]in recognition[else]to show they can trust you[end if].";
 		move ee to location of player;
@@ -1617,7 +1619,8 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups 
 	if ee is pairedyet:
 		say "The [ee] and [rfe] seem pleased to be reunited, and they're ready to go!";
 	else:
-		say "What do you know? The [ee] and [rfe] seem to be opposites, yet they fill in each other's holes, personality-wise.";
+		repeat through table of greetings:
+			if ee is e1 entry or rfe is e1 entry, say "[joins entry][line break]";
 		now ee is pairedyet;
 		now rfe is pairedyet;
 		let newmatch be (number of pairedyet eekers) / 2;
@@ -1634,6 +1637,12 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker matchups 
 	if know-sweet-swap is false:
 		say "[line break][i][bracket][b]NOTE:[r][i] if you wish to make shortcuts, you can use the command [b]SWEET SWAP[r][i], which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.[close bracket][r][line break]";
 		now know-sweet-swap is true;
+
+table of greetings
+e1	joins
+fried freak	"The Chic Shooter and Fried Freak seem like opposites, but they start chatting and realize they fill in holes in each other's personality. Each has done and seen a lot of things the other wanted to. Perhaps with you, they could do more!"
+snide sneak	"The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide Sneak tries to show who's boss, but the Meek Mooter deflects surprisingly effectively. The Snide Sneak laughs. They shake hands. They'll be sticking together."
+guide geek	"The Guide Geek starts yacking away, and somehow, the Weak Wooter's encouragement helps the Guide Geek ... well, not gain humility, and they don't need confidence, but ... stay focused. You're even learning something, yourself. You've managed to pair two friends together!"
 
 table of mismatched eekers
 e1	e2	splits
@@ -1705,7 +1714,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker bypass ru
 		not-yet;
 	if vc-dont-print is false:
 		if number of eekers in location of player is 0:
-			say "You figure [the ee] and [the eo] would work well together here."; [vcok]
+			say "You call [the ee], who appears with their friend, [the eo]."; [vcok]
 		else if ee is in location of player:
 			say "You wonder if you need to do a sweet swap. No! Your current companions look up to the task!"; [vcok]
 		else:
