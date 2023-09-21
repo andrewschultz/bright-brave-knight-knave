@@ -1,0 +1,560 @@
+## reg-bbkk-thru-guide-gong.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing guide gong
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+>kite cave
+by one point
+
+>x hold hole
+
+>x list
+
+>jack gist
+Your score and bonus points just went up by one point.
+
+>bold bowl
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+!by one point
+
+>cold coal
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
+
+>sold soul
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
+
+>d
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>write rave
+by two points
+
+>what whoah
+by one point
+
+>w
+
+>hid hum
+by one point
+
+>kid come
+by one point
+
+>rid rum
+by one point
+
+>in
+
+>mood mapper
+by one point
+
+>nude napper
+by one point
+
+>out
+
+# don't undo this, because we want to use the default message after. There should really not be a regression here.
+#testcase-gong-checks-crude-crapper
+>in
+A guide gong rings to notify you that you don't need to go back through Crude Crapper.
+
+>e
+
+#testcase-gong-checks-slum-slid
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Slid Slum.
+
+>undo
+
+>n
+
+>w
+
+>stride streak
+by one point
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+
+>e
+>bye
+
+>r 3
+by one point
+
+>s
+>e
+
+>n
+
+>posh planks
+by one point
+
+>plucky plot
+by one point
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>wowed whys
+by one point
+
+>loud lies
+by one point
+
+>s
+
+#testcase-gong-checks-oecc
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Ow'ed Eyes, Crowd Cries.
+
+>undo
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+#testcase-gong-checks-fast-fort
+>fast fort
+No. On second thought, you feel like you've done all you needed in Fast Fort, and you wouldn't want to expose the Sassed Sort to the Guide Gong.
+
+>undo
+
+#testcase-gong-checks-cast-court
+>cast court
+No. On second thought, you feel like you've done all you needed in Cast Court, and you wouldn't want to expose the Sassed Sort to the Guide Gong.
+
+>undo
+
+>slashing sword
+by one point
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+>new nuff
+by one point
+
+>e
+
+#testcase-gong-checks-too-tough-blue-bluff
+>w
+That guide gong, again, rings to notify you that you don't need to go back through
+
+>undo
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+#testcase-gong-checks-thought-thief-fought-fief
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Wrought Reef.
+
+>undo
+
+>w
+
+#testcase-gong-checks-lane-lax
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Main Max Train Tracks.
+
+>undo
+
+>w
+
+#testcase-gong-checks-tall-tanks
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Tall Tank(s).
+
+>undo
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+>power plate
+by one point
+
+>flak flight
+by one point
+
+>d
+
+#testcase-gong-checks-lack-light-black-blight
+>u
+That guide gong, again, rings to notify you that you don't need to go back through Sack Site.
+
+>undo
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+>time toad
+by one point
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>grander grove
+by one point
+
+>n
+
+>in
+
+#testcase-gong-checks-passed-port
+>passed port
+No. On second thought, you feel like you've done all you needed in Passed Port, and you wouldn't want to expose the Sassed Sort to the Guide Gong.
+
+>undo
+
+>s
+
+#testcase-gong-checks-bosh-blanks
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Posh Planks.
+
+>undo
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>flout fluff
+by one point
+
+>n
+
+>w
+
+#testcase-gong-checks-knell-nook
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Knell Nook.
+
+>undo
+
+>n
+
+#testcase-gong-checks-treed-track
+>s
+That guide gong, again, rings to notify you that you don't need to go back through Treed Track.
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+#testcase-gong-checks-spied-speak-cried-creek
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Spied-Speak-Cried Creek.
+
+>undo
+
+>s
+
+#testcase-gong-checks-recruiter
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Recruiter.
+
+>undo
+
+>e
+
+#testcase-gong-checks-rut-row
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Rut Row.
+
+>undo
+
+>eyeing ease
+score and bonus
+by one point
+
+>in
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+>fusing phew
+by one point
+
+>spurning spew
+by one point
+
+>out
+
+#testcase-gong-checks-bruising-brew
+>in
+That guide gong, again, rings to notify you that you don't need to go back through Bruising Brew.
+
+>undo
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+#testcase-gong-checks-hailing-hill
+>u
+That guide gong, again, rings to notify you that you don't need to go back through Hailing Hill.
+
+>undo
+
+>d
+
+#testcase-gong-checks-bass-bath
+>d
+That guide gong, again, rings to notify you that you don't need to go back through Pass Path.
+
+>undo
+
+>fight fave
+by one point
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+
+>bam bye
+by one point
+

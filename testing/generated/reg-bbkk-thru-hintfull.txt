@@ -1,0 +1,892 @@
+## reg-bbkk-thru-hintfull.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing HINTS full
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+#testcase-values-from-number-of-white-wave-is-2754
+>ll
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+#testcase-values-from-number-of-player-is--5610
+>ll me
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>kite cave
+by one point
+
+>x hold hole
+
+>x list
+
+>jack gist
+Your score and bonus points just went up by one point.
+
+>bold bowl
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+!by one point
+
+>cold coal
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
+
+>sold soul
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
+
+>d
+
+#testcase-values-from-number-of-bass-bath-is-2704
+>ll
+You scan the area.
+!most of the time
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>write rave
+by two points
+
+#testcase-values-from-number-of-rut-row-is-2653
+>ll
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
+
+>what whoah
+by one point
+
+>w
+
+#testcase-values-from-number-of-slid-slum-is-2704
+>ll
+You scan the area.
+You notice one dot in the corner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>hid hum
+by one point
+
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+>ll kid
+Nothing. It looks like the area around that's influencing him is what you need to deal with. Which is a relief, it having fewer letters and all.
+
+>kid come
+by one point
+
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>rid rum
+by one point
+
+#+testcase-values-from-number-of-slid-slum-is-2704
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>in
+
+#testcase-values-from-number-of-crude-crapper-is-2757
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>mood mapper
+by one point
+
+#+testcase-values-from-number-of-crude-crapper-is-2757
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>nude napper
+by one point
+
+>out
+
+>e
+
+>n
+
+#testcase-values-from-number-of-recruiter-is-2656
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.33.)
+
+>w
+
+#testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, 0.00.)
+
+>stride streak
+by one point
+
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.33.)
+
+>guide geek
+by one point
+
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>fried freak
+by one point
+
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>snide sneak
+by one point
+
+#+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
+>ll
+Nothing comes up. The general area here has been changed enough.
+!LCD
+
+>e
+
+>meek mooter
+by one point
+
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+>weak wooter
+by one point
+
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>chic shooter
+by one point
+
+#+testcase-values-from-number-of-recruiter-is-2656
+>ll
+Nothing comes up. You've changed the Recruiter as much as you needed to.
+!LCD
+
+>w
+>fried freak
+
+>e
+>bye
+
+>r 3
+by one point
+
+>s
+>e
+
+>n
+
+#testcase-values-from-number-of-bosh-blanks-is-2706
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>posh planks
+by one point
+
+#testcase-values-from-number-of-yucky-yacht-is-2755
+>ll yucky yacht
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -1.00.)
+
+#+testcase-values-from-number-of-bosh-blanks-is-2706
+>ll
+Nothing comes up.
+!LCD
+
+>plucky plot
+by one point
+
+#+testcase-values-from-number-of-yucky-yacht-is-2755
+>ll yucky yacht
+Nothing comes up.
+!LCD
+
+#testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.33, 0.33.)
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+#testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>ll tanks
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>ll tank
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>yall yank
+by one point
+
+#+testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>ll tanks
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>paul panks
+by one point
+
+#+testcase-values-from-number-of-tall-tanks-is-2704
+>ll
+Nothing comes up. You've changed the tall tanks as much as you needed to.
+
+>ll tanks
+Nothing comes up. You've changed the tall tanks as much as you needed to.
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+>plead plaque
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+#testcase-values-from-number-of-lane-lax-is-2703
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 2.50.)
+
+>train tracks
+by one point
+
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
+>main max
+by one point
+
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
+
+>pain packs
+by one point
+
+#+testcase-values-from-number-of-lane-lax-is-2703
+>ll
+Nothing
+!LCD
+
+>n
+
+#testcase-values-from-number-of-crowd-cries-is-5459
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
+
+>wowed whys
+by one point
+
+#+testcase-values-from-number-of-crowd-cries-is-5459
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+#testcase-values-from-number-of-crude-crass-lewd-lass-is-5459
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+#+testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.50.)
+
+#testcase-values-from-number-of-fast-fort-is-2704
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.50.)
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+#testcase-values-from-number-of-perky-pap-is-2753
+>ll perky pap
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#+testcase-values-from-number-of-sassed-sort-is-2804
+>ll sassed sort
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#testcase-values-from-number-of-cast-court-is-2705
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, -1.00.)
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+#testcase-values-from-number-of-clashing-cord-is-2904
+>ll clashing cord
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-passed-port-is-2804
+>ll
+Nothing. You've found everywhere the Sassed Sort can go.
+
+>slashing sword
+by one point
+
+#testcase-values-from-number-of-pallid-pent-valid-vent-is-5558
+>ll
+Nothing. You've found everywhere the Sassed Sort can go.
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+#testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
+
+>grew gruff
+by one point
+
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.00.)
+
+>stew stuff
+by one point
+
+#testcase-values-from-number-of-stew-stuff-is-2705
+>ll stew
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+
+>new nuff
+by one point
+
+#+testcase-values-from-number-of-stew-stuff-is-2705
+>ll stew
+Nothing comes up. You've changed the stew stuff as much as you needed to.
+!LCD
+
+#+testcase-values-from-number-of-too-tough-blue-bluff-is-5360
+>ll
+You scan the area.
+Nothing comes up. The general area here has been changed enough.
+!LCD
+
+>e
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>brought brief
+by one point
+
+#testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
+
+>undo
+>undo
+
+>bought beef
+by one point
+
+#+testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+>brought brief
+by one point
+
+#+testcase-values-from-number-of-thought-thief-fought-fief-is-5659
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -0.50.)
+
+>wrought reef
+by one point
+
+#testcase-values-from-number-of-wish-fun-fish-is-5308
+>ll fish
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>ll
+Nothing comes up.
+!LCD
+
+>done dish
+by one point
+
+>fill fun
+by one point
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+#testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.25.)
+
+>hack height
+by one point
+
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.17, 0.17.)
+
+>slack slight
+by one point
+
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>quack quite
+by one point
+
+#testcase-values-from-number-of-sour-slate-is-2705
+>ll sour slate
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>power plate
+by one point
+
+#+testcase-values-from-number-of-lack-light-black-blight-is-5461
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>flak flight
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+#testcase-values-from-number-of-posh-pick-is-2704
+>ll posh pick
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>quash quick
+by one point
+
+#+testcase-values-from-number-of-posh-pick-is-2704
+>ll posh pick
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>slosh slick
+by one point
+
+#+testcase-values-from-number-of-posh-pick-is-2704
+>ll posh pick
+Nothing comes up. You've changed the posh pick as much as you needed to.
+
+#testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll rime road
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+
+>time toad
+by one point
+
+#testcase-values-from-number-of-dander-dove-is-2804
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.67, 0.67.)
+
+>stander stove
+by one point
+
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+>candor cove
+by one point
+
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>grander grove
+by one point
+
+#+testcase-values-from-number-of-dander-dove-is-2804
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+>n
+
+#+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll rime road
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
+it's really dim
+
+>mime mode
+by one point
+
+#+testcase-values-from-number-of-slime-slowed-rime-road-is-5460
+>ll rime road
+Nothing
+!LCD
+
+>in
+
+>s
+
+>s
+
+>e
+
+#testcase-values-from-number-of-knell-nook-is-2754
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+>bell book
+by one point
+
+#testcase-values-from-number-of-hovering-handle-is-2906
+>ll handle
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#+testcase-values-from-number-of-knell-nook-is-2754
+>ll
+Nothing
+!LCD
+
+>covering candle
+by one point
+
+#testcase-values-from-number-of-route-rough-is-2755
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.67, -0.67.)
+
+>nowt nuff
+by one point
+
+#+testcase-values-from-number-of-route-rough-is-2755
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -0.50.)
+
+>stout stuff
+by one point
+
+#+testcase-values-from-number-of-route-rough-is-2755
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+>flout fluff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+#testcase-values-from-number-of-ardor-elm-is-2753
+>ll elm
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>harder helm
+by one point
+
+#+testcase-values-from-number-of-ardor-elm-is-2753
+>ll
+Nothing
+!LCD
+
+>e
+
+>s
+
+>e
+
+>eyeing ease
+score and bonus
+by one point
+
+>in
+
+#testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -1.00.)
+
+#testcase-values-from-number-of-losing-lou-is-2803
+>ll lou
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>boozing boo
+by one point
+
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -1.00.)
+
+>undo
+>undo
+
+>using you
+by one point
+
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>boozing boo
+by one point
+
+#+testcase-values-from-number-of-bruising-brew-is-2904
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, 0.00.)
+
+#+testcase-values-from-number-of-losing-lou-is-2803
+>ll lou
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+>fusing phew
+by one point
+
+#testcase-values-from-number-of-turning-to-learning-lou-is-5755
+>ll lou
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
+
+>ll
+Nothing
+!LCD
+
+>spurning spew
+by one point
+
+>out
+
+>u
+
+#testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.00.)
+
+>ailing ill
+by one point
+
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+>undo
+>undo
+
+>scaling skill
+by one point
+
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>ailing ill
+by one point
+
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>mailing mill
+by one point
+
+#testcase-values-from-number-of-mailing-mill-is-2854
+>ll mill
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#+testcase-values-from-number-of-hailing-hill-is-2854
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+#testcase-values-from-number-of-trite-tully-is-2755
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>bright bully
+by one point
+
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>undo
+>undo
+
+>frightfully
+by one point
+
+#+testcase-values-from-number-of-trite-tully-is-2755
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>bright bully
+by one point
+
+#+testcase-values-from-number-of-trite-tully-is-2755
+>ll sham
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>ll tully
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+>bam bye
+by one point
+

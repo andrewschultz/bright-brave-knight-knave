@@ -1,0 +1,1053 @@
+## reg-bbkk-thru-mistakes.txt
+## GENERATOR FILE: rbr-bbkk-thru.txt
+
+## walkthrough testing all mistakes
+
+** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>take learner
+Taken.
+
+>au 2
+
+>kite cave
+by one point
+
+>x hold hole
+
+>x list
+
+>jack gist
+Your score and bonus points just went up by one point.
+
+#testcase-mistakes-table-of-hold-hole-guesses-gold-goal
+>gold goal
+"Sacrilege!" a voice booms. "YOU HAVE DESERTED YOUR TRUE NATURE!"
+Po', Pal! Mo' Mal!
+
+>undo
+
+#testcase-mistakes-table-of-hold-hole-guesses-scold-skoal
+>scold skoal
+You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright.
+!LCD
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+
+#testcase-mistakes-table-of-hold-hole-guesses-told-toll
+>told toll
+You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-fold-foal
+>fold foal
+The hold hole does not seek animal sacrifice, and neither should you.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-mold-mole
+>mold mole
+The hold hole does not seek animal sacrifice, and neither should you.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled pole
+That's a bit too repetitive, but the general idea feels right.
+!LCD
+
+#+testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled poll
+That's a bit too repetitive, but the general idea feels right.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-rolled-role-roll
+>rolled roll
+That's a bit too repetitive, but the general idea feels right.
+!LCD
+
+>rolled role
+That's a bit too repetitive, but the general idea feels right.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-trolled-troll
+>trolled troll
+That's a bit too repetitive, but the general idea feels right.
+
+>bold bowl
+Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+[NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
+!by one point
+!LCD
+
+>cold coal
+Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+!NOTE
+!by one point
+!LCD
+
+>sold soul
+Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You feel slightly energized now that you know what your (w)hole quest is.
+score and bonus points just went up by one point.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-bold-bowl
+>bold bowl
+But you have already divined a need for the bold bowl.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-cold-coal
+>cold coal
+But you have already divined a need for the cold coal.
+!LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-sold-soul
+>sold soul
+But you have already divined a need for the sold soul.
+!LCD
+
+#+testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
+>polled pole
+That's a bit too repetitive, and there's nothing more to figure out, anyway.
+!LCD
+
+>d
+
+#testcase-mistakes-table-of-bass-bath-guesses-has-hath
+>has hath
+You conjugate old English verbs, in case this may be important in the future. It isn't right now.
+
+#testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
+>lace lath
+You need no washing machine, especially not early in the game before you worked up a sweat. You also wonder if you are pronouncing things right.
+
+#+testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
+>lass lath
+`You need no washing machine, especially not early in the game before you worked up a sweat.
+
+#testcase-mistakes-table-of-bass-bath-guesses-place-plath
+>place plath
+You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, The Bell Jar. You also wonder if you are pronouncing things right.
+
+#testcase-mistakes-table-of-bass-bath-guesses-race-wrath
+>race wrath
+You get as mad as you can, as fast as you can. You also wonder if you are pronouncing things right.
+
+#testcase-mistakes-table-of-general-good-guesses-shite-shave
+>shite shave
+This isn't the time or place to kvetch about personal grooming.
+
+#testcase-mistakes-table-of-general-good-guesses-slight-slave
+>slight slave
+You grumble about how you are a slight slave to your quest. It's therapeutic.
+
+>pass path
+
+>mass math
+by one point
+
+>w
+
+>write rave
+by two points
+
+>what whoah
+by one point
+
+>w
+
+#testcase-mistakes-table-of-slid-slum-guesses-chid-chum
+>chid chum
+You have no friend to chide.
+
+#testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+You don't want to reflect on the past.
+
+#testcase-mistakes-table-of-slid-slum-guesses-mid-mum
+>mid mum
+You don't need parental support or quiet.
+
+#testcase-mistakes-table-of-slid-slum-guesses-skid-scum
+>skid scum
+No. A good Bright Brave Knight Knave don't look down on people like that.
+
+>hid hum
+by one point
+
+#+testcase-mistakes-table-of-slid-slum-guesses-chid-chum
+>chid chum
+Forgiveness is more the thing here.
+
+#+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+A Bright Brave Knight Knave doesn't put people through the ringer for past mistakes.
+
+>kid come
+by one point
+
+#testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-offin-oi
+>offin oi
+That is not the life the coughin' coy boffin boy deserves, and it's not the end he deserves, either.
+
+#testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-soften-soy
+>soften soy
+Perhaps the coughin' coy boffin boy will be able to get the education for such a bioengineering job, if you turn things around.
+
+>rid rum
+by one point
+
+#+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
+>did dumb
+You don't want to reflect on the past.
+
+>in
+
+>mood mapper
+by one point
+
+#testcase-mistakes-table-of-crude-crapper-guesses-booed-bapper
+>booed bapper
+That'd make a decent final boss, but the main one is elsewhere.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-clued-clapper
+>clued clapper
+You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a Bright Brave Knight Knave.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-cooed-capper
+>cooed capper
+You don't need someone busting caps here and now, regardless of how pleasant their voice is.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-food-fapper
+>food fapper
+I don't want to know what sort of Rule 34 stuff this would entail.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-lewd-lapper
+>lewd lapper
+Hey, now, not THAT crude, eh?
+
+#testcase-mistakes-table-of-crude-crapper-guesses-rude-rapper
+>rude rapper
+But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!
+
+#testcase-mistakes-table-of-crude-crapper-guesses-screwed-scrapper
+>screwed scrapper
+You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-snood-snapper
+>snood snapper
+You don't always remember what a snood is, but you're pretty sure none need to be snapped.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-strewed-strapper
+>strewed strapper
+No such contraption exists, fortunately. I think.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-sued-sapper
+>sued sapper
+That would be a villain worth fighting, but no.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-wooed-whapper
+>wooed whapper
+You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty.
+
+#testcase-mistakes-table-of-crude-crapper-guesses-youd-yap-er
+>youd yap er
+You feel as though you want to say something about the state of these environs, but what good would it do?
+
+>nude napper
+by one point
+
+>out
+
+>e
+
+>n
+
+#testcase-mistakes-table-of-recroom-guesses-seek-suitor
+>seek suitor
+Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together.
+
+>w
+
+>stride streak
+by one point
+
+>guide geek
+by one point
+
+>fried freak
+by one point
+
+>snide sneak
+by one point
+
+>e
+
+>meek mooter
+by one point
+
+>weak wooter
+by one point
+
+>chic shooter
+by one point
+
+>w
+>fried freak
+
+>e
+>bye
+
+>r 3
+by one point
+
+>s
+>e
+
+>n
+
+>posh planks
+by one point
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bought
+Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+
+#+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bot
+Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-clucky-clot
+>clucky clot
+You think about people who've wasted your time with meaningless jabber.
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-ducky-dot
+>ducky dot
+You see no dot or person named Dorothea to proclaim as ducky.
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-lucky-lot
+>lucky lot
+You grumble about rich people for a bit. It doesn't hurt.
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
+>nucky knot
+You don't want to cross a mogul of a Boardwalk Empire just now.
+
+#+testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
+>nucky not
+You don't want to cross a mogul of a Boardwalk Empire just now.
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
+>sucky sot
+Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+
+#+testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
+>sucky sought
+Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-trucky-trot
+>trucky trot
+You have no need to walk through or over anyone.
+
+>plucky plot
+by one point
+
+#+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
+>bucky bought
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+>s
+>w
+>n
+>bye
+>r 2
+
+>s
+>e
+>e
+
+>yall yank
+by one point
+
+>paul panks
+by one point
+
+>w
+
+>w
+
+>n
+
+>bye
+
+>r 1
+
+>s
+
+>e
+
+>s
+
+>need knack
+by one point
+
+>plead plaque
+by one point
+
+>heed hack
+by one point
+
+>seed sack
+by one point
+
+>n
+
+>e
+
+>e
+
+>train tracks
+by one point
+
+>main max
+by one point
+
+>pain packs
+by one point
+
+>n
+
+>wowed whys
+by one point
+
+>loud lies
+by one point
+
+>s
+
+>w
+
+>w
+
+>n
+
+>fast fort
+by one point
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-booed-bass
+>booed bass
+You don't want to get sea bass irritable.
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
+>brewed brass
+The armor on the track tryst lack list probably needs to be stronger than brass.
+
+#+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
+>brood brass
+The armor on the track tryst lack list probably needs to be stronger than brass.
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
+>mood mass
+You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+
+#+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
+>mooed mass
+You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-poohed-pass
+>poohed pass
+You think you see an exit out, but nah, it's just get you more lost.
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-sued-sass
+>sued sass
+How very anti-freedom of speech and unlike a Bright Brave Knight Knave!
+
+#testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-tude-tass
+>tude tass
+You're already in the text adventure spirit.
+
+>glued glass
+by one point
+
+>cast court
+by one point
+
+#testcase-mistakes-table-of-perky-pap-guesses-clerky-clap
+>clerky clap
+You consider the right way to applaud bureaucracy.
+
+#testcase-mistakes-table-of-perky-pap-guesses-irky-app
+>irky app
+You download no annoying application to your phone. You don't even have a phone on you.
+
+#testcase-mistakes-table-of-perky-pap-guesses-kirky-cap
+>kirky cap
+You find no clothes that make you talk with dramatic pauses or yell KHAN.
+
+#testcase-mistakes-table-of-perky-pap-guesses-lurky-lap
+>lurky lap
+You slightly fear your junior-high gym teacher just waiting to give out punishment.
+
+#testcase-mistakes-table-of-perky-pap-guesses-turkey-tap
+>turkey tap
+Even if one appeared, you'd wonder how they'd fit through there.
+
+#testcase-mistakes-table-of-perky-pap-guesses-worky-whap
+>worky whap
+Nobody is there to kick or shove you into gear.
+
+>murky map
+by one point
+
+>passed port
+by one point
+
+#testcase-mistakes-table-of-clashing-cord-guesses-flashing-ford
+>flashing ford
+No bridge across a river, or car, or intergalactic space traveler whizzes by.
+
+>slashing sword
+by one point
+
+#testcase-mistakes-table-of-pallid-pent-valid-vent-guesses-ballad-bent
+>ballad bent
+Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tunes.
+
+>salad scent
+by one point
+
+>in
+
+>s
+
+>w
+
+>n
+
+>r 3
+
+>s
+
+>e
+
+>s
+
+>w
+
+#testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+You try to puff yourself out as more muscular than you actually are. No dice.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>chew chuff
+You make train noises, but none appears.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>choo chuff
+You make train noises, but none appears.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
+>coo cuff
+You consider lashing out for its own sake.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-do-duff
+>do duff
+No, you want to do something right.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flew fluff
+You don't have time to fly, or get sick, or other frivolities!
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flu fluff
+You don't have time to fly, or get sick, or other frivolities!
+
+#testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
+>goo guff
+You produce no sticky stuff.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>hoo huff
+Alas (or not,) there is nobody to get huffy at.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>who huff
+Alas (or not,) there is nobody to get huffy at.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
+>moo muff
+You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>poo puff
+You feel fake exhaustion for a bit.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>pooh puff
+You feel fake exhaustion for a bit.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
+>rue rough
+Bummer, you think, that things aren't given to you.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
+>skew scuff
+You shuffle your feet a bit, exaggerating what has happened and what you face.
+
+#testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slue slough
+You blink, only to find you have not wound up in a bog, which is probably for the better.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slew sluff
+You blink, only to find you have not wound up in a bog, which is probably for the better.
+
+>grew gruff
+by one point
+
+>stew stuff
+by one point
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+It's stew ingredients, not protein shake ingredients.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
+>chew chuff
+You make train noises, but none appears.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
+>coo cuff
+You consider lashing out for its own sake.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-do-duff
+>do duff
+No, you want to do something right.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
+>flew fluff
+You don't have time to fly, or get sick, or other frivolities!
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
+>goo guff
+You produce no sticky stuff.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
+>hoo huff
+Alas (or not,) there is nobody to get huffy at.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
+>moo muff
+You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
+>pooh puff
+You feel fake exhaustion for a bit.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
+>rue rough
+Bummer, you think, that things aren't given to you.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
+>skew scuff
+You shuffle your feet a bit, exaggerating what has happened and what you face.
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
+>slew sluff
+You blink, only to find you have not wound up in a bog, which is probably for the better.
+
+>new nuff
+by one point
+
+>e
+
+>n
+
+>e
+
+>e
+
+>trod trash
+by one point
+
+>s
+
+>bought beef
+by one point
+
+>brought brief
+by one point
+
+>wrought reef
+by one point
+
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-gun-gish
+>gun gish
+You get a gish gallop going, but the fish doesn't seem to understand.
+
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-none-nish
+>none nish
+The fish swims around, ignoring your temporary nihilism.
+
+#testcase-mistakes-table-of-one-wish-fun-fish-guesses-pun-pish
+>pun pish
+The fish looks blankly at you. It has no knowledge of puns.
+
+>done dish
+by one point
+
+#testcase-mistakes-table-of-nil-none-guesses-bill-bun
+>bill bun
+You can pay for food once you're here.
+
+#testcase-mistakes-table-of-nil-none-guesses-dill-done
+>dill done
+This isn't a cooking sim.
+
+#testcase-mistakes-table-of-nil-none-guesses-gill-gun
+>gill gun
+You don't need a fancy weapon.
+
+#testcase-mistakes-table-of-nil-none-guesses-hill-hun-hon
+>hill hun
+You don't need to be attacked, or take saccharine praise, from above.
+>hill hon
+You don't need to be attacked, or take saccharine praise, from above.
+
+#testcase-mistakes-table-of-nil-none-guesses-pill-pun
+>pill pun
+Drug humor won't help here.
+
+#testcase-mistakes-table-of-nil-none-guesses-shill-shun
+>shill shun
+Alas, there is nobody to reject and feel better about yourself.
+
+#testcase-mistakes-table-of-nil-none-guesses-sill-sun
+>sill sun
+No light-giving window appears.
+
+#testcase-mistakes-table-of-nil-none-guesses-spill-spun
+>spill spun
+Alas, no solution to your woes is created, nor does it tumble out.
+
+#testcase-mistakes-table-of-nil-none-guesses-still-stun
+>still stun
+You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog.
+
+#testcase-mistakes-table-of-nil-none-guesses-till-til-ton
+>till ton
+Things are weighty enough here.
+
+#+testcase-mistakes-table-of-nil-none-guesses-till-til-ton
+>til ton
+Things are weighty enough here.
+
+>fill fun
+by one point
+
+#+testcase-mistakes-table-of-nil-none-guesses-still-stun
+>still stun
+!stunned
+It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
+
+>will won
+by one point
+
+>illun
+by one point
+
+>n
+
+>n
+
+>w
+
+>w
+
+>n
+
+>r 2
+
+>s
+
+>e
+
+>s
+
+>u
+
+>hack height
+by one point
+
+>slack slight
+by one point
+
+>quack quite
+by one point
+
+#testcase-mistakes-table-of-sour-slate-guesses-hour-late
+>hour late
+You frown at the sour slate, wishing you'd seen it sooner.
+
+>power plate
+by one point
+
+#+testcase-mistakes-table-of-sour-slate-guesses-hour-late
+>hour late
+You frown at the power plate, wishing you'd seen it sooner.
+
+>flak flight
+by one point
+
+>d
+
+>n
+
+>n
+
+>passed port
+!by one point
+
+>quash quick
+by one point
+
+>slosh slick
+by one point
+
+#testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
+>chime choad
+You are all for off-color humor but it doesn't seem appropriate here.
+
+#+testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
+>chime chode
+You are all for off-color humor but it doesn't seem appropriate here.
+
+#testcase-mistakes-table-of-rime-road-guesses-crime-crowed
+>crime crowed
+You eavesdrop on no criminal confessions.
+
+#testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
+>dime dohed
+You find no money in a loaf of bread
+
+#+testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
+>dime doughed
+You find no money in a loaf of bread
+
+#testcase-mistakes-table-of-rime-road-guesses-grime-growed
+>grime growed
+Ungrammatical, and anyway, you are trying to clean things up here!
+
+#testcase-mistakes-table-of-rime-road-guesses-im-owed
+>im owed
+All this entitlement is bravebut not bright.
+
+#testcase-mistakes-table-of-rime-road-guesses-lime-load
+>lime load
+The fruit or the stone, you can't see yourself lugging it around.
+
+>time toad
+by one point
+
+#testcase-mistakes-table-of-dander-dove-guesses-strander-strove
+>strander strove
+This would seem to be despairing. You can't already admit you tried but failed.
+
+>stander stove
+by one point
+
+>candor cove
+by one point
+
+>grander grove
+by one point
+
+>n
+
+>mime mode
+by one point
+
+>in
+
+>s
+
+>s
+
+>e
+
+>bell book
+by one point
+
+>covering candle
+by one point
+
+>nowt nuff
+by one point
+
+>stout stuff
+by one point
+
+>flout fluff
+by one point
+
+>n
+
+>w
+
+>n
+
+>w
+
+>n
+
+>w
+
+>harder helm
+by one point
+
+>e
+
+>s
+
+>e
+
+>eyeing ease
+score and bonus
+by one point
+
+>in
+
+#testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+Trading alcohol for tobacco would just be a lateral move.
+
+#testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
+>rusing roo
+No sneaky kangaroo appears, which is probably for the better.
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
+>rusing rue
+No sneaky kangaroo appears, which is probably for the better.
+
+>using you
+by one point
+
+>boozing boo
+by one point
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+After helping Lou kick alcohol, you recommend that? Ouch!
+
+>fusing phew
+by one point
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
+>choosing chew
+You think what a lovely bubble gum shop this would make!
+
+#testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
+>burning boo
+No, you need something more positive.
+
+#testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
+>churning chew
+No, you need something less reflexive.
+
+>spurning spew
+by one point
+
+#+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
+>burning boo
+No, you needed something more positive.
+
+#+testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
+>churning chew
+No, you needed something less reflexive.
+
+>out
+
+>u
+
+>scaling skill
+by one point
+
+>ailing ill
+by one point
+
+>mailing mill
+by one point
+
+>failing phil
+by one point
+
+>wailing will
+by one point
+
+>bailing bill
+by one point
+
+>d
+
+>d
+
+>fight fave
+by one point
+
+>frightfully
+by one point
+
+>bright bully
+by one point
+
+#testcase-mistakes-table-of-trite-tully-guesses-damn-die
+>damn die
+Struck, Strikes? Yuck, Yikes!
+
+>undo
+
+#testcase-mistakes-table-of-trite-tully-guesses-fam-fie
+>fam fie
+Tully isn't really looking to be a close friend.
+
+#testcase-mistakes-table-of-trite-tully-guesses-ham-hi-high
+>ham hi
+Yes, Tully is overacting, but knowing this fact won't do enough.
+
+>ham high
+Yes, Tully is overacting, but knowing this fact won't do enough.
+
+#testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
+>lamb lie
+Curse-y Cad Mercy?! MAD!
+
+>undo
+
+#testcase-mistakes-table-of-trite-tully-guesses-maam-my
+>maam my
+Your appeal to female authority falls on deaf ears.
+
+#testcase-mistakes-table-of-trite-tully-guesses-spam-spy
+>spam spy
+It's no secret that Tully spams their opinions.
+
+#testcase-mistakes-table-of-trite-tully-guesses-tram-try
+>tram try
+If there were a train to catch, you could send Tully on it. Alas, no.
+
+#testcase-mistakes-table-of-trite-tully-guesses-cram-cry
+>cram cry
+Now's not the time to get too emotional.
+
+#testcase-mistakes-table-of-trite-tully-guesses-dram-dry
+>dram dry
+Now's not the time for alcohol.
+
+#testcase-mistakes-table-of-trite-tully-guesses-wham-why
+>wham why
+It's pointless to ask a troll why.
+
+>bam bye
+by one point
+
