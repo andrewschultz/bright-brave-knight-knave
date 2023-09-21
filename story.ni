@@ -273,7 +273,7 @@ check going in recroom:
 
 chapter chic shooter
 
-the Chic Shooter is a crooty eeker. description is "A bit too cool for his own good, maybe, but his coolness may keep you in good stead through certain challenges.". matchnum of Chic Shooter is -1.
+the Chic Shooter is a crooty eeker. description is "A bit too cool for their own good, maybe, but their coolness may keep you in good stead through certain challenges.". matchnum of Chic Shooter is -1.
 
 chapter meek mooter
 
@@ -615,13 +615,13 @@ from-number of bruising brew is 2904. to-number of bruising brew is 5606.
 
 chapter the two faces of Lou (not-Christie)
 
-Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? He introduces himself as Losing Lou. He seems bummed about many things[or]Losing Lou sits here, pensively--well, he thinks so, but it's a bit worse than that[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
+Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? They introduces themselves as Losing Lou and seem bummed about many things[or]Losing Lou sits here, pensively--well, hoping to look pensive, at any rate[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
 from-number of losing lou is 2803. to-number of losing lou is 5606.
 
 section learning lou
 
-Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. He is still looking for a name for his brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge he's gotten from you, even if it isn't profound. He just needs insight into his book title, now!" [more bytes saved this way]
+Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. Lou is still looking for a name for that brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge you bestowed, even if it isn't profound. Lou just needs insight into that book title, now!" [more bytes saved this way]
 
 guess-table of Learning Lou is the table of spurning spew guesses.
 

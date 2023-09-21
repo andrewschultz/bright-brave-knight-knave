@@ -445,7 +445,7 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 
 this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
-	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry as he cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
+	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
 	dismiss-geek-wooter;
 	declue yucky yacht;
@@ -1135,7 +1135,7 @@ a goodrhyme rule (this is the vc-boozing-boo rule):
 
 this is the vr-boozing-boo rule:
 	now sco-boozing-boo is true;
-	say "You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.";
+	say "You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life! What other experiences might Lou wish to explore.";
 	decrease to-number of losing lou by 2853;
 	decrease to-number of bruising brew by 2853;
 	lou-check;
@@ -1149,7 +1149,7 @@ a goodrhyme rule (this is the vc-using-you rule):
 
 this is the vr-using-you rule:
 	now sco-using-you is true;
-	say "You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.";
+	say "You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. Lou nods in appreciation. There is no need to point out when and how Lou has been wrong. That is for personal reflection.";
 	decrease to-number of losing lou by 2753;
 	decrease to-number of bruising brew by 2753;
 	lou-check;
@@ -1166,7 +1166,7 @@ a goodrhyme rule (this is the vc-fusing-phew rule):
 
 this is the vr-fusing-phew rule:
 	now sco-fusing-phew is true;
-	say "You put things together--the boozing, the using. Lou nods. He has a revelation. 'No more will I be Losing Lou. I will be Turning-to-Learning Lou!' He runs off and scribbles out some notes on various cocktail napkins. It's impressively fast, and you're entranced. There are so many napkins, they make a pretty thick book.[paragraph break]'Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?'";
+	say "You put things together--the boozing, the using. Lou nods. A revelation! 'No more will I be Losing Lou. I will be Turning-to-Learning Lou!' Lou runs off and scribbles out some notes on various cocktail napkins. It's impressively fast, and you're entranced. There are so many napkins, they make a pretty thick book.[paragraph break]'Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?'";
 	moot losing lou;
 	now learning lou is in Bruising Brew;
 	declue bruising brew;
@@ -1177,7 +1177,7 @@ a goodrhyme rule (this is the vc-spurning-spew rule):
 
 this is the vr-spurning-spew rule:
 	now sco-spurning-spew is true;
-	say "'Yes! That's it! Please accept my thanks!' Lou runs off, ostensibly to meet his agent.[paragraph break]Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.";
+	say "'Yes! That's it! Please accept my thanks!' Lou runs off, ostensibly to meet an agent.[paragraph break]Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.";
 	give-ti spurning spew;
 	moot Learning Lou;
 
