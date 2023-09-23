@@ -22,6 +22,8 @@ include Bright Brave Knight Knave Tables by Andrew Schultz.
 
 include Punctuation Stripper by Andrew Schultz.
 
+include Intro Restore Skip by Andrew Schultz.
+
 section testing - not for release
 
 include Bright Brave Knight Knave Tests by Andrew Schultz.
@@ -34,20 +36,68 @@ volume game specific stuff
 
 this is the situational-cuing-reject rule: do nothing;
 
+check hintobjing: if noun is not leet learner, say "Sorry about this, but due to time constraints, in-game hints were not completed in time for IFComp. The walkthrough is all there is. The only thing you can hint is the Leet Learner." instead;
+
 volume when play begins
 
 when play begins:
-	say "Rue rep? You? Yep!"
+	process the check-skip-intro rule;
+	let skip-stuff be whether or not the rule succeeded;
+	if debug-state is false, ask-screenread;
+	if skip-stuff is true, continue the action;
+	say "'Rue rep? You? Yep!' It was a decisive knockout blow to your prestige. Clean, simple, eloquent, and true. People laughed. Your time as flavor-of-the-month was up!";
+	wfak;
+	say "Oh, sure, you had those good deeds and all. You made people laugh who didn't. And you bugged the higher-ups. But someone came along and did it better. They were more risque than you. They got bigger laughs. Perhaps they didn't set as many things right like you did. But they sure made people feel that way, and that was more important!";
+	wfak;
+	say "And when you tried to point this out, you got laughed at for virtue-signaling. Did you think people owed you? Did you only do that nice stuff just so they'd prevent you from receiving an ounce of criticism? You couldn't disprove that, so it must be true.";
+	wfak;
+	say "That person--Tully was their name. It makes you mad to remember. You gave an intelligent response to all his critiques, and he laughed at you for being an egghead and elitist. And many people agreed. Your time was up! What had you done for anyone, lately? And of what you did for anyone lately, was it really out of the goodness of your heart?";
+	wfak;
+	say "You had no answers. But you would have a choice of punishment: Jet, Jail? Set sail? You went with the second. But of course your boat capsized as a big white wave came up. You paddled to shore...";
+	wfak;
 
 volume Flying Flees (intro)
 
 book white wave
 
-White Wave is a room in Flying Flees. "[if sco-kite-cave is false]Water is on almost every side. There must be a way out. You know a white wave brought you here, and they periodically crash around[else if bass bath is unvisited]The kite cave you involuntarily destroyed created a passage [b]DOWN[r]. You'll probably want to take it[else]The only exit is [b]DOWN[r] back to [bass bath][end if]."
+White Wave is a room in Flying Flees. "[if sco-kite-cave is false]A perpetual white wave blocks off half this beach. Okay, it's different waves, but when you look around, you always see one.[paragraph break]Water blocks off half of this beach, and too-dense forest blocks off the other half. But you are a Bright Brave Knight Knave, and you will find a passage, if you think about it. Maybe containing something odd, maybe slightly forced, but hey, you won't get anything if you don't ask for it.[paragraph break]Where could you go? How could you create passage?[else if bass bath is unvisited]This beach is still blocked off by the occasional white wave and dense forest. The only way out is [b]DOWN[r] through the kite cave you created[bb-detail].[end if]"
+
+after printing the locale description when player is in white wave and sco-kite-cave is false:
+	say "You hear traces of ... something. If you [b]LISTEN[r] very carefully, it might give a clue.";
+
+check listening when sco-kite-cave is false: say "You hear a fragment of a sentence. 'Cite! Save!' Or 'Sight-save?' or 'Site! Save?' You don't have context. But maybe it's something to go on." instead;
+
+check going up in White Wave:
+	if sco-kite-cave is false:
+		say "Apropos of nothing, you mumble to yourself 'Flight flav ... flight flav ...' You jump. Oddly, you jump higher than you ever have before. But not enough. That must work, though, for a way out.";
+		choose row with mist-1 of "flight" in table of general good guesses;
+		now got-yet entry is true;
+	else:
+		say "No, you already have a way out."
+
+to say bb-detail: if bass bath is visited, say ", to [bass bath]"
 
 from-number of white wave is 2754. to-number of white wave is 2704.
 
-the player is in White Wave. description is "Not quite as bright and brave as ever. Your reputation took a hit. You tried to make sure you never went over the line, but ... whispers happened."
+to decide which number is nti: decide on number of trystitems carried by player;
+
+the player is in White Wave. description is "You lost your standard gear once Tully exiled you, but other than that..."
+
+check examining the player when sco-fight-fave is true: say "No time for self-admiration or self-consciousness. You need to defeat Tully!" instead;
+
+after examining the player:
+	if nti is 5:
+		say "As ready for a big conflict as ever!";
+	else if nti is 4:
+		say "Almost back to as bright and brave as ever. You feel nearly prepared for something big.";
+	else if nti is 3:
+		say "Not quite as bright and brave as ever, but better than before.";
+	else if nti is 2:
+		say "About halfway back to as bright and brave and ever, but you're getting there slowly.";
+	else if nti is 1:
+		say "Within shouting distance of as bright and brave and ever, you suppose, as [the random held trystitem] helps you feel the worst is over.";
+	else:
+		say "Nowhere near as bright and brave as ever. You lost your old armor and such. That shouldn't change who you are inside, but it could be a small ego boost. Of course, maybe finding people and proving your worth would help getting back to your old self as well."
 
 the bkbk self check rule is listed instead of the ll self check rule in the check lling rulebook.
 
@@ -67,13 +117,13 @@ check going down in White Wave:
 
 chapter leet learner
 
-the leet learner is in White Wave. "Something called a leet learner rests here.".
+the leet learner is in White Wave. "[one of]As you ponder, you notice something on the ground. It's labeled a [b]LEET LEARNER[r], and using basic Bright Brave Knight Knave insight, you think to yourself, 'Aha! I could abbreviate it as [b]LL[r] without hurting its feelings!'[paragraph break]It looks odd, but then again, if it looked normal, it might have nothing worthwhile to teach you, right?[or]The leet learner ([b]LL[r]) rests on the ground, continuing to look mighty take-able.[stopping]".
 
 chapter Hold Hole
 
 the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-done is 0]empty[else if hole-done is 1]one-third full[else if hole-done is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
 
-description of hold hole is "It appeared when you located the kite cave. [whats-in-hold]."
+description of hold hole is "It appeared when you located the kite cave, and it leads [b]DOWN[r]. [whats-in-hold]."
 
 check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
@@ -95,6 +145,11 @@ to say whats-in-hold:
 rule for printing the name of a holeitem (called hi) when bold-hole is true: say "[b][printed name of hi in upper case][r]";
 
 guess-table of hold hole is table of hold hole guesses.
+
+after examining hold hole when lack list is off-stage:
+	now player has track tryst lack list;
+	say "And what's this? Tucked away in the crease of a hold hole is ... a small note. To be precise, a track-tryst lack list. You take it.";
+	continue the action;
 
 chapter track tryst lack list
 
