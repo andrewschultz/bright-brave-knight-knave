@@ -909,6 +909,43 @@ You can go pretty much any way from here but not inside.
 >s
 Passage south is blocked, but the other three ways, you can try.
 
+@mis
+#testcase-mistakes-table-of-rut-row-guesses-but-bo
+>but bo
+There's no time to argue! Boss and Rosco are up to another devious plan!
+\\
+#testcase-mistakes-table-of-rut-row-guesses-cut-co
+>cut co
+What an ideal name for a corporate hellscape that drains profits and happiness from a city.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-gut-go
+>gut go
+You feel full of urban gumption and do-it-now-ness, until you don't.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-mutt-mow
+>mutt mow
+Alas, there are no lovely houses with friendly dogs and green lawns here.
+\\
+#+testcase-mistakes-table-of-rut-row-guesses-mutt-mo
+>mutt mo
+Alas, there are no lovely houses with friendly dogs and green lawns here.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-nut-no
+>nut no
+There is nobody to tell off, but there will be if you wait here. Not that you want to wait here.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-putt-po
+>putt po
+This place is far away from a golf course, but yeah, everyone here is probably bad at golf.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-shut-show
+>shut show
+The fine arts have long since disappeared from here.
+\\
+#testcase-mistakes-table-of-rut-row-guesses-slut-slow
+>slut slow
+You are not the morality police.
+
 @!min
 >write rave
 by two points

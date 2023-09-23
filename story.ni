@@ -202,6 +202,8 @@ book Rut Row
 
 Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable for the moment, unless you figure a crazy, surprising way through[else]You cleverly forged a way west[end if][rut-2]."
 
+guess-table of rut row is the table of rut row guesses.
+
 from-number of rut row is 2653. to-number of rut row is 2705.
 
 to say rut-2:

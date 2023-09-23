@@ -96,6 +96,17 @@ table of recroom guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "seek"	"suitor"	--	false	--	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
 
+table of rut row guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"but"	"bo"	--	false	--	"There's no time to argue! Boss and Rosco are up to another devious plan!"
+"cut"	"co"	--	false	--	"What an ideal name for a corporate hellscape that drains profits and happiness from a city."
+"gut"	"go"	--	false	--	"You feel full of urban gumption and do-it-now-ness, until you don't."
+"mutt"	"mo|mow"	--	false	--	"Alas, there are no lovely houses with friendly dogs and green lawns here."
+"nut"	"no"	--	false	--	"There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
+"putt"	"po"	--	false	--	"This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
+"shut"	"show"	--	false	--	"The fine arts have long since disappeared from here."
+"slut"	"slow"	--	false	--	"You are not the morality police."
+
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chid"	"chum"	--	false	--	"[if boffin boy is not fungible]You have no friend to chide[else]Forgiveness is more the thing here[end if]."
