@@ -318,6 +318,12 @@ recroom is a privately-named room in Plying Please. It is north of Rut Row. prin
 
 guess-table of recroom is the table of recroom guesses.
 
+after printing the locale description when player is in recroom or player is in cried creek:
+	if lump-eeker-warn is false and player has lurking lump and number of dormant eekers > 0:
+		say "The lurking lump seems to squash about a bit here, as if to say, it might be useful if you can't figure that final person to recruit.";
+		now lump-eeker-warn is true;
+	continue the action;
+
 chapter recruiter
 
 the Recruiter is scenery in recroom. "You can feel the recruiter all around, but somehow it feels like you have to ask for what you need."
