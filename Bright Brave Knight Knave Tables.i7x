@@ -1236,9 +1236,13 @@ a goodrhyme rule (this is the vc-bailing-bill rule):
 		already-done;
 	ready;
 
+to say know-tully of (illnum - a number):
+	let ai be entry illnum of ailers;
+	say "Shortly, someone who must be [ai] drops by. 'You don't know Tully, do you? You're not with Tully?' You reassure [ai] otherwise, even addressing some of your own beefs with Tully. You chat a while"
+
 this is the vr-bailing-bill rule:
 	now sco-bailing-bill is true;
-	say "Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.";
+	say "[know-tully of 1]. He expresses guilt over fleeing, not just when Tully mocked him, but his friends, and he could have said something but didn't. He touches the bold bowl, which vibrates in his hands. 'I have more to say now, when I need to.' Then he thanks you and walks away.";
 	now bold bowl is blessed;
 	decrease-hill-ll;
 
@@ -1254,7 +1258,7 @@ a goodrhyme rule (this is the vc-failing-phil rule):
 
 this is the vr-failing-phil rule:
 	now sco-failing-phil is true;
-	say "Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.";
+	say "[know-tully of 2]. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and  asks you if he may touch it. Both seem to glow as a result. He thanks you.";
 	now cold coal is blessed;
 	decrease-hill-ll;
 
@@ -1270,7 +1274,7 @@ a goodrhyme rule (this is the vc-wailing-will rule):
 
 this is the vr-wailing-will rule:
 	now sco-wailing-will is true;
-	say "Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.";
+	say "[know-tully of 3]. He mentions how he used to be cheerful, but Tully somehow found simple ways to get under his skin. He knew he complained too much, and he could have stopped complaining if he really tried. He sees the sold soul and apologizes: 'I'm sure you have it even worse.' The sold soul nods. Perhaps. But that doesn't matter. It's not about comparisons. An enlightening conversation follows, and you are all the better for it. Wailing Will waves and walks away.";
 	now sold soul is blessed;
 	decrease-hill-ll;
 

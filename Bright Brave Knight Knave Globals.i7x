@@ -2,7 +2,7 @@ Version 1/221007 of Bright Brave Knight Knave Globals by Andrew Schultz begins h
 
 "This defines basic global variables to help keep the main file that much cleaner."
 
-volume score values
+volume very basics
 
 core-max is 71.
 
@@ -18,6 +18,8 @@ entry-in-series is 6.
 --however, core-max is (# of core entries originally) - 4, one for each of the interlude rooms and one for the Black Blight
 We can double-check what core-max + max-bonus should be by search/replacing sco-
 ]
+
+ailers is a list of text variable. ailers is { "Bailing Bill", "Failing Phil", "Wailing Will" }.
 
 Flying Flees is a region.
 
