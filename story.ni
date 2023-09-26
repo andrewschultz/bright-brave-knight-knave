@@ -2,6 +2,12 @@
 
 [use memory economy.] [pull the trigger on this if files get close to z-machine. Remember they can always be tested in glulx and compiled in z-machine.]
 
+the release number is 1.
+
+release along with an interpreter.
+
+release along with cover art.
+
 include Trivial Niceties by Andrew Schultz.
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
@@ -137,7 +143,7 @@ to say whats-in-hold:
 	else:
 		say "So far, you've placed [the list of in-hold holeitems] in the hold hole";
 		continue the action;
-	if number of carried holeitems > 0, continue the action;
+	if nch > 0, continue the action;
 	let pgh be number of preguessed holeitems;
 	if pgh > 0:
 		now bold-hole is true;

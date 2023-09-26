@@ -167,7 +167,7 @@ a goodrhyme rule (this is the vc-fight-fave rule):
 		vcp "Perhaps in the far future. But right now, you've only gotten here. You need to build your strength and worth.";
 		not-yet;
 	if hole-progress < 3:
-		if number of carried holeitems is 0:
+		if nch is 0:
 			vcp "You haven't placed any items in the hold hole yet. You'll need to, to be worthy and confident for the final fight.";
 		else:
 			vcp "You aren't ready yet. The hold hole is not complete[if availval is 3]. And it seems to repel [the list of unblessed holeitems]. Well, for now[end if].";
@@ -1694,17 +1694,16 @@ to win-the-game:
 	follow the shutdown rules;
 
 to give-hi (hi - a holeitem):
-	say "You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
+	say "[line break]You are now in possession of [a hi]. You [if hi is unguessed]maybe could've guessed you needed it, but now you see it[else]guessed it might be important, so[end if] you know you want to bring it back to the Hold Hole.";
 	if hi is unguessed and got-hole-bonus is false and blocked-hole-bonus is false:
 		now blocked-hole-bonus is true;
 		max-down;
 	now player has hi;
 	now pre-hole-item-room is location of player;
-	let carho be number of carried holeitems;
-	if carho is 1:
+	if nch is 1:
 		say "[line break]But suddenly, you feel useless and silly. You've just been finding a formula, here, not doing much. You close you eyes, wondering if you really deserve to have made any progress just through all those silly rhymes. Nothing seems to matter. Then ... you wind up in, or near, nothing.";
 		move player to Nil None;
-	else if carho is 2:
+	else if nch is 2:
 		say "[line break]That same weightlessness as before. Darkness envelops you, and when it releases you, you're somewhere [one of]new[or]unpleasantly familiar[stopping].";
 		move player to dander dove;
 	else:
