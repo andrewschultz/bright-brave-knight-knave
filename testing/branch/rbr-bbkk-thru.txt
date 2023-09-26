@@ -688,20 +688,20 @@ That's a bit too repetitive, but the general idea feels right.
 
 @!min
 >bold bowl
-Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
+{--mis,all}You deduce the bold bowl would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 !by one point
 {--mis}!LCD
 \\
 >cold coal
-Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+{--mis,all}You deduce the cold coal would fit nicely into the hold hole.
 !NOTE
 !by one point
 {--mis}!LCD
 \\
 >sold soul
-Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
-You feel slightly energized now that you know what your (w)hole quest is.
+{--mis,all}You deduce the sold soul would fit nicely into the hold hole.
+{--mis,all}You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 {--mis}!LCD
 
@@ -1141,6 +1141,10 @@ Forgiveness is more the thing here.
 #+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
 A Bright Brave Knight Knave doesn't put people through the ringer for past mistakes.
+\\
+#testcase-mistakes-table-of-slid-slum-guesses-bid-bum
+>bid bum
+That's not a huge epithet, but you try not look down on the less fortunate.
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-kid-come-rule
@@ -1305,6 +1309,10 @@ You don't need someone applauding in the background, whether or not they do so a
 #testcase-mistakes-table-of-crude-crapper-guesses-cooed-capper
 >cooed capper
 You don't need someone busting caps here and now, regardless of how pleasant their voice is.
+\\
+#testcase-mistakes-table-of-crude-crapper-guesses-dude-dapper
+>dude dapper
+Yes, we all wind up here once a day, even well-dressed people.
 \\
 #testcase-mistakes-table-of-crude-crapper-guesses-food-fapper
 >food fapper
@@ -1500,6 +1508,51 @@ While the creek and greenery meander off, you might get lost. You can really onl
 #testcase-values-from-number-of-spied-speak-cried-creek-is-5510
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.25, 0.00.)
+
+@mis
+#testcase-mistakes-table-of-cried-creek-guesses-bide-beak
+>bide beak
+No bird swoops along to give you pointers.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-chide-cheek
+>chide cheek
+Nobody here has been too out of line.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-lied-leak-leek
+>lied leak
+You don't have time to track down who lied about what.
+\\
+#+testcase-mistakes-table-of-cried-creek-guesses-lied-leak-leek
+>lied leek
+You don't have time to track down who lied about what.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-pied-pique
+>pied pique
+You recount someone who deserved it getting a pie in their face.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-ride-reek
+>ride reek
+You pine for transport, even smelly transport.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-side-seek
+>side seek
+You know which side you're on. Decency and justice. You hope.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-slide-sleek
+>slide sleek
+You don't need passage down anywhere.
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-tied-teak
+>tied teak
+No teak desk appears tied to the ground
+\\
+#testcase-mistakes-table-of-cried-creek-guesses-wide-whyd-weak
+>wide weak
+You don't need to drain anyone, here.
+\\
+#+testcase-mistakes-table-of-cried-creek-guesses-wide-whyd-weak
+>whyd weak
+You don't need to drain anyone, here.
 
 >stride streak
 by one point

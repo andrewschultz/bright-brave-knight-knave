@@ -37,11 +37,24 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "musing"	"mew"	--	false	--	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
 "rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
 
+table of cried creek guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bide"	"beak"	--	false	--	"No bird swoops along to give you pointers."
+"chide"	"cheek"	--	false	--	"Nobody here has been too out of line."
+"lied"	"leak|leek"	--	false	--	"You don't have time to track down who lied about what."
+"pied"	"pique"	--	false	--	"You recount someone who deserved it getting a pie in their face."
+"ride"	"reek"	--	false	--	"You pine for transport, even smelly transport."
+"side"	"seek"	--	false	--	"You know which side you're on. Decency and justice. You hope."
+"slide"	"sleek"	--	false	--	"You don't need passage down anywhere."
+"tied"	"teak"	--	false	--	"No teak desk appears tied to the ground"
+"wide|whyd"	"weak"	--	false	--	"You don't need to drain anyone, here."
+
 table of crude crapper guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
 "clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [this-game-noi]."
 "cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
+"dude"	"dapper"	--	false	--	"Yes, we all wind up here once a day, even well-dressed people."
 "food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
 "lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
 "rude"	"rapper"	--	false	--	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
@@ -111,6 +124,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bid"	"bum"	--	false	--	"That's not a huge epithet, but you try not look down on the less fortunate."
 "chid"	"chum"	--	false	--	"[if boffin boy is not fungible]You have no friend to chide[else]Forgiveness is more the thing here[end if]."
 "did"	"dumb"	--	false	--	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
 "mid"	"mum"	--	false	--	"You don't need parental support or quiet."
@@ -176,7 +190,7 @@ to say item-guess of (hi - a holeitem):
 	else if hi is not unguessed:
 		say "But you have already divined a need for [the hi].[no line break]";
 	else:
-		say "Yes. The [hi] must be one of the three entities that fit in the hold hole. This is good to know.[no line break]";
+		say "You deduce [the hi] would fit nicely into the hold hole.[no line break]";
 		let pgh be number of unguessed holeitems;
 		if pgh is 1:
 			say "[paragraph break]You feel slightly energized now that you know what your (w)hole quest is.[line break]";

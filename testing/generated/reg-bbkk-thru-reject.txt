@@ -444,18 +444,14 @@ Wow! You figured what to do. Now instead of typing X LIST, you can just type X o
 You already streamlined things with the list!
 
 >bold bowl
-Yes. The bold bowl must be one of the three entities that fit in the hold hole. This is good to know.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 !by one point
 
 >cold coal
-Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
 !NOTE
 !by one point
 
 >sold soul
-Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
-You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 
 >d
