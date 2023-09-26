@@ -97,6 +97,8 @@ an eeker has a number called matchnum.
 
 the eeker manipulation rules are an eeker based rulebook. the eeker manipulation rules have outcomes unavailable, not-yet, already-done, jump-reject, semi-pass and ready.
 
+the guess-table of an eeker is usually the table of cried creek guesses.
+
 to sideline-eekers:
 	repeat with X running through eekers in location of player:
 		sideline X;

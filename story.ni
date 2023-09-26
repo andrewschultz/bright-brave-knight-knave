@@ -340,7 +340,9 @@ guess-table of crude crapper is the table of crude crapper guesses.
 
 chapter mood mapper
 
-the mood mapper is a thing. description is "It can't offer hints like the leet learner, but maybe you can [b]MM[r] people."
+the mood mapper is a rhymable. description is "It can't offer hints like the leet learner, but maybe you can [b]MM[r] people."
+
+guess-table of mood mapper is table of crude crapper guesses.
 
 book Recruiter
 
@@ -467,7 +469,9 @@ from-number of perky pap is 2753. to-number of perky pap is 2753.
 
 section murky map
 
-the murky map is a thing. description is "Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.".
+the murky map is a rhymable. description is "Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.".
+
+guess-table of murky map is table of perky pap guesses.
 
 book Fast Fort
 
@@ -519,7 +523,9 @@ guess-table of valid vent is table of pallid pent valid vent guesses.
 
 section salad sent
 
-the salad sent is a thing. description is "Oh, man! What a salad it is! All sorts of vegetables you recognize and all sorts you don't!"
+the salad sent is a rhymable. description is "Oh, man! What a salad it is! All sorts of vegetables you recognize and all sorts you don't!"
+
+guess-table of salad sent is table of pallid pent valid vent guesses.
 
 chapter posh pick
 
