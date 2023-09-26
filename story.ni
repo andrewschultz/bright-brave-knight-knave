@@ -236,7 +236,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[else]Trite Tully[
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You [if bool-brew-available is true]also uncovered a passage inside to a bar, or you [end if]can also go back [b]DOWN[r] to White Wave."
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You [if bool-brew-available is true]also uncovered a passage inside to a bar, or you [end if]can also go back [b]DOWN[r] into the underground tunnel from White Wave."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -244,11 +244,11 @@ from-number of bass bath is 2704. to-number of bass bath is 2704.
 
 after printing the locale description for Bass Bath:
 	if bool-hill-available is false and player has mood mapper:
-		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up quite a ways! It's a bit daunting, but you do sort of want a preview.";
+		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up quite a ways! It's a bit daunting. You suspect you're not fully prepared for the treak, but at the same time, you'd like to sneak a preview.";
 		now bool-hill-available is true;
 		open-psg up and hailing hill;
 	if bool-brew-available is false and hub-expand-score is 3:
-		say "Wait! What's this? The mood mapper beeps once again and then suddenly vaporizes![paragraph break]All your mass math, and you didn't quite see there could be one more passage. But it seems so clear now. Why, if you just walk that-a-way, there's some sort of depressing bar.";
+		say "Wait! What's this? The mood mapper beeps once again and then suddenly vaporizes![paragraph break]All your mass math, and you didn't quite see there could be one more passage out. But it seems so clear, now you rechecked your work. And now you can't un-see a path to that depressing bar!";
 		moot mood mapper;
 		now bool-brew-available is true;
 		open-psg inside and Bruising Brew;
@@ -256,9 +256,12 @@ after printing the locale description for Bass Bath:
 
 book Hailing Hill
 
-Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else if hill-score is 1]midpoint[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
 
 from-number of hailing hill is 2854. to-number of hailing hill is 5658.
+
+check going up in hailing hill:
+	say "[if hill-score < 2]You need to prepare mentally to get to the top of the hill[else]You're as high as you need to go[end if]." instead;
 
 chapter mailing mill
 
