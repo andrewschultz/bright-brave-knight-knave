@@ -236,7 +236,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[else]Trite Tully[
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else]You see passages to the north, west and east.[end if] You can also go back [b]DOWN[r] to White Wave."
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You can also go back [b]DOWN[r] to White Wave."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -634,7 +634,7 @@ check lling tata when sco-yall-yank is true and sco-paul-panks is false:
 
 chapter ardor elm
 
-the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want.[else]The ardor elm your friends showed you stands here. [elm-status][end if].". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
+the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want...'[else]The ardor elm your friends showed you stands here. [elm-status].[end if]". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
 
 from-number of ardor elm is 2753. to-number of ardor elm is 2804.
 

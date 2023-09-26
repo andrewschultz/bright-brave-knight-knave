@@ -225,7 +225,7 @@ this is the vh-mace-math rule:
 
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
-	say "You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.";
+	say "You sit back and do some brute-force calculations as to where the paths must lead. Then you use some intuition you didn't know you had (your mojo must be returning!) You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you see one path in each of the cardinal directions: west, one east, and one north.";
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
 	open-psg south and Treed Track;
@@ -817,7 +817,7 @@ a goodrhyme rule (this is the vc-done-dish rule):
 
 this is the vr-done-dish rule:
 	now sco-done-dish is true;
-	say "You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.";
+	say "You lay the stew stuff and the salad sent down in the shallowest part of the water. As you do, you worry--what if the stew stuff contains CHUNKS OF FISH?[paragraph break]It's too late now. They both float out to the fish, which sarts flopping under and over them. Some sand bubbles up from the bottom to, well, embolden the bowl that held the salad. And--well, pretty soon, weird culinary things happen, and you have a done dish! In a bold bowl! Looks like you have something [if nch > 0]more [end if]for the hold hole.";
 	moot stew stuff;
 	moot salad sent;
 	moot fun fish;
@@ -992,7 +992,7 @@ a goodrhyme rule (this is the vc-grew-gruff rule):
 
 this is the vr-grew-gruff rule:
 	now sco-grew-gruff is true;
-	say "You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.";
+	say "You toss aside a chunk of useless sentiment. The Guide Geek and Week Wooter each help in their own way when needed, one to restrict you from going too far, the other to say to trust your gut. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.";
 
 a goodrhyme rule (this is the vc-stew-stuff rule):
 	if player is not in too tough blue bluff, unavailable;
@@ -1275,7 +1275,7 @@ a goodrhyme rule (this is the vc-failing-phil rule):
 
 this is the vr-failing-phil rule:
 	now sco-failing-phil is true;
-	say "[know-tully of 2]. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and  asks you if he may touch it. Both seem to glow as a result. He thanks you.";
+	say "[know-tully of 2]. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and asks you if he may touch it. Both seem to glow as a result. He thanks you.";
 	now cold coal is blessed;
 	decrease-hill-ll;
 
@@ -1306,12 +1306,12 @@ a goodrhyme rule (this is the vc-fill-fun rule):
 
 this is the vr-fill-fun rule:
 	now sco-fill-fun is true;
-	say "You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course.";
+	say "You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course. But it is a good first start.";
 
 a goodrhyme rule (this is the vc-will-won rule):
 	if player is not in nil none, unavailable;
 	if sco-fill-fun is false:
-		vcp "Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.";
+		vcp "You try to muster up the will to win. But you want more than winning. You want enjoyment and camaraderie and happiness. Without that, winning is hollow. So you need something first, or you may just give up and go back to losing.";
 		not-yet;
 	if sco-will-won is true:
 		vcal "You already have a will to win!";
@@ -1529,7 +1529,7 @@ a goodrhyme rule (this is the vc-bam-bye rule):
 
 this is the vr-bam-bye rule:
 	now sco-bam-bye is true;
-	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]'Oh, on! Go! Gone!' you blurt. Tully begins to yell at you, in shock, but you feel prepared. 'Yo, yawn,' you say. Tully looks around in disbelief. There's no crowd to egg them on. Tully sheds a tear. 'So hurtful.'[paragraph break]But were you?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.";
+	say "You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?[paragraph break]'Oh, on! Go! Gone!' you blurt. Tully begins to yell at you, in shock, but you feel prepared. 'Yo, yawn,' you say. Tully looks around in disbelief. There's no crowd to egg them on. Tully sheds a tear. 'So hurtful.'[paragraph break]But were you?[paragraph break]Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time to go. You don't even have to mention Tully's silly mind games that brought you here.[paragraph break]Over the next few months, you fix various other wrongs, big and small. There's not much left to do. You feel bad about leaving, but you also realize you need to fix the damage Tully has done here and elsewhere.";
 	win-the-game;
 
 a goodrhyme rule (this is the tully-triage rule):
