@@ -201,6 +201,20 @@ carry out palsing:
 	say "Now [list of eekers in location of player] moved to location of player.";
 	the rule succeeds;
 
+chapter skiping
+
+skiping is an action out of world.
+
+understand the command "skip" as something new.
+
+understand "skip" as skiping.
+
+carry out skiping:
+	if core-score > 1, say "Only skip at the beginning." instead;
+	say "Skipping profanity.";
+	now skip-profanity is true;
+	the rule succeeds;
+
 Bright Brave Knight Knave Tests ends here.
 
 ---- DOCUMENTATION ----

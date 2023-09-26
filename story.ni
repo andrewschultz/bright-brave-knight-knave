@@ -43,7 +43,10 @@ volume when play begins
 when play begins:
 	process the check-skip-intro rule;
 	let skip-stuff be whether or not the rule succeeded;
-	if debug-state is false, ask-screenread;
+	if debug-state is false:
+		ask-screenread;
+		say "Also, there is one minorly risque location with an optional and core puzzle. If you are okay with this, say yes to skip it.";
+		unless the player consents, now skip-profanity is false;
 	if skip-stuff is true, continue the action;
 	say "'Rue rep? You? Yep!' It was a decisive knockout blow to your prestige. Clean, simple, eloquent, and true. People laughed. Your time as flavor-of-the-month was up!";
 	wfak;
@@ -280,6 +283,18 @@ check going north in Rut Row:
 book Slum Slid
 
 Slid Slum is a room in Plying Please. "[if sco-rid-rum is true]You can see around a bit more clearly now. In addition to the path back east, there's somewhere you can go inside[else]It's very crowded and suspicious here. Until you get more street-savvy, you only feel like you can go back east[end if].".
+
+check going inside in slid slum when sco-rid-rum is true and skip-profanity is true:
+	if mood mapper is off-stage:
+		up-min;
+		up-reg;
+		now player has mood mapper;
+		now sco-mood-mapper is true;
+		now sco-nude-napper is true;
+		say "You dip into the risque area, find a mood mapper, and duck back out quickly.";
+	else:
+		say "You already got what you needed from the risque area.";
+	the rule succeeds;
 
 guess-table of slid slum is the table of slid slum guesses.
 

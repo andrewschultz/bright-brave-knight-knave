@@ -222,6 +222,8 @@ note-bye-yet is a truth state that varies. [this is if the BYE command has been 
 
 lump-eeker-warn is a truth state that varies. [this clues you about the lurking lump if you have it]
 
+skip-profanity is a truth state that varies.
+
 chapter options
 
 opt-sweet-swap is a truth state that varies. [lets you solve puzzles without friends]
