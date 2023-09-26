@@ -157,13 +157,22 @@ The Chic Shooter and the Weak Wooter brush past each other with little or no ack
 !by one point
 The Weak Wooter and the Chic Shooter brush past each other with little or no acknowledgment.
 
+>weak wooter
+But the Weak Wooter is already here!
+
 >meek mooter
 !by one point
 The Meek Mooter and the Weak Wooter brush past each other with little or no acknowledgment.
 
+>meek mooter
+But the Meek Mooter is already here!
+
 >chic shooter
 !by one point
 The Chic Shooter and the Meek Mooter brush past each other with little or no acknowledgment.
+
+>chic shooter
+But the Chic Shooter is already here!
 
 >bye
 
@@ -192,13 +201,22 @@ The Guide Geek comes into view and looks around, slightly uncomfortable. They se
 !by one point
 The Fried Freak and the Guide Geek brush past each other with little or no acknowledgment.
 
+>fried freak
+But the Fried Freak is already here!
+
 >snide sneak
 !by one point
 The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgment.
 
+>snide sneak
+But the Snide Sneak is already here!
+
 >guide geek
 !by one point
 The Guide Geek and the Snide Sneak brush past each other with little or no acknowledgment.
+
+>guide geek
+But the Guide Geek is already here!
 
 >snide sneak
 !by one point
@@ -539,14 +557,29 @@ The Chic Shooter and Fried Freak hang together here, chatting with each other bu
 
 >chic shooter
 You call the Chic Shooter, who appears with their friend, the Fried Freak.
+>chic shooter
+>fried freak
+But the Fried Freak is already here!
+>chic shooter
+But the Chic Shooter is already here!
+>undo
+>undo
 >undo
 
 >meek mooter
 You call the Meek Mooter, who appears with their friend, the Snide Sneak.
+>meek mooter
+But the Meek Mooter is already here!
+>snide sneak
+But the Snide Sneak is already here!
 >undo
 
 >weak wooter
 You call the Weak Wooter, who appears with their friend, the Guide Geek.
+>weak wooter
+But the Weak Wooter is already here!
+>guide geek
+But the Guide Geek is already here!
 >undo
 
 >w
