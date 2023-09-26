@@ -14,7 +14,8 @@ CAST COURT/FAST FORT/PAST PORT
 
 table of general good guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"slight"	"slave"	--	false	--	"You grumble about how you are a slight slave to your quest. It's therapeutic."
+"flight"	"flav|flave"	--	false	--	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
+"slight"	"slave"	--	false	--	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
 "shite"	"shave"	--	false	--	"This isn't the time or place to kvetch about personal grooming."
 
 volume room stuff
@@ -33,6 +34,7 @@ to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "choosing"	"chew"	--	false	--	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
+"musing"	"mew"	--	false	--	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
 "rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
 
 table of crude crapper guesses
@@ -177,14 +179,14 @@ to say item-guess of (hi - a holeitem):
 		say "Yes. The [hi] must be one of the three entities that fit in the hold hole. This is good to know.[no line break]";
 		let pgh be number of unguessed holeitems;
 		if pgh is 1:
-			say "[line break]You feel slightly energized now that you know what your (w)hole quest is.[no line break]";
+			say "[paragraph break]You feel slightly energized now that you know what your (w)hole quest is.[line break]";
 			increment cur-bonus;
 			follow the score and thinking changes rule;
 			now got-hole-bonus is true;
 		else if pgh is 3:
-			say "[line break][i][bracket][b]NOTE:[r][i] you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.[close bracket]";
+			say "[paragraph break][i][bracket][b]NOTE:[r][i] you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.[close bracket]";
 		else:
-			say "[line break]There is one more item to guess, if you want.";
+			say "[paragraph break]So, that's two of the three things the hole needs. Figuring the third wouldn't be critical, but it'd be a morale booster.";
 		now hi is preguessed;
 
 table of one wish fun fish guesses

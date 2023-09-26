@@ -550,6 +550,19 @@ You notice one dot in the corner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+@mis
+#testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
+>flight flave
+You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
+\\
+#testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
+>flight flav
+You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
+
+@goto
+>u
+Apropos of nothing, you mumble to yourself "Flight flav ... flight flav ..." You jump. Oddly, you jump higher than you ever have before. But not enough. That must work, though, for a way out.
+
 >kite cave
 by one point
 
@@ -581,6 +594,10 @@ Silence back.
 #testcase-mainverbs-carry-out-ting-if-noun-is-the-player
 >t me
 "Be back, Me! ... Mac?"
+
+@goto
+>u
+No, you already have a way out.
 
 >x hold hole
 
@@ -922,11 +939,11 @@ What an ideal name for a corporate hellscape that drains profits and happiness f
 >gut go
 You feel full of urban gumption and do-it-now-ness, until you don't.
 \\
-#testcase-mistakes-table-of-rut-row-guesses-mutt-mow
+#testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
 >mutt mow
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 \\
-#+testcase-mistakes-table-of-rut-row-guesses-mutt-mo
+#+testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
 >mutt mo
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 \\
@@ -5482,6 +5499,10 @@ No sneaky kangaroo appears, which is probably for the better.
 #+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
 >rusing rue
 No sneaky kangaroo appears, which is probably for the better.
+\\
+#testcase-mistakes-table-of-bruising-brew-guesses-musing-mew
+>musing mew
+"Hmm," you say, inflecting your voice. You guess and hope that looked smart and thoughtful.
 
 @rej
 #testcase-check-vc-fusing-phew-rule-if-lou-score-<-2

@@ -17,8 +17,14 @@ Taken.
 >e
 You're kind of confused about directions, here. You maybe need to find some way to see where life might be.
 
+>u
+Apropos of nothing, you mumble to yourself "Flight flav ... flight flav ..." You jump. Oddly, you jump higher than you ever have before. But not enough. That must work, though, for a way out.
+
 >kite cave
 by one point
+
+>u
+No, you already have a way out.
 
 >x hold hole
 

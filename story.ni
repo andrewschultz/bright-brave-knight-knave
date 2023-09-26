@@ -73,7 +73,8 @@ check going up in White Wave:
 		choose row with mist-1 of "flight" in table of general good guesses;
 		now got-yet entry is true;
 	else:
-		say "No, you already have a way out."
+		say "No, you already have a way out.";
+	the rule succeeds;
 
 to say bb-detail: if bass bath is visited, say ", to [bass bath]"
 
