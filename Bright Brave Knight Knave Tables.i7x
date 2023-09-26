@@ -22,8 +22,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "jack"	"gist"	--	--	false	true	false	false	--	vc-jack-gist rule	vr-jack-gist rule	--	--
 "eyeing|eying"	"ease"	--	--	false	true	false	false	--	vc-eyeing-eying-ease rule	vr-eyeing-eying-ease rule	--	--
 "fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you are physically and emotionally prepared."
-"pass"	"path"	--	--	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
-"mass"	"math"	--	--	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
+"pass"	"path"	"pace"	vh-pace-path rule	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
+"mass"	"math"	"mace"	vh-mace-math rule	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
 "what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
@@ -75,7 +75,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "loud"	"lies"	--	--	false	true	true	false	OECC	vc-loud-lies rule	vr-loud-lies rule	--	"You can denounce [b]LOUD LIES[r] [once-now of vc-loud-lies rule] you've tweaked the crowd more subjectively."
 "bought"	"beef"	--	--	false	true	true	false	thought thief fought fief	vc-bought-beef rule	vr-bought-beef rule	--	--
 "brought"	"brief"	--	--	false	true	true	false	thought thief fought fief	vc-brought-brief rule	vr-brought-brief rule	--	--
-"wrought"	"reef"	--	--	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	"You can make a [b]WROUGHT REEF[r] [once-now of vc-wrought-reef rule] you've bluffed your way through the fief."
+"wrought"	"reef"	"rot"	vh-rot-reef rule	false	true	true	false	thought thief fought fief	vc-wrought-reef rule	vr-wrought-reef rule	--	"You can make a [b]WROUGHT REEF[r] [once-now of vc-wrought-reef rule] you've bluffed your way through the fief."
 "done"	"dish"	--	--	false	true	true	false	thought thief fought fief	vc-done-dish rule	vr-done-dish rule	--	"You can make a [b]DONE DISH[r] [once-now of vc-done-dish rule] you've got certifiably acceptable ingredients for a dish."
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
@@ -199,6 +199,10 @@ a goodrhyme rule (this is the vc-pass-path rule):
 		already-done;
 	ready;
 
+this is the vh-pace-path rule:
+	say "Almost! That sounds a bit off, though. Pacing in a circle wouldn't get you many places. Something very, very similar might.";
+	the rule succeeds;
+
 this is the vr-pass-path rule:
 	now sco-pass-path is true;
 	say "Weird! You don't expect anything to happen, but small land-bridges appear over the bath to the north, west and east. They appear tangled and looping. You might get confused going down them right away.";
@@ -214,6 +218,10 @@ a goodrhyme rule (this is the vc-mass-math rule):
 		vcal "You already calculated! Overcalculate, and you might miss or reject the obvious.";
 		already-done;
 	ready;
+
+this is the vh-mace-math rule:
+	say "Hmm. Sounds a bit off. Math and mathematical reasoning are useful, but not for how badly you can thwack someone. But you could use some math, here. How much, is the question.";
+	the rule succeeds;
 
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
@@ -781,6 +789,10 @@ a goodrhyme rule (this is the vc-wrought-reef rule):
 		vcal "You already wrought the reef!";
 		already-done;
 	ready;
+
+this is the vh-rot-reef rule:
+	say "Sort of, but we want to make the place better, here.";
+	the rule succeeds;
 
 this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
