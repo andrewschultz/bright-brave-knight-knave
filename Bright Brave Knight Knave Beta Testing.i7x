@@ -41,28 +41,62 @@ carry out hiing:
 
 chapter hiing
 
-hring is an action applying to one number.
+miding is an action applying to nothing.
 
 understand the command "hr" as something new.
 
-understand "hr [number]" as hring.
+understand "mid" as miding.
 
-understand "hr" as a mistake ("[nilnonecue][run paragraph on]")
-
-to say nilnonecue:
-	say "You need to specify which slot Nil None goes in, 1 to 3."
-
-carry out hring:
-	if the number understood < 1 or the number understood > 3:
-		say "[nilnonecue]";
-		the rule succeeds;
-	repeat with hr running through holeitems:
-		if sumnum of hr is number understood:
-			if hr is not off-stage, say "You already found [the hr]." instead;
-			give-hi hr;
-			the rule succeeds;
-	say "WEIRD BUG: should've had a summonable help item corresponding to [the number understood].";
-	the rule succeeds;
+carry out miding:
+	if core-score > 0, say "MID as a testing command can only be used at the start." instead;
+	now lump-charges is 90;
+	try jerkingjumping;
+	try examining hold hole;
+	try going down;
+	try jerkingjumping;
+	try jerkingjumping;
+	try going west;
+	try jerkingjumping;
+	try going west;
+	try jerkingjumping;
+	try jerkingjumping;
+	try jerkingjumping;
+	try going inside;
+	try jerkingjumping;
+	try going outside;
+	try going east;
+	try going north;
+	try jerkingjumping;
+	try jerkingjumping;
+	try jerkingjumping;
+	try going west;
+	try jerkingjumping;
+	try jerkingjumping;
+	try jerkingjumping;
+	try jerkingjumping;
+	try going east;
+	process the vr-weak-wooter rule;
+	try byeing;
+	process the vr-snide-sneak rule;
+	process the vr-meek-mooter rule;
+	try byeing;
+	process the vr-fried-freak rule;
+	process the vr-chic-shooter rule;
+	try byeing;
+	try sweetswaping;
+	try going south;
+	try going east;
+	try going north;
+	try jerkingjumping;
+	try jerkingjumping;
+	try going south;
+	try going east;
+	try jerkingjumping;
+	try going west;
+	try going south;
+	try jerkingjumping;
+	try jerkingjumping;
+	say "Passages to all rooms are open now, and you can call friends whenever you want."
 
 chapter finaling
 
