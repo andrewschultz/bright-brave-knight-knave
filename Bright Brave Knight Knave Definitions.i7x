@@ -266,7 +266,7 @@ definition: a direction (called d) is viable:
 
 this is the flag bad goto from rule: do nothing;
 
-this is the flag bad goto to rule: do nothing;
+this is the flag bad goto to rule: if map region of noun is Shying Sheez, say "Nope. You paid your dues there." instead;
 
 volume other stuff
 
@@ -302,8 +302,14 @@ to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
 		yes;
 	no;
 
+to decide whether can-escape:
+	if player is in dander dove and dander-score >= 2, yes;
+	if player is in nil none and nil-score >= 2, yes;
+	if player is in route rough and route-rough-score >= 2, yes;
+	no;
+
 this is the stuck-right-now rule:
-	if mrlp is Shying Sheez, say "But you are in a sort of limbo area." instead;
+	if mrlp is Shying Sheez, say "[if can-escape]You can just walk out in any direction back to [pre-hole-item-room].[else]You can't just break free yet![end if]" instead;
 	if sco-fight-fave is true, say "But you are at the final fight." instead;
 
 section mostly VVFF dependent stuff with Dean Duggan
