@@ -52,7 +52,16 @@ score and bonus points just went up by one point.
 
 >d
 
+#testcase-homonym-reject-table-of-verb-checks-vh-pace-path-rule-pace
+#testcase-homonym-detail-vh-pace-path-rule-default
+>pace path
+Almost! That sounds a bit off, though. Pacing in a circle wouldn't get you many places. Something very, very similar might.
+
 >pass path
+
+#testcase-homonym-reject-table-of-verb-checks-vh-mace-math-rule-mace
+>mace math
+Hmm. Sounds a bit off. Math and mathematical reasoning are useful, but not for how badly you can thwack someone. But you could use some math, here. How much, is the question.
 
 >mass math
 by one point
@@ -294,6 +303,11 @@ by one point
 
 >brought brief
 by one point
+
+#testcase-homonym-detail-vh-rot-reef-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-rot-reef-rule-rot
+>rot reef
+Sort of, but we want to make the place better, here.
 
 >wrought reef
 by one point

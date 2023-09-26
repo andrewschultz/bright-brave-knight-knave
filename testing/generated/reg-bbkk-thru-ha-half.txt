@@ -51,6 +51,10 @@ The HA HALF button on your Leet Learner lights up yellow.
 >kite cave
 by one point
 
+>x hold hole
+
+>x list
+
 #testcase-ha-half-table-of-verb-checks-3-gist
 >zjack gist
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
@@ -58,10 +62,6 @@ The HA HALF button on your Leet Learner lights up green. Very dim, though. Perha
 #testcase-ha-half-table-of-verb-checks-3-jack
 >jack zgist
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
-
->x hold hole
-
->x list
 
 >jack gist
 Your score and bonus points just went up by one point.

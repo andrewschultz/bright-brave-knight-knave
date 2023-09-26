@@ -21,7 +21,7 @@ by one point
 
 #testcase-run-vr-kite-cave-rule-default
 You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
-The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
+The cave collapses. There's a passage DOWN, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 >x hold hole
 
@@ -80,8 +80,7 @@ Weird! You don't expect anything to happen, but small land-bridges appear over t
 by one point
 
 #testcase-run-vr-mass-math-rule-default
-You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
-You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.
+You sit back and do some brute-force calculations as to where the paths must lead. Then you use some intuition you didn't know you had (your mojo must be returning!) You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
 
 >w
 
@@ -170,19 +169,20 @@ Things feel far less lethargic here. You don't feel like you're stuck, and other
 by one point
 
 #testcase-run-vr-guide-geek-rule-fallthrough
-The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+The Guide Geek comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
 
 >fried freak
 by one point
 
 #testcase-run-vr-fried-freak-rule-fallthrough
-The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
+The Fried Freak and the Guide Geek brush past each other with little or no acknowledgment. You ask the Fried Freak what that was about. They know each other too well--they both need to expand their circle.
 
 >snide sneak
 by one point
 
 #testcase-run-vr-snide-sneak-rule-fallthrough
-The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
+The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgment.
+!what that was about
 
 >e
 
@@ -190,7 +190,7 @@ The Snide Sneak and the Fried Freak brush past each other with little or no ackn
 by one point
 
 #testcase-run-vr-meek-mooter-rule-fallthrough
-What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they fill in each other's holes, personality-wise.
+The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide Sneak tries to show who's boss, but the Meek Mooter deflects surprisingly effectively. The Snide Sneak laughs. They shake hands. They'll be sticking together.
 /^\[NOTE: you can say BYE
 /^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
 /^\[Your score just went up by one point.
@@ -205,7 +205,7 @@ The Meek Mooter and Snide Sneak understand you wish to call someone new. They de
 by one point
 
 #testcase-run-vr-chic-shooter-rule-fallthrough
-The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
+The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgment.
 
 >w
 >fried freak
@@ -256,6 +256,7 @@ Of course! Bucky-Bot!
 by one point
 
 #testcase-run-vr-yall-yank-rule-fallthrough
+#testcase-run-vr-yall-yank-rule-default
 The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.
 
 >paul panks
@@ -468,7 +469,7 @@ Ah, yes, that's what it is. You smell it clearly now. But the pallid pent valid 
 by one point
 
 #testcase-run-vr-grew-gruff-rule-default
-You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
+You toss aside a chunk of useless sentiment. The Guide Geek and Week Wooter each help in their own way when needed, one to restrict you from going too far, the other to say to trust your gut. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
 
 >stew stuff
 by one point
@@ -529,7 +530,7 @@ You hear a loud crumbling noise. The landscape changes significantly! You see a 
 by one point
 
 #testcase-run-vr-done-dish-rule-default
-You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.
+You lay the stew stuff and the salad sent down in the shallowest part of the water. As you do, you worry--what if the stew stuff contains CHUNKS OF FISH?
 
 #testcase-room-names-nil-none
 `Nil, None
@@ -770,14 +771,14 @@ A good Bright Brave Knight Knave is always on the lookouts for shortcuts and sim
 by one point
 
 #testcase-run-vr-using-you-rule-default
-You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.
+You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. Lou nods in appreciation. There is no need to point out when and how Lou has been wrong. That is for personal reflection.
 Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.
 
 >boozing boo
 by one point
 
 #testcase-run-vr-boozing-boo-rule-default
-You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.
+You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life! What other experiences might Lou wish to explore.
 Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help!
 
 >fusing phew
@@ -825,19 +826,20 @@ Pop! A mailing mill bursts from the ground! It doesn't have a directory, though,
 by one point
 
 #testcase-run-vr-failing-phil-rule-default
-Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.
+Shortly, someone who must be Failing Phil drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Failing Phil otherwise, even addressing some of your own beefs with Tully. You chat a while. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and asks you if he may touch it. Both seem to glow as a result. He thanks you.
 
 >wailing will
 by one point
 
 #testcase-run-vr-wailing-will-rule-default
-Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.
+Shortly, someone who must be Wailing Will drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Wailing Will otherwise, even addressing some of your own beefs with Tully. You chat a while. He mentions how he used to be cheerful, but Tully somehow found simple ways to get under his skin. He knew he complained too much, and he could have stopped complaining if he really tried. He sees the sold soul and apologizes: "I'm sure you have it even worse." The sold soul nods. Perhaps. But that doesn't matter. It's not about comparisons. An enlightening conversation follows, and you are all the better for it. Wailing Will waves and walks away.
 
 >bailing bill
 by one point
 
 #testcase-run-vr-bailing-bill-rule-default
-Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.
+Shortly, someone who must be Bailing Bill drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Bailing Bill otherwise, even addressing some of your own beefs with Tully. You chat a while. He expresses guilt over fleeing, not just when Tully mocked him, but his friends, and he could have said something but didn't. He touches the bold bowl, which vibrates in his hands. "I have more to say now, when I need to." Then he thanks you and walks away.
+The mailing mill retracts into the ground. You've probably found all you could from it--makes sense, three people, three hole items.
 
 >d
 
@@ -883,5 +885,5 @@ by one point
 
 #testcase-run-vr-bam-bye-rule-default
 You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?
-Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.
+Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time to go. You don't even have to mention Tully's silly mind games that brought you here.
 

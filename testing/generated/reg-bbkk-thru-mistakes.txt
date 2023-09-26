@@ -16,8 +16,9 @@ Taken.
 #testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
 >flight flave
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 
-#testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
+#+testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
 >flight flav
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
 
@@ -42,7 +43,7 @@ Po', Pal! Mo' Mal!
 >scold skoal
 You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright.
 !LCD
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+!to switch on
 
 #testcase-mistakes-table-of-hold-hole-guesses-told-toll
 >told toll
@@ -169,11 +170,11 @@ What an ideal name for a corporate hellscape that drains profits and happiness f
 >gut go
 You feel full of urban gumption and do-it-now-ness, until you don't.
 
-#testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
+#testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mow
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 
-#+testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
+#+testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mo
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 
@@ -485,7 +486,7 @@ No pie ambushes anyone, for better or worse.
 >proud prize
 Well, that's what you get if you figure what to do here.
 
-#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+#+testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
 >proud pries
 Well, that's what you get if you figure what to do here.
 

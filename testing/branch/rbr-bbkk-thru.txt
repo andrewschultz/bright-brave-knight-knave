@@ -7,6 +7,7 @@
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
 file=reg-bbkk-thru-min.txt,min,minimum walkthrough
+file=reg-bbkk-thru-skip.txt,skip,skip room walkthrough
 file=reg-bbkk-thru-all.txt,all,walkthrough with all points and potential neutral retries
 file=reg-bbkk-thru-reject.txt,rej,walkthrough with all rejections and THINK
 file=reg-bbkk-thru-alt-verbs.txt,alt,walkthrough with altverb tests
@@ -61,6 +62,9 @@ file=reg-bbkk-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 @all
 #testcase-room-names-white-wave
 `White Wave
+
+@skip
+>skip
 
 @!min
 >take learner
@@ -554,8 +558,9 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 #testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
 >flight flave
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
+[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
 \\
-#testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
+#+testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
 >flight flav
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
 
@@ -570,21 +575,12 @@ by one point
 {--rej}#testcase-check-vc-kite-cave-rule-fallthrough
 {--all}#testcase-run-vr-kite-cave-rule-default
 You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
-The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
+The cave collapses. There's a passage DOWN, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 @rej
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
 >kite cave
 You already discovered the kite cave to find a path beyond!
-
-@ha
-#testcase-ha-half-table-of-verb-checks-3-gist
->zjack gist
-{$GREENBONUS}
-\\
-#testcase-ha-half-table-of-verb-checks-3-jack
->jack zgist
-{$GREENBONUS}
 
 @ver
 #testcase-mainverbs-carry-out-ting-fallthrough
@@ -614,6 +610,15 @@ You can FIGHT FAVE once you are physically and emotionally prepared.
 
 >x list
 
+@ha
+#testcase-ha-half-table-of-verb-checks-3-gist
+>zjack gist
+{$GREENBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-3-jack
+>jack zgist
+{$GREENBONUS}
+
 @!min
 >jack gist
 Your score and bonus points just went up by one point.
@@ -641,7 +646,7 @@ Po', Pal! Mo' Mal!
 >scold skoal
 You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright.
 !LCD
-[NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+!to switch on
 \\
 #testcase-mistakes-table-of-hold-hole-guesses-told-toll
 >told toll
@@ -823,6 +828,12 @@ You have nothing to do mass math on. Yet.
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
 You can use MASS MATH once you have something to calculate.
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-pace-path-rule-pace
+#testcase-homonym-detail-vh-pace-path-rule-default
+>pace path
+Almost! That sounds a bit off, though. Pacing in a circle wouldn't get you many places. Something very, very similar might.
+
 >pass path
 
 @all,rej
@@ -849,14 +860,18 @@ You already found a pass-path through the bass bath!
 >w
 You need to reason out which way to go. It's a bit confusing here.
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-mace-math-rule-mace
+>mace math
+Hmm. Sounds a bit off. Math and mathematical reasoning are useful, but not for how badly you can thwack someone. But you could use some math, here. How much, is the question.
+
 >mass math
 by one point
 
 @all,rej
 {--rej}#testcase-check-vc-mass-math-rule-fallthrough
 {--all}#testcase-run-vr-mass-math-rule-default
-You sit back and do some calculations as to where the paths must lead. You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
-You hone your theorems and heuristics so well, you realize there is pretty much just one path west, one east, and one north.
+You sit back and do some brute-force calculations as to where the paths must lead. Then you use some intuition you didn't know you had (your mojo must be returning!) You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.
 
 @rej
 #testcase-check-vc-mass-math-rule-if-sco-mass-math-is-true
@@ -939,11 +954,11 @@ What an ideal name for a corporate hellscape that drains profits and happiness f
 >gut go
 You feel full of urban gumption and do-it-now-ness, until you don't.
 \\
-#testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
+#testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mow
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 \\
-#+testcase-mistakes-table-of-rut-row-guesses-mutt-mow-mo
+#+testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mo
 Alas, there are no lovely houses with friendly dogs and green lawns here.
 \\
@@ -1201,6 +1216,9 @@ You don't want to reflect on the past.
 
 >in
 
+@skip
+by two points
+
 @all
 #testcase-room-names-crude-crapper
 `Crude Crapper
@@ -1253,6 +1271,7 @@ Ooh! You're close. You've probably juggled two valid solutions.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@!skip
 >mood mapper
 by one point
 
@@ -1329,7 +1348,7 @@ You feel as though you want to say something about the state of these environs, 
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
-@!min
+@!min,skip
 >nude napper
 by one point
 
@@ -1343,6 +1362,7 @@ You're liberal and lenient and all that, but some things cross the line. It's so
 >nude napper
 You don't want to be too much of a moral scold!
 
+@!skip
 >out
 
 @gong,prong
@@ -1505,7 +1525,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-guide-geek-rule-fallthrough
 {--all}#testcase-run-vr-guide-geek-rule-fallthrough
-The Guide Geek looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
+The Guide Geek comes into view and looks around, slightly uncomfortable. They see no one they immediately dislike. They nod to show they can trust you.
 
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
@@ -1523,7 +1543,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-fried-freak-rule-fallthrough
 {--all}#testcase-run-vr-fried-freak-rule-fallthrough
-The Fried Freak and the Guide Geek brush past each other with little or no acknowledgement.
+The Fried Freak and the Guide Geek brush past each other with little or no acknowledgment. You ask the Fried Freak what that was about. They know each other too well--they both need to expand their circle.
 
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
@@ -1541,7 +1561,8 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-snide-sneak-rule-fallthrough
 {--all}#testcase-run-vr-snide-sneak-rule-fallthrough
-The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgement.
+The Snide Sneak and the Fried Freak brush past each other with little or no acknowledgment.
+!what that was about
 
 @hfull
 #+testcase-values-from-number-of-spied-speak-cried-creek-is-5510
@@ -1567,7 +1588,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-meek-mooter-rule-fallthrough
 {--all}#testcase-run-vr-meek-mooter-rule-fallthrough
-What do you know? The Meek Mooter and Snide Sneak seem to be opposites, yet they fill in each other's holes, personality-wise.
+The Snide Sneak and Meek Mooter view each other suspiciously at first. The Snide Sneak tries to show who's boss, but the Meek Mooter deflects surprisingly effectively. The Snide Sneak laughs. They shake hands. They'll be sticking together.
 /^\[NOTE: you can say BYE
 /^\[NOTE: if you wish to make shortcuts, you can use the command SWEET SWAP, which will automatically pull over the appropriate friend pair to solve a puzzle, provided you've gotten them together previously.
 /^\[Your score just went up by one point.
@@ -1622,7 +1643,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-chic-shooter-rule-fallthrough
 {--all}#testcase-run-vr-chic-shooter-rule-fallthrough
-The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgement.
+The Chic Shooter and the Weak Wooter brush past each other with little or no acknowledgment.
 
 @hfull
 #+testcase-values-from-number-of-recruiter-is-2656
@@ -2694,6 +2715,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-yall-yank-rule-fallthrough
 {--all}#testcase-run-vr-yall-yank-rule-fallthrough
+{--all}#testcase-run-vr-yall-yank-rule-default
 The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.
 
 @rej
@@ -2707,6 +2729,8 @@ You've already pulled out the tall tank(s).
 You can only go back west or east.
 
 @hfull
+#testcase-run-vr-write-right-rave-rule-fallthrough@
+#testcase-run-vr-yall-yank-rule-if-sco-paul-panks-is-false@
 #+testcase-values-from-number-of-tall-tanks-is-2704
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -3240,7 +3264,7 @@ No pie ambushes anyone, for better or worse.
 >proud prize
 Well, that's what you get if you figure what to do here.
 \\
-#testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
+#+testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
 >proud pries
 Well, that's what you get if you figure what to do here.
 \\
@@ -3960,7 +3984,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-grew-gruff-rule-fallthrough
 {--all}#testcase-run-vr-grew-gruff-rule-default
-You toss aside a chunk of useless sentiment. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
+You toss aside a chunk of useless sentiment. The Guide Geek and Week Wooter each help in their own way when needed, one to restrict you from going too far, the other to say to trust your gut. It's certainly sad a tragedy may have happened here, but ... whoever's gone is gone. They'd want someone to make use of whatever supplies they left behind.
 
 @rej
 #testcase-check-vc-grew-gruff-rule-if-sco-grew-gruff-is-true
@@ -4343,6 +4367,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >shot sheaf
 You look around for papers, but there are no more.
 
+@hom
+#testcase-homonym-detail-vh-rot-reef-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-rot-reef-rule-rot
+>rot reef
+Sort of, but we want to make the place better, here.
+
 >wrought reef
 by one point
 
@@ -4402,7 +4432,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-done-dish-rule-fallthrough
 {--all}#testcase-run-vr-done-dish-rule-default
-You lay the stew stuff and the salad sent down in the shallowest part of the water. They both float. The fish starts flopping under and over them. Some sand bubbles up from the bottom to find a bowl. And--well, it's perfect for carrying the done dish! A very bold bowl, indeed.
+You lay the stew stuff and the salad sent down in the shallowest part of the water. As you do, you worry--what if the stew stuff contains CHUNKS OF FISH?
 
 @ha
 #testcase-ha-half-table-of-verb-checks-65-fill
@@ -4487,7 +4517,7 @@ Things are weighty enough here.
 @rej
 #testcase-check-vc-will-won-rule-if-sco-fill-fun-is-false
 >will won
-Winning is cool and all, you guess, but you're in no position to enjoy it. You'd just worry you'd go back to losing soon enough.
+You try to muster up the will to win. But you want more than winning. You want enjoyment and camaraderie and happiness. Without that, winning is hollow. So you need something first, or you may just give up and go back to losing.
 \\
 #testcase-check-vc-ill-un-rule-if-sco-fill-fun-is-false
 >illun
@@ -5544,7 +5574,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-using-you-rule-fallthrough
 {--all}#testcase-run-vr-using-you-rule-default
-You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. He nods in appreciation. There is no need to point out when and how he has been wrong. He will figure that himself.
+You break down some harsh truths to Lou without hopefully being too stark. You've had people you thought were just giving helpful advice, or who negged you that you should be grateful they strung you along, and years later you realized they did nothing for you. Lou nods in appreciation. There is no need to point out when and how Lou has been wrong. That is for personal reflection.
 Well, that was pretty life-affirming. Lou feels a bit better, but you need to do more.
 
 @rej
@@ -5563,7 +5593,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-boozing-boo-rule-fallthrough
 {--all}#testcase-run-vr-boozing-boo-rule-default
-You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life, because he has more to experience than that.
+You explain that boozing is just not the way to go. The drunk life is just not like those silly alcohol commercials and music videos! Lou argues that it gets close, maybe, sort of, but you are prepared. Perhaps Lou is not cut out for the drunk life! What other experiences might Lou wish to explore.
 Lou nods at the different perspectives you provided but is unable to integrate them. Maybe you can help!
 
 @rej
@@ -5887,7 +5917,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-failing-phil-rule-fallthrough
 {--all}#testcase-run-vr-failing-phil-rule-default
-Shortly, someone who must be Failing Phil drops by. He touches the cold coal, and both seem to glow as a result. He thanks you.
+Shortly, someone who must be Failing Phil drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Failing Phil otherwise, even addressing some of your own beefs with Tully. You chat a while. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and asks you if he may touch it. Both seem to glow as a result. He thanks you.
 
 >wailing will
 by one point
@@ -5895,7 +5925,7 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-wailing-will-rule-fallthrough
 {--all}#testcase-run-vr-wailing-will-rule-default
-Shortly, someone who must be Wailing Will drops by. He has a fruitful conversation with the sold soul, and both look happier for it.
+Shortly, someone who must be Wailing Will drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Wailing Will otherwise, even addressing some of your own beefs with Tully. You chat a while. He mentions how he used to be cheerful, but Tully somehow found simple ways to get under his skin. He knew he complained too much, and he could have stopped complaining if he really tried. He sees the sold soul and apologizes: "I'm sure you have it even worse." The sold soul nods. Perhaps. But that doesn't matter. It's not about comparisons. An enlightening conversation follows, and you are all the better for it. Wailing Will waves and walks away.
 
 >bailing bill
 by one point
@@ -5903,7 +5933,8 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-bailing-bill-rule-fallthrough
 {--all}#testcase-run-vr-bailing-bill-rule-default
-Shortly, someone who must be Bailing Bill drops by. He touches the bold bowl and feels recharged. Then he thanks you.
+Shortly, someone who must be Bailing Bill drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Bailing Bill otherwise, even addressing some of your own beefs with Tully. You chat a while. He expresses guilt over fleeing, not just when Tully mocked him, but his friends, and he could have said something but didn't. He touches the bold bowl, which vibrates in his hands. "I have more to say now, when I need to." Then he thanks you and walks away.
+The mailing mill retracts into the ground. You've probably found all you could from it--makes sense, three people, three hole items.
 
 @rej
 #testcase-check-vc-bailing-bill-rule-if-sco-bailing-bill-is-true
@@ -6465,7 +6496,7 @@ by one point
 {--rej}#testcase-check-vc-bam-bye-rule-fallthrough
 {--all}#testcase-run-vr-bam-bye-rule-default
 You dither between showing too much mercy and too little. Then you think. Tully's had their fun. You wonder if you can just dismiss people like that. Are you really that unsocial? Or antisocial?
-Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time for them to go.
+Of course not. You've brought three pairs of friends together. And at the end, you brought relief to three people Tully insulted. They've caused enough annoyance. It's time to go. You don't even have to mention Tully's silly mind games that brought you here.
 
 @min
 # I don't understand what's going on here, but this won't show the final command for MIN, even though it does so for other commands.

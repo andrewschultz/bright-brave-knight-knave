@@ -261,6 +261,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >yall yank
 by one point
 
+#testcase-run-vr-write-right-rave-rule-fallthrough@
+#testcase-run-vr-yall-yank-rule-if-sco-paul-panks-is-false@
 #+testcase-values-from-number-of-tall-tanks-is-2704
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)

@@ -557,7 +557,6 @@ The Chic Shooter and Fried Freak hang together here, chatting with each other bu
 
 >chic shooter
 You call the Chic Shooter, who appears with their friend, the Fried Freak.
->chic shooter
 >fried freak
 But the Fried Freak is already here!
 >chic shooter
@@ -573,6 +572,8 @@ But the Meek Mooter is already here!
 >snide sneak
 But the Snide Sneak is already here!
 >undo
+>undo
+>undo
 
 >weak wooter
 You call the Weak Wooter, who appears with their friend, the Guide Geek.
@@ -580,6 +581,8 @@ You call the Weak Wooter, who appears with their friend, the Guide Geek.
 But the Weak Wooter is already here!
 >guide geek
 But the Guide Geek is already here!
+>undo
+>undo
 >undo
 
 >w
