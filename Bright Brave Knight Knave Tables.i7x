@@ -146,7 +146,7 @@ a goodrhyme rule (this is the vc-jack-gist rule):
 
 this is the vr-jack-gist rule:
 	now sco-jack-gist is true;
-	say "Wow! You figured what to do. Now instead of typing [b]X LIST[r], you can just type [b]X[r] or even [b]I[r].";
+	say "A good [this-game-noi] uses shortcuts whenever they don't cut corners. No point getting exhausted by trivia! With a bit of meta-reasoning, you equate [b]X[r] with [b]X LIST[r].";
 
 a goodrhyme rule (this is the vc-eyeing-eying-ease rule):
 	if sco-eyeing-eying-ease is true:

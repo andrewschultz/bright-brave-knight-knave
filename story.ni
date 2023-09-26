@@ -236,7 +236,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[else]Trite Tully[
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You can also go back [b]DOWN[r] to White Wave."
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You [if bool-brew-available is true]also uncovered a passage inside to a bar, or you [end if]can also go back [b]DOWN[r] to White Wave."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -244,11 +244,11 @@ from-number of bass bath is 2704. to-number of bass bath is 2704.
 
 after printing the locale description for Bass Bath:
 	if bool-hill-available is false and player has mood mapper:
-		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up!";
+		say "The mood mapper beeps. Apparently there was one path you did not calculate. It's hidden ... and it leads up quite a ways! It's a bit daunting, but you do sort of want a preview.";
 		now bool-hill-available is true;
 		open-psg up and hailing hill;
 	if bool-brew-available is false and hub-expand-score is 3:
-		say "Wait! What's this? The mood mapper beeps once again! Then, surprisingly, it vaporizes! A passage you hadn't noticed before! You can go inside to what looks like a bar! Perhaps someone is really bummed there, though.";
+		say "Wait! What's this? The mood mapper beeps once again and then suddenly vaporizes![paragraph break]All your mass math, and you didn't quite see there could be one more passage. But it seems so clear now. Why, if you just walk that-a-way, there's some sort of depressing bar.";
 		moot mood mapper;
 		now bool-brew-available is true;
 		open-psg inside and Bruising Brew;
@@ -280,7 +280,7 @@ to say rut-2:
 	if sco-what-whoah is true:
 		say ", and [if recroom is unvisited]with a careful look, you see a passage north, too[else]you can go back north to the recruiter[end if]. And";
 	 else:
-		say "Well,";
+		say ". Well,";
 	say " there's always back east to Pass Path"
 
 check going west in Rut Row:
@@ -376,6 +376,8 @@ the Weak Wooter is a crooty eeker. description is "Very earnest, but not very lo
 book spied speak cried creek
 
 Spied Speak Cried Creek is west of recroom. it is in Plying Please. "It would be lovely to wander around here, but any direction other than back east to the Recruiter, and you might get lost.". printed name is "Spied-Speak-Cried Creek".
+
+guess-table of cried creek is the table of cried creek guesses.
 
 from-number of spied speak cried creek is 5510. to-number of spied speak cried creek is 11070.
 
@@ -527,12 +529,6 @@ guess-table of clashing cord is the table of clashing cord guesses.
 
 from-number of clashing cord is 2904. to-number of clashing cord is 2905.
 
-chapter slashing sword
-
-the slashing sword is a trystitem. vaguedesc is "a weapon, probably for defense". description is "The slashing sword feels right for you. You sense it should be used for defense, not offense."
-
-guess-table of slashing sword is the table of clashing cord guesses.
-
 volume Trying Trees (south)
 
 book Treed Track
@@ -588,12 +584,6 @@ guess-table of sour slate is the table of sour slate guesses.
 
 from-number of sour slate is 2705. to-number of sour slate is 2755.
 
-chapter power plate
-
-the power plate is a trystitem. description is "Surprisingly lightweight but sturdy armor.". vaguedesc is "replacement armor".
-
-guess-table of power plate is table of sour slate guesses.
-
 book Knell Nook
 
 Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [knell-txt]."
@@ -641,10 +631,6 @@ from-number of ardor elm is 2753. to-number of ardor elm is 2804.
 to say elm-status:
 	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
 
-chapter harder helm
-
-the harder helm is a trystitem. description is "So lightweight, you don't even feel it on your head.". vaguedesc is "replacement head protection".
-
 book Lane Lax
 
 Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]Oh! There's a broad brash clod clash going on here that you probably need to break up, some way[end if].[paragraph break]Of course, you can always just go back west, too."
@@ -665,10 +651,6 @@ The broad brash clod clash is talktoable scenery. "Sheesh. A bunch of clods. Lou
 chapter odd ash
 
 the odd ash is a thing. description is "It's bound together by some sort of translucent gelatinous ball that's surprisingly sturdy. You wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
-
-chapter pain packs
-
-the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "emergency healing stuff".
 
 book Ow'ed Eyes / Crowd Cries
 
@@ -720,11 +702,35 @@ guess-table of Learning Lou is the table of spurning spew guesses.
 
 from-number of turning to learning lou is 5755. to-number of turning to learning lou is 2904.
 
+volume defining the tryst items
+
+[I would normally do this in the rooms where you find them, but I want them in order for the TTLL]
+
+chapter power plate
+
+the power plate is a trystitem. description is "Surprisingly lightweight but sturdy armor.". vaguedesc is "replacement armor".
+
+guess-table of power plate is table of sour slate guesses.
+
+chapter harder helm
+
+the harder helm is a trystitem. description is "So lightweight, you don't even feel it on your head.". vaguedesc is "replacement head protection".
+
+chapter slashing sword
+
+the slashing sword is a trystitem. vaguedesc is "a replacement weapon". description is "The slashing sword feels right for you. You sense it should be used for defense, not offense."
+
+guess-table of slashing sword is the table of clashing cord guesses.
+
 chapter spurning spew
 
 Spurning Spew is a proper-named trystitem. description is "It's the book that Lou gave you. Man, it's pretty thick. It could help you defend yourself in more ways than one.". vaguedesc is "a replacement shield".
 
 guess-table of spurning spew is the table of spurning spew guesses.
+
+chapter pain packs
+
+the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "bandages for emergencies".
 
 volume miscellaneous eeker manipulation
 
