@@ -185,7 +185,7 @@ a bold bowl is a holeitem. "It's very round and sturdy, yet as you inspect it, y
 
 section sold soul
 
-a sold soul is a holeitem. description is "So ethereal. You can see through it, sort of. It looks exhausted, searching for a final resting place."
+a sold soul is a talktoable holeitem. description is "So ethereal. You can see through it, sort of. It looks exhausted, searching for a final resting place."
 
 chapter hole finding items
 
@@ -211,7 +211,7 @@ after printing the locale description for white wave:
 
 chapter Trite Tully
 
-Trite Tully is a person. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]". description is "Trite Tully sneers at you. You're nice and all, but Tully is DYNAMIC, man, not bothering with boring stuffy stuff like basic decency."
+Trite Tully is a talktoable rhymable. "[if tully-score is 2]So it's come to this. You need to figure out what to do with a (the?) Sham, Shy, the shame-artist formally known as Trite Tully. Mercy? Opprobrium? Split the difference?[else]Trite Tully stands here, [tulstill]looking confident and dismissive.[end if]". description is "Trite Tully sneers at you. You're nice and all, but Tully is DYNAMIC, man, not bothering with boring stuffy stuff like basic decency."
 
 from-number of trite tully is 2755. to-number of trite tully is 5610.
 
@@ -251,7 +251,7 @@ from-number of hailing hill is 2854. to-number of hailing hill is 5658.
 
 chapter mailing mill
 
-the mailing mill is scenery. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
+the mailing mill is talktoable scenery. "You can probably just type the name of whomever you want to contact, and the mailing mill will do the rest."
 
 from-number of mailing mill is 2854. to-number of mailing mill is 8562.
 
@@ -304,7 +304,7 @@ chapter coughin coy boffin boy
 
 chapter the kid
 
-the coughin coy boffin boy is a rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words.". description is "Terrified and meek and small. Maybe you can do him a kindness.". printed name is "coughin['] coy boffin boy".
+the coughin coy boffin boy is a talktoable rhymable. "The coughin['] coy boffin boy continues to shuffle around here, mistrusting, yet wanting to trust you, with the right kind words.". description is "Terrified and meek and small. Maybe you can do him a kindness.". printed name is "coughin['] coy boffin boy".
 
 understand "kid" as boffin boy when boffin boy is in slid slum.
 
@@ -428,7 +428,7 @@ check entering yucky yacht:
 
 chapter sassed sort
 
-the Sassed Sort is a person. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if].". description is "Slightly disheveled, but peaceful. They seem to sense you're more considerate than the usual clientele."
+the Sassed Sort is a talktoable rhymable. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if].". description is "Slightly disheveled, but peaceful. They seem to sense you're more considerate than the usual clientele."
 
 from-number of sassed sort is 2804. to-number of sassed sort is 8213.
 
@@ -492,7 +492,7 @@ from-number of slime slowed rime road is 5460. to-number of slime slowed rime ro
 
 chapter pallid pent valid vent
 
-the pallid pent valid vent is a rhymable in Passed Port. it is scenery. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already."
+the pallid pent valid vent is a rhymable in Passed Port. it is scenery and talktoable. "There's some air flow here. It probably isn't toxic, or if it was, it would've killed you already.".
 
 from-number of pallid pent valid vent is 5558. to-number of pallid pent valid vent is 2755.
 
@@ -649,7 +649,7 @@ check going in Lane Lax:
 
 chapter broad brash clod clash
 
-The broad brash clod clash is scenery. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+The broad brash clod clash is talktoable scenery. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
 
 chapter odd ash
 
@@ -657,13 +657,13 @@ the odd ash is a thing. description is "It's bound together by some sort of tran
 
 chapter pain packs
 
-the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "something to heal you if you get a scratch".
+the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "emergency healing stuff".
 
 book Ow'ed Eyes / Crowd Cries
 
 OECC is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.". printed name is "Ow'ed Eyes, Crowd Cries".
 
-the crowd cries are scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC. "The crowd cries go on and on, accompanied by ow'ed eyes, where some people rub them in fake crying, mocking the straw men they attack, and others claim they are brought to tears by those who disagree with them in any measure."
+the crowd cries are talktoable scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC. "The crowd cries go on and on, accompanied by ow'ed eyes, where some people rub them in fake crying, mocking the straw men they attack, and others claim they are brought to tears by those who disagree with them in any measure."
 
 from-number of crowd cries is 5459. to-number of crowd cries is 2754.
 
@@ -681,7 +681,7 @@ from-number of thought thief fought fief is 5659. to-number of thought thief fou
 
 chapter one wish fun fish
 
-there is a rhymable called the one wish fun fish. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
+there is a rhymable called the one wish fun fish. it is talktoable. "A one-wish fun fish blups about in one of the watery tanks here. It looks intelligently at you, as if expecting you to ask for something. Maybe you can guess what.". description is "It blups back at you wordlessly.". printed name is "one-wish fun fish".
 
 guess-table of wish fun fish is the table of one wish fun fish guesses.
 
@@ -697,13 +697,13 @@ from-number of bruising brew is 2904. to-number of bruising brew is 5606.
 
 chapter the two faces of Lou (not-Christie)
 
-Losing Lou is a person in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? They introduces themselves as Losing Lou and seem bummed about many things[or]Losing Lou sits here, pensively--well, hoping to look pensive, at any rate[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
+Losing Lou is a talktoable rhymable in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? They introduces themselves as Losing Lou and seem bummed about many things[or]Losing Lou sits here, pensively--well, hoping to look pensive, at any rate[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
 from-number of losing lou is 2803. to-number of losing lou is 5606.
 
 section learning lou
 
-Turning to Learning Lou is a person. "Turning-to-Learning Lou stands here pensively. Lou is still looking for a name for that brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge you bestowed, even if it isn't profound. Lou just needs insight into that book title, now!" [more bytes saved this way]
+Turning to Learning Lou is a talktoable rhymable. "Turning-to-Learning Lou stands here pensively. Lou is still looking for a name for that brilliant book about coping. What could it be?". description is "Lou seems happy with whatever new knowledge you bestowed, even if it isn't profound. Lou just needs insight into that book title, now!" [more bytes saved this way]
 
 guess-table of Learning Lou is the table of spurning spew guesses.
 

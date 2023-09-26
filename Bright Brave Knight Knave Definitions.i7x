@@ -10,6 +10,16 @@ report examining a thing (called th):
 	now th is examined;
 	continue the action;
 
+book talkable
+
+[this is for a general T]
+
+a thing can be talktoable. a thing is usually not talktoable.
+
+after doing something with a talktoable thing:
+	set-all noun;
+	continue the action;
+
 book types
 
 to say bkn: say "bright brave knight/knave"
@@ -77,7 +87,7 @@ to decide which number is help-index:
 	if number of eekers in location of player is 0, decide on 0;
 	decide on (matchnum of random eeker in location of player);
 
-an eeker is a kind of person. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant.
+an eeker is a kind of rhymable. an eeker can be dormant, active, followish, postponed or finished. an eeker is usually dormant. an eeker is usually talktoable.
 
 an eeker can be creeky or crooty. an eeker is usually creeky.
 

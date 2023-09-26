@@ -184,6 +184,7 @@ this is the vr-fight-fave rule:
 	now sco-fight-fave is true;
 	say "You are ready to fight! The fave, Trite Tully, appears. Boy, is Tully unashamedly trite! But the deal is, Tully's so trite, yet people like you can't deal with Tully easily, which says something about you. Right?";
 	move trite tully to White Wave;
+	set-all trite tully;
 	now cur-max-bonus is cur-bonus;
 	if sco-write-right-rave is false, increase cur-max-bonus by 2;
 	if sco-jack-gist is false, increase cur-max-bonus by 1;
@@ -259,6 +260,7 @@ this is the vr-hid-hum rule:
 	now sco-hid-hum is true;
 	say "You figure there must be something here, and you are right ... there's a kid. And not just any kid! A coughin['] coy boffin boy! They seem to be holding something behind their back. They don't trust you yet. Who would, in such an urban hellscape?";
 	move boffin boy to Slum Slid;
+	set-all boffin boy;
 	now to-number of slid slum is 2654;
 
 a goodrhyme rule (this is the vc-kid-come rule):
@@ -455,6 +457,7 @@ this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
 	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
+	set-all Sassed Sort;
 	dismiss-geek-wooter;
 	declue yucky yacht;
 
@@ -705,6 +708,7 @@ this is the vr-main-max rule:
 	now sco-main-max is true;
 	say "The train tracks become shinier and stronger and branch a bit more. You can really get around now. But there are problems. Big problems! Other people can too. In fact, not the best sort. A broad brash clod clash breaks out!";
 	move broad brash clod clash to lane lax;
+	set-all clod clash;
 	open-psg north and OECC;
 	open-psg south and Thought Thief Fought Fief;
 	decrease to-number of lane lax by 2703;
@@ -797,7 +801,8 @@ this is the vh-rot-reef rule:
 this is the vr-wrought-reef rule:
 	now sco-wrought-reef is true;
 	say "You hear a loud crumbling noise. The landscape changes significantly! You see a fish in the reef, too, and from some sort of telepathic communication, you know it is a one-wish-fun-fish, but it's a very specific wish, and you need to bring the right supplies.";
-	move wish fun fish to Fought Fief;
+	move fun fish to Fought Fief;
+	set-all fun fish;
 	declue-here;
 	print-the-loc;
 
@@ -1237,6 +1242,7 @@ this is the vr-mailing-mill rule:
 	say "Pop! A mailing mill bursts from the ground! It doesn't have a directory, though, but it seems like you can just proceed as before to correspond with anyone who might want to.";
 	now to-number of hailing hill is 8562;
 	move mailing mill to hailing hill;
+	set pronoun it to mailing mill;
 
 a goodrhyme rule (this is the vc-bailing-bill rule):
 	abide by the can-mail rule;
@@ -1555,6 +1561,7 @@ to fully-dismiss (ee - an eeker):
 	if eekers-done:
 		say "[line break]But they also realize something else--you've helped everyone you could have fun and adventure! They thought the recruiting was a scam. You proved it wrong, and surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. They know this one tree that may help. It always seemed special.[end if]";
 		move ardor elm to cried creek;
+		set pronoun it to ardor elm;
 
 to dismiss-sneak-mooter: if sneak-mooter-points is 3, fully-dismiss snide sneak;
 
@@ -1585,6 +1592,7 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck 
 to bring-over (ee - an eeker):
 	now ee is followish;
 	move ee to location of player;
+	set-all ee;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
 	abide by the eeker postcheck rule for ee;
