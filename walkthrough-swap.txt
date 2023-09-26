@@ -1,0 +1,431 @@
+This is a walkthrough for Bright Brave Knight Knave that uses the SWAP command. It neglects bonus points.
+
+Because walkthroughs can be spoilers, I thought I'd offer some general hints up front about what to look for and how to use clues. There is HINT (item) or HINT to see if you can do anything in a room. You also may wish to mess about with the leet learner. This is strictly a walkthrough, so I won't explain it here, but if you use the learner before trying a puzzle, you'll see differences and be able to guess what they mean. A brief overview: the leet learner can scan both areas (LL) or items (LL THING).
+
+You can choose whatever path you want in the introduction, though there's a chance for a bonus point.
+
+Two things about good guesses: sometimes, you will be able to switch the word order. The game will always either allow this or tell you you are very close. Also, getting the lurking lump requires five good guesses. Each additional charge requires more: seven, nine, etc. And homonyms only count once, so DONT DEW and DONT DO don't give extra.
+
+You start by the White Wave. You need to find some sort of landmark.
+
+> KITE CAVE (1)
+
+Okay, we created a hold hole. Let's examine it!
+
+> X HOLE
+
+Figuring out what belongs in the hole will give you a bonus point. There are three items. Whether or not you do this, you'll find what you need. Bonus points are strictly for your own amusement.
+
+Incidentally, there's also a joke death here. You can undo it quickly, but it's also relatively easy to guess. It is left as an exercise to the reader.
+
+The track-tryst lack list also has a bonus point. It allows you to see it with X. It may be American slang.
+
+There's also another bonus point, sort of, but you may want to wait for it. You'll see why in a bit.
+
+> D
+
+Note that you can go down to and from the Bass Bath to return to the White Wave. In addition, GT is a useful command, but we want to conform to the map, here.
+
+However, right now, there seem to be no new ways through the bass bath!
+
+> PASS PATH (2)
+
+Now you're unsure where things lead! You need to do some reasoning.
+
+> MASS MATH (3)
+
+Yay! Freedom and possibilities, but not too many! You can get around a bit more, now. Though you need to go west to take care of the other directions.
+
+> W
+
+Rut Row has nothing worth seeing, not even an exit to move on, until it does. The Shut Show is pretty useless. But you may find something surprising, if you look right.
+
+> WHAT WHOAH (4)
+
+> W
+
+Okay, in the slid slum, you have stuff to do. You can't re-energize it totally, but you can figure a few things out.
+
+> HID HUM (5)
+
+A young boy looks guilty!
+
+> KID COME (6)
+
+Yes, the coughin coy boffin boy is a kid, and you may wish to address him that way. *fix checker to nail apostrophe
+
+> RID RUM (7)
+
+Hooray! That helps the kid out. Now you can go inside and find something useful.
+
+> IN
+
+> MOOD MAPPER (8)
+
+Again, there's a bonus point here. You can, in fact, get it any time you have the mood mapper. You don't want to be stuffy, but some things need to be curbed.
+
+Since we're at it, now is a good time to get another bonus point. Well, actually, two.
+
+> OUT
+
+> E
+
+> N
+
+Hey, wait! Recruiter is only one word! What's going on here? Oh ... you have to split it into two words.
+
+There are three people to recruit, and they can be done in any order. But the thing is, once you bring someone out, they'll be disappointed if it's for no reason. Or if they dislike the person they meet, they'll both be bumed and leave you. But you can always call them back.
+
+> W
+
+At Cried Creek, you sense there may be people hanging around, too. But first, you need to make it so they want to go somewhere!
+
+> STRIDE STREAK (9)
+
+What we're going to do here is discover everyone and pair them off.
+
+> SNIDE SNEAK (10)
+
+> E
+
+> MEEK MOOTER (11)
+
+What do you know? These two people make friends! Odd, but true.
+
+> CHIC SHOOTER (12)
+
+> W
+
+> FRIED FREAK (13)
+
+> GUIDE GEEK (14)
+
+> E
+
+> WEAK WOOTER (15)
+
+> SWAP SWEET
+
+This allows you to roam around and not worry who your current friends are.
+
+All right! We're ready to tackle what's beyond Pass Path, now. There's a certain symmetry to the puzzles. You need a set of pals to open the areas to the north, south and east.
+
+> S
+
+> E
+
+> N
+
+Bosh, blanks! Can we get more?
+
+> POSH PLANKS (16)
+
+A yucky yacht!
+
+> PLUCKY PLOT (17)
+
+Your friends help you, and you don't need them any more for here. We could go farther, but that'd waste a few turns. You'll need them later, but for now, let's open up the map.
+
+> S
+
+> E
+
+Okay, tall tank(s).
+
+> YALL YANK (18)
+
+Again, we could go on. We have the option to get a bonus point here, too. It's a tribute to someone who wrote a lot of IFComp games before I did.
+
+> W
+
+> S
+
+> NEED KNACK (19)
+
+You've used all three pairs of friends to open up passages. Now we look into the game's symmetry. Each pair of friends is needed to solve something beyond the initial puzzle in one direction from Pass Path.
+
+But there's something cutesy and silly we can do first to get a bonus point here, and we have places we can explore, too.
+
+Now you have a feeling you are just feeling your way around by rote.
+
+> HEED HACK (20)
+
+Oh, and what else might you find around vegetation?
+
+> SEED SACK (21)
+
+This will come in handy later.
+
+> N
+
+> E
+
+> E
+
+> N
+
+> TRAIN TRACKS (22)
+
+> MAIN MAX (23)
+
+> PAIN PACKS (24)
+
+> N
+
+There are actually three solutions for this next one, though one may be more intuitive.
+
+> WOWED WHYS (25)
+
+> LOUD LIES (26)
+
+> S
+
+> W
+
+> W
+
+> N
+
+Now you can ask the Sassed Sort to go places. Guess where they might want to go.
+
+> FAST FORT (27)
+
+Oh! A book! Not a very scholarly one. Let's make it into something more useful. It's not exactly pure art, either.
+
+> GLUED GLASS (28)
+
+This place is done. Let's move on.
+
+> CAST COURT (29)
+
+More nonsense to make useful. Well, partially.
+
+> MURKY MAP (30)
+
+Ooh! The glass and map work together to help the Sassed Sort find somewhere new, if you just ask right.
+
+> PASSED PORT (31)
+
+More stuff to do here. That clashing cord is out of place, so let's make it a ...
+
+> SLASHING SWORD (32)
+
+Wait! This is a nonviolent game, right?
+
+Well, look at your inventory. Read the list. You have one of the five items you need. That'd be your weapon.
+
+> SALAD SCENT (33)
+
+One pair of friends leaves at this point. You've used them in each area. You may wonder why you haven't gotten a hold hole item yet, but each one requires items from two other areas that you need two different pairs of friends to get. So let's bring a new pair over and get our first hole item.
+
+Oh, before you leave, you can do something with the slime-slowed rhyme road for fun.
+
+> IN
+
+> S
+
+> S
+
+> W
+
+Your friends help you a bit here.
+
+> GREW GRUFF (34)
+
+> STEW STUFF (35)
+
+> NEW NUFF (36)
+
+> E
+
+> N
+
+> E
+
+> E
+
+You get sly with a little help from your friends. There's an alternate solution here, too.
+
+> TROD TRASH (37)
+
+Okay, only one pair of friends left to adventure with.
+
+> S
+
+> BOUGHT BEEF (38)
+
+> BROUGHT BRIEF (39)
+
+> WROUGHT REEF (40)
+
+> DONE DISH (41)
+
+Hooray! A bold bowl! But now you are dumped somewhere odd. I'd like to point out now that there's one bonus point you could've gotten at any time in the story, but now that you've seen all the regions in the status bar, you can give a guess. Sighing Seas, Plying Please, etc.
+
+> FILL FUN (42)
+
+> WILL WON (43)
+
+Any direction exits now. Perhaps the bonus point is too much of an Americanism to require, but if you've ever heard that Run-DMC song, well, it just had to go in.
+
+> N
+
+And you're back where you were!
+
+> N
+
+> W
+
+> W
+
+> S
+
+> U
+
+> HACK HEIGHT (44)
+
+> SLACK SLIGHT (45)
+
+> QUACK QUITE (46)
+
+With the friends you have, you'll find the rack (right).
+
+> POWER PLATE (47)
+
+Oh, and a bonus point, if you want. This is a three-of-four room, with the sour slate appearing after your first three successful rhymes.
+
+> D
+
+> N
+
+> N
+
+> PASSED PORT
+
+> QUASH QUICK (48)
+
+> SLOSH SLICK (49)
+
+And now you get the posh pick.
+
+> TIME TOAD (50)
+
+Let's get the first odd point out of the way, for variety's sake. This is a two out of three, then advance, room.
+
+> CANDOR COVE (51)
+
+> GRANDER GROVE (52)
+
+And now just go any direction to leave...
+
+> N
+
+Now for the final bit.
+
+> IN
+
+> S
+
+> S
+
+> E
+
+You have the preparatory items for the ritual.
+
+> BELL BOOK (53)
+
+> COVERING CANDLE (54)
+
+Another 2-of-3 area.
+
+> STOUT STUFF (55)
+
+> FLOUT FLUFF (56)
+
+> N
+
+Okay, we're doing pretty well ... but we're still missing three items we need for the final fight! Fortunately, they're in passages we haven't visited, for the most part. Wait. There's one we need to revisit!
+
+> W
+
+> N
+
+> W
+
+> N
+
+> W
+
+What's this ardor elm?
+
+> HARDER HELM (57)
+
+Back to the center.
+
+> E
+
+> S
+
+> E
+
+We haven't gone inside yet.
+
+> IN
+
+Poor Lou.
+
+> USING YOU (58)
+
+> BOOZING BOO (59)
+
+> FUSING PHEW (60)
+
+Lou's book will be useful, if not for the advice, but because it's thick enough to be a shield. Just find the right title...
+
+> SPURNING SPEW (61)
+
+> OUT
+
+Let's tackle the hill!
+
+> U
+
+First climb up it...
+
+> SCALING SKILL (62)
+
+Then, solidarity with others frustrated...
+
+> AILING ILL (63)
+
+Now, to communicate more formally.
+
+> MAILING MILL (64)
+
+Now, to help specific individuals!
+
+> FAILING PHIL (65)
+
+> WAILING WILL (66)
+
+> BAILING BILL (67)
+
+> D
+
+And now to return to the start!
+
+> D
+
+> FIGHT FAVE (68)
+
+Good thing we had all that paraphernalia!
+
+> FRIGHTFULLY (69)
+
+> BRIGHT BULLY (70)
+
+Okay, a new form. We're not fooled ... or are we?
+
+There's an option to be too harsh, or not harsh enough. Let's take the middle road.
+
+> BAM BYE (71)
