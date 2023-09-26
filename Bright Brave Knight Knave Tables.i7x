@@ -131,11 +131,10 @@ a goodrhyme rule (this is the vc-kite-cave rule):
 
 this is the vr-kite-cave rule:
 	now sco-kite-cave is true;
-	say "You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.[paragraph break]The cave collapses. There's a passage down, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.[paragraph break]Oh, and wait! Something else to look at, too. It sprung free from the kite that went in the hole. A track-tryst lack list. You take it. Then you look at the hole again. Perhaps it is worth going [b]DOWN[r].";
+	say "Sometimes you don't find what you want until you're really looking for it. You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.[paragraph break]The cave collapses. There's a passage [b]DOWN[r], but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.";
 	move hold hole to white wave;
 	now Bass Bath is mapped below White Wave;
 	now White Wave is mapped below Bass Bath;
-	now player has track tryst lack list;
 	now to-number of white wave is 2754;
 
 a goodrhyme rule (this is the vc-jack-gist rule):

@@ -124,6 +124,9 @@ check going down in White Wave:
 	if sco-fight-fave is true, say "You can't shirk the final fight!" instead;
 	if sco-kite-cave is false, continue the action;
 	if hold hole is unexamined and number of preguessed holeitems < 3, say "You may wish to examine the hold hole you created first." instead;
+	if player does not have the leet learner:
+		say "Before going anywhere, you swipe the leet learner. Who knows when it might come in handy?";
+		now player has leet learner;
 
 chapter leet learner
 
@@ -164,6 +167,8 @@ after examining hold hole when lack list is off-stage:
 chapter track tryst lack list
 
 the track tryst lack list is a thing. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
+
+understand "note" as list.
 
 after examining lack list when sco-jack-gist is false:
 	say "You have a sneaking suspicion you could summarize the list with the right command, so you'd need just one letter to access it later and get a bonus point to boot. A suspicion snuck in there by me!";
