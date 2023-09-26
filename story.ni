@@ -905,6 +905,7 @@ book verbsing
 carry out verbsing:
 	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
 	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well.";
+	say "[line break][b]T [r] lets you talk to people or entities.";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
 
@@ -931,8 +932,26 @@ chapter ting
 ting is an action applying to thing.
 
 understand the command "t" as something new.
+understand the command "talk" as something new.
 
 understand "t [something]" as ting.
+understand "talk [something]" as ting.
+understand "talk to [something]" as ting.
+understand "t" as ting.
+understand "talk" as ting.
+understand "talk to" as ting.
+
+rule for supplying a missing noun when ting:
+	let ntlp be number of talktoable things in location of player;
+	if ntlp is 1:
+		now the noun is random talktoable thing in location of player;
+		say "([the noun]...)";
+		continue the action;
+	if ntlp is 0:
+		say "There's nobody or nothing here worth talking to.";
+	else:
+		say "You need to be more specific.";
+	reject the player's command;
 
 carry out ting:
 	if noun is the player, say "'Be back, Me! ... Mac?'" instead;
@@ -951,6 +970,7 @@ carry out ting:
 	if noun is crowd cries, say "Casual chat won't work. You need to be more forceful." instead;
 	if noun is sassed sort, say "The Sassed Sort does look a bit weary. Perhaps you should just point out where to go." instead; [north]
 	if noun is valid vent, say "You hear an old echo and think 'Hold, heck, oh.' But no gold gecko scrambles out, for better or worse." instead;
+	if noun is sold soul, say "You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit." instead;
 	if noun is trite tully, say "[if tully-score is 2]You just need to find the final phrase[else]Conversation won't change Tully's mind[end if]." instead; [finale]
 	say "Silence back." instead;
 	the rule succeeds;
