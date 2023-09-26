@@ -1400,6 +1400,10 @@ You don't want to be too much of a moral scold!
 #testcase-mistakes-table-of-recroom-guesses-seek-suitor
 >seek suitor
 Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together.
+\\
+#+testcase-mistakes-table-of-crude-crapper-guesses-dude-dapper
+>dude dapper
+You need companions who get stuff done, not stylish pals.
 
 @hfull
 #testcase-values-from-number-of-recruiter-is-2656
@@ -2762,6 +2766,71 @@ by one point
 \\
 >undo
 
+@mis
+#testcase-mistakes-table-of-tata-guesses-ball-bank-banks
+>ball bank
+You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room.
+\\
+#+testcase-mistakes-table-of-tata-guesses-ball-bank-banks
+>ball banks
+You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room.
+\\
+#testcase-mistakes-table-of-tata-guesses-crawl-crank-cranks
+>crawl crank
+There is no hidden mechanism under the tanks.
+\\
+#+testcase-mistakes-table-of-tata-guesses-crawl-crank-cranks
+>crawl cranks
+There is no hidden mechanism under the tanks.
+\\
+#testcase-mistakes-table-of-tata-guesses-drawl-drank-dranks
+>drawl drank
+You don't want to endorse alcohol in any way.
+\\
+#+testcase-mistakes-table-of-tata-guesses-drawl-drank-dranks
+>drawl dranks
+You don't want to endorse alcohol in any way.
+\\
+#testcase-mistakes-table-of-tata-guesses-gall-gank-ganks
+>gall gank
+You're a Bright Brave Knight Knave, not a thief.
+\\
+#+testcase-mistakes-table-of-tata-guesses-gall-gank-ganks
+>gall ganks
+You're a Bright Brave Knight Knave, not a thief.
+\\
+#testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
+>haul hank
+You sort of need to push the tanks out of the way. But first names aren't necessary.
+\\
+#+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
+>hall hanks
+You sort of need to push the tanks out of the way. But first names aren't necessary.
+\\
+#testcase-mistakes-table-of-tata-guesses-lol-loll-lank-lanks
+>lol lank
+A Bright Brave Knight Knave mocks the oppressively powerful, not body types.
+\\
+#+testcase-mistakes-table-of-tata-guesses-lol-loll-lank-lanks
+>loll lanks
+A Bright Brave Knight Knave mocks the oppressively powerful, not body types.
+\\
+#testcase-mistakes-table-of-tata-guesses-stall-stank-stanks
+>stall stank
+No, that's a few rooms to the west.
+\\
+#+testcase-mistakes-table-of-tata-guesses-stall-stank-stanks
+>stall stanks
+No, that's a few rooms to the west.
+\\
+#testcase-mistakes-table-of-tata-guesses-wall-wank-wanks
+>wall wank
+To steal from Futurama, this rhyme is technically correct: the best kind of correct!
+\\
+#+testcase-mistakes-table-of-tata-guesses-wall-wank-wanks
+>wall wanks
+To steal from Futurama, this rhyme is technically correct: the best kind of correct!
+
 >yall yank
 by one point
 
@@ -2790,6 +2859,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 >ll tanks
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@mis
+#+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
+>hall hank
+You sort of needed to push the tanks out of the way. But first names aren't necessary.
+\\
+#+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
+>haul hanks
+You sort of needed to push the tanks out of the way. But first names aren't necessary.
 
 @!min,gong,prong
 >paul panks
@@ -5578,6 +5656,10 @@ Trading alcohol for tobacco would just be a lateral move.
 #testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
 >rusing roo
 No sneaky kangaroo appears, which is probably for the better.
+\\
+#testcase-mistakes-table-of-bruising-brew-guesses-oozing-ooh
+>oozing ooh
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
 \\
 #+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
 >rusing rue

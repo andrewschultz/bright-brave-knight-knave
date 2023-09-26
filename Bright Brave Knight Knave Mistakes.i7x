@@ -35,6 +35,7 @@ table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "choosing"	"chew"	--	false	--	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
 "musing"	"mew"	--	false	--	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
+"oozing"	"ooh"	--	false	--	"You recall irksomely unctuous people. Or unctuously irksomely. Whichever."
 "rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
 
 table of cried creek guesses
@@ -54,7 +55,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
 "clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [this-game-noi]."
 "cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
-"dude"	"dapper"	--	false	--	"Yes, we all wind up here once a day, even well-dressed people."
+"dude"	"dapper"	--	false	--	"[if player is not in crapper]You need companions who get stuff done, not stylish pals[else]Yes, we all wind up here once a day, even well-dressed people[end if]."
 "food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
 "lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
 "rude"	"rapper"	--	false	--	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
@@ -129,6 +130,17 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "did"	"dumb"	--	false	--	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
 "mid"	"mum"	--	false	--	"You don't need parental support or quiet."
 "skid"	"scum"	--	false	--	"No. A good [this-game-noi] don't look down on people like that."
+
+table of tata guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"ball"	"bank|banks"	--	false	--	"You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room."
+"crawl"	"crank|cranks"	--	false	--	"There is no hidden mechanism under the tanks."
+"drawl"	"drank|dranks"	--	false	--	"You don't want to endorse alcohol in any way."
+"gall"	"gank|ganks"	--	false	--	"You're a [this-game-noi], not a thief."
+"hall|haul"	"hank|hanks"	--	false	--	"You sort of need[if sco-yall-yank is true]ed[end if] to push the tanks out of the way. But first names aren't necessary."
+"lol|loll"	"lank|lanks"	--	false	--	"A [this-game-noi] mocks the oppressively powerful, not body types."
+"stall"	"stank|stanks"	--	false	--	"No, that's a few rooms to the west."
+"wall"	"wank|wanks"	--	false	--	"To steal from Futurama, this rhyme is technically correct: the best kind of correct!"
 
 volume thing stuff
 

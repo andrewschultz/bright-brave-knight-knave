@@ -614,6 +614,8 @@ book Tall Tank(s)
 
 tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". understand "tata" as tata when debug-state is true. "You can go back west to Pass Path, [if sco-yall-yank is false]but a tall tank blocks the way east. It might be tanks. But perhaps it is easier to think: one tank at a time[else]and tall tanks you pushed aside allow passage east[end if]."
 
+guess-table of tata is the table of tata guesses.
+
 chapter tall tanks
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
