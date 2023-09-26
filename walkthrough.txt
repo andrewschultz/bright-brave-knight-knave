@@ -78,7 +78,7 @@ There are three people to recruit, and they can be done in any order. But the th
 
 > W
 
-At Cried Creek, you sense there may be people hanging around, too. But first, you need to make it so they wantto go somewhere!
+At Cried Creek, you sense there may be people hanging around, too. But first, you need to make it so they want to go somewhere!
 
 > STRIDE STREAK (9)
 
@@ -106,7 +106,7 @@ Oh no! Everybody departs, sort of.
 
 > FRIED FREAK
 
-Now we know two pairs, so we know the third. This gets us a shortcut with bonus points.
+Now we know two pairs, so we know the third. This gets us a shortcut with bonus points, if we are clever.
 
 > E
 
@@ -276,7 +276,7 @@ Oh, before you leave, you can do something with the slime-slowed rhyme road for 
 
 > S
 
-> U
+> W
 
 Your friends help you a bit here.
 
@@ -286,7 +286,7 @@ Your friends help you a bit here.
 
 > NEW NUFF (36)
 
-> D
+> E
 
 > N
 
@@ -328,6 +328,8 @@ And you're back where you were!
 
 > W
 
+> W
+
 > N
 
 > R 2
@@ -338,7 +340,7 @@ And you're back where you were!
 
 > S
 
-> W
+> U
 
 > HACK HEIGHT (44)
 
@@ -352,7 +354,7 @@ With the friends you have, you'll find the rack (right).
 
 Oh, and a bonus point, if you want. This is a three-of-four room, with the sour slate appearing after your first three successful rhymes.
 
-> E
+> D
 
 > N
 
