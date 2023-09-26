@@ -387,11 +387,14 @@ from-number of spied speak cried creek is 5510. to-number of spied speak cried c
 check going east in Cried Creek:
 	abide by the eeker-start-follow rule;
 
-after printing the locale description when number of leftbehind eekers > 0:
+after printing the locale description when lbe > 0:
 	if took-yacht is true or mrlp is Shying Sheez, continue the action;
-	let lbe be number of leftbehind eekers;
-	say "The [list of leftbehind eekers] follow[if lbe is 1]s[end if] you to [location of player][if player is in rut row and player was in recroom and lbe is 1] but looks backward longingly[end if].";
-	if number of leftbehind eekers is 1 and number of eekers in location of player is 1:
+	if player was in bass bath:
+		if player is in hailing hill or player is in bruising brew or player is in white wave:
+			say "You look behind and notice [the list of leftbehind eekers] staying back. Whatever needs to be done is for you alone.";
+			continue the action;
+	say "The [list of leftbehind eekers] follow[lbeplur] you to [location of player][if player is in rut row and player was in recroom and lbe is 1] but looks backward longingly[end if].";
+	if lbe is 1 and number of eekers in location of player is 1:
 		let rle be random leftbehind eeker;
 		follow the eeker matchups rule for rle;
 		continue the action;
@@ -787,7 +790,7 @@ for printing a locale paragraph about an eeker (called ee):
 	if number of eekers in location of player is 1:
 		say "The [ee] shuffles around here, seemingly glad to follow you, but also a bit lonely.";
 	else:
-		say "The [list of eekers in location of player] hang together here, chatting with each other but ready to help when needed.";
+		say "The [list of eekers in location of player] [if player is in bass bath and player was not in bass bath]wave to you, now you've come back[else]hang together here, chatting with each other but ready to help when needed[end if].";
 	now ee is mentioned;
 	now other-guy of ee is mentioned;
 

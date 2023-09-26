@@ -143,6 +143,10 @@ to decide whether eekers-done:
 	if number of finished eekers is 6, yes;
 	no;
 
+to decide which number is lbe: decide on number of leftbehind eekers;
+
+to say lbeplur: if lbe is 1, say "s";
+
 section tracking hole progress
 
 to decide which number is hole-done:
