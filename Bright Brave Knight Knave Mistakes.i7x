@@ -64,7 +64,7 @@ table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "choosing"	"chew"	--	false	--	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
 "musing"	"mew"	--	false	--	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
-"oozing"	"ooh"	--	false	--	"You recall irksomely unctuous people. Or unctuously irksomely. Whichever."
+"oozing"	"oo|ooh|ew|eww"	--	false	--	"You recall irksomely unctuous people. Or unctuously irksomely. Whichever."
 "rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
 
 table of cried creek guesses
@@ -373,8 +373,9 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"burning"	"boo"	--	false	--	"No, you need[edspew] something more positive."
-"churning"	"chew"	--	false	--	"No, you need[edspew] something less reflexive."
+"burning"	"boo"	--	false	--	"No, Lou need[edspew] something more positive."
+"churning"	"chew"	--	false	--	"No, Lou need[edspew] something less reflexive."
+"yearning"	"you"	--	false	--	"No, Lou need[edspew] something less overtly earnest."
 
 to say edspew: if sco-spurning-spew is true, say "ed"
 
@@ -406,6 +407,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "spam"	"spy"	sham-yet rule	false	--	"It's no secret that Tully spams their opinions."
 "tram"	"try"	sham-yet rule	false	--	"If there were a train to catch, you could send Tully on it. Alas, no."
 "wham"	"why"	sham-yet rule	false	--	"It's pointless to ask a troll why."
+"write|right"	"wooly"	--	false	--	"That could be construed as a compliment. Ruggedness and all."
 
 to say end-tough:
 	end the story saying "Struck, Strikes? Yuck, Yikes!";

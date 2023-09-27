@@ -537,6 +537,8 @@ chapter posh pick
 
 the posh pick is a rhymable in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It's initialed with the letters SoSo. Hmm."
 
+check taking posh pick when player does not have posh pick: say "[if pick-score is 1]Still b[else]B[end if]uried too deep. You'll have to do your thing [if pick-score is 1]again [end if]to take it out. Maybe with help." instead;
+
 guess-table of posh pick is the table of posh pick guesses.
 
 from-number of posh pick is 2704. to-number of posh pick is 5510.
@@ -732,7 +734,7 @@ from-number of bruising brew is 2904. to-number of bruising brew is 5606.
 
 chapter the two faces of Lou (not-Christie)
 
-Losing Lou is a talktoable rhymable in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? They introduces themselves as Losing Lou and seem bummed about many things[or]Losing Lou sits here, pensively--well, hoping to look pensive, at any rate[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
+Losing Lou is a talktoable rhymable in Bruising Brew. "[one of]Someone is slouched off in the corner, frowning. You wonder if you should introduce yourself. You wait a bit. Yes, why not? They introduce themselves as Losing Lou and seem bummed about many things[or]Losing Lou sits here, pensively--well, hoping to look pensive, at any rate[stopping].". description is "Very very frowny. You need to help cheer Lou up!".
 
 from-number of losing lou is 2803. to-number of losing lou is 5606.
 
@@ -979,7 +981,7 @@ report verbsing:
 			if XX is finished or XX is dormant, next;
 			let og be other-guy of XX;
 			if og is dormant, next;
-			say "You can also say [b]R [matchnum of XX][r] to resummon the [XX] and [og].";
+			say "You can also say [b]R [matchnum of XX][r] to recall the [XX] and [og].";
 
 book xyzzying
 
@@ -987,6 +989,13 @@ carry out xyzzying:
 	say "A mean note scribbled 'Too Marty Stu, Smarty,' with a caricature of you on it, floats down and goes POOF before you realize it isn't very gender-inclusive.";
 
 volume standard and action verbs
+
+chapter taking
+
+the BBKK generic take reject rule is listed instead of the the can't take scenery rule in the check taking rules.
+
+check taking (this is the BBKK generic take reject rule):
+	if noun is not lack list and noun is not leet learner and player does not carry noun, say "[b]TAKE[r], while a standard parser verb, isn't necessary here. Guessing the right commands dislodges what you need." instead;
 
 chapter ting
 
@@ -1084,6 +1093,8 @@ guess-table of Dander Dove is the table of Dander Dove guesses.
 book Rough Route
 
 Route Rough is a room in Shying Sheez. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+
+guess-table of route rough is the table of route rough guesses.
 
 from-number of route rough is 2755. to-number of route rough is 8163.
 
