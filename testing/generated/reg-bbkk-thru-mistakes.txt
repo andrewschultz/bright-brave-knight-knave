@@ -27,6 +27,42 @@ by one point
 
 >x hold hole
 
+#testcase-mistakes-table-of-lack-list-guesses-black-blissed
+>black blissed
+You wonder how you'd look in all black. Pretty neat.
+
+#testcase-mistakes-table-of-lack-list-guesses-hack-hissed
+>hack hissed
+You mentally deplore how you were pushed aside.
+
+#testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
+>mac mist
+You'd hate for this useful bit of paper to disappear into a mist.
+
+#+testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
+>mack missed
+You'd hate for this useful bit of paper to disappear into a mist.
+
+#testcase-mistakes-table-of-lack-list-guesses-pack-pissed
+>pack pissed
+Whoah! Guns aren't good if you're angry!
+
+#testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
+>rack wrist
+You vow to continue typing out good-guess rhymes until it hurts.
+
+#+testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
+>wrack wrist
+You vow to continue typing out good-guess rhymes until it hurts.
+
+#testcase-mistakes-table-of-lack-list-guesses-sack-cyst
+>sack cyst
+Your skin is not perfect. You'd love to wipe out something.
+
+#testcase-mistakes-table-of-lack-list-guesses-wack-wist
+>wack wist
+You recognize pining for the past might be too much.
+
 >x list
 
 >jack gist
@@ -380,6 +416,15 @@ by one point
 >fried freak
 by one point
 
+>gonear hill
+
+#testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
+>tailing til
+You don't need to follow anyone or ask them to follow. Those who want to, will.
+
+>undo
+>undo
+
 >snide sneak
 by one point
 
@@ -457,6 +502,18 @@ by one point
 #+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
 >bucky bought
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-mistakes-table-of-sassed-sort-guesses-blast-blort
+>blast blort
+You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!
+
+#testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
+>massed mort
+Not what you need now, death around the corner, for the ship or otherwise.
+
+#+testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
+>mast mort
+Not what you need now, death around the corner, for the ship or otherwise.
 
 >s
 >w
@@ -561,6 +618,90 @@ by one point
 >e
 
 >s
+
+#testcase-mistakes-table-of-treed-track-guesses-bead-back
+>bead back
+You don't need to drop things to get out of the forest.
+
+#testcase-mistakes-table-of-treed-track-guesses-bleed-black
+>bleed black
+That'd make you one of the bad guys, though, right?
+
+#testcase-mistakes-table-of-treed-track-guesses-breed-brack
+>breed brack
+No, you need the opposite of a brack, to bring things together.
+
+#testcase-mistakes-table-of-treed-track-guesses-creed-crack
+>creed crack
+You aren't looking to proselytize.
+
+#testcase-mistakes-table-of-treed-track-guesses-feed-faq
+>feed faq
+Now's not the time to worry about nourishment.
+
+#testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
+>fleed flak
+There is no flak to flee here.
+
+#+testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
+>fleed flack
+There is no flak to flee here.
+
+#testcase-mistakes-table-of-treed-track-guesses-freed-frack
+>freed frack
+Oh no! It's not Big Oil that needs freedom.
+
+#testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
+>lead lack
+You bemoan the lack of leadership, or a lede, whichever.
+
+#+testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
+>lede lack
+You bemoan the lack of leadership, or a lede, whichever.
+
+#testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
+>mead mac
+This'd be a great call to an olde-time forest picnic.
+
+#+testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
+>mead mack
+This'd be a great call to an olde-time forest picnic.
+
+#testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
+>pd pack
+You don't need angry followers, allies or enemies.
+
+#+testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
+>peed pack
+You don't need angry followers, allies or enemies.
+
+#testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
+>reed rack
+You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+
+#+testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
+>read rack
+You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+
+#testcase-mistakes-table-of-treed-track-guesses-steed-stack
+>steed stack
+This world's not big enough to need a horse. Plus the horses above would crush the ones below.
+
+#testcase-mistakes-table-of-treed-track-guesses-teed-tack
+>teed tack
+But you have nothing to tack up on a board, or tee up for a game of golf.
+
+#testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
+>weed wack
+Landscaping's not your specialty.
+
+#+testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
+>weed whack
+Landscaping's not your specialty.
+
+#testcase-mistakes-table-of-treed-track-guesses-yed-yack
+>yed yack
+There is nobody to silence in the immediate area.
 
 >need knack
 by one point
@@ -880,10 +1021,64 @@ by one point
 
 >e
 
+#testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>bod bash
+No, one fight is enough.
+
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>bawd bash
+No, one fight is enough.
+
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>baud bash
+No, one fight is enough.
+
+#testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
+>cod cache
+All sea life will be clearly visible.
+
+#+testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
+>cod cash
+All sea life will be clearly visible.
+
+#testcase-mistakes-table-of-clod-clash-guesses-crawed-crash
+>crawed crash
+You remember people actually glad they got into an accident.
+
+#testcase-mistakes-table-of-clod-clash-guesses-god-gash
+>god gash
+You don't need to hurt anyone or express anger at being hurt.
+
+#testcase-mistakes-table-of-clod-clash-guesses-mod-mash
+>mod mash
+You do not need to start a new dance craze.
+
+#testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
+>nod nash
+There's nobody you can see to commiserate here with.
+
+#testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
+>nod gnash
+There's nobody you can see to commiserate here with.
+
+#testcase-mistakes-table-of-clod-clash-guesses-rod-rash
+>rod rash
+You need no instruments of punishment.
+
+#testcase-mistakes-table-of-clod-clash-guesses-sawed-sash
+>sawed sash
+You need no fancy clothes.
+
 >trod trash
 by one point
 
 >s
+
+#check the odd ash
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>baud bash
+No, one fight is enough.
+!LCD
 
 #testcase-mistakes-table-of-fought-fief-guesses-grot-grief
 >grot grief
@@ -1029,10 +1224,60 @@ by one point
 >hour late
 You frown at the power plate, wishing you'd seen it sooner.
 
+#testcase-mistakes-table-of-black-blight-guesses-back-bite
+>back bite
+Now that's no way to restore order!
+
+>nah naff
+
+#"fight fave" gets in the way otherwise
+#testcase-mistakes-table-of-black-blight-guesses-faq-fight
+>faq fight
+You vow to get through this without consulting an outside guide.
+
+>ha half
+
+#testcase-mistakes-table-of-black-blight-guesses-frack-fright
+>frack fright
+It's hard not to fear how nefarious Big Oil is.
+
+#testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
+>knack knight
+You already have the knack. How to use it?
+
+#+testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
+>knack night
+You already have the knack. How to use it?
+
+#testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
+>mac might
+You get vernacular about your potential, but you need to do more.
+
+#+testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
+>mack might
+You get vernacular about your potential, but you need to do more.
+
+#testcase-mistakes-table-of-black-blight-guesses-plaque-plight
+>plaque plight
+Worry about your dentist after you took care of business.
+
+#testcase-mistakes-table-of-black-blight-guesses-sprack-sprite
+>sprack sprite
+You go medieval on the English language for a bit, but no supernatural help appears.
+
+#testcase-mistakes-table-of-black-blight-guesses-track-trite
+>track trite
+Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
+
 >flak flight
 by one point
 
 >d
+
+#this is to make sure the RACK-RIGHT triggers the rhyme checks
+#+testcase-mistakes-table-of-black-blight-guesses-track-trite
+>track trite
+Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
 
 >n
 
@@ -1043,6 +1288,26 @@ by one point
 
 >quash quick
 by one point
+
+#testcase-mistakes-table-of-posh-pick-guesses-frosh-frick
+>frosh frick
+You remember in high school how underclassmen were beaten up for swearing or not swearing.
+
+#testcase-mistakes-table-of-posh-pick-guesses-mosh-mick
+>mosh mick
+You neither see Jagger nor develop moves like him
+
+#testcase-mistakes-table-of-posh-pick-guesses-nosh-nick
+>nosh nick
+Ugh! Prison food!
+
+#testcase-mistakes-table-of-posh-pick-guesses-tosh-tick
+>tosh tick
+Thankfully, you have no insects or time crunches to worry about.
+
+#testcase-mistakes-table-of-posh-pick-guesses-wash-wick
+>wash wick
+Doing so would mean you can't light a candle. That's what you meant, right?
 
 >slosh slick
 by one point
@@ -1073,7 +1338,7 @@ Ungrammatical, and anyway, you are trying to clean things up here!
 
 #testcase-mistakes-table-of-rime-road-guesses-im-owed
 >im owed
-All this entitlement is bravebut not bright.
+All this entitlement is brave but not bright.
 
 #testcase-mistakes-table-of-rime-road-guesses-lime-load
 >lime load
@@ -1101,6 +1366,11 @@ by one point
 by one point
 
 >in
+
+#posh pick outside of passed port
+#+testcase-mistakes-table-of-posh-pick-guesses-wash-wick
+>wash wick
+Doing so would mean you can't light a candle. That's what you meant, right?
 
 >s
 
@@ -1210,11 +1480,48 @@ No, you needed something less reflexive.
 
 >u
 
+#testcase-mistakes-table-of-hailing-hill-guesses-jailing-jill
+>jailing jill
+No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked.
+
+#testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
+>paling pill
+You don't need to get or receive buckets of chemical stimulation.
+
+#+testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
+>pailing pill
+You don't need to get or receive buckets of chemical stimulation.
+
+#testcase-mistakes-table-of-hailing-hill-guesses-railing-rill
+>railing rill
+A river would be just charming here, but you're not in the business of fixing the landscape.
+
+#testcase-mistakes-table-of-hailing-hill-guesses-sailing-sill
+>sailing sill
+Waterways are more likely to be at lower elevations.
+
+#testcase-mistakes-table-of-hailing-hill-guesses-swailing-swill
+>swailing swill
+You're not up on the best way to contain forest fires, so better not get in a debate.
+
+#+testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
+>tailing till
+You don't need to follow anyone or ask them to follow. Those who wanted to, did.
+
+#testcase-mistakes-table-of-hailing-hill-guesses-trailing-trill
+>trailing trill
+You don't feel a song right now. Not until you've fixed things completely.
+
 >scaling skill
 by one point
 
 >ailing ill
 by one point
+
+#check for seed sack
+#+testcase-mistakes-table-of-treed-track-guesses-yed-yack
+>yed yack
+There is nobody to silence in the immediate area.
 
 >mailing mill
 by one point

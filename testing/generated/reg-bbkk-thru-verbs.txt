@@ -459,6 +459,16 @@ by one point
 
 >n
 
+#testcase-mainverbs-carry-out-ting-if-noun-is-sold-soul
+>t soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
+
+>talk soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
+
+>talk to soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
+
 >w
 
 >n

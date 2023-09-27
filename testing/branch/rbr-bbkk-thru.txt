@@ -608,6 +608,43 @@ You haven't placed any items in the hold hole yet. You'll need to, to be worthy 
 >think
 You can FIGHT FAVE once you are physically and emotionally prepared.
 
+@mis
+#testcase-mistakes-table-of-lack-list-guesses-black-blissed
+>black blissed
+You wonder how you'd look in all black. Pretty neat.
+\\
+#testcase-mistakes-table-of-lack-list-guesses-hack-hissed
+>hack hissed
+You mentally deplore how you were pushed aside.
+\\
+#testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
+>mac mist
+You'd hate for this useful bit of paper to disappear into a mist.
+\\
+#+testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
+>mack missed
+You'd hate for this useful bit of paper to disappear into a mist.
+\\
+#testcase-mistakes-table-of-lack-list-guesses-pack-pissed
+>pack pissed
+Whoah! Guns aren't good if you're angry!
+\\
+#testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
+>rack wrist
+You vow to continue typing out good-guess rhymes until it hurts.
+\\
+#+testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
+>wrack wrist
+You vow to continue typing out good-guess rhymes until it hurts.
+\\
+#testcase-mistakes-table-of-lack-list-guesses-sack-cyst
+>sack cyst
+Your skin is not perfect. You'd love to wipe out something.
+\\
+#testcase-mistakes-table-of-lack-list-guesses-wack-wist
+>wack wist
+You recognize pining for the past might be too much.
+
 >x list
 
 @ha
@@ -861,6 +898,7 @@ You already found a pass-path through the bass bath!
 You need to reason out which way to go. It's a bit confusing here.
 
 @hom
+#testcase-homonym-detail-vh-mace-math-rule-default
 #testcase-homonym-reject-table-of-verb-checks-vh-mace-math-rule-mace
 >mace math
 Hmm. Sounds a bit off. Math and mathematical reasoning are useful, but not for how badly you can thwack someone. But you could use some math, here. How much, is the question.
@@ -1597,6 +1635,17 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >fried freak
 by one point
 
+@mis
+##BALANCE UNDOS
+>gonear hill
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
+>tailing til
+You don't need to follow anyone or ask them to follow. Those who want to, will.
+\\
+>undo
+>undo
+
 @all,rej
 {--rej}#testcase-check-vc-fried-freak-rule-fallthrough
 {--all}#testcase-run-vr-fried-freak-rule-fallthrough
@@ -1686,7 +1735,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-sheik-shooter-rule-sheik-sheikh
-#testcase-homonym-reject-table-of-verb-checks-sheik-sheikh
 #testcase-homonym-detail-vh-sheik-shooter-rule-default
 >sheik shooter
 A different foreign word. We don't want to shoot anyone in particular.
@@ -2708,6 +2756,19 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >t sassed
 The Sassed Sort does look a bit weary. Perhaps you should just point out where to go.
 
+@mis
+#testcase-mistakes-table-of-sassed-sort-guesses-blast-blort
+>blast blort
+You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!
+\\
+#testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
+>massed mort
+Not what you need now, death around the corner, for the ship or otherwise.
+\\
+#+testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
+>mast mort
+Not what you need now, death around the corner, for the ship or otherwise.
+
 >s
 >w
 >n
@@ -2957,6 +3018,91 @@ But you have not figured out any basic hacks to progress further! Well, not yet.
 #testcase-think-table-of-verb-checks-vc-heed-hack-rule
 >think
 You can HEED HACK once you have an idea how to navigate the Treed Track.
+
+@mis
+#testcase-mistakes-table-of-treed-track-guesses-bead-back
+>bead back
+You don't need to drop things to get out of the forest.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-bleed-black
+>bleed black
+That'd make you one of the bad guys, though, right?
+\\
+#testcase-mistakes-table-of-treed-track-guesses-breed-brack
+>breed brack
+No, you need the opposite of a brack, to bring things together.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-creed-crack
+>creed crack
+You aren't looking to proselytize.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-feed-faq
+>feed faq
+Now's not the time to worry about nourishment.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
+>fleed flak
+There is no flak to flee here.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
+>fleed flack
+There is no flak to flee here.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-freed-frack
+>freed frack
+Oh no! It's not Big Oil that needs freedom.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
+>lead lack
+You bemoan the lack of leadership, or a lede, whichever.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
+>lede lack
+You bemoan the lack of leadership, or a lede, whichever.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
+>mead mac
+This'd be a great call to an olde-time forest picnic.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
+>mead mack
+This'd be a great call to an olde-time forest picnic.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
+>pd pack
+You don't need angry followers, allies or enemies.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
+>peed pack
+You don't need angry followers, allies or enemies.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
+>reed rack
+You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
+>read rack
+You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-steed-stack
+>steed stack
+This world's not big enough to need a horse. Plus the horses above would crush the ones below.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-teed-tack
+>teed tack
+But you have nothing to tack up on a board, or tee up for a game of golf.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
+>weed wack
+Landscaping's not your specialty.
+\\
+#+testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
+>weed whack
+Landscaping's not your specialty.
+\\
+#testcase-mistakes-table-of-treed-track-guesses-yed-yack
+>yed yack
+There is nobody to silence in the immediate area.
 
 >need knack
 by one point
@@ -3926,7 +4072,6 @@ You hear an old echo and think "Hold, heck, oh." But no gold gecko scrambles out
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-salad-sent-cent-rule-sent-cent
-#testcase-homonym-reject-table-of-verb-checks-sent-cent
 #testcase-homonym-detail-vh-salad-sent-cent-rule-default
 >salad sent
 No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
@@ -4355,6 +4500,55 @@ by one point
 >t clash
 Interrupting their fight with words won't help.
 
+@mis
+#testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>bod bash
+No, one fight is enough.
+\\
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>bawd bash
+No, one fight is enough.
+\\
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>baud bash
+No, one fight is enough.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
+>cod cache
+All sea life will be clearly visible.
+\\
+#+testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
+>cod cash
+All sea life will be clearly visible.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-crawed-crash
+>crawed crash
+You remember people actually glad they got into an accident.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-god-gash
+>god gash
+You don't need to hurt anyone or express anger at being hurt.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-mod-mash
+>mod mash
+You do not need to start a new dance craze.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
+>nod nash
+There's nobody you can see to commiserate here with.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
+>nod gnash
+There's nobody you can see to commiserate here with.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-rod-rash
+>rod rash
+You need no instruments of punishment.
+\\
+#testcase-mistakes-table-of-clod-clash-guesses-sawed-sash
+>sawed sash
+You need no fancy clothes.
+
 >trod trash
 by one point
 
@@ -4418,6 +4612,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 
 @mis
+#check the odd ash
+#+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
+>baud bash
+No, one fight is enough.
+!LCD
+\\
 #testcase-mistakes-table-of-fought-fief-guesses-grot-grief
 >grot grief
 You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!
@@ -4931,6 +5131,51 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 #+testcase-mistakes-table-of-sour-slate-guesses-hour-late
 >hour late
 You frown at the power plate, wishing you'd seen it sooner.
+\\
+#testcase-mistakes-table-of-black-blight-guesses-back-bite
+>back bite
+Now that's no way to restore order!
+\\
+>nah naff
+\\
+#"fight fave" gets in the way otherwise
+#testcase-mistakes-table-of-black-blight-guesses-faq-fight
+>faq fight
+You vow to get through this without consulting an outside guide.
+\\
+>ha half
+\\
+#testcase-mistakes-table-of-black-blight-guesses-frack-fright
+>frack fright
+It's hard not to fear how nefarious Big Oil is.
+\\
+#testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
+>knack knight
+You already have the knack. How to use it?
+\\
+#+testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
+>knack night
+You already have the knack. How to use it?
+\\
+#testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
+>mac might
+You get vernacular about your potential, but you need to do more.
+\\
+#+testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
+>mack might
+You get vernacular about your potential, but you need to do more.
+\\
+#testcase-mistakes-table-of-black-blight-guesses-plaque-plight
+>plaque plight
+Worry about your dentist after you took care of business.
+\\
+#testcase-mistakes-table-of-black-blight-guesses-sprack-sprite
+>sprack sprite
+You go medieval on the English language for a bit, but no supernatural help appears.
+\\
+#testcase-mistakes-table-of-black-blight-guesses-track-trite
+>track trite
+Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
 
 @hfull
 #+testcase-values-from-number-of-lack-light-black-blight-is-5461
@@ -4974,6 +5219,12 @@ You already quacked "Quite!"
 {$GONG} Sack Site.
 \\
 >undo
+
+@mis
+#this is to make sure the RACK-RIGHT triggers the rhyme checks
+#+testcase-mistakes-table-of-black-blight-guesses-track-trite
+>track trite
+Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
 
 >n
 
@@ -5034,6 +5285,27 @@ You can SLOSH SLICK now you've had someone make a path through the slime, slowed
 #+testcase-values-from-number-of-posh-pick-is-2704
 >ll posh pick
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+@mis
+#testcase-mistakes-table-of-posh-pick-guesses-frosh-frick
+>frosh frick
+You remember in high school how underclassmen were beaten up for swearing or not swearing.
+\\
+#testcase-mistakes-table-of-posh-pick-guesses-mosh-mick
+>mosh mick
+You neither see Jagger nor develop moves like him
+\\
+#testcase-mistakes-table-of-posh-pick-guesses-nosh-nick
+>nosh nick
+Ugh! Prison food!
+\\
+#testcase-mistakes-table-of-posh-pick-guesses-tosh-tick
+>tosh tick
+Thankfully, you have no insects or time crunches to worry about.
+\\
+#testcase-mistakes-table-of-posh-pick-guesses-wash-wick
+>wash wick
+Doing so would mean you can't light a candle. That's what you meant, right?
 
 >slosh slick
 by one point
@@ -5098,7 +5370,7 @@ Ungrammatical, and anyway, you are trying to clean things up here!
 \\
 #testcase-mistakes-table-of-rime-road-guesses-im-owed
 >im owed
-All this entitlement is bravebut not bright.
+All this entitlement is brave but not bright.
 \\
 #testcase-mistakes-table-of-rime-road-guesses-lime-load
 >lime load
@@ -5274,6 +5546,12 @@ Nothing
 No. On second thought, you feel like you've done all you needed in Passed Port, and you wouldn't want to expose the Sassed Sort to the Guide Gong.
 \\
 >undo
+
+@mis
+#posh pick outside of passed port
+#+testcase-mistakes-table-of-posh-pick-guesses-wash-wick
+>wash wick
+Doing so would mean you can't light a candle. That's what you meant, right?
 
 >s
 
@@ -5486,6 +5764,17 @@ You went the extra mile to rid yourself of angst.
 You already flouted fluff!
 
 >n
+
+@ver
+#testcase-mainverbs-carry-out-ting-if-noun-is-sold-soul
+>t soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
+\\
+>talk soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
+\\
+>talk to soul
+You can't think of anything to say. The sold soul has a longing in its eyes. Perhaps it needs to find a kindred spirit.
 
 >w
 
@@ -5937,6 +6226,39 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >undo
 >undo
 
+@mis
+#testcase-mistakes-table-of-hailing-hill-guesses-jailing-jill
+>jailing jill
+No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked.
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
+>paling pill
+You don't need to get or receive buckets of chemical stimulation.
+\\
+#+testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
+>pailing pill
+You don't need to get or receive buckets of chemical stimulation.
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-railing-rill
+>railing rill
+A river would be just charming here, but you're not in the business of fixing the landscape.
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-sailing-sill
+>sailing sill
+Waterways are more likely to be at lower elevations.
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-swailing-swill
+>swailing swill
+You're not up on the best way to contain forest fires, so better not get in a debate.
+\\
+#+testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
+>tailing till
+You don't need to follow anyone or ask them to follow. Those who wanted to, did.
+\\
+#testcase-mistakes-table-of-hailing-hill-guesses-trailing-trill
+>trailing trill
+You don't feel a song right now. Not until you've fixed things completely.
+
 >scaling skill
 by one point
 
@@ -5983,6 +6305,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #+testcase-ha-half-table-of-verb-checks-76-mill
 >zmailing mill
 {$GREENCORE}
+
+@mis
+#check for seed sack
+#+testcase-mistakes-table-of-treed-track-guesses-yed-yack
+>yed yack
+There is nobody to silence in the immediate area.
 
 >mailing mill
 by one point

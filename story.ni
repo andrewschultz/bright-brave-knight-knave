@@ -166,9 +166,11 @@ after examining hold hole when lack list is off-stage:
 
 chapter track tryst lack list
 
-the track tryst lack list is a thing. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
+the track tryst lack list is a rhymable. description is "Here's a list of needs:[line break][tryst-list][run paragraph on]";
 
 understand "note" as list.
+
+guess-table of lack list is the table of lack list guesses.
 
 after examining lack list when sco-jack-gist is false:
 	say "You have a sneaking suspicion you could summarize the list with the right command, so you'd need just one letter to access it later and get a bonus point to boot. A suspicion snuck in there by me!";
@@ -257,6 +259,8 @@ after printing the locale description for Bass Bath:
 book Hailing Hill
 
 Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else if hill-score is 1]midpoint[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+
+guess-table of hailing hill is the table of hailing hill guesses.
 
 from-number of hailing hill is 2854. to-number of hailing hill is 5658.
 
@@ -451,6 +455,8 @@ chapter sassed sort
 
 the Sassed Sort is a talktoable rhymable. "The Sassed Sort stands here by the yacht, waiting for guidance where to sail next[if player is not in bosh blanks], or you can [b]ENTER[r] it to return to [bosh blanks][end if].". description is "Slightly disheveled, but peaceful. They seem to sense you're more considerate than the usual clientele."
 
+guess-table of sassed sort is the table of sassed sort guesses.
+
 from-number of sassed sort is 2804. to-number of sassed sort is 8213.
 
 book Cast Court
@@ -529,7 +535,9 @@ guess-table of salad sent is table of pallid pent valid vent guesses.
 
 chapter posh pick
 
-the posh pick is a thing in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It's initialed with the letters SoSo. Hmm."
+the posh pick is a rhymable in passed port. "A posh pick is buried in the slime-slowed rime road.". description is "It looks very pricey. It's initialed with the letters SoSo. Hmm."
+
+guess-table of posh pick is the table of posh pick guesses.
 
 from-number of posh pick is 2704. to-number of posh pick is 5510.
 
@@ -547,7 +555,13 @@ book Treed Track
 
 Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]. You can, of course, always go back north to Pass Path."
 
-the seed sack is a thing. description is "Instead of discussing what plants the seeds grow, the sack emphasizes the importance of meaningful interpersonal communication. How could seeds help with that?"
+guess-table of treed track is the table of treed track guesses.
+
+chapter seed sack
+
+the seed sack is a rhymable. description is "Instead of discussing what plants the seeds grow, the sack emphasizes the importance of meaningful interpersonal communication. How could seeds help with that?"
+
+guess-table of seed sack is the table of treed track guesses.
 
 book Too Tough Blue Bluff
 
@@ -573,6 +587,8 @@ book Lack Light Black Blight
 
 Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
 
+guess-table of black blight is the table of black blight guesses.
+
 from-number of lack light black blight is 5461. to-number of lack light black blight is 10923.
 
 after printing the locale description when player is in Black Blight and rack right is off-stage and blight-score >= 3 (this is the rack right discovery rule):
@@ -586,9 +602,11 @@ The rack right discovery rule is listed last in after printing the locale descri
 
 chapter rack right
 
-the rack right is a thing. printed name is "rack, right". description of rack right is "It just looks and feels right, both the shape and texture, and that you should have it. You suspect it'll be important in some ritual somewhere.".
+the rack right is a rhymable. printed name is "rack, right". description of rack right is "It just looks and feels right, both the shape and texture, and that you should have it. You suspect it'll be important in some ritual somewhere.".
 
 chapter sour slate
+
+guess-table of rack right is the table of black blight guesses.
 
 the sour slate is a rhymable. "A sour slate lies here, pushing you away in its current form.". description is "Whew! You feel the negativity bouncing off it. It's good at repelling stuff, but maybe it's a bit too good in its current form. You know the difference between good defense and defensiveness? The sour slate doesn't."
 
@@ -660,15 +678,21 @@ check going in Lane Lax:
 
 chapter broad brash clod clash
 
-The broad brash clod clash is talktoable scenery. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+The broad brash clod clash is a talktoable rhymable. it is scenery. "Sheesh. A bunch of clods. Loud. Un-self-aware. There's got to be a way to break it up nonviolently."
+
+guess-table of clod clash is the table of clod clash guesses.
 
 chapter odd ash
 
-the odd ash is a thing. description is "It's bound together by some sort of translucent gelatinous ball that's surprisingly sturdy. You wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
+the odd ash is a rhymable. description is "It's bound together by some sort of translucent gelatinous ball that's surprisingly sturdy. You wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
+
+guess-table of odd ash is the table of clod clash guesses.
 
 book Ow'ed Eyes / Crowd Cries
 
 OECC is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.". printed name is "Ow'ed Eyes, Crowd Cries".
+
+guess-table of oecc is the table of oecc guesses.
 
 the crowd cries are talktoable scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC. "The crowd cries go on and on, accompanied by ow'ed eyes, where some people rub them in fake crying, mocking the straw men they attack, and others claim they are brought to tears by those who disagree with them in any measure."
 
@@ -676,7 +700,9 @@ from-number of crowd cries is 5459. to-number of crowd cries is 2754.
 
 chapter proud prize
 
-the proud prize is a thing. description is "It appears the original recipient had their name rubbed off. If you squint very closely, you see S S."
+the proud prize is a rhymable. description is "It appears the original recipient had their name rubbed off. If you squint very closely, you see S S."
+
+guess-table of proud prize is table of oecc guesses.
 
 book Thought Thief Fought Fief
 

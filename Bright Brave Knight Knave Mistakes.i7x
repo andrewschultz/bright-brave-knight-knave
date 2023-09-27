@@ -5,11 +5,16 @@ Version 1/221007 of Bright Brave Knight Knave Mistakes by Andrew Schultz begins 
 to current-table-note-x (tn - a table name):
 	current-table-note tn;
 
-[Items that I found nothing for:
-ARDOR ELM
+[Items that do not have a table: (this doesn't include fixed items subsumed by one location)
+ARDOR ELM / HARDER HELM
 HOVERING HANDLE
-Rooms I found nothing for:
-CAST COURT/FAST FORT/PAST PORT
+
+Rooms that will not have a table:
+WHITE WAVE (this is captured universally, in table of general good guesses)
+CAST COURT/FAST FORT/PAST PORT (these are mapped to the Sassed Sort, who is always present there)
+
+TODO:
+rack, right / Black Blight
 ]
 
 table of general good guesses
@@ -30,6 +35,17 @@ mist-1	mist-2	mist-rule	got-yet	leet-rule	mist-txt
 to say wrong-pron-lace: if the player's command includes "lace", say "[wrong-pron]".
 
 to say wrong-pron: say ". You also wonder if you are pronouncing things right"
+
+table of black blight guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"back"	"bite"	--	false	--	"Now that's no way to restore order!"
+"faq"	"fight"	--	false	--	"You vow to get through this without consulting an outside guide."
+"frack"	"fright"	--	false	--	"It's hard not to fear how nefarious Big Oil is."
+"knack"	"night|knight"	--	false	--	"You already have the knack. How to use it?"
+"mac|mack"	"might"	--	false	--	"You get vernacular about your potential, but you need to do more."
+"plaque"	"plight"	--	false	--	"Worry about your dentist after you took care of business."
+"sprack"	"sprite"	--	false	--	"You go medieval on the English language for a bit, but no supernatural help appears."
+"track"	"trite"	--	false	--	"Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really."
 
 table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -77,6 +93,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "shot"	"sheaf"	--	false	--	"You look around for papers, but [if sco-brought-brief is false]maybe you aren't looking for the right ones[else]there are no more[end if]."
 "tot"	"teef"	--	false	--	"You look for something to give the Tooth Fairy. Nothing."
 
+table of hailing hill guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"jailing"	"jill"	--	false	--	"No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked."
+"paling|pailing"	"pill"	--	false	--	"You don't need to get or receive buckets of chemical stimulation."
+"railing"	"rill"	--	false	--	"A river would be just charming here, but you're not in the business of fixing the landscape."
+"sailing"	"sill"	--	false	--	"Waterways are more likely to be at lower elevations."
+"swailing"	"swill"	--	false	--	"You're not up on the best way to contain forest fires, so better not get in a debate."
+"tailing"	"til|till"	--	false	--	"You don't need to follow anyone or ask them to follow. Those who [if number of finished eekers is 6]wanted to, did[else]want to, will[end if]."
+"trailing"	"trill"	--	false	--	"You don't feel a song right now. Not until you've fixed things completely."
+
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bill"	"bun"	--	false	--	"You can pay for food once you're here."
@@ -93,8 +119,6 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 this is the nil-none-name rule:
 	if sco-fill-fun is false, the rule succeeds;
 	the rule fails;
-
-guess-table of oecc is the table of oecc guesses.
 
 table of oecc guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -142,11 +166,44 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "stall"	"stank|stanks"	--	false	--	"No, that's a few rooms to the west."
 "wall"	"wank|wanks"	--	false	--	"To steal from Futurama, this rhyme is technically correct: the best kind of correct!"
 
+table of treed track guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bead"	"back"	--	false	--	"You don't need to drop things to get out of the forest."
+"bleed"	"black"	--	false	--	"That'd make you one of the bad guys, though, right?"
+"breed"	"brack"	--	false	--	"No, you need the opposite of a brack, to bring things together."
+"creed"	"crack"	--	false	--	"You aren't looking to proselytize."
+"feed"	"faq"	--	false	--	"Now's not the time to worry about nourishment."
+"fleed"	"flack|flak"	--	false	--	"There is no flak to flee here."
+"freed"	"frack"	--	false	--	"Oh no! It's not Big Oil that needs freedom."
+"lead|lede"	"lack"	--	false	--	"You bemoan the lack of leadership, or a lede, whichever."
+"mead"	"mac|mack"	--	false	--	"This'd be a great call to an olde-time forest picnic."
+"pd|peed"	"pack"	--	false	--	"You don't need angry followers, allies or enemies."
+"reed|read"	"rack"	--	false	--	"You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up."
+"steed"	"stack"	--	false	--	"This world's not big enough to need a horse. Plus the horses above would crush the ones below."
+"teed"	"tack"	--	false	--	"But you have nothing to tack up on a board, or tee up for a game of golf."
+"weed"	"wack|whack"	--	false	--	"Landscaping's not your specialty."
+"yed"	"yack"	--	false	--	"There is nobody to silence in the immediate area."
+
 volume thing stuff
 
 table of clashing cord guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "flashing"	"ford"	--	false	--	"No bridge across a river, or car, or intergalactic space traveler whizzes by."
+
+table of clod clash guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bod|bawd|baud"	"bash"	--	false	need-ash rule	"No, one fight is enough."
+"cod"	"cash|cache"	--	false	need-ash rule	"All sea life will be clearly visible."
+"crawed"	"crash"	--	false	need-ash rule	"You remember people actually glad they got into an accident."
+"god"	"gash"	--	false	need-ash rule	"You don't need to hurt anyone or express anger at being hurt."
+"mod"	"mash"	--	false	need-ash rule	"You do not need to start a new dance craze."
+"nod"	"nash|gnash"	--	false	need-ash rule	"There's nobody you can see to commiserate here with."
+"rod"	"rash"	--	false	need-ash rule	"You need no instruments of punishment."
+"sawed"	"sash"	--	false	need-ash rule	"You need no fancy clothes."
+
+this is the need-ash rule:
+	if sco-trod-trash is false, the rule succeeds;
+	the rule fails;
 
 table of coughin coy boffin boy guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -215,6 +272,16 @@ to say item-guess of (hi - a holeitem):
 			say "[paragraph break]So, that's two of the three things the hole needs. Figuring the third wouldn't be critical, but it'd be a morale booster.";
 		now hi is preguessed;
 
+table of lack list guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"black"	"blissed"	--	false	--	"You wonder how you'd look in all black. Pretty neat." [brack brissed was too much]
+"hack"	"hissed"	--	false	--	"You mentally deplore how you were pushed aside."
+"mac|mack"	"missed|mist"	--	false	--	"You'd hate for this useful bit of paper to disappear into a mist."
+"pack"	"pissed"	--	false	--	"Whoah! Guns aren't good if you're angry!"
+"rack|wrack"	"wrist"	--	false	--	"You vow to continue typing out good-guess rhymes until it hurts."
+"sack"	"cyst"	--	false	--	"Your skin is not perfect. You'd love to wipe out something."
+"wack"	"wist"	--	false	--	"You recognize pining for the past might be too much."
+
 table of one wish fun fish guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "gun"	"gish"	--	false	--	"You get a gish gallop going, but the fish doesn't seem to understand."
@@ -234,14 +301,27 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "turkey"	"tap"	--	false	--	"Even if one appeared, you'd wonder how they'd fit through there."
 "worky"	"whap"	--	false	--	"Nobody is there to kick or shove you into gear."
 
+table of posh pick guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"frosh"	"frick"	--	false	--	"You remember in high school how underclassmen were beaten up for swearing or not swearing."
+"mosh"	"mick"	--	false	--	"You neither see Jagger nor develop moves like him"
+"nosh"	"nick"	--	false	--	"Ugh! Prison food!"
+"tosh"	"tick"	--	false	--	"Thankfully, you have no insects or time crunches to worry about."
+"wash"	"wick"	--	false	--	"Doing so would mean you can't light a candle. That's what you meant, right?"
+
 table of rime road guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chime"	"choad|chode"	--	false	--	"You are all for off-color humor but it doesn't seem appropriate here."
 "crime"	"crowed"	--	false	--	"You eavesdrop on no criminal confessions."
 "dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread"
 "grime"	"growed"	--	false	--	"Ungrammatical, and anyway, you are trying to clean things up here!"
-"im"	"owed"	--	false	--	"All this entitlement is bravebut not bright."
+"im"	"owed"	--	false	--	"All this entitlement is brave but not bright."
 "lime"	"load"	--	false	--	"The fruit or the stone, you can't see yourself lugging it around."
+
+table of sassed sort guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"blast"	"blort"	--	false	--	"You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!"
+"mast|massed"	"mort"	--	false	--	"Not what you need now, death around the corner, for the ship or otherwise."
 
 table of sour slate guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

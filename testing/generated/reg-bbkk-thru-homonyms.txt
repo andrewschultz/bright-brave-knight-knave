@@ -55,6 +55,7 @@ Almost! That sounds a bit off, though. Pacing in a circle wouldn't get you many 
 
 >pass path
 
+#testcase-homonym-detail-vh-mace-math-rule-default
 #testcase-homonym-reject-table-of-verb-checks-vh-mace-math-rule-mace
 >mace math
 Hmm. Sounds a bit off. Math and mathematical reasoning are useful, but not for how badly you can thwack someone. But you could use some math, here. How much, is the question.
@@ -118,7 +119,6 @@ by one point
 by one point
 
 #testcase-homonym-reject-table-of-verb-checks-vh-sheik-shooter-rule-sheik-sheikh
-#testcase-homonym-reject-table-of-verb-checks-sheik-sheikh
 #testcase-homonym-detail-vh-sheik-shooter-rule-default
 >sheik shooter
 A different foreign word. We don't want to shoot anyone in particular.
@@ -243,7 +243,6 @@ by one point
 by one point
 
 #testcase-homonym-reject-table-of-verb-checks-vh-salad-sent-cent-rule-sent-cent
-#testcase-homonym-reject-table-of-verb-checks-sent-cent
 #testcase-homonym-detail-vh-salad-sent-cent-rule-default
 >salad sent
 No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.
