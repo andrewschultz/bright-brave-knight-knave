@@ -103,6 +103,21 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "tailing"	"til|till"	--	false	--	"You don't need to follow anyone or ask them to follow. Those who [if number of finished eekers is 6]wanted to, did[else]want to, will[end if]."
 "trailing"	"trill"	--	false	--	"You don't feel a song right now. Not until you've fixed things completely."
 
+table of lane lax guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bane"	"backs"	--	false	--	"No, you can't let despair overtake you."
+"brain"	"bracks"	--	false	--	"You worry your brain is about to crack, but if you still know an obscure word like brack, it can't, really?"
+"crane"	"cracks"	--	false	--	"You don't need a construction accident or dead birds."
+"feign"	"facts"	--	false	--	"No, that's the bad guys."
+"gain"	"gacks"	--	false	--	"Your style of humor isn't gross-out."
+"jane"	"jacks"	--	false	--	"No female gangster rapper appears."
+"plain"	"plaques"	--	false	--	"Nah. You'd rather have achievements."
+"rain"	"racks"	--	false	--	"You don't need to catch the rain."
+"sane"	"sacks|sax"	--	false	--	"You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags."
+"slain"	"slacks"	--	false	--	"You uncover no torn pairs of pants."
+"stain"	"stacks"	--	false	--	"You have no need or desire to vandalize a library."
+"wane"	"wax"	--	false	--	"You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him."
+
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bill"	"bun"	--	false	--	"You can pay for food once you're here."

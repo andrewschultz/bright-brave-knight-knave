@@ -667,6 +667,8 @@ book Lane Lax
 
 Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]Oh! There's a broad brash clod clash going on here that you probably need to break up, some way[end if].[paragraph break]Of course, you can always just go back west, too."
 
+guess-table of lane lax is the table of lane lax guesses.
+
 from-number of lane lax is 2703. to-number of lane lax is 5461.
 
 to say mama: if sco-main-max is true, say "Main Max "
@@ -771,6 +773,8 @@ guess-table of spurning spew is the table of spurning spew guesses.
 chapter pain packs
 
 the pain packs are a plural-named trystitem. description is "They look like they could really heal some serious hit points, if that's how health is tracked here. This isn't an RPG, but you never know.". vaguedesc is "bandages for emergencies".
+
+guess-table of pain packs is the table of lane lax guesses.
 
 volume miscellaneous eeker manipulation
 

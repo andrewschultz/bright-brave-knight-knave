@@ -3363,6 +3363,59 @@ You can say MAIN MAX once it's busier by the Lane, Lax.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 2.50.)
 
+@mis
+#testcase-mistakes-table-of-lane-lax-guesses-bane-backs
+>bane backs
+No, you can't let despair overtake you.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-brain-bracks
+>brain bracks
+You worry your brain is about to crack, but if you still know an obscure word like brack, it can't, really?
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-crane-cracks
+>crane cracks
+You don't need a construction accident or dead birds.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-feign-facts
+>feign facts
+No, that's the bad guys.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-gain-gacks
+>gain gacks
+Your style of humor isn't gross-out.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-jane-jacks
+>jane jacks
+No female gangster rapper appears.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-plain-plaques
+>plain plaques
+Nah. You'd rather have achievements.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-rain-racks
+>rain racks
+You don't need to catch the rain.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-sane-sax-sacks
+>sane sacks
+You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
+\\
+#+testcase-mistakes-table-of-lane-lax-guesses-sane-sax-sacks
+>sane sax
+You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-slain-slacks
+>slain slacks
+You uncover no torn pairs of pants.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-stain-stacks
+>stain stacks
+You have no need or desire to vandalize a library.
+\\
+#testcase-mistakes-table-of-lane-lax-guesses-wane-wax
+>wane wax
+You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him.
+
 >train tracks
 by one point
 
@@ -3489,6 +3542,12 @@ Only way out is south.
 #testcase-ha-half-table-of-verb-checks-56-loud
 >loud zlies
 {$YELLOWCORE}
+
+@mis
+#+testcase-mistakes-table-of-lane-lax-guesses-wane-wax
+>wane wax
+You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him.
+!LCD
 
 @rej
 #testcase-check-vc-loud-lies-rule-if-sco-wowed-whys-is-false
