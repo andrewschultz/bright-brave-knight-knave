@@ -683,6 +683,10 @@ You think back to reading gossip magazines in line at the grocery store as a kid
 >read rack
 You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
 
+#testcase-mistakes-table-of-treed-track-guesses-sneed-snack
+>sneed snack
+The Simpsons made a better joke about Chuck's than I ever could.
+
 #testcase-mistakes-table-of-treed-track-guesses-steed-stack
 >steed stack
 This world's not big enough to need a horse. Plus the horses above would crush the ones below.
@@ -753,11 +757,11 @@ Nah. You'd rather have achievements.
 >rain racks
 You don't need to catch the rain.
 
-#testcase-mistakes-table-of-lane-lax-guesses-sane-sax-sacks
+#testcase-mistakes-table-of-lane-lax-guesses-sane-sacks-sax
 >sane sacks
 You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
 
-#+testcase-mistakes-table-of-lane-lax-guesses-sane-sax-sacks
+#+testcase-mistakes-table-of-lane-lax-guesses-sane-sacks-sax
 >sane sax
 You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
 
@@ -819,6 +823,10 @@ Well, that's what you get if you figure what to do here.
 #testcase-mistakes-table-of-oecc-guesses-thoud-thys
 >thoud thys
 Old English might confuse the crowd but won't really make a lasting impression.
+
+#testcase-mistakes-table-of-oecc-guesses-vowed-vies
+>vowed vies
+You've already made vows to set things straight.
 
 >wowed whys
 by one point
@@ -965,6 +973,10 @@ You consider lashing out for its own sake.
 >do duff
 No, you want to do something right.
 
+#testcase-mistakes-table-of-stew-stuff-guesses-drew-druff
+>drew druff
+You remember shaking your hair out and suddenly understanding those shampoo commercials.
+
 #testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
 >flew fluff
 You don't have time to fly, or get sick, or other frivolities!
@@ -1106,6 +1118,14 @@ You remember people actually glad they got into an accident.
 >god gash
 You don't need to hurt anyone or express anger at being hurt.
 
+#testcase-mistakes-table-of-clod-clash-guesses-lawd-lawed-lash
+>lawd lash
+You aren't big on thinking about the details of punishment.
+
+#+testcase-mistakes-table-of-clod-clash-guesses-lawd-lawed-lash
+>lawed lash
+You aren't big on thinking about the details of punishment.
+
 #testcase-mistakes-table-of-clod-clash-guesses-mod-mash
 >mod mash
 You do not need to start a new dance craze.
@@ -1118,9 +1138,13 @@ There's nobody you can see to commiserate here with.
 >nod gnash
 There's nobody you can see to commiserate here with.
 
-#testcase-mistakes-table-of-clod-clash-guesses-rod-rash
+#testcase-mistakes-table-of-clod-clash-guesses-rod-rawed-rash
+>rawed rash
+You need leave no welt with instruments of punishment.
+
+#+testcase-mistakes-table-of-clod-clash-guesses-rod-rawed-rash
 >rod rash
-You need no instruments of punishment.
+You need leave no welt with instruments of punishment.
 
 #testcase-mistakes-table-of-clod-clash-guesses-sawed-sash
 >sawed sash
@@ -1207,7 +1231,7 @@ Drug humor won't help here.
 >shill shun
 Alas, there is nobody to reject and feel better about yourself.
 
-#testcase-mistakes-table-of-nil-none-guesses-sill-sun
+#testcase-mistakes-table-of-nil-none-guesses-sill-sun-son
 >sill sun
 No light-giving window appears.
 
@@ -1346,6 +1370,10 @@ Doing so isn't necessarily a boost. It could be quite depressing and exhausting,
 >quash quick
 by one point
 
+#testcase-mistakes-table-of-posh-pick-guesses-cosh-kick
+>cosh kick
+You momentarily fear different types of violence. It keeps you motivated, you hope.
+
 #testcase-mistakes-table-of-posh-pick-guesses-frosh-frick
 >frosh frick
 You remember in high school how underclassmen were beaten up for swearing or not swearing.
@@ -1471,9 +1499,124 @@ by one point
 
 >e
 
+#testcase-mistakes-table-of-general-good-guesses-buying-bees
+>buying bees
+You mumble "Mo' money? Ho, honey!" to yourself.
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-crying-crees
+>crying crees
+Now's not a time for a kid's game.
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-drying-drees
+>drying drees
+You feel your fate congealing, for better or worse.
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-dying-dyeing-deez-dees
+>dyeing deez
+Bofa changing hair color or perishing are kind of nutz right now.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-dying-dyeing-deez-dees
+>dying dees
+Bofa changing hair color or perishing are kind of nutz right now.
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-frying-frieze-freeze-frees
+>frying frieze
+If you were a cool cook, you could think "Who'll hook cruel crook?"
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-frying-frieze-freeze-frees
+>frying freeze
+If you were a cool cook, you could think "Who'll hook cruel crook?"
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-frying-frieze-freeze-frees
+>frying frees
+If you were a cool cook, you could think "Who'll hook cruel crook?"
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-skying-skis
+>skying skis
+Alas, the Winter Olympics would be another game.
+!LCD
+
+#testcase-mistakes-table-of-general-good-guesses-slying-sleaze
+>slying sleaze
+You search for some but can't find any.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+>tying ts
+If tying is a tease for you, that's your business, not mine.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+>tying tees
+If tying is a tease for you, that's your business, not mine.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+>tying teas
+If tying is a tease for you, that's your business, not mine.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+>tying tease
+If tying is a tease for you, that's your business, not mine.
+!LCD
+
 >eyeing ease
 score and bonus
 by one point
+
+#+testcase-mistakes-table-of-general-good-guesses-buying-bees
+>buying bees
+You mumble "Mo' money? Ho, honey!" to yourself.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-crying-crees
+>crying crees
+Now's not a time for a kid's game.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-drying-drees
+>drying drees
+You feel your fate congealing, for better or worse.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-dying-dyeing-deez-dees
+>dyeing deez
+Bofa changing hair color or perishing are kind of nutz right now.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-dying-dyeing-deez-dees
+>dying dees
+Bofa changing hair color or perishing are kind of nutz right now.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-frying-frieze-freeze-frees
+>frying frieze
+If you were a cool cook, you could think "Who'll hook cruel crook?"
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-skying-skis
+>skying skis
+Alas, the Winter Olympics would be another game.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-slying-sleaze
+>slying sleaze
+You search for some but can't find any.
+!LCD
+
+#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+>tying ts
+If tying is a tease for you, that's your business, not mine.
+!LCD
 
 >in
 

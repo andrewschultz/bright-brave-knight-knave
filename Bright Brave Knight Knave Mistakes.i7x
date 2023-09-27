@@ -19,9 +19,21 @@ rack, right / Black Blight
 
 table of general good guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"flight"	"flav|flave"	--	false	--	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
-"slight"	"slave"	--	false	--	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
-"shite"	"shave"	--	false	--	"This isn't the time or place to kvetch about personal grooming."
+"flight"	"flav|flave"	--	false	no-eyeing-yet rule	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
+"slight"	"slave"	--	false	no-eyeing-yet rule	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
+"shite"	"shave"	--	false	no-eyeing-yet rule	"This isn't the time or place to kvetch about personal grooming."
+"buying"	"bees"	--	false	no-eyeing-yet rule	"You mumble 'Mo['] money? Ho, honey!' to yourself."
+"crying"	"crees"	--	false	no-eyeing-yet rule	"Now's not a time for a kid's game."
+"drying"	"drees"	--	false	no-eyeing-yet rule	"You feel your fate congealing, for better or worse."
+"dying|dyeing"	"deez|dees"	--	false	no-eyeing-yet rule	"Bofa changing hair color or perishing are kind of nutz right now."
+"frying"	"frieze|freeze|frees"	--	false	no-eyeing-yet rule	"If you were a cool cook, you could think 'Who'll hook cruel crook?'"
+"skying"	"skis"	--	false	no-eyeing-yet rule	"Alas, the Winter Olympics would be another game."
+"slying"	"sleaze"	--	false	no-eyeing-yet rule	"You search for some but can't find any."
+"tying"	"ts|tees|teas|tease"	--	false	no-eyeing-yet rule	"If tying is a tease for you, that's your business, not mine."
+
+this is the no-eyeing-yet rule:
+	if sco-eyeing-eying-ease is false, the rule succeeds;
+	the rule fails;
 
 volume room stuff
 
@@ -126,7 +138,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "hill"	"hun|hon"	--	false	--	"You don't need to be attacked, or take saccharine praise, from above."
 "pill"	"pun"	--	false	--	"Drug humor won't help here."
 "shill"	"shun"	--	false	--	"Alas, there is nobody to reject and feel better about yourself."
-"sill"	"sun"	--	false	--	"No light-giving window appears."
+"sill"	"sun|son"	--	false	--	"No light-giving window appears."
 "spill"	"spun"	--	false	--	"Alas, no solution to your woes is created, nor does it tumble out."
 "still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog."
 "till|til"	"ton"	--	false	--	"Things are weighty enough here."
@@ -142,6 +154,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "powed"	"pies"	--	false	--	"No pie ambushes anyone, for better or worse."
 "proud"	"pries|prize"	prize-yet rule	false	--	"Well, that's what you get if you figure what to do here."
 "thoud"	"thys"	--	false	--	"Old English might [if sco-loud-lies is true]have confused[else]confuse[end if] the crowd but won't really make a lasting impression."
+"vowed"	"vies"	--	false	--	"You've already made vows to set things straight."
 
 this is the prize-yet rule:
 	if sco-loud-lies is false, the rule succeeds;
@@ -194,6 +207,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "mead"	"mac|mack"	--	false	--	"This'd be a great call to an olde-time forest picnic."
 "pd|peed"	"pack"	--	false	--	"You don't need angry followers, allies or enemies."
 "reed|read"	"rack"	--	false	--	"You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up."
+"sneed"	"snack"	--	false	--	"[i]The Simpsons[r] made a better joke about Chuck's than I ever could."
 "steed"	"stack"	--	false	--	"This world's not big enough to need a horse. Plus the horses above would crush the ones below."
 "teed"	"tack"	--	false	--	"But you have nothing to tack up on a board, or tee up for a game of golf."
 "weed"	"wack|whack"	--	false	--	"Landscaping's not your specialty."
@@ -211,9 +225,10 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "cod"	"cash|cache"	--	false	need-ash rule	"All sea life will be clearly visible."
 "crawed"	"crash"	--	false	need-ash rule	"You remember people actually glad they got into an accident."
 "god"	"gash"	--	false	need-ash rule	"You don't need to hurt anyone or express anger at being hurt."
+"lawd|lawed"	"lash"	--	false	need-ash rule	"You aren't big on thinking about the details of punishment."
 "mod"	"mash"	--	false	need-ash rule	"You do not need to start a new dance craze."
 "nod"	"nash|gnash"	--	false	need-ash rule	"There's nobody you can see to commiserate here with."
-"rod"	"rash"	--	false	need-ash rule	"You need no instruments of punishment."
+"rod|rawed"	"rash"	--	false	need-ash rule	"You need leave no welt with instruments of punishment."
 "sawed"	"sash"	--	false	need-ash rule	"You need no fancy clothes."
 
 this is the need-ash rule:
@@ -318,6 +333,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of posh pick guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"cosh"	"kick"	--	false	--	"You momentarily fear different types of violence. It keeps you motivated, you hope."
 "frosh"	"frick"	--	false	--	"You remember in high school how underclassmen were beaten up for swearing or not swearing."
 "mosh"	"mick"	--	false	--	"You neither see Jagger nor develop moves like him"
 "nosh"	"nick"	--	false	--	"Ugh! Prison food!"
@@ -328,7 +344,7 @@ table of rime road guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chime"	"choad|chode"	--	false	--	"You are all for off-color humor but it doesn't seem appropriate here."
 "crime"	"crowed"	--	false	--	"You eavesdrop on no criminal confessions."
-"dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread"
+"dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread."
 "grime"	"growed"	--	false	--	"Ungrammatical, and anyway, you are trying to clean things up here!"
 "im"	"owed"	--	false	--	"All this entitlement is brave but not bright."
 "lime"	"load"	--	false	--	"The fruit or the stone, you can't see yourself lugging it around."
@@ -355,6 +371,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "chew|choo"	"chuff"	--	false	--	"You make train noises, but none appears."
 "coo"	"cuff"	--	false	--	"You consider lashing out for its own sake."
 "do"	"duff"	--	false	--	"No, you want to do something right."
+"drew"	"druff"	--	false	--	"You remember shaking your hair out and suddenly understanding those shampoo commercials."
 "flew|flu"	"fluff"	--	false	--	"You don't have time to fly, or get sick, or other frivolities!"
 "goo"	"guff"	--	false	--	"You produce no sticky stuff."
 "moo"	"muff"	--	false	--	"You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise."
