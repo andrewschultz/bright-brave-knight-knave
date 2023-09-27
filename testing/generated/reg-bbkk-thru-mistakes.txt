@@ -1350,6 +1350,14 @@ You go medieval on the English language for a bit, but no supernatural help appe
 >track trite
 Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
 
+#testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
+>wack wight
+Thankfully, no evil undeads are at play here.
+
+#+testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
+>whack white
+Thankfully, no evil undeads are at play here.
+
 >flak flight
 by one point
 
@@ -1436,6 +1444,14 @@ by one point
 >strander strove
 This would seem to be despairing. You can't already admit you tried but failed.
 
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+>rander rove
+You got here randomly, so maybe you'll get out even more randomly? Or not?
+
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+>rand er rove
+You got here randomly, so maybe you'll get out even more randomly? Or not?
+
 >stander stove
 by one point
 
@@ -1468,6 +1484,38 @@ by one point
 
 >covering candle
 by one point
+
+#testcase-mistakes-table-of-route-rough-guesses-bout-buff
+>bout buff
+Bulking up won't help you overpower futility.
+
+#testcase-mistakes-table-of-route-rough-guesses-doubt-duff
+>doubt duff
+You doubt that Homer Simpson's beer is truly great. Man, you really must be bummed!
+
+#testcase-mistakes-table-of-route-rough-guesses-gout-guff
+>gout guff
+You hope you don't get gout, whatever that is.
+
+#testcase-mistakes-table-of-route-rough-guesses-grout-gruff
+>grout gruff
+You grumble at the thought of home repairs.
+
+#testcase-mistakes-table-of-route-rough-guesses-pout-puff
+>pout puff
+You should be trying to bring yourself up, here.
+
+#testcase-mistakes-table-of-route-rough-guesses-scout-scuff
+>scout scuff
+You remember being disillusioned by a Boy Scout troop that was completely not Norman Rockwell.
+
+#testcase-mistakes-table-of-route-rough-guesses-snout-snuff
+>snout snuff
+You make various sniffy noises, hoping for catharsis.
+
+#testcase-mistakes-table-of-route-rough-guesses-tout-tough
+>tout tough
+You talk yourself up, but you come back down to earth quickly.
 
 >nowt nuff
 by one point

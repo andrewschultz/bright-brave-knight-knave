@@ -58,6 +58,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "plaque"	"plight"	--	false	--	"Worry about your dentist after you took care of business."
 "sprack"	"sprite"	--	false	--	"You go medieval on the English language for a bit, but no supernatural help appears."
 "track"	"trite"	--	false	--	"Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really."
+"wack|whack"	"white|wight"	--	false	--	"Thankfully, no evil undeads are at play here."
 
 table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -96,6 +97,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of dander dove guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"(rander|rand er)"	"rove"	--	false	--	"You got here randomly, so maybe you'll get out even more randomly? Or not?"
 "strander"	"strove"	--	false	--	"This would seem to be despairing. You can't already admit you tried but failed."
 
 table of fought fief guesses
@@ -163,6 +165,17 @@ this is the prize-yet rule:
 table of recroom guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "seek"	"suitor"	--	false	--	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
+
+table of route rough guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bout"	"buff"	--	false	--	"Bulking up won't help you overpower futility."
+"doubt"	"duff"	--	false	--	"You doubt that Homer Simpson's beer is truly great. Man, you really must be bummed!"
+"gout"	"guff"	--	false	--	"You hope you don't get gout, whatever that is."
+"grout"	"gruff"	--	false	--	"You grumble at the thought of home repairs."
+"pout"	"puff"	--	false	--	"You should be trying to bring yourself up, here."
+"scout"	"scuff"	--	false	--	"You remember being disillusioned by a Boy Scout troop that was completely not Norman Rockwell."
+"snout"	"snuff"	--	false	--	"You make various sniffy noises, hoping for catharsis."
+"tout"	"tough"	--	false	--	"You talk yourself up, but you come back down to earth quickly."
 
 table of rut row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
