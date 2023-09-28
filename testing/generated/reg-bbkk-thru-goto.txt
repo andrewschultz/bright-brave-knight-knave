@@ -46,7 +46,7 @@ score and bonus points just went up by one point.
 
 #+testcase-goto-table-of-noways-white-wave
 >w
-You can really only go DOWN through the kite cave hole.
+The only viable passage out is DOWN.
 
 >d
 

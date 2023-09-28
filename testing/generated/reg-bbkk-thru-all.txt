@@ -20,7 +20,7 @@ Taken.
 by one point
 
 #testcase-run-vr-kite-cave-rule-default
-You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
+Sometimes you don't find what you want until you're really looking for it. You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
 The cave collapses. There's a passage DOWN, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 >x hold hole
@@ -31,20 +31,20 @@ The cave collapses. There's a passage DOWN, but next to it is a hold-hole. Perha
 Your score and bonus points just went up by one point.
 
 #testcase-run-vr-jack-gist-rule-default
-Wow! You figured what to do. Now instead of typing X LIST, you can just type X or even I.
+A good Bright Brave Knight Knave uses shortcuts whenever they don't cut corners. No point getting exhausted by trivia! With a bit of meta-reasoning, you equate X with X LIST.
 
 >bold bowl
-You deduce the bold bowl would fit nicely into the hold hole.
+You deduce a bold bowl would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 !by one point
 
 >cold coal
-You deduce the cold coal would fit nicely into the hold hole.
+You deduce a cold coal would fit nicely into the hold hole.
 !NOTE
 !by one point
 
 >sold soul
-You deduce the sold soul would fit nicely into the hold hole.
+You deduce a sold soul would fit nicely into the hold hole.
 You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 
@@ -136,7 +136,7 @@ by one point
 by one point
 
 #testcase-run-vr-mood-mapper-rule-default
-You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!
+You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And something turns up! It's like that scene in The Godfather, except you don't plan to murder or even insult anybody. Plus, the mood mapper you've found doesn't seem like much of a weapon.
 by one point
 
 >nude napper
@@ -336,7 +336,7 @@ The train tracks become shinier and stronger and branch a bit more. You can real
 by one point
 
 #testcase-run-vr-pain-packs-rule-default
-You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!
+You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!
 #testcase-gameprogress-table-of-trystitem-stuff-1
 You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
@@ -409,7 +409,7 @@ The Sassed Sort nods and guides the yacht back to Cast Court.
 by one point
 
 #testcase-run-vr-murky-map-rule-default
-Well, you search through the pap, and what do you know? You turn up something. It's a murky map. Putting it under the glued glass, though, it is more readable.
+You search through the pap. There must be something in here! Fortunately, since you know what to look for, a murky map turns up pretty quickly. Putting it under the glued glass, though, it is more readable.
 
 >passed port
 by one point
@@ -434,7 +434,7 @@ Passed Port
 by one point
 
 #testcase-run-vr-slashing-sword-rule-default
-The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!
+The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks one more thing off your list. Yay!
 #testcase-gameprogress-table-of-trystitem-stuff-2
 You consult the track tryst lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
 
@@ -495,7 +495,7 @@ Boom! The stew stuff isn't perfectly shiny, but it's, well, new 'nuff. It's cann
 by one point
 
 #testcase-run-vr-trod-trash-rule-default
-You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
+You and the Guide Geek and the Weak Wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
 You and the Guide Geek and the Weak Wooter look at each other for a bit.
 
 >s
@@ -599,7 +599,7 @@ by one point
 You show you can blow off fear, a little, by quacking "quite."
 The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.
 There's a sour slate lying around, which you don't want to touch in its current form.
-The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right.
+The Fried Freak begins looking through all the bags in the sack site. They express dismay with each empty one, then utter shock once something turns up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.
 
 >power plate
 by one point
@@ -726,7 +726,7 @@ You feel as though you can leave, if you want, though it's always fun to try and
 by one point
 
 #testcase-run-vr-flout-fluff-rule-default
-You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.
+You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some examples from the past were, in fact, fluff, even though they were provided by Very Serious People.
 You went the extra mile to rid yourself of angst.
 
 >n
@@ -806,7 +806,7 @@ You double-check the track tryst lack list. Yes, indeed, you have everything! Yo
 by one point
 
 #testcase-run-vr-scaling-skill-rule-default
-You work on your climbing ability. What do you know, it pays off!
+You haven't climbed anything for a while. You recall what you knew and what went over your head. After few tentative mis-steps and stumbles, you make serious progress.
 Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.
 
 >ailing ill

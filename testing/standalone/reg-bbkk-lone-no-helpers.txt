@@ -44,7 +44,7 @@ You need a couple assistants to hatch a plot.
 >s
 >need knack
 !by one point
-To get the knack for not getting lost, you may need help from more than one friend.
+You're not great with navigating forests. Where could you find people willing to help?
 
 >gonear passed port
 >slosh slick

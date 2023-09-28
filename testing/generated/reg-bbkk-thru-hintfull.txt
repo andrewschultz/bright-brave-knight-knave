@@ -16,12 +16,12 @@ Taken.
 #testcase-values-from-number-of-white-wave-is-2754
 >ll
 You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
-You notice one dot in the corner.
+You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 #testcase-values-from-number-of-player-is--5610
 >ll me
-You notice one dot in the corner.
+You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
@@ -52,7 +52,7 @@ score and bonus points just went up by one point.
 >ll
 You scan the area.
 !most of the time
-You notice one dot in the corner.
+You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0
 
 >pass path
@@ -68,7 +68,7 @@ by two points
 #testcase-values-from-number-of-rut-row-is-2653
 >ll
 You scan the area.
-You notice one dot in the corner.
+You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
 
 >what whoah
@@ -79,7 +79,7 @@ by one point
 #testcase-values-from-number-of-slid-slum-is-2704
 >ll
 You scan the area.
-You notice one dot in the corner.
+You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >hid hum
@@ -189,7 +189,7 @@ by one point
 
 #+testcase-values-from-number-of-recruiter-is-2656
 >ll
-Nothing comes up. You've changed the Recruiter as much as you needed to.
+Nothing comes up. The general area here has been changed enough.
 !LCD
 
 >w
@@ -271,7 +271,7 @@ by one point
 
 #+testcase-values-from-number-of-tall-tanks-is-2704
 >ll
-Nothing comes up. You've changed the tall tanks as much as you needed to.
+Nothing comes up. The general area here has been changed enough.
 
 >ll tanks
 Nothing comes up. You've changed the tall tanks as much as you needed to.
@@ -880,10 +880,10 @@ by one point
 
 #+testcase-values-from-number-of-trite-tully-is-2755
 >ll sham
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >ll tully
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >bam bye
 by one point

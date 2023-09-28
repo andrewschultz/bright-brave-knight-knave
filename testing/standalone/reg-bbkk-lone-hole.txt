@@ -13,7 +13,7 @@
 
 >sold soul
 
-Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+You deduce a sold soul would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 
 >bold bowl
@@ -36,7 +36,7 @@ by one point
 >undo
 
 >cold coal
-Yes. The cold coal must be one of the three entities that fit in the hold hole. This is good to know.
+You deduce a cold coal would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 
 >bold bowl
@@ -58,11 +58,11 @@ by one point
 >undo
 >undo
 
->sold soul
-Yes. The sold soul must be one of the three entities that fit in the hold hole. This is good to know.
+>bold bowl
+You deduce a bold bowl would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 
->bold bowl
+>sold soul
 So, that's two of the three things the hole needs. Figuring the third wouldn't be critical, but it'd be a morale booster.
 
 >cold coal
@@ -74,7 +74,7 @@ by one point
 >cold coal
 So, that's two of the three things the hole needs. Figuring the third wouldn't be critical, but it'd be a morale booster.
 
->bold bowl
+>sold soul
 by one point
 
 >sold soul

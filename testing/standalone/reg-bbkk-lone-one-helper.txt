@@ -5,32 +5,61 @@
 ** game: /home/andrew/prt/debug-bright-brave-knight-knave.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
+* _basic-start
+
+>kite cave
+
+>x list
+>x hole
+
+>d
+>pass path
+by one point
+>mass math
+by one point
+>w
+>what whoah
+>w
+>hid hum
+>kid come
+>rid rum
+>in
+>mood mapper
+>out
+>e
+>n
+>w
+>stride streak
+
 * main
 
->{_basic}
+>{include} _basic-start
 
 >fried freak
+>e
 >s
 >e
 >e
 
 >yall yank
 !by one point
-WRONG
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
+!Where could you find people willing to help?
 
 >gonear passed port
 >slosh slick
 !by one point
-WRONG
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >quash quick
 !by one point
-WRONG
+This is a job for you and two friends.
 
 >gonear black blight
 >hack height
 >flak flight
 >quack quite
-WRONG
+There's a sour slate lying around, which you don't want to touch in its current form.
+The Fried Freak begins looking through all the bags in the sack site. They express dismay with each empty one, then utter shock once something turns up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.
 >undo
 >undo
 >undo
@@ -45,21 +74,22 @@ WRONG
 
 >yall yank
 !by one point
-WRONG
+Whoah! The tall tank is big! You'll need help from more than one person to move it!
 
 >gonear passed port
 >slosh slick
 !by one point
-WRONG
+The area around the posh pick is too deep. Perhaps you could find someone willing to get their clothes dirty in it?
 >quash quick
 !by one point
-WRONG
+This is a job for you and two friends.
 
 >gonear black blight
 >hack height
 >flak flight
 >quack quite
-WRONG
+There must be something here in the Sack Site! But you wouldn't know where to start searching, and you wouldn't have the energy to search very long. Maybe if you were a more old-school parser adventurer, you would. But that part of the curriculum was streamlined these days.
+!Freak
 >undo
 >undo
 >undo
@@ -75,35 +105,36 @@ WRONG
 by one point
 >plucky plot
 !by one point
-WRONG
+You need a couple assistants to hatch a plot.
 >gonear lane lax
 >train tracks
 >main max
 >trod trash
 !by one point
-WRONG
+There's a lot of trash to get people to trod! You'll need friends to help.
 >gonear blue bluff
 >grew gruff
 !by one point
-WRONG
+You don't have the support of the right friends to grow gruff constructively.
 
 >gonear creek
 >bye
+>e
 >guide geek
 >s
 >e
 >n
 >plucky plot
 !by one point
-WRONG
+You need a couple assistants to hatch a plot.
 >gonear lane lax
 >trod trash
 !by one point
-WRONG
+There's a lot of trash to get people to trod! You'll need friends to help.
 >gonear blue bluff
 >grew gruff
 !by one point
-WRONG
+You don't have the support of the right friends to grow gruff constructively.
 
 >gonear recruiter
 >bye
@@ -113,38 +144,40 @@ WRONG
 >s
 >need knack
 !by one point
-WRONG
+To get the knack for not getting lost, you may need help from more than one friend.
 >gonear passed port
 >salad scent
 !by one point
-WRONG
+You will need a couple friends to make a human ladder to get to the vent.
 >gonear crowd cries
 >wowed whys
 >loud lies
 !by one point
-WRONG
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
 
 >gonear creek
 >bye
 >snide sneak
+>e
 >s
 >e
 >s
 >need knack
 !by one point
-WRONG
+The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!
 >gonear passed port
 >salad scent
 !by one point
-WRONG
+You will need a couple friends to make a human ladder to get to the vent.
 >gonear crowd cries
 >loud lies
 !by one point
-WRONG
+You're pretty sure these are loud lies, but you don't have the necessary edge or assistance to refute them and prove it. A couple friends could help you stand strong.
 
 * walk-rack-right
 
->{_basic}
+>{include} _basic-start
+
 >snide sneak
 >e
 >mooter meek
@@ -167,7 +200,8 @@ WRONG
 >e
 >s
 >u
-WRONG
+The Chic Shooter follows you to Sack Site.
+There's got to be something under those sacks, though your skill set isn't miscellaneous enough to find it.
 >bye
 >d
 >n
@@ -180,27 +214,5 @@ WRONG
 >e
 >s
 >u
-WRONG
-
-* _basic
-
->kite cave
-
->x list
->x hole
-
->d
->w
->what whoah
->w
->hid hum
->kid come
->rid rum
->in
->mood mapper
->out
->n
->e
->n
->w
->stride streak
+The Fried Freak follows you to Sack Site.
+The Fried Freak begins looking through all the bags in the sack site. They express dismay with each empty one, then utter shock once something turns up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.

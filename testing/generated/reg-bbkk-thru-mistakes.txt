@@ -17,10 +17,12 @@ Taken.
 >flight flave
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
 [NOTE: to switch on the option that shows how many similar rhyme pairs you have left in this area, you can type GO GUESS. To see more detailed guess information with THINK, type MO MESS. To be told if you have one word of a good non-point-scoring good guess, YO YES. These all also incorporate the LO LESS option, where the leet learner tells you how many rhymes are left to solve. NO NESS turns everything.]
+LCD
 
 #+testcase-mistakes-table-of-general-good-guesses-flight-flav-flave
 >flight flav
 You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics.
+LCD
 
 >kite cave
 by one point
@@ -30,42 +32,52 @@ by one point
 #testcase-mistakes-table-of-lack-list-guesses-black-blissed
 >black blissed
 You wonder how you'd look in all black. Pretty neat.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-faq-fist
 >faq fist
 You aren't up on hand-to-hand combat and don't want to be.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-hack-hissed
 >hack hissed
 You mentally deplore how you were pushed aside.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
 >mac mist
 You'd hate for this useful bit of paper to disappear into a mist.
+LCD
 
 #+testcase-mistakes-table-of-lack-list-guesses-mac-mack-missed-mist
 >mack missed
 You'd hate for this useful bit of paper to disappear into a mist.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-pack-pissed
 >pack pissed
 Whoah! Guns aren't good if you're angry!
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
 >rack wrist
 You vow to continue typing out good-guess rhymes until it hurts.
+LCD
 
 #+testcase-mistakes-table-of-lack-list-guesses-rack-wrack-wrist
 >wrack wrist
 You vow to continue typing out good-guess rhymes until it hurts.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-sack-cyst
 >sack cyst
 Your skin is not perfect. You'd love to wipe out something.
+LCD
 
 #testcase-mistakes-table-of-lack-list-guesses-wack-wist
 >wack wist
 You recognize pining for the past might be too much.
+LCD
 
 >x list
 
@@ -74,72 +86,101 @@ Your score and bonus points just went up by one point.
 
 #testcase-mistakes-table-of-hold-hole-guesses-gold-goal
 >gold goal
-"Sacrilege!" a voice booms. "YOU HAVE DESERTED YOUR TRUE NATURE!"
-Po', Pal! Mo' Mal!
+You think for a minute. More money would be nice. But no. That cannot be a goal! That is not why you do things! Surely there are more altruistic goals out there.
+LCD
 
 >undo
+
+#+testcase-mistakes-table-of-lack-list-guesses-wack-wist
+>wack wist
+You recognize pining for the past might be too much.
+!LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-scold-skoal
 >scold skoal
 You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright.
-!LCD
+LCD
+-1.00, -1.00
 !to switch on
 
 #testcase-mistakes-table-of-hold-hole-guesses-told-toll
 >told toll
 You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one.
-!LCD
+LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-fold-foal
 >fold foal
 The hold hole does not seek animal sacrifice, and neither should you.
-!LCD
+LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-mold-mole
 >mold mole
 The hold hole does not seek animal sacrifice, and neither should you.
-!LCD
+LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-old-ole-ol
+>old ol
+You try think up a song about the Old Ol' Hold Hole, but there is no creative burst.
+LCD
+
+#+testcase-mistakes-table-of-hold-hole-guesses-old-ole-ol
+>old ole
+You try think up a song about the Old Ol' Hold Hole, but there is no creative burst.
+LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
 >polled pole
 That's a bit too repetitive, but the general idea feels right.
-!LCD
+LCD
 
 #+testcase-mistakes-table-of-hold-hole-guesses-polled-pole-poll
 >polled poll
 That's a bit too repetitive, but the general idea feels right.
-!LCD
+LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-rolled-role-roll
 >rolled roll
 That's a bit too repetitive, but the general idea feels right.
-!LCD
+LCD
 
 >rolled role
 That's a bit too repetitive, but the general idea feels right.
-!LCD
 
 #testcase-mistakes-table-of-hold-hole-guesses-trolled-troll
 >trolled troll
 That's a bit too repetitive, but the general idea feels right.
+LCD
+
+#testcase-mistakes-table-of-hold-hole-guesses-sold-sole-soul
+>sold sole
+That seems close, but you probably won't run into any fish markets. Perhaps something more spiritual?
+
+>sold soul
+!LCD
+
+>undo
 
 >bold bowl
-You deduce the bold bowl would fit nicely into the hold hole.
+You deduce a bold bowl would fit nicely into the hold hole.
 [NOTE: you've figured one-third of the sacred items of your quest. You can guess them all for a bonus point, or you can get on with it. Knowing what you look for is not critical to finding it.]
 !by one point
 !LCD
 
 >cold coal
-You deduce the cold coal would fit nicely into the hold hole.
+You deduce a cold coal would fit nicely into the hold hole.
 !NOTE
 !by one point
 !LCD
 
 >sold soul
-You deduce the sold soul would fit nicely into the hold hole.
+You deduce a sold soul would fit nicely into the hold hole.
 You feel slightly energized now that you know what your (w)hole quest is.
 score and bonus points just went up by one point.
 !LCD
+
+#+testcase-mistakes-table-of-hold-hole-guesses-sold-sole-soul
+>sold sole
+But you have already divined a need for the sold soul.
 
 #testcase-mistakes-table-of-hold-hole-guesses-bold-bowl
 >bold bowl
@@ -151,7 +192,7 @@ But you have already divined a need for the bold bowl.
 But you have already divined a need for the cold coal.
 !LCD
 
-#testcase-mistakes-table-of-hold-hole-guesses-sold-soul
+#+testcase-mistakes-table-of-hold-hole-guesses-sold-sole-soul
 >sold soul
 But you have already divined a need for the sold soul.
 !LCD
@@ -166,73 +207,107 @@ That's a bit too repetitive, and there's nothing more to figure out, anyway.
 #testcase-mistakes-table-of-bass-bath-guesses-has-hath
 >has hath
 You conjugate old English verbs, in case this may be important in the future. It isn't right now.
+LCD
 
 #testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
 >lace lath
 You need no washing machine, especially not early in the game before you worked up a sweat. You also wonder if you are pronouncing things right.
+LCD
 
 #+testcase-mistakes-table-of-bass-bath-guesses-lace-lass-lath
 >lass lath
 `You need no washing machine, especially not early in the game before you worked up a sweat.
+LCD
 
 #testcase-mistakes-table-of-bass-bath-guesses-place-plath
 >place plath
 You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, The Bell Jar. You also wonder if you are pronouncing things right.
+LCD
 
 #testcase-mistakes-table-of-bass-bath-guesses-race-wrath
 >race wrath
 You get as mad as you can, as fast as you can. You also wonder if you are pronouncing things right.
+LCD
 
 #testcase-mistakes-table-of-general-good-guesses-shite-shave
 >shite shave
 This isn't the time or place to kvetch about personal grooming.
+LCD
 
 #testcase-mistakes-table-of-general-good-guesses-slight-slave
 >slight slave
 You grumble about how you are a slight slave to your quest. It's therapeutic.
+LCD
 
 >pass path
 
 >mass math
 by one point
 
+#+testcase-mistakes-table-of-bass-bath-guesses-has-hath
+>has hath
+You conjugate old English verbs, in case this may be important in the future. It isn't right now.
+!LCD
+
 >w
 
-#testcase-mistakes-table-of-rut-row-guesses-but-bo
+#testcase-mistakes-table-of-rut-row-guesses-but-butt-bo-bow
 >but bo
-There's no time to argue! Boss and Rosco are up to another devious plan!
+No time to argue! Boss and Rosco done hatched another devious plan!
+LCD
+
+#+testcase-mistakes-table-of-rut-row-guesses-but-butt-bo-bow
+>butt bow
+No time to argue! Boss and Rosco done hatched another devious plan!
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-cut-co
 >cut co
 What an ideal name for a corporate hellscape that drains profits and happiness from a city.
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-gut-go
 >gut go
 You feel full of urban gumption and do-it-now-ness, until you don't.
+LCD
+
+#testcase-mistakes-table-of-rut-row-guesses-hutt-hut-hoe-ho
+>hut ho
+You recall a clever, funny phrase from You Will Select a Decision.
+
+#+testcase-mistakes-table-of-rut-row-guesses-hutt-hut-hoe-ho
+>hutt hoe
+You recall a clever, funny phrase from You Will Select a Decision.
 
 #testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mow
 Alas, there are no lovely houses with friendly dogs and green lawns here.
+LCD
 
 #+testcase-mistakes-table-of-rut-row-guesses-mutt-mo-mow
 >mutt mo
 Alas, there are no lovely houses with friendly dogs and green lawns here.
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-nut-no
 >nut no
 There is nobody to tell off, but there will be if you wait here. Not that you want to wait here.
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-putt-po
 >putt po
 This place is far away from a golf course, but yeah, everyone here is probably bad at golf.
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-shut-show
 >shut show
 The fine arts have long since disappeared from here.
+LCD
 
 #testcase-mistakes-table-of-rut-row-guesses-slut-slow
 >slut slow
 You are not the morality police.
+LCD
 
 >write rave
 by two points
@@ -240,23 +315,32 @@ by two points
 >what whoah
 by one point
 
+#+testcase-mistakes-table-of-rut-row-guesses-slut-slow
+>slut slow
+You are not the morality police.
+!LCD
+
 >w
 
 #testcase-mistakes-table-of-slid-slum-guesses-chid-chum
 >chid chum
 You have no friend to chide.
+LCD
 
 #testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
 You don't want to reflect on the past.
+LCD
 
 #testcase-mistakes-table-of-slid-slum-guesses-mid-mum
 >mid mum
 You don't need parental support or quiet.
+LCD
 
 #testcase-mistakes-table-of-slid-slum-guesses-skid-scum
 >skid scum
 No. A good Bright Brave Knight Knave don't look down on people like that.
+LCD
 
 >hid hum
 by one point
@@ -264,14 +348,17 @@ by one point
 #+testcase-mistakes-table-of-slid-slum-guesses-chid-chum
 >chid chum
 Forgiveness is more the thing here.
+LCD
 
 #+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
 A Bright Brave Knight Knave doesn't put people through the ringer for past mistakes.
+LCD
 
 #testcase-mistakes-table-of-slid-slum-guesses-bid-bum
 >bid bum
 That's not a huge epithet, but you try not look down on the less fortunate.
+LCD
 
 >kid come
 by one point
@@ -279,10 +366,12 @@ by one point
 #testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-offin-oi
 >offin oi
 That is not the life the coughin' coy boffin boy deserves, and it's not the end he deserves, either.
+LCD
 
 #testcase-mistakes-table-of-coughin-coy-boffin-boy-guesses-soften-soy
 >soften soy
 Perhaps the coughin' coy boffin boy will be able to get the education for such a bioengineering job, if you turn things around.
+LCD
 
 >rid rum
 by one point
@@ -290,6 +379,7 @@ by one point
 #+testcase-mistakes-table-of-slid-slum-guesses-did-dumb
 >did dumb
 You don't want to reflect on the past.
+!LCD
 
 >in
 
@@ -299,54 +389,67 @@ by one point
 #testcase-mistakes-table-of-crude-crapper-guesses-booed-bapper
 >booed bapper
 That'd make a decent final boss, but the main one is elsewhere.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-clued-clapper
 >clued clapper
 You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a Bright Brave Knight Knave.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-cooed-capper
 >cooed capper
 You don't need someone busting caps here and now, regardless of how pleasant their voice is.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-dude-dapper
 >dude dapper
 Yes, we all wind up here once a day, even well-dressed people.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-food-fapper
 >food fapper
 I don't want to know what sort of Rule 34 stuff this would entail.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-lewd-lapper
 >lewd lapper
 Hey, now, not THAT crude, eh?
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-rude-rapper
 >rude rapper
 But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-screwed-scrapper
 >screwed scrapper
 You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-snood-snapper
 >snood snapper
 You don't always remember what a snood is, but you're pretty sure none need to be snapped.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-strewed-strapper
 >strewed strapper
 No such contraption exists, fortunately. I think.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-sued-sapper
 >sued sapper
 That would be a villain worth fighting, but no.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-wooed-whapper
 >wooed whapper
 You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty.
+LCD
 
 #testcase-mistakes-table-of-crude-crapper-guesses-youd-yap-er
 >youd yap er
 You feel as though you want to say something about the state of these environs, but what good would it do?
+LCD
 
 >nude napper
 by one point
@@ -360,56 +463,79 @@ by one point
 #testcase-mistakes-table-of-recroom-guesses-seek-suitor
 >seek suitor
 Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together.
+LCD
 
 #+testcase-mistakes-table-of-crude-crapper-guesses-dude-dapper
 >dude dapper
 You need companions who get stuff done, not stylish pals.
+!LCD
 
 >w
 
 #testcase-mistakes-table-of-cried-creek-guesses-bide-beak
 >bide beak
 No bird swoops along to give you pointers.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-chide-cheek
 >chide cheek
 Nobody here has been too out of line.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-lied-leak-leek
 >lied leak
 You don't have time to track down who lied about what.
+LCD
 
 #+testcase-mistakes-table-of-cried-creek-guesses-lied-leak-leek
 >lied leek
 You don't have time to track down who lied about what.
+LCD
 
-#testcase-mistakes-table-of-cried-creek-guesses-pied-pique
+#testcase-mistakes-table-of-cried-creek-guesses-pied-pique-peek-peak
 >pied pique
-You recount someone who deserved it getting a pie in their face.
+You recount someone who deserved it getting a pie in their face and worry you are open for a sneak attack.
+LCD
+
+#+testcase-mistakes-table-of-cried-creek-guesses-pied-pique-peek-peak
+>pied peek
+You recount someone who deserved it getting a pie in their face and worry you are open for a sneak attack.
+LCD
+
+#+testcase-mistakes-table-of-cried-creek-guesses-pied-pique-peek-peak
+>pied peak
+You recount someone who deserved it getting a pie in their face and worry you are open for a sneak attack.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-ride-reek
 >ride reek
 You pine for transport, even smelly transport.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-side-seek
 >side seek
 You know which side you're on. Decency and justice. You hope.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-slide-sleek
 >slide sleek
 You don't need passage down anywhere.
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-tied-teak
 >tied teak
 No teak desk appears tied to the ground
+LCD
 
 #testcase-mistakes-table-of-cried-creek-guesses-wide-whyd-weak
 >wide weak
 You don't need to drain anyone, here.
+LCD
 
 #+testcase-mistakes-table-of-cried-creek-guesses-wide-whyd-weak
 >whyd weak
 You don't need to drain anyone, here.
+LCD
 
 >stride streak
 by one point
@@ -425,12 +551,18 @@ by one point
 #testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
 >tailing til
 You don't need to follow anyone or ask them to follow. Those who want to, will.
+LCD
 
 >undo
 >undo
 
 >snide sneak
 by one point
+
+#+testcase-mistakes-table-of-cried-creek-guesses-bide-beak
+>bide beak
+No bird swoops along to give you pointers.
+!LCD
 
 >e
 
@@ -452,6 +584,11 @@ by one point
 >r 3
 by one point
 
+#+testcase-mistakes-table-of-recroom-guesses-seek-suitor
+>seek suitor
+You've found everyone available.
+!LCD
+
 >s
 >e
 
@@ -463,61 +600,84 @@ by one point
 #testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
 >bucky bought
 Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+LCD
 
 #+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
 >bucky bot
 Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?
+LCD
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-clucky-clot
 >clucky clot
 You think about people who've wasted your time with meaningless jabber.
+LCD
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-ducky-dot
 >ducky dot
 You see no dot or person named Dorothea to proclaim as ducky.
+LCD
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-lucky-lot
 >lucky lot
 You grumble about rich people for a bit. It doesn't hurt.
+LCD
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
 >nucky knot
 You don't want to cross a mogul of a Boardwalk Empire just now.
+LCD
 
 #+testcase-mistakes-table-of-yucky-yacht-guesses-nucky-not-knot
 >nucky not
 You don't want to cross a mogul of a Boardwalk Empire just now.
+LCD
+
+#testcase-mistakes-table-of-yucky-yacht-guesses-rucky-rot
+>rucky rot
+You take a moment to internally deplore pointless fighting.
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
 >sucky sot
 Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+LCD
 
 #+testcase-mistakes-table-of-yucky-yacht-guesses-sucky-sot-sought
 >sucky sought
 Bright Brave Knight Knaves aren't negative like that! Everyone sought is worthwhile!
+LCD
 
 #testcase-mistakes-table-of-yucky-yacht-guesses-trucky-trot
 >trucky trot
 You have no need to walk through or over anyone.
+LCD
 
 >plucky plot
 by one point
 
+#+testcase-mistakes-table-of-yucky-yacht-guesses-trucky-trot
+>trucky trot
+You have no need to walk through or over anyone.
+!LCD
+
 #+testcase-mistakes-table-of-yucky-yacht-guesses-bucky-bought-bot
 >bucky bought
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+!LCD
 
 #testcase-mistakes-table-of-sassed-sort-guesses-blast-blort
 >blast blort
 You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!
+LCD
 
 #testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
 >massed mort
 Not what you need now, death around the corner, for the ship or otherwise.
+LCD
 
 #+testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
 >mast mort
 Not what you need now, death around the corner, for the ship or otherwise.
+LCD
 
 >s
 >w
@@ -532,66 +692,90 @@ Not what you need now, death around the corner, for the ship or otherwise.
 #testcase-mistakes-table-of-tata-guesses-ball-bank-banks
 >ball bank
 You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-ball-bank-banks
 >ball banks
 You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-crawl-crank-cranks
 >crawl crank
 There is no hidden mechanism under the tanks.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-crawl-crank-cranks
 >crawl cranks
 There is no hidden mechanism under the tanks.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-drawl-drank-dranks
 >drawl drank
 You don't want to endorse alcohol in any way.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-drawl-drank-dranks
 >drawl dranks
 You don't want to endorse alcohol in any way.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-gall-gank-ganks
 >gall gank
 You're a Bright Brave Knight Knave, not a thief.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-gall-gank-ganks
 >gall ganks
 You're a Bright Brave Knight Knave, not a thief.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
 >haul hank
 You sort of need to push the tanks out of the way. But first names aren't necessary.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
 >hall hanks
 You sort of need to push the tanks out of the way. But first names aren't necessary.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-lol-loll-lank-lanks
 >lol lank
 A Bright Brave Knight Knave mocks the oppressively powerful, not body types.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-lol-loll-lank-lanks
 >loll lanks
 A Bright Brave Knight Knave mocks the oppressively powerful, not body types.
+LCD
+
+#testcase-mistakes-table-of-tata-guesses-maul-mall-manx
+>mall manx
+You don't need to buy or (especially) mistreat a pet cat.
+
+#+testcase-mistakes-table-of-tata-guesses-maul-mall-manx
+>maul manx
+You don't need to buy or (especially) mistreat a pet cat.
 
 #testcase-mistakes-table-of-tata-guesses-stall-stank-stanks
 >stall stank
 No, that's a few rooms to the west.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-stall-stank-stanks
 >stall stanks
 No, that's a few rooms to the west.
+LCD
 
 #testcase-mistakes-table-of-tata-guesses-wall-wank-wanks
 >wall wank
 To steal from Futurama, this rhyme is technically correct: the best kind of correct!
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-wall-wank-wanks
 >wall wanks
 To steal from Futurama, this rhyme is technically correct: the best kind of correct!
+LCD
 
 >yall yank
 by one point
@@ -599,13 +783,20 @@ by one point
 #+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
 >hall hank
 You sort of needed to push the tanks out of the way. But first names aren't necessary.
+LCD
 
 #+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
 >haul hanks
 You sort of needed to push the tanks out of the way. But first names aren't necessary.
+LCD
 
 >paul panks
 by one point
+
+#+testcase-mistakes-table-of-tata-guesses-hall-haul-hank-hanks
+>hall hank
+You sort of needed to push the tanks out of the way. But first names aren't necessary.
+!LCD
 
 >w
 
@@ -626,90 +817,112 @@ by one point
 #testcase-mistakes-table-of-treed-track-guesses-bead-back
 >bead back
 You don't need to drop things to get out of the forest.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-bleed-black
 >bleed black
 That'd make you one of the bad guys, though, right?
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-breed-brack
 >breed brack
 No, you need the opposite of a brack, to bring things together.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-creed-crack
 >creed crack
 You aren't looking to proselytize.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-feed-faq
 >feed faq
 Now's not the time to worry about nourishment.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
 >fleed flak
 There is no flak to flee here.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-fleed-flack-flak
 >fleed flack
 There is no flak to flee here.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-freed-frack
 >freed frack
 Oh no! It's not Big Oil that needs freedom.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
 >lead lack
 You bemoan the lack of leadership, or a lede, whichever.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-lead-lede-lack
 >lede lack
 You bemoan the lack of leadership, or a lede, whichever.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
 >mead mac
 This'd be a great call to an olde-time forest picnic.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-mead-mac-mack
 >mead mack
 This'd be a great call to an olde-time forest picnic.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
 >pd pack
 You don't need angry followers, allies or enemies.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-pd-peed-pack
 >peed pack
 You don't need angry followers, allies or enemies.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
 >reed rack
 You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-reed-read-rack
 >read rack
 You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-sneed-snack
 >sneed snack
 The Simpsons made a better joke about Chuck's than I ever could.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-steed-stack
 >steed stack
 This world's not big enough to need a horse. Plus the horses above would crush the ones below.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-teed-tack
 >teed tack
 But you have nothing to tack up on a board, or tee up for a game of golf.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
 >weed wack
 Landscaping's not your specialty.
+LCD
 
 #+testcase-mistakes-table-of-treed-track-guesses-weed-wack-whack
 >weed whack
 Landscaping's not your specialty.
+LCD
 
 #testcase-mistakes-table-of-treed-track-guesses-yed-yack
 >yed yack
 There is nobody to silence in the immediate area.
+LCD
 
 >need knack
 by one point
@@ -723,6 +936,11 @@ by one point
 >seed sack
 by one point
 
+#+testcase-mistakes-table-of-treed-track-guesses-bead-back
+>bead back
+You don't need to drop things to get out of the forest.
+!LCD
+
 >n
 
 >e
@@ -732,54 +950,67 @@ by one point
 #testcase-mistakes-table-of-lane-lax-guesses-bane-backs
 >bane backs
 No, you can't let despair overtake you.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-brain-bracks
 >brain bracks
 You worry your brain is about to crack, but if you still know an obscure word like brack, it can't, really?
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-crane-cracks
 >crane cracks
 You don't need a construction accident or dead birds.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-feign-facts
 >feign facts
 No, that's the bad guys.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-gain-gacks
 >gain gacks
 Your style of humor isn't gross-out.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-jane-jacks
 >jane jacks
 No female gangster rapper appears.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-plain-plaques
 >plain plaques
 Nah. You'd rather have achievements.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-rain-racks
 >rain racks
 You don't need to catch the rain.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-sane-sacks-sax
 >sane sacks
 You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
+LCD
 
 #+testcase-mistakes-table-of-lane-lax-guesses-sane-sacks-sax
 >sane sax
 You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-slain-slacks
 >slain slacks
 You uncover no torn pairs of pants.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-stain-stacks
 >stain stacks
 You have no need or desire to vandalize a library.
+LCD
 
 #testcase-mistakes-table-of-lane-lax-guesses-wane-wax
 >wane wax
-You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him.
+You contemplate the stars, the ebb and flow of living, and how Kevin Arnold's older brother was so unfair to him.
+LCD
 
 >train tracks
 by one point
@@ -794,12 +1025,13 @@ by one point
 
 #+testcase-mistakes-table-of-lane-lax-guesses-wane-wax
 >wane wax
-You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him.
+You contemplate the stars, the ebb and flow of living, and how Kevin Arnold's older brother was so unfair to him.
 !LCD
 
 #testcase-mistakes-table-of-oecc-guesses-bowed-byes-buys
 >bowed buys
 No need for bowing here.
+LCD
 
 >bowed byes
 No need for bowing here.
@@ -807,30 +1039,37 @@ No need for bowing here.
 #testcase-mistakes-table-of-oecc-guesses-howd-hies-his
 >howd hies
 How isn't quite the question to ask.
+LCD
 
 #+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
 >howd his
 How isn't quite the question to ask.
+LCD
 
 #testcase-mistakes-table-of-oecc-guesses-powed-pies
 >powed pies
 No pie ambushes anyone, for better or worse.
+LCD
 
 #testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
 >proud prize
 Well, that's what you get if you figure what to do here.
+LCD
 
 #+testcase-mistakes-table-of-oecc-guesses-proud-pries-prize
 >proud pries
 Well, that's what you get if you figure what to do here.
+LCD
 
 #testcase-mistakes-table-of-oecc-guesses-thoud-thys
 >thoud thys
 Old English might confuse the crowd but won't really make a lasting impression.
+LCD
 
 #testcase-mistakes-table-of-oecc-guesses-vowed-vies
 >vowed vies
 You've already made vows to set things straight.
+LCD
 
 >wowed whys
 by one point
@@ -838,6 +1077,7 @@ by one point
 #+testcase-mistakes-table-of-oecc-guesses-howd-hies-his
 >howd his
 How wasn't quite the question to ask.
+LCD
 
 >loud lies
 by one point
@@ -845,6 +1085,7 @@ by one point
 #+testcase-mistakes-table-of-oecc-guesses-thoud-thys
 >thoud thys
 Old English might have confused the crowd but won't really make a lasting impression.
+!LCD
 
 >s
 
@@ -860,37 +1101,50 @@ by one point
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-booed-bass
 >booed bass
 You don't want to get sea bass irritable.
+LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brewed brass
 The armor on the track tryst lack list probably needs to be stronger than brass.
+LCD
 
 #+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brood brass
 The armor on the track tryst lack list probably needs to be stronger than brass.
+LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
 >mood mass
 You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+LCD
 
 #+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
 >mooed mass
 You'd be kind of creeped out to hear something inanimate start making morose cow noises.
+LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-poohed-pass
 >poohed pass
 You think you see an exit out, but nah, it's just get you more lost.
+LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-sued-sass
 >sued sass
 How very anti-freedom of speech and unlike a Bright Brave Knight Knave!
+LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-tude-tass
 >tude tass
 You're already in the text adventure spirit.
+LCD
 
 >glued glass
 by one point
+
+#+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-tude-tass
+>tude tass
+You're already in the text adventure spirit.
+!LCD
 
 >cast court
 by one point
@@ -898,29 +1152,40 @@ by one point
 #testcase-mistakes-table-of-perky-pap-guesses-clerky-clap
 >clerky clap
 You consider the right way to applaud bureaucracy.
+LCD
 
 #testcase-mistakes-table-of-perky-pap-guesses-irky-app
 >irky app
 You download no annoying application to your phone. You don't even have a phone on you.
+LCD
 
 #testcase-mistakes-table-of-perky-pap-guesses-kirky-cap
 >kirky cap
 You find no clothes that make you talk with dramatic pauses or yell KHAN.
+LCD
 
 #testcase-mistakes-table-of-perky-pap-guesses-lurky-lap
 >lurky lap
 You slightly fear your junior-high gym teacher just waiting to give out punishment.
+LCD
 
 #testcase-mistakes-table-of-perky-pap-guesses-turkey-tap
 >turkey tap
 Even if one appeared, you'd wonder how they'd fit through there.
+LCD
 
 #testcase-mistakes-table-of-perky-pap-guesses-worky-whap
 >worky whap
 Nobody is there to kick or shove you into gear.
+LCD
 
 >murky map
 by one point
+
+#+testcase-mistakes-table-of-perky-pap-guesses-worky-whap
+>worky whap
+Nobody is there to kick or shove you into gear.
+!LCD
 
 >passed port
 by one point
@@ -928,6 +1193,12 @@ by one point
 #testcase-mistakes-table-of-clashing-cord-guesses-flashing-ford
 >flashing ford
 No bridge across a river, or car, or intergalactic space traveler whizzes by.
+LCD
+
+#+testcase-mistakes-table-of-sassed-sort-guesses-mast-massed-mort
+>mast mort
+Not what you need now, death around the corner, for the ship or otherwise.
+!LCD
 
 >slashing sword
 by one point
@@ -935,9 +1206,20 @@ by one point
 #testcase-mistakes-table-of-pallid-pent-valid-vent-guesses-ballad-bent
 >ballad bent
 Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tunes.
+LCD
+
+#+testcase-mistakes-table-of-clashing-cord-guesses-flashing-ford
+>flashing ford
+No bridge across a river, or car, or intergalactic space traveler whizzes by.
+!LCD
 
 >salad scent
 by one point
+
+#+testcase-mistakes-table-of-pallid-pent-valid-vent-guesses-ballad-bent
+>ballad bent
+Being a Bright Brave Knight Knave, you love keeping an ear open for off-color tunes.
+!LCD
 
 >in
 
@@ -960,77 +1242,100 @@ by one point
 #testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
 >boo buff
 You try to puff yourself out as more muscular than you actually are. No dice.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
 >chew chuff
 You make train noises, but none appears.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
 >choo chuff
 You make train noises, but none appears.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
 >coo cuff
 You consider lashing out for its own sake.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-do-duff
 >do duff
 No, you want to do something right.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-drew-druff
 >drew druff
 You remember shaking your hair out and suddenly understanding those shampoo commercials.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
 >flew fluff
 You don't have time to fly, or get sick, or other frivolities!
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
 >flu fluff
 You don't have time to fly, or get sick, or other frivolities!
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
 >goo guff
 You produce no sticky stuff.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
 >hoo huff
 Alas (or not,) there is nobody to get huffy at.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
 >who huff
 Alas (or not,) there is nobody to get huffy at.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
 >moo muff
 You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
 >poo puff
 You feel fake exhaustion for a bit.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
 >pooh puff
 You feel fake exhaustion for a bit.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
 >rue rough
 Bummer, you think, that things aren't given to you.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
 >skew scuff
 You shuffle your feet a bit, exaggerating what has happened and what you face.
+LCD
 
 #testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
 >slue slough
 You blink, only to find you have not wound up in a bog, which is probably for the better.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
 >slew sluff
 You blink, only to find you have not wound up in a bog, which is probably for the better.
+LCD
 
 >grew gruff
 by one point
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+You try to puff yourself out as more muscular than you actually are. No dice.
+LCD
 
 >stew stuff
 by one point
@@ -1038,53 +1343,75 @@ by one point
 #+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
 >boo buff
 It's stew ingredients, not protein shake ingredients.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-chew-choo-chuff
 >chew chuff
 You make train noises, but none appears.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-coo-cuff
 >coo cuff
 You consider lashing out for its own sake.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-do-duff
 >do duff
 No, you want to do something right.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-flew-flu-fluff
 >flew fluff
 You don't have time to fly, or get sick, or other frivolities!
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-goo-guff
 >goo guff
 You produce no sticky stuff.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-hoo-who-huff
 >hoo huff
 Alas (or not,) there is nobody to get huffy at.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-moo-muff
 >moo muff
 You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-poo-pooh-puff
 >pooh puff
 You feel fake exhaustion for a bit.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-rue-rough
 >rue rough
 Bummer, you think, that things aren't given to you.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-skew-scuff
 >skew scuff
 You shuffle your feet a bit, exaggerating what has happened and what you face.
+LCD
 
 #+testcase-mistakes-table-of-stew-stuff-guesses-slew-slue-sluff-slough
 >slew sluff
 You blink, only to find you have not wound up in a bog, which is probably for the better.
+LCD
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+It's stew ingredients, not protein shake ingredients.
+LCD
 
 >new nuff
 by one point
+
+#+testcase-mistakes-table-of-stew-stuff-guesses-boo-buff
+>boo buff
+It's stew ingredients, not protein shake ingredients.
+!LCD
 
 >e
 
@@ -1097,62 +1424,77 @@ by one point
 #testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
 >bod bash
 No, one fight is enough.
+LCD
 
 #+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
 >bawd bash
 No, one fight is enough.
+LCD
 
 #+testcase-mistakes-table-of-clod-clash-guesses-bod-bawd-baud-bash
 >baud bash
 No, one fight is enough.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
 >cod cache
 All sea life will be clearly visible.
+LCD
 
 #+testcase-mistakes-table-of-clod-clash-guesses-cod-cash-cache
 >cod cash
 All sea life will be clearly visible.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-crawed-crash
 >crawed crash
 You remember people actually glad they got into an accident.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-god-gash
 >god gash
 You don't need to hurt anyone or express anger at being hurt.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-lawd-lawed-lash
 >lawd lash
 You aren't big on thinking about the details of punishment.
+LCD
 
 #+testcase-mistakes-table-of-clod-clash-guesses-lawd-lawed-lash
 >lawed lash
 You aren't big on thinking about the details of punishment.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-mod-mash
 >mod mash
 You do not need to start a new dance craze.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
 >nod nash
 There's nobody you can see to commiserate here with.
+LCD
 
-#testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
+#+testcase-mistakes-table-of-clod-clash-guesses-nod-nash-gnash
 >nod gnash
 There's nobody you can see to commiserate here with.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-rod-rawed-rash
 >rawed rash
 You need leave no welt with instruments of punishment.
+LCD
 
 #+testcase-mistakes-table-of-clod-clash-guesses-rod-rawed-rash
 >rod rash
 You need leave no welt with instruments of punishment.
+LCD
 
 #testcase-mistakes-table-of-clod-clash-guesses-sawed-sash
 >sawed sash
 You need no fancy clothes.
+LCD
 
 >trod trash
 by one point
@@ -1168,18 +1510,22 @@ No, one fight is enough.
 #testcase-mistakes-table-of-fought-fief-guesses-grot-grief
 >grot grief
 You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!
+LCD
 
 #testcase-mistakes-table-of-fought-fief-guesses-lot-leaf
 >lot leaf
 You observe the fauna and flora, specifically not looking for any leaves to burn.
+LCD
 
 #testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
 >shot sheaf
 You look around for papers, but maybe you aren't looking for the right ones.
+LCD
 
 #testcase-mistakes-table-of-fought-fief-guesses-tot-teef
 >tot teef
 You look for something to give the Tooth Fairy. Nothing.
+LCD
 
 >bought beef
 by one point
@@ -1190,6 +1536,7 @@ by one point
 #+testcase-mistakes-table-of-fought-fief-guesses-shot-sheaf
 >shot sheaf
 You look around for papers, but there are no more.
+!LCD
 
 >wrought reef
 by one point
@@ -1197,63 +1544,79 @@ by one point
 #testcase-mistakes-table-of-one-wish-fun-fish-guesses-gun-gish
 >gun gish
 You get a gish gallop going, but the fish doesn't seem to understand.
+LCD
 
 #testcase-mistakes-table-of-one-wish-fun-fish-guesses-none-nish
 >none nish
 The fish swims around, ignoring your temporary nihilism.
+LCD
 
 #testcase-mistakes-table-of-one-wish-fun-fish-guesses-pun-pish
 >pun pish
 The fish looks blankly at you. It has no knowledge of puns.
+LCD
 
 >done dish
 by one point
 
 #testcase-mistakes-table-of-nil-none-guesses-bill-bun
 >bill bun
-You can pay for food once you're here.
+You can pay for a burger once you're done here.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-dill-done
 >dill done
 This isn't a cooking sim.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-gill-gun
 >gill gun
 You don't need a fancy weapon.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-hill-hun-hon
 >hill hun
 You don't need to be attacked, or take saccharine praise, from above.
+LCD
+
 >hill hon
 You don't need to be attacked, or take saccharine praise, from above.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-pill-pun
 >pill pun
 Drug humor won't help here.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-shill-shun
 >shill shun
-Alas, there is nobody to reject and feel better about yourself.
+If only there were haters nearby to zone out, that would work!
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-sill-sun-son
 >sill sun
 No light-giving window appears.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-spill-spun
 >spill spun
 Alas, no solution to your woes is created, nor does it tumble out.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-still-stun
 >still stun
 You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog.
+LCD
 
 #testcase-mistakes-table-of-nil-none-guesses-till-til-ton
 >till ton
 Things are weighty enough here.
+LCD
 
 #+testcase-mistakes-table-of-nil-none-guesses-till-til-ton
 >til ton
 Things are weighty enough here.
+LCD
 
 >fill fun
 by one point
@@ -1262,6 +1625,7 @@ by one point
 >still stun
 !stunned
 It looks like you may have tried to refer to the room name, or part of it. You often need to riff on the room name, but you never need to use the room name directly.
+!LCD
 
 >will won
 by one point
@@ -1301,6 +1665,7 @@ by one point
 #testcase-mistakes-table-of-sour-slate-guesses-hour-late
 >hour late
 You frown at the sour slate, wishing you'd seen it sooner.
+LCD
 
 >power plate
 by one point
@@ -1308,10 +1673,12 @@ by one point
 #+testcase-mistakes-table-of-sour-slate-guesses-hour-late
 >hour late
 You frown at the power plate, wishing you'd seen it sooner.
+!LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-back-bite
 >back bite
 Now that's no way to restore order!
+LCD
 
 >nah naff
 
@@ -1319,51 +1686,67 @@ Now that's no way to restore order!
 #testcase-mistakes-table-of-black-blight-guesses-faq-fight
 >faq fight
 You vow to get through this without consulting an outside guide.
+LCD
 
 >ha half
 
 #testcase-mistakes-table-of-black-blight-guesses-frack-fright
 >frack fright
 It's hard not to fear how nefarious Big Oil is.
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
 >knack knight
 You already have the knack. How to use it?
+LCD
 
 #+testcase-mistakes-table-of-black-blight-guesses-knack-night-knight
 >knack night
 You already have the knack. How to use it?
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
 >mac might
 You get vernacular about your potential, but you need to do more.
+LCD
 
 #+testcase-mistakes-table-of-black-blight-guesses-mac-mack-might
 >mack might
 You get vernacular about your potential, but you need to do more.
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-plaque-plight
 >plaque plight
 Worry about your dentist after you took care of business.
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-sprack-sprite
 >sprack sprite
 You go medieval on the English language for a bit, but no supernatural help appears.
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-track-trite
 >track trite
 Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
+LCD
 
 #testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
 >wack wight
 Thankfully, no evil undeads are at play here.
+LCD
 
 #+testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
 >whack white
 Thankfully, no evil undeads are at play here.
+LCD
 
 >flak flight
 by one point
+
+#+testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
+>whack white
+Thankfully, no evil undeads are at play here.
+!LCD
 
 >d
 
@@ -1371,6 +1754,7 @@ by one point
 #+testcase-mistakes-table-of-black-blight-guesses-track-trite
 >track trite
 Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
+!LCD
 
 >n
 
@@ -1385,61 +1769,80 @@ by one point
 #testcase-mistakes-table-of-posh-pick-guesses-cosh-kick
 >cosh kick
 You momentarily fear different types of violence. It keeps you motivated, you hope.
+LCD
 
 #testcase-mistakes-table-of-posh-pick-guesses-frosh-frick
 >frosh frick
 You remember in high school how underclassmen were beaten up for swearing or not swearing.
+LCD
 
 #testcase-mistakes-table-of-posh-pick-guesses-mosh-mick
 >mosh mick
 You neither see Jagger nor develop moves like him
+LCD
 
 #testcase-mistakes-table-of-posh-pick-guesses-nosh-nick
 >nosh nick
 Ugh! Prison food!
+LCD
 
 #testcase-mistakes-table-of-posh-pick-guesses-tosh-tick
 >tosh tick
 Thankfully, you have no insects or time crunches to worry about.
+LCD
 
 #testcase-mistakes-table-of-posh-pick-guesses-wash-wick
 >wash wick
 Doing so would mean you can't light a candle. That's what you meant, right?
+LCD
 
 >slosh slick
 by one point
 
+#+testcase-mistakes-table-of-posh-pick-guesses-wash-wick
+>wash wick
+Doing so would mean you can't light a candle. That's what you meant, right?
+!LCD
+
 #testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
 >chime choad
 You are all for off-color humor but it doesn't seem appropriate here.
+LCD
 
 #+testcase-mistakes-table-of-rime-road-guesses-chime-choad-chode
 >chime chode
 You are all for off-color humor but it doesn't seem appropriate here.
+LCD
 
 #testcase-mistakes-table-of-rime-road-guesses-crime-crowed
 >crime crowed
 You eavesdrop on no criminal confessions.
+LCD
 
 #testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
 >dime dohed
 You find no money in a loaf of bread
+LCD
 
 #+testcase-mistakes-table-of-rime-road-guesses-dime-doughed-dohed
 >dime doughed
 You find no money in a loaf of bread
+LCD
 
 #testcase-mistakes-table-of-rime-road-guesses-grime-growed
 >grime growed
 Ungrammatical, and anyway, you are trying to clean things up here!
+LCD
 
 #testcase-mistakes-table-of-rime-road-guesses-im-owed
 >im owed
 All this entitlement is brave but not bright.
+LCD
 
 #testcase-mistakes-table-of-rime-road-guesses-lime-load
 >lime load
 The fruit or the stone, you can't see yourself lugging it around.
+LCD
 
 >time toad
 by one point
@@ -1447,14 +1850,17 @@ by one point
 #testcase-mistakes-table-of-dander-dove-guesses-strander-strove
 >strander strove
 This would seem to be despairing. You can't already admit you tried but failed.
+LCD
 
 #testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rander rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
+LCD
 
-#testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
+#+testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rand er rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
+LCD
 
 >stander stove
 by one point
@@ -1465,10 +1871,20 @@ by one point
 >grander grove
 by one point
 
+#+testcase-mistakes-table-of-dander-dove-guesses-strander-strove
+>strander strove
+This would seem to be despairing. You can't already admit you tried but failed.
+!LCD
+
 >n
 
 >mime mode
 by one point
+
+#+testcase-mistakes-table-of-rime-road-guesses-im-owed
+>im owed
+All this entitlement is brave but not bright.
+!LCD
 
 >in
 
@@ -1476,6 +1892,7 @@ by one point
 #+testcase-mistakes-table-of-posh-pick-guesses-wash-wick
 >wash wick
 Doing so would mean you can't light a candle. That's what you meant, right?
+!LCD
 
 >s
 
@@ -1492,34 +1909,42 @@ by one point
 #testcase-mistakes-table-of-route-rough-guesses-bout-buff
 >bout buff
 Bulking up won't help you overpower futility.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-doubt-duff
 >doubt duff
 You doubt that Homer Simpson's beer is truly great. Man, you really must be bummed!
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-gout-guff
 >gout guff
 You hope you don't get gout, whatever that is.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-grout-gruff
 >grout gruff
 You grumble at the thought of home repairs.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-pout-puff
 >pout puff
 You should be trying to bring yourself up, here.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-scout-scuff
 >scout scuff
 You remember being disillusioned by a Boy Scout troop that was completely not Norman Rockwell.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-snout-snuff
 >snout snuff
 You make various sniffy noises, hoping for catharsis.
+LCD
 
 #testcase-mistakes-table-of-route-rough-guesses-tout-tough
 >tout tough
 You talk yourself up, but you come back down to earth quickly.
+LCD
 
 >nowt nuff
 by one point
@@ -1529,6 +1954,11 @@ by one point
 
 >flout fluff
 by one point
+
+#+testcase-mistakes-table-of-route-rough-guesses-bout-buff
+>bout buff
+Bulking up won't help you overpower futility.
+!LCD
 
 >n
 
@@ -1601,7 +2031,7 @@ Alas, the Winter Olympics would be another game.
 You search for some but can't find any.
 !LCD
 
-#+testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
+#testcase-mistakes-table-of-general-good-guesses-tying-ts-tees-teas-tease
 >tying ts
 If tying is a tease for you, that's your business, not mine.
 !LCD
@@ -1675,34 +2105,42 @@ If tying is a tease for you, that's your business, not mine.
 #testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
 >choosing chew
 Trading alcohol for tobacco would just be a lateral move.
+LCD
 
 #testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
 >rusing roo
 No sneaky kangaroo appears, which is probably for the better.
+LCD
 
 #testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing oo
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+LCD
 
 #+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing ooh
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+LCD
 
 #+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing ew
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+LCD
 
 #+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing eww
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+LCD
 
 #+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
 >rusing rue
 No sneaky kangaroo appears, which is probably for the better.
+LCD
 
 #testcase-mistakes-table-of-bruising-brew-guesses-musing-mew
 >musing mew
 "Hmm," you say, inflecting your voice. You guess and hope that looked smart and thoughtful.
+LCD
 
 >using you
 by one point
@@ -1713,6 +2151,7 @@ by one point
 #+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
 >choosing chew
 After helping Lou kick alcohol, you recommend that? Ouch!
+LCD
 
 >fusing phew
 by one point
@@ -1720,18 +2159,22 @@ by one point
 #+testcase-mistakes-table-of-bruising-brew-guesses-choosing-chew
 >choosing chew
 You think what a lovely bubble gum shop this would make!
+!LCD
 
 #testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
 No, Lou needs something more positive.
+LCD
 
 #testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
 No, Lou needs something less reflexive.
+LCD
 
 #testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
 >yearning you
 No, Lou needs something less overtly earnest, something with solutions.
+LCD
 
 >spurning spew
 by one point
@@ -1739,14 +2182,17 @@ by one point
 #+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
 No, Lou needed something more positive.
+!LCD
 
 #+testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
 No, Lou needed something less reflexive.
+!LCD
 
 #+testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
 >yearning you
 No, Lou needed something less overtly earnest, something with solutions.
+!LCD
 
 >out
 
@@ -1755,34 +2201,42 @@ No, Lou needed something less overtly earnest, something with solutions.
 #testcase-mistakes-table-of-hailing-hill-guesses-jailing-jill
 >jailing jill
 No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked.
+LCD
 
 #testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
 >paling pill
 You don't need to get or receive buckets of chemical stimulation.
+LCD
 
 #+testcase-mistakes-table-of-hailing-hill-guesses-paling-pailing-pill
 >pailing pill
 You don't need to get or receive buckets of chemical stimulation.
+LCD
 
 #testcase-mistakes-table-of-hailing-hill-guesses-railing-rill
 >railing rill
 A river would be just charming here, but you're not in the business of fixing the landscape.
+LCD
 
 #testcase-mistakes-table-of-hailing-hill-guesses-sailing-sill
 >sailing sill
 Waterways are more likely to be at lower elevations.
+LCD
 
 #testcase-mistakes-table-of-hailing-hill-guesses-swailing-swill
 >swailing swill
 You're not up on the best way to contain forest fires, so better not get in a debate.
+LCD
 
 #+testcase-mistakes-table-of-hailing-hill-guesses-tailing-til-till
 >tailing till
 You don't need to follow anyone or ask them to follow. Those who wanted to, did.
+LCD
 
 #testcase-mistakes-table-of-hailing-hill-guesses-trailing-trill
 >trailing trill
 You don't feel a song right now. Not until you've fixed things completely.
+LCD
 
 >scaling skill
 by one point
@@ -1794,6 +2248,7 @@ by one point
 #+testcase-mistakes-table-of-treed-track-guesses-yed-yack
 >yed yack
 There is nobody to silence in the immediate area.
+!LCD
 
 >mailing mill
 by one point
@@ -1806,6 +2261,11 @@ by one point
 
 >bailing bill
 by one point
+
+#+testcase-mistakes-table-of-hailing-hill-guesses-trailing-trill
+>trailing trill
+You don't feel a song right now. Not until you've fixed things completely.
+!LCD
 
 >d
 
@@ -1820,10 +2280,12 @@ by one point
 #testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
 >right wooly
 That could be construed as a compliment. Ruggedness and all.
+LCD
 
-#testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+#+testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
 >write wooly
 That could be construed as a compliment. Ruggedness and all.
+LCD
 
 >bright bully
 by one point
@@ -1831,49 +2293,65 @@ by one point
 #testcase-mistakes-table-of-trite-tully-guesses-damn-die
 >damn die
 Struck, Strikes? Yuck, Yikes!
+!LCD
 
 >undo
 
 #testcase-mistakes-table-of-trite-tully-guesses-fam-fie
 >fam fie
 Tully isn't really looking to be a close friend.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-ham-hi-high
 >ham hi
 Yes, Tully is overacting, but knowing this fact won't do enough.
+LCD
 
 >ham high
 Yes, Tully is overacting, but knowing this fact won't do enough.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-lamb-lie
 >lamb lie
 Curse-y Cad Mercy?! MAD!
+!LCD
 
 >undo
 
 #testcase-mistakes-table-of-trite-tully-guesses-maam-my
 >maam my
 Your appeal to female authority falls on deaf ears.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-spam-spy
 >spam spy
 It's no secret that Tully spams their opinions.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-tram-try
 >tram try
 If there were a train to catch, you could send Tully on it. Alas, no.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-cram-cry
 >cram cry
 Now's not the time to get too emotional.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-dram-dry
 >dram dry
 Now's not the time for alcohol.
+LCD
 
 #testcase-mistakes-table-of-trite-tully-guesses-wham-why
 >wham why
 It's pointless to ask a troll why.
+LCD
+
+#+testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+>right wooly
+That could be construed as a compliment. Ruggedness and all.
+!LCD
 
 >bam bye
 by one point

@@ -458,7 +458,7 @@ by one point
 
 #testcase-prong-checks-knell-nook
 >e
-That guide gong, again, rings to notify you that you don't need to go back through Knell Nook.
+That guide gong, again, rings to notify you that you don't need to go back through Shell, Shook.
 
 >undo
 

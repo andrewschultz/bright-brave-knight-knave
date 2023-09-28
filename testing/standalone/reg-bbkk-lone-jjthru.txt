@@ -15,7 +15,7 @@ After some thought, you consider the right way forward: KITE CAVE...
 
 # make sure nothing for FIGHT FAVE yet, or WRITE RAVE/JACK GIST
 >jj
-The lurking lump remains immovable. I guess you've done all you need, here.
+The lurking lump remains immovable. There's nothing critical to do here--well, right now.
 
 >x hole
 
@@ -74,7 +74,7 @@ After some thought, you consider the right way forward: MOOD MAPPER...
 
 # make sure nothing for NUDE NAPPER
 >jj
-The lurking lump remains immovable. I guess you've done all you need, here.
+The lurking lump remains immovable. There's nothing critical to do here.
 
 >out
 >e
@@ -388,5 +388,4 @@ After some thought, you consider the right way forward: BRIGHT BULLY...
 After some thought, you consider the right way forward: BAM BYE...
 RESTART
 
-* _remaining
-
+>missed

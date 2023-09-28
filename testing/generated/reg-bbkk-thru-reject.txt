@@ -412,7 +412,7 @@ NOTE: this command will be useful later, but you aren't ready to use it, yet. Yo
 by one point
 
 #testcase-check-vc-kite-cave-rule-fallthrough
-You look around, and what do you know? You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
+Sometimes you don't find what you want until you're really looking for it. You see part of a kite stuck under a rock, in a cave. You try to move the rock, and when you do, you hear a rumbling. You try to take the kite, but it's tied to a string and is sucked down the hole and around a corner. The hole itself collapses, becoming big enough to climb down.
 The cave collapses. There's a passage DOWN, but next to it is a hold-hole. Perhaps looking at it will give you some clues what to do with your journey.
 
 #testcase-check-vc-kite-cave-rule-if-sco-kite-cave-is-true
@@ -429,7 +429,7 @@ You haven't placed any items in the hold hole yet. You'll need to, to be worthy 
 
 #testcase-think-table-of-verb-checks-vc-fight-fave-rule
 >think
-You can FIGHT FAVE once you are physically and emotionally prepared.
+You can FIGHT FAVE here once you are physically and emotionally prepared.
 
 >x list
 
@@ -437,7 +437,7 @@ You can FIGHT FAVE once you are physically and emotionally prepared.
 Your score and bonus points just went up by one point.
 
 #testcase-check-vc-jack-gist-rule-fallthrough
-Wow! You figured what to do. Now instead of typing X LIST, you can just type X or even I.
+A good Bright Brave Knight Knave uses shortcuts whenever they don't cut corners. No point getting exhausted by trivia! With a bit of meta-reasoning, you equate X with X LIST.
 
 #testcase-check-vc-jack-gist-rule-if-sco-jack-gist-is-true
 >jack gist
@@ -468,7 +468,14 @@ You have nothing to do mass math on. Yet.
 #testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
-You can use MASS MATH once you have something to calculate.
+You can FIGHT FAVE in White Wave once you are physically and emotionally prepared.
+You can use MASS MATH here once you have something to calculate.
+
+>d
+>think
+You can use MASS MATH in Bass Bath once you have something to calculate.
+
+>d
 
 >pass path
 
@@ -478,7 +485,7 @@ Weird! You don't expect anything to happen, but small land-bridges appear over t
 #+testcase-think-table-of-verb-checks-vc-mass-math-rule
 >think
 You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
-You can use MASS MATH now you have something to calculate.
+You can use MASS MATH here now you have something to calculate.
 
 #testcase-check-vc-pass-path-rule-if-sco-pass-path-is-true
 >pass path
@@ -502,7 +509,7 @@ Whoah! The tall tank is big! You'll need help from more than one person to move 
 
 #testcase-think-table-of-verb-checks-vc-yall-yank-rule
 >think
-You can say YALL YANK once you have the right cohorts.
+You can say YALL YANK here once you have the right cohorts.
 
 >undo
 >undo
@@ -519,7 +526,7 @@ You need a couple assistants to hatch a plot.
 
 #testcase-think-table-of-verb-checks-vc-plucky-plot-rule
 >think
-You can hatch a PLUCKY PLOT once you have the right co-conspirators.
+You can hatch a PLUCKY PLOT here once you have the right co-conspirators.
 
 >undo
 >undo
@@ -530,11 +537,11 @@ You can hatch a PLUCKY PLOT once you have the right co-conspirators.
 
 #testcase-check-vc-need-knack-rule-if-not-pair-here-of-snide-sneak
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+You recognize you don't have the knack for navigating forests. How to see shortcuts but not get too reliant on them? Where could you find people willing to help?
 
 #testcase-think-table-of-verb-checks-vc-need-knack-rule
 >think
-You can say you NEED KNACK once you have the right help by the Treed Track.
+You can say you NEED KNACK here once you have the right help.
 
 >undo
 >undo
@@ -575,8 +582,8 @@ There is no rum to rid that you can sense. Yet.
 #testcase-think-table-of-verb-checks-vc-kid-come-rule
 #testcase-think-table-of-verb-checks-vc-rid-rum-rule
 >think
-You can say KID COME once a kid is around.
-You can say RID RUM once you have cause to speak out against alcohol.
+You can say KID COME here once a kid is around.
+You can say RID RUM here once you have cause to speak out against alcohol.
 
 >hid hum
 by one point
@@ -594,7 +601,7 @@ The kid doesn't trust you enough yet! They feel no closeness.
 
 #+testcase-think-table-of-verb-checks-vc-kid-come-rule
 >think
-You can say KID COME now a kid is around.
+You can say KID COME here now a kid is around.
 
 >kid come
 by one point
@@ -608,7 +615,7 @@ You already called the kid over!
 
 #+testcase-think-table-of-verb-checks-vc-rid-rum-rule
 >think
-You can say RID RUM now you have cause to speak out against alcohol.
+You can say RID RUM here now you have cause to speak out against alcohol.
 
 >rid rum
 by one point
@@ -625,7 +632,7 @@ You already got rid of the rum!
 by one point
 
 #testcase-check-vc-mood-mapper-rule-fallthrough
-You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!
+You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And something turns up! It's like that scene in The Godfather, except you don't plan to murder or even insult anybody. Plus, the mood mapper you've found doesn't seem like much of a weapon.
 by one point
 
 #testcase-check-vc-mood-mapper-rule-if-sco-mood-mapper-is-true
@@ -722,7 +729,7 @@ A mailing mill would be nice, but you haven't reached the top of Hailing Hill ye
 
 #testcase-think-table-of-verb-checks-vc-mailing-mill-rule
 >think
-You can place a mailing mill once you can access the top of Hailing Hill.
+You can place a MAILING MILL here once you can access the top.
 
 >scaling skill
 by one point
@@ -735,7 +742,7 @@ by one point
 A mailing mill can't just pop out of thin air or appear from the ground spontaneously. It must come from, like, raw materials.
 
 >think
-You can place a mailing mill now you can access the top of Hailing Hill and once you have the raw materials.
+You can place a MAILING MILL here now you can access the top and once you have the raw materials.
 
 >undo
 >undo
@@ -994,13 +1001,13 @@ It's all well and good to need assistance, but your current friends can't give a
 
 >pals 21
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >undo
 >undo
 
 >pals 22
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >undo
 >undo
 
@@ -1018,19 +1025,19 @@ The Snide Sneak has advice for how to find your way around, but it isn't really 
 
 >pals 32
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >undo
 >undo
 
 >pals 11
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >undo
 >undo
 
 >pals 12
 >need knack
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >undo
 >undo
 
@@ -1421,13 +1428,13 @@ There must be something here in the Sack Site!
 
 #testcase-think-table-of-verb-checks-vc-grew-gruff-rule
 >think
-You can say GREW GRUFF once you have the support of friends.
+You can say GREW GRUFF here once you have the support of friends.
 
 >swap sweet
 
 #+testcase-think-table-of-verb-checks-vc-grew-gruff-rule
 >think
-You can say GREW GRUFF now you have the support of friends.
+You can say GREW GRUFF here now you have the support of friends.
 
 >undo
 >undo
@@ -1442,13 +1449,13 @@ You can say GREW GRUFF now you have the support of friends.
 
 #testcase-think-table-of-verb-checks-vc-salad-scent-rule
 >think
-You can track the SALAD SCENT once you have adequate willing help to climb up to the vent.
+You can track the SALAD SCENT here once you have adequate willing help to climb up to the vent.
 
 >swap sweet
 
 #+testcase-think-table-of-verb-checks-vc-salad-scent-rule
 >think
-You can track the SALAD SCENT now you have adequate willing help to climb up to the vent.
+You can track the SALAD SCENT here now you have adequate willing help to climb up to the vent.
 
 >undo
 >undo
@@ -1531,7 +1538,7 @@ But you have not figured out any basic hacks to progress further! Well, not yet.
 
 #testcase-think-table-of-verb-checks-vc-heed-hack-rule
 >think
-You can HEED HACK once you have an idea how to navigate the Treed Track.
+You can HEED HACK once you have an idea how to navigate here.
 
 >need knack
 by one point
@@ -1550,7 +1557,7 @@ You already got the knack for looking around! You won't forget it.
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-You can place a mailing mill once you can access the top of Hailing Hill.
+You can place a MAILING MILL here once you can access the top.
 
 >undo
 >undo
@@ -1562,7 +1569,7 @@ by one point
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-You can place a mailing mill once you can access the top of Hailing Hill.
+You can place a MAILING MILL here once you can access the top.
 
 >undo
 >undo
@@ -1575,7 +1582,7 @@ by one point
 A mailing mill would be nice, but you haven't reached the top of Hailing Hill yet!
 
 >think
-You can place a mailing mill once you can access the top of Hailing Hill.
+You can place a MAILING MILL here once you can access the top.
 
 >ailing ill
 by one point
@@ -1623,11 +1630,11 @@ You already got a seed sack!
 
 #testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
 >bell book
-You feel you do not have any artifacts to perform whatever ceremony you need to.
+Yes. That makes sense, but nothing happens. Perhaps you don't have any artifacts to perform whatever pre-ceremony you need to.
 
 #+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
 >covering candle
-You feel you do not have any artifacts to perform whatever ceremony you need to.
+Yes. That makes sense, but nothing happens. Perhaps you don't have any artifacts to perform whatever pre-ceremony you need to.
 
 >w
 >n
@@ -1691,9 +1698,9 @@ You sense you cannot offer Wailing Will what he needs. Yet.
 #testcase-think-table-of-verb-checks-vc-failing-phil-rule
 #testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
-You can contact Bailing Bill once you have something to offer him and the means to do so.
-You can contact Failing Phil once you have something to offer him and the means to do so.
-You can contact Wailing Will once you have something to offer him and the means to do so.
+You can contact BAILING BILL once you have something to offer him and the means to communicate.
+You can contact FAILING PHIL once you have something to offer him and the means to communicate.
+You can contact WAILING WILL once you have something to offer him and the means to communicate.
 
 >undo
 >undo
@@ -1714,7 +1721,7 @@ Yes, perhaps this place could and should become bigger and more important. As a 
 
 #testcase-think-table-of-verb-checks-vc-main-max-rule
 >think
-You can say MAIN MAX once it's busier by the Lane, Lax.
+You can say MAIN MAX once it's busier here.
 
 >train tracks
 by one point
@@ -1728,7 +1735,7 @@ You already created train tracks, though they could become sturdier and farther-
 
 #+testcase-think-table-of-verb-checks-vc-main-max-rule
 >think
-You can say MAIN MAX now it's busier by the Train Tracks.
+You can say MAIN MAX now it's busier here.
 
 >main max
 by one point
@@ -1748,7 +1755,7 @@ You already created train tracks.
 by one point
 
 #testcase-check-vc-pain-packs-rule-fallthrough
-You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!
+You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!
 You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
@@ -1763,7 +1770,7 @@ You can't just jump to an immediate denunciation. Perhaps you can let the crowd 
 
 #testcase-think-table-of-verb-checks-vc-loud-lies-rule
 >think
-You can denounce LOUD LIES once you've tweaked the crowd more subjectively.
+You can denounce LOUD LIES once you've tweaked the crowd here more subjectively.
 
 >wowed whys
 by one point
@@ -1777,7 +1784,7 @@ Enough trying. You need to take action!
 
 #+testcase-think-table-of-verb-checks-vc-loud-lies-rule
 >think
-You can denounce LOUD LIES now you've tweaked the crowd more subjectively.
+You can denounce LOUD LIES now you've tweaked the crowd here more subjectively.
 
 >loud lies
 by one point
@@ -1808,7 +1815,7 @@ by one point
 "Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
 
 >think
-You can visit the PASSED PORT once you have readable directions to get there.
+You can visit the PASSED PORT with the yucky yacht once you have readable directions to get there.
 
 #testcase-check-vc-passed-port-rule-if-port-score-is-1
 >murky map
@@ -1819,7 +1826,7 @@ by one point
 The Sassed Sort looks at the murky map. "Sorry, I can't quite read that yet."
 
 >think
-You can visit the PASSED PORT once you have readable directions to get there.
+You can visit the PASSED PORT with the yucky yacht once you have readable directions to get there.
 
 >undo
 >undo
@@ -1834,7 +1841,7 @@ You can visit the PASSED PORT once you have readable directions to get there.
 
 #testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
-You can visit the PASSED PORT once you have readable directions to get there.
+You can visit the PASSED PORT with the yucky yacht once you have readable directions to get there.
 
 >fast fort
 by one point
@@ -1850,7 +1857,7 @@ But you're already here!
 "Sorry," the Sassed Sort shrugs. "I should know how to get there, but it often, umm, gets passed. Perhaps with detailed instructions I could. The waters are tricky around there."
 
 >think
-You can visit the PASSED PORT once you have readable directions to get there.
+You can visit the PASSED PORT with the yucky yacht once you have readable directions to get there.
 
 >glued glass
 by one point
@@ -1871,11 +1878,13 @@ But you're already here!
 by one point
 
 #testcase-check-vc-murky-map-rule-fallthrough
-Well, you search through the pap, and what do you know? You turn up something. It's a murky map. Putting it under the glued glass, though, it is more readable.
+You search through the pap. There must be something in here! Fortunately, since you know what to look for, a murky map turns up pretty quickly. Putting it under the glued glass, though, it is more readable.
 
 #+testcase-think-table-of-verb-checks-vc-passed-port-rule
 >think
-You can visit the PASSED PORT now you have readable directions to get there.
+You can visit the PASSED PORT with the yucky yacht now you have readable directions to get there.
+You can say BELL BOOK in Knell Nook once you have two other things to prepare the summoning ceremony.
+You can say COVERING CANDLE in Knell Nook once you have what you need for the summoning ceremony.
 
 >passed port
 by one point
@@ -1889,7 +1898,7 @@ But you're already here!
 
 #testcase-check-vc-time-toad-rule-if-toad-score-<-2
 >time toad
-A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.
+A large, dignified time toad appears. It pounds the ground twice, as if it needs two things. You have more work to do.
 
 #testcase-check-vc-slosh-slick-rule-if-sco-quash-quick-is-false
 >slosh slick
@@ -1898,8 +1907,8 @@ The area around the posh pick is too deep. Perhaps you could find someone willin
 #testcase-think-table-of-verb-checks-vc-time-toad-rule
 #testcase-think-table-of-verb-checks-vc-slosh-slick-rule
 >think
-You can SLOSH SLICK once you've had someone make a path through the slime, slowed.
-You can summon the TIME TOAD once you have two artifacts it finds valuable.
+You can SLOSH SLICK here once you've had someone make a path through the slime, slowed.
+You can summon the TIME TOAD here once you have two artifacts it finds valuable.
 
 #testcase-think-table-of-verb-checks-vc-quash-quick-rule
 >quash quick
@@ -1907,13 +1916,13 @@ Your current friends don't seem up to such a grimy task.
 
 #+testcase-think-table-of-verb-checks-vc-quash-quick-rule
 >think
-You can QUASH QUICK once the right friends are helping you.
+You can QUASH QUICK here once the right friends are helping you.
 
 >slashing sword
 by one point
 
 #testcase-check-vc-slashing-sword-rule-fallthrough
-The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!
+The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks one more thing off your list. Yay!
 
 >gonear fief
 
@@ -1932,7 +1941,7 @@ The one-wish fun fish blups at you apologetically. You don't have anything to wo
 
 #testcase-think-table-of-verb-checks-vc-done-dish-rule
 >think
-You can make a DONE DISH once you've got certifiably acceptable ingredients for a dish.
+You can make a DONE DISH here once you've got certifiably acceptable ingredients for a dish.
 
 >undo
 >undo
@@ -1992,7 +2001,7 @@ You haven't steeled yourself to look for what you need, yet. You feel bad for th
 
 #testcase-think-table-of-verb-checks-vc-stew-stuff-rule
 >think
-You can find STEW STUFF once you don't feel bad searching through left-behind belongings.
+You can find STEW STUFF here once you don't feel bad searching through left-behind belongings.
 
 >grew gruff
 by one point
@@ -2011,8 +2020,8 @@ You have nothing to make new 'nuff, yet.
 #testcase-think-table-of-verb-checks-vc-new-nuff-rule
 #+testcase-think-table-of-verb-checks-vc-stew-stuff-rule
 >think
-You can find STEW STUFF now you don't feel bad searching through left-behind belongings.
-You can say NEW NUFF once you have something of questionable age.
+You can find STEW STUFF here now you don't feel bad searching through left-behind belongings.
+You can say NEW NUFF once you've found something of questionable age.
 
 >stew stuff
 by one point
@@ -2026,7 +2035,7 @@ You can't make any more stew stuff.
 
 #+testcase-think-table-of-verb-checks-vc-new-nuff-rule
 >think
-You can say NEW NUFF now you have something of questionable age.
+You can say NEW NUFF now you've found something of questionable age.
 
 >gonear fief
 
@@ -2065,15 +2074,16 @@ You already revitalized the stew stuff.
 
 #+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
 >bell book
-You feel you do not have enough artifacts to perform whatever ceremony you need to.
+Yes. That makes sense, but nothing happens. Perhaps you don't have enough artifacts to perform whatever pre-ceremony you need to.
 
 #+testcase-check-vc-covering-candle-rule-abide-by-the-any-nook-rule
 >covering candle
-You feel you do not have enough artifacts to perform whatever ceremony you need to.
+Yes. That makes sense, but nothing happens. Perhaps you don't have enough artifacts to perform whatever pre-ceremony you need to.
 
 #testcase-think-table-of-verb-checks-vc-bell-book-rule
 >think
-You can say BELL BOOK once you have two other things to prepare the summoning ceremony.
+You can say BELL BOOK here once you have two other things to prepare the summoning ceremony.
+You can say COVERING CANDLE here once you have what you need for the summoning ceremony.
 
 >w
 
@@ -2087,12 +2097,19 @@ You can say BELL BOOK once you have two other things to prepare the summoning ce
 by one point
 
 #testcase-check-vc-trod-trash-rule-fallthrough
-You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
+You and the Guide Geek and the Weak Wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!
 You and the Guide Geek and the Weak Wooter look at each other for a bit.
 
 #testcase-check-vc-trod-trash-rule-if-sco-trod-trash-is-true
 >trod trash
 But you already got people to trod on the trash!
+
+>gonear passed port
+>time toad
+It nods to the odd ash but then pounds the ground once.
+
+>undo
+>undo
 
 >s
 
@@ -2107,12 +2124,12 @@ You seem to have gained a bit of respect, but you need more.
 >bought beef
 You already pretended to have bought beef, or a beef, or something!
 
-#testcase-check-vc-wrought-reef-rule-if-thief-score-<-2
+#testcase-check-vc-wrought-reef-rule-if-fief-score-<-2
 >wrought reef
 It's still too chaotic to do much!
 
 >think
-You can make a WROUGHT REEF once you've bluffed your way through the fief.
+You can make a WROUGHT REEF here once you've bluffed your way through the fief.
 
 >brought brief
 by one point
@@ -2127,7 +2144,7 @@ You already pretended you brought huge plans!
 
 #testcase-think-table-of-verb-checks-vc-wrought-reef-rule
 >think
-You can make a WROUGHT REEF now you've bluffed your way through the fief.
+You can make a WROUGHT REEF here now you've bluffed your way through the fief.
 
 >wrought reef
 by one point
@@ -2235,7 +2252,7 @@ by one point
 You show you can blow off fear, a little, by quacking "quite."
 The black blight seems to fade. As it releases its grip, you see sacks. Lots of sacks. It's a sack site, now. There are too many to search through, but fortunately there's some stuff in clear view.
 There's a sour slate lying around, which you don't want to touch in its current form.
-The fried freak begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right.
+The Fried Freak begins looking through all the bags in the sack site. They express dismay with each empty one, then utter shock once something turns up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.
 
 >power plate
 by one point
@@ -2287,7 +2304,7 @@ You already quashed things quickly!
 
 #+testcase-think-table-of-verb-checks-vc-slosh-slick-rule
 >think
-You can SLOSH SLICK now you've had someone make a path through the slime, slowed.
+You can SLOSH SLICK here now you've had someone make a path through the slime, slowed.
 
 >slosh slick
 by one point
@@ -2302,7 +2319,7 @@ You already figured that part of getting the pick!
 
 #+testcase-think-table-of-verb-checks-vc-time-toad-rule
 >think
-You can summon the TIME TOAD now you have two artifacts it finds valuable.
+You can summon the TIME TOAD here now you have two artifacts it finds valuable.
 
 >time toad
 by one point
@@ -2376,7 +2393,7 @@ The first part of the ceremony comes first. I think you know what it is?
 
 #testcase-think-table-of-verb-checks-vc-covering-candle-rule
 >think
-You can say COVERING CANDLE once you have what you need for the summoning ceremony.
+You can say COVERING CANDLE here once you have what you need for the summoning ceremony.
 
 >bell book
 by one point
@@ -2390,7 +2407,7 @@ You already got the bell and book! Now for the next part.
 
 #+testcase-think-table-of-verb-checks-vc-covering-candle-rule
 >think
-You can say COVERING CANDLE now you have what you need for the summoning ceremony.
+You can say COVERING CANDLE here now you have what you need for the summoning ceremony.
 
 >covering candle
 by one point
@@ -2424,7 +2441,7 @@ You already found ways to be stout!
 by one point
 
 #testcase-check-vc-flout-fluff-rule-fallthrough
-You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.
+You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some examples from the past were, in fact, fluff, even though they were provided by Very Serious People.
 You went the extra mile to rid yourself of angst.
 
 #testcase-check-vc-flout-fluff-rule-if-sco-flout-fluff-is-true
@@ -2478,7 +2495,7 @@ Once you have more than one perspective to fuse together, that'll work.
 
 #testcase-think-table-of-verb-checks-vc-fusing-phew-rule
 >think
-You can say FUSING PHEW once you have commiserated more than one way with Lou.
+You can say FUSING PHEW here once you have commiserated more than one way with Lou.
 
 >using you
 by one point
@@ -2504,7 +2521,7 @@ Don't overdo the moralizing!
 
 #+testcase-think-table-of-verb-checks-vc-fusing-phew-rule
 >think
-You can say FUSING PHEW now you have commiserated more than one way with Lou.
+You can say FUSING PHEW here now you have commiserated more than one way with Lou.
 
 >fusing phew
 by one point
@@ -2539,15 +2556,15 @@ Nothing's (yet) available here that can message anyone by that name or, indeed, 
 #+testcase-think-table-of-verb-checks-vc-failing-phil-rule
 #+testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
-You can contact Bailing Bill once you have something to offer him and the means to do so.
-You can contact Failing Phil once you have something to offer him and the means to do so.
-You can contact Wailing Will once you have something to offer him and the means to do so.
+You can contact BAILING BILL once you have something to offer him and the means to communicate.
+You can contact FAILING PHIL once you have something to offer him and the means to communicate.
+You can contact WAILING WILL once you have something to offer him and the means to communicate.
 
 >scaling skill
 by one point
 
 #testcase-check-vc-scaling-skill-rule-fallthrough
-You work on your climbing ability. What do you know, it pays off!
+You haven't climbed anything for a while. You recall what you knew and what went over your head. After few tentative mis-steps and stumbles, you make serious progress.
 Although you're on top of the hill now, you may wish to show discretion and vent your own disappointments.
 
 #testcase-check-vc-scaling-skill-rule-if-sco-scaling-skill-is-true
@@ -2579,9 +2596,9 @@ The mailing mill is already on Hailing Hill!
 #+testcase-think-table-of-verb-checks-vc-failing-phil-rule
 #+testcase-think-table-of-verb-checks-vc-wailing-will-rule
 >think
-You can contact Bailing Bill now you have something to offer him and the means to do so.
-You can contact Failing Phil now you have something to offer him and the means to do so.
-You can contact Wailing Will now you have something to offer him and the means to do so.
+You can contact BAILING BILL now you have something to offer him and the means to communicate.
+You can contact FAILING PHIL now you have something to offer him and the means to communicate.
+You can contact WAILING WILL now you have something to offer him and the means to communicate.
 
 >failing phil
 by one point
