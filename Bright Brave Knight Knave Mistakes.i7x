@@ -143,7 +143,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "trailing"	"trill"	--	false	hill-todo rule	"You don't feel a song right now. Not until you've fixed things completely."
 
 this is the hill-todo rule:
-	if sco-whatever is false, the rule succeeds;
+	if hill-score < 6, the rule succeeds;
 	the rule fails;
 
 table of lane lax guesses
@@ -299,17 +299,17 @@ this is the cord-todo rule:
 
 table of clod clash guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bod|bawd|baud"	"bash"	--	false	need-ash rule	"No, one fight is enough."
-"cod"	"cash|cache"	--	false	need-ash rule	"All sea life will be clearly visible."
-"crawed"	"crash"	--	false	need-ash rule	"You remember people actually glad they got into an accident."
-"god"	"gash"	--	false	need-ash rule	"You don't need to hurt anyone or express anger at being hurt."
-"lawd|lawed"	"lash"	--	false	need-ash rule	"You aren't big on thinking about the details of punishment."
-"mod"	"mash"	--	false	need-ash rule	"You do not need to start a new dance craze."
-"nod"	"nash|gnash"	--	false	need-ash rule	"There's nobody you can see to commiserate here with."
-"rod|rawed"	"rash"	--	false	need-ash rule	"You need leave no welt with instruments of punishment."
-"sawed"	"sash"	--	false	need-ash rule	"You need no fancy clothes."
+"bod|bawd|baud"	"bash"	--	false	clash-todo rule	"No, one fight is enough."
+"cod"	"cash|cache"	--	false	clash-todo rule	"All sea life will be clearly visible."
+"crawed"	"crash"	--	false	clash-todo rule	"You remember people actually glad they got into an accident."
+"god"	"gash"	--	false	clash-todo rule	"You don't need to hurt anyone or express anger at being hurt."
+"lawd|lawed"	"lash"	--	false	clash-todo rule	"You aren't big on thinking about the details of punishment."
+"mod"	"mash"	--	false	clash-todo rule	"You do not need to start a new dance craze."
+"nod"	"nash|gnash"	--	false	clash-todo rule	"There's nobody you can see to commiserate here with."
+"rod|rawed"	"rash"	--	false	clash-todo rule	"You need leave no welt with instruments of punishment."
+"sawed"	"sash"	--	false	clash-todo rule	"You need no fancy clothes."
 
-this is the need-ash rule:
+this is the clash-todo rule:
 	if sco-trod-trash is false, the rule succeeds;
 	the rule fails;
 
@@ -320,12 +320,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of crude crass lewd lass guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"booed"	"bass"	--	false	--	"You don't want to get sea bass irritable."
-"brewed|brood"	"brass"	--	false	--	"[if player has power plate]You already have much better armor[else]The armor on [the lack list] probably needs to be stronger than brass[end if]."
-"mood|mooed"	"mass"	--	false	--	"You'd be kind of creeped out to hear something inanimate start making morose cow noises."
-"poohed"	"pass"	--	false	--	"You think you see an exit out, but nah, it's just get you more lost."
-"sued"	"sass"	--	false	--	"How very anti-freedom of speech and unlike a [this-game-noi]!"
-"tude"	"tass"	--	false	--	"You're already in the text adventure spirit."
+"booed"	"bass"	--	false	lass-todo rule	"You don't want to get sea bass irritable."
+"brewed|brood"	"brass"	--	false	lass-todo rule	"[if player has power plate]You already have much better armor[else]The armor on [the lack list] probably needs to be stronger than brass[end if]."
+"mood|mooed"	"mass"	--	false	lass-todo rule	"You'd be kind of creeped out to hear something inanimate start making morose cow noises."
+"poohed"	"pass"	--	false	lass-todo rule	"You think you see an exit out, but nah, it's just get you more lost."
+"sued"	"sass"	--	false	lass-todo rule	"How very anti-freedom of speech and unlike a [this-game-noi]!"
+"tude"	"tass"	--	false	lass-todo rule	"You're already in the text adventure spirit."
+
+this is the lass-todo rule:
+	if sco-glued-glass is false, the rule succeeds;
+	the rule fails;
 
 table of hold hole guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -382,14 +386,18 @@ to say item-guess of (hi - a holeitem):
 
 table of lack list guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"black"	"blissed"	--	false	--	"You wonder how you'd look in all black. Pretty neat." [brack brissed was too much]
-"faq"	"fist"	--	false	--	"You aren't up on hand-to-hand combat and don't want to be."
-"hack"	"hissed"	--	false	--	"You mentally deplore how you were pushed aside."
-"mac|mack"	"missed|mist"	--	false	--	"You'd hate for this useful bit of paper to disappear into a mist."
-"pack"	"pissed"	--	false	--	"Whoah! Guns aren't good if you're angry!"
-"rack|wrack"	"wrist"	--	false	--	"You vow to continue typing out good-guess rhymes until it hurts."
-"sack"	"cyst"	--	false	--	"Your skin is not perfect. You'd love to wipe out something."
-"wack"	"wist"	--	false	--	"You recognize pining for the past might be too much."
+"black"	"blissed"	--	false	list-todo rule	"You wonder how you'd look in all black. Pretty neat." [brack brissed was too much]
+"faq"	"fist"	--	false	list-todo rule	"You aren't up on hand-to-hand combat and don't want to be."
+"hack"	"hissed"	--	false	list-todo rule	"You mentally deplore how you were pushed aside."
+"mac|mack"	"missed|mist"	--	false	list-todo rule	"You'd hate for this useful bit of paper to disappear into a mist."
+"pack"	"pissed"	--	false	list-todo rule	"Whoah! Guns aren't good if you're angry!"
+"rack|wrack"	"wrist"	--	false	list-todo rule	"You vow to continue typing out good-guess rhymes until it hurts."
+"sack"	"cyst"	--	false	list-todo rule	"Your skin is not perfect. You'd love to wipe out something."
+"wack"	"wist"	--	false	list-todo rule	"You recognize pining for the past might be too much."
+
+this is the list-todo rule:
+	if sco-jack-gist is false, the rule succeeds;
+	the rule fails;
 
 table of one wish fun fish guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -399,67 +407,99 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of pallid pent valid vent guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"ballad"	"bent"	--	false	--	"Being a [this-game-noi], you love keeping an ear open for off-color tunes."
+"ballad"	"bent"	--	false	vent-todo rule	"Being a [this-game-noi], you love keeping an ear open for off-color tunes."
+
+this is the vent-todo rule:
+	if sco-salad-scent is false, the rule succeeds;
+	the rule fails;
 
 table of perky pap guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"clerky"	"clap"	--	false	--	"You consider the right way to applaud bureaucracy."
-"irky"	"app"	--	false	--	"You download no annoying application to your phone. You don't even have a phone on you."
-"kirky"	"cap"	--	false	--	"You find no clothes that make you talk with dramatic pauses or yell KHAN."
-"lurky"	"lap"	--	false	--	"You slightly fear your junior-high gym teacher just waiting to give out punishment."
-"turkey"	"tap"	--	false	--	"Even if one appeared, you'd wonder how they'd fit through there."
-"worky"	"whap"	--	false	--	"Nobody is there to kick or shove you into gear."
+"clerky"	"clap"	--	false	pap-todo rule	"You consider the right way to applaud bureaucracy."
+"irky"	"app"	--	false	pap-todo rule	"You download no annoying application to your phone. You don't even have a phone on you."
+"kirky"	"cap"	--	false	pap-todo rule	"You find no clothes that make you talk with dramatic pauses or yell KHAN."
+"lurky"	"lap"	--	false	pap-todo rule	"You slightly fear your junior-high gym teacher just waiting to give out punishment."
+"turkey"	"tap"	--	false	pap-todo rule	"Even if one appeared, you'd wonder how they'd fit through there."
+"worky"	"whap"	--	false	pap-todo rule	"Nobody is there to kick or shove you into gear."
+
+this is the pap-todo rule:
+	if sco-murky-map is false, the rule succeeds;
+	the rule fails;
 
 table of posh pick guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"cosh"	"kick"	--	false	--	"You momentarily fear different types of violence. It keeps you motivated, you hope."
-"frosh"	"frick"	--	false	--	"You remember in high school how underclassmen were beaten up for swearing or not swearing."
-"mosh"	"mick"	--	false	--	"You neither see Jagger nor develop moves like him"
-"nosh"	"nick"	--	false	--	"Ugh! Prison food!"
-"tosh"	"tick"	--	false	--	"Thankfully, you have no insects or time crunches to worry about."
-"wash"	"wick"	--	false	--	"Doing so would mean you can't light a candle. That's what you meant, right?"
+"cosh"	"kick"	--	false	pick-todo rule	"You momentarily fear different types of violence. It keeps you motivated, you hope."
+"frosh"	"frick"	--	false	pick-todo rule	"You remember in high school how underclassmen were beaten up for swearing or not swearing."
+"mosh"	"mick"	--	false	pick-todo rule	"You neither see Jagger nor develop moves like him"
+"nosh"	"nick"	--	false	pick-todo rule	"Ugh! Prison food!"
+"tosh"	"tick"	--	false	pick-todo rule	"Thankfully, you have no insects or time crunches to worry about."
+"wash"	"wick"	--	false	pick-todo rule	"Doing so would mean you can't light a candle. That's what you meant, right?"
+
+this is the pick-todo rule:
+	if pick-score < 2, the rule succeeds;
+	the rule fails;
 
 table of rime road guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"chime"	"choad|chode"	--	false	--	"You are all for off-color humor but it doesn't seem appropriate here."
-"crime"	"crowed"	--	false	--	"You eavesdrop on no criminal confessions."
-"dime"	"doughed|dohed"	--	false	--	"You find no money in a loaf of bread."
-"grime"	"growed"	--	false	--	"Ungrammatical, and anyway, you are trying to clean things up here!"
-"im"	"owed"	--	false	--	"All this entitlement is brave but not bright."
-"lime"	"load"	--	false	--	"The fruit or the stone, you can't see yourself lugging it around."
+"chime"	"choad|chode"	--	false	road-todo rule	"You are all for off-color humor but it doesn't seem appropriate here."
+"crime"	"crowed"	--	false	road-todo rule	"You eavesdrop on no criminal confessions."
+"dime"	"doughed|dohed"	--	false	road-todo rule	"You find no money in a loaf of bread."
+"grime"	"growed"	--	false	road-todo rule	"Ungrammatical, and anyway, you are trying to clean things up here!"
+"im"	"owed"	--	false	road-todo rule	"All this entitlement is brave but not bright."
+"lime"	"load"	--	false	road-todo rule	"The fruit or the stone, you can't see yourself lugging it around."
+
+this is the road-todo rule:
+	if sco-time-toad is false, the rule succeeds;
+	the rule fails;
 
 table of sassed sort guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"blast"	"blort"	--	false	--	"You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!"
-"mast|massed"	"mort"	--	false	--	"Not what you need now, death around the corner, for the ship or otherwise."
+"blast"	"blort"	--	false	sort-todo rule	"You wonder if this is cheating, since blort is a portmanteau of ... wait, BLOW and snort, not blast. Then you realize there's nothing to snort about!"
+"mast|massed"	"mort"	--	false	sort-todo rule	"Not what you need now, death around the corner, for the ship or otherwise."
+
+this is the sort-todo rule:
+	if sco-passed-port is false, the rule succeeds;
+	the rule fails;
 
 table of sour slate guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"hour"	"late"	--	false	--	"You frown at the [if sco-power-plate is true]power plate[else]sour slate[end if], wishing you'd seen it sooner."
+"hour"	"late"	--	false	slate-todo rule	"You frown at the [if sco-power-plate is true]power plate[else]sour slate[end if], wishing you'd seen it sooner."
+
+this is the slate-todo rule:
+	if sco-power-plate is false, the rule succeeds;
+	the rule fails;
 
 table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"burning"	"boo"	--	false	--	"No, Lou need[edspew] something more positive."
-"churning"	"chew"	--	false	--	"No, Lou need[edspew] something less reflexive."
-"yearning"	"you"	--	false	--	"No, Lou need[edspew] something less overtly earnest, something with solutions."
+"burning"	"boo"	--	false	spew-todo rule	"No, Lou need[edspew] something more positive."
+"churning"	"chew"	--	false	spew-todo rule	"No, Lou need[edspew] something less reflexive."
+"yearning"	"you"	--	false	spew-todo rule	"No, Lou need[edspew] something less overtly earnest, something with solutions."
+
+this is the spew-todo rule:
+	if sco-spurning-spew is false, the rule succeeds;
+	the rule fails;
 
 to say edspew: say "[if sco-spurning-spew is true]ed[else]s[end if]"
 
 table of stew stuff guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"boo"	"buff"	--	false	--	"[if sco-grew-gruff is false]You try to puff yourself out as more muscular than you actually are. No dice[else]It's stew ingredients, not protein shake ingredients[end if]."
-"chew|choo"	"chuff"	--	false	--	"You make train noises, but none appears."
-"coo"	"cuff"	--	false	--	"You consider lashing out for its own sake."
-"do"	"duff"	--	false	--	"No, you want to do something right."
-"drew"	"druff"	--	false	--	"You remember shaking your hair out and suddenly understanding those shampoo commercials."
-"flew|flu"	"fluff"	--	false	--	"You don't have time to fly, or get sick, or other frivolities!"
-"goo"	"guff"	--	false	--	"You produce no sticky stuff."
-"moo"	"muff"	--	false	--	"You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise."
-"poo|pooh"	"puff"	--	false	--	"You feel fake exhaustion for a bit."
-"rue"	"rough"	--	false	--	"Bummer, you think, that things aren't given to you."
-"skew"	"scuff"	--	false	--	"You shuffle your feet a bit, exaggerating what has happened and what you face."
-"slew|slue"	"sluff|slough"	--	false	--	"You blink, only to find you have not wound up in a bog, which is probably for the better."
-"hoo|who"	"huff"	--	false	--	"Alas (or not,) there is nobody to get huffy at."
+"boo"	"buff"	--	false	stuff-todo rule	"[if sco-grew-gruff is false]You try to puff yourself out as more muscular than you actually are. No dice[else]It's stew ingredients, not protein shake ingredients[end if]."
+"chew|choo"	"chuff"	--	false	stuff-todo rule	"You make train noises, but none appears."
+"coo"	"cuff"	--	false	stuff-todo rule	"You consider lashing out for its own sake."
+"do"	"duff"	--	false	stuff-todo rule	"No, you want to do something right."
+"drew"	"druff"	--	false	stuff-todo rule	"You remember shaking your hair out and suddenly understanding those shampoo commercials."
+"flew|flu"	"fluff"	--	false	stuff-todo rule	"You don't have time to fly, or get sick, or other frivolities!"
+"goo"	"guff"	--	false	stuff-todo rule	"You produce no sticky stuff."
+"moo"	"muff"	--	false	stuff-todo rule	"You try and fail to sound like a cow. Or maybe you were trying to make a bad cow noise."
+"poo|pooh"	"puff"	--	false	stuff-todo rule	"You feel fake exhaustion for a bit."
+"rue"	"rough"	--	false	stuff-todo rule	"Bummer, you think, that things aren't given to you."
+"skew"	"scuff"	--	false	stuff-todo rule	"You shuffle your feet a bit, exaggerating what has happened and what you face."
+"slew|slue"	"sluff|slough"	--	false	stuff-todo rule	"You blink, only to find you have not wound up in a bog, which is probably for the better."
+"hoo|who"	"huff"	--	false	stuff-todo rule	"Alas (or not,) there is nobody to get huffy at."
+
+this is the stuff-todo rule:
+	if sco-new-nuff is false, the rule succeeds;
+	the rule fails;
 
 table of trite tully guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -489,15 +529,15 @@ this is the sham-yet rule:
 
 table of yucky yacht guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bucky"	"bought|bot"	no-plot-yet rule	false	--	"Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?"
-"clucky"	"clot"	--	false	--	"You think about people who've wasted your time with meaningless jabber."
-"ducky"	"dot"	--	false	--	"You see no dot or person named Dorothea to proclaim as ducky."
-"lucky"	"lot"	--	false	--	"You grumble about rich people for a bit. It doesn't hurt."
-"nucky"	"not|knot"	--	false	--	"You don't want to cross a mogul of a Boardwalk Empire just now."
-"sucky"	"sot|sought"	--	false	--	"[this-game-noi]s aren't negative like that! Everyone sought is worthwhile!"
-"trucky"	"trot"	--	false	--	"You have no need to walk through or over anyone."
+"bucky"	"bought|bot"	yacht-todo rule	false	yacht-todo rule	"Hmm. Maybe you could create a robot named Bucky to clean up the yacht. But how?"
+"clucky"	"clot"	--	false	yacht-todo rule	"You think about people who've wasted your time with meaningless jabber."
+"ducky"	"dot"	--	false	yacht-todo rule	"You see no dot or person named Dorothea to proclaim as ducky."
+"lucky"	"lot"	--	false	yacht-todo rule	"You grumble about rich people for a bit. It doesn't hurt."
+"nucky"	"not|knot"	--	false	yacht-todo rule	"You don't want to cross a mogul of a Boardwalk Empire just now."
+"sucky"	"sot|sought"	--	false	yacht-todo rule	"[this-game-noi]s aren't negative like that! Everyone sought is worthwhile!"
+"trucky"	"trot"	--	false	yacht-todo rule	"You have no need to walk through or over anyone."
 
-this is the no-plot-yet rule:
+this is the yacht-todo rule:
 	if sco-plucky-plot is false, the rule succeeds;
 	the rule fails;
 
