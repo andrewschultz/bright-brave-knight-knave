@@ -24,7 +24,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [once-now of vc-fight-fave rule] you are physically and emotionally prepared."
 "pass"	"path"	"pace"	vh-pace-path rule	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	"mace"	vh-mace-math rule	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [once-now of vc-mass-math rule] you have something to calculate."
-"what"	"whoa|whoah"	--	--	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
+"what"	"whoa|whoah"	"woe"	vh-what-woe rule	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [once-now of vc-kid-come rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [once-now of vc-rid-rum rule] you have cause to speak out against alcohol."
@@ -49,8 +49,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "quash"	"quick"	--	--	false	true	true	false	passed port	vc-quash-quick rule	vr-quash-quick rule	--	"You can [b]QUASH QUICK[r] [once-now of vc-quash-quick rule] the right friends are helping you."
 "slosh"	"slick"	--	--	false	true	true	false	passed port	vc-slosh-slick rule	vr-slosh-slick rule	--	"You can [b]SLOSH SLICK[r] [once-now of vc-slosh-slick rule] you've had someone make a path through the slime, slowed."
 "slashing"	"sword"	--	--	false	true	true	false	passed port	vc-slashing-sword rule	vr-slashing-sword rule	--	--
-"time"	"toad"	--	--	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
-"mime"	"mode"	--	--	false	true	false	false	passed port	vc-mime-mode rule	vr-mime-mode rule	--	--
+"time"	"toad"	"toed/towed"	vh-time-toed rule	false	true	true	false	passed port	vc-time-toad rule	vr-time-toad rule	--	"You can summon the [b]TIME TOAD[r] [once-now of vc-time-toad rule] you have two artifacts it finds valuable."
+"mime"	"mode"	"mowed"	vh-mime-mowed rule	false	true	false	false	passed port	vc-mime-mode rule	vr-mime-mode rule	--	--
 "need"	"knack"	--	--	false	true	true	false	treed track	vc-need-knack rule	vr-need-knack rule	--	"You can say you [b]NEED KNACK[r] [once-now of vc-need-knack rule] you have the right help by the Treed Track."
 "heed"	"hack"	--	--	false	true	true	false	treed track	vc-heed-hack rule	vr-heed-hack rule	--	"You can [b]HEED HACK[r] [once-now of vc-heed-hack rule] you have an idea how to navigate the Treed Track."
 "seed"	"sack"	--	--	false	true	true	false	treed track	vc-seed-sack rule	vr-seed-sack rule	--	--
@@ -61,14 +61,14 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "hack"	"height"	--	--	false	true	true	false	lack light black blight	vc-hack-height rule	vr-hack-height rule	--	--
 "quack"	"quite"	--	--	false	true	true	false	lack light black blight	vc-quack-quite rule	vr-quack-quite rule	--	--
 "slack"	"slight"	--	--	false	true	true	false	lack light black blight	vc-slack-slight rule	vr-slack-slight rule	--	--
-"flak"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
+"flak|flack"	"flight"	--	--	false	true	true	false	lack light black blight	vc-flak-flight rule	vr-flak-flight rule	--	--
 "power"	"plate"	--	--	false	true	true	false	--	vc-power-plate rule	vr-power-plate rule	--	--
 "bell"	"book"	--	--	false	true	true	false	knell nook	vc-bell-book rule	vr-bell-book rule	--	"You can say [b]BELL BOOK[r] [once-now of vc-bell-book rule] you have two other things to prepare the summoning ceremony."
 "covering"	"candle"	--	--	false	true	true	false	knell nook	vc-covering-candle rule	vr-covering-candle rule	--	"You can say [b]COVERING CANDLE[r] [once-now of vc-covering-candle rule] you have what you need for the summoning ceremony."
-"yall"	"yank|yanks"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] you have the right cohorts."
+"yall"	"yank|yanks"	--	--	false	true	true	false	tata	vc-yall-yank rule	vr-yall-yank rule	--	"You can say [b]YALL YANK[r] [once-now of vc-yall-yank rule] in Tall Tank(s) you have the right cohorts."
 "paul"	"panks"	--	--	false	true	false	false	tata	vc-paul-panks rule	vr-paul-panks rule	--	--
 "train"	"tracks"	--	--	false	true	true	false	lane lax	vc-train-tracks rule	vr-train-tracks rule	--	--
-"main"	"max"	--	--	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-main-max rule] it's busier by the [lane lax]."
+"main"	"max"	"mane/macks"	vh-mane-macks rule	false	true	true	false	lane lax	vc-main-max rule	vr-main-max rule	--	"You can say [b]MAIN MAX[r] [once-now of vc-main-max rule] it's busier by the [lane lax]."
 "pain"	"packs"	--	--	false	true	true	false	lane lax	vc-pain-packs rule	vr-pain-packs rule	--	--
 "trod|flawed"	"trash|flash"	--	--	false	true	true	false	lane lax	vc-trod-trash rule	vr-trod-trash rule	"trod trash" or "flawed flash"	--
 "wowed|trowed|plowed"	"whys|tries|plies"	--	--	false	true	true	false	OECC	vc-wowed-whys rule	vr-wowed-whys rule	"wowed whys" or "trowed tries" or "plowed plies"	--
@@ -95,7 +95,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [if hill-score < 2]once[else]now[end if] you can access the top of Hailing Hill[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
 "bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him and the means to do so."
 "failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him and the means to do so."
-"wailing"	"will"	--	--	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him and the means to do so."
+"wailing"	"will"	"whaling"	vh-whaling-will rule	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him and the means to do so."
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--
@@ -239,6 +239,10 @@ a goodrhyme rule (this is the vc-what-whoah rule):
 		vcal "You already had a revelation that will push you out of your rut and see a new passage through.";
 		already-done;
 	ready;
+
+this is the vh-what-woe rule:
+	say "You express shock and things that went unexpectedly wrong. Which is close to shock at things going right. But not quite there, yet.";
+	the rule succeeds;
 
 this is the vr-what-whoah rule:
 	now sco-what-whoah is true;
@@ -651,6 +655,10 @@ to say toad-okay:
 to decide which number is toad-score:
 	decide on (boolval of whether or not player has odd ash) + (boolval of whether or not player has rack right)
 
+this is the vh-time-toed rule:
+	say "No, time gets around by flying. Or maybe hopping.";
+	the rule succeeds;
+
 this is the vr-time-toad rule:
 	now sco-time-toad is true;
 	say "A great rumbling and ribbiting proclaims the entrance of a very loud and large toad, slurping up [the slime] as it hops towards you. You sense it wants the odd ash and right rack. You put the ask on the rack. They begin to swirl together, first into a fire, then into a lump of coal. The frog nods to it. You touch it. It is cold.[paragraph break]The time toad nods to you, then hops off, its work here done.";
@@ -669,6 +677,10 @@ a goodrhyme rule (this is the vc-mime-mode rule):
 		vcal "You already entered mime mode for a brief interlude!";
 		already-done;
 	ready;
+
+this is the vh-mime-mowed rule:
+	say "Mimes annoy you, but that's a bit much[if sco-mime-mode is false]. Perhaps you could find ironic distance from this for a bonus point[end if].";
+	the rule succeeds;
 
 this is the vr-mime-mode rule:
 	now sco-mime-mode is true;
@@ -702,6 +714,11 @@ a goodrhyme rule (this is the vc-main-max rule):
 		vcal "You already upgraded the train tracks!";
 		already-done;
 	ready;
+
+this is the vh-mane-macks rule:
+	if the player's command includes "mane", say "Grow your hair out? ";
+	if the player's command includes "macks", say "Hit on people? ";
+	say "No time for that right now! You have more important things to do.";
 
 this is the vr-main-max rule:
 	now sco-main-max is true;
@@ -1180,6 +1197,10 @@ a goodrhyme rule (this is the vc-fusing-phew rule):
 		already-done;
 	ready;
 
+this is the vh-fusing-few rule:
+	say "Well... you're fusing a lot. So much, it'll be a bit exhausting.";
+	the rule succeeds;
+
 this is the vr-fusing-phew rule:
 	now sco-fusing-phew is true;
 	say "You put things together--the boozing, the using. Lou nods. A revelation! 'No more will I be Losing Lou. I will be Turning-to-Learning Lou!' Lou runs off and scribbles out some notes on various cocktail napkins. It's impressively fast, and you're entranced. There are so many napkins, they make a pretty thick book.[paragraph break]'Oh, man! This book has everything but a title. I'm not good at that. Maybe you can help me? And I'll give you a copy?'";
@@ -1288,6 +1309,9 @@ a goodrhyme rule (this is the vc-wailing-will rule):
 		vcal "You have already helped Wailing Will!";
 		already-done;
 	ready;
+
+this is the vh-whaling-will rule:
+	say "Perhaps failure to catch his white whale is what has upset Will. But he's been doing something else more similar."
 
 this is the vr-wailing-will rule:
 	now sco-wailing-will is true;
