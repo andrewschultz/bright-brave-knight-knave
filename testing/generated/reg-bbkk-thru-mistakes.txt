@@ -31,6 +31,10 @@ by one point
 >black blissed
 You wonder how you'd look in all black. Pretty neat.
 
+#testcase-mistakes-table-of-lack-list-guesses-faq-fist
+>faq fist
+You aren't up on hand-to-hand combat and don't want to be.
+
 #testcase-mistakes-table-of-lack-list-guesses-hack-hissed
 >hack hissed
 You mentally deplore how you were pushed aside.
@@ -1444,11 +1448,11 @@ by one point
 >strander strove
 This would seem to be despairing. You can't already admit you tried but failed.
 
-#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rander rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
 
-#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rand er rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
 
@@ -1676,8 +1680,20 @@ Trading alcohol for tobacco would just be a lateral move.
 >rusing roo
 No sneaky kangaroo appears, which is probably for the better.
 
-#testcase-mistakes-table-of-bruising-brew-guesses-oozing-ooh
+#testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing oo
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing ooh
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing ew
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing eww
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
 
 #+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
@@ -1707,22 +1723,30 @@ You think what a lovely bubble gum shop this would make!
 
 #testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
-No, you need something more positive.
+No, Lou needs something more positive.
 
 #testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
-No, you need something less reflexive.
+No, Lou needs something less reflexive.
+
+#testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
+>yearning you
+No, Lou needs something less overtly earnest, something with solutions.
 
 >spurning spew
 by one point
 
 #+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
-No, you needed something more positive.
+No, Lou needed something more positive.
 
 #+testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
-No, you needed something less reflexive.
+No, Lou needed something less reflexive.
+
+#+testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
+>yearning you
+No, Lou needed something less overtly earnest, something with solutions.
 
 >out
 
@@ -1792,6 +1816,14 @@ by one point
 
 >frightfully
 by one point
+
+#testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+>right wooly
+That could be construed as a compliment. Ruggedness and all.
+
+#testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+>write wooly
+That could be construed as a compliment. Ruggedness and all.
 
 >bright bully
 by one point

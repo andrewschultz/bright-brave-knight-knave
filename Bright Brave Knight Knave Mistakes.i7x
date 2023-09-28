@@ -318,6 +318,7 @@ to say item-guess of (hi - a holeitem):
 table of lack list guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "black"	"blissed"	--	false	--	"You wonder how you'd look in all black. Pretty neat." [brack brissed was too much]
+"faq"	"fist"	--	false	--	"You aren't up on hand-to-hand combat and don't want to be."
 "hack"	"hissed"	--	false	--	"You mentally deplore how you were pushed aside."
 "mac|mack"	"missed|mist"	--	false	--	"You'd hate for this useful bit of paper to disappear into a mist."
 "pack"	"pissed"	--	false	--	"Whoah! Guns aren't good if you're angry!"
@@ -375,9 +376,9 @@ table of spurning spew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "burning"	"boo"	--	false	--	"No, Lou need[edspew] something more positive."
 "churning"	"chew"	--	false	--	"No, Lou need[edspew] something less reflexive."
-"yearning"	"you"	--	false	--	"No, Lou need[edspew] something less overtly earnest."
+"yearning"	"you"	--	false	--	"No, Lou need[edspew] something less overtly earnest, something with solutions."
 
-to say edspew: if sco-spurning-spew is true, say "ed"
+to say edspew: say "[if sco-spurning-spew is true]ed[else]s[end if]"
 
 table of stew stuff guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

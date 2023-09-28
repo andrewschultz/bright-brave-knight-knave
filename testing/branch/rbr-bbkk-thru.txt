@@ -613,6 +613,10 @@ You can FIGHT FAVE once you are physically and emotionally prepared.
 >black blissed
 You wonder how you'd look in all black. Pretty neat.
 \\
+#testcase-mistakes-table-of-lack-list-guesses-faq-fist
+>faq fist
+You aren't up on hand-to-hand combat and don't want to be.
+\\
 #testcase-mistakes-table-of-lack-list-guesses-hack-hissed
 >hack hissed
 You mentally deplore how you were pushed aside.
@@ -5260,7 +5264,6 @@ You go medieval on the English language for a bit, but no supernatural help appe
 >track trite
 Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really.
 \\
-@mis
 #testcase-mistakes-table-of-black-blight-guesses-wack-whack-white-wight
 >wack wight
 Thankfully, no evil undeads are at play here.
@@ -5536,11 +5539,11 @@ The time toad's gift of cold coal should be enough.
 >strander strove
 This would seem to be despairing. You can't already admit you tried but failed.
 \\
-#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rander rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
 \\
-#testcase-mistakes-table-of-dander-dove-guesses-rander-rove
+#testcase-mistakes-table-of-dander-dove-guesses-rander-rand-er-rove
 >rand er rove
 You got here randomly, so maybe you'll get out even more randomly? Or not?
 
@@ -6200,8 +6203,20 @@ Trading alcohol for tobacco would just be a lateral move.
 >rusing roo
 No sneaky kangaroo appears, which is probably for the better.
 \\
-#testcase-mistakes-table-of-bruising-brew-guesses-oozing-ooh
+#testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing oo
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+\\
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
 >oozing ooh
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+\\
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing ew
+You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
+\\
+#+testcase-mistakes-table-of-bruising-brew-guesses-oozing-oo-ooh-ew-eww
+>oozing eww
 You recall irksomely unctuous people. Or unctuously irksomely. Whichever.
 \\
 #+testcase-mistakes-table-of-bruising-brew-guesses-rusing-roo-rue
@@ -6346,16 +6361,20 @@ Nothing
 @mis
 #testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
-No, you need something more positive.
+No, Lou needs something more positive.
 \\
 #testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
-No, you need something less reflexive.
+No, Lou needs something less reflexive.
+\\
+#testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
+>yearning you
+No, Lou needs something less overtly earnest, something with solutions.
 
 @ver
 #testcase-mainverbs-carry-out-ting-if-noun-is-learning-lou
 >t lou
-Lou need something specific--the right name for that new book.
+Lou needs something specific--the right name for that new book.
 
 >spurning spew
 by one point
@@ -6370,11 +6389,15 @@ Congratulations. You are now one proud owner of an oversized, overwrought motiva
 @mis
 #+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
 >burning boo
-No, you needed something more positive.
+No, Lou needed something more positive.
 \\
 #+testcase-mistakes-table-of-spurning-spew-guesses-churning-chew
 >churning chew
-No, you needed something less reflexive.
+No, Lou needed something less reflexive.
+\\
+#+testcase-mistakes-table-of-spurning-spew-guesses-yearning-you
+>yearning you
+No, Lou needed something less overtly earnest, something with solutions.
 
 >out
 
@@ -6824,6 +6847,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #+testcase-mainverbs-carry-out-ting-if-noun-is-trite-tully
 >t tully
 Conversation won't change Tully's mind.
+
+@mis
+#testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+>right wooly
+That could be construed as a compliment. Ruggedness and all.
+\\
+#testcase-mistakes-table-of-trite-tully-guesses-write-right-wooly
+>write wooly
+That could be construed as a compliment. Ruggedness and all.
 
 >bright bully
 by one point

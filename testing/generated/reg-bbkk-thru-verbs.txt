@@ -509,7 +509,7 @@ by one point
 
 #testcase-mainverbs-carry-out-ting-if-noun-is-learning-lou
 >t lou
-Lou need something specific--the right name for that new book.
+Lou needs something specific--the right name for that new book.
 
 >spurning spew
 by one point
