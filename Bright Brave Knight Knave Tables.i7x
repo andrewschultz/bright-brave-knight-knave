@@ -367,7 +367,10 @@ this is the vr-weak-wooter rule:
 
 to recruit (nu - a number):
 	decrease to-number of recruiter by nu;
-	if to-number of recruiter is 0, declue recruiter;
+	decrease to-number of recroom by nu;
+	if to-number of recruiter is 0:
+		declue recruiter;
+		declue-here;
 
 section spied speak cried creek point scoring
 
@@ -449,7 +452,8 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 		already-done;
 	abide by the eeker bypass rule for guide geek;
 	if not assisted:
-		vcp "You need a couple assistants to hatch a plot.";
+		now go-west-hint is true;
+		vcp "You need a couple assistants to hatch a plot.[recruit-clue]";
 		not-yet;
 	if not pair-here of guide geek:
 		vcp "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
@@ -642,15 +646,15 @@ a goodrhyme rule (this is the vc-time-toad rule):
 		vcal "The time toad's gift of cold coal should be enough.";
 		already-done;
 	if toad-score < 2:
-		vcp "A large, dignified time toad appears. Alas, it shakes its head solemnly. It needs two special items to give you what you need. Unfortunately, it cannot speak. I guess if you're really worthy, it'll find what you need.";
+		vcp "A large, dignified time toad appears. [if toad-score is 0]It pounds the ground twice, as if it needs two things[else]It nods to the [ash-rack] but then pounds the ground once[end if]. You have more work to do.";
 		not-yet;
 	ready;
 
-to say toad-okay:
+to say ash-rack:
 	if player has odd ash:
-		say ". It nods at the odd ash you are carrying";
-	else if player has rack right:
-		say ". It nods at the rack you are carrying";
+		say "odd ash";
+	else:
+		say "rack";
 
 to decide which number is toad-score:
 	decide on (boolval of whether or not player has odd ash) + (boolval of whether or not player has rack right)
@@ -761,9 +765,10 @@ a goodrhyme rule (this is the vc-trod-trash rule):
 
 this is the vr-trod-trash rule:
 	now sco-trod-trash is true;
-	say "You and the guide geek and the weak wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens!";
+	say "You and the Guide Geek and the Weak Wooter figure out how best to lay down trash so that the clods will step on it and then eventually make it bust open and stink up the great outdoors. And indeed that happens![paragraph break]A lot of the trash gets mushed down, but a small heap of odd ash remains miraculously untouched and even flies up into your hands. Weird! Perhaps it will be useful for some odd ritual.";
 	now player has odd ash;
 	dismiss-geek-wooter;
+	moot clod clash;
 
 section thought thief fought fief scoring
 
@@ -851,8 +856,12 @@ a goodrhyme rule (this is the vc-need-knack rule):
 	if only-here of Snide Sneak:
 		vcp "The Snide Sneak has advice for how to find your way around, but it isn't really tempered with caution. You don't trust them enough, yet!";
 		not-yet;
-	if number of eekers in location of player < 2:
-		vcp "To get the knack for not getting lost, you may need help from more than one friend.";
+	if number of eekers in location of player is 0:
+		now go-west-hint is true;
+		vcp "You recognize you don't have the knack for navigating forests. How to see shortcuts but not get too reliant on them?[recruit-clue]";
+		not-yet;
+	if number of eekers in location of player is 1:
+		vcp "To really get the knack for not getting lost, you will need help from more than one friend.";
 		not-yet;
 	if not pair-here of Snide Sneak:
 		vcp "It's all well and good to need assistance, but your current friends can't give any.";
@@ -864,7 +873,8 @@ this is the vr-need-knack rule:
 	say "It makes sense, now, with the Snide Sneak and Mooter Meek helping you. The Sneak proposes shortcuts, and the Mooter points out unnecessary risks. Surprisingly, the Sneak considers the Mooter's position. The Sneak is snide but would love even more sneaking to be snide about! So it's a productive discussion. Together, you hammer out that there is a very clear way through the track: down. Not bad![paragraph break]And yet you sense the Snide Sneak is hiding something from you. They have shown you how to cheat, and now you need to grok things.";
 	open-psg west and Too Tough Blue Bluff;
 	dismiss-sneak-mooter;
-	decrement to-number of Treed Track;
+	decrement to-number of Treed Track; [ NEED KNACK to SEED SACK ]
+	adjust-hack-learner;
 
 a goodrhyme rule (this is the vc-heed-hack rule):
 	if player is not in treed track, unavailable;
@@ -990,7 +1000,7 @@ to blight-alt:
 to check-rack-right:
 	if fried freak is dormant, continue the action;
 	if fried freak is not in location of player and opt-sweet-swap is false, continue the action;
-	say "The fried freak[if fried freak is not in location of player], whom you decided to call over temporarily,[end if] begins looking through all the bags in the sack site. And what do you know? They turn something up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
+	say "The Fried Freak[if fried freak is not in location of player], whom you decided to call over temporarily,[end if] begins looking through all the bags in the sack site. They express dismay with each empty one, then utter shock once something turns up! It's, well, a Rack-Right. What? You don't know the brand name? Well, you put stuff on it, and in the right place, and good things happen.";
 	now player has rack right;
 	dismiss-freak-shooter;
 
@@ -1085,6 +1095,12 @@ this is the vr-covering-candle rule:
 
 section tall tank(s) scoring
 
+to say recruit-clue:
+	if recroom is unvisited:
+		say " Where could you find people willing to help?";
+	else if number of not dormant eekers is 0:
+		say " Maybe you could figure who back around the Recruiter might help.";
+
 a goodrhyme rule (this is the vc-yall-yank rule):
 	if player is not in tata, unavailable;
 	if sco-yall-yank is true:
@@ -1092,7 +1108,8 @@ a goodrhyme rule (this is the vc-yall-yank rule):
 		already-done;
 	abide by the eeker bypass rule for fried freak;
 	if not assisted:
-		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it!";
+		now go-west-hint is true;
+		vcp "Whoah! The tall tank is big! You'll need help from more than one person to move it![recruit-clue]";
 		not-yet;
 	unless pair-here of Chic Shooter:
 		vcp "You sense resistance to physical work from [list of touchable eekers]. You need pals more action-based.";
@@ -1104,8 +1121,11 @@ this is the vr-yall-yank rule:
 	if sco-paul-panks is false:
 		now to-number of tall tanks is -2705;
 		now from-number of tall tanks is -2705;
+		now to-number of tata is -2705;
+		now from-number of tata is -2705;
 	else:
 		declue tall tanks;
+		declue tata;
 	say "The Fried Freak is ready to use that pent-up energy, and the Chic Shooter is ready for action, too. You all pull out a few tall tank(s) with a lot of grunting. Passage opens up to the east.";
 	open-psg east and Lane Lax;
 	dismiss-freak-shooter;
@@ -1120,7 +1140,9 @@ a goodrhyme rule (this is the vc-paul-panks rule):
 this is the vr-paul-panks rule:
 	now sco-paul-panks is true;
 	say "You think back to someone who competed in IFComp about as many times as the author did. Okay, the author is doing this thinking. But ... I thought about him a lot, though he died before I came on the scene. And I enjoyed Hannes Schueller's tribute, The Ninja's Fate. I was humbled to see I'd passed Paul Panks in number of things written. He paved the way for me, sort of. So when I had a chance to leave this memento, I did.";
-	if sco-yall-yank is true, declue tall tanks;
+	if sco-yall-yank is true:
+		declue tall tanks;
+		declue-here;
 
 section ow'ed eyes crowd cries scoring
 
@@ -1134,6 +1156,7 @@ a goodrhyme rule (this is the vc-wowed-whys rule):
 this is the vr-wowed-whys rule:
 	now sco-wowed-whys is true;
 	say "You recognize that the crowd is just sort of spitballing at you. It feels good. Now you must call them out fully!";
+	now to-number of oecc is 2704;
 	now to-number of crowd cries is 2704;
 
 a goodrhyme rule (this is the vc-loud-lies rule):
@@ -1156,6 +1179,7 @@ this is the vr-loud-lies rule:
 	now player has proud prize;
 	dismiss-sneak-mooter;
 	declue oecc;
+	declue crowd cries;
 
 section Bruising Brew scoring
 
@@ -1331,6 +1355,7 @@ a goodrhyme rule (this is the vc-fill-fun rule):
 this is the vr-fill-fun rule:
 	now sco-fill-fun is true;
 	say "You feel a bit happier! This matters. You haven't overcome your depression fully yet, of course. But it is a good first start.";
+	now to-number of nil none is 5355;
 
 a goodrhyme rule (this is the vc-will-won rule):
 	if player is not in nil none, unavailable;
@@ -1366,8 +1391,13 @@ to check-nil-alts:
 	if nil-score is 2:
 		alt-last Nil None;
 		say "You feel like you can move on now in any direction, or you can really nail things down, if you're the completionist sort.";
+		declue-here;
 	else:
-		say "You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction."
+		say "You've really put a lot of anxiety to sleep. Nothing to do beyond move away in any direction.";
+		if sco-ill-un is false:
+			now to-number of nil none is -2652;
+		else:
+			now to-number of nil none is -2703;
 
 section dander dove scoring
 
@@ -1483,7 +1513,7 @@ a goodrhyme rule (this is the any-nook rule):
 		vcal "You finished your work here.";
 		already-done;
 	if pre-nook-score < 2:
-		vcp "You feel you do not have [if pre-nook-score is 0]any[else]enough[end if] artifacts to perform whatever ceremony you need to.";
+		vcp "Yes. That makes sense, but nothing happens. Perhaps you don't have [if pre-nook-score is 0]any[else]enough[end if] artifacts to perform whatever pre-ceremony you need to.";
 		not-yet;
 
 section hailing hill auxiliary
@@ -1585,6 +1615,7 @@ to fully-dismiss (ee - an eeker):
 		say "[line break]But they also realize something else--you've helped everyone you could have fun and adventure! They thought the recruiting was a scam. You proved it wrong, and surely that deserves a reward. [if player is in cried creek]Your friends show you an ardor elm nearby, hidden off to the side. Perhaps you can use it![else]They suggest you go have a look back at Cried Creek. They know this one tree that may help. It always seemed special.[end if]";
 		move ardor elm to cried creek;
 		set pronoun it to ardor elm;
+		now elm-alert is true;
 
 to dismiss-sneak-mooter: if sneak-mooter-points is 3, fully-dismiss snide sneak;
 
@@ -1600,12 +1631,16 @@ an eeker manipulation rule for an eeker (called ee) (this is the eeker precheck 
 		if vc-dont-print is false, say "But [the ee] is already here!";
 		already-done;
 	if eekers-near is 1:
-		if ee is creeky and player is not in cried creek:
-			vcp "You need to be back at [creek] to touch base with a new creek denizen.";
-			not-yet;
-		if ee is crooty and player is not in recroom:
-			vcp "You need to be back at [recroom] to touch base with a new recruit.";
-			not-yet;
+		if ee is creeky:
+			if player is in recroom, unavailable;
+			if player is not in cried creek:
+				vcp "You need to be back at [creek] to touch base with a new creek denizen.";
+				not-yet;
+		if ee is crooty:
+			if player is in cried creek, unavailable;
+			if player is not in recroom:
+				vcp "You need to be back at [recroom] to touch base with a new recruit.";
+				not-yet;
 	if ee is creeky and player is not in cried creek, unavailable;
 	if ee is crooty and player is not in recroom, unavailable;
 	if ee is finished:
@@ -1618,6 +1653,9 @@ to bring-over (ee - an eeker):
 	set-all ee;
 
 an eeker manipulation rule for an eeker (called ee) (this is the eeker vr rule):
+	if from-number of recruiter is 0:
+		declue-here;
+		declue recruiter;
 	abide by the eeker postcheck rule for ee;
 	abide by the eeker matchups rule for ee;
 
@@ -1704,6 +1742,8 @@ this is the frightfully-bright-bully rule:
 	if tully-score is 2:
 		say "Trite Tully looks shocked! 'No! No! It can't be!' Suddenly, they look much more humble.[paragraph break]'Once ... once, they called me a name. Sham, shy! I feel that way again... it's not fair. I deserved so much more! And I had it!'[paragraph break]You wonder what to do. Tully looks pleadingly at you, but you still detect contempt. You think.";
 		now Trite Tully is not proper-named;
+		now from-number of trite tully is 2654;
+		now to-number of trite tully is 2653;
 	else:
 		say "Tully shakes their head a bit. You've seen into them, but you feel like you can do more.";
 
@@ -1773,7 +1813,7 @@ volume table of noways
 
 table of noways
 noway-rm	noway-txt
-White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]Any direction other than [b]DOWN[r], and you'd drown or get lost[end if]."
+White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]The only viable passage out is [b]DOWN[r][end if]."
 Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to reason out which way to go. It's a bit confusing here[else]You can go pretty much any way from here but not [noun][end if]."
 Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."
