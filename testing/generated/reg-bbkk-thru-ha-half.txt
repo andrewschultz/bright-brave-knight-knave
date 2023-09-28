@@ -927,7 +927,7 @@ The HA HALF button on your Leet Learner lights up green.
 >zquack quite
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-45-flack-flak
+#testcase-ha-half-table-of-verb-checks-45-flak-flack
 >flak zflight
 The HA HALF button on your Leet Learner lights up green.
 

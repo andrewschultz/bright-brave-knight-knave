@@ -15,7 +15,7 @@ Taken.
 
 #testcase-values-from-number-of-white-wave-is-2754
 >ll
-You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the area's rhymes.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 

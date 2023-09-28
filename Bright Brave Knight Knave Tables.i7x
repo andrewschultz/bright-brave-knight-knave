@@ -683,7 +683,7 @@ a goodrhyme rule (this is the vc-mime-mode rule):
 	ready;
 
 this is the vh-mime-mowed rule:
-	say "Mimes annoy you, but that's a bit much[if sco-mime-mode is false]. Perhaps you could find ironic distance from this for a bonus point[end if].";
+	say "Mimes annoy you, but that's a bit much. Perhaps you could find ironic distance from this for a bonus point, though.";
 	the rule succeeds;
 
 this is the vr-mime-mode rule:

@@ -544,7 +544,7 @@ NOTE: this command will be useful later, but you aren't ready to use it, yet. Yo
 @hfull
 #testcase-values-from-number-of-white-wave-is-2754
 >ll
-You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with its rhymes.
+You scan the area. This will suffice most of the time, though you may wish to LL a thing that doesn't jibe with the area's rhymes.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 \\
@@ -1153,6 +1153,12 @@ by one point
 You scan the area.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 2.00.)
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-what-woe-rule-woe
+#testcase-homonym-detail-vh-what-woe-rule-default
+>what woe
+You express shock and things that went unexpectedly wrong. Which is close to shock at things going right. But not quite there, yet.
 
 >what whoah
 by one point
@@ -3710,6 +3716,21 @@ The train tracks head north and south, but you can go back west, too.
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-mane-macks-rule-mane-macks
+#testcase-homonym-detail-vh-mane-macks-rule-fallthrough
+#testcase-homonym-detail-vh-mane-macks-rule-if-the-player's-command-includes-macks
+>mane max
+`Grow your hair out? No time for that right now! You have more important things to do.
+\\
+#testcase-homonym-detail-vh-mane-macks-rule-if-the-player's-command-includes-mane
+>main macks
+`Hit on people? No time for that right now! You have more important things to do.
+\\
+#testcase-homonym-detail-vh-mane-macks-rule-if-the-player's-command-includes-mane
+>mane macks
+`Grow your hair out? Hit on people? No time for that right now! You have more important things to do.
+
 >main max
 by one point
 
@@ -5504,7 +5525,7 @@ Beyond is too wild. Best just go back down the way you came when you're ready.
 >zquack quite
 {$GREENCORE}
 \\
-#testcase-ha-half-table-of-verb-checks-45-flack-flak
+#testcase-ha-half-table-of-verb-checks-45-flak-flack
 >flak zflight
 {$GREENCORE}
 \\
@@ -5920,6 +5941,15 @@ LCD
 >ztime toad
 {$GREENCORE}
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-time-toed-rule-toed-towed
+#testcase-homonym-detail-vh-time-toed-rule-default
+>time toed
+No, time gets around by flying. Or maybe hopping.
+\\
+>time towed
+No, time gets around by flying. Or maybe hopping.
+
 >time toad
 by one point
 
@@ -6069,6 +6099,12 @@ This would seem to be despairing. You can't already admit you tried but failed.
 >ll rime road
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, -1.00.)
 it's really dim
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-mime-mowed-rule-mowed
+#testcase-homonym-detail-vh-mime-mowed-rule-default
+>mime mowed
+Mimes annoy you, but that's a bit much. Perhaps you could find ironic distance from this for a bonus point, though.
 
 @!min,gong,prong
 >mime mode
@@ -6797,6 +6833,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll lou
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-fusing-few-rule-few
+#testcase-homonym-detail-vh-fusing-few-rule-default
+>fusing few
+Well... you're fusing a lot. So much, it'll be a bit exhausting.
+
 >fusing phew
 by one point
 
@@ -7149,6 +7191,12 @@ by one point
 {--rej}#testcase-check-vc-failing-phil-rule-fallthrough
 {--all}#testcase-run-vr-failing-phil-rule-default
 Shortly, someone who must be Failing Phil drops by. "You don't know Tully, do you? You're not with Tully?" You reassure Failing Phil otherwise, even addressing some of your own beefs with Tully. You chat a while. He mentions how Tully kept asking him to do more impossible things, or how Tully pointed out inane imperfections that made it harder for him to do simple things right for a while. He's better now. Then he sees the cold coal and asks you if he may touch it. Both seem to glow as a result. He thanks you.
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-whaling-will-rule-whaling
+#testcase-homonym-detail-vh-whaling-will-rule-default
+>whaling will
+Perhaps failure to catch his white whale is what has upset Will. But he's been doing something else more similar.
 
 >wailing will
 by one point
