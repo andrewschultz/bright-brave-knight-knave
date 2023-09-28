@@ -44,6 +44,8 @@ this is the situational-cuing-reject rule: do nothing;
 
 check hintobjing: if noun is not leet learner, say "Sorry about this, but due to time constraints, in-game hints were not completed in time for IFComp. The walkthrough is all there is. The only thing you can hint is the Leet Learner." instead;
 
+carry out hinting: say "Sorry, due to time constraints, the only thing that can be hinted is the leet learner. I'll have to refer you to the walkthrough." instead;
+
 volume when play begins
 
 when play begins:
@@ -65,16 +67,31 @@ when play begins:
 	say "You had no answers. But you would have a choice of punishment: Jet, Jail? Set sail? You went with the second. But of course your boat capsized as a big white wave came up. You paddled to shore...";
 	wfak;
 
+check thinking (this is the go west rule):
+	if go-west-hint is true:
+		if recruiter is unvisited:
+			say "You may wish to find people to help you with your ideas.";
+		else if cried creek is unvisited:
+			say "You aren't sure you visited all places that might have allies.";
+		else if not any-recruits:
+			say "Perhaps you should hit up the creek and the recruiter for help.";
+	if elm-alert is true:
+		say "You should probably go back to visit Cried Creek. Your friends mentioned something for you there.";
+
 volume Flying Flees (intro)
 
 book white wave
 
-White Wave is a room in Flying Flees. "[if sco-kite-cave is false]A perpetual white wave blocks off half this beach. Okay, it's different waves, but when you look around, you always see one.[paragraph break]Water blocks off half of this beach, and too-dense forest blocks off the other half. But you are a Bright Brave Knight Knave, and you will find a passage, if you think about it. Maybe containing something odd, maybe slightly forced, but hey, you won't get anything if you don't ask for it.[paragraph break]Where could you go? How could you create passage?[else if bass bath is unvisited]This beach is still blocked off by the occasional white wave and dense forest. The only way out is [b]DOWN[r] through the kite cave you created[bb-detail].[end if]"
+White Wave is a room in Flying Flees. "A perpetual white wave blocks off half this beach. Okay, it's different waves, but when you look around, you always see one. The other half is walled off.[paragraph break][if sco-kite-cave is false]But you are a Bright Brave Knight Knave, and you will find a passage, if you think about it. Maybe containing something odd, maybe slightly forced, but hey, you won't get anything if you don't ask for it.[paragraph break]Where could you go? How could you create passage?[else if bass bath is unvisited]You may need to trust the passage you created [b]DOWN[r] leads somewhere[else if sco-fight-fave is false]You're back where you started. You sense even bigger things may happen here[big-things]. You can go [b]DOWN[r] back through the tunnel that was the kite cave.[else]This is it! Your final battle![end if]"
+
+to say big-things: if core-score < 30, say ", but that might be a while"
 
 after printing the locale description when player is in white wave and sco-kite-cave is false:
 	say "You hear traces of ... something. If you [b]LISTEN[r] very carefully, it might give a clue.";
 
-check listening when sco-kite-cave is false: say "You hear a fragment of a sentence. 'Cite! Save!' Or 'Sight-save?' or 'Site! Save?' You don't have context. But maybe it's something to go on." instead;
+check listening (this is the game specific listen rule):
+	if sco-kite-cave is false, say "You hear a fragment of a sentence. 'Cite! Save!' Or 'Sight-save?' or 'Site! Save?' You don't have context. But maybe it's something to go on." instead;
+	if player is in route rough, say "Voices from all around proclaim 'Out! Uff!' which has the effect of pushing you to, well, the center." instead;
 
 check going up in White Wave:
 	if sco-kite-cave is false:
@@ -125,8 +142,11 @@ check going down in White Wave:
 	if sco-kite-cave is false, continue the action;
 	if hold hole is unexamined and number of preguessed holeitems < 3, say "You may wish to examine the hold hole you created first." instead;
 	if player does not have the leet learner:
-		say "Before going anywhere, you swipe the leet learner. Who knows when it might come in handy?";
+		say "Before going anywhere, you swipe the leet learner. Who knows when it might come in handy?[line break]";
 		now player has leet learner;
+	if bass bath is unvisited:
+		say "It's dark down there, and the cave branches out. Oh, no, you're not getting lost in some maze right away. Then you look under the hold hole to discover a dope-deal rope reel![paragraph break]But where to tie it to? You fumble around a bit more and discover a sturdy cope-keel.[paragraph break]'Hope, heal,' you say to yourself, walking along the underground cavern and, after navigating several loops and dead ends, coming up at ...";
+		wfak;
 
 chapter leet learner
 
@@ -137,6 +157,10 @@ chapter Hold Hole
 the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-done is 0]empty[else if hole-done is 1]one-third full[else if hole-done is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
 
 description of hold hole is "It appeared when you located the kite cave, and it leads [b]DOWN[r]. [whats-in-hold]."
+
+check inserting into hold hole:
+	if noun is not a trystitem, say "You can't find a slot." instead;
+	say "The [noun] will set itself in the hold hole once it's ready." instead;
 
 check taking hold hole: say "Hole haul? Stole? Stall! (You will put things back in the hole as you find them.)" instead;
 
@@ -238,7 +262,7 @@ printed name of Trite Tully is "[if tully-score is 2]Sham, Shy[else]Trite Tully[
 
 book bass bath
 
-Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You [if bool-brew-available is true]also uncovered a passage inside to a bar, or you [end if]can also go back [b]DOWN[r] into the underground tunnel from White Wave."
+Bass Bath is a room in Flying Flees. printed name is "[if sco-pass-path is false]Bass Bath[else]Pass Path[end if]". "[if sco-pass-path is false]It's very nice here, but you are sort of on an isle and can't see any way forward. Lovely fish zoom in and out of sight too quickly to [b]EXAMINE[r], and you imagine them replying if you tickle one and say 'how do you pronounce yourself there, fella?'[else if sco-mass-math is false]Paths loop around here confusingly. There seem to be too many possibilities where to go next. Perhaps some concrete thinking would sort things out[else if mood mapper is off-stage]You see passages to the north, west, south and east.[end if] You [if bool-brew-available is true]also uncovered a passage inside to a bar, and you [end if]can also go back [b]DOWN[r] through the underground tunnel back to White Wave[if number of known-to-player holeitems is 0], though you've found nothing for the hold hole yet[end if]."
 
 guess-table of bass bath is the table of bass bath guesses.
 
@@ -250,7 +274,7 @@ after printing the locale description for Bass Bath:
 		now bool-hill-available is true;
 		open-psg up and hailing hill;
 	if bool-brew-available is false and hub-expand-score is 3:
-		say "Wait! What's this? The mood mapper beeps once again and then suddenly vaporizes![paragraph break]All your mass math, and you didn't quite see there could be one more passage out. But it seems so clear, now you rechecked your work. And now you can't un-see a path to that depressing bar!";
+		say "Wait! What's this? The mood mapper beeps once again and then suddenly vaporizes![paragraph break]All your mass math, and you didn't quite see there could be one more passage out. But it seems so clear, now you rechecked your work. And now you can't un-see a path [b]INSIDE[r] to that depressing bar!";
 		moot mood mapper;
 		now bool-brew-available is true;
 		open-psg inside and Bruising Brew;
@@ -258,7 +282,7 @@ after printing the locale description for Bass Bath:
 
 book Hailing Hill
 
-Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else if hill-score is 1]midpoint[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if].";
+Hailing Hill is a room in Flying Flees. "You are at the [if hill-score is 2]top[else if hill-score is 1]midpoint[else]bottom[end if] of a hill that just makes you want to get in touch with people[if hill-score is 5], but maybe not here. You've done what you can[else if sco-mailing-mill is true]The mailing mill you summoned waits here to be operated[end if][if core-score < 30]. It's a bit intimidating and dizzying at the moment, though. Perhaps you can only scout around for the moment[end if].[paragraph break]You can go back down to Pass Path.";
 
 guess-table of hailing hill is the table of hailing hill guesses.
 
@@ -350,7 +374,7 @@ guess-table of mood mapper is table of crude crapper guesses.
 
 book Recruiter
 
-recroom is a privately-named room in Plying Please. It is north of Rut Row. printed name of recroom is "Recruiter". "[if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
+recroom is a privately-named room in Plying Please. It is north of Rut Row. printed name of recroom is "Recruiter". "[if number of finished eekers is 6]You take a moment to remember your friends who helped you, but it's time to move on[else if recruiter-score is 0]This being a recruiter's office, you wonder whom you could call on to help you out[else if recruiter-score < 3]You sense you could call someone more[else]You've found everyone you can here, though you may wish to call or dismiss them as needed[end if].[paragraph break][if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -384,7 +408,7 @@ the Weak Wooter is a crooty eeker. description is "Very earnest, but not very lo
 
 book spied speak cried creek
 
-Spied Speak Cried Creek is west of recroom. it is in Plying Please. "It would be lovely to wander around here, but any direction other than back east to the Recruiter, and you might get lost.". printed name is "Spied-Speak-Cried Creek".
+Spied Speak Cried Creek is west of recroom. it is in Plying Please. "An idyllic place, but any direction other than back east to the Recruiter, and you might get lost[if sco-stride-streak is true]. Even now, you feel it's tough to move around. Maybe you could fix that[end if].[paragraph break][if creek-score is 0]You feel like you're being watched. But by whom?[else if creek-score < 3]There may be even more friends here[else]You doubt there are any more friends to uncover here[end if].". printed name is "Spied-Speak-Cried Creek".
 
 guess-table of cried creek is the table of cried creek guesses.
 
@@ -418,6 +442,19 @@ the Snide Sneak is an eeker. description is "A bit too shifty to be a long-term 
 chapter guide geek
 
 the Guide Geek is an eeker. description is "Perhaps at risk of droning on too much to show how smart they are. But as a [this-game-noi], you know how to keep them focused to provide useful information to you and others.". matchnum of Guide Geek is -3.
+
+chapter ardor elm
+
+the ardor elm is a thing. "[if game-elm-seen is false][elm-off]Your friends stop by briefly escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want...'[else]The ardor elm your friends showed you stands here. [elm-status].[end if]". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
+
+to say elm-off:
+	now elm-alert is false;
+	now game-elm-seen is true;
+
+from-number of ardor elm is 2753. to-number of ardor elm is 2804.
+
+to say elm-status:
+	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
 
 book eeker logic and manipulation
 
@@ -475,7 +512,7 @@ from-number of perky pap is 2753. to-number of perky pap is 2753.
 
 section murky map
 
-the murky map is a rhymable. description is "Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.".
+the murky map is a rhymable. description is "[if sco-glued-glass is true]It seems to point to somewhere new! But where?[else]Unfortunately, you can't quite read it. You need the right tool. Nothing too fancy, you'd assume.[end if]".
 
 guess-table of murky map is table of perky pap guesses.
 
@@ -487,9 +524,11 @@ from-number of fast fort is 2704. to-number of fast fort is 8213.
 
 chapter CCLL
 
-Crude Crass Lewd Lass is a rhymable in Fast Fort. "[one of]Oh dear. Someone left a copy of [ccll] here. You're not acquainted with the literature, but it can't be good. It would be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
+Crude Crass Lewd Lass is a rhymable in Fast Fort. "[one of]Oh dear. 'Literature' titled [ccll] here. Something like that must be better as anything else[or]The copy of [ccll] sits there, daring you to turn it into something useful[stopping], even something broken.". description is "No. No. You don't have time to read [ccll]. If you did have time to read it, you'd be better off reading the ingredients of a cereal box, or something."
 
-understand "ccll" as crude crass lewd lass.
+check taking lewd lass: say "Not as-is, for sure." instead;
+
+understand "ccll" as crude crass lewd lass. understand "book" as lewd lass when lewd lass is fungible.
 
 to say ccll: say "[i]Crude Crass Lewd Lass[r]"
 
@@ -555,7 +594,9 @@ volume Trying Trees (south)
 
 book Treed Track
 
-Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else]With your friends['] help, you've figured there are passages west, east and up[end if]. You can, of course, always go back north to Pass Path."
+Treed Track is a room in Trying Trees. "[if sco-need-knack is false]You just can't make your way through this forest! Having a method to would help[else if sco-heed-hack is false]The Snide Seak helped you find a way west, though you feel you could riff on that to find more[else]With your friends['] help, you've figured there are passages west, east and up[end if][if sco-seed-sack is false]. And in such a dense forest, something useful might turn up, if you knew what to look for[end if].[paragraph break]You can, of course, always go back north to Pass Path."
+
+from-number of treed track is 2755. to-number of treed track is 5409.
 
 guess-table of treed track is the table of treed track guesses.
 
@@ -587,7 +628,17 @@ guess-table of stew stuff is the table of stew stuff guesses.
 
 book Lack Light Black Blight
 
-Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. Perhaps you need to show you can take abuse without surrendering to it[else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[end if]."
+Lack Light Black Blight is a room in Trying Trees. printed name is "[if blight-score < 3]Lack-Light Black Blight[else]Sack Site[end if]". "The only way back is down. [if blight-score < 3]You feel unseen forces backbite, smack, smite, both verbally and physically. [blight-prog][else]This is a sack site now, with sacks you don't need. Perhaps one day a decent shack will be built here ... nah[sacks-prog][end if]."
+
+to say blight-prog:
+	if blight-score is 0:
+		say "You're a way from dealing with it fully";
+	else if blight-score is 1:
+		say "You've started to deal with it";
+	else if blight-score is 2:
+		say "Yet they've almost lost their power"
+
+to say sacks-prog: if rack right is off-stage, say ". But maybe there's something under those sacks, though scavenging like that isn't your specialty"
 
 guess-table of black blight is the table of black blight guesses.
 
@@ -618,7 +669,9 @@ from-number of sour slate is 2705. to-number of sour slate is 2755.
 
 book Knell Nook
 
-Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [knell-txt]."
+Knell Nook is a room in Trying Trees. "This certainly is a nook, having only a passage back west. You [knell-txt].". printed name is "[if sco-covering-candle is true]Shell, Shook[else]Knell Nook[end if]".
+
+guess-table of knell nook is the table of knell nook guesses.
 
 from-number of knell nook is 2754. to-number of knell nook is 2704.
 
@@ -656,18 +709,9 @@ from-number of tall tanks is 2704. to-number of tall tanks is 2704.
 check lling tata when sco-yall-yank is true and sco-paul-panks is false:
 	say "You think of the tanks as tanks, here...";
 
-chapter ardor elm
-
-the ardor elm is a thing. "[if game-elm-seen is false]Your friends escort you over somewhere out of the way. 'Look! An ardor elm! Just for you! We're sure you'll find what you want...'[else]The ardor elm your friends showed you stands here. [elm-status].[end if]". description is "[if sco-harder-helm is false]Given how things are here, it's very important what kind of tree it is, you suspect[else]You admire the ardor elm both for its intrinsic beauty and its gift of the harder helm[end if]."
-
-from-number of ardor elm is 2753. to-number of ardor elm is 2804.
-
-to say elm-status:
-	say "[if game-elm-seen is false]Perhaps it holds something[else]You would appreciate it even without what you got from it[end if]"
-
 book Lane Lax
 
-Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]Oh! There's a broad brash clod clash going on here that you probably need to break up, some way[end if].[paragraph break]Of course, you can always just go back west, too."
+Lane Lax is a room in Lying Leas. printed name is "[if sco-train-tracks is false]Lane, Lax[else][mama]Train Tracks[end if]". "[if sco-main-max is true]The train tracks lead somewhere that's actually somewhere to the north and south[else if sco-train-tracks is true]The train tracks lead north or south to goodness knows where, but right now, this region feels too out-of-the-way[else]It's pretty barren here. There doesn't seem to be any way for people to arrive or leave here efficiently[end if][if broad brash clod clash is in lane lax].[paragraph break]That broad brash clod clash also continues to rage on. There must be a way to disrupt it[end if].[paragraph break]Of course, you can always just go back west, too."
 
 guess-table of lane lax is the table of lane lax guesses.
 
@@ -952,7 +996,8 @@ carry out abouting:
 book creditsing
 
 carry out creditsing:
-	say "Thanks to ClubFloyd for testing this game so well!";
+	say "Thanks to ClubFloyd for testing this game so well! They got me restarted when I was in a slump. This includes David Welbourn, pinkunz, keltena and (check transcripts)";
+	say "[line break]Individuals who provided very helpful transcripts that helped me play catch-up include Wade Clarke, Doug Egan and Tabitha. I encourage you to check out their works as well.";
 	say "[line break]Thanks to Zarf for his Python scripts that helped me regression-test.";
 
 book optsing
@@ -966,9 +1011,9 @@ carry out optsing:
 book verbsing
 
 carry out verbsing:
-	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. This is to help you focus on certain phrases you need to guess to advance.";
+	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. You shouldn't even need [b]TAKE[r]. This is to help you focus on certain phrases you need to guess to advance.";
 	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well.";
-	say "[line break][b]T [r] lets you talk to people or entities.";
+	say "[line break][b]T[r] lets you talk to people or entities.";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
 
@@ -995,7 +1040,7 @@ chapter taking
 the BBKK generic take reject rule is listed instead of the the can't take scenery rule in the check taking rules.
 
 check taking (this is the BBKK generic take reject rule):
-	if noun is not lack list and noun is not leet learner and player does not carry noun, say "[b]TAKE[r], while a standard parser verb, isn't necessary here. Guessing the right commands dislodges what you need." instead;
+	if noun is not lack list and noun is not leet learner and player does not carry noun, say "[b]TAKE[r], while a standard parser verb, isn't necessary in [this-game]. Guessing the right commands dislodges what you need." instead;
 
 chapter ting
 
@@ -1034,7 +1079,7 @@ carry out ting:
 	if noun is boffin boy, say "He has probably had enough of lectures." instead; [west]
 	if noun is mailing mill, say "You can just request whomever you need." instead;
 	if noun is losing lou, say "Losing Lou doesn't need small talk right now but answers." instead; [center]
-	if noun is learning lou, say "Lou need something specific--the right name for that new book." instead;
+	if noun is learning lou, say "Lou needs something specific--the right name for that new book." instead;
 	if noun is fun fish, say "It says nothing but looks at you ... hungrily?" instead; [east]
 	if noun is broad brash clod clash, say "Interrupting their fight with words won't help." instead;
 	if noun is crowd cries, say "Casual chat won't work. You need to be more forceful." instead;
@@ -1092,7 +1137,7 @@ guess-table of Dander Dove is the table of Dander Dove guesses.
 
 book Rough Route
 
-Route Rough is a room in Shying Sheez. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
+Route Rough is a room in Shying Sheez. "Man! You [if route-rough-score is 3]did everything you can here. Just go any direction to leave[else if route-rough-score is 2]can probably leave, but if you're the sort to nail things down, great[else if route-rough-score is 1]have made some mental headway but would like to do more[else]sure feel bummed. Once again, you need to organize your thoughts[end if][if route-rough-score < 2]. You think you can hear something, if you [b]LISTEN[r][end if].". printed name is "[if route-rough-score < 2]Route, Rough[else]Out, Uff![end if]"
 
 guess-table of route rough is the table of route rough guesses.
 
@@ -1229,14 +1274,8 @@ final question wording	only if victorious	topic	final response rule	final respon
 volume auxiliary rules for general PPRR commands
 
 rule for supplying a missing noun when lling (this is the get readings from room rule):
-	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with its rhymes[or][stopping].";
-	if player is in recroom:
-		now noun is recruiter;
-	else if player is in tata:
-		now noun is tall tanks;
-	else if player is in OECC:
-		now noun is crowd cries;
-	else if player is in cast court or player is in fast fort or player is in passed port:
+	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with the area's rhymes[or][stopping].";
+	if player is in cast court or player is in fast fort or player is in passed port:
 		now noun is location of player;
 	else:
 		abide by the general-ll-locations rule;
@@ -1397,6 +1436,7 @@ volume endgame
 to say wr: say "[b]WRITE/RIGHT RAVE[r]"
 
 this is the show-misses rule:
+	say "These were meant to be a bit obscure. They were too good to pass up but too tricky to require.[line break]";
 	if sco-write-right-rave is false:
 		say "You could have tried to [wr] to flatter me.";
 	else if got-rave-bonus is false:
@@ -1406,7 +1446,7 @@ this is the show-misses rule:
 	if r-shortcut-got is false:
 		say "You could have been a bright knave and said [b]R 3[r] once you'd paired two groups of friends, whether you knew their names or not.";
 	if got-hole-bonus is false:
-		say "You didn't guess the [the list of unguessed holeitems] before finding [if number of unguessed holeitems is 1]it[else]them[end if].";
+		say "You didn't guess [the list of unguessed holeitems] before finding [if number of unguessed holeitems is 1]it[else]them[end if].";
 	if sco-nude-napper is false:
 		say "You could have told a [b]NUDE NAPPER[r] to be more modest in the Crude Crapper.";
 	flag-missed nil none;
