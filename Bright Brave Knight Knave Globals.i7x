@@ -224,6 +224,10 @@ lump-eeker-warn is a truth state that varies. [this clues you about the lurking 
 
 skip-profanity is a truth state that varies.
 
+go-west-hint is a truth state that varies.
+
+elm-alert is a truth state that varies.
+
 chapter options
 
 opt-sweet-swap is a truth state that varies. [lets you solve puzzles without friends]

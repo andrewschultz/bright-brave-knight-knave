@@ -79,7 +79,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "done"	"dish"	--	--	false	true	true	false	thought thief fought fief	vc-done-dish rule	vr-done-dish rule	--	"You can make a [b]DONE DISH[r] [here-in of fought fief] [once-now of vc-done-dish rule] you've got certifiably acceptable ingredients for a dish."
 "boozing"	"boo"	--	--	false	true	true	false	Bruising Brew	vc-boozing-boo rule	vr-boozing-boo rule	--	--
 "using"	"you"	--	--	false	true	true	false	Bruising Brew	vc-using-you rule	vr-using-you rule	--	--
-"fusing"	"phew"	"few"	vh-fusing-few rule	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	"You can say [b]FUSING PHEW[r] [here-in of Cruising Crew] [once-now of vc-fusing-phew rule] you have commiserated more than one way with Lou."
+"fusing"	"phew"	"few"	vh-fusing-few rule	false	true	true	false	Bruising Brew	vc-fusing-phew rule	vr-fusing-phew rule	--	"You can say [b]FUSING PHEW[r] [here-in of Bruising Brew] [once-now of vc-fusing-phew rule] you have commiserated more than one way with Lou."
 "spurning"	"spew"	--	--	false	true	true	false	Bruising Brew	vc-spurning-spew rule	vr-spurning-spew rule	--	--
 "fill"	"fun"	--	--	false	true	true	false	nil none	vc-fill-fun rule	vr-fill-fun rule	--	--
 "will"	"won"	--	--	false	true	true	false	nil none	vc-will-won rule	vr-will-won rule	--	"You can say [b]WILL WON[r] [once-now of vc-will-won rule] you're a little less miserable." [no here-in needed--once you leave, you're gone]
@@ -92,10 +92,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "nowt"	"nuff"	--	--	false	true	true	false	route rough	vc-nowt-nuff rule	vr-nowt-nuff rule	--	--
 "scaling"	"skill"	--	--	false	true	true	false	hailing hill	vc-scaling-skill rule	vr-scaling-skill rule	--	--
 "ailing"	"ill"	--	--	false	true	true	false	hailing hill	vc-ailing-ill rule	vr-ailing-ill rule	--	--
-"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a mailing mill [here-in of hailing hill] [if hill-score < 2]once[else]now[end if] you can access the top[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
-"bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact Bailing Bill [once-now of vc-bailing-bill rule] you have something to offer him and the means to communicate."
-"failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact Failing Phil [once-now of vc-failing-phil rule] you have something to offer him and the means to communicate."
-"wailing"	"will"	"whaling"	vh-whaling-will rule	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact Wailing Will [once-now of vc-wailing-will rule] you have something to offer him and the means to communicate."
+"mailing"	"mill"	--	--	false	true	true	false	hailing hill	vc-mailing-mill rule	vr-mailing-mill rule	--	"You can place a [b]MAILING MILL[r] [here-in of hailing hill] [if hill-score < 2]once[else]now[end if] you can access the top[if hill-score >= 2] and [once-now of vc-mailing-mill rule] you have the raw materials[end if]."
+"bailing"	"bill"	--	--	false	true	true	false	hailing hill	vc-bailing-bill rule	vr-bailing-bill rule	--	"You can contact [b]BAILING BILL[r] [once-now of vc-bailing-bill rule] you have something to offer him and the means to communicate."
+"failing"	"phil"	--	--	false	true	true	false	hailing hill	vc-failing-phil rule	vr-failing-phil rule	--	"You can contact [b]FAILING PHIL[r] [once-now of vc-failing-phil rule] you have something to offer him and the means to communicate."
+"wailing"	"will"	"whaling"	vh-whaling-will rule	false	true	true	false	hailing hill	vc-wailing-will rule	vr-wailing-will rule	--	"You can contact [b]WAILING WILL[r] [once-now of vc-wailing-will rule] you have something to offer him and the means to communicate."
 "fright"	"fully"	--	--	false	true	true	false	white wave	vc-fright-fully rule	vr-fright-fully rule	"frightfully"	--
 "bright"	"bully"	--	--	false	true	true	false	white wave	vc-bright-bully rule	vr-bright-bully rule	--	--
 "bam"	"bye"	--	--	false	true	true	false	white wave	vc-bam-bye rule	vr-bam-bye rule	--	--

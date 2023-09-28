@@ -45,7 +45,7 @@ to decide whether hold-poke:
 
 a trystitem is a kind of rhymable. a trystitem has text called vaguedesc.
 
-to decide which number is trystcount: decide on number of carried trystitems;
+to decide which number is trystcount: decide on number of known-to-player trystitems;
 
 chapter eekers
 
@@ -100,6 +100,10 @@ an eeker has a number called matchnum.
 the eeker manipulation rules are an eeker based rulebook. the eeker manipulation rules have outcomes unavailable, not-yet, already-done, jump-reject, semi-pass and ready.
 
 the guess-table of an eeker is usually the table of cried creek guesses.
+
+to decide whether any-recruits:
+	if number of not dormant eekers > 0, yes;
+	no;
 
 to sideline-eekers:
 	repeat with X running through eekers in location of player:
@@ -177,6 +181,16 @@ to yacht-go (rm - a room):
 	now took-yacht is false;
 
 chapter score macros
+
+section creek score
+
+to decide what number is creek-score:
+	decide on (boolval of sco-fried-freak) + (boolval of sco-guide-geek) + (boolval of sco-snide-sneak);
+
+section recruiter score
+
+to decide what number is recruiter-score:
+	decide on (boolval of sco-weak-wooter) + (boolval of sco-meek-mooter) + (boolval of sco-chic-shooter);
 
 section hub score
 

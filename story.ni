@@ -156,6 +156,8 @@ chapter Hold Hole
 
 the hold hole is a rhymable. "The hold hole created when the kite cave collapsed sits here. It's divided into three and is [if hole-done is 0]empty[else if hole-done is 1]one-third full[else if hole-done is 2]two-thirds full[end if][if hold-poke]. You should probably examine it or at least try to figure out what it should hold[end if].".
 
+from-number of hold hole is 2704. to-number of hold hole is -2704.
+
 description of hold hole is "It appeared when you located the kite cave, and it leads [b]DOWN[r]. [whats-in-hold]."
 
 check inserting into hold hole:
@@ -375,6 +377,8 @@ guess-table of mood mapper is table of crude crapper guesses.
 book Recruiter
 
 recroom is a privately-named room in Plying Please. It is north of Rut Row. printed name of recroom is "Recruiter". "[if number of finished eekers is 6]You take a moment to remember your friends who helped you, but it's time to move on[else if recruiter-score is 0]This being a recruiter's office, you wonder whom you could call on to help you out[else if recruiter-score < 3]You sense you could call someone more[else]You've found everyone you can here, though you may wish to call or dismiss them as needed[end if].[paragraph break][if cried creek is unvisited]There's a passage west to more rural areas[else]You can go west to [creek][end if]. Or you can just go back south to Rut Row.". understand "rec/recroom" as recroom when debug-state is true.
+
+from-number of recroom is 2656. to-number of recroom is 8119.
 
 guess-table of recroom is the table of recroom guesses.
 
@@ -695,6 +699,8 @@ tata is a privately-named room in Lying Leas. printed name is "Tall Tank(s)". un
 
 guess-table of tata is the table of tata guesses.
 
+from-number of tata is 2704. to-number of tata is 2704.
+
 chapter tall tanks
 
 the tall tanks are plural-named scenery in tata. "They're tall! They look like they could be moved, but not on your own.".
@@ -730,6 +736,8 @@ The broad brash clod clash is a talktoable rhymable. it is scenery. "Sheesh. A b
 
 guess-table of clod clash is the table of clod clash guesses.
 
+from-number of broad brash clod clash is 5460. to-number of broad brash clod clash is 2705.
+
 chapter odd ash
 
 the odd ash is a rhymable. description is "It's bound together by some sort of translucent gelatinous ball that's surprisingly sturdy. You wonder what it could've been, and feel oddly enough that you could find what it was, if only you found the right instrument."
@@ -741,6 +749,8 @@ book Ow'ed Eyes / Crowd Cries
 OECC is a room in Lying Leas. "An invisible crowd roars at debates heard and unheard. [if sco-loud-lies is true]You've proven your worth and have nothing to do here[else]As much as you hate getting sucked into arguments, you recognize this is the sort of place where you might win a reward for winning one. It's worth a try[end if]. The only exit is south.". printed name is "Ow'ed Eyes, Crowd Cries".
 
 guess-table of oecc is the table of oecc guesses.
+
+from-number of oecc is 5459. to-number of oecc is 2754.
 
 the crowd cries are talktoable scenery in OECC. understand "owed/eyes" and "owed eyes" as crowd cries when player is in OECC. "The crowd cries go on and on, accompanied by ow'ed eyes, where some people rub them in fake crying, mocking the straw men they attack, and others claim they are brought to tears by those who disagree with them in any measure."
 
@@ -1120,6 +1130,8 @@ check going in Nil None:
 	if nil-score < 3, max-down;
 	say "You walk out of nowhere to ... somewhere. Somewhere familiar! The place you last were!";
 	move player to pre-hole-item-room;
+
+from-number of nil none is 2654. to-number of nil none is 2703.
 
 guess-table of Nil None is  the table of nil none guesses.
 
