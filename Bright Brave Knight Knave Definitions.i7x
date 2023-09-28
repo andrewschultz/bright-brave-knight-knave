@@ -30,6 +30,8 @@ a holeitem can be unguessed or preguessed. a holeitem is usually unguessed.
 
 a holeitem can be unblessed, blessed or in-hold. a holeitem is usually unblessed.
 
+from-number of a holeitem is usually 2704. to-number of a holeitem is usually -2704.
+
 guess-table of a holeitem is usually table of hold hole guesses.
 
 to decide which number is nbh: decide on number of blessed holeitems;

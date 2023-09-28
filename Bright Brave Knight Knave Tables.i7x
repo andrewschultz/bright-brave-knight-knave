@@ -308,7 +308,7 @@ a goodrhyme rule (this is the vc-mood-mapper rule):
 
 this is the vr-mood-mapper rule:
 	now sco-mood-mapper is true;
-	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And what do you know? A mood mapper turns up!";
+	say "You don't really want to go looking around here too much, but knowing what might be here, you figure having that focus will help you do so. And something turns up! It's like that scene in [i]The Godfather[r], except you don't plan to murder or even insult anybody. Plus, the mood mapper you've found doesn't seem like much of a weapon.";
 	now player has mood mapper;
 	if sco-nude-napper is true:
 		declue-here;
@@ -454,7 +454,7 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 
 this is the vr-plucky-plot rule:
 	now sco-plucky-plot is true;
-	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot gives a victory cry cranks out 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
+	say "You and your friends are too lazy to clean the whole yacht by yourself. Not as lazy as the people who bought the yacht, of course. Those bums.[paragraph break]But you're not too lazy to figure a way to get it cleaned! You managed to build a cleaning robot from scratch. You think of its name.[paragraph break]Of course! Bucky-Bot![paragraph break]Bucky-Bot races in and begins cleaning quickly. Unfortunately, near the end, Bucky-Bot cleans the lens of a security camera that suddenly sees it. You hear the ZAP of laser beam, then an explosion. There are sounds of a scuffle. Bucky-Bot croaks out a victory cry: 'Surveillance ... destroyed.'[paragraph break]You hear footsteps. Someone introduces themselves as the Sassed Sort. They enjoyed captaining a boat, but alas, rich people who owned yachts were annoying--however, they're impressed with how you made the yacht a nicer place.[paragraph break]They have some idea of the surrounding area, as well as some places they could go. You just have to ask right.";
 	move Sassed Sort to Bosh Blanks;
 	set-all Sassed Sort;
 	dismiss-geek-wooter;
@@ -534,7 +534,7 @@ a goodrhyme rule (this is the vc-murky-map rule):
 
 this is the vr-murky-map rule:
 	now sco-murky-map is true;
-	say "Well, you search through the pap, and what do you know? You turn up something. It's a murky map. [if sco-glued-glass is false]Not very readable, but perhaps you can find a way[else]Putting it under the glued glass, though, it is more readable[end if].";
+	say "You search through the pap. There must be something in here! Fortunately, since you know what to look for, a murky map turns up pretty quickly. [if sco-glued-glass is false]Not very readable, but perhaps you can find a way[else]Putting it under the glued glass, though, it is more readable[end if].";
 	now player has murky map;
 	moot perky pap;
 
@@ -564,7 +564,7 @@ a goodrhyme rule (this is the vc-salad-scent rule):
 	ready;
 
 this is the vh-salad-sent-cent rule:
-	say "No, nobody's going to send or sell you the what's in the vent. You must sense another way to find it.";
+	say "That feels right, but nobody's going to send or sell you the what's in the vent. You must sense another indirect way to find it.";
 	the rule succeeds;
 
 this is the vr-salad-scent rule:
@@ -629,7 +629,7 @@ a goodrhyme rule (this is the vc-slashing-sword rule):
 this is the vr-slashing-sword rule:
 	now sco-slashing-sword is true;
 	moot clashing cord;
-	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks on more thing off your list. Yay!";
+	say "The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks one more thing off your list. Yay!";
 	give-ti slashing sword;
 
 a goodrhyme rule (this is the vc-time-toad rule):
@@ -723,7 +723,7 @@ a goodrhyme rule (this is the vc-pain-packs rule):
 
 this is the vr-pain-packs rule:
 	now sco-pain-packs is true;
-	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. And what do you know? In a lane, lax, well--people forget stuff. Finders keepers!";
+	say "You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!";
 	give-ti pain packs;
 	decrease to-number of lane lax by 2705;
 	trax-check;
@@ -1220,7 +1220,7 @@ a goodrhyme rule (this is the vc-scaling-skill rule):
 
 this is the vr-scaling-skill rule:
 	now sco-scaling-skill is true;
-	say "You work on your climbing ability. What do you know, it pays off!";
+	say "You haven't climbed anything for a while. You recall what you knew and what went over your head. After few tentative mis-steps and stumbles, you make serious progress.";
 	see-if-top;
 
 a goodrhyme rule (this is the vc-mailing-mill rule):
@@ -1414,7 +1414,7 @@ a goodrhyme rule (this is the vc-flout-fluff rule):
 
 this is the vr-flout-fluff rule:
 	now sco-flout-fluff is true;
-	say "You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some exampkles from the past were, in fact, fluff, even though they were provided by Very Serious People.";
+	say "You take time to flout fluff, not just the fluff that makes you feel good for no reason that brings you down, but the fluff that leaves you feeling worse for superficial reasons and keeps you down. After some reflection, you realize some examples from the past were, in fact, fluff, even though they were provided by Very Serious People.";
 	rough-check 2755;
 
 a goodrhyme rule (this is the vc-stout-stuff rule):
@@ -1708,6 +1708,7 @@ to give-hi (hi - a holeitem):
 	else:
 		say "[line break]You start wandering. And you keep wandering. Pretty soon you are in the middle of nowhere.";
 		move player to Route Rough;
+	declue-hole-and;
 
 to give-ti (ti - a trystitem):
 	now player has ti;
@@ -1748,7 +1749,7 @@ volume table of noways
 
 table of noways
 noway-rm	noway-txt
-White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]You can really only go [b]DOWN[r] through the kite cave hole[end if]."
+White Wave	"[if sco-kite-cave is false]You're kind of confused about directions, here. You maybe need to find some way to see where life might be[else]Any direction other than [b]DOWN[r], and you'd drown or get lost[end if]."
 Bass Bath	"[if sco-pass-path is false]Every way but back down, and you'll fall into the bass bath[else if sco-mass-math is false]You need to reason out which way to go. It's a bit confusing here[else]You can go pretty much any way from here but not [noun][end if]."
 Rut Row	"Passage south is blocked, but the other three ways, you can try."
 Slum Slid	"Maybe you can go [noun], but for your safety, it is inadvisable."

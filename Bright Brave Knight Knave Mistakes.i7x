@@ -16,9 +16,9 @@ CAST COURT/FAST FORT/PAST PORT (these are mapped to the Sassed Sort, who is alwa
 
 table of general good guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"flight"	"flav|flave"	--	false	eyeing-todo rule	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
-"slight"	"slave"	--	false	eyeing-todo rule	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
-"shite"	"shave"	--	false	eyeing-todo rule	"This isn't the time or place to kvetch about personal grooming."
+"flight"	"flav|flave"	--	false	wave-todo rule	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
+"slight"	"slave"	--	false	wave-todo rule	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
+"shite"	"shave"	--	false	wave-todo rule	"This isn't the time or place to kvetch about personal grooming."
 "buying"	"bees"	--	false	eyeing-todo rule	"You mumble 'Mo['] money? Ho, honey!' to yourself."
 "crying"	"crees"	--	false	eyeing-todo rule	"Now's not a time for a kid's game."
 "drying"	"drees"	--	false	eyeing-todo rule	"You feel your fate congealing, for better or worse."
@@ -27,6 +27,10 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "skying"	"skis"	--	false	eyeing-todo rule	"Alas, the Winter Olympics would be another game."
 "slying"	"sleaze"	--	false	eyeing-todo rule	"You search for some but can't find any."
 "tying"	"ts|tees|teas|tease"	--	false	eyeing-todo rule	"If tying is a tease for you, that's your business, not mine."
+
+this is the wave-todo rule:
+	if sco-fight-fave is false, the rule succeeds;
+	the rule fails;
 
 this is the eyeing-todo rule:
 	if sco-eyeing-eying-ease is false, the rule succeeds;
@@ -224,9 +228,10 @@ this is the route-todo rule:
 
 table of rut row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"but"	"bo"	--	false	row-todo rule	"There's no time to argue! Boss and Rosco are up to another devious plan!"
+"but|butt"	"bo|bow"	--	false	row-todo rule	"No time to argue! Boss and Rosco done hatched another devious plan!"
 "cut"	"co"	--	false	row-todo rule	"What an ideal name for a corporate hellscape that drains profits and happiness from a city."
 "gut"	"go"	--	false	row-todo rule	"You feel full of urban gumption and do-it-now-ness, until you don't."
+"hutt|hut"	"hoe|ho"	--	false	row-todo rule	"You recall a clever, funny phrase from [i]You Will Select a Decision[r]."
 "mutt"	"mo|mow"	--	false	row-todo rule	"Alas, there are no lovely houses with friendly dogs and green lawns here."
 "nut"	"no"	--	false	row-todo rule	"There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
 "putt"	"po"	--	false	row-todo rule	"This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
@@ -257,6 +262,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "gall"	"gank|ganks"	--	false	tata-todo rule	"You're a [this-game-noi], not a thief."
 "hall|haul"	"hank|hanks"	--	false	tata-todo rule	"You sort of need[if sco-yall-yank is true]ed[end if] to push the tanks out of the way. But first names aren't necessary."
 "lol|loll"	"lank|lanks"	--	false	tata-todo rule	"A [this-game-noi] mocks the oppressively powerful, not body types."
+"maul|mall"	"manx"	--	false	tata-todo rule	"You don't need to buy or mistreat a pet cat."
 "stall"	"stank|stanks"	--	false	tata-todo rule	"No, that's a few rooms to the west."
 "wall"	"wank|wanks"	--	false	tata-todo rule	"To steal from Futurama, this rhyme is technically correct: the best kind of correct!"
 
@@ -333,17 +339,22 @@ this is the lass-todo rule:
 
 table of hold hole guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bold"	"bowl"	--	false	trivially false rule	"[item-guess of bold bowl]"
-"cold"	"coal"	--	false	trivially false rule	"[item-guess of cold coal]"
-"fold"	"foal"	--	false	trivially false rule	"[no-animal-sac]."
-"gold"	"goal"	--	false	trivially false rule	"'Sacrilege!' a voice booms. 'YOU HAVE DESERTED YOUR TRUE NATURE!'[gold-death]"
-"mold"	"mole"	--	false	trivially false rule	"[no-animal-sac]."
-"polled"	"pole|poll"	--	false	trivially false rule	"[too-rep]."
-"rolled"	"role|roll"	--	false	trivially false rule	"[too-rep]."
-"scold"	"skoal"	--	false	trivially false rule	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
-"sold"	"soul"	--	false	trivially false rule	"[item-guess of sold soul]"
-"told"	"toll"	--	false	trivially false rule	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
-"trolled"	"troll"	--	false	trivially false rule	"[too-rep]."
+"bold"	"bowl"	--	false	hole-guess-todo rule	"[item-guess of bold bowl]"
+"cold"	"coal"	--	false	hole-guess-todo rule	"[item-guess of cold coal]"
+"fold"	"foal"	--	false	hole-guess-todo rule	"[no-animal-sac]."
+"gold"	"goal"	--	false	hole-guess-todo rule	"You think for a minute. More money would be nice. But no. That cannot be a goal! That is not why you do things! Surely there are more altruistic goals out there."
+"mold"	"mole"	--	false	hole-guess-todo rule	"[no-animal-sac]."
+"old"	"ole|ol"	--	false	hole-guess-todo rule	"You try think up a song about the Old Ol['] Hold Hole, but there is no creative burst."
+"polled"	"pole|poll"	--	false	hole-guess-todo rule	"[too-rep]."
+"rolled"	"role|roll"	--	false	hole-guess-todo rule	"[too-rep]."
+"scold"	"skoal"	--	false	hole-guess-todo rule	"You picture yourself telling kids chewing tobacco isn't safe. I mean, the alternative of discouraging a Viking feast might be brave, but it also might not be bright."
+"sold"	"sole|soul"	--	false	hole-guess-todo rule	"[item-guess of sold soul]"
+"told"	"toll"	--	false	hole-guess-todo rule	"You are bright and brave! There is no time to wallow in a long story of prices paid and so forth. Or to listen to one."
+"trolled"	"troll"	--	false	hole-guess-todo rule	"[too-rep]."
+
+this is the hole-guess-todo rule:
+	if number of playerknown holeitems < 3, the rule succeeds;
+	the rule fails;
 
 definition: a holeitem (called hi) is playerknown:
 	if hi is preguessed, yes;
@@ -359,10 +370,6 @@ to say too-rep:
 
 to say no-animal-sac: say "The hold hole does not seek animal sacrifice, and neither should you"
 
-to say gold-death:
-	end the story saying "Po['], Pal! Mo['] Mal!";
-	follow the shutdown rules;
-
 to say item-guess of (hi - a holeitem):
 	if hi is moot:
 		say "The [hi] has already served its purpose.[no line break]";
@@ -371,7 +378,10 @@ to say item-guess of (hi - a holeitem):
 	else if hi is not unguessed:
 		say "But you have already divined a need for [the hi].[no line break]";
 	else:
-		say "You deduce [the hi] would fit nicely into the hold hole.[no line break]";
+		if the player's command includes "sole":
+			say "That seems close, but you probably won't run into any fish markets. Perhaps something more spiritual?";
+			continue the action;
+		say "You deduce a [hi] would fit nicely into the hold hole.[no line break]";
 		let pgh be number of unguessed holeitems;
 		if pgh is 1:
 			say "[paragraph break]You feel slightly energized now that you know what your (w)hole quest is.[line break]";
@@ -383,6 +393,13 @@ to say item-guess of (hi - a holeitem):
 		else:
 			say "[paragraph break]So, that's two of the three things the hole needs. Figuring the third wouldn't be critical, but it'd be a morale booster.";
 		now hi is preguessed;
+	if number of playerknown holeitems is 3, declue-hole-and;
+
+to declue-hole-and:
+	declue hold hole;
+	declue bold bowl;
+	declue sold soul;
+	declue cold coal;
 
 table of lack list guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -534,6 +551,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "ducky"	"dot"	--	false	yacht-todo rule	"You see no dot or person named Dorothea to proclaim as ducky."
 "lucky"	"lot"	--	false	yacht-todo rule	"You grumble about rich people for a bit. It doesn't hurt."
 "nucky"	"not|knot"	--	false	yacht-todo rule	"You don't want to cross a mogul of a Boardwalk Empire just now."
+"rucky"	"rot"	--	false	yacht-todo rule	"You take a moment to internally deplore pointless fighting."
 "sucky"	"sot|sought"	--	false	yacht-todo rule	"[this-game-noi]s aren't negative like that! Everyone sought is worthwhile!"
 "trucky"	"trot"	--	false	yacht-todo rule	"You have no need to walk through or over anyone."
 
