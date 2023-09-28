@@ -12,26 +12,23 @@ HOVERING HANDLE
 Rooms that will not have a table:
 WHITE WAVE (this is captured universally, in table of general good guesses)
 CAST COURT/FAST FORT/PAST PORT (these are mapped to the Sassed Sort, who is always present there)
-
-TODO:
-rack, right / Black Blight
 ]
 
 table of general good guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"flight"	"flav|flave"	--	false	no-eyeing-yet rule	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
-"slight"	"slave"	--	false	no-eyeing-yet rule	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
-"shite"	"shave"	--	false	no-eyeing-yet rule	"This isn't the time or place to kvetch about personal grooming."
-"buying"	"bees"	--	false	no-eyeing-yet rule	"You mumble 'Mo['] money? Ho, honey!' to yourself."
-"crying"	"crees"	--	false	no-eyeing-yet rule	"Now's not a time for a kid's game."
-"drying"	"drees"	--	false	no-eyeing-yet rule	"You feel your fate congealing, for better or worse."
-"dying|dyeing"	"deez|dees"	--	false	no-eyeing-yet rule	"Bofa changing hair color or perishing are kind of nutz right now."
-"frying"	"frieze|freeze|frees"	--	false	no-eyeing-yet rule	"If you were a cool cook, you could think 'Who'll hook cruel crook?'"
-"skying"	"skis"	--	false	no-eyeing-yet rule	"Alas, the Winter Olympics would be another game."
-"slying"	"sleaze"	--	false	no-eyeing-yet rule	"You search for some but can't find any."
-"tying"	"ts|tees|teas|tease"	--	false	no-eyeing-yet rule	"If tying is a tease for you, that's your business, not mine."
+"flight"	"flav|flave"	--	false	eyeing-todo rule	"You try a bit of trickery. Can you fly? No, you cannot. You can play small mind games, but you can't violate the laws of physics."
+"slight"	"slave"	--	false	eyeing-todo rule	"You grumble about how you are a slight slave to your quest. It's therapeutic. It's important to put on a good face to the public, but sometimes, you have to grumble and admit you're not perfect. You always bounce back."
+"shite"	"shave"	--	false	eyeing-todo rule	"This isn't the time or place to kvetch about personal grooming."
+"buying"	"bees"	--	false	eyeing-todo rule	"You mumble 'Mo['] money? Ho, honey!' to yourself."
+"crying"	"crees"	--	false	eyeing-todo rule	"Now's not a time for a kid's game."
+"drying"	"drees"	--	false	eyeing-todo rule	"You feel your fate congealing, for better or worse."
+"dying|dyeing"	"deez|dees"	--	false	eyeing-todo rule	"Bofa changing hair color or perishing are kind of nutz right now."
+"frying"	"frieze|freeze|frees"	--	false	eyeing-todo rule	"If you were a cool cook, you could think 'Who'll hook cruel crook?'"
+"skying"	"skis"	--	false	eyeing-todo rule	"Alas, the Winter Olympics would be another game."
+"slying"	"sleaze"	--	false	eyeing-todo rule	"You search for some but can't find any."
+"tying"	"ts|tees|teas|tease"	--	false	eyeing-todo rule	"If tying is a tease for you, that's your business, not mine."
 
-this is the no-eyeing-yet rule:
+this is the eyeing-todo rule:
 	if sco-eyeing-eying-ease is false, the rule succeeds;
 	the rule fails;
 
@@ -39,10 +36,14 @@ volume room stuff
 
 table of bass bath guesses
 mist-1	mist-2	mist-rule	got-yet	leet-rule	mist-txt
-"has"	"hath"	--	false	--	"You conjugate old English verbs, in case this may be important in the future. It isn't right now."
-"(lace|lass)"	"lath"	--	false	--	"You need no washing machine, especially not early in the game before you worked up a sweat[wrong-pron-lace]."
-"place"	"plath"	--	false	--	"You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, [i]The Bell Jar[r][wrong-pron]."
-"race"	"wrath"	--	false	--	"You get as mad as you can, as fast as you can[wrong-pron]."
+"has"	"hath"	--	false	bath-todo rule	"You conjugate old English verbs, in case this may be important in the future. It isn't right now."
+"(lace|lass)"	"lath"	--	false	bath-todo rule	"You need no washing machine, especially not early in the game before you worked up a sweat[wrong-pron-lace]."
+"place"	"plath"	--	false	bath-todo rule	"You mentally evaluate the respective merits of Sylvia Plath's poetry and her novel, [i]The Bell Jar[r][wrong-pron]."
+"race"	"wrath"	--	false	bath-todo rule	"You get as mad as you can, as fast as you can[wrong-pron]."
+
+this is the bath-todo rule:
+	if sco-mass-math is false, the rule succeeds;
+	the rule fails;
 
 to say wrong-pron-lace: if the player's command includes "lace", say "[wrong-pron]".
 
@@ -50,100 +51,136 @@ to say wrong-pron: say ". You also wonder if you are pronouncing things right"
 
 table of black blight guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"back"	"bite"	--	false	--	"Now that's no way to restore order!"
-"faq"	"fight"	--	false	--	"You vow to get through this without consulting an outside guide."
-"frack"	"fright"	--	false	--	"It's hard not to fear how nefarious Big Oil is."
-"knack"	"night|knight"	--	false	--	"You already have the knack. How to use it?"
-"mac|mack"	"might"	--	false	--	"You get vernacular about your potential, but you need to do more."
-"plaque"	"plight"	--	false	--	"Worry about your dentist after you took care of business."
-"sprack"	"sprite"	--	false	--	"You go medieval on the English language for a bit, but no supernatural help appears."
-"track"	"trite"	--	false	--	"Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really."
-"wack|whack"	"white|wight"	--	false	--	"Thankfully, no evil undeads are at play here."
+"back"	"bite"	--	false	blight-todo rule	"Now that's no way to restore order!"
+"faq"	"fight"	--	false	blight-todo rule	"You vow to get through this without consulting an outside guide."
+"frack"	"fright"	--	false	blight-todo rule	"It's hard not to fear how nefarious Big Oil is."
+"knack"	"night|knight"	--	false	blight-todo rule	"You already have the knack. How to use it?"
+"mac|mack"	"might"	--	false	blight-todo rule	"You get vernacular about your potential, but you need to do more."
+"plaque"	"plight"	--	false	blight-todo rule	"Worry about your dentist after you took care of business."
+"sprack"	"sprite"	--	false	blight-todo rule	"You go medieval on the English language for a bit, but no supernatural help appears."
+"track"	"trite"	--	false	blight-todo rule	"Doing so isn't necessarily a boost. It could be quite depressing and exhausting, really."
+"wack|whack"	"white|wight"	--	false	blight-todo rule	"Thankfully, no evil undeads are at play here."
+
+this is the blight-todo rule:
+	if blight-score < 4, the rule succeeds;
+	the rule fails;
 
 table of bruising brew guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"choosing"	"chew"	--	false	--	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
-"musing"	"mew"	--	false	--	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
-"oozing"	"oo|ooh|ew|eww"	--	false	--	"You recall irksomely unctuous people. Or unctuously irksomely. Whichever."
-"rusing"	"roo|rue"	--	false	--	"No sneaky kangaroo appears, which is probably for the better."
+"choosing"	"chew"	--	false	brew-todo rule	"[if losing lou is moot]You think what a lovely bubble gum shop this would make![else if sco-boozing-boo is true]After helping Lou kick alcohol, you recommend that? Ouch![else]Trading alcohol for tobacco would just be a lateral move.[end if]"
+"musing"	"mew"	--	false	brew-todo rule	"'Hmm,' you say, inflecting your voice. You guess and hope that looked smart and thoughtful."
+"oozing"	"oo|ooh|ew|eww"	--	false	brew-todo rule	"You recall irksomely unctuous people. Or unctuously irksomely. Whichever."
+"rusing"	"roo|rue"	--	false	brew-todo rule	"No sneaky kangaroo appears, which is probably for the better."
+
+this is the brew-todo rule:
+	if lou-score < 2, the rule succeeds;
+	the rule fails;
 
 table of cried creek guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bide"	"beak"	--	false	--	"No bird swoops along to give you pointers."
-"chide"	"cheek"	--	false	--	"Nobody here has been too out of line."
-"lied"	"leak|leek"	--	false	--	"You don't have time to track down who lied about what."
-"pied"	"pique"	--	false	--	"You recount someone who deserved it getting a pie in their face."
-"ride"	"reek"	--	false	--	"You pine for transport, even smelly transport."
-"side"	"seek"	--	false	--	"You know which side you're on. Decency and justice. You hope."
-"slide"	"sleek"	--	false	--	"You don't need passage down anywhere."
-"tied"	"teak"	--	false	--	"No teak desk appears tied to the ground"
-"wide|whyd"	"weak"	--	false	--	"You don't need to drain anyone, here."
+"bide"	"beak"	--	false	creek-score rule	"No bird swoops along to give you pointers."
+"chide"	"cheek"	--	false	creek-score rule	"Nobody here has been too out of line."
+"lied"	"leak|leek"	--	false	creek-score rule	"You don't have time to track down who lied about what."
+"pied"	"pique"	--	false	creek-score rule	"You recount someone who deserved it getting a pie in their face."
+"ride"	"reek"	--	false	creek-score rule	"You pine for transport, even smelly transport."
+"side"	"seek"	--	false	creek-score rule	"You know which side you're on. Decency and justice. You hope."
+"slide"	"sleek"	--	false	creek-score rule	"You don't need passage down anywhere."
+"tied"	"teak"	--	false	creek-score rule	"No teak desk appears tied to the ground"
+"wide|whyd"	"weak"	--	false	creek-score rule	"You don't need to drain anyone, here."
+
+this is the creek-score rule:
+	if sco-stride-streak is false or sco-fried-freak is false or sco-snide-sneak is false or sco-guide-geek is false, the rule succeeds;
+	the rule fails;
 
 table of crude crapper guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"booed"	"bapper"	--	false	--	"That'd make a decent final boss, but the main one is elsewhere."
-"clued"	"clapper"	--	false	--	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [this-game-noi]."
-"cooed"	"capper"	--	false	--	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
-"dude"	"dapper"	--	false	--	"[if player is not in crapper]You need companions who get stuff done, not stylish pals[else]Yes, we all wind up here once a day, even well-dressed people[end if]."
-"food"	"fapper"	--	false	--	"I don't want to know what sort of Rule 34 stuff this would entail."
-"lewd"	"lapper"	--	false	--	"Hey, now, not THAT crude, eh?"
-"rude"	"rapper"	--	false	--	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
-"screwed"	"scrapper"	--	false	--	"You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential."
-"snood"	"snapper"	--	false	--	"You don't always remember what a snood is, but you're pretty sure none need to be snapped."
-"sued"	"sapper"	--	false	--	"That would be a villain worth fighting, but no."
-"strewed"	"strapper"	--	false	--	"No such contraption exists, fortunately. I think."
-"wooed"	"whapper"	--	false	--	"You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty."
-"youd"	"yap er"	--	false	--	"You feel as though you want to say something about the state of these environs, but what good would it do?"
+"booed"	"bapper"	--	false	crapper-todo rule	"That'd make a decent final boss, but the main one is elsewhere."
+"clued"	"clapper"	--	false	crapper-todo rule	"You don't need someone applauding in the background, whether or not they do so at the right time, with or without prompts. That's not the way of a [this-game-noi]."
+"cooed"	"capper"	--	false	crapper-todo rule	"You don't need someone busting caps here and now, regardless of how pleasant their voice is."
+"dude"	"dapper"	--	false	crapper-todo rule	"[if player is not in crapper]You need companions who get stuff done, not stylish pals[else]Yes, we all wind up here once a day, even well-dressed people[end if]."
+"food"	"fapper"	--	false	crapper-todo rule	"I don't want to know what sort of Rule 34 stuff this would entail."
+"lewd"	"lapper"	--	false	crapper-todo rule	"Hey, now, not THAT crude, eh?"
+"rude"	"rapper"	--	false	crapper-todo rule	"But there are enough of them out there today, young whippersnappers who can't bother to rhyme, or even rhyme the same curse word with itself. Can't hold a candle to real trailblazers such as Ice-T or Public Enemy. Disgraceful!"
+"screwed"	"scrapper"	--	false	crapper-todo rule	"You don't need to judge someone who picks meaningless fights, and you don't want to diss someone who maybe doesn't mave much potential."
+"snood"	"snapper"	--	false	crapper-todo rule	"You don't always remember what a snood is, but you're pretty sure none need to be snapped."
+"sued"	"sapper"	--	false	crapper-todo rule	"That would be a villain worth fighting, but no."
+"strewed"	"strapper"	--	false	crapper-todo rule	"No such contraption exists, fortunately. I think."
+"wooed"	"whapper"	--	false	crapper-todo rule	"You need no henchmen to carry out your dirty work. You hope your dirty work is never that dirty."
+"youd"	"yap er"	--	false	crapper-todo rule	"You feel as though you want to say something about the state of these environs, but what good would it do?"
+
+this is the crapper-todo rule:
+	if sco-mood-mapper is false or sco-nude-napper is false, the rule succeeds;
+	the rule fails;
 
 table of dander dove guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"(rander|rand er)"	"rove"	--	false	--	"You got here randomly, so maybe you'll get out even more randomly? Or not?"
-"strander"	"strove"	--	false	--	"This would seem to be despairing. You can't already admit you tried but failed."
+"(rander|rand er)"	"rove"	--	false	dove-todo rule	"You got here randomly, so maybe you'll get out even more randomly? Or not?"
+"strander"	"strove"	--	false	dove-todo rule	"This would seem to be despairing. You can't already admit you tried but failed."
+
+this is the dove-todo rule:
+	if dander-score < 3, the rule succeeds;
+	the rule fails;
 
 table of fought fief guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"grot"	"grief"	--	false	--	"You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!"
-"lot"	"leaf"	--	false	--	"You observe the fauna and flora, specifically not looking for any leaves to burn."
-"shot"	"sheaf"	--	false	--	"You look around for papers, but [if sco-brought-brief is false]maybe you aren't looking for the right ones[else]there are no more[end if]."
-"tot"	"teef"	--	false	--	"You look for something to give the Tooth Fairy. Nothing."
+"grot"	"grief"	--	false	fief-todo rule	"You do your best Reginald Perrin impression. You didn't get this far in a text adventure by not trying a lot of things and not collecting a lot of miscellaneous items!"
+"lot"	"leaf"	--	false	fief-todo rule	"You observe the fauna and flora, specifically not looking for any leaves to burn."
+"shot"	"sheaf"	--	false	fief-todo rule	"You look around for papers, but [if sco-brought-brief is false]maybe you aren't looking for the right ones[else]there are no more[end if]."
+"tot"	"teef"	--	false	fief-todo rule	"You look for something to give the Tooth Fairy. Nothing."
+
+this is the fief-todo rule:
+	if fief-score < 2, the rule succeeds;
+	the rule fails;
 
 table of hailing hill guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"jailing"	"jill"	--	false	--	"No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked."
-"paling|pailing"	"pill"	--	false	--	"You don't need to get or receive buckets of chemical stimulation."
-"railing"	"rill"	--	false	--	"A river would be just charming here, but you're not in the business of fixing the landscape."
-"sailing"	"sill"	--	false	--	"Waterways are more likely to be at lower elevations."
-"swailing"	"swill"	--	false	--	"You're not up on the best way to contain forest fires, so better not get in a debate."
-"tailing"	"til|till"	--	false	--	"You don't need to follow anyone or ask them to follow. Those who [if number of finished eekers is 6]wanted to, did[else]want to, will[end if]."
-"trailing"	"trill"	--	false	--	"You don't feel a song right now. Not until you've fixed things completely."
+"jailing"	"jill"	--	false	hill-todo rule	"No, there's no female antagonist, though people to contact here are all masculine. That's just the way the rhymes worked."
+"paling|pailing"	"pill"	--	false	hill-todo rule	"You don't need to get or receive buckets of chemical stimulation."
+"railing"	"rill"	--	false	hill-todo rule	"A river would be just charming here, but you're not in the business of fixing the landscape."
+"sailing"	"sill"	--	false	hill-todo rule	"Waterways are more likely to be at lower elevations."
+"swailing"	"swill"	--	false	hill-todo rule	"You're not up on the best way to contain forest fires, so better not get in a debate."
+"tailing"	"til|till"	--	false	hill-todo rule	"You don't need to follow anyone or ask them to follow. Those who [if number of finished eekers is 6]wanted to, did[else]want to, will[end if]."
+"trailing"	"trill"	--	false	hill-todo rule	"You don't feel a song right now. Not until you've fixed things completely."
+
+this is the hill-todo rule:
+	if sco-whatever is false, the rule succeeds;
+	the rule fails;
 
 table of lane lax guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bane"	"backs"	--	false	--	"No, you can't let despair overtake you."
-"brain"	"bracks"	--	false	--	"You worry your brain is about to crack, but if you still know an obscure word like brack, it can't, really?"
-"crane"	"cracks"	--	false	--	"You don't need a construction accident or dead birds."
-"feign"	"facts"	--	false	--	"No, that's the bad guys."
-"gain"	"gacks"	--	false	--	"Your style of humor isn't gross-out."
-"jane"	"jacks"	--	false	--	"No female gangster rapper appears."
-"plain"	"plaques"	--	false	--	"Nah. You'd rather have achievements."
-"rain"	"racks"	--	false	--	"You don't need to catch the rain."
-"sane"	"sacks|sax"	--	false	--	"You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags."
-"slain"	"slacks"	--	false	--	"You uncover no torn pairs of pants."
-"stain"	"stacks"	--	false	--	"You have no need or desire to vandalize a library."
-"wane"	"wax"	--	false	--	"You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him."
+"bane"	"backs"	--	false	lax-todo rule	"No, you can't let despair overtake you."
+"brain"	"bracks"	--	false	lax-todo rule	"You worry your brain is about to crack, but if you still know an obscure word like brack, it can't, really?"
+"crane"	"cracks"	--	false	lax-todo rule	"You don't need a construction accident or dead birds."
+"feign"	"facts"	--	false	lax-todo rule	"No, that's the bad guys."
+"gain"	"gacks"	--	false	lax-todo rule	"Your style of humor isn't gross-out."
+"jane"	"jacks"	--	false	lax-todo rule	"No female gangster rapper appears."
+"plain"	"plaques"	--	false	lax-todo rule	"Nah. You'd rather have achievements."
+"rain"	"racks"	--	false	lax-todo rule	"You don't need to catch the rain."
+"sane"	"sacks|sax"	--	false	lax-todo rule	"You express confusion at new, high-energy jazz and appreciation of non-gaudy grocery bags."
+"slain"	"slacks"	--	false	lax-todo rule	"You uncover no torn pairs of pants."
+"stain"	"stacks"	--	false	lax-todo rule	"You have no need or desire to vandalize a library."
+"wane"	"wax"	--	false	lax-todo rule	"You contemplate the ebb and flow of living and also how Kevin Arnold's older brother was so unfair to him."
+
+this is the lax-todo rule:
+	if sco-pain-packs is false and sco-main-max is false, the rule succeeds;
+	the rule fails;
 
 table of nil none guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bill"	"bun"	--	false	--	"You can pay for food once you're here."
-"dill"	"done"	--	false	--	"This isn't a cooking sim."
-"gill"	"gun"	--	false	--	"You don't need a fancy weapon."
-"hill"	"hun|hon"	--	false	--	"You don't need to be attacked, or take saccharine praise, from above."
-"pill"	"pun"	--	false	--	"Drug humor won't help here."
-"shill"	"shun"	--	false	--	"Alas, there is nobody to reject and feel better about yourself."
-"sill"	"sun|son"	--	false	--	"No light-giving window appears."
-"spill"	"spun"	--	false	--	"Alas, no solution to your woes is created, nor does it tumble out."
-"still"	"stun"	nil-none-name rule	false	--	"You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog."
-"till|til"	"ton"	--	false	--	"Things are weighty enough here."
+"bill"	"bun"	--	false	nil-none-todo rule	"You can pay for food once you're here."
+"dill"	"done"	--	false	nil-none-todo rule	"This isn't a cooking sim."
+"gill"	"gun"	--	false	nil-none-todo rule	"You don't need a fancy weapon."
+"hill"	"hun|hon"	--	false	nil-none-todo rule	"You don't need to be attacked, or take saccharine praise, from above."
+"pill"	"pun"	--	false	nil-none-todo rule	"Drug humor won't help here."
+"shill"	"shun"	--	false	nil-none-todo rule	"Alas, there is nobody to reject and feel better about yourself."
+"sill"	"sun|son"	--	false	nil-none-todo rule	"No light-giving window appears."
+"spill"	"spun"	--	false	nil-none-todo rule	"Alas, no solution to your woes is created, nor does it tumble out."
+"still"	"stun"	nil-none-name rule	false	nil-none-todo rule	"You do feel a bit stunned. And you will still feel a bit stunned even if you half make your way out of this fog."
+"till|til"	"ton"	--	false	nil-none-todo rule	"Things are weighty enough here."
+
+this is the nil-none-todo rule:
+	if nil-score is 3, the rule succeeds;
+	the rule fails;
 
 this is the nil-none-name rule:
 	if sco-fill-fun is false, the rule succeeds;
@@ -151,86 +188,114 @@ this is the nil-none-name rule:
 
 table of oecc guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bowed"	"byes|buys"	--	false	--	"No need for bowing here."
-"howd"	"hies|his"	--	false	--	"How [if sco-wowed-whys is false]isn't[else]wasn't[end if] quite the question to ask."
-"powed"	"pies"	--	false	--	"No pie ambushes anyone, for better or worse."
-"proud"	"pries|prize"	prize-yet rule	false	--	"Well, that's what you get if you figure what to do here."
-"thoud"	"thys"	--	false	--	"Old English might [if sco-loud-lies is true]have confused[else]confuse[end if] the crowd but won't really make a lasting impression."
-"vowed"	"vies"	--	false	--	"You've already made vows to set things straight."
+"bowed"	"byes|buys"	--	false	oecc-todo rule	"No need for bowing here."
+"howd"	"hies|his"	--	false	oecc-todo rule	"How [if sco-wowed-whys is false]isn't[else]wasn't[end if] quite the question to ask."
+"powed"	"pies"	--	false	oecc-todo rule	"No pie ambushes anyone, for better or worse."
+"proud"	"pries|prize"	oecc-todo rule	false	oecc-todo rule	"Well, that's what you get if you figure what to do here."
+"thoud"	"thys"	--	false	oecc-todo rule	"Old English might [if sco-loud-lies is true]have confused[else]confuse[end if] the crowd but won't really make a lasting impression."
+"vowed"	"vies"	--	false	oecc-todo rule	"You've already made vows to set things straight."
 
-this is the prize-yet rule:
+this is the oecc-todo rule:
 	if sco-loud-lies is false, the rule succeeds;
 	the rule fails;
 
 table of recroom guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"seek"	"suitor"	--	false	--	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
+"seek"	"suitor"	--	false	recruiter-todo rule	"Other people are seeking suitors--platonic, perhaps, but it's your job to bring them together." [if all 3 are paired, say different. ??]
+
+this is the recruiter-todo rule:
+	if sco-chic-shooter is false or sco-meek-mooter is false or sco-weak-wooter is false, the rule succeeds;
+	the rule fails;
 
 table of route rough guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bout"	"buff"	--	false	--	"Bulking up won't help you overpower futility."
-"doubt"	"duff"	--	false	--	"You doubt that Homer Simpson's beer is truly great. Man, you really must be bummed!"
-"gout"	"guff"	--	false	--	"You hope you don't get gout, whatever that is."
-"grout"	"gruff"	--	false	--	"You grumble at the thought of home repairs."
-"pout"	"puff"	--	false	--	"You should be trying to bring yourself up, here."
-"scout"	"scuff"	--	false	--	"You remember being disillusioned by a Boy Scout troop that was completely not Norman Rockwell."
-"snout"	"snuff"	--	false	--	"You make various sniffy noises, hoping for catharsis."
-"tout"	"tough"	--	false	--	"You talk yourself up, but you come back down to earth quickly."
+"bout"	"buff"	--	false	route-todo rule	"Bulking up won't help you overpower futility."
+"doubt"	"duff"	--	false	route-todo rule	"You doubt that Homer Simpson's beer is truly great. Man, you really must be bummed!"
+"gout"	"guff"	--	false	route-todo rule	"You hope you don't get gout, whatever that is."
+"grout"	"gruff"	--	false	route-todo rule	"You grumble at the thought of home repairs."
+"pout"	"puff"	--	false	route-todo rule	"You should be trying to bring yourself up, here."
+"scout"	"scuff"	--	false	route-todo rule	"You remember being disillusioned by a Boy Scout troop that was completely not Norman Rockwell."
+"snout"	"snuff"	--	false	route-todo rule	"You make various sniffy noises, hoping for catharsis."
+"tout"	"tough"	--	false	route-todo rule	"You talk yourself up, but you come back down to earth quickly."
+
+this is the route-todo rule:
+	if route-rough-score < 3, the rule succeeds;
+	the rule fails;
 
 table of rut row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"but"	"bo"	--	false	--	"There's no time to argue! Boss and Rosco are up to another devious plan!"
-"cut"	"co"	--	false	--	"What an ideal name for a corporate hellscape that drains profits and happiness from a city."
-"gut"	"go"	--	false	--	"You feel full of urban gumption and do-it-now-ness, until you don't."
-"mutt"	"mo|mow"	--	false	--	"Alas, there are no lovely houses with friendly dogs and green lawns here."
-"nut"	"no"	--	false	--	"There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
-"putt"	"po"	--	false	--	"This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
-"shut"	"show"	--	false	--	"The fine arts have long since disappeared from here."
-"slut"	"slow"	--	false	--	"You are not the morality police."
+"but"	"bo"	--	false	row-todo rule	"There's no time to argue! Boss and Rosco are up to another devious plan!"
+"cut"	"co"	--	false	row-todo rule	"What an ideal name for a corporate hellscape that drains profits and happiness from a city."
+"gut"	"go"	--	false	row-todo rule	"You feel full of urban gumption and do-it-now-ness, until you don't."
+"mutt"	"mo|mow"	--	false	row-todo rule	"Alas, there are no lovely houses with friendly dogs and green lawns here."
+"nut"	"no"	--	false	row-todo rule	"There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
+"putt"	"po"	--	false	row-todo rule	"This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
+"shut"	"show"	--	false	row-todo rule	"The fine arts have long since disappeared from here."
+"slut"	"slow"	--	false	row-todo rule	"You are not the morality police."
+
+this is the row-todo rule:
+	if sco-what-whoah is false, the rule succeeds;
+	the rule fails;
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bid"	"bum"	--	false	--	"That's not a huge epithet, but you try not look down on the less fortunate."
-"chid"	"chum"	--	false	--	"[if boffin boy is not fungible]You have no friend to chide[else]Forgiveness is more the thing here[end if]."
-"did"	"dumb"	--	false	--	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
-"mid"	"mum"	--	false	--	"You don't need parental support or quiet."
-"skid"	"scum"	--	false	--	"No. A good [this-game-noi] don't look down on people like that."
+"bid"	"bum"	--	false	slum-todo rule	"That's not a huge epithet, but you try not look down on the less fortunate."
+"chid"	"chum"	--	false	slum-todo rule	"[if boffin boy is not fungible]You have no friend to chide[else]Forgiveness is more the thing here[end if]."
+"did"	"dumb"	--	false	slum-todo rule	"[if boffin boy is not fungible]You don't want to reflect on the past[else]A [this-game-noi] doesn't put people through the ringer for past mistakes[end if]."
+"mid"	"mum"	--	false	slum-todo rule	"You don't need parental support or quiet."
+"skid"	"scum"	--	false	slum-todo rule	"No. A good [this-game-noi] don't look down on people like that."
+
+this is the slum-todo rule:
+	if sco-rid-rum is false, the rule succeeds;
+	the rule fails;
 
 table of tata guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"ball"	"bank|banks"	--	false	--	"You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room."
-"crawl"	"crank|cranks"	--	false	--	"There is no hidden mechanism under the tanks."
-"drawl"	"drank|dranks"	--	false	--	"You don't want to endorse alcohol in any way."
-"gall"	"gank|ganks"	--	false	--	"You're a [this-game-noi], not a thief."
-"hall|haul"	"hank|hanks"	--	false	--	"You sort of need[if sco-yall-yank is true]ed[end if] to push the tanks out of the way. But first names aren't necessary."
-"lol|loll"	"lank|lanks"	--	false	--	"A [this-game-noi] mocks the oppressively powerful, not body types."
-"stall"	"stank|stanks"	--	false	--	"No, that's a few rooms to the west."
-"wall"	"wank|wanks"	--	false	--	"To steal from Futurama, this rhyme is technically correct: the best kind of correct!"
+"ball"	"bank|banks"	--	false	tata-todo rule	"You don't have time for silly games! Okay, silly games that give lots of exercise. Okay, squared, silly games that give lots of exercise beyond walking between all these room."
+"crawl"	"crank|cranks"	--	false	tata-todo rule	"There is no hidden mechanism under the tanks."
+"drawl"	"drank|dranks"	--	false	tata-todo rule	"You don't want to endorse alcohol in any way."
+"gall"	"gank|ganks"	--	false	tata-todo rule	"You're a [this-game-noi], not a thief."
+"hall|haul"	"hank|hanks"	--	false	tata-todo rule	"You sort of need[if sco-yall-yank is true]ed[end if] to push the tanks out of the way. But first names aren't necessary."
+"lol|loll"	"lank|lanks"	--	false	tata-todo rule	"A [this-game-noi] mocks the oppressively powerful, not body types."
+"stall"	"stank|stanks"	--	false	tata-todo rule	"No, that's a few rooms to the west."
+"wall"	"wank|wanks"	--	false	tata-todo rule	"To steal from Futurama, this rhyme is technically correct: the best kind of correct!"
+
+this is the tata-todo rule:
+	if sco-paul-panks is false or sco-yall-yank is false, the rule succeeds;
+	the rule fails;
 
 table of treed track guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bead"	"back"	--	false	--	"You don't need to drop things to get out of the forest."
-"bleed"	"black"	--	false	--	"That'd make you one of the bad guys, though, right?"
-"breed"	"brack"	--	false	--	"No, you need the opposite of a brack, to bring things together."
-"creed"	"crack"	--	false	--	"You aren't looking to proselytize."
-"feed"	"faq"	--	false	--	"Now's not the time to worry about nourishment."
-"fleed"	"flack|flak"	--	false	--	"There is no flak to flee here."
-"freed"	"frack"	--	false	--	"Oh no! It's not Big Oil that needs freedom."
-"lead|lede"	"lack"	--	false	--	"You bemoan the lack of leadership, or a lede, whichever."
-"mead"	"mac|mack"	--	false	--	"This'd be a great call to an olde-time forest picnic."
-"pd|peed"	"pack"	--	false	--	"You don't need angry followers, allies or enemies."
-"reed|read"	"rack"	--	false	--	"You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up."
-"sneed"	"snack"	--	false	--	"[i]The Simpsons[r] made a better joke about Chuck's than I ever could."
-"steed"	"stack"	--	false	--	"This world's not big enough to need a horse. Plus the horses above would crush the ones below."
-"teed"	"tack"	--	false	--	"But you have nothing to tack up on a board, or tee up for a game of golf."
-"weed"	"wack|whack"	--	false	--	"Landscaping's not your specialty."
-"yed"	"yack"	--	false	--	"There is nobody to silence in the immediate area."
+"bead"	"back"	--	false	track-todo rule	"You don't need to drop things to get out of the forest."
+"bleed"	"black"	--	false	track-todo rule	"That'd make you one of the bad guys, though, right?"
+"breed"	"brack"	--	false	track-todo rule	"No, you need the opposite of a brack, to bring things together."
+"creed"	"crack"	--	false	track-todo rule	"You aren't looking to proselytize."
+"feed"	"faq"	--	false	track-todo rule	"Now's not the time to worry about nourishment."
+"fleed"	"flack|flak"	--	false	track-todo rule	"There is no flak to flee here."
+"freed"	"frack"	--	false	track-todo rule	"Oh no! It's not Big Oil that needs freedom."
+"lead|lede"	"lack"	--	false	track-todo rule	"You bemoan the lack of leadership, or a lede, whichever."
+"mead"	"mac|mack"	--	false	track-todo rule	"This'd be a great call to an olde-time forest picnic."
+"pd|peed"	"pack"	--	false	track-todo rule	"You don't need angry followers, allies or enemies."
+"reed|read"	"rack"	--	false	track-todo rule	"You think back to reading gossip magazines in line at the grocery store as a kid. It was fun. But you grew up."
+"sneed"	"snack"	--	false	track-todo rule	"[i]The Simpsons[r] made a better joke about Chuck's than I ever could."
+"steed"	"stack"	--	false	track-todo rule	"This world's not big enough to need a horse. Plus the horses above would crush the ones below."
+"teed"	"tack"	--	false	track-todo rule	"But you have nothing to tack up on a board, or tee up for a game of golf."
+"weed"	"wack|whack"	--	false	track-todo rule	"Landscaping's not your specialty."
+"yed"	"yack"	--	false	track-todo rule	"There is nobody to silence in the immediate area."
+
+this is the track-todo rule:
+	if sco-heed-hack is false or sco-seed-sack is false or sco-plead-plaque is false, the rule succeeds;
+	the rule fails;
 
 volume thing stuff
 
 table of clashing cord guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"flashing"	"ford"	--	false	--	"No bridge across a river, or car, or intergalactic space traveler whizzes by."
+"flashing"	"ford"	--	false	cord-todo rule	"No bridge across a river, or car, or intergalactic space traveler whizzes by."
+
+this is the cord-todo rule:
+	if sco-slashing-sword is false, the rule succeeds;
+	the rule fails;
 
 table of clod clash guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

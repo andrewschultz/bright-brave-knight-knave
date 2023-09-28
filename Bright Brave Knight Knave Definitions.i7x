@@ -183,7 +183,7 @@ to decide what number is hub-expand-score:
 
 section thief score
 
-to decide what number is thief-score:
+to decide what number is fief-score:
 	decide on (boolval of sco-brought-brief) + (boolval of sco-bought-beef)
 
 section blight score
@@ -244,7 +244,6 @@ section tully / final score
 
 to decide which number is tully-score:
 	decide on boolval of sco-fright-fully + boolval of sco-bright-bully;
-
 
 book definitions
 

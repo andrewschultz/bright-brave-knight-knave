@@ -777,7 +777,7 @@ this is the vr-brought-brief rule:
 	check-thievery;
 
 to check-thievery:
-	if thief-score is 2:
+	if fief-score is 2:
 		say "Everyone disperses around you, as they realize you're nobody to be trifled with.";
 		now to-number of fought fief is 2854;
 	else:
@@ -785,7 +785,7 @@ to check-thievery:
 
 a goodrhyme rule (this is the vc-wrought-reef rule):
 	if player is not in thought thief fought fief, unavailable;
-	if thief-score < 2:
+	if fief-score < 2:
 		vcp "It's still too chaotic to do much!";
 		not-yet;
 	if sco-wrought-reef is true:
