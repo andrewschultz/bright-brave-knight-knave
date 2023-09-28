@@ -1035,6 +1035,18 @@ carry out xyzzying:
 
 volume standard and action verbs
 
+chapter attacking
+
+the block attacking rule is not listed in any rulebook.
+
+check attacking:
+	if tully is fungible, say "You must describe Tully correctly." instead;
+	if noun is an eeker, say "But [the noun] is on your side!" instead;
+	if noun is Sassed Sort, say "They took enough abuse!" instead;
+	if noun is fun fish, say "No need to render it un-ish." instead;
+	if noun is boffin boy, say "Mean." instead;
+	say "Scandal! Scary vandal? Very!" instead;
+
 chapter taking
 
 the BBKK generic take reject rule is listed instead of the the can't take scenery rule in the check taking rules.
