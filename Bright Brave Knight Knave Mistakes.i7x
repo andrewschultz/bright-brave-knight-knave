@@ -260,18 +260,28 @@ this is the route-todo rule:
 table of rut row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "but|butt"	"bo|bow"	--	false	row-todo rule	"No time to argue! Boss and Rosco done hatched another devious plan!"
-"cut"	"co"	--	false	row-todo rule	"What an ideal name for a corporate hellscape that drains profits and happiness from a city."
+"cut"	"co|cow"	--	false	row-todo rule	"[cow-cut]"
 "gut"	"go"	--	false	row-todo rule	"You feel full of urban gumption and do-it-now-ness, until you don't."
-"hutt|hut"	"hoe|ho"	--	false	row-todo rule	"You recall a clever, funny phrase from [i]You Will Select a Decision[r]."
+"hutt|hut"	"hoe|ho|how"	--	false	row-todo rule	"[rut-row-ow-oh]You recall a clever, funny phrase from [i]You Will Select a Decision[r]."
 "mutt"	"mo|mow"	--	false	row-todo rule	"Alas, there are no lovely houses with friendly dogs and green lawns here."
-"nut"	"no"	--	false	row-todo rule	"There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
-"putt"	"po"	--	false	row-todo rule	"This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
+"nut"	"no|now"	--	false	row-todo rule	"[rut-row-ow-oh]There is nobody to tell off, but there will be if you wait here. Not that you want to wait here."
+"putt"	"po|pow"	--	false	row-todo rule	"[rut-row-ow-oh]This place is far away from a golf course, but yeah, everyone here is probably bad at golf."
 "shut"	"show"	--	false	row-todo rule	"The fine arts have long since disappeared from here."
 "slut"	"slow"	--	false	row-todo rule	"You are not the morality police."
+
+to say cow-cut:
+	if the player's command includes "cow":
+		say "No need for animal sacrifices.";
+	else:
+		say "What an ideal name for a corporate hellscape that drains profits and happiness from a city.";
 
 this is the row-todo rule:
 	if sco-what-whoah is false, the rule succeeds;
 	the rule fails;
+
+to say rut-row-ow-oh:
+	if the player's command includes "ow":
+		say "(Looking at the row of houses and seeing no fight...) "
 
 table of slid slum guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

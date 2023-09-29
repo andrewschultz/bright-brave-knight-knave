@@ -340,7 +340,9 @@ to decide whether vcp-ignore: decide no; [When do we block check-text? In VVFF, 
 
 book rules
 
-this is the disable-learner-options rule: if player does not have leet learner, say "You decide to take the leet learner before exercising any of its options." instead;
+this is the disable-learner-options rule:
+	if player does not have leet learner, say "You decide to take the leet learner before exercising any of its options.";
+	now player has leet learner;
 
 this is the narrative-checking rule: make no decision;
 

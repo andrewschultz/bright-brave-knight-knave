@@ -24,7 +24,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "fight"	"fave"	--	--	false	true	true	false	white wave	vc-fight-fave rule	vr-fight-fave rule	--	"You can [b]FIGHT FAVE[r] [here-in of white wave] [once-now of vc-fight-fave rule] you are physically and emotionally prepared."
 "pass"	"path"	"pace"	vh-pace-path rule	false	true	true	false	bass bath	vc-pass-path rule	vr-pass-path rule	--	--
 "mass"	"math"	"mace"	vh-mace-math rule	false	true	true	false	bass bath	vc-mass-math rule	vr-mass-math rule	--	"You can use [b]MASS MATH[r] [here-in of bass bath] [once-now of vc-mass-math rule] you have something to calculate."
-"what"	"whoa|whoah"	"woe"	vh-what-woe rule	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
+"what"	"whoa|whoah"	"woe/wow"	vh-what-woe rule	false	true	true	false	rut row	vc-what-whoah rule	vr-what-whoah rule	--	--
 "hid"	"hum"	--	--	false	true	true	false	slid slum	vc-hid-hum rule	vr-hid-hum rule	--	--
 "kid"	"come"	--	--	false	true	true	false	slid slum	vc-kid-come rule	vr-kid-come rule	--	"You can say [b]KID COME[r] [here-in of slum slid] [once-now of vc-kid-come rule] a kid is around."
 "rid"	"rum"	--	--	false	true	true	false	slid slum	vc-rid-rum rule	vr-rid-rum rule	--	"You can say [b]RID RUM[r] [here-in of slum slid] [once-now of vc-rid-rum rule] you have cause to speak out against alcohol."
@@ -241,7 +241,10 @@ a goodrhyme rule (this is the vc-what-whoah rule):
 	ready;
 
 this is the vh-what-woe rule:
-	say "You express shock and things that went unexpectedly wrong. Which is close to shock at things going right. But not quite there, yet.";
+	if the player's command includes "wow":
+		say "That'd be the right expression of surprise for a fight-row, but this is a residential row.";
+	else:
+		say "You express shock at things that went unexpectedly wrong. It feels close to what you need: shock at things going right! Just a small change...";
 	the rule succeeds;
 
 this is the vr-what-whoah rule:

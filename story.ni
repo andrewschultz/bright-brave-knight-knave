@@ -30,6 +30,8 @@ include Punctuation Stripper by Andrew Schultz.
 
 include Intro Restore Skip by Andrew Schultz.
 
+include Old School Verb Total Carnage by Andrew Schultz.
+
 section testing - not for release
 
 include Bright Brave Knight Knave Tests by Andrew Schultz.
@@ -62,7 +64,7 @@ when play begins:
 	wfak;
 	say "And when you tried to point this out, you got laughed at for virtue-signaling. Did you think people owed you? Did you only do that nice stuff just so they'd prevent you from receiving an ounce of criticism? You couldn't disprove that, so it must be true.";
 	wfak;
-	say "That person--Tully was their name. It makes you mad to remember. You gave an intelligent response to all his critiques, and he laughed at you for being an egghead and elitist. And many people agreed. Your time was up! What had you done for anyone, lately? And of what you did for anyone lately, was it really out of the goodness of your heart?";
+	say "That person--Tully was their name. It makes you mad to remember. Your intelligent response to all their critiques got laughs for being an egghead and elitist. And many people agreed. Your time was up! What had you done for anyone, lately? And was it really out of the goodness of your heart?";
 	wfak;
 	say "You had no answers. But you would have a choice of punishment: Jet, Jail? Set sail? You went with the second. But of course your boat capsized as a big white wave came up. You paddled to shore...";
 	wfak;
@@ -303,7 +305,7 @@ volume Plying Please (west)
 
 book Rut Row
 
-Rut Row is a room in Plying Please. "[if sco-what-whoah is false]The air looks opaque to the west. It looks impenetrable for the moment, unless you figure a crazy, surprising way through[else]You cleverly forged a way west[end if][rut-2]."
+Rut Row is a room in Plying Please. "A dingy residential area, thankfully not the 'row' kind of fight. [if sco-what-whoah is false]The air looks opaque to the west and north. Too impenetrable for the moment, unless you figure a crazy, surprising way through. You even consider the expression of surprise you would make if it, in fact, happened[else]You cleverly forged a way west[end if][rut-2]."
 
 guess-table of rut row is the table of rut row guesses.
 
@@ -317,7 +319,7 @@ to say rut-2:
 	say " there's always back east to Pass Path"
 
 check going west in Rut Row:
-	if sco-what-whoah is false, say "Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened." instead;
+	if sco-what-whoah is false, say "Oh, man! Things just get too chokey to the west. Maybe if something astonishing happened, or you expressed astonishment, that'd clear up." instead;
 
 check going north in Rut Row:
 	if sco-mood-mapper is false, say "You make your way north, but you are shooed by a loud voice saying 'Really! We can do better than your kind, here.' You have a feeling it's just trying to act snooty and hifalutin, but you have no proof, so you trudge back south.[paragraph break]If only you had a gauge for this sort of thing!" instead;
