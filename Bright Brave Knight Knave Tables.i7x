@@ -225,7 +225,7 @@ this is the vh-mace-math rule:
 
 this is the vr-mass-math rule:
 	now sco-mass-math is true;
-	say "You sit back and do some brute-force calculations as to where the paths must lead. Then you use some intuition you didn't know you had (your mojo must be returning!) You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you see one path in each of the cardinal directions: west, one east, and one north.";
+	say "You sit back and do some brute-force calculations as to where the paths must lead. Then you use some intuition you didn't know you had (your mojo must be returning!) You work out that many must be equivalent, and there cannot be too many. They weave about for a bit, yes, but you have figured a way not to get lost in them.[paragraph break]You hone your theorems and heuristics so well, you see one path in each of the cardinal directions: north, south, east and west.";
 	open-psg west and rut row;
 	open-psg north and bosh blanks;
 	open-psg south and Treed Track;
@@ -456,7 +456,7 @@ a goodrhyme rule (this is the vc-plucky-plot rule):
 	abide by the eeker bypass rule for guide geek;
 	if not assisted:
 		now go-west-hint is true;
-		vcp "You need a couple assistants to hatch a plot.[recruit-clue]";
+		vcp "Ooh! A plot! That could work, with a couple accomplices.[recruit-clue]";
 		not-yet;
 	if not pair-here of guide geek:
 		vcp "Your current friends aren't quite up to plotting."; [the snide sneak is too overconfident]
