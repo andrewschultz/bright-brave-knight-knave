@@ -77,7 +77,7 @@ Passage south is blocked, but the other three ways, you can try.
 by two points
 
 >w
-Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened.
+Oh, man! Things just get too chokey to the west. Maybe if something astonishing happened, or you expressed astonishment, that'd clear up.
 
 >what whoah
 by one point

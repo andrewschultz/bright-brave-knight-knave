@@ -71,7 +71,7 @@ by two points
 #testcase-homonym-reject-table-of-verb-checks-vh-what-woe-rule-woe
 #testcase-homonym-detail-vh-what-woe-rule-default
 >what woe
-You express shock and things that went unexpectedly wrong. Which is close to shock at things going right. But not quite there, yet.
+You express shock at things that went unexpectedly wrong. It feels close to what you need: shock at things going right! Just a small change...
 
 >what whoah
 by one point

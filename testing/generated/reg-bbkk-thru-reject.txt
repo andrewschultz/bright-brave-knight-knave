@@ -522,7 +522,7 @@ by one point
 
 #testcase-check-vc-plucky-plot-rule-if-not-assisted
 >plucky plot
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices. Where could you find people willing to help?
 
 #testcase-think-table-of-verb-checks-vc-plucky-plot-rule
 >think
@@ -765,13 +765,13 @@ But you're not too lazy to figure a way to get it cleaned! You managed to build 
 
 >pals 11
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
 >pals 12
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
@@ -783,25 +783,25 @@ Your current friends aren't quite up to plotting.
 
 >pals 21
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
 >pals 22
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
 >pals 31
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
 >pals 32
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 
@@ -1756,7 +1756,7 @@ by one point
 
 #testcase-check-vc-pain-packs-rule-fallthrough
 You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!
-You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
+You pause a minute. Hey, wait, that one item on the track-tryst-lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
 >pain packs
@@ -2464,7 +2464,7 @@ You already flouted fluff!
 by one point
 
 #testcase-check-vc-harder-helm-rule-fallthrough
-Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
+Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track-tryst-lack list.
 
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
 >harder helm
@@ -2639,7 +2639,7 @@ You have already helped Failing Phil!
 
 #testcase-check-vc-fight-fave-rule-if-trystcount-<-number-of-trystitems
 >fight fave
-You look at the track tryst lack list. You only have four of the five things you need to succeed.
+You look at the track-tryst-lack list. You only have four of the five things you need to succeed.
 
 >undo
 >undo

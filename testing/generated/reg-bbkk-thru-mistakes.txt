@@ -1105,12 +1105,12 @@ LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brewed brass
-The armor on the track tryst lack list probably needs to be stronger than brass.
+The armor on the track-tryst-lack list probably needs to be stronger than brass.
 LCD
 
 #+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brood brass
-The armor on the track tryst lack list probably needs to be stronger than brass.
+The armor on the track-tryst-lack list probably needs to be stronger than brass.
 LCD
 
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass

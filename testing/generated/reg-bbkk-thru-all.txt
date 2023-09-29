@@ -338,7 +338,7 @@ by one point
 #testcase-run-vr-pain-packs-rule-default
 You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!
 #testcase-gameprogress-table-of-trystitem-stuff-1
-You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
+You pause a minute. Hey, wait, that one item on the track-tryst-lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 >n
 
@@ -436,7 +436,7 @@ by one point
 #testcase-run-vr-slashing-sword-rule-default
 The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks one more thing off your list. Yay!
 #testcase-gameprogress-table-of-trystitem-stuff-2
-You consult the track tryst lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
+You consult the track-tryst-lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
 
 >salad scent
 by one point
@@ -607,7 +607,7 @@ by one point
 #testcase-run-vr-power-plate-rule-default
 Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.
 #testcase-gameprogress-table-of-trystitem-stuff-3
-There you go. Something else on the track tryst lack list. Whatever fight is ahead, you feel more ready for it. But not ready enough.
+There you go. Something else on the track-tryst-lack list. Whatever fight is ahead, you feel more ready for it. But not ready enough.
 
 >flak flight
 by one point
@@ -745,9 +745,9 @@ You went the extra mile to rid yourself of angst.
 by one point
 
 #testcase-run-vr-harder-helm-rule-default
-Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
+Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track-tryst-lack list.
 #testcase-gameprogress-table-of-trystitem-stuff-4
-You check off the next-to-last item on the track tryst lack list. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list.
+You check off the next-to-last item on the track-tryst-lack list. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list.
 
 >e
 
@@ -793,7 +793,7 @@ by one point
 #testcase-run-vr-spurning-spew-rule-default
 Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
 #testcase-gameprogress-table-of-trystitem-stuff-5
-You double-check the track tryst lack list. Yes, indeed, you have everything! You place it inside Spurning Spew, making it an infinitesimally stronger shield.
+You double-check the track-tryst-lack list. Yes, indeed, you have everything! You place it inside Spurning Spew, making it an infinitesimally stronger shield.
 
 >out
 

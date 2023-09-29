@@ -105,7 +105,7 @@ There must be something here in the Sack Site! But you wouldn't know where to st
 by one point
 >plucky plot
 !by one point
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices.
 >gonear lane lax
 >train tracks
 >main max
@@ -126,7 +126,7 @@ You don't have the support of the right friends to grow gruff constructively.
 >n
 >plucky plot
 !by one point
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices.
 >gonear lane lax
 >trod trash
 !by one point
@@ -144,7 +144,7 @@ You don't have the support of the right friends to grow gruff constructively.
 >s
 >need knack
 !by one point
-To get the knack for not getting lost, you may need help from more than one friend.
+To really get the knack for not getting lost, you will need help from more than one friend.
 >gonear passed port
 >salad scent
 !by one point

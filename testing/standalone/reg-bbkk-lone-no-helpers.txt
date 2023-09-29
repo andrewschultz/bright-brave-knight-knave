@@ -38,13 +38,13 @@ Whoah! The tall tank is big! You'll need help from more than one person to move 
 by one point
 >plucky plot
 !by one point
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices. Where could you find people willing to help?
 
 >s
 >s
 >need knack
 !by one point
-You're not great with navigating forests. Where could you find people willing to help?
+You recognize you don't have the knack for navigating forests. How to see shortcuts but not get too reliant on them? Where could you find people willing to help?
 
 >gonear passed port
 >slosh slick
@@ -96,7 +96,7 @@ You don't have the support of the right friends to grow gruff constructively.
 >n
 >plucky plot
 !by one point
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices.
 >gonear lane lax
 >trod trash
 !by one point

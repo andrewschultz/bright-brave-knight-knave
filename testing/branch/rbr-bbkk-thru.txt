@@ -998,7 +998,7 @@ by one point
 \\
 #testcase-check-vc-plucky-plot-rule-if-not-assisted
 >plucky plot
-You need a couple assistants to hatch a plot.
+Ooh! A plot! That could work, with a couple accomplices. Where could you find people willing to help?
 \\
 #testcase-think-table-of-verb-checks-vc-plucky-plot-rule
 >think
@@ -1128,7 +1128,7 @@ You have scored a total of 7 out of 85 points and need 75 to win. You have found
 
 @gt
 >w
-Oh, man! Things just get too chokey to the west. Maybe you could find passage there, if something surprising happened.
+Oh, man! Things just get too chokey to the west. Maybe if something astonishing happened, or you expressed astonishment, that'd clear up.
 
 @alt
 ##balance undos
@@ -1158,7 +1158,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #testcase-homonym-reject-table-of-verb-checks-vh-what-woe-rule-woe
 #testcase-homonym-detail-vh-what-woe-rule-default
 >what woe
-You express shock and things that went unexpectedly wrong. Which is close to shock at things going right. But not quite there, yet.
+You express shock at things that went unexpectedly wrong. It feels close to what you need: shock at things going right! Just a small change...
 
 >what whoah
 by one point
@@ -2006,13 +2006,13 @@ But you're not too lazy to figure a way to get it cleaned! You managed to build 
 \\
 >pals 11
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
 >pals 12
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
@@ -2024,25 +2024,25 @@ Your current friends aren't quite up to plotting.
 \\
 >pals 21
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
 >pals 22
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
 >pals 31
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
 >pals 32
 >plucky plot
-You need a couple assistants to hatch a plot.
+`Ooh! A plot! That could work, with a couple accomplices.
 >undo
 >undo
 \\
@@ -3761,7 +3761,7 @@ by one point
 {--all}#testcase-run-vr-pain-packs-rule-default
 You look around, hoping some poor soul forgot their own emergency kits, all while of course hoping they did not need it. But if there's one place people forget stuff, it would be a lane, lax. And something turns up. Finders keepers!
 {--all}#testcase-gameprogress-table-of-trystitem-stuff-1
-You pause a minute. Hey, wait, that one item on the track tryst lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
+You pause a minute. Hey, wait, that one item on the track-tryst-lack list. Yes! You just found your first! You're not prepared for the final fight, but this is a start.
 
 @rej
 #testcase-check-vc-pain-packs-rule-if-sco-pain-packs-is-true
@@ -4089,12 +4089,12 @@ LCD
 \\
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brewed brass
-The armor on the track tryst lack list probably needs to be stronger than brass.
+The armor on the track-tryst-lack list probably needs to be stronger than brass.
 LCD
 \\
 #+testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-brewed-brood-brass
 >brood brass
-The armor on the track tryst lack list probably needs to be stronger than brass.
+The armor on the track-tryst-lack list probably needs to be stronger than brass.
 LCD
 \\
 #testcase-mistakes-table-of-crude-crass-lewd-lass-guesses-mood-mooed-mass
@@ -4407,7 +4407,7 @@ by one point
 {--all}#testcase-run-vr-slashing-sword-rule-default
 The clashing cord shortens a bit and gleams a bit more. You now have a slashing sword, replete with scabbard, which checks one more thing off your list. Yay!
 {--all}#testcase-gameprogress-table-of-trystitem-stuff-2
-{--all}You consult the track tryst lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
+{--all}You consult the track-tryst-lack list again. Oh, man! More supplies! You have a way to go, but you don't feel totally defenseless!
 
 @rej
 ##BALANCE UNDOS
@@ -5611,7 +5611,7 @@ by one point
 {--all}#testcase-run-vr-power-plate-rule-default
 Oh my goodness! The sour slate expands -- and it becomes some power plate! Perfect armor to replace what you had! You kind of slacked off in science class, but you suspect it's some really durable polymer or alloy or something like that.
 {--all}#testcase-gameprogress-table-of-trystitem-stuff-3
-{--all}There you go. Something else on the track tryst lack list. Whatever fight is ahead, you feel more ready for it. But not ready enough.
+{--all}There you go. Something else on the track-tryst-lack list. Whatever fight is ahead, you feel more ready for it. But not ready enough.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-45-flack-flak
@@ -6475,9 +6475,9 @@ by one point
 @all,rej
 {--rej}#testcase-check-vc-harder-helm-rule-fallthrough
 {--all}#testcase-run-vr-harder-helm-rule-default
-Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track tryst lack list.
+Clunk! A harder helm drops from the top branches of the ardor elm. You try it on your head. It fits perfectly, and it's actually pretty comfy. You realize it must be one of the items on the track-tryst-lack list.
 {--all}#testcase-gameprogress-table-of-trystitem-stuff-4
-{--all}You check off the next-to-last item on the track tryst lack list. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list.
+{--all}You check off the next-to-last item on the track-tryst-lack list. You wonder if you can slide by, being a Bright Brave Knight Knave. But no. Magical checklists are not to be subverted. If you are bright and brave, you will find the final item on the list.
 
 @rej
 #testcase-check-vc-harder-helm-rule-if-sco-harder-helm-is-true
@@ -6905,7 +6905,7 @@ by one point
 {--all}#testcase-run-vr-spurning-spew-rule-default
 Congratulations. You are now one proud owner of an oversized, overwrought motivational book. Well, it's thick enough to replace the shield you lost.
 {--all}#testcase-gameprogress-table-of-trystitem-stuff-5
-{--all}You double-check the track tryst lack list. Yes, indeed, you have everything! You place it inside Spurning Spew, making it an infinitesimally stronger shield.
+{--all}You double-check the track-tryst-lack list. Yes, indeed, you have everything! You place it inside Spurning Spew, making it an infinitesimally stronger shield.
 
 @mis
 #+testcase-mistakes-table-of-spurning-spew-guesses-burning-boo
@@ -7282,7 +7282,7 @@ by one point
 \\
 #testcase-check-vc-fight-fave-rule-if-trystcount-<-number-of-trystitems
 >fight fave
-You look at the track tryst lack list. You only have four of the five things you need to succeed.
+You look at the track-tryst-lack list. You only have four of the five things you need to succeed.
 \\
 >undo
 >undo
@@ -7824,4 +7824,4 @@ You could've said GRANDER GROVE in Dander, Dove.
 You didn't enter MIME MODE in Passed Port.
 You didn't take a moment to remember PAUL PANKS in Tall Tank(s).
 You didn't find the PLEAD PLAQUE in Treed Track.
-You could have tried to JACK GIST for a shorter command to read the track tryst lack list.
+You could have tried to JACK GIST for a shorter command to read the track-tryst-lack list.
