@@ -8,11 +8,15 @@ Example for Knell Nook: mkhi.py knell=nook bell-book covering-candle
 
 [rooms are organized by how you find them in a region. If there isn't a clear progression, alphabetical order is the tiebreaker.]
 
-volume suss it all out
+volume old code to make sure everything has a hint-rule
 
-when play begins:
+[when play begins:
+	let count be 0;
 	repeat with X running through things:
-		if thing-hint-rule of X is trivially false rule, say "Define THING rule for [X].";
+		if X is an eeker or X is a trystitem or X is a holeitem or X is the player or x is nah naff or x is recruiter, next;
+		if thing-hint-rule of X is trivially false rule:
+			increment count;
+			say "Define THING rule for [X] ([count]).";]
 
 volume room hints
 
@@ -117,16 +121,11 @@ this is the hint-hailing-hill rule:
 	if sco-scaling-skill is false, say "[one of][pplus][or][pplus][or][b]SCALING SKILL[r][pminus][cycling]" instead;
 	if sco-ailing-ill is false, say "[one of][pplus][or][pplus][or][b]AILING ILL[r][pminus][cycling]" instead;
 	if sco-mailing-mill is false, say "[one of][pplus][or][pplus][or][b]MAILING MILL[r][pminus][cycling]" instead;
-	if sco-bailing-bill is false, mill-hint 1 instead;
-	if sco-failing-phil is false, mill-hint 2 instead;
-	if sco-wailing-will is false, mill-hint 3 instead;
+	if hill-score < 6, try hintobjing mailing mill instead;
 	say "[done-here]." instead;
 
 this is the hint-bruising-brew rule:
-	if sco-using-you is false, say "[one of][pplus][or][pplus][or][b]USING YOU[r][pminus][cycling]" instead;
-	if sco-boozing-boo is false, say "[one of]Get didactic with Lou[pplus][or]Alcohol bad[xplus][or][b]BOOZING BOO[r][pminus][cycling]" instead;
-	if sco-fusing-phew is false, say "[one of]Combine your advice[pplus][or]It's a bit exhausting[pplus][or][b]FUSING PHEW[r][pminus][cycling]" instead;
-	if sco-spurning-spew is false, say "[one of]Learning Lou rhymes with a good enough title[pplus][or]How can you ignore the haters and their vitriol[qplus][or][b]SPURNING SPEW[r][pminus][cycling]" instead;
+	if losing lou is fungible, try hintobjing losing lou instead;
 	say "[done-here]." instead;
 
 chapter west
@@ -137,8 +136,7 @@ this is the hint-rut-row rule:
 
 this is the hint-slid-slum rule:
 	if sco-hid-hum is false, say "[one of][pplus][or][pplus][or][b]HID HUM[r][pminus][cycling]" instead;
-	if sco-kid-come is false, say "[one of][pplus][or][pplus][or][b]KID COME[r][pminus][cycling]" instead;
-	if sco-rid-rum is false, say "[one of][pplus][or][pplus][or][b]RID RUM[r][pminus][cycling]" instead;
+	if sco-rid-rum is false, try hintobjing boffin boy instead;
 	say "[done-here]." instead;
 
 this is the hint-crude-crapper rule:
@@ -162,20 +160,19 @@ this is the hint-spied-speak-cried-creek rule:
 chapter north
 
 this is the hint-bosh-blanks rule:
-	if sco-posh-planks is false, say "[one of]Something could appear here. Something to walk on.[or][b]POSH PLANKS[r][pminus][cycling]" instead;
+	if sco-posh-planks is false, say "[one of]Something could appear here. Something to walk on[pplus][or][b]POSH PLANKS[r][pminus][cycling]" instead;
 	if sco-plucky-plot is false, try hintobjing yucky yacht instead;
 	say "[done-here]" instead;
 
 this is the hint-cast-court rule:
-	if sco-murky-map is false, say "[one of]The perky pap is very shiny and easy to read, but something less easy to read will help more[pplus].[or]Try a [r]MURKY MAP[b][pminus][cycling]" instead;
+	if sco-murky-map is false, try hintobjing perky pap instead;
 	say "[done-here]." instead;
 
 this is the hint-fast-fort rule:
-	if sco-glued-glass is false, say "[one of]CCLL doesn't actually help you see anything worth seeing[pplus][or]What could, if you use it right[qplus][or][b]GLUED GLASS[r][pminus][pminus][cycling]" instead;
-	say "[done-here]." instead;
+	if sco-glued-glass is false, try hintobjing lewd lass instead;
 
 this is the hint-passed-port rule:
-	if sco-slashing-sword is false, say "[one of]The clashing cord can be one of your list items[pplus][or]Specifically, a [b]SLASHING SWORD[r][pminus][cycling]" instead;
+	if sco-slashing-sword is false, try hintobjing clashing cord;
 	if sco-slosh-slick is false, say "[one of][pminus][or][pminus][or][r]SLOSH SLICK[b][pminus][cycling]" instead;
 	if sco-quash-quick is false, say "[one of][pminus][or][pminus][or][r]QUASH QUICK[b][pminus][cycling]" instead;
 	if sco-slosh-slick is false, say "[one of][or][or][r]SLOSH SLICK[b][pminus][cycling]" instead;
@@ -193,7 +190,6 @@ this is the hint-treed-track rule: [??note who must come along]
 
 this is the hint-knell-nook rule:
 	if sco-bell-book is false, say "[one of]Three things are canonically needed for a ceremony[pplus][or]Two match with the room title[pplus][or][b]BELL BOOK[r][pminus][cycling]" instead;
-	if sco-covering-candle is false, say "[one of]What goes with the bell and book[qplus][or]The handle can become a [b]COVERING CANDLE[r][pminus][cycling]" instead;
 	say "[done-here]." instead;
 
 this is the hint-black-blight rule:
@@ -211,7 +207,7 @@ this is the hint-too-tough-blue-bluff rule:
 chapter east
 
 this is the hint-tata rule:
-	if sco-yall-yank is false, say "[one of]You can't push the tanks by yourself[pplus][or]With the right friends, you can give a command[pplus][or][b]YALL YANK[r][pminus][cycling]" instead;
+	if sco-yall-yank is false, try hintobjing tall tanks;
 	say "[done-here]." instead;
 
 this is the hint-lane-lax rule:
@@ -252,8 +248,194 @@ this is the hint-route-rough rule:
 
 volume thing hints
 
+book general stubs
+
+check hintobjing an eeker:
+	let eo be other-guy of noun;
+	if noun is pairedyet, say "Since you paired [the noun] with [the eo], they will just solve whatever puzzles you need them to." instead;
+	if eo is dormant, say "You need to find [the noun]'s companion [if noun is crooty][here-in of cried creek][else][here-in of recroom][end if]. [b]HINT[r] the area if you need clues." instead;
+	say "If you summon [the eo] with [the noun] around, they will hit it off and help you together." instead;
+
+check hintobjing a trystitem:
+	say "The [noun] [if sco-fight-fave is true]has protected[else]will protect[end if] you for the endgame. It isn't needed for any rhyme puzzles." instead;
+
+check hintobjing a holeitem:
+	say "The [noun] belongs in the hold hole, [if noun is unblessed]but you need to give it to someone to recharge it. Someone rhyming[else if noun is in-hold]where it is now[else]and it's ready to go there[end if]." instead;
+
+check hintobjing the player:
+	say "You [if sco-write-right-rave is true]got[else]have[end if] a bonus point for riffing on your title." instead;
+
+book hints for multiple objects
+
+the thing-hint-rule of glued glass is hint-port-pieces rule.
+the thing-hint-rule of murky map is hint-port-pieces rule.
+
+this is the hint-port-pieces rule:
+	if port-score is 2, say "The murky map and glued glass will let the Sassed Sort navigate somewhere new." instead;
+	say "You need something else to make [the noun] work. [if fast fort is unvisited or cast court is unvisited]Try finding somewhere else for the yacht to go[else if noun is glued glass]The perky pap has useful information in another form[else][lewd lass] can become something to help you read the map[end if]." instead;
+
+the thing-hint-rule of sassed sort is the hint-sassed-sort rule.
+the thing-hint-rule of yucky yacht is the hint-sassed-sort rule.
+
+this is the hint-sassed-sort rule:
+	if sco-fast-fort is false, say "[one of]The Sassed Sort can help you find somewhere new[pplus][or][b][if sco-cast-court is false]CAST COURT[else]FAST FORT[end if][r][pminus][cycling]" instead;
+	if sco-passed-port is false:
+		if port-score < 2, say "You don't have the materials you need to help the Sassed Sort find somewhere new yet." instead;
+		say "[one of]You have the materials for the Sassed Sort to find an overlooked place[pplus][or][b]PASSED PORT[r][pminus][cycling]" instead;
+
+this is the hint-knell-reagents rule:
+	say "You need [the noun] for a ritual [if nook is unvisited]somewhere unexplored[else][here-in of knell nook][end if]. It is used automatically." instead;
+
+the thing-hint-rule of posh pick is the hint-knell-reagents rule.
+the thing-hint-rule of proud prize is the hint-knell-reagents rule.
+
+this is the hint-toad-needs rule:
+	say "You will automatically give [the noun] to an ancient entity when they request it." instead;
+
+the thing-hint-rule of odd ash is the hint-toad-needs rule.
+the thing-hint-rule of rack right is the hint-toad-needs rule.
+
+book mappings in alphabetical order
+
+the thing-hint-rule of ardor elm is the hint-ardor-elm rule.
+
+the thing-hint-rule of broad brash clod clash is the hint-broad-brash-clod-clash rule.
+
+the thing-hint-rule of clashing cord is the hint-clashing-cord rule.
+
+the thing-hint-rule of coughin coy boffin boy is the hint-coughin-coy-boffin-boy rule.
+
+the thing-hint-rule of crowd cries is the hint-oecc rule.
+
+the thing-hint-rule of crude crass lewd lass is the hint-crude-crass rule.
+
+the thing-hint-rule of fun fish is the hint-fun-fish rule.
+
+the thing-hint-rule of hold hole is the hint-hold-hole rule.
+
+the thing-hint-rule of hovering handle is the hint-hovering-handle rule.
+
+the thing-hint-rule of losing lou is the hint-losing-lou rule.
+
+the thing-hint-rule of lurking lump is the hint-lurking-lump rule.
+
+the thing-hint-rule of mailing mill is the hint-mailing-mill rule.
+
+the thing-hint-rule of mood mapper is the hint-mood-mapper rule.
+
+the thing-hint-rule of pallid pent valid vent is the hint-pallid-pent-valid-vent rule.
+
+the thing-hint-rule of perky pap is the hint-perky-pap rule.
+
+the thing-hint-rule of salad sent is the hint-salad-sent rule.
+
+the thing-hint-rule of seed sack is the hint-seed-sack rule.
+
+the thing-hint-rule of slime slowed rime road is the hint-slime-slowed-rime-road rule.
+
+the thing-hint-rule of sour slate is the hint-sour-slate rule.
+
+the thing-hint-rule of stew stuff is hint-stew-stuff rule.
+
+the thing-hint-rule of tall tanks is hint-tall-tanks rule.
+
+the thing-hint-rule of track tryst lack list is the hint-track-tryst-lack-list rule.
+
+the thing-hint-rule of trite tully is the hint-trite-tully rule.
+
+the thing-hint-rule of Turning to Learning Lou is the hint-turning-to-learning-lou rule.
+
+book hints
+
+this is the hint-ardor-elm rule:
+	if sco-harder-helm is false, say "[one of]The ardor elm contains something on the list[pplus][or]You haven't found protection for your head yet[pplus][or][b]HARDER HELM[r][pminus][cycling]" instead;
+
+this is the hint-broad-brash-clod-clash rule: [if sco-trod-trash is false, try hintobjing clod clash instead??]
+	say "[one of][pplus][or][pplus][or][b]ODD ASH[r][pminus][cycling]" instead;
+
+this is the hint-clashing-cord rule:
+	say "[one of]The clashing cord can be one of your list items[pplus][or][b]SLASHING SWORD[r][pminus][cycling]" instead;
+
+this is the hint-coughin-coy-boffin-boy rule:
+	if sco-kid-come is false, say "[one of][pplus][or][pplus][or][b]KID COME[r][pminus][cycling]" instead;
+	if sco-rid-rum is false, say "[one of][pplus][or][pplus][or][b]RID RUM[r][pminus][cycling]" instead;
+
+this is the hint-crude-crass rule:
+	say "[one of]CCLL doesn't actually help you see anything worth seeing[pplus][or]What could, if you use it right[qplus][or][b]GLUED GLASS[r][pminus][pminus][cycling]" instead;
+
+this is the hint-fun-fish rule:
+	say "[one of]The [fish] needs two elements for a meal.[or]The fish can create the [b]DONE DISH[r][pplus][stopping]" instead;
+
+this is the hint-hold-hole rule:
+	if lack list is off-stage, say "[b]X[r] the hold hole." instead;
+	say "You need to find three items for the hold hole, and you also need them blessed [if sco-mass-math is false]in the main area[else if hailing hill is unvisited]above Pass Path[else]in Hailing Hill[end if]. Once this is done, you are ready for your redemptive challenge." instead;
+
+this is the hint-hovering-handle rule:
+	if sco-covering-candle is false, say "[one of]What goes with the bell and book[qplus][or]The handle can become a [b]COVERING CANDLE[r][pminus][cycling]" instead;
+
+this is the hint-losing-lou rule:
+	if sco-using-you is false, say "[one of][pplus][or][pplus][or][b]USING YOU[r][pminus][cycling]" instead;
+	if sco-boozing-boo is false, say "[one of]Get didactic with Lou[pplus][or]Alcohol bad[xplus][or][b]BOOZING BOO[r][pminus][cycling]" instead;
+	if sco-fusing-phew is false, say "[one of]Combine your advice[pplus][or]It's a bit exhausting[pplus][or][b]FUSING PHEW[r][pminus][cycling]" instead;
+
+this is the hint-lurking-lump rule:
+	say "The [b]LL[r] command activates the lurking lump to find a rhyme that can push you forward. It does nothing if you are only partially prepared." instead;
+
+this is the hint-mailing-mill rule:
+	if sco-bailing-bill is false, mill-hint 1 instead;
+	if sco-failing-phil is false, mill-hint 2 instead;
+	if sco-wailing-will is false, mill-hint 3 instead;
+
+this is the hint-mood-mapper rule:
+	say "The mood mapper will suss out new passages on its own, then self-destruct once it's done." instead;
+
+this is the hint-pallid-pent-valid-vent rule:
+	say "[one of]You may [b]SMELL[r] something from the vent, but what scent?[or]You smell a [b]SALAD SCENT[r], but you need the right companions[pminus][cycling]" instead;
+
+this is the hint-perky-pap rule:
+	say "[one of]The perky pap is very shiny and easy to read, but something less easy to read will help more[pplus][or]Try a [r]MURKY MAP[b][pminus][cycling]" instead;
+
+this is the hint-salad-sent rule:
+	say "[if fief-score < 2]An NPC you haven't seen yet[else]The [fish][end if] can use the salad with another item to make a meal, sort of." instead;
+
+this is the hint-seed-sack rule:
+	say "[one of]The seed sack is consumed automatically once you figure how to use it, but it has no further rhymes[pplus][or]The seed sack is needed on Hailing Hill, above Pass Path[pminus][stopping]" instead;
+
+this is the hint-slime-slowed-rime-road rule:
+	if sco-time-toad is false, say "[one of]The rime road leads to an ancient entity[pplus][or]You can summon the [b]TIME TOAD[r] but need two seemingly useless artifacts[pminus][cycling]" instead;
+
+this is the hint-sour-slate rule:
+	say "[one of]The sour slate will become a list item. One that protects you[pplus][or]POWER PLATE[pplus][cycling]" instead;
+
 this is the hint-stew-stuff rule:
 	if sco-new-nuff is false, say "[one of]The stew stuff needs to be in better condition[pplus][or]It can't be in perfect condition[pplus][or]Make it [b]NEW NUFF[r][pminus][cycling]" instead;
+
+this is the hint-tall-tanks rule:
+	say "[one of]You can't push the tanks by yourself[pplus][or]With the right friends, you can give a command[pplus][or][b]YALL YANK[r][pminus][cycling]" instead;
+
+track-note is a truth state that varies.
+
+this is the hint-track-tryst-lack-list rule: [?? "here" versus "inside of ..." ]
+	if track-note is false:
+		now track-note is true;
+		say "One-time note: hints are provided for items on the list based on when you are first likely to see or find something. List items are found in each compass direction from Pass Path, [if bool-brew-available is true]and one inside, too[else]with another behind a passage not opened yet[end if].[paragraph break]You need to get more than one room beyond Pass Path to the east, north or south for non-spoiler hints." instead;
+	if sco-pain-packs is false and sco-yall-yank is true, say "Look [if lane lax is unvisited]east of Tall Tanks[else][here-in of lane lax] for healing." instead;
+	if sco-slashing-sword is false and sco-plucky-plot is true, say "In the yacht's third destination, you'll find a weapon." instead;
+	if sco-power-plate is false and sco-need-knack is true:
+		if sco-heed-hack is false, say "Try looking for more passages from [here-in of Treed Track]." instead;
+		if sco-need-knack is true, say "Once you clear the blight above Treed Track, a new item appears that you can't take, but you can change. It is armor." instead;
+	if bool-brew-available is true and sco-spurning-spew is false, say "You can help a friend inside of Pass Path, and they will replace your shield." instead;
+	if number of finished eekers < 6, say "Your friends will show you something cool after they've helped you all they can." instead;
+	say "[if game-elm-seen is false]You should go back to the creek[else]The ardor elm [here-in of creek] has head protection[end if]." instead;
+	say "[done-here]." instead;
+
+this is the hint-trite-tully rule:
+	if sco-bright-bully is false, say "[one of][or]Call Tully for what they are. Cleverly playing dumb, pushing people around.[or][b]BRIGHT BULLY[r][pminus][cycling]" instead;
+	if sco-fright-fully is false, say "[one of][or]Call out the extent of Tully's nastiness.[or][b]FRIGHTFULLY[r][pminus][cycling]" instead;
+	say "[one of]There are three solutions here, but only one is right. You need the medium way[pplus][or]You can be too nice with [b]LAMB LIE[r][pplus][or]You can be too mean with [b]DAMN DIE[r][pplus][or]You can deprive Tully of attention with [b]BAM BYE[r][stopping]" instead;
+
+this is the hint-turning-to-learning-lou rule:
+	if sco-spurning-spew is false, say "[one of]Learning Lou rhymes with a good enough title[pplus][or]How can you ignore the haters and their vitriol[qplus][or][b]SPURNING SPEW[r][pminus][cycling]" instead;
 
 Bright Brave Knight Knave Hints ends here.
 
